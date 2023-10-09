@@ -1,0 +1,171 @@
+\documentclass[12pt,a4paper]{report}
+\usepackage[utf8]{inputenc}
+\usepackage[T1]{fontenc}
+\usepackage[spanish]{babel}
+\usepackage{graphicx}
+\usepackage{lipsum}
+\usepackage{cite}
+\usepackage{enumitem}
+\usepackage{fancyhdr}
+\usepackage[a4paper, top=3cm, bottom=2.5cm, left=3.5cm, right=3cm]{geometry}
+\usepackage[hidelinks]{hyperref}
+\usepackage{xcolor}
+
+% Definir el color personalizado
+\definecolor{myblue}{HTML}{74EDFF}
+
+
+\title{Trabajo de Fin de Máster: [Título del TFM]}
+\author{José Enrique Rodríguez González}
+\date{Enero de 2024}
+
+\geometry{headheight=2cm}
+
+% Configuración de los estilos de página con fancyhdr
+\pagestyle{fancy}
+\fancyhf{} % Limpia los encabezados y pies de página existentes
+\rhead{\includegraphics[width=\textwidth,height=1.5cm,keepaspectratio]{imagenes/02-imagen-cabecera.png}} % Utiliza una imagen de ejemplo
+\renewcommand{\headrulewidth}{0pt} % Elimina la línea del encabezado
+\renewcommand{\footrulewidth}{3pt} % Grosor de la línea del pie de página
+\renewcommand{\footrule}{\hbox to\headwidth{\color{myblue}\leaders\hrule height \footrulewidth\hfill}} % Color de la línea
+\fancyfoot[L]{M1.881 - TFM - Análisis forense} % Texto a la izquierda en el pie de página
+\fancyfoot[R]{\thepage} % Número de página a la derecha en el pie de página
+
+\fancypagestyle{plain}{
+    \rhead{\includegraphics[width=\textwidth,height=1.5cm,keepaspectratio]{imagenes/02-imagen-cabecera.png}} 
+    \rfoot{\thepage}
+}
+
+\begin{document}
+
+\pagenumbering{roman}
+
+\begin{titlepage}
+    \begin{center}
+        \Huge \textbf{Análisis forense de un ordenador personal}
+    \end{center}
+    
+    \vspace{1cm} % Ajusta el espacio vertical como prefieras
+    
+    \begin{minipage}{0.5\textwidth}
+        \includegraphics[width=0.8\textwidth]{imagenes/01-imagen-portada.png} % reemplaza 'example-image' por el nombre de tu imagen
+    \end{minipage}
+    \begin{minipage}{0.5\textwidth}
+        \textbf{Alumno:} \\
+        {José Enrique Rodríguez González} \\
+        \\
+        \textbf{Master Universitario de Ciberseguridad y privacidad.} \\
+        \\
+        \textbf{M1.881 - TFM - Análisis forense} \\
+        \\
+        \textbf{Tutora de TFM:} \\
+        {Dña. Elena Botana de Castro} \\
+        \\
+        \textbf{Profesor responsable de la asignatura:} \\
+        {D. Jordi Serra Ruiz} \\
+        \\
+        \textbf{Fecha de Entrega:} \\
+        {Enero de 2024}
+    \end{minipage}
+    
+    \vfill % Llena el espacio vertical para empujar el siguiente contenido hacia abajo
+    
+    % Otro contenido que quieras poner en tu portada
+    
+\end{titlepage}
+\restoregeometry 
+
+
+
+\input{chapter/001-agradecimientos/001-agradecimientos.tex.}
+
+\tableofcontents % Crea el índice
+
+\newpage
+\pagenumbering{arabic} 
+
+\chapter{Plan de trabajo}
+\input{chapter/002-plan-de-trabajo/002-plan-de-trabajo.tex.} % Importa el contenido del archivo 002-plan-de-trabajo.tex
+
+\section{Problema a resolver.}
+\input{chapter/002-plan-de-trabajo/sections/002-01-problema-resolver.tex} 
+
+\section{Objetivos.}
+\input{chapter/002-plan-de-trabajo/sections/002-02-objetivos.tex} 
+
+\section{Descripción del entorno de trabajo.}
+\input{chapter/002-plan-de-trabajo/sections/002-03-descripción-del-entorno-de-trabajo.tex} 
+
+\section{Listado de tareas.}
+\input{chapter/002-plan-de-trabajo/sections/002-04-listado-de-tareas.tex} 
+
+\section{Planificación temporal de las tareas.}
+\input{chapter/002-plan-de-trabajo/sections/002-05-planificacion-temporal-de-las-tareas.tex} 
+
+\section{Revisión del estado del arte de la informática forense.}
+\input{chapter/002-plan-de-trabajo/sections/002-06-revision-del-estado-del-arte-de-la-informatica-forense.tex} 
+
+\chapter{Extremos del análisis y previsión de pruebas técnicas.}
+\input{chapter/003-extremos-del-analisis-y-prevision-de-pruebas-tecnicas/003-extremos-del-analisis-y-prevision-de-pruebas-tecnicas.tex}
+
+\section{Propuesta de extremos.}
+\input{chapter/003-extremos-del-analisis-y-prevision-de-pruebas-tecnicas/sections/003-01-propuesta-de-extremos.tex}
+
+\section{Previsión de pruebas técnicas.}
+\input{chapter/003-extremos-del-analisis-y-prevision-de-pruebas-tecnicas/sections/003-02-prevision-de-pruebas-tecnicas.tex} 
+
+\chapter{Análisis de la memoria RAM.}
+\input{chapter/004-analisis-de-la-memoria-ram/004-analisis-de-la-memoria-ram.tex}
+
+\section{Acciones previas al análisis de la memoria RAM.}
+\input{chapter/004-analisis-de-la-memoria-ram/sections/004-01-acciones-previas-al-analisis-de-ram.tex}
+
+\section{Datos de interés de la captura de la memoria RAM.}
+\input{chapter/004-analisis-de-la-memoria-ram/sections/004-02-datos-de-interes-de-la-memoria-ram.tex}
+
+\section{Sistema Operativo de la memoria RAM analizada.}
+\input{chapter/004-analisis-de-la-memoria-ram/sections/004-03-sistema-operativo-de-la-memoria-RAM-analizada.tex}
+
+\section{Busqueda de procesos en funcionamiento de interés para el análisis.}
+\input{chapter/004-analisis-de-la-memoria-ram/sections/004-04-busqueda-de-procesos-en-funcionamiento-de-interés-para-el-análisis.tex}
+
+\section{Análisis y extracción de procesos sospechosos.}
+\input{chapter/004-analisis-de-la-memoria-ram/sections/004-05-Analisis-y-extraccion-de-procesos-sospechosos.tex}
+
+\section{Listado de conexiones de red y conexiones sospechosas.}
+\input{chapter/004-analisis-de-la-memoria-ram/sections/004-06-listado-de-conexiones-de-red-y-conexiones-sospechosas.tex}
+
+\chapter{Análisis del disco duro.}
+\input{chapter/005-analisis-de-disco-duro/005-analisis-del-disco-duro.tex}
+
+\section{Acciones previas al análisis del disco duro.}
+\input{chapter/005-analisis-de-disco-duro/sections/005-01-acciones-previas-al-analisis-de-disco-duro.tex}
+
+\section{Datos de interés del disco duro.}
+\input{chapter/005-analisis-de-disco-duro/sections/005-02-datos-de-interes-del-disco-duro.tex}
+
+\section{Usuarios del sistema.}
+\input{chapter/005-analisis-de-disco-duro/sections/005-03-usuarios-del-sistema.tex}
+
+\section{Análisis de evidencias del disco duro.}
+\input{chapter/005-analisis-de-disco-duro/sections/005-04-analisis-de-evidencias-del-disco-duro.tex}
+
+\chapter{Resumen ejecutivo}
+\input{chapter/006-resumen-ejecutivo/006-resumen-ejecutivo.tex}
+
+\chapter{Informe pericial}
+\input{chapter/007-informe-pericial/007-informe-pericial.tex}
+
+\chapter{Conclusiones}
+\input{chapter/008-conclusiones/008-conclusiones.tex}
+
+\chapter{Referencias bibliográficas}
+\input{referencias.bib}
+
+\chapter{Anexos}
+\input{chapter/009-anexos/009-anexos.tex}
+
+
+
+
+\end{document}
