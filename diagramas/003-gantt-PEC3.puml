@@ -1,0 +1,47 @@
+@startgantt
+sunday are closed
+sat are coloured LightBlue
+2023-12-6 is colored in LightGreen
+2023-12-8 is colored in LightGreen
+
+
+
+[TFM Análisis Forense José Enrique Rodríguez González] starts 2023-11-17
+[PEC 03] starts 2023-11-18
+[Lectura enunciado actividad 3] lasts 1 days
+[Introduccion Resumen ejecutivo] lasts 2 days
+[Analisis Ejecutivo] lasts 3 days
+[Conclusión de analisis ejecutivo] lasts 1 days
+[Refinamiento TFM 5] lasts 2 days
+[Feedback de la PEC 02] lasts 3 days
+[Introducción del informe pericial] lasts 1 days
+[Cuerpo del informe pericial] lasts 2 days
+[Conclusiones del informe pericial] lasts 1 days
+[Conclusiones TFM] lasts 2 days
+[Revision de terminos abrebiaturas y acrónimos] lasts 2 days
+[Revisión de imágenes] lasts 1 days
+[Revision de referencias] lasts 1 days
+[Refinamiento TFM 6] lasts 2 days
+
+Project starts 2023-11-17
+[TFM Análisis Forense José Enrique Rodríguez González] ends 2023-12-18
+[PEC 03] ends 2023-12-15
+[PEC 03] is coloured in IndianRed
+[Lectura enunciado actividad 3] ends 2023-11-18
+[Introduccion Resumen ejecutivo] starts at [Lectura enunciado actividad 3]'s end
+[Analisis Ejecutivo] starts at [Introduccion Resumen ejecutivo]'s end
+[Conclusión de analisis ejecutivo] starts at [Analisis Ejecutivo]'s end
+[Refinamiento TFM 5] starts at [Conclusión de analisis ejecutivo]'s end
+[Feedback de la PEC 02] starts at [Refinamiento TFM 5]'s end
+[Introducción del informe pericial] starts at [Feedback de la PEC 02]'s end
+[Cuerpo del informe pericial] starts at [Introducción del informe pericial]'s end
+[Conclusiones del informe pericial] starts at [Cuerpo del informe pericial]'s end
+[Conclusiones TFM] starts at [Conclusiones del informe pericial]'s end
+[Revision de terminos abrebiaturas y acrónimos] starts at [Conclusiones TFM]'s end
+[Revisión de imágenes] starts at [Revision de terminos abrebiaturas y acrónimos]'s end
+[Revision de referencias] starts at [Revisión de imágenes]'s end
+[Refinamiento TFM 6] starts at [Revision de referencias]'s end
+[Entrega de PEC 03] happens at [Refinamiento TFM 6]'s end
+
+@endgantt
+

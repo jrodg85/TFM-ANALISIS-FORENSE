@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.25 (MiKTeX 23.9.24) (preloaded format=pdflatex 2023.10.5)  9 OCT 2023 16:32
+This is pdfTeX, Version 3.141592653-2.6-1.40.25 (MiKTeX 23.9.24) (preloaded format=pdflatex 2023.10.5)  14 OCT 2023 17:56
 entering extended mode
  restricted \write18 enabled.
  file:line:error style messages enabled.
@@ -252,45 +252,86 @@ Package xcolor Info: Model `tHsb' substituted by `hsb' on input line 1373.
 Package xcolor Info: Model `HSB' substituted by `hsb' on input line 1374.
 Package xcolor Info: Model `Gray' substituted by `gray' on input line 1375.
 Package xcolor Info: Model `wave' substituted by `hsb' on input line 1376.
+) (C:\Program Files\MiKTeX\tex/latex/natbib\natbib.sty
+Package: natbib 2010/09/13 8.31b (PWD, AO)
+
+
+Package natbib Warning: The `cite' package should not be used
+(natbib)                with natbib. Use option `sort' instead.
+
+\bibhang=\skip61
+\bibsep=\skip62
+LaTeX Info: Redefining \cite on input line 694.
+LaTeX Info: Redefining \citenum on input line 708.
+\c@NAT@ctr=\count284
+) (C:\Program Files\MiKTeX\tex/latex/tools\tabularx.sty
+Package: tabularx 2020/01/15 v2.11c `tabularx' package (DPC)
+ (C:\Program Files\MiKTeX\tex/latex/tools\array.sty
+Package: array 2022/09/04 v2.5g Tabular extension package (FMi)
+\col@sep=\dimen157
+\ar@mcellbox=\box53
+\extrarowheight=\dimen158
+\NC@list=\toks23
+\extratabsurround=\skip63
+\backup@length=\skip64
+\ar@cellbox=\box54
+)
+\TX@col@width=\dimen159
+\TX@old@table=\dimen160
+\TX@old@col=\dimen161
+\TX@target=\dimen162
+\TX@delta=\dimen163
+\TX@cols=\count285
+\TX@ftn=\toks24
 ) (main.aux
 LaTeX Info: Redefining \. on input line 22.
 LaTeX Info: Redefining \% on input line 22.
+
+
+LaTeX Warning: Label `fig:ejemplo_gantt' multiply defined.
+
+
+LaTeX Warning: Label `fig:ejemplo_gantt' multiply defined.
+
+
+LaTeX Warning: Label `fig:ejemplo_gantt' multiply defined.
+
 )
 \openout1 = `main.aux'.
 
-LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 39.
-LaTeX Font Info:    ... okay on input line 39.
-LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 39.
-LaTeX Font Info:    ... okay on input line 39.
-LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 39.
-LaTeX Font Info:    ... okay on input line 39.
-LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 39.
-LaTeX Font Info:    ... okay on input line 39.
-LaTeX Font Info:    Checking defaults for TS1/cmr/m/n on input line 39.
-LaTeX Font Info:    ... okay on input line 39.
-LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 39.
-LaTeX Font Info:    ... okay on input line 39.
-LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 39.
-LaTeX Font Info:    ... okay on input line 39.
-LaTeX Font Info:    Checking defaults for PD1/pdf/m/n on input line 39.
-LaTeX Font Info:    ... okay on input line 39.
-LaTeX Font Info:    Checking defaults for PU/pdf/m/n on input line 39.
-LaTeX Font Info:    ... okay on input line 39.
-LaTeX Info: Redefining \. on input line 39.
-LaTeX Info: Redefining \% on input line 39.
+LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 44.
+LaTeX Font Info:    ... okay on input line 44.
+LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 44.
+LaTeX Font Info:    ... okay on input line 44.
+LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 44.
+LaTeX Font Info:    ... okay on input line 44.
+LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 44.
+LaTeX Font Info:    ... okay on input line 44.
+LaTeX Font Info:    Checking defaults for TS1/cmr/m/n on input line 44.
+LaTeX Font Info:    ... okay on input line 44.
+LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 44.
+LaTeX Font Info:    ... okay on input line 44.
+LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 44.
+LaTeX Font Info:    ... okay on input line 44.
+LaTeX Font Info:    Checking defaults for PD1/pdf/m/n on input line 44.
+LaTeX Font Info:    ... okay on input line 44.
+LaTeX Font Info:    Checking defaults for PU/pdf/m/n on input line 44.
+LaTeX Font Info:    ... okay on input line 44.
+LaTeX Info: Redefining \. on input line 44.
+LaTeX Info: Redefining \% on input line 44.
  (C:\Program Files\MiKTeX\tex/context/base/mkii\supp-pdf.mkii
 [Loading MPS to PDF converter (version 2006.09.02).]
-\scratchcounter=\count284
-\scratchdimen=\dimen157
-\scratchbox=\box53
-\nofMPsegments=\count285
-\nofMParguments=\count286
-\everyMPshowfont=\toks23
-\MPscratchCnt=\count287
-\MPscratchDim=\dimen158
-\MPnumerator=\count288
-\makeMPintoPDFobject=\count289
-\everyMPtoPDFconversion=\toks24
+\scratchcounter=\count286
+\scratchdimen=\dimen164
+\scratchbox=\box55
+\nofMPsegments=\count287
+\nofMParguments=\count288
+\everyMPshowfont=\toks25
+\MPscratchCnt=\count289
+\MPscratchDim=\dimen165
+\MPnumerator=\count290
+\makeMPintoPDFobject=\count291
+\everyMPtoPDFconversion=\toks26
 ) (C:\Program Files\MiKTeX\tex/latex/epstopdf-pkg\epstopdf-base.sty
 Package: epstopdf-base 2020-01-24 v2.11 Base part for package epstopdf
 Package epstopdf-base Info: Redefining graphics rule for `.eps' on input line 485.
@@ -331,173 +372,471 @@ File: epstopdf-sys.cfg 2021/03/18 v2.0 Configuration of epstopdf for MiKTeX
 * \@reversemarginfalse
 * (1in=72.27pt=25.4mm, 1cm=28.453pt)
 
-Package hyperref Info: Link coloring OFF on input line 39.
+Package hyperref Info: Link coloring OFF on input line 44.
 (main.out) (main.out)
 \@outlinefile=\write3
 \openout3 = `main.out'.
 
-<imagenes/01-imagen-portada.png, id=115, 373.395pt x 950.80219pt>
-File: imagenes/01-imagen-portada.png Graphic file (type png)
-<use imagenes/01-imagen-portada.png>
-Package pdftex.def Info: imagenes/01-imagen-portada.png  used on input line 51.
+<imagenes/001-imagen-portada.png, id=159, 373.395pt x 950.80219pt>
+File: imagenes/001-imagen-portada.png Graphic file (type png)
+<use imagenes/001-imagen-portada.png>
+Package pdftex.def Info: imagenes/001-imagen-portada.png  used on input line 56.
 (pdftex.def)             Requested size: 165.02661pt x 420.21129pt.
 LaTeX Font Info:    External font `cmex10' loaded for size
-(Font)              <12> on input line 52.
+(Font)              <12> on input line 57.
 LaTeX Font Info:    External font `cmex10' loaded for size
-(Font)              <8> on input line 52.
+(Font)              <8> on input line 57.
 LaTeX Font Info:    External font `cmex10' loaded for size
-(Font)              <6> on input line 52.
+(Font)              <6> on input line 57.
 
-Underfull \hbox (badness 10000) in paragraph at lines 54--69
+Underfull \hbox (badness 10000) in paragraph at lines 59--74
 
  []
 
 
-Underfull \hbox (badness 3977) in paragraph at lines 54--69
+Underfull \hbox (badness 3977) in paragraph at lines 59--74
 \T1/cmr/bx/n/12 Master Uni-ver-si-ta-rio de Ci-ber-
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 54--69
+Underfull \hbox (badness 10000) in paragraph at lines 59--74
 
  []
 
 
-Underfull \hbox (badness 4181) in paragraph at lines 54--69
+Underfull \hbox (badness 4181) in paragraph at lines 59--74
 \T1/cmr/bx/n/12 M1.881 - TFM - An�-li-sis fo-
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 54--69
+Underfull \hbox (badness 10000) in paragraph at lines 59--74
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 54--69
+Underfull \hbox (badness 10000) in paragraph at lines 59--74
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 54--69
+Underfull \hbox (badness 10000) in paragraph at lines 59--74
 
  []
 
 
-Overfull \hbox (20.2353pt too wide) in paragraph at lines 50--70
+Overfull \hbox (20.2353pt too wide) in paragraph at lines 55--75
 []$[]$ $[]$ 
  []
 
 [1
 
-{C:/Users/jrodg85/AppData/Local/MiKTeX/fonts/map/pdftex/pdftex.map} <./imagenes/01-imagen-portada.png>] (chapter/001-agradecimientos/001-agradecimientos.tex.)
-<imagenes/02-imagen-cabecera.png, id=123, 1490.56876pt x 104.64093pt>
-File: imagenes/02-imagen-cabecera.png Graphic file (type png)
-<use imagenes/02-imagen-cabecera.png>
-Package pdftex.def Info: imagenes/02-imagen-cabecera.png  used on input line 84.
+{C:/Users/jrodg85/AppData/Local/MiKTeX/fonts/map/pdftex/pdftex.map} <./imagenes/001-imagen-portada.png>] (chapter/000-deuda-tecnica/000-deuda-tecnica.tex)
+<imagenes/002-imagen-cabecera.png, id=167, 1490.56876pt x 104.64093pt>
+File: imagenes/002-imagen-cabecera.png Graphic file (type png)
+<use imagenes/002-imagen-cabecera.png>
+Package pdftex.def Info: imagenes/002-imagen-cabecera.png  used on input line 90.
 (pdftex.def)             Requested size: 412.55737pt x 28.96234pt.
 
 pdfTeX warning (ext4): destination with the same identifier (name{page.I}) has been already used, duplicate ignored
 <to be read again> 
                    \relax 
-l.84 \tableofcontents
-                      % Crea el índice [1
+l.90 \clearpage
+                [1
 
 
- <./imagenes/02-imagen-cabecera.png>] (main.toc
+ <./imagenes/002-imagen-cabecera.png>] (chapter/001-agradecimientos/001-agradecimientos.tex)
+File: imagenes/002-imagen-cabecera.png Graphic file (type png)
+<use imagenes/002-imagen-cabecera.png>
+Package pdftex.def Info: imagenes/002-imagen-cabecera.png  used on input line 96.
+(pdftex.def)             Requested size: 412.55737pt x 28.96234pt.
+ [2
+
+
+] (main.toc
 LaTeX Info: Redefining \. on input line 1.
 LaTeX Info: Redefining \% on input line 1.
-)
+File: imagenes/002-imagen-cabecera.png Graphic file (type png)
+<use imagenes/002-imagen-cabecera.png>
+Package pdftex.def Info: imagenes/002-imagen-cabecera.png  used on input line 35.
+(pdftex.def)             Requested size: 412.55737pt x 28.96234pt.
+ [3
+
+
+])
 \tf@toc=\write4
 \openout4 = `main.toc'.
 
-File: imagenes/02-imagen-cabecera.png Graphic file (type png)
-<use imagenes/02-imagen-cabecera.png>
-Package pdftex.def Info: imagenes/02-imagen-cabecera.png  used on input line 86.
+File: imagenes/002-imagen-cabecera.png Graphic file (type png)
+<use imagenes/002-imagen-cabecera.png>
+Package pdftex.def Info: imagenes/002-imagen-cabecera.png  used on input line 100.
 (pdftex.def)             Requested size: 412.55737pt x 28.96234pt.
- [2
-
-]
+ [4]
 Cap\'{\i }tulo 1.
-(chapter/002-plan-de-trabajo/002-plan-de-trabajo.tex.) (chapter/002-plan-de-trabajo/sections/002-01-problema-resolver.tex) (chapter/002-plan-de-trabajo/sections/002-02-objetivos.tex) (chapter/002-plan-de-trabajo/sections/002-03-descripción-del-entorno-de-trabajo.tex) (chapter/002-plan-de-trabajo/sections/002-04-listado-de-tareas.tex) (chapter/002-plan-de-trabajo/sections/002-05-planificacion-temporal-de-las-tareas.tex) (chapter/002-plan-de-trabajo/sections/002-06-revision-del-estado-del-arte-de-la-informatica-forense.tex)
-File: imagenes/02-imagen-cabecera.png Graphic file (type png)
-<use imagenes/02-imagen-cabecera.png>
-Package pdftex.def Info: imagenes/02-imagen-cabecera.png  used on input line 110.
-(pdftex.def)             Requested size: 412.55737pt x 28.96234pt.
- [1
+(chapter/002-plan-de-trabajo/002-plan-de-trabajo.tex.)
+Overfull \hbox (8.43027pt too wide) in paragraph at lines 5--105
+[]\T1/cmr/bx/n/12 DEUDA T�C-NI-CA: Pen-dien-te de Re-fe-ren-ciar!!! ENUN-CIA-DO TFM[]
+ []
 
-]
-Cap\'{\i }tulo 2.
-(chapter/003-extremos-del-analisis-y-prevision-de-pruebas-tecnicas/003-extremos-del-analisis-y-prevision-de-pruebas-tecnicas.tex) (chapter/003-extremos-del-analisis-y-prevision-de-pruebas-tecnicas/sections/003-01-propuesta-de-extremos.tex) (chapter/003-extremos-del-analisis-y-prevision-de-pruebas-tecnicas/sections/003-02-prevision-de-pruebas-tecnicas.tex)
-File: imagenes/02-imagen-cabecera.png Graphic file (type png)
-<use imagenes/02-imagen-cabecera.png>
-Package pdftex.def Info: imagenes/02-imagen-cabecera.png  used on input line 119.
+
+Underfull \hbox (badness 10000) in paragraph at lines 5--105
+
+ []
+
+File: imagenes/002-imagen-cabecera.png Graphic file (type png)
+<use imagenes/002-imagen-cabecera.png>
+Package pdftex.def Info: imagenes/002-imagen-cabecera.png  used on input line 105.
+(pdftex.def)             Requested size: 412.55737pt x 28.96234pt.
+[1
+
+] (chapter/002-plan-de-trabajo/sections/002-01-problema-a-resolver.tex)
+File: imagenes/002-imagen-cabecera.png Graphic file (type png)
+<use imagenes/002-imagen-cabecera.png>
+Package pdftex.def Info: imagenes/002-imagen-cabecera.png  used on input line 109.
 (pdftex.def)             Requested size: 412.55737pt x 28.96234pt.
  [2
 
-]
-Cap\'{\i }tulo 3.
-(chapter/004-analisis-de-la-memoria-ram/004-analisis-de-la-memoria-ram.tex) (chapter/004-analisis-de-la-memoria-ram/sections/004-01-acciones-previas-al-analisis-de-ram.tex) (chapter/004-analisis-de-la-memoria-ram/sections/004-02-datos-de-interes-de-la-memoria-ram.tex) (chapter/004-analisis-de-la-memoria-ram/sections/004-03-sistema-operativo-de-la-memoria-RAM-analizada.tex) (chapter/004-analisis-de-la-memoria-ram/sections/004-04-busqueda-de-procesos-en-funcionamiento-de-interés-para-el-análisis.tex) (chapter/004-analisis-de-la-memoria-ram/sections/004-05-Analisis-y-extraccion-de-procesos-sospechosos.tex) (chapter/004-analisis-de-la-memoria-ram/sections/004-06-listado-de-conexiones-de-red-y-conexiones-sospechosas.tex)
-File: imagenes/02-imagen-cabecera.png Graphic file (type png)
-<use imagenes/02-imagen-cabecera.png>
-Package pdftex.def Info: imagenes/02-imagen-cabecera.png  used on input line 140.
+] (chapter/002-plan-de-trabajo/sections/002-02-objetivos.tex
+File: imagenes/002-imagen-cabecera.png Graphic file (type png)
+<use imagenes/002-imagen-cabecera.png>
+Package pdftex.def Info: imagenes/002-imagen-cabecera.png  used on input line 36.
 (pdftex.def)             Requested size: 412.55737pt x 28.96234pt.
  [3
 
 ]
-Cap\'{\i }tulo 4.
-(chapter/005-analisis-de-disco-duro/005-analisis-del-disco-duro.tex) (chapter/005-analisis-de-disco-duro/sections/005-01-acciones-previas-al-analisis-de-disco-duro.tex) (chapter/005-analisis-de-disco-duro/sections/005-02-datos-de-interes-del-disco-duro.tex) (chapter/005-analisis-de-disco-duro/sections/005-03-usuarios-del-sistema.tex) (chapter/005-analisis-de-disco-duro/sections/005-04-analisis-de-evidencias-del-disco-duro.tex)
-File: imagenes/02-imagen-cabecera.png Graphic file (type png)
-<use imagenes/02-imagen-cabecera.png>
-Package pdftex.def Info: imagenes/02-imagen-cabecera.png  used on input line 155.
+File: imagenes/002-imagen-cabecera.png Graphic file (type png)
+<use imagenes/002-imagen-cabecera.png>
+Package pdftex.def Info: imagenes/002-imagen-cabecera.png  used on input line 65.
 (pdftex.def)             Requested size: 412.55737pt x 28.96234pt.
- [4
+ [4]
+File: imagenes/002-imagen-cabecera.png Graphic file (type png)
+<use imagenes/002-imagen-cabecera.png>
+Package pdftex.def Info: imagenes/002-imagen-cabecera.png  used on input line 90.
+(pdftex.def)             Requested size: 412.55737pt x 28.96234pt.
+ [5]
+Overfull \hbox (8.43027pt too wide) in paragraph at lines 94--95
+[]\T1/cmr/bx/n/12 DEUDA T�C-NI-CA: Pen-dien-te de Re-fe-ren-ciar!!! ENUN-CIA-DO TFM[] 
+ []
+
+)
+File: imagenes/002-imagen-cabecera.png Graphic file (type png)
+<use imagenes/002-imagen-cabecera.png>
+Package pdftex.def Info: imagenes/002-imagen-cabecera.png  used on input line 113.
+(pdftex.def)             Requested size: 412.55737pt x 28.96234pt.
+ [6] (chapter/002-plan-de-trabajo/sections/002-03-descripción-del-entorno-de-trabajo.tex)
+File: imagenes/002-imagen-cabecera.png Graphic file (type png)
+<use imagenes/002-imagen-cabecera.png>
+Package pdftex.def Info: imagenes/002-imagen-cabecera.png  used on input line 117.
+(pdftex.def)             Requested size: 412.55737pt x 28.96234pt.
+ [7
+
+] (chapter/002-plan-de-trabajo/sections/002-04-listado-de-tareas.tex
+File: imagenes/002-imagen-cabecera.png Graphic file (type png)
+<use imagenes/002-imagen-cabecera.png>
+Package pdftex.def Info: imagenes/002-imagen-cabecera.png  used on input line 39.
+(pdftex.def)             Requested size: 412.55737pt x 28.96234pt.
+ [8
+
+])
+File: imagenes/002-imagen-cabecera.png Graphic file (type png)
+<use imagenes/002-imagen-cabecera.png>
+Package pdftex.def Info: imagenes/002-imagen-cabecera.png  used on input line 121.
+(pdftex.def)             Requested size: 412.55737pt x 28.96234pt.
+ [9] (chapter/002-plan-de-trabajo/sections/002-05-planificacion-temporal-de-las-tareas.tex
+<imagenes/003-diagrama-de-gantt-pec-01.png, id=393, 412.54124pt x 232.61906pt>
+File: imagenes/003-diagrama-de-gantt-pec-01.png Graphic file (type png)
+<use imagenes/003-diagrama-de-gantt-pec-01.png>
+Package pdftex.def Info: imagenes/003-diagrama-de-gantt-pec-01.png  used on input line 7.
+(pdftex.def)             Requested size: 330.05322pt x 186.10968pt.
+File: imagenes/002-imagen-cabecera.png Graphic file (type png)
+<use imagenes/002-imagen-cabecera.png>
+Package pdftex.def Info: imagenes/002-imagen-cabecera.png  used on input line 12.
+(pdftex.def)             Requested size: 412.55737pt x 28.96234pt.
+ [10
+
+ <./imagenes/003-diagrama-de-gantt-pec-01.png>]
+<imagenes/004-diagrama-de-gantt-pec-02.png, id=399, 673.76718pt x 439.6425pt>
+File: imagenes/004-diagrama-de-gantt-pec-02.png Graphic file (type png)
+<use imagenes/004-diagrama-de-gantt-pec-02.png>
+Package pdftex.def Info: imagenes/004-diagrama-de-gantt-pec-02.png  used on input line 18.
+(pdftex.def)             Requested size: 330.05322pt x 215.36633pt.
+File: imagenes/002-imagen-cabecera.png Graphic file (type png)
+<use imagenes/002-imagen-cabecera.png>
+Package pdftex.def Info: imagenes/002-imagen-cabecera.png  used on input line 23.
+(pdftex.def)             Requested size: 412.55737pt x 28.96234pt.
+ [11
+
+ <./imagenes/004-diagrama-de-gantt-pec-02.png>]
+<imagenes/005-diagrama-de-gantt-pec-03.png, id=405, 569.12625pt x 343.2825pt>
+File: imagenes/005-diagrama-de-gantt-pec-03.png Graphic file (type png)
+<use imagenes/005-diagrama-de-gantt-pec-03.png>
+Package pdftex.def Info: imagenes/005-diagrama-de-gantt-pec-03.png  used on input line 29.
+(pdftex.def)             Requested size: 330.05322pt x 199.08826pt.
+File: imagenes/002-imagen-cabecera.png Graphic file (type png)
+<use imagenes/002-imagen-cabecera.png>
+Package pdftex.def Info: imagenes/002-imagen-cabecera.png  used on input line 35.
+(pdftex.def)             Requested size: 412.55737pt x 28.96234pt.
+ [12
+
+ <./imagenes/005-diagrama-de-gantt-pec-03.png>]
+<imagenes/006-diagrama-de-gantt-pec-04.png, id=411, 587.94656pt x 197.98969pt>
+File: imagenes/006-diagrama-de-gantt-pec-04.png Graphic file (type png)
+<use imagenes/006-diagrama-de-gantt-pec-04.png>
+Package pdftex.def Info: imagenes/006-diagrama-de-gantt-pec-04.png  used on input line 41.
+(pdftex.def)             Requested size: 330.05322pt x 111.14536pt.
+)
+File: imagenes/002-imagen-cabecera.png Graphic file (type png)
+<use imagenes/002-imagen-cabecera.png>
+Package pdftex.def Info: imagenes/002-imagen-cabecera.png  used on input line 125.
+(pdftex.def)             Requested size: 412.55737pt x 28.96234pt.
+ [13
+
+ <./imagenes/006-diagrama-de-gantt-pec-04.png>] (chapter/002-plan-de-trabajo/sections/002-06-revision-del-estado-del-arte-de-la-informatica-forense.tex
+
+Package hyperref Warning: Token not allowed in a PDF string (Unicode):
+(hyperref)                removing `\@ifnextchar' on input line 1.
+
+File: imagenes/002-imagen-cabecera.png Graphic file (type png)
+<use imagenes/002-imagen-cabecera.png>
+Package pdftex.def Info: imagenes/002-imagen-cabecera.png  used on input line 27.
+(pdftex.def)             Requested size: 412.55737pt x 28.96234pt.
+[14
+
+]
+File: imagenes/002-imagen-cabecera.png Graphic file (type png)
+<use imagenes/002-imagen-cabecera.png>
+Package pdftex.def Info: imagenes/002-imagen-cabecera.png  used on input line 73.
+(pdftex.def)             Requested size: 412.55737pt x 28.96234pt.
+ [15]
+File: imagenes/002-imagen-cabecera.png Graphic file (type png)
+<use imagenes/002-imagen-cabecera.png>
+Package pdftex.def Info: imagenes/002-imagen-cabecera.png  used on input line 128.
+(pdftex.def)             Requested size: 412.55737pt x 28.96234pt.
+ [16]
+File: imagenes/002-imagen-cabecera.png Graphic file (type png)
+<use imagenes/002-imagen-cabecera.png>
+Package pdftex.def Info: imagenes/002-imagen-cabecera.png  used on input line 142.
+(pdftex.def)             Requested size: 412.55737pt x 28.96234pt.
+ [17]
+File: imagenes/002-imagen-cabecera.png Graphic file (type png)
+<use imagenes/002-imagen-cabecera.png>
+Package pdftex.def Info: imagenes/002-imagen-cabecera.png  used on input line 164.
+(pdftex.def)             Requested size: 412.55737pt x 28.96234pt.
+ [18]
+File: imagenes/002-imagen-cabecera.png Graphic file (type png)
+<use imagenes/002-imagen-cabecera.png>
+Package pdftex.def Info: imagenes/002-imagen-cabecera.png  used on input line 192.
+(pdftex.def)             Requested size: 412.55737pt x 28.96234pt.
+ [19]
+Overfull \hbox (46.15329pt too wide) in paragraph at lines 221--235
+ [][] 
+ []
+
+
+LaTeX Warning: `!h' float specifier changed to `!ht'.
+
+File: imagenes/002-imagen-cabecera.png Graphic file (type png)
+<use imagenes/002-imagen-cabecera.png>
+Package pdftex.def Info: imagenes/002-imagen-cabecera.png  used on input line 240.
+(pdftex.def)             Requested size: 412.55737pt x 28.96234pt.
+[20]
+LaTeX Font Info:    Trying to load font information for T1+cmtt on input line 242.
+ (C:\Program Files\MiKTeX\tex/latex/base\t1cmtt.fd
+File: t1cmtt.fd 2023/04/13 v2.5m Standard LaTeX font definitions
+)
+Overfull \hbox (86.48557pt too wide) in paragraph at lines 246--247
+[]\T1/cmr/m/n/12 Forensik Tool-kit: []$\T1/cmtt/m/n/12 https : / / accessdata . com / products-[]services / forensic-[]toolkit-[]ftk$[]\T1/cmr/m/n/12 . 
+ []
+
+
+Overfull \hbox (0.30766pt too wide) in paragraph at lines 263--264
+[]\T1/cmr/m/n/12 Sleuth Kit (Fo-ren-sics Kit. Com-mand Li-ne): []$\T1/cmtt/m/n/12 https : / / www . sleuthkit . org/$[]\T1/cmr/m/n/12 . 
+ []
+
+File: imagenes/002-imagen-cabecera.png Graphic file (type png)
+<use imagenes/002-imagen-cabecera.png>
+Package pdftex.def Info: imagenes/002-imagen-cabecera.png  used on input line 264.
+(pdftex.def)             Requested size: 412.55737pt x 28.96234pt.
+[21]
+File: imagenes/002-imagen-cabecera.png Graphic file (type png)
+<use imagenes/002-imagen-cabecera.png>
+Package pdftex.def Info: imagenes/002-imagen-cabecera.png  used on input line 317.
+(pdftex.def)             Requested size: 412.55737pt x 28.96234pt.
+ [22])
+File: imagenes/002-imagen-cabecera.png Graphic file (type png)
+<use imagenes/002-imagen-cabecera.png>
+Package pdftex.def Info: imagenes/002-imagen-cabecera.png  used on input line 129.
+(pdftex.def)             Requested size: 412.55737pt x 28.96234pt.
+ [23]
+Cap\'{\i }tulo 2.
+(chapter/003-extremos-del-analisis-y-prevision-de-pruebas-tecnicas/003-extremos-del-analisis-y-prevision-de-pruebas-tecnicas.tex)
+File: imagenes/002-imagen-cabecera.png Graphic file (type png)
+<use imagenes/002-imagen-cabecera.png>
+Package pdftex.def Info: imagenes/002-imagen-cabecera.png  used on input line 133.
+(pdftex.def)             Requested size: 412.55737pt x 28.96234pt.
+ [24
+
+
+] (chapter/003-extremos-del-analisis-y-prevision-de-pruebas-tecnicas/sections/003-01-propuesta-de-extremos.tex)
+File: imagenes/002-imagen-cabecera.png Graphic file (type png)
+<use imagenes/002-imagen-cabecera.png>
+Package pdftex.def Info: imagenes/002-imagen-cabecera.png  used on input line 137.
+(pdftex.def)             Requested size: 412.55737pt x 28.96234pt.
+ [25
+
+] (chapter/003-extremos-del-analisis-y-prevision-de-pruebas-tecnicas/sections/003-02-prevision-de-pruebas-tecnicas.tex)
+File: imagenes/002-imagen-cabecera.png Graphic file (type png)
+<use imagenes/002-imagen-cabecera.png>
+Package pdftex.def Info: imagenes/002-imagen-cabecera.png  used on input line 141.
+(pdftex.def)             Requested size: 412.55737pt x 28.96234pt.
+ [26
+
+]
+Cap\'{\i }tulo 3.
+(chapter/004-analisis-de-la-memoria-ram/004-analisis-de-la-memoria-ram.tex)
+File: imagenes/002-imagen-cabecera.png Graphic file (type png)
+<use imagenes/002-imagen-cabecera.png>
+Package pdftex.def Info: imagenes/002-imagen-cabecera.png  used on input line 145.
+(pdftex.def)             Requested size: 412.55737pt x 28.96234pt.
+ [27
+
+
+] (chapter/004-analisis-de-la-memoria-ram/sections/004-01-acciones-previas-al-analisis-de-ram.tex)
+File: imagenes/002-imagen-cabecera.png Graphic file (type png)
+<use imagenes/002-imagen-cabecera.png>
+Package pdftex.def Info: imagenes/002-imagen-cabecera.png  used on input line 149.
+(pdftex.def)             Requested size: 412.55737pt x 28.96234pt.
+ [28
+
+] (chapter/004-analisis-de-la-memoria-ram/sections/004-02-datos-de-interes-de-la-memoria-ram.tex)
+File: imagenes/002-imagen-cabecera.png Graphic file (type png)
+<use imagenes/002-imagen-cabecera.png>
+Package pdftex.def Info: imagenes/002-imagen-cabecera.png  used on input line 153.
+(pdftex.def)             Requested size: 412.55737pt x 28.96234pt.
+ [29
+
+] (chapter/004-analisis-de-la-memoria-ram/sections/004-03-sistema-operativo-de-la-memoria-RAM-analizada.tex)
+File: imagenes/002-imagen-cabecera.png Graphic file (type png)
+<use imagenes/002-imagen-cabecera.png>
+Package pdftex.def Info: imagenes/002-imagen-cabecera.png  used on input line 157.
+(pdftex.def)             Requested size: 412.55737pt x 28.96234pt.
+ [30
+
+] (chapter/004-analisis-de-la-memoria-ram/sections/004-04-busqueda-de-procesos-en-funcionamiento-de-interés-para-el-análisis.tex)
+File: imagenes/002-imagen-cabecera.png Graphic file (type png)
+<use imagenes/002-imagen-cabecera.png>
+Package pdftex.def Info: imagenes/002-imagen-cabecera.png  used on input line 161.
+(pdftex.def)             Requested size: 412.55737pt x 28.96234pt.
+ [31
+
+] (chapter/004-analisis-de-la-memoria-ram/sections/004-05-Analisis-y-extraccion-de-procesos-sospechosos.tex)
+File: imagenes/002-imagen-cabecera.png Graphic file (type png)
+<use imagenes/002-imagen-cabecera.png>
+Package pdftex.def Info: imagenes/002-imagen-cabecera.png  used on input line 165.
+(pdftex.def)             Requested size: 412.55737pt x 28.96234pt.
+ [32
+
+] (chapter/004-analisis-de-la-memoria-ram/sections/004-06-listado-de-conexiones-de-red-y-conexiones-sospechosas.tex)
+File: imagenes/002-imagen-cabecera.png Graphic file (type png)
+<use imagenes/002-imagen-cabecera.png>
+Package pdftex.def Info: imagenes/002-imagen-cabecera.png  used on input line 169.
+(pdftex.def)             Requested size: 412.55737pt x 28.96234pt.
+ [33
+
+]
+Cap\'{\i }tulo 4.
+(chapter/005-analisis-de-disco-duro/005-analisis-del-disco-duro.tex)
+File: imagenes/002-imagen-cabecera.png Graphic file (type png)
+<use imagenes/002-imagen-cabecera.png>
+Package pdftex.def Info: imagenes/002-imagen-cabecera.png  used on input line 173.
+(pdftex.def)             Requested size: 412.55737pt x 28.96234pt.
+ [34
+
+
+] (chapter/005-analisis-de-disco-duro/sections/005-01-acciones-previas-al-analisis-de-disco-duro.tex)
+File: imagenes/002-imagen-cabecera.png Graphic file (type png)
+<use imagenes/002-imagen-cabecera.png>
+Package pdftex.def Info: imagenes/002-imagen-cabecera.png  used on input line 177.
+(pdftex.def)             Requested size: 412.55737pt x 28.96234pt.
+ [35
+
+] (chapter/005-analisis-de-disco-duro/sections/005-02-datos-de-interes-del-disco-duro.tex)
+File: imagenes/002-imagen-cabecera.png Graphic file (type png)
+<use imagenes/002-imagen-cabecera.png>
+Package pdftex.def Info: imagenes/002-imagen-cabecera.png  used on input line 181.
+(pdftex.def)             Requested size: 412.55737pt x 28.96234pt.
+ [36
+
+] (chapter/005-analisis-de-disco-duro/sections/005-03-usuarios-del-sistema.tex)
+File: imagenes/002-imagen-cabecera.png Graphic file (type png)
+<use imagenes/002-imagen-cabecera.png>
+Package pdftex.def Info: imagenes/002-imagen-cabecera.png  used on input line 185.
+(pdftex.def)             Requested size: 412.55737pt x 28.96234pt.
+ [37
+
+] (chapter/005-analisis-de-disco-duro/sections/005-04-analisis-de-evidencias-del-disco-duro.tex)
+File: imagenes/002-imagen-cabecera.png Graphic file (type png)
+<use imagenes/002-imagen-cabecera.png>
+Package pdftex.def Info: imagenes/002-imagen-cabecera.png  used on input line 189.
+(pdftex.def)             Requested size: 412.55737pt x 28.96234pt.
+ [38
 
 ]
 Cap\'{\i }tulo 5.
 (chapter/006-resumen-ejecutivo/006-resumen-ejecutivo.tex)
-File: imagenes/02-imagen-cabecera.png Graphic file (type png)
-<use imagenes/02-imagen-cabecera.png>
-Package pdftex.def Info: imagenes/02-imagen-cabecera.png  used on input line 158.
+File: imagenes/002-imagen-cabecera.png Graphic file (type png)
+<use imagenes/002-imagen-cabecera.png>
+Package pdftex.def Info: imagenes/002-imagen-cabecera.png  used on input line 193.
 (pdftex.def)             Requested size: 412.55737pt x 28.96234pt.
- [5
+ [39
+
 
 ]
 Cap\'{\i }tulo 6.
 (chapter/007-informe-pericial/007-informe-pericial.tex)
-File: imagenes/02-imagen-cabecera.png Graphic file (type png)
-<use imagenes/02-imagen-cabecera.png>
-Package pdftex.def Info: imagenes/02-imagen-cabecera.png  used on input line 161.
+File: imagenes/002-imagen-cabecera.png Graphic file (type png)
+<use imagenes/002-imagen-cabecera.png>
+Package pdftex.def Info: imagenes/002-imagen-cabecera.png  used on input line 197.
 (pdftex.def)             Requested size: 412.55737pt x 28.96234pt.
- [6
+ [40
+
 
 ]
 Cap\'{\i }tulo 7.
 (chapter/008-conclusiones/008-conclusiones.tex)
-File: imagenes/02-imagen-cabecera.png Graphic file (type png)
-<use imagenes/02-imagen-cabecera.png>
-Package pdftex.def Info: imagenes/02-imagen-cabecera.png  used on input line 164.
+File: imagenes/002-imagen-cabecera.png Graphic file (type png)
+<use imagenes/002-imagen-cabecera.png>
+Package pdftex.def Info: imagenes/002-imagen-cabecera.png  used on input line 201.
 (pdftex.def)             Requested size: 412.55737pt x 28.96234pt.
- [7
+ [41
+
 
 ]
 Cap\'{\i }tulo 8.
-(referencias.bib)
-File: imagenes/02-imagen-cabecera.png Graphic file (type png)
-<use imagenes/02-imagen-cabecera.png>
-Package pdftex.def Info: imagenes/02-imagen-cabecera.png  used on input line 167.
+(chapter/009-anexos/009-anexos.tex)
+File: imagenes/002-imagen-cabecera.png Graphic file (type png)
+<use imagenes/002-imagen-cabecera.png>
+Package pdftex.def Info: imagenes/002-imagen-cabecera.png  used on input line 205.
 (pdftex.def)             Requested size: 412.55737pt x 28.96234pt.
- [8
+ [42
+
+
+] (chapter/009-anexos/sections/009-01-glosario-de-terminos-abreviaturas-y-acronimos.tex)
+File: imagenes/002-imagen-cabecera.png Graphic file (type png)
+<use imagenes/002-imagen-cabecera.png>
+Package pdftex.def Info: imagenes/002-imagen-cabecera.png  used on input line 209.
+(pdftex.def)             Requested size: 412.55737pt x 28.96234pt.
+ [43
+
+] (chapter/009-anexos/sections/009-02-imagenes.tex)
+File: imagenes/002-imagen-cabecera.png Graphic file (type png)
+<use imagenes/002-imagen-cabecera.png>
+Package pdftex.def Info: imagenes/002-imagen-cabecera.png  used on input line 213.
+(pdftex.def)             Requested size: 412.55737pt x 28.96234pt.
+ [44
 
 ]
-Cap\'{\i }tulo 9.
-(chapter/009-anexos/009-anexos.tex)
-File: imagenes/02-imagen-cabecera.png Graphic file (type png)
-<use imagenes/02-imagen-cabecera.png>
-Package pdftex.def Info: imagenes/02-imagen-cabecera.png  used on input line 173.
-(pdftex.def)             Requested size: 412.55737pt x 28.96234pt.
- [9
-
-] (main.aux
+No file main.bbl.
+(main.aux
 LaTeX Info: Redefining \. on input line 22.
 LaTeX Info: Redefining \% on input line 22.
 )
@@ -505,21 +844,25 @@ LaTeX Info: Redefining \% on input line 22.
 LaTeX2e <2023-06-01> patch level 1
 L3 programming layer <2023-08-29>
  ***********
+
+
+LaTeX Warning: There were multiply-defined labels.
+
 Package rerunfilecheck Info: File `main.out' has not changed.
-(rerunfilecheck)             Checksum: 02971D3013C477C9E90B52B8D01FAAA0;6214.
+(rerunfilecheck)             Checksum: 1705DA64AAB73D5DF9D6D62863A7056D;8552.
  ) 
 Here is how much of TeX's memory you used:
- 12297 strings out of 475248
- 207353 string characters out of 5767622
- 1930785 words of memory out of 5000000
- 33519 multiletter control sequences out of 15000+600000
- 566801 words of font info for 53 fonts, out of 8000000 for 9000
+ 13038 strings out of 475248
+ 218809 string characters out of 5767622
+ 1932785 words of memory out of 5000000
+ 34054 multiletter control sequences out of 15000+600000
+ 570442 words of font info for 59 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
- 79i,15n,93p,533b,474s stack positions out of 10000i,1000n,20000p,200000b,200000s
- <C:\Users\jrodg85\AppData\Local\MiKTeX\fonts/pk/ljfour/jknappen/ec/dpi600\ecbx1728.pk> <C:\Users\jrodg85\AppData\Local\MiKTeX\fonts/pk/ljfour/jknappen/ec/dpi600\ecxc1200.pk> <C:\Users\jrodg85\AppData\Local\MiKTeX\fonts/pk/ljfour/jknappen/ec/dpi600\eccc1200.pk> <C:\Users\jrodg85\AppData\Local\MiKTeX\fonts/pk/ljfour/jknappen/ec/dpi600\ecrm1200.pk> <C:\Users\jrodg85\AppData\Local\MiKTeX\fonts/pk/ljfour/jknappen/ec/dpi600\ecbx1200.pk> <C:\Users\jrodg85\AppData\Local\MiKTeX\fonts/pk/ljfour/jknappen/ec/dpi600\ecbx2488.pk>
-Output written on main.pdf (12 pages, 138542 bytes).
+ 79i,16n,93p,1227b,819s stack positions out of 10000i,1000n,20000p,200000b,200000s
+ <C:\Users\jrodg85\AppData\Local\MiKTeX\fonts/pk/ljfour/jknappen/ec/dpi600\ecrm0800.pk> <C:\Users\jrodg85\AppData\Local\MiKTeX\fonts/pk/ljfour/jknappen/ec/dpi600\ectt1200.pk> <C:\Users\jrodg85\AppData\Local\MiKTeX\fonts/pk/ljfour/jknappen/ec/dpi600\tcrm1200.pk> <C:\Users\jrodg85\AppData\Local\MiKTeX\fonts/pk/ljfour/jknappen/ec/dpi600\ecbx1440.pk> <C:\Users\jrodg85\AppData\Local\MiKTeX\fonts/pk/ljfour/jknappen/ec/dpi600\ecti1200.pk> <C:\Users\jrodg85\AppData\Local\MiKTeX\fonts/pk/ljfour/jknappen/ec/dpi600\ecbx1728.pk> <C:\Users\jrodg85\AppData\Local\MiKTeX\fonts/pk/ljfour/jknappen/ec/dpi600\ecxc1200.pk> <C:\Users\jrodg85\AppData\Local\MiKTeX\fonts/pk/ljfour/jknappen/ec/dpi600\eccc1200.pk> <C:\Users\jrodg85\AppData\Local\MiKTeX\fonts/pk/ljfour/jknappen/ec/dpi600\ecrm1200.pk> <C:\Users\jrodg85\AppData\Local\MiKTeX\fonts/pk/ljfour/jknappen/ec/dpi600\ecbx1200.pk> <C:\Users\jrodg85\AppData\Local\MiKTeX\fonts/pk/ljfour/jknappen/ec/dpi600\ecbx2488.pk><C:/Program Files/MiKTeX/fonts/type1/public/amsfonts/cm/cmsy8.pfb>
+Output written on main.pdf (49 pages, 421735 bytes).
 PDF statistics:
- 431 PDF objects out of 1000 (max. 8388607)
- 41 named destinations out of 1000 (max. 500000)
- 235 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 1004 PDF objects out of 1200 (max. 8388607)
+ 219 named destinations out of 1000 (max. 500000)
+ 343 words of extra memory for PDF output out of 10000 (max. 10000000)
 

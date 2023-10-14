@@ -1,0 +1,37 @@
+@startgantt
+sunday are closed
+sat are coloured LightBlue
+
+2023-10-12 to 2023-10-12 are colored in LightGreen
+[TFM Análisis Forense José Enrique Rodríguez González] starts 2023-9-26
+[Presentacion de asignatura] lasts 3 days
+[PEC 01] starts 2023-9-30
+[Lectura enunciado actividad 1] lasts 1 days
+[Decision de formato de TFM] lasts 1 days
+[Maquetacion de TFM en LaTeX] lasts 4 days
+[Elaboración de índice] lasts 2 days
+[Refinamiento de TFM 1] lasts 1 days
+[Diagrama de Gantt] lasts 2 days
+[Problema a resolver y objetivos] lasts 2 days
+[Revisión del estado del arte de la informática forense] lasts 1 day
+[Refinamiento de TFM 2] lasts 1 days
+
+Project starts 2023-9-26
+[TFM Análisis Forense José Enrique Rodríguez González] ends 2023-10-16
+[Presentacion de asignatura] ends 2023-9-29
+[PEC 01] ends 2023-10-14
+[PEC 01] is coloured in IndianRed
+[Lectura enunciado actividad 1] ends 2023-9-30
+[Decision de formato de TFM] starts at [Lectura enunciado actividad 1]'s end
+[Maquetacion de TFM en LaTeX] starts at [Decision de formato de TFM]'s end
+[Elaboración de índice] starts 2 working days after [Decision de formato de TFM]'s end and lasts 2 days
+[Refinamiento de TFM 1] starts at [Elaboración de índice]'s end
+[Diagrama de Gantt] starts at [Refinamiento de TFM 1]'s end
+[Problema a resolver y objetivos] starts at [Diagrama de Gantt]'s end
+[Revisión del estado del arte de la informática forense] starts at [Problema a resolver y objetivos]'s end
+[Refinamiento de TFM 2] starts at [Revisión del estado del arte de la informática forense]'s end
+[Entrega de PEC 1] happens at [Refinamiento de TFM 2]'s end
+
+
+@endgantt
+

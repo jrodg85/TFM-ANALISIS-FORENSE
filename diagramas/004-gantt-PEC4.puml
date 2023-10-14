@@ -1,0 +1,31 @@
+@startgantt
+sunday are closed
+sat are coloured LightBlue
+2023-12-25 is colored in LightGreen
+2024-1-1 is colored in LightGreen
+
+
+
+[TFM Análisis Forense José Enrique Rodríguez González] starts 2023-12-16
+[PEC 04] starts 2023-12-29
+[Preparar presentación y video] lasts 9 days
+[Revisión de las anotaciones y consejos de la tutora de TFM 1] lasts 2 days
+[Ultimas correcciones Feedback TFM 1] lasts 5 days
+[Revisión de las anotaciones y consejos de la tutora de TFM 2] lasts 1 days
+[Ultimas correcciones Feedback TFM 2] lasts 3 days
+
+
+Project starts 2023-12-16
+[TFM Análisis Forense José Enrique Rodríguez González] ends 2024-1-11
+[PEC 04] ends 2024-1-10
+[PEC 04] is coloured in IndianRed
+[Preparar presentación y video] ends 2023-12-28
+[Revisión de las anotaciones y consejos de la tutora de TFM 1] ends 2023-12-30
+[Ultimas correcciones Feedback TFM 1] starts at [Revisión de las anotaciones y consejos de la tutora de TFM 1]'s end
+[Revisión de las anotaciones y consejos de la tutora de TFM 2] starts at [Ultimas correcciones Feedback TFM 1]'s end
+[Ultimas correcciones Feedback TFM 2] starts at [Revisión de las anotaciones y consejos de la tutora de TFM 2]'s end
+[Entrega de PEC 04] happens at [Ultimas correcciones Feedback TFM 2]'s end
+
+
+@endgantt
+

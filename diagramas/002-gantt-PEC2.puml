@@ -1,0 +1,57 @@
+@startgantt
+sunday are closed
+sat are coloured LightBlue
+2023-11-1 to 2023-11-1 are colored in LightGreen
+
+
+[TFM Análisis Forense José Enrique Rodríguez González] starts 2023-10-16
+[PEC 02] starts 2023-10-17
+[Lectura enunciado actividad 2] lasts 2 days
+[Extremos de análisis y previsión de pruebas: Introducción] lasts 1 days
+[Extremos de análisis] lasts 2 days
+[Previsión de pruebas] lasts 2 days
+[Análisis de la memoria RAM: Introduccion] lasts 1 days
+[Acciones previas al análisis de RAM] lasts 1 days
+[Sistema operativo y datos de interés de la memoria RAM] lasts 1 days
+[Busqueda de procesos en funcionamiento] lasts 1 days
+[Análisis y extracción de procesos sospechosos] lasts 1 days
+[Listado de conexiones de red y conexiones sospechosas] lasts 1 days
+[Refinamiento TFM 3] lasts 1 days
+[Feedback de la PEC 01] lasts 2 days
+[Analisis de disco duro: Introducción] lasts 1 days
+[Acciones previas al análisis de disco duro] lasts 1 days
+[Datos de interés y usuarios del sistema del disco duro analizado] lasts 1 days
+[Análisis de las evidencias del disco duro] lasts 1 days
+[Planning relativo al resumen ejecutivo] lasts 1 days
+[Planning relativo al informe pericial] lasts 1 days
+[Adaptacion al indice a los nuevos cambios en los capitulos 6 y 7] lasts 1 days
+[Refinamiento TFM 4] lasts 1 days
+
+Project starts 2023-10-16
+[TFM Análisis Forense José Enrique Rodríguez González] ends 2023-11-14
+[PEC 02] ends 2023-11-13
+[PEC 02] is coloured in IndianRed
+[Lectura enunciado actividad 2] ends 2023-10-18
+[Extremos de análisis y previsión de pruebas: Introducción] starts at [Lectura enunciado actividad 2]'s end
+[Extremos de análisis] starts at [Extremos de análisis y previsión de pruebas: Introducción]'s end
+[Previsión de pruebas] starts at [Extremos de análisis]'s end
+[Análisis de la memoria RAM: Introduccion] starts at [Previsión de pruebas]'s end
+[Acciones previas al análisis de RAM] starts at [Análisis de la memoria RAM: Introduccion]'s end
+[Sistema operativo y datos de interés de la memoria RAM] starts at [Acciones previas al análisis de RAM]'s end
+[Busqueda de procesos en funcionamiento] starts at [Sistema operativo y datos de interés de la memoria RAM]'s end
+[Análisis y extracción de procesos sospechosos] starts at [Busqueda de procesos en funcionamiento]'s end
+[Listado de conexiones de red y conexiones sospechosas] starts at [Análisis y extracción de procesos sospechosos]'s end
+[Refinamiento TFM 3] starts at [Listado de conexiones de red y conexiones sospechosas]'s end
+[Feedback de la PEC 01] starts at [Refinamiento TFM 3]'s end
+[Analisis de disco duro: Introducción] starts at [Feedback de la PEC 01]'s end
+[Acciones previas al análisis de disco duro] starts at [Analisis de disco duro: Introducción]'s end
+[Datos de interés y usuarios del sistema del disco duro analizado] starts at [Acciones previas al análisis de disco duro]'s end
+[Análisis de las evidencias del disco duro] starts at [Datos de interés y usuarios del sistema del disco duro analizado]'s end
+[Planning relativo al resumen ejecutivo] starts at [Análisis de las evidencias del disco duro]'s end
+[Planning relativo al informe pericial] starts at [Planning relativo al resumen ejecutivo]'s end
+[Adaptacion al indice a los nuevos cambios en los capitulos 6 y 7] starts at [Planning relativo al informe pericial]'s end
+[Refinamiento TFM 4] starts at [Adaptacion al indice a los nuevos cambios en los capitulos 6 y 7]'s end
+[Entrega de PEC 1] happens at [Refinamiento TFM 4]'s end
+
+@endgantt
+
