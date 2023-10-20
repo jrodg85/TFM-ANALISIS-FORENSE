@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.25 (MiKTeX 23.9.24) (preloaded format=pdflatex 2023.10.5)  14 OCT 2023 17:56
+This is pdfTeX, Version 3.141592653-2.6-1.40.25 (MiKTeX 23.9.24) (preloaded format=pdflatex 2023.10.5)  20 OCT 2023 12:34
 entering extended mode
  restricted \write18 enabled.
  file:line:error style messages enabled.
@@ -676,19 +676,24 @@ Package pdftex.def Info: imagenes/002-imagen-cabecera.png  used on input line 13
  [24
 
 
-] (chapter/003-extremos-del-analisis-y-prevision-de-pruebas-tecnicas/sections/003-01-propuesta-de-extremos.tex)
+]
+File: imagenes/002-imagen-cabecera.png Graphic file (type png)
+<use imagenes/002-imagen-cabecera.png>
+Package pdftex.def Info: imagenes/002-imagen-cabecera.png  used on input line 133.
+(pdftex.def)             Requested size: 412.55737pt x 28.96234pt.
+ [25] (chapter/003-extremos-del-analisis-y-prevision-de-pruebas-tecnicas/sections/003-01-propuesta-de-extremos.tex)
 File: imagenes/002-imagen-cabecera.png Graphic file (type png)
 <use imagenes/002-imagen-cabecera.png>
 Package pdftex.def Info: imagenes/002-imagen-cabecera.png  used on input line 137.
 (pdftex.def)             Requested size: 412.55737pt x 28.96234pt.
- [25
+ [26
 
 ] (chapter/003-extremos-del-analisis-y-prevision-de-pruebas-tecnicas/sections/003-02-prevision-de-pruebas-tecnicas.tex)
 File: imagenes/002-imagen-cabecera.png Graphic file (type png)
 <use imagenes/002-imagen-cabecera.png>
 Package pdftex.def Info: imagenes/002-imagen-cabecera.png  used on input line 141.
 (pdftex.def)             Requested size: 412.55737pt x 28.96234pt.
- [26
+ [27
 
 ]
 Cap\'{\i }tulo 3.
@@ -697,7 +702,7 @@ File: imagenes/002-imagen-cabecera.png Graphic file (type png)
 <use imagenes/002-imagen-cabecera.png>
 Package pdftex.def Info: imagenes/002-imagen-cabecera.png  used on input line 145.
 (pdftex.def)             Requested size: 412.55737pt x 28.96234pt.
- [27
+ [28
 
 
 ] (chapter/004-analisis-de-la-memoria-ram/sections/004-01-acciones-previas-al-analisis-de-ram.tex)
@@ -705,42 +710,42 @@ File: imagenes/002-imagen-cabecera.png Graphic file (type png)
 <use imagenes/002-imagen-cabecera.png>
 Package pdftex.def Info: imagenes/002-imagen-cabecera.png  used on input line 149.
 (pdftex.def)             Requested size: 412.55737pt x 28.96234pt.
- [28
+ [29
 
 ] (chapter/004-analisis-de-la-memoria-ram/sections/004-02-datos-de-interes-de-la-memoria-ram.tex)
 File: imagenes/002-imagen-cabecera.png Graphic file (type png)
 <use imagenes/002-imagen-cabecera.png>
 Package pdftex.def Info: imagenes/002-imagen-cabecera.png  used on input line 153.
 (pdftex.def)             Requested size: 412.55737pt x 28.96234pt.
- [29
+ [30
 
 ] (chapter/004-analisis-de-la-memoria-ram/sections/004-03-sistema-operativo-de-la-memoria-RAM-analizada.tex)
 File: imagenes/002-imagen-cabecera.png Graphic file (type png)
 <use imagenes/002-imagen-cabecera.png>
 Package pdftex.def Info: imagenes/002-imagen-cabecera.png  used on input line 157.
 (pdftex.def)             Requested size: 412.55737pt x 28.96234pt.
- [30
+ [31
 
 ] (chapter/004-analisis-de-la-memoria-ram/sections/004-04-busqueda-de-procesos-en-funcionamiento-de-interés-para-el-análisis.tex)
 File: imagenes/002-imagen-cabecera.png Graphic file (type png)
 <use imagenes/002-imagen-cabecera.png>
 Package pdftex.def Info: imagenes/002-imagen-cabecera.png  used on input line 161.
 (pdftex.def)             Requested size: 412.55737pt x 28.96234pt.
- [31
+ [32
 
 ] (chapter/004-analisis-de-la-memoria-ram/sections/004-05-Analisis-y-extraccion-de-procesos-sospechosos.tex)
 File: imagenes/002-imagen-cabecera.png Graphic file (type png)
 <use imagenes/002-imagen-cabecera.png>
 Package pdftex.def Info: imagenes/002-imagen-cabecera.png  used on input line 165.
 (pdftex.def)             Requested size: 412.55737pt x 28.96234pt.
- [32
+ [33
 
 ] (chapter/004-analisis-de-la-memoria-ram/sections/004-06-listado-de-conexiones-de-red-y-conexiones-sospechosas.tex)
 File: imagenes/002-imagen-cabecera.png Graphic file (type png)
 <use imagenes/002-imagen-cabecera.png>
 Package pdftex.def Info: imagenes/002-imagen-cabecera.png  used on input line 169.
 (pdftex.def)             Requested size: 412.55737pt x 28.96234pt.
- [33
+ [34
 
 ]
 Cap\'{\i }tulo 4.
@@ -749,7 +754,7 @@ File: imagenes/002-imagen-cabecera.png Graphic file (type png)
 <use imagenes/002-imagen-cabecera.png>
 Package pdftex.def Info: imagenes/002-imagen-cabecera.png  used on input line 173.
 (pdftex.def)             Requested size: 412.55737pt x 28.96234pt.
- [34
+ [35
 
 
 ] (chapter/005-analisis-de-disco-duro/sections/005-01-acciones-previas-al-analisis-de-disco-duro.tex)
@@ -757,28 +762,28 @@ File: imagenes/002-imagen-cabecera.png Graphic file (type png)
 <use imagenes/002-imagen-cabecera.png>
 Package pdftex.def Info: imagenes/002-imagen-cabecera.png  used on input line 177.
 (pdftex.def)             Requested size: 412.55737pt x 28.96234pt.
- [35
+ [36
 
 ] (chapter/005-analisis-de-disco-duro/sections/005-02-datos-de-interes-del-disco-duro.tex)
 File: imagenes/002-imagen-cabecera.png Graphic file (type png)
 <use imagenes/002-imagen-cabecera.png>
 Package pdftex.def Info: imagenes/002-imagen-cabecera.png  used on input line 181.
 (pdftex.def)             Requested size: 412.55737pt x 28.96234pt.
- [36
+ [37
 
 ] (chapter/005-analisis-de-disco-duro/sections/005-03-usuarios-del-sistema.tex)
 File: imagenes/002-imagen-cabecera.png Graphic file (type png)
 <use imagenes/002-imagen-cabecera.png>
 Package pdftex.def Info: imagenes/002-imagen-cabecera.png  used on input line 185.
 (pdftex.def)             Requested size: 412.55737pt x 28.96234pt.
- [37
+ [38
 
 ] (chapter/005-analisis-de-disco-duro/sections/005-04-analisis-de-evidencias-del-disco-duro.tex)
 File: imagenes/002-imagen-cabecera.png Graphic file (type png)
 <use imagenes/002-imagen-cabecera.png>
 Package pdftex.def Info: imagenes/002-imagen-cabecera.png  used on input line 189.
 (pdftex.def)             Requested size: 412.55737pt x 28.96234pt.
- [38
+ [39
 
 ]
 Cap\'{\i }tulo 5.
@@ -787,7 +792,7 @@ File: imagenes/002-imagen-cabecera.png Graphic file (type png)
 <use imagenes/002-imagen-cabecera.png>
 Package pdftex.def Info: imagenes/002-imagen-cabecera.png  used on input line 193.
 (pdftex.def)             Requested size: 412.55737pt x 28.96234pt.
- [39
+ [40
 
 
 ]
@@ -797,7 +802,7 @@ File: imagenes/002-imagen-cabecera.png Graphic file (type png)
 <use imagenes/002-imagen-cabecera.png>
 Package pdftex.def Info: imagenes/002-imagen-cabecera.png  used on input line 197.
 (pdftex.def)             Requested size: 412.55737pt x 28.96234pt.
- [40
+ [41
 
 
 ]
@@ -807,7 +812,7 @@ File: imagenes/002-imagen-cabecera.png Graphic file (type png)
 <use imagenes/002-imagen-cabecera.png>
 Package pdftex.def Info: imagenes/002-imagen-cabecera.png  used on input line 201.
 (pdftex.def)             Requested size: 412.55737pt x 28.96234pt.
- [41
+ [42
 
 
 ]
@@ -817,7 +822,7 @@ File: imagenes/002-imagen-cabecera.png Graphic file (type png)
 <use imagenes/002-imagen-cabecera.png>
 Package pdftex.def Info: imagenes/002-imagen-cabecera.png  used on input line 205.
 (pdftex.def)             Requested size: 412.55737pt x 28.96234pt.
- [42
+ [43
 
 
 ] (chapter/009-anexos/sections/009-01-glosario-de-terminos-abreviaturas-y-acronimos.tex)
@@ -825,14 +830,14 @@ File: imagenes/002-imagen-cabecera.png Graphic file (type png)
 <use imagenes/002-imagen-cabecera.png>
 Package pdftex.def Info: imagenes/002-imagen-cabecera.png  used on input line 209.
 (pdftex.def)             Requested size: 412.55737pt x 28.96234pt.
- [43
+ [44
 
 ] (chapter/009-anexos/sections/009-02-imagenes.tex)
 File: imagenes/002-imagen-cabecera.png Graphic file (type png)
 <use imagenes/002-imagen-cabecera.png>
 Package pdftex.def Info: imagenes/002-imagen-cabecera.png  used on input line 213.
 (pdftex.def)             Requested size: 412.55737pt x 28.96234pt.
- [44
+ [45
 
 ]
 No file main.bbl.
@@ -852,17 +857,17 @@ Package rerunfilecheck Info: File `main.out' has not changed.
 (rerunfilecheck)             Checksum: 1705DA64AAB73D5DF9D6D62863A7056D;8552.
  ) 
 Here is how much of TeX's memory you used:
- 13038 strings out of 475248
- 218809 string characters out of 5767622
+ 13039 strings out of 475248
+ 218816 string characters out of 5767622
  1932785 words of memory out of 5000000
  34054 multiletter control sequences out of 15000+600000
  570442 words of font info for 59 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
  79i,16n,93p,1227b,819s stack positions out of 10000i,1000n,20000p,200000b,200000s
  <C:\Users\jrodg85\AppData\Local\MiKTeX\fonts/pk/ljfour/jknappen/ec/dpi600\ecrm0800.pk> <C:\Users\jrodg85\AppData\Local\MiKTeX\fonts/pk/ljfour/jknappen/ec/dpi600\ectt1200.pk> <C:\Users\jrodg85\AppData\Local\MiKTeX\fonts/pk/ljfour/jknappen/ec/dpi600\tcrm1200.pk> <C:\Users\jrodg85\AppData\Local\MiKTeX\fonts/pk/ljfour/jknappen/ec/dpi600\ecbx1440.pk> <C:\Users\jrodg85\AppData\Local\MiKTeX\fonts/pk/ljfour/jknappen/ec/dpi600\ecti1200.pk> <C:\Users\jrodg85\AppData\Local\MiKTeX\fonts/pk/ljfour/jknappen/ec/dpi600\ecbx1728.pk> <C:\Users\jrodg85\AppData\Local\MiKTeX\fonts/pk/ljfour/jknappen/ec/dpi600\ecxc1200.pk> <C:\Users\jrodg85\AppData\Local\MiKTeX\fonts/pk/ljfour/jknappen/ec/dpi600\eccc1200.pk> <C:\Users\jrodg85\AppData\Local\MiKTeX\fonts/pk/ljfour/jknappen/ec/dpi600\ecrm1200.pk> <C:\Users\jrodg85\AppData\Local\MiKTeX\fonts/pk/ljfour/jknappen/ec/dpi600\ecbx1200.pk> <C:\Users\jrodg85\AppData\Local\MiKTeX\fonts/pk/ljfour/jknappen/ec/dpi600\ecbx2488.pk><C:/Program Files/MiKTeX/fonts/type1/public/amsfonts/cm/cmsy8.pfb>
-Output written on main.pdf (49 pages, 421735 bytes).
+Output written on main.pdf (50 pages, 424332 bytes).
 PDF statistics:
- 1004 PDF objects out of 1200 (max. 8388607)
- 219 named destinations out of 1000 (max. 500000)
+ 1007 PDF objects out of 1200 (max. 8388607)
+ 220 named destinations out of 1000 (max. 500000)
  343 words of extra memory for PDF output out of 10000 (max. 10000000)
 

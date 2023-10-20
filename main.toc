@@ -18,23 +18,23 @@
 \contentsline {subsection}{\numberline {1.6.8}Retos y riesgos en el cómputo forense.}{19}{subsection.1.6.8}%
 \contentsline {subsection}{\numberline {1.6.9}Herramientas de Analisis Forense.}{20}{subsection.1.6.9}%
 \contentsline {chapter}{\numberline {2}Extremos del análisis y previsión de pruebas técnicas.}{24}{chapter.2}%
-\contentsline {section}{\numberline {2.1}Propuesta de extremos.}{25}{section.2.1}%
-\contentsline {section}{\numberline {2.2}Previsión de pruebas técnicas.}{26}{section.2.2}%
-\contentsline {chapter}{\numberline {3}Análisis de la memoria RAM.}{27}{chapter.3}%
-\contentsline {section}{\numberline {3.1}Acciones previas al análisis de la memoria RAM.}{28}{section.3.1}%
-\contentsline {section}{\numberline {3.2}Datos de interés de la captura de la memoria RAM.}{29}{section.3.2}%
-\contentsline {section}{\numberline {3.3}Sistema Operativo de la memoria RAM analizada.}{30}{section.3.3}%
-\contentsline {section}{\numberline {3.4}Busqueda de procesos en funcionamiento de interés para el análisis.}{31}{section.3.4}%
-\contentsline {section}{\numberline {3.5}Análisis y extracción de procesos sospechosos.}{32}{section.3.5}%
-\contentsline {section}{\numberline {3.6}Listado de conexiones de red y conexiones sospechosas.}{33}{section.3.6}%
-\contentsline {chapter}{\numberline {4}Análisis del disco duro.}{34}{chapter.4}%
-\contentsline {section}{\numberline {4.1}Acciones previas al análisis del disco duro.}{35}{section.4.1}%
-\contentsline {section}{\numberline {4.2}Datos de interés del disco duro.}{36}{section.4.2}%
-\contentsline {section}{\numberline {4.3}Usuarios del sistema.}{37}{section.4.3}%
-\contentsline {section}{\numberline {4.4}Análisis de evidencias del disco duro.}{38}{section.4.4}%
-\contentsline {chapter}{\numberline {5}Resumen ejecutivo.}{39}{chapter.5}%
-\contentsline {chapter}{\numberline {6}Informe pericial.}{40}{chapter.6}%
-\contentsline {chapter}{\numberline {7}Conclusiones.}{41}{chapter.7}%
-\contentsline {chapter}{\numberline {8}Anexos.}{42}{chapter.8}%
-\contentsline {section}{\numberline {8.1}Glosario de términos y abreviaturas.}{43}{section.8.1}%
-\contentsline {section}{\numberline {8.2}Imágenes.}{44}{section.8.2}%
+\contentsline {section}{\numberline {2.1}Propuesta de extremos.}{26}{section.2.1}%
+\contentsline {section}{\numberline {2.2}Previsión de pruebas técnicas.}{27}{section.2.2}%
+\contentsline {chapter}{\numberline {3}Análisis de la memoria RAM.}{28}{chapter.3}%
+\contentsline {section}{\numberline {3.1}Acciones previas al análisis de la memoria RAM.}{29}{section.3.1}%
+\contentsline {section}{\numberline {3.2}Datos de interés de la captura de la memoria RAM.}{30}{section.3.2}%
+\contentsline {section}{\numberline {3.3}Sistema Operativo de la memoria RAM analizada.}{31}{section.3.3}%
+\contentsline {section}{\numberline {3.4}Busqueda de procesos en funcionamiento de interés para el análisis.}{32}{section.3.4}%
+\contentsline {section}{\numberline {3.5}Análisis y extracción de procesos sospechosos.}{33}{section.3.5}%
+\contentsline {section}{\numberline {3.6}Listado de conexiones de red y conexiones sospechosas.}{34}{section.3.6}%
+\contentsline {chapter}{\numberline {4}Análisis del disco duro.}{35}{chapter.4}%
+\contentsline {section}{\numberline {4.1}Acciones previas al análisis del disco duro.}{36}{section.4.1}%
+\contentsline {section}{\numberline {4.2}Datos de interés del disco duro.}{37}{section.4.2}%
+\contentsline {section}{\numberline {4.3}Usuarios del sistema.}{38}{section.4.3}%
+\contentsline {section}{\numberline {4.4}Análisis de evidencias del disco duro.}{39}{section.4.4}%
+\contentsline {chapter}{\numberline {5}Resumen ejecutivo.}{40}{chapter.5}%
+\contentsline {chapter}{\numberline {6}Informe pericial.}{41}{chapter.6}%
+\contentsline {chapter}{\numberline {7}Conclusiones.}{42}{chapter.7}%
+\contentsline {chapter}{\numberline {8}Anexos.}{43}{chapter.8}%
+\contentsline {section}{\numberline {8.1}Glosario de términos y abreviaturas.}{44}{section.8.1}%
+\contentsline {section}{\numberline {8.2}Imágenes.}{45}{section.8.2}%
