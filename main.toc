@@ -8,15 +8,14 @@
 \contentsline {section}{\numberline {1.4}Listado de tareas.}{8}{section.1.4}%
 \contentsline {section}{\numberline {1.5}Planificación temporal de las tareas.}{10}{section.1.5}%
 \contentsline {section}{\numberline {1.6}Revisión del estado del arte de la informática forense.}{14}{section.1.6}%
-\contentsline {subsection}{\numberline {1.6.1}{\color {red}\textbf {DEUDA TÉCNICA: Revisar codigo LaTeX de Estado del arte}}}{14}{subsection.1.6.1}%
-\contentsline {subsection}{\numberline {1.6.2}Introducción}{14}{subsection.1.6.2}%
-\contentsline {subsection}{\numberline {1.6.3}Deficiniciones.}{14}{subsection.1.6.3}%
-\contentsline {subsection}{\numberline {1.6.4}Objetivos de la informática forense.}{15}{subsection.1.6.4}%
-\contentsline {subsection}{\numberline {1.6.5}Evidencia digital.}{15}{subsection.1.6.5}%
-\contentsline {subsection}{\numberline {1.6.6}Perspectiva de tres roles.}{17}{subsection.1.6.6}%
-\contentsline {subsection}{\numberline {1.6.7}Pasos del proceso del cómputo forense.}{19}{subsection.1.6.7}%
-\contentsline {subsection}{\numberline {1.6.8}Retos y riesgos en el cómputo forense.}{20}{subsection.1.6.8}%
-\contentsline {subsection}{\numberline {1.6.9}Herramientas de Analisis Forense.}{21}{subsection.1.6.9}%
+\contentsline {subsection}{\numberline {1.6.1}Introducción}{14}{subsection.1.6.1}%
+\contentsline {subsection}{\numberline {1.6.2}Definiciones.}{14}{subsection.1.6.2}%
+\contentsline {subsection}{\numberline {1.6.3}Objetivos de la informática forense.}{15}{subsection.1.6.3}%
+\contentsline {subsection}{\numberline {1.6.4}Evidencia digital.}{15}{subsection.1.6.4}%
+\contentsline {subsection}{\numberline {1.6.5}Perspectiva de tres roles.}{16}{subsection.1.6.5}%
+\contentsline {subsection}{\numberline {1.6.6}Pasos del proceso del cómputo forense.}{18}{subsection.1.6.6}%
+\contentsline {subsection}{\numberline {1.6.7}Retos y riesgos en el cómputo forense.}{20}{subsection.1.6.7}%
+\contentsline {subsection}{\numberline {1.6.8}Herramientas de Análisis Forense.}{21}{subsection.1.6.8}%
 \contentsline {chapter}{\numberline {2}Extremos del análisis y previsión de pruebas técnicas.}{24}{chapter.2}%
 \contentsline {section}{\numberline {2.1}Propuesta de extremos.}{26}{section.2.1}%
 \contentsline {section}{\numberline {2.2}Previsión de pruebas técnicas.}{27}{section.2.2}%

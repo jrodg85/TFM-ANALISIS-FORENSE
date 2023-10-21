@@ -1,1 +1,12 @@
 main.log
+.vscode/*
+main.aux
+main.bbl
+main.blg
+main.fdb_latexmk
+main.fls
+main.out
+main.aux
+main.out
+main.synctex.gz
+main.toc
