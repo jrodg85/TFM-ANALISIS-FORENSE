@@ -13,10 +13,10 @@
 \contentsline {subsection}{\numberline {1.6.3}Deficiniciones.}{14}{subsection.1.6.3}%
 \contentsline {subsection}{\numberline {1.6.4}Objetivos de la informática forense.}{15}{subsection.1.6.4}%
 \contentsline {subsection}{\numberline {1.6.5}Evidencia digital.}{15}{subsection.1.6.5}%
-\contentsline {subsection}{\numberline {1.6.6}Perspectiva de tres roles.}{16}{subsection.1.6.6}%
-\contentsline {subsection}{\numberline {1.6.7}Pasos del proceso del cómputo forense.}{18}{subsection.1.6.7}%
-\contentsline {subsection}{\numberline {1.6.8}Retos y riesgos en el cómputo forense.}{19}{subsection.1.6.8}%
-\contentsline {subsection}{\numberline {1.6.9}Herramientas de Analisis Forense.}{20}{subsection.1.6.9}%
+\contentsline {subsection}{\numberline {1.6.6}Perspectiva de tres roles.}{17}{subsection.1.6.6}%
+\contentsline {subsection}{\numberline {1.6.7}Pasos del proceso del cómputo forense.}{19}{subsection.1.6.7}%
+\contentsline {subsection}{\numberline {1.6.8}Retos y riesgos en el cómputo forense.}{20}{subsection.1.6.8}%
+\contentsline {subsection}{\numberline {1.6.9}Herramientas de Analisis Forense.}{21}{subsection.1.6.9}%
 \contentsline {chapter}{\numberline {2}Extremos del análisis y previsión de pruebas técnicas.}{24}{chapter.2}%
 \contentsline {section}{\numberline {2.1}Propuesta de extremos.}{26}{section.2.1}%
 \contentsline {section}{\numberline {2.2}Previsión de pruebas técnicas.}{27}{section.2.2}%
