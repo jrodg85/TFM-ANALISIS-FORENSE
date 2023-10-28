@@ -1,3 +1,0 @@
-A mi esposa e hija, acompañantes en todo momento de esta aventura académica.
-
-A mis compañeros de trabajo, Juanma, Luisma y Borja, que saben de que estos tres años que llevo realizando este master y han conocido todos los derroteros que me ha llevado este camino.
