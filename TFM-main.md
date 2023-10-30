@@ -298,11 +298,11 @@ Se describe un el siguiente listado de objetivos que se obtienen al analizar el 
 
 En esta sección se procederá a realizar un repaso general de algunas de las normativas y estándares.
 
-Primero abordaremos un pequeño estudio relativo a la ISO 27037, posteriormente abordaremos la normativa RFC 3227 para finalmente comentar un resumen de las normas UNE 71505 y UNE 71506.
+Primero abordaremos un pequeño estudio relativo a las normas ISO 27037 e ISO 30131, posteriormente abordaremos la normativa RFC 3227 para finalmente comentar un resumen de las normas UNE 71505 y UNE 71506.
 
 Por ultimo, pero no menos importante, trataré unas conclusiones sobre esta sección.
 
-### 1.3.2. Norma ISO 27037.
+### 1.3.2. Normas ISO 27037 e ISO 30121.
 
 Dentro de la seguridad informática cabe destacar una normativa ampliamente conocida, es la familia ISO 27000. Esta serie de normas son estándares de seguridad publicados por la Organización Internacional para la Estandarización (ISO) y la Comisión Electrotécnica Internacional (IEC).
 
@@ -334,9 +334,20 @@ ISO 27037 proporciona orientación para los siguientes dispositivos y circunstan
 
 Resumiendo, se puede destacar que esta norma ofrece orientación sobre el manejo de las pruebas digitales. Siguiendo las directrices de esta norma se asegura que la evidencia digital potencial se recoge de manera válida a efectos legales para facilitar su aportación en juicios y procesos legales. Además cabe destacar que cubre una amplia gama de tipos de dispositivos y situaciones, por lo que la orientación dentro de la norma es ampliamente aplicable.
 
-Se dispone de una copia de la ISO 27037 en ingles
+Se dispone de una copia de la ISO 27037 en ingles.
 
 #### [1.3.2. Referencia 004](#86004-norma-iso-27037)
+
+La ISO/IEC 30121 es la norma internacional para el análisis forense digital. Define los requisitos mínimos que todas las organizaciones deben cumplir para estar preparados ante un análisis forense digital. La primera edición de la norma se publicó en 2015. Desde entonces, se han realizado varias actualizaciones importantes para reflejar las
+nuevas tecnologías y la evolución de los procedimientos de investigación criminal. Ha sido adoptada por muchas organizaciones de todo el mundo como base de las mejores prácticas para el manejo de las pruebas digitales, maximizando la disponibilidad y acceso a esta.
+
+La ISO/IEC 30121 se creó para garantizar que las pruebas digitales se traten de forma coherente en las distintas organizaciones y para ayudar a garantizar que las pruebas digitales puedan utilizarse como prueba en los procedimientos judiciales.
+
+#### [1.3.2. Referencia 005](#86005-TFM-norma-iso-27037)
+
+[Volver al Índice del capítulo 1. Plan de trabajo.](#índice-del-capítulo-1-plan-de-trabajo)
+
+---
 
 ### 1.3.3. Norma RFC 3227.
 
@@ -358,11 +369,27 @@ Todas estas recomendaciones tienen como epicentro el principio de intercambio de
 
 Se dispone de una copia de la RFC 3227 en español.
 
-#### [1.3.3. Referencia 005](#86005-norma-rfc-3227)
+#### [1.3.3. Referencia 006](#86006-norma-rfc-3227)
 
+[Volver al Índice del capítulo 1. Plan de trabajo.](#índice-del-capítulo-1-plan-de-trabajo)
 
+---
 
-#### [1.3. Referencia 006](#86006)
+### 1.3.4. Normas UNE 71505 y UNE 71506.
+
+Las normas UNE son normas técnicas desarrolladas por el organismo español de normalización, la Asociación Española de Normalización (UNE). "UNE" es el acrónimo de "Una Norma Española". Estas normas establecen especificaciones técnicas, criterios y directrices que deben seguirse en la fabricación, diseño, instalación, uso o mantenimiento de productos, sistemas o servicios en España.
+
+#### [1.3.4. Referencia 007](#86007-que-son-las-normas-une)
+
+Estas normas que tratamos en el presente trabajo tienen como finalidad dar una metodología para la preservación, adquisición, documentación, análisis y presentación de pruebas digitales.
+
+Según la asociación esta norma debe dar respuesta a las infracciones legales e incidentes informáticos en las distintas empresas y entidades. Con la obtención de dichas pruebas digitales, que serán más robustas y fiables siguiendo la normativa, se podrá discernir si su causa tiene como origen un carácter intencional o negligente.
+
+Estas normativas son de aplicación a cualquier organización con independencia de su actividad o tamaño, así como a cualquier profesional competente en este ámbito. Se dirige especialmente a incidentes y seguridad, así como al personal técnico que trabaje en laboratorios o entornos de análisis forense de evidencias electrónicas.
+
+Se dispone de una copia de la norma UNE 71505.
+
+#### [1.3.4. Referencia 008]()
 
 
 
@@ -2482,7 +2509,7 @@ para comprobar que esta correctamente creado el perfil procedemos a ejecutar el 
 
 #### 8.6.004. Norma ISO 27037:
 
-- Autor: Universitat International Organization for Standardization
+- Autor: International Organization for Standardization.
 - Título del trabajo: Information technology — Security techniques — Guidelines for identification, collection, acquisition, and preservation of digital evidence.
 - URL: [https://www.amnafzar.net/files/1/ISO%2027000/ISO%20IEC%2027037-2012.pdf](https://www.amnafzar.net/files/1/ISO%2027000/ISO%20IEC%2027037-2012.pdf)
 - URL repositorio Github: [003-ISOIEC-27037-2012.pdf](https://github.com/jrodg85/TFM-ANALISIS-FORENSE/blob/main/referencias/003-ISOIEC-27037-2012.pdf)
@@ -2491,15 +2518,40 @@ para comprobar que esta correctamente creado el perfil procedemos a ejecutar el 
 
 ---
 
-#### 8.6.005. Norma RFC 3227:
+#### 8.6.005. IMPLEMENTACIÓN DE HERRAMIENTAS PARA LA EXTRACCIÓN DE EVIDENCIA DIGITAL:
 
-- Autores:  Dominique Brezinski & Tom Killalea
+- Autor: ANTHONY ALEXANDER GUZMÁN MOLINA.
+- Título del trabajo: IMPLEMENTACIÓN DE HERRAMIENTAS PARA LA EXTRACCIÓN DE EVIDENCIA DIGITAL .
+- Título del Contenedor: ISO/IEC 30121.
+- URL: [https://bibdigital.epn.edu.ec/bitstream/15000/23797/1/CD%2013084.pdf](https://bibdigital.epn.edu.ec/bitstream/15000/23797/1/CD%2013084.pdf)
+- URL repositorio Github: [004-IMPLEMENTACIÓN-HERRAMIENTAS-PARA-LA-EXTRACCIÓN-DE-EVIDENCIA-DIGITAL.pdf](https://github.com/jrodg85/TFM-ANALISIS-FORENSE/blob/main/referencias/004-IMPLEMENTACION-HERRAMIENTAS-PARA-LA-EXTRACCION-DE-EVIDENCIA-DIGITAL.pdf)
+
+[Volver at texto de la referencia la Sección 1.3.2.](#132-referencia-004)
+
+---
+
+#### 8.6.006. Norma RFC 3227:
+
+- Autores:  Dominique Brezinski & Tom Killalea.
 - Título del trabajo: RFC 3227.
 - URL Español: [https://www.rfc-es.org/pendientes/rfc3227-es.nroff](https://www.rfc-es.org/pendientes/rfc3227-es.nroff)
 - URL Inglés: [https://datatracker.ietf.org/doc/html/rfc3227](https://datatracker.ietf.org/doc/html/rfc3227)
-- URL repositorio Github: [004-RFC-3227-ESP.pdf](https://github.com/jrodg85/TFM-ANALISIS-FORENSE/blob/main/referencias/004-RFC-3227-ESP.pdf)
+- URL repositorio Github: [005-RFC-3227-ESP.pdf](https://github.com/jrodg85/TFM-ANALISIS-FORENSE/blob/main/referencias/005-RFC-3227-ESP.pdf)
 
-[Volver at texto de la referencia la Sección 1.3.3.](#133-referencia-005)
+[Volver at texto de la referencia la Sección 1.3.3.](#133-referencia-006)
+
+---
+
+#### 8.6.007. Que son las normas UNE:
+
+- Autores:  Grupo ACMS Consultores.
+- Título del trabajo: Norma UNE: Significado y Estructura.
+- URL Español: [https://www.grupoacms.com/consultora/norma-une-significado](https://www.grupoacms.com/consultora/norma-une-significado)
+
+[Volver at texto de la referencia la Sección 1.3.4.](#134-referencia-007)
+
+---
+
 
 
 ---
