@@ -22,6 +22,27 @@ Enero de 2024.
 
 <br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>
 
+
+
+| FICHA DEL TRABAJO FINAL DE  | MASTER |
+| --: | :-- |
+| Titulo del trabajo: | Análisis forense de un ordenador. |
+| Nombre del autor: | José Enrique Rodríguez González. |
+| Nombre del Consultor: | Elena Botana de Castro. |
+| Área de trabajo final: | Análisis Forense. |
+| Título del Master: | Master Universitario de Ciberseguridad y Privacidad (MUCYP). |
+| Universidad: | Universitat Oberta de Catalunya. |
+||
+
+
+
+| RESUMEN DEL TRABAJO |
+|---|
+|El objetivo del presente Trabajo de Fin de Máster es realizar un análisis forense de un ordenador del que se sospecha de que han accedido a los sistemas de forma ilícita. Se comprobará si realmente han accedido, así como el método que han utilizado. Por otro lado, se elaborará un informe con las consecuencias que se derivan del dicho acceso ademas se comprobará si ha habido extracción de información alguna. <br>Por último, y no menos importante, para el presente trabajo se tendrán en cuenta los estándares que existen en la actualidad, como pueden ser la norma ISO 27037, la RFC 3227  o las normas de la Asociación Española de Normalización UNE 71505 y UNE 71506.|
+||
+
+<br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>
+
 ## Índice General.
 
 - [Deuda técnica.](#deuda-técnica)
@@ -31,10 +52,11 @@ Enero de 2024.
   - [1.0. Introducción al capítulo 1. Plan de trabajo.](#10-introducción-al-capítulo-1-plan-de-trabajo)
   - [1.1. Problema a resolver.](#11-problema-a-resolver)
   - [1.2. Objetivos.](#12-objetivos)
-  - [1.3. Descripción del entorno de trabajo.](#13-descripción-del-entorno-de-trabajo)
-  - [1.4. Listado de tareas.](#14-listado-de-tareas)
-  - [1.5. Planificación temporal de las tareas.](#15-planificación-temporal-de-las-tareas)
-  - [1.6. Revisión del estado del arte de la informática forense.](#16-revisión-del-estado-del-arte-de-la-informática-forense)
+  - [1.3 Metodologías]
+  - [1.4. Descripción del entorno de trabajo.](#14-descripción-del-entorno-de-trabajo)
+  - [1.5. Listado de tareas.](#15-listado-de-tareas)
+  - [1.6. Planificación temporal de las tareas.](#16-planificación-temporal-de-las-tareas)
+  - [1.7. Revisión del estado del arte de la informática forense.](#17-revisión-del-estado-del-arte-de-la-informática-forense)
 - [2. Extremos del análisis y previsión de pruebas técnicas.](#2-extremos-del-análisis-y-previsión-de-pruebas-técnicas)
   - [Índice del capítulo 2. Extremos del análisis y previsión de pruebas técnicas.](#índice-del-capítulo-2-extremos-del-análisis-y-previsión-de-pruebas-técnicas)
   - [2.0. Introducción al capítulo 2. Extremos del análisis y previsión de pruebas técnicas.](#índice-del-capítulo-2-extremos-del-análisis-y-previsión-de-pruebas-técnicas)
@@ -114,10 +136,10 @@ COMENTARIOS TUTORA TFM PEC 1.
     - 1. Metodología: En tu TFM falta una metodología sólida y formal que guíe tu investigación. Debes definir un marco metodológico claro que describa cómo recopilaste y analizaste tus datos, y que respalde tus hallazgos. Para ello, deberías revisar diferentes normas y estándares internacionales como por ejemplo la ISO 27037, la RFC 3227 o las UNE 71505 y UNE 71506.
     - 2. Definición de Objetivos: Has definido claramente tus objetivos, lo cual es positivo. Sin embargo, es esencial que logres responder a todos ellos en la entrega final o justifiques cualquier impedimento que impida su cumplimiento.
     - 3. Entorno de Trabajo: Debes proporcionar más detalles sobre el equipo y las herramientas específicas que utilizarás en tu análisis forense. Esto garantizará una comprensión completa de tu enfoque.
-    -  4. Estado del Arte: Has realizado un buen trabajo en general, pero es importante incluir más referencias a artículos utilizados para documentación y mencionar las metodologías que aplicarás durante el análisis forense.
-    -   5. Comparativa de Herramientas: La comparativa de herramientas es exhaustiva, pero muchas de ellas pueden resultar irrelevantes. Sería más beneficioso seleccionar algunas, analizarlas en detalle y explicar por qué las has elegido y cómo se utilizarán en tu TFM.
-    -  6. Glosario: Es positivo que incluyas un glosario de términos y abreviaturas, pero es necesario desarrollarlo, incluyendo el origen de abreviaturas como "CISO".
-    -  7. Bibliografía: La ausencia de una bibliografía es una deficiencia significativa. Debes incluir una bibliografía que respalde tus afirmaciones y muestre la base teórica en la que se basa tu TFM.
+    - 4. Estado del Arte: Has realizado un buen trabajo en general, pero es importante incluir más referencias a artículos utilizados para documentación y mencionar las metodologías que aplicarás durante el análisis forense.
+    - 5. Comparativa de Herramientas: La comparativa de herramientas es exhaustiva, pero muchas de ellas pueden resultar irrelevantes. Sería más beneficioso seleccionar algunas, analizarlas en detalle y explicar por qué las has elegido y cómo se utilizarán en tu TFM.
+    - 6. Glosario: Es positivo que incluyas un glosario de términos y abreviaturas, pero es necesario desarrollarlo, incluyendo el origen de abreviaturas como "CISO".
+    - 7. Bibliografía: La ausencia de una bibliografía es una deficiencia significativa. Debes incluir una bibliografía que respalde tus afirmaciones y muestre la base teórica en la que se basa tu TFM.
     - 8. Impacto ético y social: No he podido ver nada relativo a este punto en la entrega realizada.
 
 ---
@@ -140,28 +162,12 @@ A mis compañeros de trabajo, Juanma, Luisma y Borja, que saben de que estos tre
 
 ## Índice del capítulo 1. Plan de trabajo.
 
-- [1.0. Introducción al capítulo 1. Plan de trabajo.](#10-introducción-al-capítulo-1-plan-de-trabajo)
-- [1.1. Problema a resolver.](#11-problema-a-resolver)
-- [1.2. Objetivos.](#12-objetivos)
-- [1.3. Descripción del entorno de trabajo.](#13-descripción-del-entorno-de-trabajo)
-- [1.4. Listado de tareas.](#14-listado-de-tareas)
-- [1.5. Planificación temporal de las tareas.](#15-planificación-temporal-de-las-tareas)
-- [1.6. Revisión del estado del arte de la informática forense.](#16-revisión-del-estado-del-arte-de-la-informática-forense)
-  - [1.6.1. Introducción.](#161-introducción)
-  - [1.6.2. Definiciones.](#162-definiciones)
-  - [1.6.3. Objetivos de la informática forense.](#163-objetivos-de-la-informática-forense)
-  - [1.6.4. Evidencia digital.](#164-evidencia-digital)
-  - [1.6.5. Perspectiva de tres roles.](#165-perspectiva-de-tres-roles)
-  - [1.6.6. Pasos del proceso del cómputo forense.](#166-pasos-del-proceso-del-cómputo-forense)
-  - [1.6.7. Retos y riesgos en el cómputo forense.](#167-retos-y-riesgos-en-el-cómputo-forense)
-  - [1.6.8. Herramientas de Análisis Forense.](#168-herramientas-de-análisis-forense)
-
 
 [Volver al Índice General.](#índice-general)
 
 ---
 
-<br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>
+<br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>
 
 ## 1.0. Introducción al capítulo 1. Plan de trabajo.
 
@@ -384,7 +390,7 @@ La Entrega de videos, presentación y realización de la defensa del TFM, se con
 
 
 
-## 1.5. Planificación temporal de las tareas.
+## 1.6. Planificación temporal de las tareas.
 
 Para esta sección, se han elaborado los siguientes diagramas de Gantt relativos a cada uno de los retos a entregar.
 
@@ -413,9 +419,9 @@ Relativo al reto/PEC 4 se establece el siguiente diagrama.
 
 
 
-## 1.6. Revisión del estado del arte de la informática forense.
+## 1.7. Revisión del estado del arte de la informática forense.
 
-### 1.6.1. Introducción.
+### 1.7.1. Introducción.
 
 El análisis forense, también llamado informática forense, computación forense, análisis forense digital o examen forense digital es la aplicación de técnicas científicas y analíticas especializadas a infraestructuras tecnológicas que permiten identificar, preservar, analizar y presentar datos válidos dentro de un proceso legal.
 
@@ -435,7 +441,7 @@ Es muy importante mencionar que la informática o el análisis forense no tiene 
 
 
 
-### 1.6.2. Definiciones.
+### 1.7.2. Definiciones.
 
 Existen diferentes términos referentes a la ciencia forense en informática. Cada uno de estos términos trata de manera particular o general temas que son de interés para las ciencias forenses. Estos términos se pueden ver en el Capítulo de [glosario de términos, abreviaturas y acrónimos](#82-glosario-de-términos-y-abreviaturas).
 
@@ -449,7 +455,7 @@ Existen diferentes términos referentes a la ciencia forense en informática. Ca
 
 
 
-### 1.6.3. Objetivos de la informática forense.
+### 1.7.3. Objetivos de la informática forense.
 
 La informática forense tiene tres objetivos:
 
@@ -466,7 +472,7 @@ Es importante mencionar que quienes se dedican a la informática forense deben s
 
 
 
-### 1.6.4. Evidencia digital.
+### 1.7.4. Evidencia digital.
 
 Los discos duros, las memorias USB y las impresoras (entre otros elementos) se pueden considerar evidencias en un proceso legal, al igual que las huellas digitales o las armas. Las evidencias digitales son las que se extraen de un medio informático.
 
@@ -513,7 +519,7 @@ Cualquier infraestructura informática que tenga una memoria (almacenamiento) es
 
 
 
-### 1.6.5. Perspectiva de tres roles.
+### 1.7.5. Perspectiva de tres roles.
 
 En el análisis de un caso en el que sea necesario el cómputo forense, hay tres roles principales que son importantes y se deben tener en cuenta: el intruso, el administrador y la infraestructura de la seguridad informática, al igual que el investigador.
 
@@ -572,7 +578,7 @@ Examina en detalle los datos, los elementos informáticos recogidos en la escena
 
 
 
-### 1.6.6. Pasos del proceso del cómputo forense.
+### 1.7.6. Pasos del proceso del cómputo forense.
 
 A continuación se describe el proceso de análisis forense:
 
@@ -607,7 +613,7 @@ El especialista debe conocer también sobre el desarrollo de los exploit (vulner
 
 
 
-### 1.6.7. Retos y riesgos en el cómputo forense.
+### 1.7.7. Retos y riesgos en el cómputo forense.
 
 Al estar en un escenario que evoluciona constantemente, cada vez surgen más retos y riesgos en el área de la informática forense. Entre ellos la formación de informáticos forenses, la confiabilidad de las herramientas, la facilidad de la destrucción de las evidencias, las amenazas estratégicas y tácticas que plantea el ciberterrorismo; y las tecnologías emergentes como la nube, las tecnologías móviles, y las redes sociales. Algunos de estos temas se abordarán a continuación:
 
@@ -632,7 +638,7 @@ Es por esto que el NIST (National Institute of Standards and Technology de Estad
 
 
 
-### 1.6.8. Herramientas de Análisis Forense.
+### 1.7.8. Herramientas de Análisis Forense.
 
 La siguiente tabla compara cuatro herramientas reconocidas internacionalmente al ser muy completas. Luego, se encuentra una lista más completa de herramientas útiles para la labor del investigador.
 
