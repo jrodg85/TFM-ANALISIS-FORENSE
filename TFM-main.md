@@ -173,6 +173,8 @@ A mis compañeros de trabajo, Juanma, Luisma y Borja, que saben de que estos tre
 
 La situación en la que nos encontramos es un caso práctico laboral, en el que realizamos el papel de CISO.
 
+`Ref.001`
+
 En este caso, la dirección de la empresa tiene serias sospechas, no probadas, de que han accedido a los sistemas de forma ilícita. Por lo que el gerente de la empresa me solicita, como CISO, que se compruebe si realmente han accedido, así como el método que han utilizado. Por otro lado, solicitan las consecuencias que se derivan del dicho acceso, si ha habido extracción de información alguna.
 
 #### [1.0 Referencia 001](#85001-enunciado-tfm)
@@ -185,7 +187,7 @@ En este caso, la dirección de la empresa tiene serias sospechas, no probadas, d
 
 ---
 
-<br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>
+<br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>
 
 ## 1.1. Problema a resolver.
 
@@ -193,9 +195,11 @@ Por, lo expuesto en la introducción del capítulo, se coliga que el problema a 
 
 Una definición idónea que se puede adoptar en el presente TFM es lo indicado en su momento en la propuesta del TFM:
 
+`Ref.002`
+
 Solventar las necesidades del gerente de la empresa mediante el análisis forense del disco duro y la captura de memoria de un ordenador personal, en un caso real con un sistema virtualizado, vinculado a una presunta conducta delictiva real. Para ello, se utilizarán herramientas específicas para la localización de las evidencias digitales sobre los discos duros y la memoria que puedan demostrar el presunto delito (Encase, Autopsy, Volatility, o cualquier otra herramienta, o conjunto de herramientas con prestaciones equivalentes). Finalmente, las evidencias localizadas deberán recogerse en un informe ejecutivo o pericial, el cual, además de los aspectos técnicos, deberá tener en cuenta aquellos requisitos procesales necesarios para que el análisis pueda tener validez en un proceso judicial.
 
-**DEUDA TÉCNICA: Pendiente de Referenciar!!!, referenciar de la web de los TFM**
+#### [1.1 Referencia 002](#85002-propuestas-de-tfm)
 
 [Volver al Índice del capítulo 1. Plan de trabajo.](#índice-del-capítulo-1-plan-de-trabajo)
 
@@ -2330,15 +2334,34 @@ para comprobar que esta correctamente creado el perfil procedemos a ejecutar el 
 
 ## 8.5. Referencias.
 
+---
+
 #### 8.5.001. Enunciado TFM:
 
 - Autor: Universitat Oberta de Catalunya.
 - Título del trabajo: Enunciado TFM - Análisis forense.
 - Título del Contenedor: Descripción del caso.
-- URL: [https://drive.google.com/file/d/1TOKWOF_akO6IKVvXJ9ovPxMMhd9kafy1/view](https://github.com/jrodg85/TFM-ANALISIS-FORENSE/blob/main/Referencias/ENUNCIADO-M1.881-TFM-ANALISIS-FORENSE-SISTEMAS-INFORMATICOS.pdf)
+- URL: [https://drive.google.com/file/d/1TOKWOF_akO6IKVvXJ9ovPxMMhd9kafy1/view](https://drive.google.com/file/d/1TOKWOF_akO6IKVvXJ9ovPxMMhd9kafy1/view)
 - URL repositorio Github: [ENUNCIADO-M1.881-TFM-ANALISIS-FORENSE-SISTEMAS-INFORMATICOS.pdf](https://github.com/jrodg85/TFM-ANALISIS-FORENSE/blob/main/referencias/ENUNCIADO-M1.881-TFM-ANALISIS-FORENSE-SISTEMAS-INFORMATICOS.pdf)
 
-[Volver a Sección 1.0](#10-referencia-001)
+[Volver at texto de la referencia la Sección 1.0](#10-referencia-001)
+
+---
+
+#### 8.5.002. Propuestas de TFM:
+
+- Autor: Universitat Oberta de Catalunya.
+- Título del trabajo: M1.881 - AnálisiS forense.
+- Título del Contenedor: Descripción.
+- URL: [https://docs.google.com/spreadsheets/d/16JGkkrY4fiPN32RAfdpVuLJBZrnewscpmuTelbe3X_o/edit#gid=0](https://docs.google.com/spreadsheets/d/16JGkkrY4fiPN32RAfdpVuLJBZrnewscpmuTelbe3X_o/edit#gid=0)
+- URL repositorio Github: [PROPUESTA-TFM-EXCEL.pdf](https://github.com/jrodg85/TFM-ANALISIS-FORENSE/blob/main/referencias/PROPUESTA-TFM-EXCEL.pdf)
+
+[Volver at texto de la referencia la Sección 1.1](#11-referencia-002)
+
+
+
+
+
 
 [Volver al Índice del capítulo 8. Anexos.](#índice-del-capítulo-8-anexos)
 
