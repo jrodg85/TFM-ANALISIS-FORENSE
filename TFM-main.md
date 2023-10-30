@@ -921,7 +921,7 @@ Se puede observar en la siguiente imagen la respuesta de PowerShell de los hashe
 
 ##### [Imagen 006](#83006)
 
-![006-captura-hash-PowerShell.png](./imagenes/006-captura-hash-PowerShell.png)
+![006-captura-hash-PowerShell.png](./images/006-captura-hash-PowerShell.png)
 
 Como conclusión podemos verificar que la integridad de la copia facilitada para realizar el TFM no ha sido vulnerada.
 
@@ -937,7 +937,7 @@ Como conclusión podemos verificar que la integridad de la copia facilitada para
 
 Procedemos a preparar una máquina virtual con Ubuntu 22.04, el cual le instalamos el volatility según en el siguiente enlace. Haga click en la imagen para acceder al enlace:
 
-[![Miniatura video Volatility](./imagenes/024-miniatura-instalacion-volatility.png)](https://youtu.be/z_SWIIa3AnY)
+[![Miniatura video Volatility](./images/024-miniatura-instalacion-volatility.png)](https://youtu.be/z_SWIIa3AnY)
 
 > [https://www.youtube.com/watch?v=z_SWIIa3AnY](https://www.youtube.com/watch?v=z_SWIIa3AnY)
 
@@ -1923,7 +1923,7 @@ WinXPSP3x86                         - A Profile for Windows XP SP3 x86
 
 Vamos crear una máquina virtual para generar una máquina virtual base con el mismo kernel que el servidor auditado.
 
-![025-detalles-servidor-perfil-volatility](./imagenes/025-detalles-servidor-perfil-volatility.png)
+![025-detalles-servidor-perfil-volatility](./images/025-detalles-servidor-perfil-volatility.png)
 
 [Volver al Índice del capítulo 8. Anexos.](#índice-del-capítulo-8-anexos)
 
@@ -1983,7 +1983,7 @@ Primero de todo instalaremos los paquetes relativos a `dwarfdum`, `gcc`, `linux-
 
  Seguiremos los pasos ya indicados en el [Apartado 3.2](#32-sistema-operativo-de-la-memoria-ram-analizada):
 
-[![Miniatura video Volatility](./imagenes/024-miniatura-instalacion-volatility.png)](https://youtu.be/z_SWIIa3AnY)
+[![Miniatura video Volatility](./images/024-miniatura-instalacion-volatility.png)](https://youtu.be/z_SWIIa3AnY)
 
 > https://www.youtube.com/watch?v=z_SWIIa3AnY
 
@@ -2001,7 +2001,7 @@ Para ello entraremos en la carpeta `home/jrodg85/volatility/tools/linux`, una ve
 
 Ahora procederemos a nombrar el perfil de volatility para ello vamos a generar un archivo zip, este archivo, como norma general, usaremos los valores de `lsb_release -si` y `uname -r`. De esta manera nombraremos de manera correcta el perfil de volatility para después no tengamos problemas al importarlo dentro de la máquina donde estamos realizando la investigación.
 
-![017-lsb-release-y-uname-r.png](./imagenes/017-lsb-release-y-uname-r.png)
+![017-lsb-release-y-uname-r.png](./images/017-lsb-release-y-uname-r.png)
 
 Este archivo zip, debe de contener los dos archivos necesarios de perfil:
 
@@ -2015,16 +2015,16 @@ Este archivo zip, debe de contener los dos archivos necesarios de perfil:
 
 Para la generación del perfil, procederemos a ejecutar el comando `sudo zip /home/jrodg85/volatility/volatility/plugins/overlays/linux$(lsb_release -si)_$(uname -r)_profiles.zip /home/jrodg85/volatility/tools/linux/module.dwarf /boot/System.map-4.15.0-1021-aws`
 
-![018-perfil-generado.png](./imagenes/018-perfil-generado.png)
+![018-perfil-generado.png](./images/018-perfil-generado.png)
 
 Una vez creado el perfil, tenemos que sacar el perfil del servidor para después pegarlo dentro de la máquina una donde realizaremos el análisis. para ello procederemos a montar un usb dentro del servidor del ubuntu, posteriormente copiamos el archivo, `/home/jrodg85/volatility/volatility/plugins/overlays/linuxUbuntu_4.15.0-1021-aws_profile.zip`, y lo pegamos en el USB, posteriormente, procedemos a insertar en la VM de análisis en la carpeta en la carpeta `/home/jrodg85/volatility/volatility/plugins/overlays/linux` tal y como se muestra en la siguiente imagen.
 
-![021-copiado-en-entorno-volatility.png](./imagenes/021-copiado-en-entorno-volatility.png)
+![021-copiado-en-entorno-volatility.png](./images/021-copiado-en-entorno-volatility.png)
 
 para comprobar que esta correctamente creado el perfil procedemos a ejecutar el comando `sudo python2.7 col.py --info`, donde se podrá observar que se ha creado correctamente el perfil.
 
 
-![022-perfil-creado.png](./imagenes/022-perfil-creado.png)
+![022-perfil-creado.png](./images/022-perfil-creado.png)
 
 
 [Volver al Índice del capítulo 8. Anexos.](#índice-del-capítulo-8-anexos)
@@ -2074,7 +2074,7 @@ para comprobar que esta correctamente creado el perfil procedemos a ejecutar el 
 
 #### 8.3.001. Diagrama de Gantt reto/PEC 1.
 
-![001-diagrama-de-gantt-pec-01.png](./imagenes/001-diagrama-de-gantt-pec-01.png)
+![001-diagrama-de-gantt-pec-01.png](./images/001-diagrama-de-gantt-pec-01.png)
 
 [Volver al texto de la imagen 001.](#imagen-001)
 
@@ -2084,7 +2084,7 @@ para comprobar que esta correctamente creado el perfil procedemos a ejecutar el 
 
 #### 8.3.002. Diagrama de Gantt reto/PEC 2.
 
-![Diagrama de Gantt reto/PEC 2](./imagenes/002-diagrama-de-gantt-pec-02.png)
+![Diagrama de Gantt reto/PEC 2](./images/002-diagrama-de-gantt-pec-02.png)
 
 [Volver al texto de la imagen 002.](#imagen-002)
 
@@ -2093,7 +2093,7 @@ para comprobar que esta correctamente creado el perfil procedemos a ejecutar el 
 ---
 
 #### 8.3.003. Diagrama de Gantt reto/PEC 3.
-![Diagrama de Gantt reto/PEC 3](./imagenes/003-diagrama-de-gantt-pec-03.png)
+![Diagrama de Gantt reto/PEC 3](./images/003-diagrama-de-gantt-pec-03.png)
 
 [Volver al texto de la imagen 003.](#imagen-003)
 
@@ -2103,7 +2103,7 @@ para comprobar que esta correctamente creado el perfil procedemos a ejecutar el 
 
 #### 8.3.004. Diagrama de Gantt reto/PEC 4.
 
-![Diagrama de Gantt reto/PEC 4](./imagenes/004-diagrama-de-gantt-pec-04.png)
+![Diagrama de Gantt reto/PEC 4](./images/004-diagrama-de-gantt-pec-04.png)
 
 [Volver al texto de la imagen 004.](#imagen-004)
 
@@ -2111,7 +2111,7 @@ para comprobar que esta correctamente creado el perfil procedemos a ejecutar el 
 
 #### 8.3.005. Imagen Hash archivos.
 
-![005-imagen-hash-archivos.png](./imagenes/005-imagen-hash-archivos.png)
+![005-imagen-hash-archivos.png](./images/005-imagen-hash-archivos.png)
 
 [Volver al texto de la imagen 005.](#imagen-005)
 
@@ -2119,7 +2119,7 @@ para comprobar que esta correctamente creado el perfil procedemos a ejecutar el 
 
 #### 8.3.006. Imagen Hash archivos.
 
-![006-captura-hash-PowerShell.png](./imagenes/006-captura-hash-PowerShell.png)
+![006-captura-hash-PowerShell.png](./images/006-captura-hash-PowerShell.png)
 
 [Volver al texto de la imagen 006.](#imagen-006)
 
@@ -2127,7 +2127,7 @@ para comprobar que esta correctamente creado el perfil procedemos a ejecutar el 
 
 #### 8.3.007. Imagen de imageinfo.
 
-![007-captura-imageinfo.png](./imagenes/007-captura-imageinfo.png)
+![007-captura-imageinfo.png](./images/007-captura-imageinfo.png)
 
 [Volver al texto de la imagen 007.](#imagen-007)
 
@@ -2135,7 +2135,7 @@ para comprobar que esta correctamente creado el perfil procedemos a ejecutar el 
 
 #### 8.3.008. Imagen de búsqueda de string linux version.
 
-![008-buscar-strings-linux-version.png](./imagenes/008-buscar-strings-linux-version.png)
+![008-buscar-strings-linux-version.png](./images/008-buscar-strings-linux-version.png)
 
 [Volver al texto de la imagen 008.](#imagen-008)
 
@@ -2143,7 +2143,7 @@ para comprobar que esta correctamente creado el perfil procedemos a ejecutar el 
 
 #### 8.3.009. Imagen de buscando caché de AWS.
 
-![009-buscando-cache-aws.png](./imagenes/009-buscando-cache-aws.png)
+![009-buscando-cache-aws.png](./images/009-buscando-cache-aws.png)
 
 [Volver al texto de la imagen 009.](#imagen-009)
 
@@ -2151,7 +2151,7 @@ para comprobar que esta correctamente creado el perfil procedemos a ejecutar el 
 
 #### 8.3.010. Imagen de instalación de kernel de AWS.
 
-![010-instalación-kernel-aws.png](./imagenes/010-instalacion-kernel-aws.png)
+![010-instalación-kernel-aws.png](./images/010-instalacion-kernel-aws.png)
 
 [Volver al texto de la imagen 010.](#imagen-010)
 
@@ -2159,7 +2159,7 @@ para comprobar que esta correctamente creado el perfil procedemos a ejecutar el 
 
 #### 8.3.011. Imagen de reicicio del servidor de AWS.
 
-![011-reinicio-server-aws.png](./imagenes/011-reinicio-server-aws.png)
+![011-reinicio-server-aws.png](./images/011-reinicio-server-aws.png)
 
 [Volver al texto de la imagen 011.](#imagen-011)
 
@@ -2167,7 +2167,7 @@ para comprobar que esta correctamente creado el perfil procedemos a ejecutar el 
 
 #### 8.3.012. Imagen de reinicio del servidor con kernel de AWS.
 
-![012-inicio-con-server-aws.png](./imagenes/012-inicio-con-server-aws.png)
+![012-inicio-con-server-aws.png](./images/012-inicio-con-server-aws.png)
 
 [Volver al texto de la imagen 012.](#imagen-012)
 
@@ -2175,7 +2175,7 @@ para comprobar que esta correctamente creado el perfil procedemos a ejecutar el 
 
 #### 8.3.013. .
 
-![013-make-clean-clear-make.png](./imagenes/013-make-clean-clear-make.png)
+![013-make-clean-clear-make.png](./images/013-make-clean-clear-make.png)
 
 [Volver al texto de la imagen 013.](#imagen-013)
 
