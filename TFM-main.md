@@ -169,7 +169,9 @@ La situación en la que nos encontramos es un caso práctico laboral, en el que 
 
 En este caso, la dirección de la empresa tiene serias sospechas, no probadas, de que han accedido a los sistemas de forma ilícita. Por lo que el gerente de la empresa me solicita, como CISO, que se compruebe si realmente han accedido, así como el método que han utilizado. Por otro lado, solicitan las consecuencias que se derivan del dicho acceso, si ha habido extracción de información alguna.
 
-**DEUDA TÉCNICA: Pendiente de Referenciar!!! ENUNCIADO TFM**
+#### [1.0 Referencia 001](#85001-enunciado-tfm)
+
+
 
 [Volver al Índice del capítulo 1. Plan de trabajo.](#índice-del-capítulo-1-plan-de-trabajo)
 
@@ -2324,7 +2326,13 @@ para comprobar que esta correctamente creado el perfil procedemos a ejecutar el 
 
 #### 8.5.001. Enunciado TFM:
 
-[]
+- Autor: Universitat Oberta de Catalunya.
+- Título del trabajo: Enunciado TFM - Análisis forense.
+- Título del Contenedor: Descripción del caso.
+- URL: [https://drive.google.com/file/d/1TOKWOF_akO6IKVvXJ9ovPxMMhd9kafy1/view](https://github.com/jrodg85/TFM-ANALISIS-FORENSE/blob/main/Referencias/ENUNCIADO-M1.881-TFM-ANALISIS-FORENSE-SISTEMAS-INFORMATICOS.pdf)
+- URL repositorio Github: [ENUNCIADO-M1.881-TFM-ANALISIS-FORENSE-SISTEMAS-INFORMATICOS.pdf](https://github.com/jrodg85/TFM-ANALISIS-FORENSE/blob/main/referencias/ENUNCIADO-M1.881-TFM-ANALISIS-FORENSE-SISTEMAS-INFORMATICOS.pdf)
+
+[Volver a Sección 1.0](#10-referencia-001)
 
 [Volver al Índice del capítulo 8. Anexos.](#índice-del-capítulo-8-anexos)
 
