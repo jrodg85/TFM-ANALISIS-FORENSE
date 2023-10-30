@@ -66,14 +66,15 @@ Enero de 2024.
 - [7. Conclusiones.](#7-conclusiones)
   - [Índice del capítulo 7. Conclusiones.](#índice-del-capítulo-7-conclusiones)
   - [7.0. Introducción al capítulo 7. Conclusiones.](#70-introducción-al-capítulo-7-conclusiones)
-  - [7.1 Conclusiones.](#71-conclusiones)<br><br>
+  - [7.1 Conclusiones.](#71-conclusiones)
 - [8. Anexos.](#8-anexos)
   - [Índice del capítulo 8. Anexos.](#índice-del-capítulo-8-anexos)
   - [8.0. Introducción al capítulo 8. Anexos.](#80-introducción-al-capítulo-8-anexos)
   - [8.1. Creación de perfil para volatility.](#81-creación-de-perfil-para-volatility)
   - [8.2. Glosario de términos y abreviaturas.](#82-glosario-de-términos-y-abreviaturas)
   - [8.3. Imágenes.](#83-imágenes)
-  - [8.4. Bibliografía.](#84-bibliografia)
+  - [8.4. Extracto de comandos utilizados.](#84-extracto-de-comandos-utilizados)
+  - [8.5. Referencias.](#85-referencias)
 
 ---
 
@@ -102,10 +103,11 @@ PEC 2
 
 **DEUDA TÉCNICA: Indexar indice, indicar paginas**
 
-**DEUDA TECNICA: ENLAZAR CON INDICE DEL CAPITULO**
+**DEUDA TÉCNICA: ENLAZAR CON INDICE DEL CAPITULO**
 
+**DEUDA TÉCNICA: MOVER COMANDOS UTILIZADOS Y LAS IMAGENES A LOS ANEXOS DE IMAGENES.**
 
-COMENTARIOS TUTORA TFM.
+COMENTARIOS TUTORA TFM PEC 1.
 
 - Has realizado un buen trabajo con la planificación temporal y actividades.
   - Sin embargo, deben mejorarse los siguientes puntos:
@@ -132,7 +134,7 @@ A mis compañeros de trabajo, Juanma, Luisma y Borja, que saben de que estos tre
 
 ---
 
-<br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>
+<br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>
 
 # 1. Plan de trabajo.
 
@@ -175,7 +177,7 @@ En este caso, la dirección de la empresa tiene serias sospechas, no probadas, d
 
 ---
 
-<br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>
+<br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>
 
 ## 1.1. Problema a resolver.
 
@@ -193,7 +195,7 @@ Solventar las necesidades del gerente de la empresa mediante el análisis forens
 
 ---
 
-<br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>
+
 
 ## 1.2. Objetivos.
 
@@ -279,7 +281,7 @@ Se describe un el siguiente listado de objetivos que se obtienen al analizar el 
 
 ---
 
-<br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>
+
 
 ## 1.3. Descripción del entorno de trabajo.
 
@@ -301,7 +303,7 @@ Finalmente, Internet emerge como un recurso invaluable para la investigación, a
 
 ---
 
-<br><br><br><br><br><br><br><br><br><br><br>
+
 
 ## 1.4. Listado de tareas.
 
@@ -344,7 +346,7 @@ Durante la elaboración del reto 2 (PEC 2), se realizarán las siguientes tareas
 18. Adaptación al indice a los nuevos cambios en los capítulos 6 y 7.
 19. Refinamiento TFM 4.
 
-<br>
+
 
 Durante la elaboración del reto 3  (PEC 3), se realizarán las siguientes tareas:
 
@@ -370,7 +372,7 @@ Durante la elaboración del reto 4  (PEC 4), se realizarán las siguientes tarea
 3. Revisión de las anotaciones y consejos de la tutora de TFM 2.
 4. Ultimas correcciones Feedback TFM 2.
 
-La Entrega de videos, presentación y realización de la defensa del TFM, se consideran que estan fuera de este TFM, ya que a partir de la fecha se considera entregado el presente documento.
+La Entrega de videos, presentación y realización de la defensa del TFM, se consideran que están fuera de este TFM, ya que a partir de la fecha se considera entregado el presente documento.
 
 [Volver al Índice del capítulo 1. Plan de trabajo.](#índice-del-capítulo-1-plan-de-trabajo)
 
@@ -378,7 +380,7 @@ La Entrega de videos, presentación y realización de la defensa del TFM, se con
 
 ---
 
-<br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>
+
 
 ## 1.5. Planificación temporal de las tareas.
 
@@ -386,19 +388,20 @@ Para esta sección, se han elaborado los siguientes diagramas de Gantt relativos
 
 Relativo al reto/PEC 1 se establece el siguiente diagrama:
 
-![Diagrama de Gantt reto/PEC 1](./imagenes/003-diagrama-de-gantt-pec-01.png)
+##### [Imagen 001](#83001)
 
 Relativo al reto/PEC 2 se establece el siguiente diagrama.
 
-![Diagrama de Gantt reto/PEC 2](./imagenes/004-diagrama-de-gantt-pec-02.png)<br><br><br><br>
+##### [Imagen 002](#83002)
 
 Relativo al reto/PEC 3 se establece el siguiente diagrama.
 
-![Diagrama de Gantt reto/PEC 3](./imagenes/005-diagrama-de-gantt-pec-03.png)
+##### [Imagen 003](#83003)
 
 Relativo al reto/PEC 4 se establece el siguiente diagrama.
 
-![Diagrama de Gantt reto/PEC 3](./imagenes/006-diagrama-de-gantt-pec-04.png)
+##### [Imagen 004](#83004)
+
 
 [Volver al Índice del capítulo 1. Plan de trabajo.](#índice-del-capítulo-1-plan-de-trabajo)
 
@@ -406,7 +409,7 @@ Relativo al reto/PEC 4 se establece el siguiente diagrama.
 
 ---
 
-<br><br><br><br><br><br><br>
+
 
 ## 1.6. Revisión del estado del arte de la informática forense.
 
@@ -428,7 +431,7 @@ Es muy importante mencionar que la informática o el análisis forense no tiene 
 
 [Volver al Índice del capítulo 1. Plan de trabajo.](#índice-del-capítulo-1-plan-de-trabajo)
 
-<br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>
+
 
 ### 1.6.2. Definiciones.
 
@@ -442,7 +445,7 @@ Existen diferentes términos referentes a la ciencia forense en informática. Ca
 
 [Volver al Índice del capítulo 1. Plan de trabajo.](#índice-del-capítulo-1-plan-de-trabajo)
 
-<br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>
+
 
 ### 1.6.3. Objetivos de la informática forense.
 
@@ -459,7 +462,7 @@ Es importante mencionar que quienes se dedican a la informática forense deben s
 
 [Volver al Índice del capítulo 1. Plan de trabajo.](#índice-del-capítulo-1-plan-de-trabajo)
 
-<br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>
+
 
 ### 1.6.4. Evidencia digital.
 
@@ -506,7 +509,7 @@ Cualquier infraestructura informática que tenga una memoria (almacenamiento) es
 
 [Volver al Índice del capítulo 1. Plan de trabajo.](#índice-del-capítulo-1-plan-de-trabajo)
 
-<br><br><br>
+
 
 ### 1.6.5. Perspectiva de tres roles.
 
@@ -553,7 +556,7 @@ Es aquel que planea y organiza todo el proceso de investigación digital. Debe i
 
 Conoce el escenario en donde se desarrolla la investigación. Tiene el conocimiento del modelo de seguridad, los usuarios y las acciones que pueden realizar en el respectivo sistema. A partir de sus conocimientos debe entregar información crítica a la investigación.
 
-<br>
+
 
 3. Especialista en informática forense:
 
@@ -565,7 +568,7 @@ Examina en detalle los datos, los elementos informáticos recogidos en la escena
 
 [Volver al Índice del capítulo 1. Plan de trabajo.](#índice-del-capítulo-1-plan-de-trabajo)
 
-<br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>
+
 
 ### 1.6.6. Pasos del proceso del cómputo forense.
 
@@ -587,7 +590,7 @@ Proceso de aplicar técnicas científicas y analíticas a los medios duplicados 
 
 Es la recopilación de toda la información que se obtuvo a partir del análisis para realizar el reporte y la presentación a los abogados, jueces o instancias que soliciten este informe, la generación (si es el caso) de una pericial y de su correcta interpretación sin hacer uso de tecnicismos; se deberá presentar de manera cauta, prudente y discreta al solicitante la documentación, ya que siempre existirán puertas traseras dentro del sistema en observación. Debe ser muy específica la investigación dentro del sistema que se documenta porque se compara y vincula una plataforma de telecomunicación y cómputo forense que están muy estrechamente enlazadas, sin olvidar los medios de almacenamiento magnéticos portables basados en software libre y privativo. La información que se transmite debe manejarse con cuidado, porque el prestigio técnico depende de las plataformas y los sistemas
 
-<br><br><br><br>
+
 
 Para poder realizar con éxito su trabajo, el investigador nunca debe olvidar:
 
@@ -600,7 +603,7 @@ El especialista debe conocer también sobre el desarrollo de los exploit (vulner
 
 [Volver al Índice del capítulo 1. Plan de trabajo.](#índice-del-capítulo-1-plan-de-trabajo)
 
-<br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>
+
 
 ### 1.6.7. Retos y riesgos en el cómputo forense.
 
@@ -625,14 +628,14 @@ Es por esto que el NIST (National Institute of Standards and Technology de Estad
 
 [Volver al Índice del capítulo 1. Plan de trabajo.](#índice-del-capítulo-1-plan-de-trabajo)
 
-<br><br><br>
+
 
 ### 1.6.8. Herramientas de Análisis Forense.
 
 La siguiente tabla compara cuatro herramientas reconocidas internacionalmente al ser muy completas. Luego, se encuentra una lista más completa de herramientas útiles para la labor del investigador.
 
 ----------------------------------------------------------
-| **Herramienta** | **Licencia** | **Imagen** | **Control de Integridad**  | **Administracion del caso**  |
+| **Herramienta** | **Licencia** | **Imagen** | **Control de Integridad**  | **Administración del caso**  |
 | :-----------: |  :-------: | :------: | :----------------------: | :------------------------: |
 | Encase |  SI | SI | SI | SI |
 | Forensic Toolkit | SI | SI | SI | SI |
@@ -711,7 +714,7 @@ La siguiente tabla compara cuatro herramientas reconocidas internacionalmente al
 
 ---
 
-<br><br><br><br><br><br><br><br><br><br><br>
+
 
 # 2. Extremos del análisis y previsión de pruebas técnicas.
 
@@ -725,8 +728,6 @@ La siguiente tabla compara cuatro herramientas reconocidas internacionalmente al
 [Volver al Índice General.](#índice-general)
 
 ---
-
-<br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>
 
 ## 2.0. Introducción al capítulo 2. Extremos del análisis y previsión de pruebas técnicas.
 
@@ -746,7 +747,7 @@ Esta introducción proporciona una vista general y establece las expectativas pa
 
 ---
 
-<br><br><br><br><br><br><br><br>
+
 
 ## 2.1. Propuesta de extremos.
 
@@ -757,18 +758,15 @@ La presente investigación tiene como propósito fundamental el establecimiento 
 - La investigación se centrará exclusivamente en el análisis forense del material facilitado para el desarrollo de la asignatura por parte del profesorado de la asignatura.
 - Se realizará una breve indicación sobre la aplicación utilizada con cada uno de los objetivos del presente TFM.
 
-
 **Alcance metodológico:**
 
 - La validación de la integridad de la evidencia se hará mediante el uso de funciones hash estándar.
 - Se examinarán las metodologías para el análisis de la memoria volátil y no volátil.
 
-
 **Limitaciones:**
 
 - La validación de la integridad de la evidencia se hará mediante el uso de funciones hash estándar.
 - Se examinarán las metodologías para el análisis de la memoria volátil y no volátil.
-
 
 **Exclusiones:**
 
@@ -779,8 +777,6 @@ La presente investigación tiene como propósito fundamental el establecimiento 
 [Volver al Índice General.](#índice-general)
 
 ---
-
-<br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>
 
 ## 2.2. Previsión de pruebas técnicas.
 
@@ -815,7 +811,7 @@ La presente investigación tiene como propósito fundamental el establecimiento 
 
 ---
 
-<br><br><br><br><br><br><br><br><br>
+
 
 # 3. Análisis de la memoria RAM.
 
@@ -838,7 +834,7 @@ La presente investigación tiene como propósito fundamental el establecimiento 
 
 ---
 
-<br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>
+
 
 ## 3.0. Introducción al capítulo 3. Análisis de la memoria RAM.
 
@@ -875,20 +871,18 @@ El resultado de este análisis exhaustivo proporcionará una comprensión detall
 
 ---
 
-<br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>
-
 ## 3.1. Acciones previas al análisis de la memoria RAM.
 
 En el presente TFM, se nos ha proporcionado a los alumnos un archivo de captura de memoria RAM .mem. Por otro lado, se nos ha proporcionado los resúmenes o hash en MD5 y en SHA1 de los archivos tal y como se muestra en la siguiente imagen.
 
-![007-imagen-hash-archivos.png](./imagenes/007-imagen-hash-archivos.png)
+##### [Imagen 005](#83005)
 
 Como Podemos ver, los hash resúmenes del archivo de la ram, tememos los siguientes hashes en MD5 y en SHA1:
 
 - **MD5:** 75a99b57032aa34ba19042ed85db273f
 - **SHA1:** cc1fad2af321b8c2ddf0103986e3b344eb8f2cc8
 
-Eñ hash tal y como se indica en los apuntes de la asignatura, en el módulo de Fases y metodología del análisis forense, durante la adquisición de evidencias digitales dice  lo siguiente:
+El hash tal y como se indica en los apuntes de la asignatura, en el módulo de Fases y metodología del análisis forense, durante la adquisición de evidencias digitales dice  lo siguiente:
 
 Una vez generada la copia o clon del soporte original, el programa o el dispositivo hardware empleado en este proceso realiza el cálculo del CRC o del valor hash del soporte original y del destino, con la finalidad de garantizar que los dos son idénticos y que la copia se ha producido sin ningún error. Este cálculo puede realizarse sobre todo el conjunto de información contenida en el soporte original, o bien emplear solamente un conjunto de ficheros del total.
 
@@ -898,7 +892,7 @@ Es una función matemática unidireccional que resume un mensaje de tamaño vari
 
 Una vez descargado el archivo de captura de la memoria RAM, procedemos a usar PowerShell para determinar el hash del archivo. Para ello usamos el comando  "Get-FileHash [Argumento] -Algorithm MD5". En nuestro caso hemos usado los siguientes comandos:
 
-<br>
+
 
 ~~~Shell
 Get-FileHash .\Server_RAM.mem -Algorithm MD5
@@ -911,7 +905,7 @@ Get-FileHash .\Server_RAM.mem -Algorithm SHA1
 La respuesta de PowerShell es el siguiente respectivamente
 
 ~~~Shell
-Al74gorithm       Hash                                                                   Path
+Algorithm       Hash                                                                   Path
 ---------       ----                                                                   ----
 MD5             75A99B57032AA34BA19042ED85DB273F                                       D:\TFM\RAM\...
 ~~~
@@ -924,7 +918,10 @@ SHA1            CC1FAD2AF321B8C2DDF0103986E3B344EB8F2CC8                        
 
 Se puede observar en la siguiente imagen la respuesta de PowerShell de los hashes de MD5 y SHA1.
 
-![008-captura-hash-PowerShell.png](./imagenes/008-captura-hash-PowerShell.png)
+
+##### [Imagen 006](#83006)
+
+![006-captura-hash-PowerShell.png](./imagenes/006-captura-hash-PowerShell.png)
 
 Como conclusión podemos verificar que la integridad de la copia facilitada para realizar el TFM no ha sido vulnerada.
 
@@ -934,7 +931,7 @@ Como conclusión podemos verificar que la integridad de la copia facilitada para
 
 ---
 
-<br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>
+
 
 ## 3.2. Sistema Operativo de la memoria RAM analizada.
 
@@ -944,13 +941,13 @@ Procedemos a preparar una máquina virtual con Ubuntu 22.04, el cual le instalam
 
 > [https://www.youtube.com/watch?v=z_SWIIa3AnY](https://www.youtube.com/watch?v=z_SWIIa3AnY)
 
-A continuación procedemos a buscar el perfil con volatility con el comando imageinfo.
+A continuación procedemos a buscar el perfil con volatility con el comando `imageinfo`.
 
-![009-captura-imgeinfo.png](./imagenes/009-captura-imgeinfo.png)
+##### [Imagen 007](#83007)
 
-Como se puede observar en la imagen anterior, no hemos llegado a encontrar un perfil concreto con imageinfo, eso se debe a que el perfil creado no es el que se encuentra dentro de las conocidas en la base de datos de volatility. Por ello procedemos a buscar dentor de la memoria RAM un string que tenga la cadena de texto "linux version". para ello ejecutamos el comando `strings Server_{RAM}.mem \mid grep -Ei linux version \mid uniq`.
+Como se puede observar en la imagen anterior, no hemos llegado a encontrar un perfil concreto con `imageinfo`, eso se debe a que el perfil creado no es el que se encuentra dentro de las conocidas en la base de datos de volatility. Por ello procedemos a buscar dentro de la memoria RAM un string que tenga la cadena de texto "linux version". para ello ejecutamos el comando `strings Server_{RAM}.mem \mid grep -Ei linux version \mid uniq`.
 
-![010-buscar-strings-linux-verison.png](./imagenes/010-buscar-strings-linux-verison.png)
+##### [Imagen 008](#83008)
 
 Podemos observar en la imagen anterior que el sistema operativo que utiliza en nuestro caso es un sistema operativo Linux para Amazon Web Service, concretamente el sistema operativo es el **4.15.0-1021.21-aws 4.15.18**. Esta version de Linux, es muy usada para las instancias de Amazon Web Services.
 
@@ -964,11 +961,11 @@ Buscando en google **linux version 4.15.0-1021.21-aws volatility**, nos encontra
 
 ---
 
-<br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>
+
 
 ## 3.3. Datos de interés de la captura de la memoria RAM.
 
-En el anexo Creación perfil ubuntu AWS, hemos realizado una guia para crear el perfil de Linux AWS que detectado durante el análisis del sistema operativo.
+En el anexo Creación perfil ubuntu AWS, hemos realizado una guía para crear el perfil de Linux AWS que detectado durante el análisis del sistema operativo.
 
 Una vez creado el perfil de linuxUbuntu_4.15.0-1021-aws procederemos a hacer un pslist para listar todas las aplicaciones que estaban ejecutándose en el momento de la captura.
 
@@ -1522,13 +1519,13 @@ Relativo a la seguridad del servidor, siguiente listado de documentos son notabl
 
   - Detener servicios como MySQL y Apache puede afectar la disponibilidad de aplicaciones dependientes. Si se hace sin precaución, podría provocar tiempos de inactividad no planificados.
 
-**6. vi /etc/mysql/debian.cnf y sudo vi /etc/apache2/sites-enabled/000-default.conf.** 
+**6. vi /etc/mysql/debian.cnf y sudo vi /etc/apache2/sites-enabled/000-default.conf.**
 
   - Editar archivos de configuración es una tarea común, pero si se hacen cambios incorrectos o inseguros, pueden surgir problemas de seguridad y funcionamiento.
 
 **7.sudo insmod lime-4.15.0-42-generic.ko "path=captura.mem format=lime".**
 
-  - Cargar módulos del kernel personalizados o desconocidos puede ser riesgoso si no se comprenden completamente sus funciones y orígenes.
+  - Cargar módulos del kernel personalizados o desconocidos puede ser una accion de riesgo si no se comprenden completamente sus funciones y orígenes.
 
 **8. sudo apt install php-mysql.**
 
@@ -1546,7 +1543,7 @@ Es fundamental que cualquier administrador de sistemas ejecute estos comandos co
 
 ---
 
-<br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>
+
 
 ## 3.4. Búsqueda de procesos en funcionamiento de interés para el análisis.
 
@@ -1563,7 +1560,7 @@ Es fundamental que cualquier administrador de sistemas ejecute estos comandos co
 
 ---
 
-<br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>
+
 
 ## 3.5. Listado de conexiones de red y conexiones sospechosas.
 
@@ -1580,7 +1577,7 @@ Es fundamental que cualquier administrador de sistemas ejecute estos comandos co
 
 ---
 
-<br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>
+
 
 # 4. Análisis del disco duro.
 
@@ -1602,7 +1599,7 @@ Es fundamental que cualquier administrador de sistemas ejecute estos comandos co
 
 ---
 
-<br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>
+
 
 ## 4.0. Introducción al capítulo 4. Análisis del disco duro.
 
@@ -1622,7 +1619,7 @@ Es fundamental que cualquier administrador de sistemas ejecute estos comandos co
 
 ---
 
-<br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>
+
 
 ## 4.1. Acciones previas al análisis del disco duro.
 
@@ -1641,7 +1638,7 @@ Es fundamental que cualquier administrador de sistemas ejecute estos comandos co
 
 ---
 
-<br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>
+
 
 ## 4.2. Datos de interés del disco duro.
 
@@ -1660,7 +1657,7 @@ Es fundamental que cualquier administrador de sistemas ejecute estos comandos co
 
 ---
 
-<br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>
+
 
 ## 4.3. Usuarios del sistema.
 
@@ -1676,7 +1673,7 @@ Es fundamental que cualquier administrador de sistemas ejecute estos comandos co
 
 ---
 
-<br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>
+
 
 ## 4.4. Análisis de evidencias del disco duro.
 
@@ -1691,7 +1688,7 @@ Es fundamental que cualquier administrador de sistemas ejecute estos comandos co
 
 ---
 
-<br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>
+
 
 # 5. Resumen ejecutivo.
 
@@ -1708,7 +1705,7 @@ Es fundamental que cualquier administrador de sistemas ejecute estos comandos co
 
 ---
 
-<br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>
+
 
 ## 5.0. Introducción al capítulo 5. Resumen ejecutivo.
 
@@ -1723,7 +1720,7 @@ Es fundamental que cualquier administrador de sistemas ejecute estos comandos co
 
 ---
 
-<br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>
+
 
 ## 5.1. Resumen ejecutivo.
 
@@ -1743,7 +1740,7 @@ Es fundamental que cualquier administrador de sistemas ejecute estos comandos co
 
 ---
 
-<br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>
+
 
 # 6. Informe pericial.
 
@@ -1753,7 +1750,7 @@ Es fundamental que cualquier administrador de sistemas ejecute estos comandos co
 
 ---
 
-<br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>
+
 
 ## 6.0. Introducción al capítulo 6. Informe pericial.
 
@@ -1763,7 +1760,7 @@ Es fundamental que cualquier administrador de sistemas ejecute estos comandos co
 
 ---
 
-<br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>
+
 
 ## 6.1. Informe pericial.
 
@@ -1773,7 +1770,7 @@ Es fundamental que cualquier administrador de sistemas ejecute estos comandos co
 
 ---
 
-<br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>
+
 
 # 7. Conclusiones.
 
@@ -1783,7 +1780,7 @@ Es fundamental que cualquier administrador de sistemas ejecute estos comandos co
 
 ---
 
-<br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>
+
 
 ## 7.0. Introducción al capítulo 7. Conclusiones.
 
@@ -1797,7 +1794,7 @@ Es fundamental que cualquier administrador de sistemas ejecute estos comandos co
 
 ---
 
-<br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>
+
 
 ## 7.1. Conclusiones.
 
@@ -1814,7 +1811,7 @@ Es fundamental que cualquier administrador de sistemas ejecute estos comandos co
 
 ---
 
-<br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>
+
 
 # 8. Anexos.
 
@@ -1829,7 +1826,7 @@ Es fundamental que cualquier administrador de sistemas ejecute estos comandos co
 
 ---
 
-<br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>
+
 
 
 ## 8.0. Introducción al capítulo 8. Anexos.
@@ -1843,7 +1840,7 @@ Es fundamental que cualquier administrador de sistemas ejecute estos comandos co
 
 ---
 
-<br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>
+
 
 ## 8.1. Creación de perfil para volatility.
 
@@ -1924,15 +1921,15 @@ WinXPSP3x86                         - A Profile for Windows XP SP3 x86
 
 ### 8.1.1. Creación de la máquina virtual.
 
-Vamos crear una máquina virtual para generar una maquina virtual base con el mismo kernel que el servidor auditado.
+Vamos crear una máquina virtual para generar una máquina virtual base con el mismo kernel que el servidor auditado.
 
 ![025-detalles-servidor-perfil-volatility](./imagenes/025-detalles-servidor-perfil-volatility.png)
 
 [Volver al Índice del capítulo 8. Anexos.](#índice-del-capítulo-8-anexos)
 
-<br><br><br><br><br><br><br><br><br><br>
 
-### 8.1.2. Busqueda en cache del kernel relativo al perfil a crear.
+
+### 8.1.2. Búsqueda en cache del kernel relativo al perfil a crear.
 
 Procedemos a arrancar la máquina virtual (en adelante VM), una vez realizado el login, procedemos a ejecutar el comando `sudo apt-cache search linux-image | grep 4.15.0-1021`.
 
@@ -1951,12 +1948,12 @@ Al combinar estos dos comandos, `sudo apt-cache search linux-image | grep 4.15.0
 Se adjunta pantallazo de la respuesta por parte de la consola.
 
 
-![012-buscando-cache-aws.png](./imagenes/012-buscando-cache-aws.png)
+##### [Imagen 009](#83009)
 
 
 [Volver al Índice del capítulo 8. Anexos.](#índice-del-capítulo-8-anexos)
 
-<br><br><br><br><br><br><br><br>
+
 
 ### 8.1.3. Instalación del kernel relativo al perfil a crear.
 
@@ -1964,23 +1961,19 @@ Una vez encontrado la imagen del kernel que buscamos, procedemos a instalarla en
 
 El comando `sudo apt-get install linux-image-4.15.0-2021-aws` en Ubuntu o sistemas basados en Debian, se utiliza para instalar una versión específica del kernel de Linux, diseñada para ambientes Amazon Web Services (AWS). Al usar `sudo`, el comando se ejecuta con privilegios de superusuario, necesarios para instalar software a nivel de sistema. `apt-get install` es parte del sistema de gestión de paquetes APT, y se usa aquí para instalar el paquete `linux-image-4.15.0-2021-aws`. Este paquete contiene una imagen del kernel de Linux, la cual está optimizada para correr en servidores AWS, indicando que este kernel podría tener configuraciones o parches específicos para un rendimiento mejorado o características adicionales en esa plataforma. **Al instalar un nuevo kernel, es importante reiniciar el sistema para que empiece a usar esta nueva versión.**
 
-Se adjunta pantallazo de la instalacion del kernel de AWS:
+Se adjunta pantallazo de la instalación del kernel de AWS:
 
-
-![013-instalación-kernel-aws.png](./imagenes/013-instalacion-kernel-aws.png)
+##### [Imagen 010](#83010)
 
 Como hemos indicado anteriormente, es necesario reiniciar el sistema para que el kernel instalado se utilice en el Sistema operativo, procederemos a ejecutar el comando `sudo reboot now` para realizar esta acción.
 
-
-![014-reinicio-server-aws.png](./imagenes/014-reinicio-server-aws.png)
+##### [Imagen 011](#83011)
 
 Una vez reiniciado el sistema, procedemos a ejecutar el comando `uname - r` para comprobar que el comando se ha ejecutado correctamente.
 
-![015](./imagenes/015-inicio-con-server-aws.png)
+##### [Imagen 012](#83012)
 
 [Volver al Índice del capítulo 8. Anexos.](#índice-del-capítulo-8-anexos)
-
-<br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>
 
 ### 8.1.4. Instalación de volatility.
 
@@ -1988,7 +1981,7 @@ Una vez comprobado, procederemos a la instalación de volatility en el servidor 
 
 Primero de todo instalaremos los paquetes relativos a `dwarfdum`, `gcc`, `linux-headers` y `git`, ya que el servidor no los tiene instalado por defecto.
 
- Seguiremos los pasos ya indicados en el [Apardado 3.2](#32-sistema-operativo-de-la-memoria-ram-analizada):
+ Seguiremos los pasos ya indicados en el [Apartado 3.2](#32-sistema-operativo-de-la-memoria-ram-analizada):
 
 [![Miniatura video Volatility](./imagenes/024-miniatura-instalacion-volatility.png)](https://youtu.be/z_SWIIa3AnY)
 
@@ -2002,15 +1995,15 @@ Una vez instalado, procedemos a realizar los pasos para la creación del perfil 
 
 Una vez hemos realizado la instalación procedemos a crear el perfil de volatility.
 
-Para ello entraremos en la carpeta `home/jrodg85/volatility/tools/linux`, una vez alli dentro ejecutaremos el comando `make`. En la siguiente imagen, se puede ver un pantallazo del comando, en caso de tener error del mismo, lo mas recomendable es hacer un `make clean` y despues volver a ejecutar `make`. Lo mas importante es que se tiene que crear el archivo **`modules.dwarf`**
+Para ello entraremos en la carpeta `home/jrodg85/volatility/tools/linux`, una vez allí dentro ejecutaremos el comando `make`. En la siguiente imagen, se puede ver un pantallazo del comando, en caso de tener error del mismo, lo mas recomendable es hacer un `make clean` y después volver a ejecutar `make`. Lo mas importante es que se tiene que crear el archivo **`modules.dwarf`**
 
-![016-make-clean-clear-make.png](./imagenes/016-make-clean-clear-make.png)
+##### [Imagen 013](#83013)
 
-Ahora procederemos a nombrar el perfil de volatility para ello vamos a generar un archivo zip, este archivo, como norma general, usaremos los valores de `lsb_release -si` y `uname -r`. De esta manera nombraremos de manera correcta el perfil de volatility para después no tengamos problemas al importarlo dentro de la maquina donde estamos realizando la investigación.
+Ahora procederemos a nombrar el perfil de volatility para ello vamos a generar un archivo zip, este archivo, como norma general, usaremos los valores de `lsb_release -si` y `uname -r`. De esta manera nombraremos de manera correcta el perfil de volatility para después no tengamos problemas al importarlo dentro de la máquina donde estamos realizando la investigación.
 
 ![017-lsb-release-y-uname-r.png](./imagenes/017-lsb-release-y-uname-r.png)
 
-Este archivo zip, debe de contener los dos archivos necesarios de pertil:
+Este archivo zip, debe de contener los dos archivos necesarios de perfil:
 
 **modules.dwarf**
 
@@ -2020,12 +2013,18 @@ Este archivo zip, debe de contener los dos archivos necesarios de pertil:
 
 - Este archivo es un mapa de símbolos del kernel. Proporciona una lista de todas las funciones y variables en el kernel, junto con sus direcciones de memoria. Cada versión del kernel de Linux tiene su propio archivo System.map, y el archivo específico para una versión dada del kernel (en tu caso, 4.15.0-1021-aws) es necesario para analizar un volcado de memoria tomado de un sistema que ejecuta esa versión del kernel. Este archivo es esencial para que Volatility pueda mapear las direcciones de memoria en el volcado a nombres de funciones y variables específicas en el kernel.
 
+Para la generación del perfil, procederemos a ejecutar el comando `sudo zip /home/jrodg85/volatility/volatility/plugins/overlays/linux$(lsb_release -si)_$(uname -r)_profiles.zip /home/jrodg85/volatility/tools/linux/module.dwarf /boot/System.map-4.15.0-1021-aws`
+
+![018-perfil-generado.png](./imagenes/018-perfil-generado.png)
+
+Una vez creado el perfil, tenemos que sacar el perfil del servidor para después pegarlo dentro de la máquina una donde realizaremos el análisis. para ello procederemos a montar un usb dentro del servidor del ubuntu, posteriormente copiamos el archivo, `/home/jrodg85/volatility/volatility/plugins/overlays/linuxUbuntu_4.15.0-1021-aws_profile.zip`, y lo pegamos en el USB, posteriormente, procedemos a insertar en la VM de análisis en la carpeta en la carpeta `/home/jrodg85/volatility/volatility/plugins/overlays/linux` tal y como se muestra en la siguiente imagen.
+
+![021-copiado-en-entorno-volatility.png](./imagenes/021-copiado-en-entorno-volatility.png)
+
+para comprobar que esta correctamente creado el perfil procedemos a ejecutar el comando `sudo python2.7 col.py --info`, donde se podrá observar que se ha creado correctamente el perfil.
 
 
-
-
-
-
+![022-perfil-creado.png](./imagenes/022-perfil-creado.png)
 
 
 [Volver al Índice del capítulo 8. Anexos.](#índice-del-capítulo-8-anexos)
@@ -2033,9 +2032,6 @@ Este archivo zip, debe de contener los dos archivos necesarios de pertil:
 [Volver al Índice General.](#índice-general)
 
 ---
-
-
-
 
 ## 8.2. Glosario de términos y abreviaturas.
 
@@ -2066,12 +2062,6 @@ Este archivo zip, debe de contener los dos archivos necesarios de pertil:
 - Técnica llamada también "espejeo" (en inglés "Mirroring"), la cual es una copia binaria de un medio electrónico de almacenamiento. En la imagen quedan grabados los espacios que ocupan los archivos y las áreas borradas incluyendo particiones escondidas.
 
 
-
-
-
-
-
-
 [Volver al Índice del capítulo 8. Anexos.](#índice-del-capítulo-8-anexos)
 
 [Volver al Índice General.](#índice-general)
@@ -2080,15 +2070,220 @@ Este archivo zip, debe de contener los dos archivos necesarios de pertil:
 
 ## 8.3. Imágenes.
 
+---
+
+#### 8.3.001. Diagrama de Gantt reto/PEC 1.
+
+![001-diagrama-de-gantt-pec-01.png](./imagenes/001-diagrama-de-gantt-pec-01.png)
+
+[Volver al texto de la imagen 001.](#imagen-001)
+
+---
+
+---
+
+#### 8.3.002. Diagrama de Gantt reto/PEC 2.
+
+![Diagrama de Gantt reto/PEC 2](./imagenes/002-diagrama-de-gantt-pec-02.png)
+
+[Volver al texto de la imagen 002.](#imagen-002)
+
+---
+
+---
+
+#### 8.3.003. Diagrama de Gantt reto/PEC 3.
+![Diagrama de Gantt reto/PEC 3](./imagenes/003-diagrama-de-gantt-pec-03.png)
+
+[Volver al texto de la imagen 003.](#imagen-003)
+
+---
+
+---
+
+#### 8.3.004. Diagrama de Gantt reto/PEC 4.
+
+![Diagrama de Gantt reto/PEC 4](./imagenes/004-diagrama-de-gantt-pec-04.png)
+
+[Volver al texto de la imagen 004.](#imagen-004)
+
+---
+
+#### 8.3.005. Imagen Hash archivos.
+
+![005-imagen-hash-archivos.png](./imagenes/005-imagen-hash-archivos.png)
+
+[Volver al texto de la imagen 005.](#imagen-005)
+
+---
+
+#### 8.3.006. Imagen Hash archivos.
+
+![006-captura-hash-PowerShell.png](./imagenes/006-captura-hash-PowerShell.png)
+
+[Volver al texto de la imagen 006.](#imagen-006)
+
+---
+
+#### 8.3.007. Imagen de imageinfo.
+
+![007-captura-imageinfo.png](./imagenes/007-captura-imageinfo.png)
+
+[Volver al texto de la imagen 007.](#imagen-007)
+
+---
+
+#### 8.3.008. Imagen de búsqueda de string linux version.
+
+![008-buscar-strings-linux-version.png](./imagenes/008-buscar-strings-linux-version.png)
+
+[Volver al texto de la imagen 008.](#imagen-008)
+
+---
+
+#### 8.3.009. Imagen de buscando caché de AWS.
+
+![009-buscando-cache-aws.png](./imagenes/009-buscando-cache-aws.png)
+
+[Volver al texto de la imagen 009.](#imagen-009)
+
+---
+
+#### 8.3.010. Imagen de instalación de kernel de AWS.
+
+![010-instalación-kernel-aws.png](./imagenes/010-instalacion-kernel-aws.png)
+
+[Volver al texto de la imagen 010.](#imagen-010)
+
+---
+
+#### 8.3.011. Imagen de reicicio del servidor de AWS.
+
+![011-reinicio-server-aws.png](./imagenes/011-reinicio-server-aws.png)
+
+[Volver al texto de la imagen 011.](#imagen-011)
+
+---
+
+#### 8.3.012. Imagen de reinicio del servidor con kernel de AWS.
+
+![012-inicio-con-server-aws.png](./imagenes/012-inicio-con-server-aws.png)
+
+[Volver al texto de la imagen 012.](#imagen-012)
+
+---
+
+#### 8.3.013. .
+
+![013-make-clean-clear-make.png](./imagenes/013-make-clean-clear-make.png)
+
+[Volver al texto de la imagen 013.](#imagen-013)
+
+---
+
+#### 8.3.014. .
 
 
 
+[Volver al texto de la imagen 014.](#imagen-014)
+
+---
+
+#### 8.3.015. .
 
 
 
+[Volver al texto de la imagen 015.](#imagen-015)
+
+---
+
+#### 8.3.016. .
 
 
 
+[Volver al texto de la imagen 016.](#imagen-016)
+
+---
+
+#### 8.3.017. .
+
+
+
+[Volver al texto de la imagen 017.](#imagen-017)
+
+---
+
+#### 8.3.018. .
+
+
+
+[Volver al texto de la imagen 018.](#imagen-018)
+
+---
+
+#### 8.3.019. .
+
+
+
+[Volver al texto de la imagen 019.](#imagen-019)
+
+---
+
+#### 8.3.020. .
+
+
+
+[Volver al texto de la imagen 020.](#imagen-020)
+
+---
+
+#### 8.3.021. .
+
+
+
+[Volver al texto de la imagen 021.](#imagen-021)
+
+---
+
+#### 8.3.022. .
+
+
+
+[Volver al texto de la imagen 022.](#imagen-022)
+
+---
+
+#### 8.3.023. .
+
+
+
+[Volver al texto de la imagen 024.](#imagen-024)
+
+---
+
+#### 8.3.025. .
+
+
+
+[Volver al texto de la imagen 025.](#imagen-025)
+
+---
+
+#### 8.3.026. .
+
+
+
+[Volver al texto de la imagen 026.](#imagen-026)
+
+---
+
+#### 8.3.027. .
+
+
+
+[Volver al texto de la imagen 028.](#imagen-028)
+
+---
 
 
 
@@ -2107,7 +2302,7 @@ Este archivo zip, debe de contener los dos archivos necesarios de pertil:
 
 ---
 
-## 8.4. Bibliografia.
+## 8.4. Extracto de comandos utilizados.
 
 
 
@@ -2118,6 +2313,18 @@ Este archivo zip, debe de contener los dos archivos necesarios de pertil:
 
 
 
+
+[Volver al Índice del capítulo 8. Anexos.](#índice-del-capítulo-8-anexos)
+
+[Volver al Índice General.](#índice-general)
+
+---
+
+## 8.5. Referencias.
+
+#### Ref.001.
+
+Enunciado TFM: 
 
 [Volver al Índice del capítulo 8. Anexos.](#índice-del-capítulo-8-anexos)
 
