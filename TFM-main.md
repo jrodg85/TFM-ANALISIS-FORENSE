@@ -175,7 +175,7 @@ La situación en la que nos encontramos es un caso práctico laboral, en el que 
 
 En este caso, la dirección de la empresa tiene serias sospechas, no probadas, de que han accedido a los sistemas de forma ilícita. Por lo que el gerente de la empresa me solicita, como CISO, que se compruebe si realmente han accedido, así como el método que han utilizado. Por otro lado, solicitan las consecuencias que se derivan del dicho acceso, si ha habido extracción de información alguna.
 
-#### [1.0 Referencia 001](#86001-enunciado-tfm)
+#### [1.0. Referencia 001](#86001-enunciado-tfm)
 
 
 
@@ -195,7 +195,7 @@ Una definición idónea que se puede adoptar en el presente TFM es lo indicado e
 
 Solventar las necesidades del gerente de la empresa mediante el análisis forense del disco duro y la captura de memoria de un ordenador personal, en un caso real con un sistema virtualizado, vinculado a una presunta conducta delictiva real. Para ello, se utilizarán herramientas específicas para la localización de las evidencias digitales sobre los discos duros y la memoria que puedan demostrar el presunto delito (Encase, Autopsy, Volatility, o cualquier otra herramienta, o conjunto de herramientas con prestaciones equivalentes). Finalmente, las evidencias localizadas deberán recogerse en un informe ejecutivo o pericial, el cual, además de los aspectos técnicos, deberá tener en cuenta aquellos requisitos procesales necesarios para que el análisis pueda tener validez en un proceso judicial.
 
-#### [1.1 Referencia 002](#86002-propuestas-de-tfm)
+#### [1.1. Referencia 002](#86002-propuestas-de-tfm)
 
 [Volver al Índice del capítulo 1. Plan de trabajo.](#índice-del-capítulo-1-plan-de-trabajo)
 
@@ -281,7 +281,10 @@ Se describe un el siguiente listado de objetivos que se obtienen al analizar el 
     - 4.1. Basarse en ideas fuerza que han aparecido durante todo el TFM.
     - 4.2. Tener en cuenta que este apartado es el que finalmente, el gerente de la empresa, como miembro directivo de la misma, usando el método del Presidente Reagan.
 
-#### [1.2 Referencia 001](#86001-enunciado-tfm)
+#### [1.2. Referencia 001](#86001-enunciado-tfm)
+
+#### [1.2. Referencia 003](#86003-el-método-reagan)
+
 
 [Volver al Índice del capítulo 1. Plan de trabajo.](#índice-del-capítulo-1-plan-de-trabajo)
 
@@ -334,10 +337,29 @@ Resumiendo, se puede destacar que esta norma ofrece orientación sobre el manejo
 
 Se dispone de una copia de esta ISO en su version en ingles
 
-#### [1.3.2. Referencia 003](#86003)
+#### [1.3.2. Referencia 004](#86004-norma-iso-27037)
+
+### 1.3.2 Norma RFC 3227.
+
+Otra norma destacable para mencionar es la RFC 3227. Este documento publicado por la Internet Engineering Task Force (IETF) recoge directrices para recopilar y almacenar evidencias sin ponerlas en riesgo.
+
+En cuanto a los principios para la recolección de evidencias destacan básicamente tres, el orden de volatilidad de los datos, las acciones que deben evitarse y las consideraciones sobre la privacidad.
+
+Sobre el procedimiento de almacenamiento tiene en cuenta la cadena de custodia de las pruebas recogidas anteriormente y dónde y cómo se deben almacenar estas para que estén a buen recaudo.
+
+Para acabar detalla qué tipo de herramientas son las más útiles y qué características deben tener para evitar conflictos, haciendo hincapié en que las herramientas deben alterar lo menos posible el escenario. Según este documento el kit de análisis debe incluir las siguientes herramientas:
+
+- Programas para listar y examinar procesos.
+
+- Programas para examinar el estado del sistema.
+
+- Programas para realizar copias bit a bit.
+
+Todas estas recomendaciones tienen como epicentro el principio de intercambio de Locard, que señala que: "siempre que dos objetos entran en contacto transfieren parte del material que incorporan al otro objeto".
 
 
-#### [1.3.2. Referencia 004](#86004)
+
+#### [1.3. Referencia 005](#86005)
 
 
 
@@ -2445,13 +2467,27 @@ para comprobar que esta correctamente creado el perfil procedemos a ejecutar el 
 [Volver at texto de la referencia la Sección 1.1](#11-referencia-002)
 
 ---
+#### 8.6.003. El método Reagan:
 
-#### 8.6.003. Norma ISO 27037:
+- Autor: GEFIRA.
+- Título del trabajo: El método Reagan.
+- URL: https://www.xn--elespaoldigital-3qb.com/el-metodo-reagan/
+
+[Volver at texto de la referencia la Sección 1.2](#12-referencia-003)
+
+---
+
+#### 8.6.004. Norma ISO 27037:
 
 - Autor: Universitat International Organization for Standardization
 - Título del trabajo: Information technology — Security techniques — Guidelines for identification, collection, acquisition, and preservation of digital evidence.
 - URL: [https://www.amnafzar.net/files/1/ISO%2027000/ISO%20IEC%2027037-2012.pdf](https://www.amnafzar.net/files/1/ISO%2027000/ISO%20IEC%2027037-2012.pdf)
 - URL repositorio Github: [003-ISOIEC-27037-2012.pdf](https://github.com/jrodg85/TFM-ANALISIS-FORENSE/blob/main/referencias/003-ISOIEC-27037-2012.pdf)
+
+
+[Volver at texto de la referencia la Sección 1.3.2](#132-referencia-003)
+
+
 
 ---
 
