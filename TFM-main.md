@@ -52,7 +52,7 @@ Enero de 2024.
   - [1.0. Introducción al capítulo 1. Plan de trabajo.](#10-introducción-al-capítulo-1-plan-de-trabajo)
   - [1.1. Problema a resolver.](#11-problema-a-resolver)
   - [1.2. Objetivos.](#12-objetivos)
-  - [1.3 Metodologías]
+  - [1.3 Metodologías.](#13-metodologías)
   - [1.4. Descripción del entorno de trabajo.](#14-descripción-del-entorno-de-trabajo)
   - [1.5. Listado de tareas.](#15-listado-de-tareas)
   - [1.6. Planificación temporal de las tareas.](#16-planificación-temporal-de-las-tareas)
@@ -173,11 +173,9 @@ A mis compañeros de trabajo, Juanma, Luisma y Borja, que saben de que estos tre
 
 La situación en la que nos encontramos es un caso práctico laboral, en el que realizamos el papel de CISO.
 
-`Ref.001`
-
 En este caso, la dirección de la empresa tiene serias sospechas, no probadas, de que han accedido a los sistemas de forma ilícita. Por lo que el gerente de la empresa me solicita, como CISO, que se compruebe si realmente han accedido, así como el método que han utilizado. Por otro lado, solicitan las consecuencias que se derivan del dicho acceso, si ha habido extracción de información alguna.
 
-#### [1.0 Referencia 001](#85001-enunciado-tfm)
+#### [1.0 Referencia 001](#86001-enunciado-tfm)
 
 
 
@@ -195,11 +193,9 @@ Por, lo expuesto en la introducción del capítulo, se coliga que el problema a 
 
 Una definición idónea que se puede adoptar en el presente TFM es lo indicado en su momento en la propuesta del TFM:
 
-`Ref.002`
-
 Solventar las necesidades del gerente de la empresa mediante el análisis forense del disco duro y la captura de memoria de un ordenador personal, en un caso real con un sistema virtualizado, vinculado a una presunta conducta delictiva real. Para ello, se utilizarán herramientas específicas para la localización de las evidencias digitales sobre los discos duros y la memoria que puedan demostrar el presunto delito (Encase, Autopsy, Volatility, o cualquier otra herramienta, o conjunto de herramientas con prestaciones equivalentes). Finalmente, las evidencias localizadas deberán recogerse en un informe ejecutivo o pericial, el cual, además de los aspectos técnicos, deberá tener en cuenta aquellos requisitos procesales necesarios para que el análisis pueda tener validez en un proceso judicial.
 
-#### [1.1 Referencia 002](#85002-propuestas-de-tfm)
+#### [1.1 Referencia 002](#86002-propuestas-de-tfm)
 
 [Volver al Índice del capítulo 1. Plan de trabajo.](#índice-del-capítulo-1-plan-de-trabajo)
 
@@ -285,7 +281,72 @@ Se describe un el siguiente listado de objetivos que se obtienen al analizar el 
     - 4.1. Basarse en ideas fuerza que han aparecido durante todo el TFM.
     - 4.2. Tener en cuenta que este apartado es el que finalmente, el gerente de la empresa, como miembro directivo de la misma, usando el método del Presidente Reagan.
 
-**DEUDA TÉCNICA: Pendiente de Referenciar!!! ENUNCIADO TFM**
+#### [1.2 Referencia 001](#86001-enunciado-tfm)
+
+[Volver al Índice del capítulo 1. Plan de trabajo.](#índice-del-capítulo-1-plan-de-trabajo)
+
+[Volver al Índice General.](#índice-general)
+
+---
+
+## 1.3. Metodologías.
+
+### 1.3.1 Introducción.
+
+En esta sección se procederá a realizar un repaso general de algunas de las normativas y estándares.
+
+Primero abordaremos un pequeño estudio relativo a la ISO 27037, posteriormente abordaremos la normativa RFC 3227 para finalmente comentar un resumen de las normas UNE 71505 y UNE 71506.
+
+Por ultimo, pero no menos importante, trataré unas conclusiones sobre esta sección.
+
+### 1.3.2 Norma ISO 27037.
+
+Dentro de la seguridad informática cabe destacar una normativa ampliamente conocida, es la familia ISO 27000. Esta serie de normas son estándares de seguridad publicados por la Organización Internacional para la Estandarización (ISO) y la Comisión Electrotécnica Internacional (IEC).
+
+Esta serie contiene diversas normas todas relacionadas con las mejores prácticas recomendadas en Seguridad de la Información para desarrollar, implementar y mantener especificaciones para los Sistemas de Gestión de la Seguridad de la Información (SGSI).
+
+Concretamente, existe una norma dedicada en exclusiva al análisis forense, se trata de la ISO 27037 Directrices para la identificación, recolección, adquisición y preservación de la prueba digital.
+
+Esta norma ofrece orientación para tratar situaciones frecuentes durante todo el proceso de tratamiento de las pruebas digitales. Además define dos roles especialistas:
+
+- **DEFR (Digital Evidence First Responders)**: Expertos en primera intervención de evidencias electrónicas.
+
+- **DES (Digital Evidence Specialists)**: Experto en gestión de evidencias electrónicas.
+
+ISO 27037 proporciona orientación para los siguientes dispositivos y circunstancias:
+
+- Medios de almacenamiento digitales utilizados en equipos varios como por ejemplo discos duros, disquetes, discos magneto-ópticos y ópticos y otros similares.
+
+- Teléfonos móviles, PDAs, tarjetas de memoria.
+
+- Sistemas de navegación móvil (GPS).
+
+- Cámaras de video y cámaras digitales (incluyendo circuitos cerrados de televisión).
+
+- Ordenadores estándares con conexiones a redes.
+
+- Redes basadas en protocolos TCP/IP y otros protocolos digitales.
+
+- Otros dispositivos con funcionalidades similares a las descritas anteriormente.
+
+Resumiendo, se puede destacar que esta norma ofrece orientación sobre el manejo de las pruebas digitales. Siguiendo las directrices de esta norma se asegura que la evidencia digital potencial se recoge de manera válida a efectos legales para facilitar su aportación en juicios y procesos legales. Además cabe destacar que cubre una amplia gama de tipos de dispositivos y situaciones, por lo que la orientación dentro de la norma es ampliamente aplicable.
+
+
+Se dispone de una copia de esta ISO en su version en ingles
+
+#### [1.3.2. Referencia 003](#86003)
+
+
+#### [1.3.2. Referencia 004](#86004)
+
+
+
+
+
+
+
+
+
 
 [Volver al Índice del capítulo 1. Plan de trabajo.](#índice-del-capítulo-1-plan-de-trabajo)
 
@@ -294,8 +355,7 @@ Se describe un el siguiente listado de objetivos que se obtienen al analizar el 
 ---
 
 
-
-## 1.3. Descripción del entorno de trabajo.
+## 1.4. Descripción del entorno de trabajo.
 
 El entorno de trabajo para un análisis forense enfocado en la exploración de memoria RAM y disco duro exige una meticulosa preparación y adecuación de las herramientas y espacios de trabajo. Las evidencias, provenientes tanto de la RAM como del almacenamiento persistente del ordenador en cuestión, se convierten en el pilar fundamental del análisis, permitiendo la evaluación de procesos en ejecución, archivos almacenados, registros de actividad y cualquier otro elemento que pueda arrojar luz sobre las acciones realizadas en la máquina.
 
@@ -317,7 +377,7 @@ Finalmente, Internet emerge como un recurso invaluable para la investigación, a
 
 
 
-## 1.4. Listado de tareas.
+## 1.5. Listado de tareas.
 
 En esta sección se ha elaborado después de una planificación del trabajo, el cual se han designado el siguiente listado de tareas a realizar. Gracias a este listado, podemos organizar el cómo vamos a realizar el TFM
 
@@ -2314,7 +2374,13 @@ para comprobar que esta correctamente creado el perfil procedemos a ejecutar el 
 
 ---
 
-## 8.4. Extracto de comandos utilizados.
+## 8.4. Videos.
+
+
+
+
+
+
 
 
 
@@ -2332,34 +2398,62 @@ para comprobar que esta correctamente creado el perfil procedemos a ejecutar el 
 
 ---
 
-## 8.5. Referencias.
+## 8.5. Extracto de comandos utilizados.
+
+
+
+
+
+
+
+
+
+
+
+[Volver al Índice del capítulo 8. Anexos.](#índice-del-capítulo-8-anexos)
+
+[Volver al Índice General.](#índice-general)
 
 ---
 
-#### 8.5.001. Enunciado TFM:
+## 8.6. Referencias.
+
+---
+
+#### 8.6.001. Enunciado TFM:
 
 - Autor: Universitat Oberta de Catalunya.
 - Título del trabajo: Enunciado TFM - Análisis forense.
 - Título del Contenedor: Descripción del caso.
 - URL: [https://drive.google.com/file/d/1TOKWOF_akO6IKVvXJ9ovPxMMhd9kafy1/view](https://drive.google.com/file/d/1TOKWOF_akO6IKVvXJ9ovPxMMhd9kafy1/view)
-- URL repositorio Github: [ENUNCIADO-M1.881-TFM-ANALISIS-FORENSE-SISTEMAS-INFORMATICOS.pdf](https://github.com/jrodg85/TFM-ANALISIS-FORENSE/blob/main/referencias/ENUNCIADO-M1.881-TFM-ANALISIS-FORENSE-SISTEMAS-INFORMATICOS.pdf)
+- URL repositorio Github: [ENUNCIADO-M1.881-TFM-ANALISIS-FORENSE-SISTEMAS-INFORMATICOS.pdf](https://github.com/jrodg85/TFM-ANALISIS-FORENSE/blob/main/referencias/001-ENUNCIADO-M1.881-TFM-ANALISIS-FORENSE-SISTEMAS-INFORMATICOS.pdf)
 
 [Volver at texto de la referencia la Sección 1.0](#10-referencia-001)
 
+[Volver at texto de la referencia la Sección 1.2](#12-referencia-001)
+
 ---
 
-#### 8.5.002. Propuestas de TFM:
+#### 8.6.002. Propuestas de TFM:
 
 - Autor: Universitat Oberta de Catalunya.
 - Título del trabajo: M1.881 - AnálisiS forense.
 - Título del Contenedor: Descripción.
 - URL: [https://docs.google.com/spreadsheets/d/16JGkkrY4fiPN32RAfdpVuLJBZrnewscpmuTelbe3X_o/edit#gid=0](https://docs.google.com/spreadsheets/d/16JGkkrY4fiPN32RAfdpVuLJBZrnewscpmuTelbe3X_o/edit#gid=0)
-- URL repositorio Github: [PROPUESTA-TFM-EXCEL.pdf](https://github.com/jrodg85/TFM-ANALISIS-FORENSE/blob/main/referencias/PROPUESTA-TFM-EXCEL.pdf)
+- URL repositorio Github: [002-PROPUESTA-TFM-EXCEL.pdf](https://github.com/jrodg85/TFM-ANALISIS-FORENSE/blob/main/referencias/002-PROPUESTA-TFM-EXCEL.pdf)
 
 [Volver at texto de la referencia la Sección 1.1](#11-referencia-002)
 
+---
 
+#### 8.6.003. Norma ISO 27037:
 
+- Autor: Universitat International Organization for Standardization
+- Título del trabajo: Information technology — Security techniques — Guidelines for identification, collection, acquisition, and preservation of digital evidence.
+- URL: [https://www.amnafzar.net/files/1/ISO%2027000/ISO%20IEC%2027037-2012.pdf](https://www.amnafzar.net/files/1/ISO%2027000/ISO%20IEC%2027037-2012.pdf)
+- URL repositorio Github: [003-ISOIEC-27037-2012.pdf](https://github.com/jrodg85/TFM-ANALISIS-FORENSE/blob/main/referencias/003-ISOIEC-27037-2012.pdf)
+
+---
 
 
 
