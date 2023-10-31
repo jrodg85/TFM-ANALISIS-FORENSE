@@ -48,55 +48,55 @@ Enero de 2024.
 - [Deuda técnica.](#deuda-técnica)
 - [0. Agradecimientos.](#0-agradecimientos)
 - [1. Plan de trabajo.](#1-plan-de-trabajo)
-  - [Índice del capítulo 1. Plan de trabajo.](#índice-del-capítulo-1-plan-de-trabajo)
-  - [1.0. Introducción al capítulo 1. Plan de trabajo.](#10-introducción-al-capítulo-1-plan-de-trabajo)
-  - [1.1. Problema a resolver.](#11-problema-a-resolver)
-  - [1.2. Objetivos.](#12-objetivos)
-  - [1.3 Metodologías.](#13-metodologías)
-  - [1.4. Descripción del entorno de trabajo.](#14-descripción-del-entorno-de-trabajo)
-  - [1.5. Listado de tareas.](#15-listado-de-tareas)
-  - [1.6. Planificación temporal de las tareas.](#16-planificación-temporal-de-las-tareas)
-  - [1.7. Revisión del estado del arte de la informática forense.](#17-revisión-del-estado-del-arte-de-la-informática-forense)
+    - [Índice del capítulo 1. Plan de trabajo.](#índice-del-capítulo-1-plan-de-trabajo)
+    - [1.0. Introducción al capítulo 1. Plan de trabajo.](#10-introducción-al-capítulo-1-plan-de-trabajo)
+    - [1.1. Problema a resolver.](#11-problema-a-resolver)
+    - [1.2. Objetivos.](#12-objetivos)
+    - [1.3 Metodologías.](#13-metodologías)
+    - [1.4. Descripción del entorno de trabajo.](#14-descripción-del-entorno-de-trabajo)
+    - [1.5. Listado de tareas.](#15-listado-de-tareas)
+    - [1.6. Planificación temporal de las tareas.](#16-planificación-temporal-de-las-tareas)
+    - [1.7. Revisión del estado del arte de la informática forense.](#17-revisión-del-estado-del-arte-de-la-informática-forense)
 - [2. Extremos del análisis y previsión de pruebas técnicas.](#2-extremos-del-análisis-y-previsión-de-pruebas-técnicas)
-  - [Índice del capítulo 2. Extremos del análisis y previsión de pruebas técnicas.](#índice-del-capítulo-2-extremos-del-análisis-y-previsión-de-pruebas-técnicas)
-  - [2.0. Introducción al capítulo 2. Extremos del análisis y previsión de pruebas técnicas.](#índice-del-capítulo-2-extremos-del-análisis-y-previsión-de-pruebas-técnicas)
-  - [2.1. Propuesta de extremos.](#21-propuesta-de-extremos)
-  - [2.2. Previsión de pruebas técnicas.](#22-previsión-de-pruebas-técnicas)
+    - [Índice del capítulo 2. Extremos del análisis y previsión de pruebas técnicas.](#índice-del-capítulo-2-extremos-del-análisis-y-previsión-de-pruebas-técnicas)
+    - [2.0. Introducción al capítulo 2. Extremos del análisis y previsión de pruebas técnicas.](#índice-del-capítulo-2-extremos-del-análisis-y-previsión-de-pruebas-técnicas)
+    - [2.1. Propuesta de extremos.](#21-propuesta-de-extremos)
+    - [2.2. Previsión de pruebas técnicas.](#22-previsión-de-pruebas-técnicas)
 - [3. Análisis de la memoria RAM.](#3-análisis-de-la-memoria-ram)
-  - [Índice del capítulo 3. Análisis de la memoria RAM.](#índice-del-capítulo-3-análisis-de-la-memoria-ram)
-  - [3.0. Introducción al capítulo 3. Análisis de la memoria RAM.](#30-introducción-al-capítulo-3-análisis-de-la-memoria-ram)
-  - [3.1. Acciones previas al análisis de la memoria RAM.](#31-acciones-previas-al-análisis-de-la-memoria-ram)
-  - [3.2. Sistema Operativo de la memoria RAM analizada.](#32-sistema-operativo-de-la-memoria-ram-analizada)
-  - [3.3. Datos de interés de la captura de la memoria RAM.](#33-datos-de-interés-de-la-captura-de-la-memoria-ram)
-  - [3.4. Búsqueda de procesos en funcionamiento de interés para el análisis.](#34-búsqueda-de-procesos-en-funcionamiento-de-interés-para-el-análisis)
-  - [3.5. Listado de conexiones de red y conexiones sospechosas.](#35-listado-de-conexiones-de-red-y-conexiones-sospechosas)
+    - [Índice del capítulo 3. Análisis de la memoria RAM.](#índice-del-capítulo-3-análisis-de-la-memoria-ram)
+    - [3.0. Introducción al capítulo 3. Análisis de la memoria RAM.](#30-introducción-al-capítulo-3-análisis-de-la-memoria-ram)
+    - [3.1. Acciones previas al análisis de la memoria RAM.](#31-acciones-previas-al-análisis-de-la-memoria-ram)
+    - [3.2. Sistema Operativo de la memoria RAM analizada.](#32-sistema-operativo-de-la-memoria-ram-analizada)
+    - [3.3. Datos de interés de la captura de la memoria RAM.](#33-datos-de-interés-de-la-captura-de-la-memoria-ram)
+    - [3.4. Búsqueda de procesos en funcionamiento de interés para el análisis.](#34-búsqueda-de-procesos-en-funcionamiento-de-interés-para-el-análisis)
+    - [3.5. Listado de conexiones de red y conexiones sospechosas.](#35-listado-de-conexiones-de-red-y-conexiones-sospechosas)
 - [4. Análisis del disco duro.](#4-análisis-del-disco-duro)
-  - [Índice del capítulo 4. Análisis del disco duro.](#índice-del-capítulo-4-análisis-del-disco-duro)
-  - [4.0. Introducción al capítulo 4. Análisis del disco duro.](#40-introducción-al-capítulo-4-análisis-del-disco-duro)
-  - [4.1. Acciones previas al análisis del disco duro.](#41-acciones-previas-al-análisis-del-disco-duro)
-  - [4.2. Datos de interés del disco duro.](#42-datos-de-interés-del-disco-duro)
-  - [4.3. Usuarios del sistema.](#43-usuarios-del-sistema)
-  - [4.4. Análisis de evidencias del disco duro.](#44-análisis-de-evidencias-del-disco-duro)
+    - [Índice del capítulo 4. Análisis del disco duro.](#índice-del-capítulo-4-análisis-del-disco-duro)
+    - [4.0. Introducción al capítulo 4. Análisis del disco duro.](#40-introducción-al-capítulo-4-análisis-del-disco-duro)
+    - [4.1. Acciones previas al análisis del disco duro.](#41-acciones-previas-al-análisis-del-disco-duro)
+    - [4.2. Datos de interés del disco duro.](#42-datos-de-interés-del-disco-duro)
+    - [4.3. Usuarios del sistema.](#43-usuarios-del-sistema)
+    - [4.4. Análisis de evidencias del disco duro.](#44-análisis-de-evidencias-del-disco-duro)
 - [5. Resumen ejecutivo.](#5-resumen-ejecutivo)
-  - [Índice del capítulo 5. Resumen ejecutivo.](#índice-del-capítulo-5-resumen-ejecutivo)
-  - [5.0. Introducción al capítulo 5. Resumen ejecutivo.](#50-introducción-al-capítulo-5-resumen-ejecutivo)
-  - [5.1. Resumen ejecutivo](#51-resumen-ejecutivo)
+    - [Índice del capítulo 5. Resumen ejecutivo.](#índice-del-capítulo-5-resumen-ejecutivo)
+    - [5.0. Introducción al capítulo 5. Resumen ejecutivo.](#50-introducción-al-capítulo-5-resumen-ejecutivo)
+    - [5.1. Resumen ejecutivo](#51-resumen-ejecutivo)
 - [6. Informe pericial.](#6-informe-pericial)
-  - [Índice del capítulo 6. Informe pericial.](#índice-del-capítulo-6-informe-pericial)
-  - [6.0. Introducción al capítulo 6. Informe pericial.](#60-introducción-al-capítulo-6-informe-pericial)
-  - [6.1. Informe pericial.](#61-informe-pericial)
+    - [Índice del capítulo 6. Informe pericial.](#índice-del-capítulo-6-informe-pericial)
+    - [6.0. Introducción al capítulo 6. Informe pericial.](#60-introducción-al-capítulo-6-informe-pericial)
+    - [6.1. Informe pericial.](#61-informe-pericial)
 - [7. Conclusiones.](#7-conclusiones)
-  - [Índice del capítulo 7. Conclusiones.](#índice-del-capítulo-7-conclusiones)
-  - [7.0. Introducción al capítulo 7. Conclusiones.](#70-introducción-al-capítulo-7-conclusiones)
-  - [7.1 Conclusiones.](#71-conclusiones)
+    - [Índice del capítulo 7. Conclusiones.](#índice-del-capítulo-7-conclusiones)
+    - [7.0. Introducción al capítulo 7. Conclusiones.](#70-introducción-al-capítulo-7-conclusiones)
+    - [7.1 Conclusiones.](#71-conclusiones)
 - [8. Anexos.](#8-anexos)
-  - [Índice del capítulo 8. Anexos.](#índice-del-capítulo-8-anexos)
-  - [8.0. Introducción al capítulo 8. Anexos.](#80-introducción-al-capítulo-8-anexos)
-  - [8.1. Creación de perfil para volatility.](#81-creación-de-perfil-para-volatility)
-  - [8.2. Glosario de términos y abreviaturas.](#82-glosario-de-términos-y-abreviaturas)
-  - [8.3. Imágenes.](#83-imágenes)
-  - [8.4. Extracto de comandos utilizados.](#84-extracto-de-comandos-utilizados)
-  - [8.5. Referencias.](#85-referencias)
+    - [Índice del capítulo 8. Anexos.](#índice-del-capítulo-8-anexos)
+    - [8.0. Introducción al capítulo 8. Anexos.](#80-introducción-al-capítulo-8-anexos)
+    - [8.1. Creación de perfil para volatility.](#81-creación-de-perfil-para-volatility)
+    - [8.2. Glosario de términos y abreviaturas.](#82-glosario-de-términos-y-abreviaturas)
+    - [8.3. Imágenes.](#83-imágenes)
+    - [8.4. Extracto de comandos utilizados.](#84-extracto-de-comandos-utilizados)
+    - [8.5. Referencias.](#85-referencias)
 
 ---
 
@@ -107,13 +107,6 @@ Enero de 2024.
 Este no es un capitulo al uso del TFM, si no que tratará de llevar un control de las tareas pendientes (Deuda técnica) de todo el TFM.
 
 PEC 1
-
-
-**DEUDA TÉCNICA: Pendiente de Referenciar!!!, enunciado del TFM**
-
-**DEUDA TÉCNICA: Pendiente de Referenciar!!!, referenciar de la web de los TFM**
-
-**DEUDA TÉCNICA: Buscar presidente de los EE.UU., preguntar a "//4lanoga" LA RESPUESTA ES REAGAN**
 
 **DEUDA TÉCNICA: Listado de aplicaciones a utilizar en la descripción del entorno de trabajo**
 
@@ -127,24 +120,23 @@ PEC 2
 
 **DEUDA TÉCNICA: ENLAZAR CON INDICE DEL CAPITULO**
 
-**DEUDA TÉCNICA: MOVER COMANDOS UTILIZADOS Y LAS IMAGENES A LOS ANEXOS DE IMAGENES.**
+**DEUDA TÉCNICA: MOVER COMANDOS UTILIZADOS Y LAS IMÁGENES A LOS ANEXOS DE IMÁGENES.**
 
 COMENTARIOS TUTORA TFM PEC 1.
 
 - Has realizado un buen trabajo con la planificación temporal y actividades.
-  - Sin embargo, deben mejorarse los siguientes puntos:
-    - 1. Metodología: En tu TFM falta una metodología sólida y formal que guíe tu investigación. Debes definir un marco metodológico claro que describa cómo recopilaste y analizaste tus datos, y que respalde tus hallazgos. Para ello, deberías revisar diferentes normas y estándares internacionales como por ejemplo la ISO 27037, la RFC 3227 o las UNE 71505 y UNE 71506.
-    - 2. Definición de Objetivos: Has definido claramente tus objetivos, lo cual es positivo. Sin embargo, es esencial que logres responder a todos ellos en la entrega final o justifiques cualquier impedimento que impida su cumplimiento.
-    - 3. Entorno de Trabajo: Debes proporcionar más detalles sobre el equipo y las herramientas específicas que utilizarás en tu análisis forense. Esto garantizará una comprensión completa de tu enfoque.
-    - 4. Estado del Arte: Has realizado un buen trabajo en general, pero es importante incluir más referencias a artículos utilizados para documentación y mencionar las metodologías que aplicarás durante el análisis forense.
-    - 5. Comparativa de Herramientas: La comparativa de herramientas es exhaustiva, pero muchas de ellas pueden resultar irrelevantes. Sería más beneficioso seleccionar algunas, analizarlas en detalle y explicar por qué las has elegido y cómo se utilizarán en tu TFM.
-    - 6. Glosario: Es positivo que incluyas un glosario de términos y abreviaturas, pero es necesario desarrollarlo, incluyendo el origen de abreviaturas como "CISO".
-    - 7. Bibliografía: La ausencia de una bibliografía es una deficiencia significativa. Debes incluir una bibliografía que respalde tus afirmaciones y muestre la base teórica en la que se basa tu TFM.
-    - 8. Impacto ético y social: No he podido ver nada relativo a este punto en la entrega realizada.
+    - Sin embargo, deben mejorarse los siguientes puntos:
+        - 2. Definición de Objetivos: Has definido claramente tus objetivos, lo cual es positivo. Sin embargo, es esencial que logres responder a todos ellos en la entrega final o justifiques cualquier impedimento que impida su cumplimiento.
+        - 3. Entorno de Trabajo: Debes proporcionar más detalles sobre el equipo y las herramientas específicas que utilizarás en tu análisis forense. Esto garantizará una comprensión completa de tu enfoque.
+        - 4. Estado del Arte: Has realizado un buen trabajo en general, pero es importante incluir más referencias a artículos utilizados para documentación y mencionar las metodologías que aplicarás durante el análisis forense.
+        - 5. Comparativa de Herramientas: La comparativa de herramientas es exhaustiva, pero muchas de ellas pueden resultar irrelevantes. Sería más beneficioso seleccionar algunas, analizarlas en detalle y explicar por qué las has elegido y cómo se utilizarán en tu TFM.
+        - 6. Glosario: Es positivo que incluyas un glosario de términos y abreviaturas, pero es necesario desarrollarlo, incluyendo el origen de abreviaturas como "CISO".
+        - 7. Bibliografía: La ausencia de una bibliografía es una deficiencia significativa. Debes incluir una bibliografía que respalde tus afirmaciones y muestre la base teórica en la que se basa tu TFM.
+        - 8. Impacto ético y social: No he podido ver nada relativo a este punto en la entrega realizada.
 
 ---
 
-<br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>
+<br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>
 
 # 0. Agradecimientos.
 
@@ -162,6 +154,14 @@ A mis compañeros de trabajo, Juanma, Luisma y Borja, que saben de que estos tre
 
 ## Índice del capítulo 1. Plan de trabajo.
 
+- [1.0. Introducción al capítulo 1. Plan de trabajo.](#10-introducción-al-capítulo-1-plan-de-trabajo)
+    - [1.1. Problema a resolver.](#11-problema-a-resolver)
+    - [1.2. Objetivos.](#12-objetivos)
+    - [1.3 Metodologías.](#13-metodologías)
+    - [1.4. Descripción del entorno de trabajo.](#14-descripción-del-entorno-de-trabajo)
+    - [1.5. Listado de tareas.](#15-listado-de-tareas)
+    - [1.6. Planificación temporal de las tareas.](#16-planificación-temporal-de-las-tareas)
+    - [1.7. Revisión del estado del arte de la informática forense.](#17-revisión-del-estado-del-arte-de-la-informática-forense)
 
 [Volver al Índice General.](#índice-general)
 
@@ -209,45 +209,48 @@ Solventar las necesidades del gerente de la empresa mediante el análisis forens
 
 Se describe un el siguiente listado de objetivos que se obtienen al analizar el enunciado del TFM:
 
-  - 1. Elaboración del Análisis forense de Disco Duro y RAM.
+- 1. Elaboración del Análisis forense de Disco Duro y RAM.
     - 1.1. realizar una recuperación parcial o total de la información borrada existente en los dispositivos susceptibles de ser analizados (carving).
     - 1.2. Relativo al análisis de la memoria RAM.
-      - 1.2.1. Comprobar la integridad de la memoria RAM.
-      - 1.2.2. Comprobar fecha de la captura de la RAM.
-      - 1.2.3. Determinar la edición y versión de Windows que tiene instalado el sistema operativo del ordenador sobre el cual se ha efectuado la captura de la memoria RAM.
-      - 1.2.4. Buscar los procesos en funcionamiento y localiza aquellos que te parezcan de interés para el análisis forense del ordenador analizado.
-      - 1.2.5. Extraer los procesos que consideres sospechosos y analizarlos.
-      - 1.2.6. Listar las conexiones de red y analizarlas.
+        - 1.2.1. Comprobar la integridad de la memoria RAM.
+        - 1.2.2. Comprobar fecha de la captura de la RAM.
+        - 1.2.3. Determinar la edición y versión de Windows que tiene instalado el sistema operativo del ordenador sobre el cual se ha efectuado la captura de la memoria RAM.
+        - 1.2.4. Buscar los procesos en funcionamiento y localiza aquellos que te parezcan de interés para el análisis forense del ordenador analizado.
+        - 1.2.5. Extraer los procesos que consideres sospechosos y analizarlos.
+        - 1.2.6. Listar las conexiones de red y analizarlas.
     - 1.3. Relativo al análisis del Disco Duro.
-      - 1.3.1. Comprobar la integridad del disco duro.
-      - 1.3.2. Determinar la siguiente información del disco duro.
-        - 1.3.2.1. Tamaño del disco duro analizado.
-        - 1.3.2.2. Sistema y versión del sistema operativo instalado.
-        - 1.3.2.3. Nombre del propietario y relación de software instalado.
-        - 1.3.2.4. "Product ID" y "Product Key" asociadas al sistema.
-        - 1.3.2.5. Fecha y hora de instalación del sistema operativo.
-        - 1.3.2.6. Determinar marca y modelo (si es posible) del hardware siguiente: CPU, monitor, tarjeta gráfica, tarjeta Ethernet y Wireless.
-      - 1.3.3. Determinar qué usuarios tiene definidos el sistema.
-      - 1.3.4.Localizar los documentos (archivos PDF, de texto, hojas de cálculo, etc.) que puedan tener relación con alguna conducta presuntamente delictiva.
-      - 1.3.5. Localizar los archivos eliminados y determina si hay alguno relevante para la causa investigada.
-      - 1.3.6. Localizar los ficheros comprimidos relevantes analizarlos, reventar contraseña si es necesario y analizar su contenido.
-      - 1.3.7. Localizar algún fichero ejecutable que pueda resultar de interés para la investigación, ademas, analizar la relación con alguna evidencia anterior.
-      - 1.3.8. Determinar el contenido del fichero log de un conocido programa de comunicación si es necesario y relacionarlo con el caso investigado.
-      - 1.3.9. Realizar un análisis de la navegación web.
-      - 1.3.10. Estudio de los dispositivos físicos que en algún momento fueron conectados al sistema estudiado: móviles, USBs, impresoras, escáneres, cámaras, tarjetas de memoria.
-      - 1.3.11. Estudio de la información contenida en los unallocated cluster o en el file slack.
-      - 1.3.12. Información contenida en los archivos de hibernación, paginación, particiones y archivos de intercambio (swap).
-      - 1.3.13. Análisis de la cola de impresión.
-      - 1.3.14. Visualización de los links de los archivos y de los archivos accedidos recientemente.
-      - 1.3.15. Estudio de los metadatos de los archivos, si se considera que pueden ser relevantes para el caso.
-      - 1.3.16. Estudio de las aplicaciones de virtualización.
-      - 1.3.17 Estudio de las bases de datos instaladas y las aplicaciones que permiten su gestión.
-      - 1.3.18. Estudio de los programas de cifrado, particiones cifradas.
-      - 1.3.19. Análisis de los clientes de correo electrónico y del webmail.
+        - 1.3.1. Comprobar la integridad del disco duro.
+        - 1.3.2. Determinar la siguiente información del disco duro.
+            - 1.3.2.1. Tamaño del disco duro analizado.
+            - 1.3.2.2. Sistema y versión del sistema operativo instalado.
+            - 1.3.2.3. Nombre del propietario y relación de software instalado.
+            - 1.3.2.4. "Product ID" y "Product Key" asociadas al sistema.
+            - 1.3.2.5. Fecha y hora de instalación del sistema operativo.
+            - 1.3.2.6. Determinar marca y modelo (si es posible) del hardware siguiente: CPU, monitor, tarjeta gráfica, tarjeta Ethernet y Wireless.
+        - 1.3.3. Determinar qué usuarios tiene definidos el sistema.
+        - 1.3.4.Localizar los documentos (archivos PDF, de texto, hojas de cálculo, etc.) que puedan tener relación con alguna conducta presuntamente delictiva.
+        - 1.3.5. Localizar los archivos eliminados y determina si hay alguno relevante para la causa investigada.
+        - 1.3.6. Localizar los ficheros comprimidos relevantes analizarlos, reventar contraseña si es necesario y analizar su contenido.
+        - 1.3.7. Localizar algún fichero ejecutable que pueda resultar de interés para la investigación, ademas, analizar la relación con alguna evidencia anterior.
+        - 1.3.8. Determinar el contenido del fichero log de un conocido programa de comunicación si es necesario y relacionarlo con el caso investigado.
+        - 1.3.9. Realizar un análisis de la navegación web.
+        - 1.3.10. Estudio de los dispositivos físicos que en algún momento fueron conectados al sistema estudiado: móviles, USBs, impresoras, escáneres, cámaras, tarjetas de memoria.
+        - 1.3.11. Estudio de la información contenida en los unallocated cluster o en el file slack.
+        - 1.3.12. Información contenida en los archivos de hibernación, paginación, particiones y archivos de intercambio (swap).
+        - 1.3.13. Análisis de la cola de impresión.
+        - 1.3.14. Visualización de los links de los archivos y de los archivos accedidos recientemente.
+        - 1.3.15. Estudio de los metadatos de los archivos, si se considera que pueden ser relevantes para el caso.
+        - 1.3.16. Estudio de las aplicaciones de virtualización.
+        - 1.3.17 Estudio de las bases de datos instaladas y las aplicaciones que permiten su gestión.
+        - 1.3.18. Estudio de los programas de cifrado, particiones cifradas.
+        - 1.3.19. Análisis de los clientes de correo electrónico y del webmail.
     - 1.4. Realizar un estudio de la seguridad.
-      - 1.4.1. Estudiar si las evidencias analizadas han sido comprometidas.
-      - 1.4.2. Identificar cualquier aplicación vulnerable, software malicioso, evaluar el daño sufrido, identificar los archivos que han sido comprometidos, así como determinar la vía de acceso al sistema.
-  - 2. Relativo al resumen ejecutivo, elaborarlo teniendo en cuenta los siguientes apartados.
+        - 1.4.1. Estudiar si las evidencias analizadas han sido comprometidas.
+        - 1.4.2. Identificar cualquier aplicación vulnerable, software malicioso, evaluar el daño sufrido, identificar los archivos que han sido comprometidos, así como determinar la vía de acceso al sistema.
+
+
+
+- 2. Relativo al resumen ejecutivo, elaborarlo teniendo en cuenta los siguientes apartados.
     - 2.1. Claridad en la comunicación, proporcionando información de forma clara y concisa y, por otro lado, utilizar un lenguaje accesible para los no expertos en el área.
     - 2.2. Presentar el contexto u antecedentes, describiendo el motivo y las circunstancias del análisis forense y Proporcionar una breve descripción del incidente o situación bajo investigación.
     - 2.3. Redactar un resumen ejecutivo con los hallazgos clave y las recomendaciones.
@@ -260,7 +263,8 @@ Se describe un el siguiente listado de objetivos que se obtienen al analizar el 
     - 2.10. Proveer conclusiones basadas en los hallazgos del análisis forense.
     - 2.11. Proporcionar recomendaciones para la acción futura, basadas en los hallazgos y conclusiones.
     - 2.12. Sugerir medidas preventivas y correctivas para evitar incidentes similares en el futuro.
-  - 3. Elaborar un informe pericial teniendo en cuenta los siguientes apartados.
+
+- 3. Elaborar un informe pericial teniendo en cuenta los siguientes apartados.
     - 3.1. Mantener una postura objetiva e imparcial en todo momento.
     - 3.2. Garantizar que el análisis y las conclusiones estén fundamentados en evidencias tangibles y replicables.
     - 3.3. Mantener la cadena de custodia y la integridad de las pruebas durante todo el proceso.
@@ -277,7 +281,8 @@ Se describe un el siguiente listado de objetivos que se obtienen al analizar el 
     - 3.14. Garantizar que toda la información manejada se mantiene confidencial y segura.
     - 3.15. Discutir las implicaciones legales de los hallazgos y su posible impacto en el caso.
     - 3.16. Estar preparado para ratificar el informe en un tribunal y responder a preguntas relacionadas con el análisis y los hallazgos. Este supuesto, el defensor se intuye que se realizará en la defensa síncrona de la defensa de este TFM.
-  - 4. Realizar unas conclusiones acordes a todo el TFM realizado.
+
+- 4. Realizar unas conclusiones acordes a todo el TFM realizado.
     - 4.1. Basarse en ideas fuerza que han aparecido durante todo el TFM.
     - 4.2. Tener en cuenta que este apartado es el que finalmente, el gerente de la empresa, como miembro directivo de la misma, usando el método del Presidente Reagan.
 
@@ -302,6 +307,10 @@ Primero abordaremos un pequeño estudio relativo a las normas ISO 27037 e ISO 30
 
 Por ultimo, pero no menos importante, trataré unas conclusiones sobre esta sección.
 
+[Volver al Índice del capítulo 1. Plan de trabajo.](#índice-del-capítulo-1-plan-de-trabajo)
+
+---
+
 ### 1.3.2. Normas ISO 27037 e ISO 30121.
 
 Dentro de la seguridad informática cabe destacar una normativa ampliamente conocida, es la familia ISO 27000. Esta serie de normas son estándares de seguridad publicados por la Organización Internacional para la Estandarización (ISO) y la Comisión Electrotécnica Internacional (IEC).
@@ -313,23 +322,16 @@ Concretamente, existe una norma dedicada en exclusiva al análisis forense, se t
 Esta norma ofrece orientación para tratar situaciones frecuentes durante todo el proceso de tratamiento de las pruebas digitales. Además define dos roles especialistas:
 
 - **DEFR (Digital Evidence First Responders)**: Expertos en primera intervención de evidencias electrónicas.
-
 - **DES (Digital Evidence Specialists)**: Experto en gestión de evidencias electrónicas.
 
 ISO 27037 proporciona orientación para los siguientes dispositivos y circunstancias:
 
 - Medios de almacenamiento digitales utilizados en equipos varios como por ejemplo discos duros, disquetes, discos magneto-ópticos y ópticos y otros similares.
-
 - Teléfonos móviles, PDAs, tarjetas de memoria.
-
 - Sistemas de navegación móvil (GPS).
-
 - Cámaras de video y cámaras digitales (incluyendo circuitos cerrados de televisión).
-
 - Ordenadores estándares con conexiones a redes.
-
 - Redes basadas en protocolos TCP/IP y otros protocolos digitales.
-
 - Otros dispositivos con funcionalidades similares a las descritas anteriormente.
 
 Resumiendo, se puede destacar que esta norma ofrece orientación sobre el manejo de las pruebas digitales. Siguiendo las directrices de esta norma se asegura que la evidencia digital potencial se recoge de manera válida a efectos legales para facilitar su aportación en juicios y procesos legales. Además cabe destacar que cubre una amplia gama de tipos de dispositivos y situaciones, por lo que la orientación dentro de la norma es ampliamente aplicable.
@@ -389,16 +391,256 @@ Estas normativas son de aplicación a cualquier organización con independencia 
 
 Se dispone de una copia de la norma UNE 71505.
 
-#### [1.3.4. Referencia 008]()
+#### [1.3.4. Referencia 008](#86005-implementación-de-herramientas-para-la-extracción-de-evidencia-digital)
+
+[Volver al Índice del capítulo 1. Plan de trabajo.](#índice-del-capítulo-1-plan-de-trabajo)
+
+---
+
+### 1.3.5. Normas UNE 71505 y UNE 71506.
+
+Estas normas, publicadas por la Asociación Española de Normalización y Certificación tienen como finalidad dar una metodología para la preservación, adquisición, documentación, análisis y presentación de pruebas digitales.
+
+Según la asociación esta norma debe dar respuesta a las infracciones legales e incidentes informáticos en las distintas empresas y entidades. Con la obtención de dichas pruebas digitales, que serán más robustas y fiables siguiendo la normativa, se podrá discernir si su causa tiene como origen un carácter intencional o negligente.
+
+Estas normativas son de aplicación a cualquier organización con independencia de su actividad o tamaño, así como a cualquier profesional competente en este ámbito. Se dirige especialmente a incidentes y seguridad, así como al personal técnico que trabaje en laboratorios o entornos de análisis forense de evidencias electrónicas.
+
+[Volver al Índice del capítulo 1. Plan de trabajo.](#índice-del-capítulo-1-plan-de-trabajo)
+
+---
+
+### 1.3.6. Conclusiones relativo a metodología.
+
+Tras analizar los distintos apartados de esta sección y otras fuentes que se indicarán al final de la sección, se puede llegar a la conclusión de que el análisis forense informático recoge de la misma manera la metodología forense per sé, siguiendo la siguiente estructura.
+
+Aunque no existe una metodología que sea única y universal en el análisis forense, a tenor de la documentación consultada y tomando en consideración la normativa legal y los estándares vigentes a nivel internacional, sí que se puede decir que existen una serie de fases o puntos importantes que se tienen que tomar en consideración para que el análisis forense sea adecuado y sirva como elemento probatorio ante un incidente.
+
+Todas estas recomendaciones, recogidas en distintas documentaciones (ver bibliografía), establecen una estructura lógica que permiten garantizar el proceso y que, en el ámbito civil, se compone básicamente de las siguientes fases:
+
+##### [1.3.6 Imagen 001](#83001003006001-diagrama-de-metodología-del-análisis-forense)
+
+En cada una de las fases indicadas en la imagen anterior podemos destacar las siguientes tareas.
+
+##### [1.3.6 Imagen 002](#83001003006002-fases-1-2-y-3-de-la-metodología-del-análisis-forense)
+
+##### [1.3.6 Imagen 003](#83001003006003-fases-4-5-y-6-de-la-metodología-del-análisis-forense)
+
+##### [1.3.6 Imagen 004](#83001003006004-fase-7-de-la-metodología-del-análisis-forense)
 
 
+**PLANTEAMIENTO DEL PROBLEMA.**
+
+En el caso de que nos trata el presente Trabajo Final de Máster (en adelante TFM), estas acciones de planteamiento del problema, nos viene dado en el enunciado, ya que el enunciado, se expresa claramente que el jefe de la empresa tiene serias sospechas, no probadas, de que se ha accedido de forma licita al sistema, y por tanto, en primera instancia se requieren nuestras acciones relativo al asunto.
+
+Entrando en el trasfondo de la legalidad y posible contaminación de pruebas, ante un presunto delito que este tipificado en el código penal, suelen ser las Fuerzas y Cuerpos de Seguridad del estado los que, bajo la orden de un juzgado de instrucción, las competentes en realizar este análisis forense por un presunto hecho
+
+**IDENTIFICACIÓN.**
+
+En el caso del presente TFM, en el enunciado hemos recibido y el material didáctico que se adjunta, se han realizado previamente y satisfactoriamente todos los pasos de esta metodología.
+
+Cabe destacar en uno de las tareas dedicadas a la identificación, nos encontramos con la tarea de asegurar la escena, es recomendable realizar las siguientes acciones:
+
+1. Realizar fotografías del entorno del equipo para evidenciar el estado original de la escena, identificando así el perímetro de la escena a analizar y protegiéndolo de accesos de personal no autorizado.
+
+2. Proteger las huellas dactilares que pueda haber en los equipos para que los demás cuerpos y unidades de policía e investigadores puedan realizar su tarea. Es por lo tanto recomendable el uso de guantes de látex o similar para esta finalidad. En este punto se recuerda el principio de intercambio de Locard ya citado en el [apartado 1.3.3](#133-norma-rfc-3227).
+
+3. Anotar la hora y fecha de los equipos implicados que no tiene por qué coincidir con
+la real, esto es importante para la investigación posterior y para la realización de una línea
+temporal con todos los sucesos que han ocurrido. En caso de haber desfase entre la hora
+del equipo y la real, este desfase se tiene que documentar para tenerlo en cuenta
+posteriormente. La captura de la hora y fecha se puede realizar fotografiando la pantalla o
+grabando un vídeo de la misma, siempre y cuando no haya que manipular el equipo para
+ello.
+
+4. Ver si en pantalla hay algún proceso que nos aporte información útil sobre lo que
+esté pasando en directo, en ese caso, grabar todo lo que ocurre. Es importante valorar las
+entradas y salidas de los equipos, pues nos pueden aportar pistas importantes. De igual
+modo con otros periféricos de entrada/salida, tales como impresoras, teléfonos IP,
+escáneres, etcétera.
+
+**ADQUISICIÓN.**
+
+Llegados a esta fase, la cual ya ha sido previamente realizada a la elaboración del TFM, cabe destacar la tarea de establecer el orden de prioridad de la recolección de las evidencias. Para ello, hay que tener en cuenta una serie de principios acerca de la identificación de las evidencias y más específicamente sobre la volatilidad de las mismas. Es vital conocer qué datos son más o menos volátiles, identificarlos correctamente y posteriormente proceder a su recolección.
+
+Entendemos por volatilidad de los datos el período de tiempo en el que estarán accesibles en el equipo. Por lo tanto, se deberán recolectar previamente aquellas pruebas más volátiles. Según la RFC 3227, el que se presenta a continuación, es un posible orden de volatilidad de mayor a menor:
+
+##### [1.3.6 Imagen 005](#83001003006005-orden-de-volatilidad-análisis-forense)
+
+Como ya se ha indicado previamente, si se quiere realizar una depuración de responsabilidades de manera penal, es necesario establecer una autoridad legal que presente la recogida de evidencias, ya sea un secretario judicial o un notario.
+
+La ultima tarea de esta fase es la recogida de evidencias, para ello se realiza una copia bit a bit de los discos que se quieran analizar, es decir, se requiere una copia exacta del contenido de los discos incautados. Esto incluye todos los archivos del disco, por ejemplo los temporales, los ocultos, los de configuración, los eliminados y no sobrescritos y la información relativa a la parte del disco no asignada, es lo que se conoce como copia a bajo nivel.
+
+Esta copia se llevará a cabo sobre un soporte limpio mediante un borrado seguro de los datos que pudiera contener anteriormente para evitar así contaminaciones con otros casos.
+
+**PRESERVACIÓN.**
+
+Esta accion, se ha realizado al igual que las anteriores, ha sido realizada de manera previa a la elaboración del TFM, para ello se tienen que tener en cuenta las siguientes consideraciones.
+
+Una vez realizada la copia se debe verificar la integridad de la misma. Para ello se calcula el hash o CRC de la copia, normalmente los equipos destinados al clonado de discos ya incorporan esa característica. Así con el hash del disco original y el de la copia se puede certificar que ambos son idénticos a todos los niveles y ante un juez, por ejemplo, quedará probado que no se ha manipulado de ningún modo. Con este procedimiento también nos aseguraremos que no se han producido errores en la copia.
+
+Con la primera copia realizada y comprobada procedemos a realizar una segunda copia sobre la primera. En este caso también se comprobará que el contenido es idéntico mediante el mismo proceso descrito anteriormente. Teniendo ambas copias entregaremos la primera al secretario judicial o notario responsable del caso y nos quedaremos con la segunda para poder trabajar. La segunda copia será nuestra copia de respaldo en todo momento en el laboratorio y no será para trabajar directamente con ella en ningún caso. Para realizar el análisis se deberá realizar una tercera copia, comprobar su integridad y trabajar sobre ella, de tal modo que en caso de cualquier desastre o alteración de los datos siempre tengamos la segunda copia exacta al original de donde poder volver a realizar otra copia para analizar.
+
+Una mala preservación de las evidencias, un mal uso o una mala manipulación pueden invalidar toda la investigación que se lleva a cabo delante de un tribunal, este es un factor muy importante que se va repitiendo a lo largo de toda la metodología.
+
+La cadena de custodia es el procedimiento controlado aplicable a las evidencias relacionadas con el suceso, desde el momento en que se encuentran en la escena hasta su análisis en el laboratorio. La finalidad de la cadena de custodia es evitar cualquier tipo de manipulación y tener un control absoluto sobre todos los elementos incautados, quién los ha manipulado, cómo lo ha realizado, porqué los ha manipulado, para qué lo ha hecho y cuándo ha tenido lugar dicha manipulación.
+
+Es importante realizar todas las anotaciones descritas en la fase de identificación de las evidencias para que esta fase sea aún más sólida. Con todos los elementos documentados será mucho más fácil tener un control de todas las evidencias que disponemos y poder realizar una traza de todas las pruebas adquiridas.
+
+Además se tendrá en cuenta de proteger los bienes para el transporte desde el lugar de los hechos hasta el laboratorio con los medios necesarios para evitar golpes o proteger de caídas fortuitas.
+
+La documentación de la cadena de custodia deberá contener también todos los lugares por donde ha pasado la evidencia y quién ha realizado su transporte y su acceso.
+
+En nuestro caso, cabe destacar que una vez iniciado el análisis de la memoria, esta no debe de modificarse ni contaminarse, en caso de ello el Hash de las evidencias cambiaría, por lo que la evidencia ha quedado contaminada. Hay que hacer estas acciones teniendo presente al secretario judicial, para que esa copia quede registrada si es necesario y que no ha habido mas alteraciones al respecto, ese cambio de hash será notificado y adjuntado en el proceso de instrucción, haciéndose también nuevas copias de este nuevo "snapshot" de la prueba.
+
+**ANÁLISIS.**
+
+La fase de análisis, ***en la cual iniciamos la elaboración del presente TFM,*** no termina hasta que no se puede determinar qué o quién causó el incidente, cómo lo hizo, qué afectación ha tenido en el sistema, etc. Es decir, es el núcleo duro de la investigación y tiene que concluir con el máximo de información posible para poder proceder a elaborar unos informes con todo el suceso bien documentado.
+
+Antes de empezar el análisis, es importante recordar unas premisas básicas que todo investigador debe tener presente en el momento de enfrontarse al incidente. Como ya se ha explicado nunca se debe trabajar con datos originales y se debe respetar cada una de las leyes vigentes en la jurisdicción donde se lleve a cabo la investigación. Los resultados que se obtengan de todo el proceso han de ser verificables y reproducibles, así que en cualquier momento debemos poder montar un entorno donde reproducir la investigación y mostrarlo a quién lo requiera. Es importante también disponer de una documentación adicional con información de diversa índole, por ejemplo:
 
 
+- Sistema operativo del sistema.
+
+- Programas instalados en el equipo.
+
+- Hardware, accesorios y periféricos que forman parte del sistema.
+
+- Datos relativos a la conectividad del equipo:
+
+    - Si dispone de firewall, ya sea físico o lógico.
+
+    - Si el equipo se encuentra en zonas de red especiales, por ejemplo, DMZ.
+
+    - Si tiene conexión a Internet o utiliza proxies.
+
+- Datos generales de configuración que puedan ser de interés para el investigador
+para ayudar en la tarea.
+
+Para ayudar al desarrollo de esta fase del análisis forense podemos centrarnos en varias subfases o puntos importantes que generalmente siempre deben realizarse. Cabe recordar que no existe ningún proceso estándar que ayude a la investigación y habrá que estudiar cada caso por separado teniendo en cuentas las diversas particularidades que nos podamos encontrar. No será lo mismo analizar un equipo con sistema operativo Windows o con Linux. Tampoco será lo mismo un caso de intrusión en el correo electrónico de alguien o un ataque de denegación de servicio a una institución. De igual forma no actuaremos con los mismos pasos en un caso de instalación de un malware que destruya información de una ubicación de disco o un malware que envíe todo lo que se teclea en un equipo.
+
+En todo caso, se pueden destacar varios pasos, que habrá que adaptar en cada caso:
+
+- Preparar un entorno de trabajo adaptado a las necesidades del incidente.
+
+- Reconstruir una línea temporal con los hechos sucedidos.
+
+- Determinar qué procedimiento se llevó a cabo por parte del atacante.
+
+- Identificar el autor o autores de los hechos.
+
+- Evaluar el impacto causado y si es posible la recuperación del sistema.
+
+Antes de empezar el análisis propiamente, se debe preparar un entorno para dicho análisis. Es el momento de decidir si se va a hacer un análisis en caliente o en frío.
+
+En caso de un análisis en caliente se hará la investigación sobre los discos originales, lo que conlleva ciertos riesgos. Hay que tomar la precaución de poner el disco en modo sólo lectura, esta opción sólo está disponible en sistemas operativos Linux pero no en Windows. Si se opta por esta opción hay que operar con sumo cuidado pues cualquier error puede ser fatal y dar al traste con todo el proceso, invalidando las pruebas.
+
+Si se opta por un análisis en frío, lo más sencillo es preparar una máquina virtual con el mismo sistema operativo del equipo afectado y montar una imagen del disco. Para ello, previamente habremos creado la imagen a partir de las copias que se hicieron para el análisis. En este caso podremos trabajar con la imagen, ejecutar archivos y realizar otras tareas sin tanto cuidado, pues siempre cabe la opción de volver a montar la imagen desde cero en caso de problemas.
+
+La opción del análisis en frío, ***La cual será el caso que nos atañe el presente TFM, ya que der este modo es como se realizará el análisis***, resulta muy atractiva pues en caso de malwares se podrán ejecutar sin miedo, reproducir lo que ocurre y desmontar la imagen sin que la copia original resulte afectada. De este modo tal vez se pueda ir un poco más allá en la investigación y ser
+un poco más agresivo.
+
+Existen varios programas gratuitos para crear y gestionar máquinas virtuales, por ejemplo,
+Oracle VM VirtualBox, que ofrecen muy buenas prestaciones.
+
+Para la tarea de construir una cadena de acontecimientos y hacer una linea temporal cabe destacar lo siguiente.
+
+Para crear la línea temporal, lo más sencillo es referirnos a los tiempos MACD de los archivos, es decir, las fechas de modificación, acceso, cambio y borrado, en los casos que aplique. Es importante, como ya se ha indicado en alguna ocasión tener en cuenta los husos horarios y que la fecha y hora del sistema no tienen por qué coincidir con los reales. Este dato es muy importante para poder dar crédito a las pruebas y a la investigación en general.
+
+Para empezar, lo mejor es determinar la fecha de instalación del sistema operativo, para ello se puede buscar en los datos de registro. Además la mayoría de ficheros del sistema compartirán esa fecha. A partir de aquí puede ser interesante ver qué usuarios se crearon al principio, para ver si hay discrepancias o usuarios fuera de lo común en últimos instantes del equipo. Para ver esta información también es útil acudir al registro del sistema operativo.
+
+Teniendo ya los datos iniciales del sistema, ahora se puede proceder a buscar más información en los ficheros que se ven "a simple vista". Lo importante es localizar que programas fueron los últimos en ser instalados y qué cambios repercutieron en el sistema. Lo más habitual es que estos programas no se instalen en los lugares habituales, sino que se localicen en rutas poco habituales, por ejemplo en archivos temporales o mezclados con los archivos y librerías del sistema operativo. Aquí se puede ir creando la línea temporal con esos datos.
+
+Alternativamente es útil pensar que no todos los archivos están a la vista. Se puede encontrar información en archivos normales, pero también en temporales, ocultos, borrados o usando técnicas como la esteganografía, no se puede obviar ninguna posibilidad.
+
+Habitualmente los sistemas operativos ofrecen la opción de visualizar los archivos ocultos y también las extensiones. Es útil activar estas opciones para detectar posibles elementos ocultos y extensiones poco habituales que nos resulten extrañas.
+
+Para los archivos borrados se utilizaran programas especiales capaces de recuperar aquellos datos que se hayan eliminado del disco pero sobre los cuales aún no se haya sobrescrito nada. Es posible que el atacante elimine archivos o registros varios en afán de esconder lo que ha ocurrido, si estos no han sido sobrescritos se podrán recuperar y se podrán situar en la línea temporal relacionándolos con el conjunto de sucesos. Para recuperar información oculta mediante esteganografía también se deberán usar programas concretos. Es posible que el atacante ocultara información sobre otros archivos, tales como imágenes o audio para enviarlos posteriormente o tenerlos almacenados sin llamar la atención. Habitualmente hallaremos más información en ubicaciones ocultas que en los lugares más habituales.
+
+Con todos estos datos se debería poder crear un esbozo de los puntos clave en el tiempo tales como la instalación del sistema, el borrado de determinados archivos, la instalación de los últimos programas, etcétera.
+
+El siguiente paso del análisis es determinar el ***como se actuó***. Para determinar cómo se actuó es importante llevar a cabo una investigación sobre la memoria del equipo. Es interesante realizar un volcado de memoria para la obtención de cierta información. Con programas destinados a tal fin podremos ver que procesos se están ejecutando en el momento concreto y también aquellos que hayan sido ocultados para no levantar sospechas. Con esta información podremos saber qué ejecutables inician los procesos en ejecución y qué librerías se ven involucradas. Llegados aquí se puede proceder a realizar volcados de los ejecutables y de dichas librerías para poder analizar si contienen cadenas sospechosas o si, por lo contrario, son archivos legítimos. Sabiendo los procesos que se ejecutan y su naturaleza podemos obtener pistas de cómo se actuó para comprometer el equipo.
+
+A menudo nos deberemos fijar en procesos en ejecución aparentemente inofensivos, habituales y legítimos en los sistemas operativos. No es extraño que determinados procesos con fines malintencionados se camuflen con procesos legítimos. Para ello deberemos observar que muchas veces estos se encuentran sin un proceso padre, cuando lo más habitual es que dependan de otros. En otras ocasiones simplemente se camuflan con nombres muy parecidos a otros para pasar desapercibidos.
+
+Ciertos programas también nos darán información sobre las cadenas del ejecutable en cuestión. Con ellas podremos ver si mutan su contenido cuando se ejecutan en memoria y cuál es su contenido. En ocasiones, cierta información de las cadenas nos puede dar pistas muy valiosas, como por ejemplo, cadenas dónde encontrar logs, o enlaces a direcciones de Internet. También nos puede dar pistas sobre el tipo de malware al que nos enfrentamos. Si por ejemplo encontramos cadenas con alfabetos o teclas concretas del teclado, es probable que nos encontremos ante un keylogger.
+
+Finalmente, otra práctica interesante para determinar cómo se actuó es leer la secuencia de comandos escrita por consola. Para ello procederemos con el volcado de memoria y podremos obtener dicha información. De este modo podremos leer que comandos se hicieron por consola y sabremos si se ejecutó algún proceso de este modo. Debemos excluir nuestras propias instrucciones pues seguramente aparecerán los comandos del volcado de memoria que se hicieron en su momento. Relativo a esta práctica, personalmente es la primera que se debería de realizar en un análisis forense, de ahi también poder corroborar que es lo que pueda decir el usuario en una posible entrevista, que en este caso no va a ser posible.
+
+Para la tarea de identificación de autores, cabe destacar que para poder realizar una identificación del autor o autores del incidente, otra información importante que nos puede dar el volcado de memoria son las conexiones de red abiertas y las que están preparadas para enviar o recibir datos. Con esto podremos relacionar el posible origen del ataque buscando datos como la dirección IP en Internet.
+
+Hay que actuar con prudencia puesto que en ocasiones se utilizan técnicas para distribuir los ataques o falsear la dirección IP. Hay que ser crítico con la información que se obtiene y contrastarla correctamente. No siempre se obtendrá la respuesta al primer intento y posiblemente en ocasiones sea muy difícil averiguar el origen de un incidente.
+
+Es interesante recapacitar en los distintos perfiles de atacantes que se pueden dar hoy día en este ámbito para intentar mimetizarse y entender quién pudo ser el autor.
+
+Por un lado podemos encontrar organizaciones y criminales que actúan por motivaciones económicas. Su finalidad es robar cierta información, ya sea empresarial o personal, para una vez obtenida venderla o sacar un rendimiento oneroso de la información.
+
+Por otro lado está quién sólo busca acceder a sistemas por mero prestigio y reconocimiento en su ambiente cibernético. Accediendo a sistemas mal configurados y publicando datos que prueben su fechoría incrementará su notoriedad y se dará a conocer más en las redes.
+
+En este punto es importante analizar dos vertientes. En caso que se esté realizando un peritaje con fines inculpatorios, o sea, judiciales, se deberá intentar resolver quién es el autor o al menos aportar pistas fiables para que otros investigadores puedan llevar a cabo otras investigaciones de otros ámbitos.
+
+En cambio, si es con fines correctivos lo más interesante seguramente será obviar esta fase y proceder con el estudio del impacto causado y estudiar las mejoras que se pueden implantar para evitar episodios similares.
+
+Para establecer el impacto causado, cabe destacar que se puede calcular en base a distintos factores y no hay un método único para su cálculo, ni una fórmula que nos dé un importe económico. Aun así para estos cálculos puede servir ayudarse de métodos como BIA (Business Impact Analysis) que determinan el impacto de ciertos eventos ayudando a valorar los daños económicamente.
+
+A la larga cualquier incidente ocurrido devengará en unos gastos económicos que habrá que cuantificar en función de los ítems afectados tras el suceso. En ocasiones el coste económico resultará de tener que reemplazar una máquina o dispositivo que ha quedado inservible tras un ataque o bien las horas de empleado de tener que reinstalar el sistema. En este caso, el cálculo no supone mayor dificultad y se resuelve fácilmente.
+
+En otras ocasiones, por ejemplo, los daños pueden deberse al robo de una información de secreto industrial en el que habrá que cuantificar no sólo qué supone reponer el sistema sino, a la larga, en qué se verá afectada la empresa. Los datos robados pueden ser para publicar cierta información sobre la empresa y poner en la opinión pública datos con intenciones de crear mala imagen, lo cual supone un daño incalculable y muy elevado para la empresa.
+
+El impacto no sólo se puede calcular en base económica. Como ya se ha comentado al inicio de esta sección también existen otros factores, es el caso del tiempo de inactividad. Si el incidente ha supuesto paralizar la producción de una planta automatizada de fabricación esto supone muchas horas en que la producción es nula, por lo tanto no se trabajará. Evidentemente, a la larga también supondrá un problema económico pues no se podrán servir los pedidos pendientes de los clientes. Si la paralización afecta a una oficina, tal vez no se pare la producción de bienes pero sí el trabajo de los empleados que verán retrasado todo su trabajo.
+
+**PRESENTACIÓN.**
+
+La última fase de un análisis forense queda para redactar los informes que documenten los antecedentes del evento, todo el trabajo realizado, el método seguido y las conclusiones e impacto que se ha derivado de todo el incidente.
+
+Para ello se redactarán dos informes, a saber, el informe técnico y el ejecutivo. En esencia en ambos informes se explican los mismos hechos pero varía su enfoque y el grado de detalle con que se expone el asunto.
+
+- En el informe ejecutivo se usará un lenguaje claro y sin tecnicismos, se debe evitar usar terminología propia de la ciencia e ingeniería y expresiones confusas para gente no ducha en el tema. Hay que pensar que el público lector de estos informes serán jueces y gerentes que seguramente estén poco relacionados con el tema y además tengan poco tiempo para dedicarle. Se les debe facilitar la tarea al máximo.
+
+- En el informe técnico, por el contrario, el público final será técnico y con conocimientos de la materia que se expone. Aquí se detallarán todos los procesos, los programas utilizados, las técnicas, etcétera. Debemos crear un documento que pueda servir de guía para repetir todo el proceso que se ha realizado en caso necesario.
+
+Relativo al informe ejecutivo, cabe destacar que será un resumen de toda la tarea que se ha llevado a cabo con las evidencias digitales. Aunque será un documento de poca extensión, al menos comparado con el informe técnico, éste deberá contener al menos los siguientes apartados:
+- Motivos de la intrusión.
+    - ¿Por qué se ha producido el incidente?
+    - ¿Qué finalidad tenía el atacante?
+- Desarrollo de la intrusión.
+    - ¿Cómo lo ha logrado?
+    - ¿Qué ha realizado en los sistemas?
+- Resultados del análisis.
+    - ¿Qué ha pasado?
+    - ¿Qué daños se han producido o se prevén que se producirán?
+    - ¿Es denunciable?
+    - ¿Quién es el autor o autores?
+- Recomendaciones.
+    - ¿Qué pasos dar a continuación?
+    - ¿Cómo protegerse para no repetir los hechos?
+
+El informe técnico será más largo que el anterior y contendrá mucho más detalle. Se hará una exposición muy detallada de todo el análisis con profundidad en la tecnología usada y los hallazgos. En este caso se deberá redactar, al menos:
+
+- Antecedentes del incidente.
+    - Puesta en situación de cómo se encontraba la situación anteriormente al incidente.
+- Recolección de datos.
+    - ¿Cómo se ha llevado a cabo el proceso?
+    - ¿Qué se ha recolectado?
+- Descripción de la evidencia.
+    - Detalles técnicos de las evidencias recolectadas, su estado, su contenido,
+etc.
+- Entorno de trabajo del análisis.
+    - ¿Qué herramientas se han usado?
+    - ¿Cómo se han usado?
+- Análisis de las evidencias.
+    - Se deberá informar del sistema analizado aportando datos como las características del sistema operativo, las aplicaciones instaladas en el equipo, los servicios en ejecución, las vulnerabilidades que se han detectado y la metodología usada.
+- Descripción de los resultados.
+    - ¿Qué herramientas ha usado el atacante?
+    - ¿Qué alcance ha tenido el incidente?
+    - Determinar el origen del mismo y como se ha encontrado.
+- Dar la línea temporal de los hechos ocurridos con todo detalle.
+- Redactar unas conclusiones con las valoraciones que se crean oportunas a la vista de todo el análisis realizado.
+- Dar unas recomendaciones sobre cómo proteger los equipos para no repetir el incidente o sobre cómo actuar legalmente contra el autor.
 
 
+#### [1.3.6. Referencia 008](#86008-meotdología-para-un-análisis-forense)
 
-
-
+#### [1.3.6. Referencia 009](#86009-ninjas-de-la-web-metodología-para-un-análisis-forense)
 
 [Volver al Índice del capítulo 1. Plan de trabajo.](#índice-del-capítulo-1-plan-de-trabajo)
 
@@ -415,9 +657,14 @@ En un segundo plano, pero no menos esencial, se encuentra el portátil personal,
 
 Relativo al ordenador personal destacar las siguientes aplicaciones que se van a utilizar para la realización del análisis.
 
+- VirtualBox
+
+- Volatility
+
+
 **DEUDA TÉCNICA: Listado de aplicaciones a utilizar en la descripción del entorno de trabajo**
 
-Por otro lado, la documentación y redacción del Trabajo de Fin de Máster (TFM) se consolida mediante el uso del repositorio en GitHub TFM-ANÁLISIS-FORENSE (https://github.com/jrodg85/TFM-ANALISIS-FORENSE). Este repositorio no solo sirve como medio para documentar y presentar los hallazgos y metodologías empleadas, sino que también se erige como una herramienta para gestionar versiones y cambios a lo largo del desarrollo del trabajo, facilitando la trazabilidad y coherencia del mismo. Se deben establecer estrategias robustas para garantizar la integridad y confidencialidad de la información almacenada, considerando la naturaleza sensible de los datos manejados en la investigación forense.
+Por otro lado, la documentación y redacción del TFM se consolida mediante el uso del repositorio en GitHub TFM-ANÁLISIS-FORENSE (https://github.com/jrodg85/TFM-ANALISIS-FORENSE). Este repositorio no solo sirve como medio para documentar y presentar los hallazgos y metodologías empleadas, sino que también se erige como una herramienta para gestionar versiones y cambios a lo largo del desarrollo del trabajo, facilitando la trazabilidad y coherencia del mismo. Se deben establecer estrategias robustas para garantizar la integridad y confidencialidad de la información almacenada, considerando la naturaleza sensible de los datos manejados en la investigación forense.
 
 Finalmente, Internet emerge como un recurso invaluable para la investigación, actualización y comunicación a lo largo del proyecto. Navegar por la red debe ser realizado de forma segura y consciente, protegiendo las comunicaciones y asegurando la integridad de las herramientas y datos descargados.
 
@@ -512,19 +759,19 @@ Para esta sección, se han elaborado los siguientes diagramas de Gantt relativos
 
 Relativo al reto/PEC 1 se establece el siguiente diagrama:
 
-##### [Imagen 001](#83001)
+##### [1.6. Imagen 001](#83001006001-diagrama-de-gantt-retopec-1)
 
 Relativo al reto/PEC 2 se establece el siguiente diagrama.
 
-##### [Imagen 002](#83002)
+##### [1.6. Imagen 002](#83001006002-diagrama-de-gantt-retopec-2)
 
 Relativo al reto/PEC 3 se establece el siguiente diagrama.
 
-##### [Imagen 003](#83003)
+##### [1.6. Imagen 003](#83001006003-diagrama-de-gantt-retopec-3)
 
 Relativo al reto/PEC 4 se establece el siguiente diagrama.
 
-##### [Imagen 004](#83004)
+##### [1.6. Imagen 004](#83001006004-diagrama-de-gantt-retopec-4)
 
 
 [Volver al Índice del capítulo 1. Plan de trabajo.](#índice-del-capítulo-1-plan-de-trabajo)
@@ -999,7 +1246,7 @@ El resultado de este análisis exhaustivo proporcionará una comprensión detall
 
 En el presente TFM, se nos ha proporcionado a los alumnos un archivo de captura de memoria RAM .mem. Por otro lado, se nos ha proporcionado los resúmenes o hash en MD5 y en SHA1 de los archivos tal y como se muestra en la siguiente imagen.
 
-##### [Imagen 005](#83005)
+##### [3.1 Imagen 001](#83005-imagen-hash-archivos)
 
 Como Podemos ver, los hash resúmenes del archivo de la ram, tememos los siguientes hashes en MD5 y en SHA1:
 
@@ -2196,104 +2443,144 @@ para comprobar que esta correctamente creado el perfil procedemos a ejecutar el 
 
 ---
 
-#### 8.3.001. Diagrama de Gantt reto/PEC 1.
+#### 8.3.001.003.006.001. Diagrama de metodología del análisis forense.
 
-![001-diagrama-de-gantt-pec-01.png](./images/001-diagrama-de-gantt-pec-01.png)
+![001-003-006-001](./images/001-003-006-001-FASES-METODOLOGIA-ANALISIS-FORENSE.png)
 
-[Volver al texto de la imagen 001.](#imagen-001)
+[Volver al texto de la imagen en la Sección 1.3.6.](#136-imagen-001)
+
+---
+
+#### 8.3.001.003.006.002. Fases 1 2 y 3 de la metodología del análisis forense.
+
+![001-003-006-002](./images/001-003-006-002-FASES-1-2-3-METODOLOGIA-ANALISIS-FORENSE.png)
+
+[Volver al texto de la imagen en la Sección 1.3.6.](#136-imagen-002)
+
+---
+
+#### 8.3.001.003.006.003. Fases 4 5 y 6 de la metodología del análisis forense.
+
+![001-003-006-002](./images/001-003-006-003-FASES-4-5-6-METODOLOGIA-ANALISIS-FORENSE.png)
+
+[Volver al texto de la imagen en la Sección 1.3.6.](#136-imagen-003)
+
+---
+
+#### 8.3.001.003.006.004. Fase 7 de la metodología del análisis forense.
+
+![001-003-006-004](./images/001-003-006-004-FASE-7-METODOLOGIA-ANALISIS-FORENSE.png)
+
+[Volver al texto de la imagen en la Sección 1.3.6.](#136-imagen-004)
+
+---
+
+#### 8.3.001.003.006.005. Orden de volatilidad análisis forense.
+
+![001-003-006-005](./images/001-003-006-005-ORDEN-VOLATILIDAD-RFC-3227.png)
+
+[Volver al texto de la imagen en la Sección 1.3.6.](#136-imagen-005)
+
+---
+
+#### 8.3.001.006.001. Diagrama de Gantt reto/PEC 1.
+
+![001-006-001](./images/001-006-001-diagrama-de-gantt-pec-01.png)
+
+[Volver al texto de la imagen en la Sección 1.6.](#16-imagen-001)
 
 ---
 
 ---
 
-#### 8.3.002. Diagrama de Gantt reto/PEC 2.
+#### 8.3.001.006.002. Diagrama de Gantt reto/PEC 2.
 
-![Diagrama de Gantt reto/PEC 2](./images/002-diagrama-de-gantt-pec-02.png)
+![001-006-002](./images/001-006-002-diagrama-de-gantt-pec-02.png)
 
-[Volver al texto de la imagen 002.](#imagen-002)
-
----
-
----
-
-#### 8.3.003. Diagrama de Gantt reto/PEC 3.
-![Diagrama de Gantt reto/PEC 3](./images/003-diagrama-de-gantt-pec-03.png)
-
-[Volver al texto de la imagen 003.](#imagen-003)
+[Volver al texto de la imagen en la Sección 1.6.](#16-imagen-001)
 
 ---
 
 ---
 
-#### 8.3.004. Diagrama de Gantt reto/PEC 4.
+#### 8.3.001.006.003. Diagrama de Gantt reto/PEC 3.
+![001-006-003](./images/001-006-003-diagrama-de-gantt-pec-03.png)
 
-![Diagrama de Gantt reto/PEC 4](./images/004-diagrama-de-gantt-pec-04.png)
-
-[Volver al texto de la imagen 004.](#imagen-004)
+[Volver al texto de la imagen en la Sección 1.6.](#16-imagen-003)
 
 ---
 
-#### 8.3.005. Imagen Hash archivos.
+---
+
+#### 8.3.001.006.004. Diagrama de Gantt reto/PEC 4.
+
+![001-006-004-](./images/001-006-004-diagrama-de-gantt-pec-04.png)
+
+[Volver al texto de la imagen en la Sección 1.6.](#16-imagen-004)
+
+---
+
+#### 8.3.003.001.001. Imagen Hash archivos.
 
 ![005-imagen-hash-archivos.png](./images/005-imagen-hash-archivos.png)
 
-[Volver al texto de la imagen 005.](#imagen-005)
+[Volver al texto de la imagen en la Sección 005.](#31-imagen-001)
 
 ---
 
-#### 8.3.006. Imagen Hash archivos.
+#### 8.3.007. Imagen Hash archivos.
 
 ![006-captura-hash-PowerShell.png](./images/006-captura-hash-PowerShell.png)
 
-[Volver al texto de la imagen 006.](#imagen-006)
+[Volver al texto de la imagen en la Sección 006.](#imagen-006)
 
 ---
 
-#### 8.3.007. Imagen de imageinfo.
+#### 8.3.008. Imagen de imageinfo.
 
 ![007-captura-imageinfo.png](./images/007-captura-imageinfo.png)
 
-[Volver al texto de la imagen 007.](#imagen-007)
+[Volver al texto de la imagen en la Seccióne en la seccion  007.](#imagen-007)
 
 ---
 
-#### 8.3.008. Imagen de búsqueda de string linux version.
+#### 8.3.009. Imagen de búsqueda de string linux version.
 
 ![008-buscar-strings-linux-version.png](./images/008-buscar-strings-linux-version.png)
 
-[Volver al texto de la imagen 008.](#imagen-008)
+[Volver al texto de la imagen en la Sección 008.](#imagen-008)
 
 ---
 
-#### 8.3.009. Imagen de buscando caché de AWS.
+#### 8.3.010. Imagen de buscando caché de AWS.
 
 ![009-buscando-cache-aws.png](./images/009-buscando-cache-aws.png)
 
-[Volver al texto de la imagen 009.](#imagen-009)
+[Volver al texto de la imagen en la Sección 009.](#imagen-009)
 
 ---
 
-#### 8.3.010. Imagen de instalación de kernel de AWS.
+#### 8.3.011. Imagen de instalación de kernel de AWS.
 
 ![010-instalación-kernel-aws.png](./images/010-instalacion-kernel-aws.png)
 
-[Volver al texto de la imagen 010.](#imagen-010)
+[Volver al texto de la imagen en la Sección 010.](#imagen-010)
 
 ---
 
-#### 8.3.011. Imagen de reicicio del servidor de AWS.
+#### 8.3.012. Imagen de reicicio del servidor de AWS.
 
 ![011-reinicio-server-aws.png](./images/011-reinicio-server-aws.png)
 
-[Volver al texto de la imagen 011.](#imagen-011)
+[Volver al texto de la imagen en la Sección 011.](#imagen-011)
 
 ---
 
-#### 8.3.012. Imagen de reinicio del servidor con kernel de AWS.
+#### 8.3.013. Imagen de reinicio del servidor con kernel de AWS.
 
 ![012-inicio-con-server-aws.png](./images/012-inicio-con-server-aws.png)
 
-[Volver al texto de la imagen 012.](#imagen-012)
+[Volver al texto de la imagen en la Sección 012.](#imagen-012)
 
 ---
 
@@ -2301,113 +2588,10 @@ para comprobar que esta correctamente creado el perfil procedemos a ejecutar el 
 
 ![013-make-clean-clear-make.png](./images/013-make-clean-clear-make.png)
 
-[Volver al texto de la imagen 013.](#imagen-013)
+[Volver al texto de la imagen en la Sección 013.](#imagen-013)
 
 ---
 
-#### 8.3.014. .
-
-
-
-[Volver al texto de la imagen 014.](#imagen-014)
-
----
-
-#### 8.3.015. .
-
-
-
-[Volver al texto de la imagen 015.](#imagen-015)
-
----
-
-#### 8.3.016. .
-
-
-
-[Volver al texto de la imagen 016.](#imagen-016)
-
----
-
-#### 8.3.017. .
-
-
-
-[Volver al texto de la imagen 017.](#imagen-017)
-
----
-
-#### 8.3.018. .
-
-
-
-[Volver al texto de la imagen 018.](#imagen-018)
-
----
-
-#### 8.3.019. .
-
-
-
-[Volver al texto de la imagen 019.](#imagen-019)
-
----
-
-#### 8.3.020. .
-
-
-
-[Volver al texto de la imagen 020.](#imagen-020)
-
----
-
-#### 8.3.021. .
-
-
-
-[Volver al texto de la imagen 021.](#imagen-021)
-
----
-
-#### 8.3.022. .
-
-
-
-[Volver al texto de la imagen 022.](#imagen-022)
-
----
-
-#### 8.3.023. .
-
-
-
-[Volver al texto de la imagen 024.](#imagen-024)
-
----
-
-#### 8.3.025. .
-
-
-
-[Volver al texto de la imagen 025.](#imagen-025)
-
----
-
-#### 8.3.026. .
-
-
-
-[Volver al texto de la imagen 026.](#imagen-026)
-
----
-
-#### 8.3.027. .
-
-
-
-[Volver al texto de la imagen 028.](#imagen-028)
-
----
 
 
 
@@ -2480,9 +2664,9 @@ para comprobar que esta correctamente creado el perfil procedemos a ejecutar el 
 - URL: [https://drive.google.com/file/d/1TOKWOF_akO6IKVvXJ9ovPxMMhd9kafy1/view](https://drive.google.com/file/d/1TOKWOF_akO6IKVvXJ9ovPxMMhd9kafy1/view)
 - URL repositorio Github: [ENUNCIADO-M1.881-TFM-ANÁLISIS-FORENSE-SISTEMAS-INFORMÁTICOS.pdf](https://github.com/jrodg85/TFM-ANALISIS-FORENSE/blob/main/referencias/001-ENUNCIADO-M1.881-TFM-ANALISIS-FORENSE-SISTEMAS-INFORMATICOS.pdf)
 
-[Volver at texto de la referencia la Sección 1.0.](#10-referencia-001)
+[Volver at texto de la referencia en la Sección 1.0.](#10-referencia-001)
 
-[Volver at texto de la referencia la Sección 1.2.](#12-referencia-001)
+[Volver at texto de la referencia en la Sección 1.2.](#12-referencia-001)
 
 ---
 
@@ -2494,7 +2678,7 @@ para comprobar que esta correctamente creado el perfil procedemos a ejecutar el 
 - URL: [https://docs.google.com/spreadsheets/d/16JGkkrY4fiPN32RAfdpVuLJBZrnewscpmuTelbe3X_o/edit#gid=0](https://docs.google.com/spreadsheets/d/16JGkkrY4fiPN32RAfdpVuLJBZrnewscpmuTelbe3X_o/edit#gid=0)
 - URL repositorio Github: [002-PROPUESTA-TFM-EXCEL.pdf](https://github.com/jrodg85/TFM-ANALISIS-FORENSE/blob/main/referencias/002-PROPUESTA-TFM-EXCEL.pdf)
 
-[Volver at texto de la referencia la Sección 1.1.](#11-referencia-002)
+[Volver at texto de la referencia en la Sección 1.1.](#11-referencia-002)
 
 ---
 #### 8.6.003. El método Reagan:
@@ -2503,7 +2687,7 @@ para comprobar que esta correctamente creado el perfil procedemos a ejecutar el 
 - Título del trabajo: El método Reagan.
 - URL: [https://www.xn--elespaoldigital-3qb.com/el-metodo-reagan/](https://www.xn--elespaoldigital-3qb.com/el-metodo-reagan/)
 
-[Volver at texto de la referencia la Sección 1.2.](#12-referencia-003)
+[Volver at texto de la referencia en la Sección 1.2.](#12-referencia-003)
 
 ---
 
@@ -2514,7 +2698,7 @@ para comprobar que esta correctamente creado el perfil procedemos a ejecutar el 
 - URL: [https://www.amnafzar.net/files/1/ISO%2027000/ISO%20IEC%2027037-2012.pdf](https://www.amnafzar.net/files/1/ISO%2027000/ISO%20IEC%2027037-2012.pdf)
 - URL repositorio Github: [003-ISOIEC-27037-2012.pdf](https://github.com/jrodg85/TFM-ANALISIS-FORENSE/blob/main/referencias/003-ISOIEC-27037-2012.pdf)
 
-[Volver at texto de la referencia la Sección 1.3.2.](#132-referencia-004)
+[Volver at texto de la referencia en la Sección 1.3.2.](#132-referencia-004)
 
 ---
 
@@ -2526,7 +2710,7 @@ para comprobar que esta correctamente creado el perfil procedemos a ejecutar el 
 - URL: [https://bibdigital.epn.edu.ec/bitstream/15000/23797/1/CD%2013084.pdf](https://bibdigital.epn.edu.ec/bitstream/15000/23797/1/CD%2013084.pdf)
 - URL repositorio Github: [004-IMPLEMENTACIÓN-HERRAMIENTAS-PARA-LA-EXTRACCIÓN-DE-EVIDENCIA-DIGITAL.pdf](https://github.com/jrodg85/TFM-ANALISIS-FORENSE/blob/main/referencias/004-IMPLEMENTACION-HERRAMIENTAS-PARA-LA-EXTRACCION-DE-EVIDENCIA-DIGITAL.pdf)
 
-[Volver at texto de la referencia la Sección 1.3.2.](#132-referencia-005)
+[Volver at texto de la referencia en la Sección 1.3.2.](#132-referencia-005)
 
 ---
 
@@ -2538,25 +2722,41 @@ para comprobar que esta correctamente creado el perfil procedemos a ejecutar el 
 - URL Inglés: [https://datatracker.ietf.org/doc/html/rfc3227](https://datatracker.ietf.org/doc/html/rfc3227)
 - URL repositorio Github: [005-RFC-3227-ESP.pdf](https://github.com/jrodg85/TFM-ANALISIS-FORENSE/blob/main/referencias/005-RFC-3227-ESP.pdf)
 
-[Volver at texto de la referencia la Sección 1.3.3.](#133-referencia-006)
+[Volver at texto de la referencia en la Sección 1.3.3.](#133-referencia-006)
 
 ---
 
 #### 8.6.007. Que son las normas UNE:
 
-- Autores:  Grupo ACMS Consultores.
+- Autor:  Grupo ACMS Consultores.
 - Título del trabajo: Norma UNE: Significado y Estructura.
 - URL Español: [https://www.grupoacms.com/consultora/norma-une-significado](https://www.grupoacms.com/consultora/norma-une-significado)
 
-[Volver at texto de la referencia la Sección 1.3.4.](#134-referencia-007)
+[Volver at texto de la referencia en la Sección 1.3.4.](#134-referencia-007)
 
 ---
 
+#### 8.6.008. Metodología para un análisis forense:
 
+- Autores: Carles Gervilla Rivas.
+- Título del trabajo: Metodología para un Análisis Forense.
+- Título del Contenedor: DESARROLLO DE UNA METODOLOGÍA PARA EL ANÁLISIS FORENSE.
+- URL: [https://openaccess.uoc.edu/bitstream/10609/39681/6/cgervillarTFM1214memoria.pdf](https://openaccess.uoc.edu/bitstream/10609/39681/6/cgervillarTFM1214memoria.pdf)
+- URL repositorio Github: [007-METODOLOGÍA-PARA-UN-ANÁLISIS-FORENSE.pdf](https://github.com/jrodg85/TFM-ANALISIS-FORENSE/blob/main/referencias/007-METODOLOGÍA-PARA-UN-ANÁLISIS-FORENSE.pdf)
+
+[Volver at texto de la referencia en la Sección 1.3.6.](#136-referencia-008)
 
 ---
 
+#### 8.6.009. Ninjas de la web. Metodología para un análisis forense:
 
+- Autor: Miguel Angel Olivares.
+- Título del trabajo: Metodología de Análisis Forense (Ninjas de la Web).
+- URL: [https://ninjasdelaweb.com/metodologia-de-analisis-forense/](https://ninjasdelaweb.com/metodologia-de-analisis-forense/)
+
+[Volver at texto de la referencia en la Sección 1.3.6.](#136-referencia-009)
+
+---
 
 [Volver al Índice del capítulo 8. Anexos.](#índice-del-capítulo-8-anexos)
 
