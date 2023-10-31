@@ -95,12 +95,14 @@ Enero de 2024.
     - [8.1. Creación de perfil para volatility.](#81-creación-de-perfil-para-volatility)
     - [8.2. Glosario de términos y abreviaturas.](#82-glosario-de-términos-y-abreviaturas)
     - [8.3. Imágenes.](#83-imágenes)
-    - [8.4. Extracto de comandos utilizados.](#84-extracto-de-comandos-utilizados)
-    - [8.5. Referencias.](#85-referencias)
+    - [8.4. Videos.](#84-videos)
+    - [8.5. Extracto de comandos utilizados.](#85-extracto-de-comandos-utilizados)
+    - [8.5. Referencias.](#86-referencias)
+    - [8.6. Linea de tiempo de evidencias.](#87-linea-de-tiempo-de-evidencias)
 
 ---
 
-<br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>
+<br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>
 
 # Deuda técnica.
 
@@ -136,7 +138,7 @@ COMENTARIOS TUTORA TFM PEC 1.
 
 ---
 
-<br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>
+<br><br>
 
 # 0. Agradecimientos.
 
@@ -144,7 +146,7 @@ A mi esposa e hija, acompañantes en todo momento de esta aventura académica.
 
 A mis compañeros de trabajo, Juanma, Luisma y Borja, que saben de que estos tres años que llevo realizando este master y han conocido todos los derroteros que me ha llevado este camino.
 
-[Volver al Índice General.](#índice-general)
+**[Volver al Índice General.](#índice-general)**
 
 ---
 
@@ -155,19 +157,33 @@ A mis compañeros de trabajo, Juanma, Luisma y Borja, que saben de que estos tre
 ## Índice del capítulo 1. Plan de trabajo.
 
 - [1.0. Introducción al capítulo 1. Plan de trabajo.](#10-introducción-al-capítulo-1-plan-de-trabajo)
-    - [1.1. Problema a resolver.](#11-problema-a-resolver)
-    - [1.2. Objetivos.](#12-objetivos)
-    - [1.3 Metodologías.](#13-metodologías)
-    - [1.4. Descripción del entorno de trabajo.](#14-descripción-del-entorno-de-trabajo)
-    - [1.5. Listado de tareas.](#15-listado-de-tareas)
-    - [1.6. Planificación temporal de las tareas.](#16-planificación-temporal-de-las-tareas)
-    - [1.7. Revisión del estado del arte de la informática forense.](#17-revisión-del-estado-del-arte-de-la-informática-forense)
+- [1.1. Problema a resolver.](#11-problema-a-resolver)
+- [1.2. Objetivos.](#12-objetivos)
+- [1.3. Metodologías.](#13-metodologías)
+    - [1.3.1. Introducción.](#131-introducción)
+    - [1.3.2. Normas ISO 27037 e ISO 30121.](#132-normas-iso-27037-e-iso-30121)
+    - [1.3.3. Norma RFC 3227.](#133-norma-rfc-3227)
+    - [1.3.4. Normas UNE 71505 y UNE 71506.](#134-normas-une-71505-y-une-71506)
+    - [1.3.5. Conclusiones relativo a las metodologías.](#135-conclusiones-relativo-a-las-metodologías)
+- [1.4. Descripción del entorno de trabajo.](#14-descripción-del-entorno-de-trabajo)
+- [1.5. Listado de tareas.](#15-listado-de-tareas)
+- [1.6. Planificación temporal de las tareas.](#16-planificación-temporal-de-las-tareas)
+- [1.7. Revisión del estado del arte de la informática forense.](#17-revisión-del-estado-del-arte-de-la-informática-forense)
+    - [1.7.1. Introducción.](#171-introducción)
+    - [1.7.2. Definiciones.](#172-definiciones)
+    - [1.7.3. Objetivos de la informática forense.](#173-objetivos-de-la-informática-forense)
+    - [1.7.4. Evidencia digital.](#174-evidencia-digital)
+    - [1.7.5. Perspectiva de tres roles.](#175-perspectiva-de-tres-roles)
+    - [1.7.6. Pasos del proceso del análisis forense.](#176-pasos-del-proceso-del-análisis-forense)
+    - [1.7.7. Retos y riesgos en el análisis forense.](#177-retos-y-riesgos-en-el-cómputo-forense)
+    - [1.7.8. Herramientas del análisis forense.](#178-herramientas-de-análisis-forense)
 
-[Volver al Índice General.](#índice-general)
+
+**[Volver al Índice General.](#índice-general)**
 
 ---
 
-<br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>
+<br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>
 
 ## 1.0. Introducción al capítulo 1. Plan de trabajo.
 
@@ -175,17 +191,15 @@ La situación en la que nos encontramos es un caso práctico laboral, en el que 
 
 En este caso, la dirección de la empresa tiene serias sospechas, no probadas, de que han accedido a los sistemas de forma ilícita. Por lo que el gerente de la empresa me solicita, como CISO, que se compruebe si realmente han accedido, así como el método que han utilizado. Por otro lado, solicitan las consecuencias que se derivan del dicho acceso, si ha habido extracción de información alguna.
 
-#### [1.0. Referencia 001](#86001-enunciado-tfm)
+#### [1.0. Referencia 001.](#86001-enunciado-tfm)
 
 
 
-[Volver al Índice del capítulo 1. Plan de trabajo.](#índice-del-capítulo-1-plan-de-trabajo)
-
-[Volver al Índice General.](#índice-general)
+**[Volver al Índice del capítulo 1. Plan de trabajo.](#índice-del-capítulo-1-plan-de-trabajo) &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; [Volver al Índice General.](#índice-general)**
 
 ---
 
-<br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>
+<br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>
 
 ## 1.1. Problema a resolver.
 
@@ -195,15 +209,13 @@ Una definición idónea que se puede adoptar en el presente TFM es lo indicado e
 
 Solventar las necesidades del gerente de la empresa mediante el análisis forense del disco duro y la captura de memoria de un ordenador personal, en un caso real con un sistema virtualizado, vinculado a una presunta conducta delictiva real. Para ello, se utilizarán herramientas específicas para la localización de las evidencias digitales sobre los discos duros y la memoria que puedan demostrar el presunto delito (Encase, Autopsy, Volatility, o cualquier otra herramienta, o conjunto de herramientas con prestaciones equivalentes). Finalmente, las evidencias localizadas deberán recogerse en un informe ejecutivo o pericial, el cual, además de los aspectos técnicos, deberá tener en cuenta aquellos requisitos procesales necesarios para que el análisis pueda tener validez en un proceso judicial.
 
-#### [1.1. Referencia 002](#86002-propuestas-de-tfm)
+#### [1.1. Referencia 002.](#86002-propuestas-de-tfm)
 
-[Volver al Índice del capítulo 1. Plan de trabajo.](#índice-del-capítulo-1-plan-de-trabajo)
-
-[Volver al Índice General.](#índice-general)
+**[Volver al Índice del capítulo 1. Plan de trabajo.](#índice-del-capítulo-1-plan-de-trabajo) &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; [Volver al Índice General.](#índice-general)**
 
 ---
 
-
+<br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>
 
 ## 1.2. Objetivos.
 
@@ -286,20 +298,18 @@ Se describe un el siguiente listado de objetivos que se obtienen al analizar el 
     - 4.1. Basarse en ideas fuerza que han aparecido durante todo el TFM.
     - 4.2. Tener en cuenta que este apartado es el que finalmente, el gerente de la empresa, como miembro directivo de la misma, usando el método del Presidente Reagan.
 
-#### [1.2. Referencia 001](#86001-enunciado-tfm)
-
-#### [1.2. Referencia 003](#86003-el-método-reagan)
+#### [1.2. Referencia 001.](#86001-enunciado-tfm) &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; [1.2. Referencia 003.](#86003-el-método-reagan)
 
 
-[Volver al Índice del capítulo 1. Plan de trabajo.](#índice-del-capítulo-1-plan-de-trabajo)
-
-[Volver al Índice General.](#índice-general)
+**[Volver al Índice del capítulo 1. Plan de trabajo.](#índice-del-capítulo-1-plan-de-trabajo) &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; [Volver al Índice General.](#índice-general)**
 
 ---
 
+<br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>
+
 ## 1.3. Metodologías.
 
-### 1.3.1. Introducción.
+### **1.3.1. Introducción.**
 
 En esta sección se procederá a realizar un repaso general de algunas de las normativas y estándares.
 
@@ -307,11 +317,13 @@ Primero abordaremos un pequeño estudio relativo a las normas ISO 27037 e ISO 30
 
 Por ultimo, pero no menos importante, trataré unas conclusiones sobre esta sección.
 
-[Volver al Índice del capítulo 1. Plan de trabajo.](#índice-del-capítulo-1-plan-de-trabajo)
+**[Volver al Índice del capítulo 1. Plan de trabajo.](#índice-del-capítulo-1-plan-de-trabajo)**
 
 ---
 
-### 1.3.2. Normas ISO 27037 e ISO 30121.
+<br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>
+
+### **1.3.2. Normas ISO 27037 e ISO 30121.**
 
 Dentro de la seguridad informática cabe destacar una normativa ampliamente conocida, es la familia ISO 27000. Esta serie de normas son estándares de seguridad publicados por la Organización Internacional para la Estandarización (ISO) y la Comisión Electrotécnica Internacional (IEC).
 
@@ -347,11 +359,13 @@ La ISO/IEC 30121 se creó para garantizar que las pruebas digitales se traten de
 
 #### [1.3.2. Referencia 005](#86005-implementación-de-herramientas-para-la-extracción-de-evidencia-digital)
 
-[Volver al Índice del capítulo 1. Plan de trabajo.](#índice-del-capítulo-1-plan-de-trabajo)
+**[Volver al Índice del capítulo 1. Plan de trabajo.](#índice-del-capítulo-1-plan-de-trabajo)**
 
 ---
 
-### 1.3.3. Norma RFC 3227.
+<br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>
+
+### **1.3.3. Norma RFC 3227.**
 
 Otra norma destacable para mencionar es la RFC 3227. Este documento publicado por la Internet Engineering Task Force (IETF) recoge directrices para recopilar y almacenar evidencias sin ponerlas en riesgo.
 
@@ -362,26 +376,26 @@ Sobre el procedimiento de almacenamiento tiene en cuenta la cadena de custodia d
 Para acabar detalla qué tipo de herramientas son las más útiles y qué características deben tener para evitar conflictos, haciendo hincapié en que las herramientas deben alterar lo menos posible el escenario. Según este documento el kit de análisis debe incluir las siguientes herramientas:
 
 - Programas para listar y examinar procesos.
-
 - Programas para examinar el estado del sistema.
-
 - Programas para realizar copias bit a bit.
 
 Todas estas recomendaciones tienen como epicentro el principio de intercambio de Locard, que señala que: "siempre que dos objetos entran en contacto transfieren parte del material que incorporan al otro objeto".
 
 Se dispone de una copia de la RFC 3227 en español.
 
-#### [1.3.3. Referencia 006](#86006-norma-rfc-3227)
+#### [1.3.3. Referencia 006.](#86006-norma-rfc-3227)
 
-[Volver al Índice del capítulo 1. Plan de trabajo.](#índice-del-capítulo-1-plan-de-trabajo)
+**[Volver al Índice del capítulo 1. Plan de trabajo.](#índice-del-capítulo-1-plan-de-trabajo)**
 
 ---
 
-### 1.3.4. Normas UNE 71505 y UNE 71506.
+<br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>
+
+### **1.3.4. Normas UNE 71505 y UNE 71506.**
 
 Las normas UNE son normas técnicas desarrolladas por el organismo español de normalización, la Asociación Española de Normalización (UNE). "UNE" es el acrónimo de "Una Norma Española". Estas normas establecen especificaciones técnicas, criterios y directrices que deben seguirse en la fabricación, diseño, instalación, uso o mantenimiento de productos, sistemas o servicios en España.
 
-#### [1.3.4. Referencia 007](#86007-que-son-las-normas-une)
+#### [1.3.4. Referencia 007.](#86007-que-son-las-normas-une)
 
 Estas normas que tratamos en el presente trabajo tienen como finalidad dar una metodología para la preservación, adquisición, documentación, análisis y presentación de pruebas digitales.
 
@@ -391,25 +405,15 @@ Estas normativas son de aplicación a cualquier organización con independencia 
 
 Se dispone de una copia de la norma UNE 71505.
 
-#### [1.3.4. Referencia 008](#86005-implementación-de-herramientas-para-la-extracción-de-evidencia-digital)
+#### [1.3.4. Referencia 008.](#86005-implementación-de-herramientas-para-la-extracción-de-evidencia-digital)
 
-[Volver al Índice del capítulo 1. Plan de trabajo.](#índice-del-capítulo-1-plan-de-trabajo)
-
----
-
-### 1.3.5. Normas UNE 71505 y UNE 71506.
-
-Estas normas, publicadas por la Asociación Española de Normalización y Certificación tienen como finalidad dar una metodología para la preservación, adquisición, documentación, análisis y presentación de pruebas digitales.
-
-Según la asociación esta norma debe dar respuesta a las infracciones legales e incidentes informáticos en las distintas empresas y entidades. Con la obtención de dichas pruebas digitales, que serán más robustas y fiables siguiendo la normativa, se podrá discernir si su causa tiene como origen un carácter intencional o negligente.
-
-Estas normativas son de aplicación a cualquier organización con independencia de su actividad o tamaño, así como a cualquier profesional competente en este ámbito. Se dirige especialmente a incidentes y seguridad, así como al personal técnico que trabaje en laboratorios o entornos de análisis forense de evidencias electrónicas.
-
-[Volver al Índice del capítulo 1. Plan de trabajo.](#índice-del-capítulo-1-plan-de-trabajo)
+**[Volver al Índice del capítulo 1. Plan de trabajo.](#índice-del-capítulo-1-plan-de-trabajo)**
 
 ---
 
-### 1.3.6. Conclusiones relativo a metodología.
+<br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>
+
+### **1.3.5. Conclusiones relativo a las metodologías.**
 
 Tras analizar los distintos apartados de esta sección y otras fuentes que se indicarán al final de la sección, se puede llegar a la conclusión de que el análisis forense informático recoge de la misma manera la metodología forense per sé, siguiendo la siguiente estructura.
 
@@ -417,15 +421,11 @@ Aunque no existe una metodología que sea única y universal en el análisis for
 
 Todas estas recomendaciones, recogidas en distintas documentaciones (ver bibliografía), establecen una estructura lógica que permiten garantizar el proceso y que, en el ámbito civil, se compone básicamente de las siguientes fases:
 
-##### [1.3.6 Imagen 001](#83001003006001-diagrama-de-metodología-del-análisis-forense)
+#### [1.3.5. Imagen 001.](#83001003005001-diagrama-de-metodología-del-análisis-forense)
 
 En cada una de las fases indicadas en la imagen anterior podemos destacar las siguientes tareas.
 
-##### [1.3.6 Imagen 002](#83001003006002-fases-1-2-y-3-de-la-metodología-del-análisis-forense)
-
-##### [1.3.6 Imagen 003](#83001003006003-fases-4-5-y-6-de-la-metodología-del-análisis-forense)
-
-##### [1.3.6 Imagen 004](#83001003006004-fase-7-de-la-metodología-del-análisis-forense)
+#### [1.3.5. Imagen 002.](#83001003005002-fases-1-2-y-3-de-la-metodología-del-análisis-forense) &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; [1.3.5. Imagen 003.](#83001003005003-fases-4-5-y-6-de-la-metodología-del-análisis-forense) &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; [1.3.5. Imagen 004.](#83001003005004-fase-7-de-la-metodología-del-análisis-forense)
 
 
 **PLANTEAMIENTO DEL PROBLEMA.**
@@ -444,19 +444,9 @@ Cabe destacar en uno de las tareas dedicadas a la identificación, nos encontram
 
 2. Proteger las huellas dactilares que pueda haber en los equipos para que los demás cuerpos y unidades de policía e investigadores puedan realizar su tarea. Es por lo tanto recomendable el uso de guantes de látex o similar para esta finalidad. En este punto se recuerda el principio de intercambio de Locard ya citado en el [apartado 1.3.3](#133-norma-rfc-3227).
 
-3. Anotar la hora y fecha de los equipos implicados que no tiene por qué coincidir con
-la real, esto es importante para la investigación posterior y para la realización de una línea
-temporal con todos los sucesos que han ocurrido. En caso de haber desfase entre la hora
-del equipo y la real, este desfase se tiene que documentar para tenerlo en cuenta
-posteriormente. La captura de la hora y fecha se puede realizar fotografiando la pantalla o
-grabando un vídeo de la misma, siempre y cuando no haya que manipular el equipo para
-ello.
+3. Anotar la hora y fecha de los equipos implicados que no tiene por qué coincidir con la real, esto es importante para la investigación posterior y para la realización de una línea temporal con todos los sucesos que han ocurrido. En caso de haber desfase entre la hora del equipo y la real, este desfase se tiene que documentar para tenerlo en cuenta posteriormente. La captura de la hora y fecha se puede realizar fotografiando la pantalla o grabando un vídeo de la misma, siempre y cuando no haya que manipular el equipo para ello.
 
-4. Ver si en pantalla hay algún proceso que nos aporte información útil sobre lo que
-esté pasando en directo, en ese caso, grabar todo lo que ocurre. Es importante valorar las
-entradas y salidas de los equipos, pues nos pueden aportar pistas importantes. De igual
-modo con otros periféricos de entrada/salida, tales como impresoras, teléfonos IP,
-escáneres, etcétera.
+4. Ver si en pantalla hay algún proceso que nos aporte información útil sobre lo que esté pasando en directo, en ese caso, grabar todo lo que ocurre. Es importante valorar las entradas y salidas de los equipos, pues nos pueden aportar pistas importantes. De igual modo con otros periféricos de entrada/salida, tales como impresoras, teléfonos IP, escáneres, etcétera.
 
 **ADQUISICIÓN.**
 
@@ -464,7 +454,7 @@ Llegados a esta fase, la cual ya ha sido previamente realizada a la elaboración
 
 Entendemos por volatilidad de los datos el período de tiempo en el que estarán accesibles en el equipo. Por lo tanto, se deberán recolectar previamente aquellas pruebas más volátiles. Según la RFC 3227, el que se presenta a continuación, es un posible orden de volatilidad de mayor a menor:
 
-##### [1.3.6 Imagen 005](#83001003006005-orden-de-volatilidad-análisis-forense)
+#### [1.3.5. Imagen 005.](#83001003005005-orden-de-volatilidad-análisis-forense)
 
 Como ya se ha indicado previamente, si se quiere realizar una depuración de responsabilidades de manera penal, es necesario establecer una autoridad legal que presente la recogida de evidencias, ya sea un secretario judicial o un notario.
 
@@ -500,19 +490,12 @@ Antes de empezar el análisis, es importante recordar unas premisas básicas que
 
 
 - Sistema operativo del sistema.
-
 - Programas instalados en el equipo.
-
 - Hardware, accesorios y periféricos que forman parte del sistema.
-
 - Datos relativos a la conectividad del equipo:
-
     - Si dispone de firewall, ya sea físico o lógico.
-
     - Si el equipo se encuentra en zonas de red especiales, por ejemplo, DMZ.
-
     - Si tiene conexión a Internet o utiliza proxies.
-
 - Datos generales de configuración que puedan ser de interés para el investigador
 para ayudar en la tarea.
 
@@ -521,13 +504,9 @@ Para ayudar al desarrollo de esta fase del análisis forense podemos centrarnos 
 En todo caso, se pueden destacar varios pasos, que habrá que adaptar en cada caso:
 
 - Preparar un entorno de trabajo adaptado a las necesidades del incidente.
-
 - Reconstruir una línea temporal con los hechos sucedidos.
-
 - Determinar qué procedimiento se llevó a cabo por parte del atacante.
-
 - Identificar el autor o autores de los hechos.
-
 - Evaluar el impacto causado y si es posible la recuperación del sistema.
 
 Antes de empezar el análisis propiamente, se debe preparar un entorno para dicho análisis. Es el momento de decidir si se va a hacer un análisis en caliente o en frío.
@@ -638,16 +617,14 @@ etc.
 - Dar unas recomendaciones sobre cómo proteger los equipos para no repetir el incidente o sobre cómo actuar legalmente contra el autor.
 
 
-#### [1.3.6. Referencia 008](#86008-meotdología-para-un-análisis-forense)
+#### [1.3.5. Referencia 008.](#86008-meotdología-para-un-análisis-forense) &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; [1.3.5. Referencia 009.](#86009-ninjas-de-la-web-metodología-para-un-análisis-forense)
 
-#### [1.3.6. Referencia 009](#86009-ninjas-de-la-web-metodología-para-un-análisis-forense)
 
-[Volver al Índice del capítulo 1. Plan de trabajo.](#índice-del-capítulo-1-plan-de-trabajo)
-
-[Volver al Índice General.](#índice-general)
+**[Volver al Índice del capítulo 1. Plan de trabajo.](#índice-del-capítulo-1-plan-de-trabajo) &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; [Volver al Índice General.](#índice-general)**
 
 ---
 
+<br>
 
 ## 1.4. Descripción del entorno de trabajo.
 
@@ -658,7 +635,6 @@ En un segundo plano, pero no menos esencial, se encuentra el portátil personal,
 Relativo al ordenador personal destacar las siguientes aplicaciones que se van a utilizar para la realización del análisis.
 
 - VirtualBox
-
 - Volatility
 
 
@@ -668,9 +644,8 @@ Por otro lado, la documentación y redacción del TFM se consolida mediante el u
 
 Finalmente, Internet emerge como un recurso invaluable para la investigación, actualización y comunicación a lo largo del proyecto. Navegar por la red debe ser realizado de forma segura y consciente, protegiendo las comunicaciones y asegurando la integridad de las herramientas y datos descargados.
 
-[Volver al Índice del capítulo 1. Plan de trabajo.](#índice-del-capítulo-1-plan-de-trabajo)
 
-[Volver al Índice General.](#índice-general)
+**[Volver al Índice del capítulo 1. Plan de trabajo.](#índice-del-capítulo-1-plan-de-trabajo) &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; [Volver al Índice General.](#índice-general)**
 
 ---
 
@@ -745,13 +720,11 @@ Durante la elaboración del reto 4  (PEC 4), se realizarán las siguientes tarea
 
 La Entrega de videos, presentación y realización de la defensa del TFM, se consideran que están fuera de este TFM, ya que a partir de la fecha se considera entregado el presente documento.
 
-[Volver al Índice del capítulo 1. Plan de trabajo.](#índice-del-capítulo-1-plan-de-trabajo)
-
-[Volver al Índice General.](#índice-general)
+**[Volver al Índice del capítulo 1. Plan de trabajo.](#índice-del-capítulo-1-plan-de-trabajo) &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; [Volver al Índice General.](#índice-general)**
 
 ---
 
-
+<br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>
 
 ## 1.6. Planificación temporal de las tareas.
 
@@ -759,32 +732,31 @@ Para esta sección, se han elaborado los siguientes diagramas de Gantt relativos
 
 Relativo al reto/PEC 1 se establece el siguiente diagrama:
 
-##### [1.6. Imagen 001](#83001006001-diagrama-de-gantt-retopec-1)
+#### [1.6. Imagen 001.](#83001006001-diagrama-de-gantt-retopec-1)
 
 Relativo al reto/PEC 2 se establece el siguiente diagrama.
 
-##### [1.6. Imagen 002](#83001006002-diagrama-de-gantt-retopec-2)
+#### [1.6. Imagen 002.](#83001006002-diagrama-de-gantt-retopec-2)
 
 Relativo al reto/PEC 3 se establece el siguiente diagrama.
 
-##### [1.6. Imagen 003](#83001006003-diagrama-de-gantt-retopec-3)
+#### [1.6. Imagen 003.](#83001006003-diagrama-de-gantt-retopec-3)
 
 Relativo al reto/PEC 4 se establece el siguiente diagrama.
 
-##### [1.6. Imagen 004](#83001006004-diagrama-de-gantt-retopec-4)
+#### [1.6. Imagen 004.](#83001006004-diagrama-de-gantt-retopec-4)
 
 
-[Volver al Índice del capítulo 1. Plan de trabajo.](#índice-del-capítulo-1-plan-de-trabajo)
 
-[Volver al Índice General.](#índice-general)
+**[Volver al Índice del capítulo 1. Plan de trabajo.](#índice-del-capítulo-1-plan-de-trabajo) &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; [Volver al Índice General.](#índice-general)**
 
 ---
 
-
+<br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>
 
 ## 1.7. Revisión del estado del arte de la informática forense.
 
-### 1.7.1. Introducción.
+### **1.7.1. Introducción.**
 
 El análisis forense, también llamado informática forense, computación forense, análisis forense digital o examen forense digital es la aplicación de técnicas científicas y analíticas especializadas a infraestructuras tecnológicas que permiten identificar, preservar, analizar y presentar datos válidos dentro de un proceso legal.
 
@@ -800,25 +772,27 @@ Dentro del proceso del análisis forense, un examinador forense digital puede ll
 
 Es muy importante mencionar que la informática o el análisis forense no tiene como objetivo prevenir delitos, por lo que resulta imprescindible tener claros los distintos marcos de actuación de la informática forense, la seguridad informática y la auditoría informática.
 
-[Volver al Índice del capítulo 1. Plan de trabajo.](#índice-del-capítulo-1-plan-de-trabajo)
+**[Volver al Índice del capítulo 1. Plan de trabajo.](#índice-del-capítulo-1-plan-de-trabajo)**
 
+---
 
+<br><br><br><br><br><br><br><br><br><br><br><br><br><br>
 
-### 1.7.2. Definiciones.
+### **1.7.2. Definiciones.**
 
 Existen diferentes términos referentes a la ciencia forense en informática. Cada uno de estos términos trata de manera particular o general temas que son de interés para las ciencias forenses. Estos términos se pueden ver en el Capítulo de [glosario de términos, abreviaturas y acrónimos](#82-glosario-de-términos-y-abreviaturas).
 
 - [Computación forense (computer forensics).](#computación-forense-computer-forensics)
-
 - [Ciencia forense en las redes (network forensics).](#ciencia-forense-en-las-redes-network-forensics)
-
 - [Ciencia forense digital (digital forensics).](#ciencia-forense-digital-digital-forensics)
 
-[Volver al Índice del capítulo 1. Plan de trabajo.](#índice-del-capítulo-1-plan-de-trabajo)
+**[Volver al Índice del capítulo 1. Plan de trabajo.](#índice-del-capítulo-1-plan-de-trabajo)**
 
+---
 
+<br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>
 
-### 1.7.3. Objetivos de la informática forense.
+### **1.7.3. Objetivos de la informática forense.**
 
 La informática forense tiene tres objetivos:
 
@@ -831,11 +805,13 @@ Estos objetivos se alcanzan de varias formas, siendo la principal la recopilaci�
 
 Es importante mencionar que quienes se dedican a la informática forense deben ser profesionales con altos niveles de ética, pues gracias a su trabajo se toman decisiones sobre los hechos y casos analizados.
 
-[Volver al Índice del capítulo 1. Plan de trabajo.](#índice-del-capítulo-1-plan-de-trabajo)
+**[Volver al Índice del capítulo 1. Plan de trabajo.](#índice-del-capítulo-1-plan-de-trabajo)**
 
+---
 
+<br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>
 
-### 1.7.4. Evidencia digital.
+### **1.7.4. Evidencia digital.**
 
 Los discos duros, las memorias USB y las impresoras (entre otros elementos) se pueden considerar evidencias en un proceso legal, al igual que las huellas digitales o las armas. Las evidencias digitales son las que se extraen de un medio informático.
 
@@ -878,11 +854,13 @@ Cualquier infraestructura informática que tenga una memoria (almacenamiento) es
 - Memorias USB.
 - BIOS.
 
-[Volver al Índice del capítulo 1. Plan de trabajo.](#índice-del-capítulo-1-plan-de-trabajo)
+**[Volver al Índice del capítulo 1. Plan de trabajo.](#índice-del-capítulo-1-plan-de-trabajo)**
 
+---
 
+<br><br>
 
-### 1.7.5. Perspectiva de tres roles.
+### **1.7.5. Perspectiva de tres roles.**
 
 En el análisis de un caso en el que sea necesario el cómputo forense, hay tres roles principales que son importantes y se deben tener en cuenta: el intruso, el administrador y la infraestructura de la seguridad informática, al igual que el investigador.
 
@@ -937,11 +915,13 @@ Es un criminalista digital que debe identificar los diferentes elementos probato
 
 Examina en detalle los datos, los elementos informáticos recogidos en la escena del crimen con el fin de extraer toda la información posible y relevante para resolver el caso.
 
-[Volver al Índice del capítulo 1. Plan de trabajo.](#índice-del-capítulo-1-plan-de-trabajo)
+**[Volver al Índice del capítulo 1. Plan de trabajo.](#índice-del-capítulo-1-plan-de-trabajo)**
 
+---
 
+<br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>
 
-### 1.7.6. Pasos del proceso del cómputo forense.
+### **1.7.6. Pasos del proceso del análisis forense.**
 
 A continuación se describe el proceso de análisis forense:
 
@@ -961,8 +941,6 @@ Proceso de aplicar técnicas científicas y analíticas a los medios duplicados 
 
 Es la recopilación de toda la información que se obtuvo a partir del análisis para realizar el reporte y la presentación a los abogados, jueces o instancias que soliciten este informe, la generación (si es el caso) de una pericial y de su correcta interpretación sin hacer uso de tecnicismos; se deberá presentar de manera cauta, prudente y discreta al solicitante la documentación, ya que siempre existirán puertas traseras dentro del sistema en observación. Debe ser muy específica la investigación dentro del sistema que se documenta porque se compara y vincula una plataforma de telecomunicación y cómputo forense que están muy estrechamente enlazadas, sin olvidar los medios de almacenamiento magnéticos portables basados en software libre y privativo. La información que se transmite debe manejarse con cuidado, porque el prestigio técnico depende de las plataformas y los sistemas
 
-
-
 Para poder realizar con éxito su trabajo, el investigador nunca debe olvidar:
 
 - Ser imparcial. Solamente analizar y reportar lo encontrado.
@@ -972,11 +950,13 @@ Para poder realizar con éxito su trabajo, el investigador nunca debe olvidar:
 
 El especialista debe conocer también sobre el desarrollo de los exploit (vulnerabilidades), esto le permite al informático forense saber qué tipo de programas se pondrán de moda, para generar una base de estudio que le permita observar patrones de comportamiento.
 
-[Volver al Índice del capítulo 1. Plan de trabajo.](#índice-del-capítulo-1-plan-de-trabajo)
+**[Volver al Índice del capítulo 1. Plan de trabajo.](#índice-del-capítulo-1-plan-de-trabajo)**
 
+---
 
+<br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>
 
-### 1.7.7. Retos y riesgos en el cómputo forense.
+### **1.7.7. Retos y riesgos en el análisis forense.**
 
 Al estar en un escenario que evoluciona constantemente, cada vez surgen más retos y riesgos en el área de la informática forense. Entre ellos la formación de informáticos forenses, la confiabilidad de las herramientas, la facilidad de la destrucción de las evidencias, las amenazas estratégicas y tácticas que plantea el ciberterrorismo; y las tecnologías emergentes como la nube, las tecnologías móviles, y las redes sociales. Algunos de estos temas se abordarán a continuación:
 
@@ -997,11 +977,13 @@ Las herramientas existentes disponibles para el cómputo forense presentan otro 
 
 Es por esto que el NIST (National Institute of Standards and Technology de Estados Unidos) ha planteado importantes investigaciones para probar y poner reglas para las herramientas del cómputo forense, en su proyecto NIST Computer Forensic Tool Testing Program. Las pruebas realizadas serán útiles para cumplir las exigencias del test de Daubert standard, prueba que establece la confiabilidad de las herramientas en computación forense.
 
-[Volver al Índice del capítulo 1. Plan de trabajo.](#índice-del-capítulo-1-plan-de-trabajo)
+**[Volver al Índice del capítulo 1. Plan de trabajo.](#índice-del-capítulo-1-plan-de-trabajo)**
 
+---
 
+<br><br><br>
 
-### 1.7.8. Herramientas de Análisis Forense.
+### **1.7.8. Herramientas de Análisis Forense.**
 
 La siguiente tabla compara cuatro herramientas reconocidas internacionalmente al ser muy completas. Luego, se encuentra una lista más completa de herramientas útiles para la labor del investigador.
 
@@ -1079,9 +1061,8 @@ La siguiente tabla compara cuatro herramientas reconocidas internacionalmente al
 
 **DEUDA TÉCNICA: Referencia a WIKIPEDIA**
 
-[Volver al Índice del capítulo 1. Plan de trabajo.](#índice-del-capítulo-1-plan-de-trabajo)
 
-[Volver al Índice General.](#índice-general)
+**[Volver al Índice del capítulo 1. Plan de trabajo.](#índice-del-capítulo-1-plan-de-trabajo) &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; [Volver al Índice General.](#índice-general)**
 
 ---
 
@@ -2443,43 +2424,43 @@ para comprobar que esta correctamente creado el perfil procedemos a ejecutar el 
 
 ---
 
-#### 8.3.001.003.006.001. Diagrama de metodología del análisis forense.
+#### 8.3.001.003.005.001. Diagrama de metodología del análisis forense.
 
-![001-003-006-001](./images/001-003-006-001-FASES-METODOLOGIA-ANALISIS-FORENSE.png)
+![001-003-005-001](./images/001-003-005-001-FASES-METODOLOGIA-ANALISIS-FORENSE.png)
 
-[Volver al texto de la imagen en la Sección 1.3.6.](#136-imagen-001)
-
----
-
-#### 8.3.001.003.006.002. Fases 1 2 y 3 de la metodología del análisis forense.
-
-![001-003-006-002](./images/001-003-006-002-FASES-1-2-3-METODOLOGIA-ANALISIS-FORENSE.png)
-
-[Volver al texto de la imagen en la Sección 1.3.6.](#136-imagen-002)
+[Volver al texto de la imagen en la Sección 1.3.5.](#135-imagen-001)
 
 ---
 
-#### 8.3.001.003.006.003. Fases 4 5 y 6 de la metodología del análisis forense.
+#### 8.3.001.003.005.002. Fases 1 2 y 3 de la metodología del análisis forense.
 
-![001-003-006-002](./images/001-003-006-003-FASES-4-5-6-METODOLOGIA-ANALISIS-FORENSE.png)
+![001-003-005-002](./images/001-003-005-002-FASES-1-2-3-METODOLOGIA-ANALISIS-FORENSE.png)
 
-[Volver al texto de la imagen en la Sección 1.3.6.](#136-imagen-003)
-
----
-
-#### 8.3.001.003.006.004. Fase 7 de la metodología del análisis forense.
-
-![001-003-006-004](./images/001-003-006-004-FASE-7-METODOLOGIA-ANALISIS-FORENSE.png)
-
-[Volver al texto de la imagen en la Sección 1.3.6.](#136-imagen-004)
+[Volver al texto de la imagen en la Sección 1.3.5.](#135-imagen-002-135-imagen-003-135-imagen-004)
 
 ---
 
-#### 8.3.001.003.006.005. Orden de volatilidad análisis forense.
+#### 8.3.001.003.005.003. Fases 4 5 y 6 de la metodología del análisis forense.
 
-![001-003-006-005](./images/001-003-006-005-ORDEN-VOLATILIDAD-RFC-3227.png)
+![001-003-005-003](./images/001-003-005-003-FASES-4-5-6-METODOLOGIA-ANALISIS-FORENSE.png)
 
-[Volver al texto de la imagen en la Sección 1.3.6.](#136-imagen-005)
+[Volver al texto de la imagen en la Sección 1.3.5.](#135-imagen-002-135-imagen-003-135-imagen-004)
+
+---
+
+#### 8.3.001.003.005.004. Fase 7 de la metodología del análisis forense.
+
+![001-003-005-004](./images/001-003-005-004-FASE-7-METODOLOGIA-ANALISIS-FORENSE.png)
+
+[Volver al texto de la imagen en la Sección 1.3.5.](#135-imagen-002-135-imagen-003-135-imagen-004)
+
+---
+
+#### 8.3.001.003.005.005. Orden de volatilidad análisis forense.
+
+![001-003-005-005](./images/001-003-005-005-ORDEN-VOLATILIDAD-RFC-3227.png)
+
+[Volver al texto de la imagen en la Sección 1.3.5.](#135-Imagen-005)
 
 ---
 
@@ -2487,7 +2468,7 @@ para comprobar que esta correctamente creado el perfil procedemos a ejecutar el 
 
 ![001-006-001](./images/001-006-001-diagrama-de-gantt-pec-01.png)
 
-[Volver al texto de la imagen en la Sección 1.6.](#16-imagen-001)
+[Volver al texto de la imagen en la Sección 1.6.](#16-Imagen-001)
 
 ---
 
@@ -2497,7 +2478,7 @@ para comprobar que esta correctamente creado el perfil procedemos a ejecutar el 
 
 ![001-006-002](./images/001-006-002-diagrama-de-gantt-pec-02.png)
 
-[Volver al texto de la imagen en la Sección 1.6.](#16-imagen-001)
+[Volver al texto de la imagen en la Sección 1.6.](#16-Imagen-001)
 
 ---
 
@@ -2506,7 +2487,7 @@ para comprobar que esta correctamente creado el perfil procedemos a ejecutar el 
 #### 8.3.001.006.003. Diagrama de Gantt reto/PEC 3.
 ![001-006-003](./images/001-006-003-diagrama-de-gantt-pec-03.png)
 
-[Volver al texto de la imagen en la Sección 1.6.](#16-imagen-003)
+[Volver al texto de la imagen en la Sección 1.6.](#16-Imagen-003)
 
 ---
 
@@ -2666,7 +2647,7 @@ para comprobar que esta correctamente creado el perfil procedemos a ejecutar el 
 
 [Volver at texto de la referencia en la Sección 1.0.](#10-referencia-001)
 
-[Volver at texto de la referencia en la Sección 1.2.](#12-referencia-001)
+[Volver at texto de la referencia en la Sección 1.2.](#12-referencia-001-12-referencia-003)
 
 ---
 
@@ -2687,7 +2668,7 @@ para comprobar que esta correctamente creado el perfil procedemos a ejecutar el 
 - Título del trabajo: El método Reagan.
 - URL: [https://www.xn--elespaoldigital-3qb.com/el-metodo-reagan/](https://www.xn--elespaoldigital-3qb.com/el-metodo-reagan/)
 
-[Volver at texto de la referencia en la Sección 1.2.](#12-referencia-003)
+[Volver at texto de la referencia en la Sección 1.2.](#12-referencia-001-12-referencia-003)
 
 ---
 
@@ -2744,7 +2725,7 @@ para comprobar que esta correctamente creado el perfil procedemos a ejecutar el 
 - URL: [https://openaccess.uoc.edu/bitstream/10609/39681/6/cgervillarTFM1214memoria.pdf](https://openaccess.uoc.edu/bitstream/10609/39681/6/cgervillarTFM1214memoria.pdf)
 - URL repositorio Github: [007-METODOLOGÍA-PARA-UN-ANÁLISIS-FORENSE.pdf](https://github.com/jrodg85/TFM-ANALISIS-FORENSE/blob/main/referencias/007-METODOLOGÍA-PARA-UN-ANÁLISIS-FORENSE.pdf)
 
-[Volver at texto de la referencia en la Sección 1.3.6.](#136-referencia-008)
+[Volver at texto de la referencia en la Sección 1.3.5.](#135-referencia-008)
 
 ---
 
@@ -2754,7 +2735,7 @@ para comprobar que esta correctamente creado el perfil procedemos a ejecutar el 
 - Título del trabajo: Metodología de Análisis Forense (Ninjas de la Web).
 - URL: [https://ninjasdelaweb.com/metodologia-de-analisis-forense/](https://ninjasdelaweb.com/metodologia-de-analisis-forense/)
 
-[Volver at texto de la referencia en la Sección 1.3.6.](#136-referencia-009)
+[Volver at texto de la referencia en la Sección 1.3.5.](#135-referencia-009)
 
 ---
 
@@ -2763,3 +2744,5 @@ para comprobar que esta correctamente creado el perfil procedemos a ejecutar el 
 [Volver al Índice General.](#índice-general)
 
 ---
+
+## 8.7. Linea de tiempo de evidencias.
