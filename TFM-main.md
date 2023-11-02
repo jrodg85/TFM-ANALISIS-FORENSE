@@ -22,9 +22,9 @@ Enero de 2024.
 
 <br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>
 
+**FICHA DEL TRABAJO FINAL DE MASTER**
 
-
-| FICHA DEL TRABAJO FINAL DE  | MASTER |
+|  |  |
 | --: | :-- |
 | Titulo del trabajo: | Análisis forense de un ordenador. |
 | Nombre del autor: | José Enrique Rodríguez González. |
@@ -34,14 +34,16 @@ Enero de 2024.
 | Universidad: | Universitat Oberta de Catalunya. |
 ||
 
+<br>
 
+**RESUMEN DEL TRABAJO**
 
-| RESUMEN DEL TRABAJO |
+|  |
 |---|
 |El objetivo del presente Trabajo de Fin de Máster es realizar un análisis forense de un ordenador del que se sospecha de que han accedido a los sistemas de forma ilícita. Se comprobará si realmente han accedido, así como el método que han utilizado. Por otro lado, se elaborará un informe con las consecuencias que se derivan del dicho acceso ademas se comprobará si ha habido extracción de información alguna. <br>Por último, y no menos importante, para el presente trabajo se tendrán en cuenta los estándares que existen en la actualidad, como pueden ser la norma ISO 27037, la RFC 3227  o las normas de la Asociación Española de Normalización UNE 71505 y UNE 71506.|
 ||
 
-<br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>
+<br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>
 
 ## Índice General.
 
@@ -114,7 +116,7 @@ PEC 1
 
 **DEUDA TÉCNICA: plantear posible reducción del estado del arte**
 
-**DEUDA TÉCNICA: Referencia a WIKIPEDIA**
+**DEUDA TÉCNICA: Referencia a WIKPEDIA**
 
 PEC 2
 
@@ -130,7 +132,6 @@ COMENTARIOS TUTORA TFM PEC 1.
     - Sin embargo, deben mejorarse los siguientes puntos:
         - 2. Definición de Objetivos: Has definido claramente tus objetivos, lo cual es positivo. Sin embargo, es esencial que logres responder a todos ellos en la entrega final o justifiques cualquier impedimento que impida su cumplimiento.
         - 3. Entorno de Trabajo: Debes proporcionar más detalles sobre el equipo y las herramientas específicas que utilizarás en tu análisis forense. Esto garantizará una comprensión completa de tu enfoque.
-        - 4. Estado del Arte: Has realizado un buen trabajo en general, pero es importante incluir más referencias a artículos utilizados para documentación y mencionar las metodologías que aplicarás durante el análisis forense.
         - 5. Comparativa de Herramientas: La comparativa de herramientas es exhaustiva, pero muchas de ellas pueden resultar irrelevantes. Sería más beneficioso seleccionar algunas, analizarlas en detalle y explicar por qué las has elegido y cómo se utilizarán en tu TFM.
         - 6. Glosario: Es positivo que incluyas un glosario de términos y abreviaturas, pero es necesario desarrollarlo, incluyendo el origen de abreviaturas como "CISO".
         - 7. Bibliografía: La ausencia de una bibliografía es una deficiencia significativa. Debes incluir una bibliografía que respalde tus afirmaciones y muestre la base teórica en la que se basa tu TFM.
@@ -138,7 +139,7 @@ COMENTARIOS TUTORA TFM PEC 1.
 
 ---
 
-<br><br>
+<br><br><br><br>
 
 # 0. Agradecimientos.
 
@@ -169,43 +170,41 @@ A mis compañeros de trabajo, Juanma, Luisma y Borja, que saben de que estos tre
 - [1.5. Listado de tareas.](#15-listado-de-tareas)
 - [1.6. Planificación temporal de las tareas.](#16-planificación-temporal-de-las-tareas)
 - [1.7. Revisión del estado del arte de la informática forense.](#17-revisión-del-estado-del-arte-de-la-informática-forense)
-    - [1.7.1. Introducción.](#171-introducción)
+    - [1.7.1. Introducción del estado del arte de la informática forense.](#171-introducción-del-estado-del-arte-de-la-informática-forense)
     - [1.7.2. Definiciones.](#172-definiciones)
     - [1.7.3. Objetivos de la informática forense.](#173-objetivos-de-la-informática-forense)
     - [1.7.4. Evidencia digital.](#174-evidencia-digital)
     - [1.7.5. Perspectiva de tres roles.](#175-perspectiva-de-tres-roles)
-    - [1.7.6. Pasos del proceso del análisis forense.](#176-pasos-del-proceso-del-análisis-forense)
-    - [1.7.7. Retos y riesgos en el análisis forense.](#177-retos-y-riesgos-en-el-cómputo-forense)
-    - [1.7.8. Herramientas del análisis forense.](#178-herramientas-de-análisis-forense)
-
+    - [1.7.6. Retos y riesgos en el análisis forense.](#176-retos-y-riesgos-en-el-cómputo-forense)
+    - [1.7.7. Herramientas del análisis forense.](#177-herramientas-de-análisis-forense)
 
 **[Volver al Índice General.](#índice-general)**
 
 ---
 
-<br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>
+<br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>
 
 ## 1.0. Introducción al capítulo 1. Plan de trabajo.
 
-La situación en la que nos encontramos es un caso práctico laboral, en el que realizamos el papel de CISO.
+#### [1.0. Glosario 001: CISO.](#82001000001-ciso)
 
-En este caso, la dirección de la empresa tiene serias sospechas, no probadas, de que han accedido a los sistemas de forma ilícita. Por lo que el gerente de la empresa me solicita, como CISO, que se compruebe si realmente han accedido, así como el método que han utilizado. Por otro lado, solicitan las consecuencias que se derivan del dicho acceso, si ha habido extracción de información alguna.
+La situación en la que nos encontramos es un caso práctico laboral, en el que realizamos el papel de [CISO](#82001000001-ciso).
+
+En este caso, la dirección de la empresa tiene serias sospechas, no probadas, de que han accedido a los sistemas de forma ilícita. Por lo que el gerente de la empresa me solicita, como [CISO](#82001000001-ciso), que se compruebe si realmente han accedido, así como el método que han utilizado. Por otro lado, solicitan las consecuencias que se derivan del dicho acceso, si ha habido extracción de información alguna.
 
 #### [1.0. Referencia 001.](#86001-enunciado-tfm)
-
-
 
 **[Volver al Índice del capítulo 1. Plan de trabajo.](#índice-del-capítulo-1-plan-de-trabajo) &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; [Volver al Índice General.](#índice-general)**
 
 ---
 
-<br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>
+<br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>
 
 ## 1.1. Problema a resolver.
 
 Por, lo expuesto en la introducción del capítulo, se coliga que el problema a resolver es la resolución de las cuestiones solicitadas por el Gerente de la empresa.
 
-Una definición idónea que se puede adoptar en el presente TFM es lo indicado en su momento en la propuesta del TFM:
+Una definición idónea que se puede adoptar en el presente Trabajo de Final de Máster (en adelante TFM) es lo indicado en su momento en la propuesta del TFM:
 
 Solventar las necesidades del gerente de la empresa mediante el análisis forense del disco duro y la captura de memoria de un ordenador personal, en un caso real con un sistema virtualizado, vinculado a una presunta conducta delictiva real. Para ello, se utilizarán herramientas específicas para la localización de las evidencias digitales sobre los discos duros y la memoria que puedan demostrar el presunto delito (Encase, Autopsy, Volatility, o cualquier otra herramienta, o conjunto de herramientas con prestaciones equivalentes). Finalmente, las evidencias localizadas deberán recogerse en un informe ejecutivo o pericial, el cual, además de los aspectos técnicos, deberá tener en cuenta aquellos requisitos procesales necesarios para que el análisis pueda tener validez en un proceso judicial.
 
@@ -221,24 +220,24 @@ Solventar las necesidades del gerente de la empresa mediante el análisis forens
 
 Se describe un el siguiente listado de objetivos que se obtienen al analizar el enunciado del TFM:
 
-- 1. Elaboración del Análisis forense de Disco Duro y RAM.
-    - 1.1. realizar una recuperación parcial o total de la información borrada existente en los dispositivos susceptibles de ser analizados (carving).
+1. Elaboración del Análisis forense de Disco Duro y RAM.
+    - 1.1. realizar una recuperación parcial o total de la información borrada existente en los dispositivos susceptibles de ser analizados (**<u style='color:red'>carving</u>**).
     - 1.2. Relativo al análisis de la memoria RAM.
-        - 1.2.1. Comprobar la integridad de la memoria RAM.
+        - 1.2.1. Comprobar la **<u style='color:red'>integridad</u>** de la memoria RAM.
         - 1.2.2. Comprobar fecha de la captura de la RAM.
         - 1.2.3. Determinar la edición y versión de Windows que tiene instalado el sistema operativo del ordenador sobre el cual se ha efectuado la captura de la memoria RAM.
         - 1.2.4. Buscar los procesos en funcionamiento y localiza aquellos que te parezcan de interés para el análisis forense del ordenador analizado.
         - 1.2.5. Extraer los procesos que consideres sospechosos y analizarlos.
         - 1.2.6. Listar las conexiones de red y analizarlas.
     - 1.3. Relativo al análisis del Disco Duro.
-        - 1.3.1. Comprobar la integridad del disco duro.
+        - 1.3.1. Comprobar la **<u style='color:red'>integridad</u>** del disco duro.
         - 1.3.2. Determinar la siguiente información del disco duro.
             - 1.3.2.1. Tamaño del disco duro analizado.
             - 1.3.2.2. Sistema y versión del sistema operativo instalado.
             - 1.3.2.3. Nombre del propietario y relación de software instalado.
-            - 1.3.2.4. "Product ID" y "Product Key" asociadas al sistema.
+            - 1.3.2.4. "**<u style='color:red'>Product ID</u>**" y "**<u style='color:red'>Product Key</u>**" asociadas al sistema.
             - 1.3.2.5. Fecha y hora de instalación del sistema operativo.
-            - 1.3.2.6. Determinar marca y modelo (si es posible) del hardware siguiente: CPU, monitor, tarjeta gráfica, tarjeta Ethernet y Wireless.
+            - 1.3.2.6. Determinar marca y modelo (si es posible) del hardware siguiente: **<u style='color:red'>CPU</u>**, monitor, tarjeta gráfica, tarjeta **<u style='color:red'>Ethernet</u>** y **<u style='color:red'>Wireless</u>**.
         - 1.3.3. Determinar qué usuarios tiene definidos el sistema.
         - 1.3.4.Localizar los documentos (archivos PDF, de texto, hojas de cálculo, etc.) que puedan tener relación con alguna conducta presuntamente delictiva.
         - 1.3.5. Localizar los archivos eliminados y determina si hay alguno relevante para la causa investigada.
@@ -246,9 +245,9 @@ Se describe un el siguiente listado de objetivos que se obtienen al analizar el 
         - 1.3.7. Localizar algún fichero ejecutable que pueda resultar de interés para la investigación, ademas, analizar la relación con alguna evidencia anterior.
         - 1.3.8. Determinar el contenido del fichero log de un conocido programa de comunicación si es necesario y relacionarlo con el caso investigado.
         - 1.3.9. Realizar un análisis de la navegación web.
-        - 1.3.10. Estudio de los dispositivos físicos que en algún momento fueron conectados al sistema estudiado: móviles, USBs, impresoras, escáneres, cámaras, tarjetas de memoria.
+        - 1.3.10. Estudio de los dispositivos físicos que en algún momento fueron conectados al sistema estudiado: móviles, **<u style='color:red'>USB's</u>**, impresoras, escáneres, cámaras, tarjetas de memoria.
         - 1.3.11. Estudio de la información contenida en los unallocated cluster o en el file slack.
-        - 1.3.12. Información contenida en los archivos de hibernación, paginación, particiones y archivos de intercambio (swap).
+        - 1.3.12. Información contenida en los archivos de hibernación, paginación, particiones y archivos de intercambio (**<u style='color:red'>swap</u>**).
         - 1.3.13. Análisis de la cola de impresión.
         - 1.3.14. Visualización de los links de los archivos y de los archivos accedidos recientemente.
         - 1.3.15. Estudio de los metadatos de los archivos, si se considera que pueden ser relevantes para el caso.
@@ -259,10 +258,7 @@ Se describe un el siguiente listado de objetivos que se obtienen al analizar el 
     - 1.4. Realizar un estudio de la seguridad.
         - 1.4.1. Estudiar si las evidencias analizadas han sido comprometidas.
         - 1.4.2. Identificar cualquier aplicación vulnerable, software malicioso, evaluar el daño sufrido, identificar los archivos que han sido comprometidos, así como determinar la vía de acceso al sistema.
-
-
-
-- 2. Relativo al resumen ejecutivo, elaborarlo teniendo en cuenta los siguientes apartados.
+2. Relativo al resumen ejecutivo, elaborarlo teniendo en cuenta los siguientes apartados.
     - 2.1. Claridad en la comunicación, proporcionando información de forma clara y concisa y, por otro lado, utilizar un lenguaje accesible para los no expertos en el área.
     - 2.2. Presentar el contexto u antecedentes, describiendo el motivo y las circunstancias del análisis forense y Proporcionar una breve descripción del incidente o situación bajo investigación.
     - 2.3. Redactar un resumen ejecutivo con los hallazgos clave y las recomendaciones.
@@ -275,11 +271,10 @@ Se describe un el siguiente listado de objetivos que se obtienen al analizar el 
     - 2.10. Proveer conclusiones basadas en los hallazgos del análisis forense.
     - 2.11. Proporcionar recomendaciones para la acción futura, basadas en los hallazgos y conclusiones.
     - 2.12. Sugerir medidas preventivas y correctivas para evitar incidentes similares en el futuro.
-
-- 3. Elaborar un informe pericial teniendo en cuenta los siguientes apartados.
+3. Elaborar un informe pericial teniendo en cuenta los siguientes apartados.
     - 3.1. Mantener una postura objetiva e imparcial en todo momento.
     - 3.2. Garantizar que el análisis y las conclusiones estén fundamentados en evidencias tangibles y replicables.
-    - 3.3. Mantener la cadena de custodia y la integridad de las pruebas durante todo el proceso.
+    - 3.3. Mantener la **<u style='color:red'>cadena de custodia</u>** y la **<u style='color:red'>integridad</u>** de las pruebas durante todo el proceso.
     - 3.4. Redactar el informe de manera clara, precisa y entendible para personas sin conocimientos técnicos específicos.
     - 3.5. Describir detalladamente el caso, partes involucradas, y el objeto del peritaje.
     - 3.6. Detallar las herramientas, técnicas y procedimientos utilizados en el análisis forense.
@@ -293,13 +288,11 @@ Se describe un el siguiente listado de objetivos que se obtienen al analizar el 
     - 3.14. Garantizar que toda la información manejada se mantiene confidencial y segura.
     - 3.15. Discutir las implicaciones legales de los hallazgos y su posible impacto en el caso.
     - 3.16. Estar preparado para ratificar el informe en un tribunal y responder a preguntas relacionadas con el análisis y los hallazgos. Este supuesto, el defensor se intuye que se realizará en la defensa síncrona de la defensa de este TFM.
-
-- 4. Realizar unas conclusiones acordes a todo el TFM realizado.
+4. Realizar unas conclusiones acordes a todo el TFM realizado.
     - 4.1. Basarse en ideas fuerza que han aparecido durante todo el TFM.
     - 4.2. Tener en cuenta que este apartado es el que finalmente, el gerente de la empresa, como miembro directivo de la misma, usando el método del Presidente Reagan.
 
 #### [1.2. Referencia 001.](#86001-enunciado-tfm) &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; [1.2. Referencia 003.](#86003-el-método-reagan)
-
 
 **[Volver al Índice del capítulo 1. Plan de trabajo.](#índice-del-capítulo-1-plan-de-trabajo) &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; [Volver al Índice General.](#índice-general)**
 
@@ -333,17 +326,17 @@ Concretamente, existe una norma dedicada en exclusiva al análisis forense, se t
 
 Esta norma ofrece orientación para tratar situaciones frecuentes durante todo el proceso de tratamiento de las pruebas digitales. Además define dos roles especialistas:
 
-- **DEFR (Digital Evidence First Responders)**: Expertos en primera intervención de evidencias electrónicas.
-- **DES (Digital Evidence Specialists)**: Experto en gestión de evidencias electrónicas.
+- **<u style='color:red'>DEFR</u>** **(Digital Evidence First Responders)**: Expertos en primera intervención de evidencias electrónicas.
+- **<u style='color:red'>DES</u>** **(Digital Evidence Specialists)**: Experto en gestión de evidencias electrónicas.
 
 ISO 27037 proporciona orientación para los siguientes dispositivos y circunstancias:
 
 - Medios de almacenamiento digitales utilizados en equipos varios como por ejemplo discos duros, disquetes, discos magneto-ópticos y ópticos y otros similares.
-- Teléfonos móviles, PDAs, tarjetas de memoria.
-- Sistemas de navegación móvil (GPS).
+- Teléfonos móviles, **<u style='color:red'>PDA's</u>**, tarjetas de memoria.
+- Sistemas de navegación móvil (**<u style='color:red'>GPS</u>**).
 - Cámaras de video y cámaras digitales (incluyendo circuitos cerrados de televisión).
 - Ordenadores estándares con conexiones a redes.
-- Redes basadas en protocolos TCP/IP y otros protocolos digitales.
+- Redes basadas en protocolos **<u style='color:red'>TCP/IP</u>** y otros protocolos digitales.
 - Otros dispositivos con funcionalidades similares a las descritas anteriormente.
 
 Resumiendo, se puede destacar que esta norma ofrece orientación sobre el manejo de las pruebas digitales. Siguiendo las directrices de esta norma se asegura que la evidencia digital potencial se recoge de manera válida a efectos legales para facilitar su aportación en juicios y procesos legales. Además cabe destacar que cubre una amplia gama de tipos de dispositivos y situaciones, por lo que la orientación dentro de la norma es ampliamente aplicable.
@@ -367,11 +360,11 @@ La ISO/IEC 30121 se creó para garantizar que las pruebas digitales se traten de
 
 ### **1.3.3. Norma RFC 3227.**
 
-Otra norma destacable para mencionar es la RFC 3227. Este documento publicado por la Internet Engineering Task Force (IETF) recoge directrices para recopilar y almacenar evidencias sin ponerlas en riesgo.
+Otra norma destacable para mencionar es la RFC 3227. Este documento publicado por la **<u style='color:red'>Internet Engineering Task Force (IETF)</u>** recoge directrices para recopilar y almacenar evidencias sin ponerlas en riesgo.
 
 En cuanto a los principios para la recolección de evidencias destacan básicamente tres, el orden de volatilidad de los datos, las acciones que deben evitarse y las consideraciones sobre la privacidad.
 
-Sobre el procedimiento de almacenamiento tiene en cuenta la cadena de custodia de las pruebas recogidas anteriormente y dónde y cómo se deben almacenar estas para que estén a buen recaudo.
+Sobre el procedimiento de almacenamiento tiene en cuenta la **<u style='color:red'>cadena de custodia</u>** de las pruebas recogidas anteriormente y dónde y cómo se deben almacenar estas para que estén a buen recaudo.
 
 Para acabar detalla qué tipo de herramientas son las más útiles y qué características deben tener para evitar conflictos, haciendo hincapié en que las herramientas deben alterar lo menos posible el escenario. Según este documento el kit de análisis debe incluir las siguientes herramientas:
 
@@ -427,10 +420,9 @@ En cada una de las fases indicadas en la imagen anterior podemos destacar las si
 
 #### [1.3.5. Imagen 002.](#83001003005002-fases-1-2-y-3-de-la-metodología-del-análisis-forense) &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; [1.3.5. Imagen 003.](#83001003005003-fases-4-5-y-6-de-la-metodología-del-análisis-forense) &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; [1.3.5. Imagen 004.](#83001003005004-fase-7-de-la-metodología-del-análisis-forense)
 
-
 **PLANTEAMIENTO DEL PROBLEMA.**
 
-En el caso de que nos trata el presente Trabajo Final de Máster (en adelante TFM), estas acciones de planteamiento del problema, nos viene dado en el enunciado, ya que el enunciado, se expresa claramente que el jefe de la empresa tiene serias sospechas, no probadas, de que se ha accedido de forma licita al sistema, y por tanto, en primera instancia se requieren nuestras acciones relativo al asunto.
+En el caso de que nos trata el presente TFM, estas acciones de planteamiento del problema, nos viene dado en el enunciado, ya que el enunciado, se expresa claramente que el jefe de la empresa tiene serias sospechas, no probadas, de que se ha accedido de forma licita al sistema, y por tanto, en primera instancia se requieren nuestras acciones relativo al asunto.
 
 Entrando en el trasfondo de la legalidad y posible contaminación de pruebas, ante un presunto delito que este tipificado en el código penal, suelen ser las Fuerzas y Cuerpos de Seguridad del estado los que, bajo la orden de un juzgado de instrucción, las competentes en realizar este análisis forense por un presunto hecho
 
@@ -466,21 +458,21 @@ Esta copia se llevará a cabo sobre un soporte limpio mediante un borrado seguro
 
 Esta accion, se ha realizado al igual que las anteriores, ha sido realizada de manera previa a la elaboración del TFM, para ello se tienen que tener en cuenta las siguientes consideraciones.
 
-Una vez realizada la copia se debe verificar la integridad de la misma. Para ello se calcula el hash o CRC de la copia, normalmente los equipos destinados al clonado de discos ya incorporan esa característica. Así con el hash del disco original y el de la copia se puede certificar que ambos son idénticos a todos los niveles y ante un juez, por ejemplo, quedará probado que no se ha manipulado de ningún modo. Con este procedimiento también nos aseguraremos que no se han producido errores en la copia.
+Una vez realizada la copia se debe verificar la **<u style='color:red'>integridad</u>** de la misma. Para ello se calcula el **<u style='color:red'>hash</u>** o **<u style='color:red'>CRC</u>** de la copia, normalmente los equipos destinados al clonado de discos ya incorporan esa característica. Así con el **<u style='color:red'>hash</u>** del disco original y el de la copia se puede certificar que ambos son idénticos a todos los niveles y ante un juez, por ejemplo, quedará probado que no se ha manipulado de ningún modo. Con este procedimiento también nos aseguraremos que no se han producido errores en la copia.
 
-Con la primera copia realizada y comprobada procedemos a realizar una segunda copia sobre la primera. En este caso también se comprobará que el contenido es idéntico mediante el mismo proceso descrito anteriormente. Teniendo ambas copias entregaremos la primera al secretario judicial o notario responsable del caso y nos quedaremos con la segunda para poder trabajar. La segunda copia será nuestra copia de respaldo en todo momento en el laboratorio y no será para trabajar directamente con ella en ningún caso. Para realizar el análisis se deberá realizar una tercera copia, comprobar su integridad y trabajar sobre ella, de tal modo que en caso de cualquier desastre o alteración de los datos siempre tengamos la segunda copia exacta al original de donde poder volver a realizar otra copia para analizar.
+Con la primera copia realizada y comprobada procedemos a realizar una segunda copia sobre la primera. En este caso también se comprobará que el contenido es idéntico mediante el mismo proceso descrito anteriormente. Teniendo ambas copias entregaremos la primera al secretario judicial o notario responsable del caso y nos quedaremos con la segunda para poder trabajar. La segunda copia será nuestra copia de respaldo en todo momento en el laboratorio y no será para trabajar directamente con ella en ningún caso. Para realizar el análisis se deberá realizar una tercera copia, comprobar su **<u style='color:red'>integridad</u>** y trabajar sobre ella, de tal modo que en caso de cualquier desastre o alteración de los datos siempre tengamos la segunda copia exacta al original de donde poder volver a realizar otra copia para analizar.
 
 Una mala preservación de las evidencias, un mal uso o una mala manipulación pueden invalidar toda la investigación que se lleva a cabo delante de un tribunal, este es un factor muy importante que se va repitiendo a lo largo de toda la metodología.
 
-La cadena de custodia es el procedimiento controlado aplicable a las evidencias relacionadas con el suceso, desde el momento en que se encuentran en la escena hasta su análisis en el laboratorio. La finalidad de la cadena de custodia es evitar cualquier tipo de manipulación y tener un control absoluto sobre todos los elementos incautados, quién los ha manipulado, cómo lo ha realizado, porqué los ha manipulado, para qué lo ha hecho y cuándo ha tenido lugar dicha manipulación.
+La **<u style='color:red'>cadena de custodia</u>** es el procedimiento controlado aplicable a las evidencias relacionadas con el suceso, desde el momento en que se encuentran en la escena hasta su análisis en el laboratorio. La finalidad de la **<u style='color:red'>cadena de custodia</u>** es evitar cualquier tipo de manipulación y tener un control absoluto sobre todos los elementos incautados, quién los ha manipulado, cómo lo ha realizado, porqué los ha manipulado, para qué lo ha hecho y cuándo ha tenido lugar dicha manipulación.
 
 Es importante realizar todas las anotaciones descritas en la fase de identificación de las evidencias para que esta fase sea aún más sólida. Con todos los elementos documentados será mucho más fácil tener un control de todas las evidencias que disponemos y poder realizar una traza de todas las pruebas adquiridas.
 
 Además se tendrá en cuenta de proteger los bienes para el transporte desde el lugar de los hechos hasta el laboratorio con los medios necesarios para evitar golpes o proteger de caídas fortuitas.
 
-La documentación de la cadena de custodia deberá contener también todos los lugares por donde ha pasado la evidencia y quién ha realizado su transporte y su acceso.
+La documentación de la **<u style='color:red'>cadena de custodia</u>** deberá contener también todos los lugares por donde ha pasado la evidencia y quién ha realizado su transporte y su acceso.
 
-En nuestro caso, cabe destacar que una vez iniciado el análisis de la memoria, esta no debe de modificarse ni contaminarse, en caso de ello el Hash de las evidencias cambiaría, por lo que la evidencia ha quedado contaminada. Hay que hacer estas acciones teniendo presente al secretario judicial, para que esa copia quede registrada si es necesario y que no ha habido mas alteraciones al respecto, ese cambio de hash será notificado y adjuntado en el proceso de instrucción, haciéndose también nuevas copias de este nuevo "snapshot" de la prueba.
+En nuestro caso, cabe destacar que una vez iniciado el análisis de la memoria, esta no debe de modificarse ni contaminarse, en caso de ello el **<u style='color:red'>Hash</u>** de las evidencias cambiaría, por lo que la evidencia ha quedado contaminada. Hay que hacer estas acciones teniendo presente al secretario judicial, para que esa copia quede registrada si es necesario y que no ha habido mas alteraciones al respecto, ese cambio de **<u style='color:red'>hash</u>** será notificado y adjuntado en el proceso de instrucción, haciéndose también nuevas copias de este nuevo "snapshot" de la prueba.
 
 **ANÁLISIS.**
 
@@ -488,14 +480,13 @@ La fase de análisis, ***en la cual iniciamos la elaboración del presente TFM,*
 
 Antes de empezar el análisis, es importante recordar unas premisas básicas que todo investigador debe tener presente en el momento de enfrontarse al incidente. Como ya se ha explicado nunca se debe trabajar con datos originales y se debe respetar cada una de las leyes vigentes en la jurisdicción donde se lleve a cabo la investigación. Los resultados que se obtengan de todo el proceso han de ser verificables y reproducibles, así que en cualquier momento debemos poder montar un entorno donde reproducir la investigación y mostrarlo a quién lo requiera. Es importante también disponer de una documentación adicional con información de diversa índole, por ejemplo:
 
-
 - Sistema operativo del sistema.
 - Programas instalados en el equipo.
 - Hardware, accesorios y periféricos que forman parte del sistema.
 - Datos relativos a la conectividad del equipo:
-    - Si dispone de firewall, ya sea físico o lógico.
-    - Si el equipo se encuentra en zonas de red especiales, por ejemplo, DMZ.
-    - Si tiene conexión a Internet o utiliza proxies.
+    - Si dispone de **<u style='color:red'>firewall</u>**, ya sea físico o lógico.
+    - Si el equipo se encuentra en zonas de red especiales, por ejemplo, **<u style='color:red'>DMZ</u>**.
+    - Si tiene conexión a Internet o utiliza **<u style='color:red'>proxies</u>**.
 - Datos generales de configuración que puedan ser de interés para el investigador
 para ayudar en la tarea.
 
@@ -545,9 +536,9 @@ Ciertos programas también nos darán información sobre las cadenas del ejecuta
 
 Finalmente, otra práctica interesante para determinar cómo se actuó es leer la secuencia de comandos escrita por consola. Para ello procederemos con el volcado de memoria y podremos obtener dicha información. De este modo podremos leer que comandos se hicieron por consola y sabremos si se ejecutó algún proceso de este modo. Debemos excluir nuestras propias instrucciones pues seguramente aparecerán los comandos del volcado de memoria que se hicieron en su momento. Relativo a esta práctica, personalmente es la primera que se debería de realizar en un análisis forense, de ahi también poder corroborar que es lo que pueda decir el usuario en una posible entrevista, que en este caso no va a ser posible.
 
-Para la tarea de identificación de autores, cabe destacar que para poder realizar una identificación del autor o autores del incidente, otra información importante que nos puede dar el volcado de memoria son las conexiones de red abiertas y las que están preparadas para enviar o recibir datos. Con esto podremos relacionar el posible origen del ataque buscando datos como la dirección IP en Internet.
+Para la tarea de identificación de autores, cabe destacar que para poder realizar una identificación del autor o autores del incidente, otra información importante que nos puede dar el volcado de memoria son las conexiones de red abiertas y las que están preparadas para enviar o recibir datos. Con esto podremos relacionar el posible origen del ataque buscando datos como la dirección **<u style='color:red'>IP</u>** en Internet.
 
-Hay que actuar con prudencia puesto que en ocasiones se utilizan técnicas para distribuir los ataques o falsear la dirección IP. Hay que ser crítico con la información que se obtiene y contrastarla correctamente. No siempre se obtendrá la respuesta al primer intento y posiblemente en ocasiones sea muy difícil averiguar el origen de un incidente.
+Hay que actuar con prudencia puesto que en ocasiones se utilizan técnicas para distribuir los ataques o falsear la dirección **<u style='color:red'>IP</u>**. Hay que ser crítico con la información que se obtiene y contrastarla correctamente. No siempre se obtendrá la respuesta al primer intento y posiblemente en ocasiones sea muy difícil averiguar el origen de un incidente.
 
 Es interesante recapacitar en los distintos perfiles de atacantes que se pueden dar hoy día en este ámbito para intentar mimetizarse y entender quién pudo ser el autor.
 
@@ -616,9 +607,7 @@ etc.
 - Redactar unas conclusiones con las valoraciones que se crean oportunas a la vista de todo el análisis realizado.
 - Dar unas recomendaciones sobre cómo proteger los equipos para no repetir el incidente o sobre cómo actuar legalmente contra el autor.
 
-
-#### [1.3.5. Referencia 008.](#86008-meotdología-para-un-análisis-forense) &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; [1.3.5. Referencia 009.](#86009-ninjas-de-la-web-metodología-para-un-análisis-forense)
-
+#### [1.3.5. Referencia 008.](#86008-metodología-para-un-análisis-forense) &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; [1.3.5. Referencia 009.](#86009-ninjas-de-la-web-metodología-para-un-análisis-forense)
 
 **[Volver al Índice del capítulo 1. Plan de trabajo.](#índice-del-capítulo-1-plan-de-trabajo) &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; [Volver al Índice General.](#índice-general)**
 
@@ -637,19 +626,17 @@ Relativo al ordenador personal destacar las siguientes aplicaciones que se van a
 - VirtualBox
 - Volatility
 
-
 **DEUDA TÉCNICA: Listado de aplicaciones a utilizar en la descripción del entorno de trabajo**
 
-Por otro lado, la documentación y redacción del TFM se consolida mediante el uso del repositorio en GitHub TFM-ANÁLISIS-FORENSE (https://github.com/jrodg85/TFM-ANALISIS-FORENSE). Este repositorio no solo sirve como medio para documentar y presentar los hallazgos y metodologías empleadas, sino que también se erige como una herramienta para gestionar versiones y cambios a lo largo del desarrollo del trabajo, facilitando la trazabilidad y coherencia del mismo. Se deben establecer estrategias robustas para garantizar la integridad y confidencialidad de la información almacenada, considerando la naturaleza sensible de los datos manejados en la investigación forense.
+Por otro lado, la documentación y redacción del TFM se consolida mediante el uso del repositorio en GitHub TFM-ANÁLISIS-FORENSE (https://github.com/jrodg85/TFM-ANALISIS-FORENSE). Este repositorio no solo sirve como medio para documentar y presentar los hallazgos y metodologías empleadas, sino que también se erige como una herramienta para gestionar versiones y cambios a lo largo del desarrollo del trabajo, facilitando la trazabilidad y coherencia del mismo. Se deben establecer estrategias robustas para garantizar la **<u style='color:red'>integridad</u>** y confidencialidad de la información almacenada, considerando la naturaleza sensible de los datos manejados en la investigación forense.
 
-Finalmente, Internet emerge como un recurso invaluable para la investigación, actualización y comunicación a lo largo del proyecto. Navegar por la red debe ser realizado de forma segura y consciente, protegiendo las comunicaciones y asegurando la integridad de las herramientas y datos descargados.
-
+Finalmente, Internet emerge como un recurso invaluable para la investigación, actualización y comunicación a lo largo del proyecto. Navegar por la red debe ser realizado de forma segura y consciente, protegiendo las comunicaciones y asegurando la **<u style='color:red'>integridad</u>** de las herramientas y datos descargados.
 
 **[Volver al Índice del capítulo 1. Plan de trabajo.](#índice-del-capítulo-1-plan-de-trabajo) &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; [Volver al Índice General.](#índice-general)**
 
 ---
 
-
+<br><br><br><br><br><br><br><br><br><br>
 
 ## 1.5. Listado de tareas.
 
@@ -692,8 +679,6 @@ Durante la elaboración del reto 2 (PEC 2), se realizarán las siguientes tareas
 18. Adaptación al indice a los nuevos cambios en los capítulos 6 y 7.
 19. Refinamiento TFM 4.
 
-
-
 Durante la elaboración del reto 3  (PEC 3), se realizarán las siguientes tareas:
 
 1. Lectura enunciado actividad 3.
@@ -724,7 +709,7 @@ La Entrega de videos, presentación y realización de la defensa del TFM, se con
 
 ---
 
-<br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>
+<br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>
 
 ## 1.6. Planificación temporal de las tareas.
 
@@ -746,8 +731,6 @@ Relativo al reto/PEC 4 se establece el siguiente diagrama.
 
 #### [1.6. Imagen 004.](#83001006004-diagrama-de-gantt-retopec-4)
 
-
-
 **[Volver al Índice del capítulo 1. Plan de trabajo.](#índice-del-capítulo-1-plan-de-trabajo) &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; [Volver al Índice General.](#índice-general)**
 
 ---
@@ -756,13 +739,13 @@ Relativo al reto/PEC 4 se establece el siguiente diagrama.
 
 ## 1.7. Revisión del estado del arte de la informática forense.
 
-### **1.7.1. Introducción.**
+### **1.7.1. Introducción del estado del arte de la informática forense.**
 
 El análisis forense, también llamado informática forense, computación forense, análisis forense digital o examen forense digital es la aplicación de técnicas científicas y analíticas especializadas a infraestructuras tecnológicas que permiten identificar, preservar, analizar y presentar datos válidos dentro de un proceso legal.
 
 Dichas técnicas incluyen reconstruir elementos informáticos, examinar datos residuales, autenticar datos y explicar las características técnicas del uso de datos y bienes informáticos.
 
-Esta disciplina no sólo hace uso de tecnologías de punta para mantener la integridad de los datos y del procesamiento de los mismos; sino que también requiere de una especialización y conocimientos avanzados de informática y sistemas para identificar lo que ha ocurrido dentro de cualquier dispositivo electrónico. La formación de un informático forense abarca no sólo el conocimiento del software, sino también de hardware, redes, seguridad, piratería, hackeo y recuperación de información.
+Esta disciplina no sólo hace uso de tecnologías de punta para mantener la **<u style='color:red'>integridad</u>** de los datos y del procesamiento de los mismos; sino que también requiere de una especialización y conocimientos avanzados de informática y sistemas para identificar lo que ha ocurrido dentro de cualquier dispositivo electrónico. La formación de un informático forense abarca no sólo el conocimiento del software, sino también de hardware, redes, seguridad, piratería, hackeo y recuperación de información.
 
 La informática forense ayuda a detectar pistas sobre ataques informáticos, robos de información, conversaciones o para recolectar evidencias en correos electrónicos y chats.
 
@@ -780,17 +763,27 @@ Es muy importante mencionar que la informática o el análisis forense no tiene 
 
 ### **1.7.2. Definiciones.**
 
-Existen diferentes términos referentes a la ciencia forense en informática. Cada uno de estos términos trata de manera particular o general temas que son de interés para las ciencias forenses. Estos términos se pueden ver en el Capítulo de [glosario de términos, abreviaturas y acrónimos](#82-glosario-de-términos-y-abreviaturas).
+Existen diferentes términos referentes a la ciencia forense en informática. Cada uno de estos términos trata de manera particular o general temas que son de interés para las ciencias forenses.
 
-- [Computación forense (computer forensics).](#computación-forense-computer-forensics)
-- [Ciencia forense en las redes (network forensics).](#ciencia-forense-en-las-redes-network-forensics)
-- [Ciencia forense digital (digital forensics).](#ciencia-forense-digital-digital-forensics)
+**Computación forense (computer forensics).**
+
+1. Disciplina de la ciencia forense que considera los procedimientos en relación con las evidencias para descubrir e interpretar la información en los medios informáticos con el fin de establecer hipótesis o hechos relacionados con un caso. (Centrada en las consideraciones forenses).
+
+2. Disciplina científica que ofrece un análisis de la información que contienen las tecnologías y de los equipos de computación a partir de su compresión.(Centrada en la tecnología).
+
+**Ciencia forense en las redes (network forensics).**
+
+1. Trata las operaciones de redes de computadores, estableciendo rastros e identificando movimientos y acciones. Es necesario entender los protocolos, configuraciones y la infraestructura de las comunicaciones. A diferencia de la computación forense, es necesario poder establecer relaciones entre eventos diferentes e incluso aleatorios.
+
+**Ciencia forense digital (digital forensics).**
+
+1. Es una forma de aplicar los conceptos y procedimientos de la criminalística a los medios informáticos o digitales. Su objetivo es apoyar al poder judicial en el contexto de la inseguridad informática es decir, la perpetración de posibles delitos aclarando temas relacionados con incidentes o fraudes.
 
 **[Volver al Índice del capítulo 1. Plan de trabajo.](#índice-del-capítulo-1-plan-de-trabajo)**
 
 ---
 
-<br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>
+<br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>
 
 ### **1.7.3. Objetivos de la informática forense.**
 
@@ -813,7 +806,7 @@ Es importante mencionar que quienes se dedican a la informática forense deben s
 
 ### **1.7.4. Evidencia digital.**
 
-Los discos duros, las memorias USB y las impresoras (entre otros elementos) se pueden considerar evidencias en un proceso legal, al igual que las huellas digitales o las armas. Las evidencias digitales son las que se extraen de un medio informático.
+Los discos duros, las memorias **<u style='color:red'>USB</u>** y las impresoras (entre otros elementos) se pueden considerar evidencias en un proceso legal, al igual que las huellas digitales o las armas. Las evidencias digitales son las que se extraen de un medio informático.
 
 **Características.**
 
@@ -840,19 +833,19 @@ Cualquier infraestructura informática que tenga una memoria (almacenamiento) es
 - Disco duro de una Computadora o Servidor.
 - Documentación referente al caso.
 - Tipo de sistema de telecomunicaciones.
-- Dirección MAC.
+- Dirección **<u style='color:red'>MAC</u>**.
 - Inicios de sesiones.
 - Información de los cortafuegos.
-- IP, redes Proxy. LMhost, host, conexiones cruzadas, pasarelas.
+- **<u style='color:red'>IP</u>**, redes **<u style='color:red'>Proxy</u>**. **<u style='color:red'>LMhost</u>**, host, conexiones cruzadas, pasarelas.
 - Software de supervisión y seguridad.
 - Credenciales de autentificación.
 - Rastreo de paquetes de red.
 - Teléfonos móviles o celulares (telefonía móvil)
-- Agendas electrónicas (PDA).
-- Dispositivos de GPS.
+- Agendas electrónicas (**<u style='color:red'>PDA</u>**).
+- Dispositivos de **<u style='color:red'>GPS</u>**.
 - Impresoras.
-- Memorias USB.
-- BIOS.
+- Memorias **<u style='color:red'>USB</u>**.
+- **<u style='color:red'>BIOS</u>**.
 
 **[Volver al Índice del capítulo 1. Plan de trabajo.](#índice-del-capítulo-1-plan-de-trabajo)**
 
@@ -868,7 +861,7 @@ En el análisis de un caso en el que sea necesario el cómputo forense, hay tres
 
 El intruso es aquel que ataca un sistema, hace cambios no autorizados, manipula contraseñas o cambia configuraciones, entre otras actividades que ponen a prueba la seguridad de un sistema. La intención de los intrusos es un punto clave para poder analizar el caso, ya que no se puede comparar un intruso cuya motivación es el dinero con otro cuya motivación es la demostración de sus habilidades. Jeimy J. Cano hace una comparación entre las motivaciones de diferentes tipos de atacantes en la siguiente tabla, basada en el artículo de Steven Furnell Cybercrime.
 
-| Motivaciones | Ciberterroristas | Phreakers | Script kiddies | Crackers | Desarrollo de virus	 | Atacante interno |
+| Motivaciones | **<u style='color:red'>Ciberterroristas</u>** | **<u style='color:red'>Phreakers</u>** | **<u style='color:red'>Script kiddies</u>** | **<u style='color:red'>Crackers</u>** | Desarrollo de virus	 | Atacante interno |
 | :------------: | :----------------: | :---------: | :--------------: | :--------: | :------------------: | :----------------: |
 | Reto |  | X |  |  | X	| X |
 | Ego |  | X | X |  | X	|  |
@@ -884,7 +877,7 @@ En la primera fase (reconocimiento), se busca reconocer y recolectar informació
 
 El administrador del sistema es el experto encargado de la configuración de este, de la infraestructura informática y de la seguridad del sistema. Estos administradores son los primeros en estar en contacto con la inseguridad de la información, ya sea por un atacante o por una falla interna de los equipos. Al ser los arquitectos de la infraestructura y de la seguridad de la información del sistema, son quienes primero deberían reaccionar ante un ataque. Además, ellos deben proporcionar su conocimiento de la infraestructura del sistema para apoyar el caso y poder resolverlo con mayor facilidad.
 
-Las infraestructuras de seguridad informática (realizadas por el administrador) han avanzado a medida que avanzan las tecnologías. Inicialmente, se utilizaba una infraestructura centralizada en la cual la información se encontraba en un equipo. Por lo tanto, en este caso la seguridad informática se concentraba en el control del acceso a los equipos con la información, al control del lugar en donde se encontraban y en el entrenamiento de quienes estaban encargados de manejar los equipos. Pero con la tecnología fueron cambiando las infraestructuras y las inseguridades cambiaron. Así es como se crearon los proxies, firewall, el sistema de detección de intrusos (IDS) , el sistema de prevención de intrusos (IPS) entre muchas otras herramientas para proveer una mejor seguridad a los sistemas, ya que ahora el acceso no ocurría solo a través de la máquina, sino a través de otras y de la Web.
+Las infraestructuras de seguridad informática (realizadas por el administrador) han avanzado a medida que avanzan las tecnologías. Inicialmente, se utilizaba una infraestructura centralizada en la cual la información se encontraba en un equipo. Por lo tanto, en este caso la seguridad informática se concentraba en el control del acceso a los equipos con la información, al control del lugar en donde se encontraban y en el entrenamiento de quienes estaban encargados de manejar los equipos. Pero con la tecnología fueron cambiando las infraestructuras y las inseguridades cambiaron. Así es como se crearon los **<u style='color:red'>proxies</u>**, **<u style='color:red'>firewall</u>**, el sistema de detección de intrusos (**<u style='color:red'>IDS</u>**) , el sistema de prevención de intrusos (**<u style='color:red'>IPS</u>**) entre muchas otras herramientas para proveer una mejor seguridad a los sistemas, ya que ahora el acceso no ocurría solo a través de la máquina, sino a través de otras y de la Web.
 
 Por otro lado, es importante hablar de la auditabilidad y trazabilidad, que son propiedades del sistema, relacionados con la infraestructura que son útiles como evidencia para el investigador. La auditabilidad es la capacidad del sistema para registrar los eventos de una acción en particular con el fin de mantener la historia de estos y de realizar un control con mayor facilidad. En cambio, la trazabilidad es la propiedad que tiene un sistema para rastrear o reconstruir relaciones entre diferentes objetos monitorizados.
 
@@ -896,7 +889,6 @@ Es un nuevo profesional que actúa como experto, criminalista digital, o inform�
 
 En una investigación informática forense, hay ocho roles principales en un caso: el líder del caso, el propietario del sistema, el asesor legal, el auditor/ingeniero especialista en seguridad de la información, el administrador del sistema, el especialista en informática forense, el analista en informática forense y el fiscal. Usualmente, entre todos estos roles, los informáticos forenses pueden tomar los siguientes cuatro roles:
 
-
 1. Líder del caso.
 
 Es aquel que planea y organiza todo el proceso de investigación digital. Debe identificar el lugar en donde se realizará la investigación, quienes serán los participantes y el tiempo necesario para esta.
@@ -904,8 +896,6 @@ Es aquel que planea y organiza todo el proceso de investigación digital. Debe i
 2. Auditor/ingeniero especialista en seguridad de la información.
 
 Conoce el escenario en donde se desarrolla la investigación. Tiene el conocimiento del modelo de seguridad, los usuarios y las acciones que pueden realizar en el respectivo sistema. A partir de sus conocimientos debe entregar información crítica a la investigación.
-
-
 
 3. Especialista en informática forense:
 
@@ -921,42 +911,7 @@ Examina en detalle los datos, los elementos informáticos recogidos en la escena
 
 <br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>
 
-### **1.7.6. Pasos del proceso del análisis forense.**
-
-A continuación se describe el proceso de análisis forense:
-
-**Identificación.**
-
-Es muy importante conocer los antecedentes a la investigación "HotFix", la situación actual y el proceso que se quiere seguir para poder tomar la mejor decisión con respecto a las búsquedas y las estrategias (debes estar bien programado y sincronizado con las actividades a realizar, herramientas de extracción de los registros de información a localizar). Incluye muchas veces (en un momento específico observar, analizar e interpretar y aplicar la certeza, esto se llama criterio profesional que origina la investigación) la identificación del bien informático, su uso dentro de la red, el inicio de la cadena de custodia (proceso que verifica la integridad y manejo adecuado de la evidencia), la revisión del entorno legal que protege el bien y del apoyo para la toma de decisión con respecto al siguiente paso una vez revisados los resultados.
-
-**Preservación.**
-
-Este paso incluye la revisión y generación de las imágenes forenses de la evidencia para poder realizar el análisis. Esta duplicación se realiza utilizando tecnología punta para poder mantener la integridad de la evidencia y la cadena de custodia requerida (soportes). Al realizar una imagen forense, nos referimos al proceso que se requiere para generar una copia "bit-a-bit" (copia binaria) de todo el disco duro, el cual permitirá recuperar (en el siguiente paso) toda la información contenida y borrada del disco duro. Para evitar la contaminación del disco duro, normalmente se ocupan bloqueadores de escritura de hardware, los cuales evitan el contacto de lectura con el disco, lo que provocaría una alteración no deseada en los medios.
-
-**Análisis.**
-
-Proceso de aplicar técnicas científicas y analíticas a los medios duplicados por medio del proceso forense para poder encontrar pruebas de ciertas conductas. Se pueden realizar búsquedas de cadenas de caracteres, acciones específicas del o de los usuarios de la máquina como son el uso de dispositivos de USB (marca, modelo), búsqueda de archivos específicos, recuperación e identificación de correos electrónicos, recuperación de los últimos sitios visitados, recuperación de la caché del navegador de Internet, etc.
-
-**Presentación.**
-
-Es la recopilación de toda la información que se obtuvo a partir del análisis para realizar el reporte y la presentación a los abogados, jueces o instancias que soliciten este informe, la generación (si es el caso) de una pericial y de su correcta interpretación sin hacer uso de tecnicismos; se deberá presentar de manera cauta, prudente y discreta al solicitante la documentación, ya que siempre existirán puertas traseras dentro del sistema en observación. Debe ser muy específica la investigación dentro del sistema que se documenta porque se compara y vincula una plataforma de telecomunicación y cómputo forense que están muy estrechamente enlazadas, sin olvidar los medios de almacenamiento magnéticos portables basados en software libre y privativo. La información que se transmite debe manejarse con cuidado, porque el prestigio técnico depende de las plataformas y los sistemas
-
-Para poder realizar con éxito su trabajo, el investigador nunca debe olvidar:
-
-- Ser imparcial. Solamente analizar y reportar lo encontrado.
-- Realizar una investigación formal sin conocimiento y experiencia.
-- Mantener la cadena de custodia (proceso que verifica la integridad y manejo adecuado de la evidencia).
-- Documentar toda actividad realizada.
-
-El especialista debe conocer también sobre el desarrollo de los exploit (vulnerabilidades), esto le permite al informático forense saber qué tipo de programas se pondrán de moda, para generar una base de estudio que le permita observar patrones de comportamiento.
-
-**[Volver al Índice del capítulo 1. Plan de trabajo.](#índice-del-capítulo-1-plan-de-trabajo)**
-
----
-
-<br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>
-
-### **1.7.7. Retos y riesgos en el análisis forense.**
+### **1.7.6. Retos y riesgos en el análisis forense.**
 
 Al estar en un escenario que evoluciona constantemente, cada vez surgen más retos y riesgos en el área de la informática forense. Entre ellos la formación de informáticos forenses, la confiabilidad de las herramientas, la facilidad de la destrucción de las evidencias, las amenazas estratégicas y tácticas que plantea el ciberterrorismo; y las tecnologías emergentes como la nube, las tecnologías móviles, y las redes sociales. Algunos de estos temas se abordarán a continuación:
 
@@ -966,24 +921,26 @@ Los criminales informáticos son una nueva generación de delincuentes, en este 
 
 Por lo tanto, se deben plantear programas e iniciativas para poder realizar esta formación. Según investigaciones e iniciativas ya realizadas, hay cuatro componentes principales que deben estar presentes en un programa de computación forense o forensia digital: contenido multidisciplinario, ejercicios prácticos, profesores de calidad y ejemplos del mundo real (investigación de Taylor Endicott-Popovsky y Phillips, 2007).
 
-- \emph{Contenido multidisciplinario:} técnico en informática, conocimiento de criminalística, seguridad y delitos informáticos, entre otros.
-- \emph{Ejercicios prácticos en el laboratorio:} con herramientas tecnológicas forenses, en diferentes niveles de dificultad y variedad de componentes a analizar.
-- \emph{Profesores calificados:} con alto conocimiento en el tema.
-- \emph{Ejemplos del mundo real:} con el fin de dar mayor profundidad al aprendizaje.
+- **Contenido multidisciplinario.**
+    - Técnico en informática, conocimiento de criminalística, seguridad y delitos informáticos, entre otros.
+- **Ejercicios prácticos en el laboratorio.**
+    - Con herramientas tecnológicas forenses, en diferentes niveles de dificultad y variedad de componentes a analizar.
+- **Profesores calificados.**
+    - Con alto conocimiento en el tema.
+- **Ejemplos del mundo real.**
+    - Con el fin de dar mayor profundidad al aprendizaje.
 
 **Confiabilidad de las herramientas.**
 
 Las herramientas existentes disponibles para el cómputo forense presentan otro reto. Las herramientas licenciadas exigen a los investigadores inversiones altas (tanto en hardware, como en software), al adquirirlas y para mantenerlas. Adicionalmente, como las herramientas están avanzando constantemente requieren técnicos y usuarios que estén constantemente aprendiendo las actualizaciones, las modificaciones y los posibles errores. Por otro lado, las herramientas de código abierto son cuestionadas en muchos tribunales por su confiabilidad. Por lo tanto, no se recomiendan a la hora de usarse en una audiencia.
 
-Es por esto que el NIST (National Institute of Standards and Technology de Estados Unidos) ha planteado importantes investigaciones para probar y poner reglas para las herramientas del cómputo forense, en su proyecto NIST Computer Forensic Tool Testing Program. Las pruebas realizadas serán útiles para cumplir las exigencias del test de Daubert standard, prueba que establece la confiabilidad de las herramientas en computación forense.
+Es por esto que el **<u style='color:red'>NIST</u>** (National Institute of Standards and Technology de Estados Unidos) ha planteado importantes investigaciones para probar y poner reglas para las herramientas del cómputo forense, en su proyecto **<u style='color:red'>NIST</u>** Computer Forensic Tool Testing Program. Las pruebas realizadas serán útiles para cumplir las exigencias del test de Daubert standard, prueba que establece la confiabilidad de las herramientas en computación forense.
 
 **[Volver al Índice del capítulo 1. Plan de trabajo.](#índice-del-capítulo-1-plan-de-trabajo)**
 
 ---
 
-<br><br><br>
-
-### **1.7.8. Herramientas de Análisis Forense.**
+### **1.7.7. Herramientas de Análisis Forense.**
 
 La siguiente tabla compara cuatro herramientas reconocidas internacionalmente al ser muy completas. Luego, se encuentra una lista más completa de herramientas útiles para la labor del investigador.
 
@@ -1059,17 +1016,15 @@ La siguiente tabla compara cuatro herramientas reconocidas internacionalmente al
 - SilentRunner - AccessData.
 - WireShark.
 
-**DEUDA TÉCNICA: Referencia a WIKIPEDIA**
-
+#### [1.3.5. Referencia 010.](#86010-cómputo-forense-de-wikipedia)
 
 **[Volver al Índice del capítulo 1. Plan de trabajo.](#índice-del-capítulo-1-plan-de-trabajo) &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; [Volver al Índice General.](#índice-general)**
 
 ---
 
-
+<br><br><br><br><br><br><br><br><br><br><br><br><br><br>
 
 # 2. Extremos del análisis y previsión de pruebas técnicas.
-
 
 ## Índice del capítulo 2. Extremos del análisis y previsión de pruebas técnicas.
 
@@ -1077,29 +1032,29 @@ La siguiente tabla compara cuatro herramientas reconocidas internacionalmente al
   - [2.1. Propuesta de extremos.](#21-propuesta-de-extremos)
   - [2.2. Previsión de pruebas técnicas.](#22-previsión-de-pruebas-técnicas)
 
-[Volver al Índice General.](#índice-general)
+**[Volver al Índice General.](#índice-general)**
 
 ---
 
+<br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>
+
 ## 2.0. Introducción al capítulo 2. Extremos del análisis y previsión de pruebas técnicas.
 
-En la era digital actual, la capacidad de llevar a cabo análisis forenses en ordenadores se ha convertido en una competencia crítica dentro del ámbito de la investigación criminal. El análisis forense informático permite a los investigadores descubrir, preservar y analizar datos en dispositivos electrónicos que pueden ser críticos para resolver delitos. Este capítulo se dedica al estudio meticuloso de los métodos y prácticas estándar en la computación forense, con un enfoque específico en la adquisición y análisis de datos de la memoria RAM y discos duros. Se expondrá la metodología utilizada para garantizar la integridad de la evidencia y se ilustrarán los desafíos asociados a la recolección y el análisis de datos digitales.
+En la era digital actual, la capacidad de llevar a cabo análisis forenses en ordenadores se ha convertido en una competencia crítica dentro del ámbito de la investigación criminal. El análisis forense informático permite a los investigadores descubrir, preservar y analizar datos en dispositivos electrónicos que pueden ser críticos para resolver delitos. Este capítulo se dedica al estudio meticuloso de los métodos y prácticas estándar en la computación forense, con un enfoque específico en la adquisición y análisis de datos de la memoria RAM y discos duros. Se expondrá la metodología utilizada para garantizar la **<u style='color:red'>integridad</u>** de la evidencia y se ilustrarán los desafíos asociados a la recolección y el análisis de datos digitales.
 
 Con el avance de la tecnología, los investigadores forenses enfrentan la dualidad de oportunidades y desafíos. Por un lado, las herramientas modernas ofrecen capacidades sin precedentes para recuperar y analizar datos; por otro lado, la creciente sofisticación del software y hardware supone nuevos niveles de complejidad y la necesidad de constante actualización en conocimientos y técnicas. Este capítulo también contempla la noción de deuda técnica asociada a la utilización de herramientas y sistemas operativos en la investigación forense, reconociendo la importancia de mantener un enfoque crítico hacia las herramientas utilizadas.
 
-La documentación y control de versiones son aspectos cruciales en cualquier proyecto de investigación y desarrollo, más aún en el ámbito forense digital, donde la transparencia y reproducibilidad son fundamentales. Se detallará el uso del repositorio de Github (https://github.com/jrodg85/TFM-ANALISIS-FORENSE) para la documentación del TFM y el control de versiones aplicado al proceso de análisis forense. Se discutirá la relevancia de la colaboración y el seguimiento preciso de cambios en el código y documentos relacionados con el proyecto.
+La documentación y control de versiones son aspectos cruciales en cualquier proyecto de investigación y desarrollo, más aún en el ámbito forense digital, donde la transparencia y reproducibilidad son fundamentales. Se detallará el uso del repositorio de **<u style='color:red'>Github</u>** (https://github.com/jrodg85/TFM-ANALISIS-FORENSE) para la documentación del TFM y el control de versiones aplicado al proceso de análisis forense. Se discutirá la relevancia de la colaboración y el seguimiento preciso de cambios en el código y documentos relacionados con el proyecto.
 
 Finalmente, no se puede ignorar el papel fundamental que juega el acceso a recursos online en la actualización constante y el acceso a información relevante y actualizada en el campo de la forense digital. La Internet es una fuente inagotable de conocimiento, pero también presenta riesgos que deben ser gestionados con prudencia. En resumen, este capítulo traza el panorama del análisis forense en ordenadores, describiendo las herramientas y metodologías utilizadas, así como las mejores prácticas en la documentación y gestión de la información digital en investigaciones forenses.
 
 Esta introducción proporciona una vista general y establece las expectativas para el contenido que seguirá, preparando al lector para los detalles técnicos y metodológicos que se presentarán en el capítulo.
 
-[Volver al Índice del capítulo 2. Extremos del análisis y previsión de pruebas técnicas.](#índice-del-capítulo-2-extremos-del-análisis-y-previsión-de-pruebas-técnicas)
-
-[Volver al Índice General.](#índice-general)
+**[Volver al Índice del capítulo 2. Extremos del análisis...](#índice-del-capítulo-2-extremos-del-análisis-y-previsión-de-pruebas-técnicas) &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; [Volver al Índice General.](#índice-general)**
 
 ---
 
-
+<br><br><br><br><br><br><br><br><br>
 
 ## 2.1. Propuesta de extremos.
 
@@ -1112,23 +1067,23 @@ La presente investigación tiene como propósito fundamental el establecimiento 
 
 **Alcance metodológico:**
 
-- La validación de la integridad de la evidencia se hará mediante el uso de funciones hash estándar.
+- La validación de la **<u style='color:red'>integridad</u>** de la evidencia se hará mediante el uso de funciones **<u style='color:red'>hash</u>** estándar.
 - Se examinarán las metodologías para el análisis de la memoria volátil y no volátil.
 
 **Limitaciones:**
 
-- La validación de la integridad de la evidencia se hará mediante el uso de funciones hash estándar.
+- La validación de la **<u style='color:red'>integridad</u>** de la evidencia se hará mediante el uso de funciones **<u style='color:red'>hash</u>** estándar.
 - Se examinarán las metodologías para el análisis de la memoria volátil y no volátil.
 
 **Exclusiones:**
 
 - No se utilizará material de análisis que no sea el proporcionado por la asignatura.
 
-[Volver al Índice del capítulo 2. Extremos del análisis y previsión de pruebas técnicas.](#índice-del-capítulo-2-extremos-del-análisis-y-previsión-de-pruebas-técnicas)
-
-[Volver al Índice General.](#índice-general)
+**[Volver al Índice del capítulo 2. Extremos del análisis...](#índice-del-capítulo-2-extremos-del-análisis-y-previsión-de-pruebas-técnicas) &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; [Volver al Índice General.](#índice-general)**
 
 ---
+
+<br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>
 
 ## 2.2. Previsión de pruebas técnicas.
 
@@ -1144,7 +1099,7 @@ La presente investigación tiene como propósito fundamental el establecimiento 
 
 - Las pruebas que se realizarán serán una investigación y un estudio temporal de los hechos ocurridos dentro del pc.
 - Se emplearán herramientas de análisis forense en sus distintos sistemas operativos (Linux/Windows) para su detección.
-- se tratará de arrancar el sistema virtualizado para posible carving de la información del disco duro por posible eliminación de pruebas por parte del posible infractor.
+- se tratará de arrancar el sistema virtualizado para posible **<u style='color:red'>carving</u>** de la información del disco duro por posible eliminación de pruebas por parte del posible infractor.
 - La planificación de las pruebas ha quedado detallado en la sección "planificación temporal de las tareas".
 
 **Criterios de éxito de las pruebas:**
@@ -1157,36 +1112,22 @@ La presente investigación tiene como propósito fundamental el establecimiento 
 - El cronograma de las pruebas ha quedado detallado en la sección "planificación temporal de las tareas".
 - Hitos importante, fechas de entrega de las PEC.
 
-[Volver al Índice del capítulo 2. Extremos del análisis y previsión de pruebas técnicas.](#índice-del-capítulo-2-extremos-del-análisis-y-previsión-de-pruebas-técnicas)
-
-[Volver al Índice General.](#índice-general)
+**[Volver al Índice del capítulo 2. Extremos del análisis...](#índice-del-capítulo-2-extremos-del-análisis-y-previsión-de-pruebas-técnicas) &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; [Volver al Índice General.](#índice-general)**
 
 ---
 
-
+<br><br><br><br><br><br><br><br><br><br><br>
 
 # 3. Análisis de la memoria RAM.
 
 ## Índice del capítulo 3. Análisis de la memoria RAM.
 
 
-
-
-
-
-
-
-
-
-
-
-
-
 [Volver al Índice General.](#índice-general)
 
 ---
 
-
+<br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>
 
 ## 3.0. Introducción al capítulo 3. Análisis de la memoria RAM.
 
@@ -1196,7 +1137,7 @@ Las acciones específicas que se abordarán son las siguientes:
 
 1. **Comprobación del MD5:**
 
-- Iniciaremos con la verificación de la integridad del volcado de la memoria RAM mediante el cálculo de su suma de verificación MD5. Este paso es fundamental para asegurar que los datos analizados no han sido alterados desde el momento de su adquisición, garantizando así la cadena de custodia digital.
+- Iniciaremos con la verificación de la **<u style='color:red'>integridad</u>** del volcado de la memoria RAM mediante el cálculo de su suma de verificación MD5. Este paso es fundamental para asegurar que los datos analizados no han sido alterados desde el momento de su adquisición, garantizando así la **<u style='color:red'>cadena de custodia</u>** digital.
 
 2. **Identificación del Sistema Operativo:**
 
@@ -1217,89 +1158,58 @@ Las acciones específicas que se abordarán son las siguientes:
 
 El resultado de este análisis exhaustivo proporcionará una comprensión detallada de lo que estaba ocurriendo en el sistema en el momento de la captura de la memoria. Esta información es invaluable para formar una imagen completa de los eventos bajo investigación y para establecer hechos concretos que puedan ser presentados como evidencia en un entorno judicial.
 
-[Volver al Índice del capítulo 3. Análisis de la memoria RAM.](#índice-del-capítulo-3-análisis-de-la-memoria-ram)
-
-[Volver al Índice General.](#índice-general)
+**[Volver al Índice del capítulo 3. Análisis de la memoria RAM.](#índice-del-capítulo-3-análisis-de-la-memoria-ram) &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; [Volver al Índice General.](#índice-general)**
 
 ---
 
 ## 3.1. Acciones previas al análisis de la memoria RAM.
 
-En el presente TFM, se nos ha proporcionado a los alumnos un archivo de captura de memoria RAM .mem. Por otro lado, se nos ha proporcionado los resúmenes o hash en MD5 y en SHA1 de los archivos tal y como se muestra en la siguiente imagen.
+En el presente TFM, se nos ha proporcionado a los alumnos un archivo de captura de memoria RAM .mem. Por otro lado, se nos ha proporcionado los resúmenes o **<u style='color:red'>hash</u>** en MD5 y en SHA1 de los archivos tal y como se muestra en la siguiente imagen.
 
-##### [3.1 Imagen 001](#83005-imagen-hash-archivos)
+#### [3.1 Imagen 001](#83003001001-imagen-hash-archivos)
 
-Como Podemos ver, los hash resúmenes del archivo de la ram, tememos los siguientes hashes en MD5 y en SHA1:
+Como Podemos ver, los **<u style='color:red'>hash</u>** resúmenes del archivo de la ram, tememos los siguientes hashes en MD5 y en SHA1:
 
 - **MD5:** 75a99b57032aa34ba19042ed85db273f
 - **SHA1:** cc1fad2af321b8c2ddf0103986e3b344eb8f2cc8
 
-El hash tal y como se indica en los apuntes de la asignatura, en el módulo de Fases y metodología del análisis forense, durante la adquisición de evidencias digitales dice  lo siguiente:
+El **<u style='color:red'>hash</u>** tal y como se indica en los apuntes de la asignatura, en el módulo de Fases y metodología del análisis forense, durante la adquisición de evidencias digitales dice  lo siguiente:
 
-Una vez generada la copia o clon del soporte original, el programa o el dispositivo hardware empleado en este proceso realiza el cálculo del CRC o del valor hash del soporte original y del destino, con la finalidad de garantizar que los dos son idénticos y que la copia se ha producido sin ningún error. Este cálculo puede realizarse sobre todo el conjunto de información contenida en el soporte original, o bien emplear solamente un conjunto de ficheros del total.
+Una vez generada la copia o clon del soporte original, el programa o el dispositivo hardware empleado en este proceso realiza el cálculo del **<u style='color:red'>CRC</u>** o del valor **<u style='color:red'>hash</u>** del soporte original y del destino, con la finalidad de garantizar que los dos son idénticos y que la copia se ha producido sin ningún error. Este cálculo puede realizarse sobre todo el conjunto de información contenida en el soporte original, o bien emplear solamente un conjunto de ficheros del total.
 
-A su vez, en el glosario de términos la definición de hash es la siguiente:
+A su vez, en el glosario de términos la definición de **<u style='color:red'>hash</u>** es la siguiente:
 
-Es una función matemática unidireccional que resume un mensaje de tamaño variable (por ejemplo, un archivo), en una representación de tamaño fijo. Es poco probable que dos ficheros distintos tengan la misma representación hash, lo cual significa que este valor puede utilizarse a efectos de comprobación de la integridad de un archivo (o de un sistema entero). Las funciones hash más conocidas son MD5 y SHA-1.
+Es una función matemática unidireccional que resume un mensaje de tamaño variable (por ejemplo, un archivo), en una representación de tamaño fijo. Es poco probable que dos ficheros distintos tengan la misma representación **<u style='color:red'>hash</u>**, lo cual significa que este valor puede utilizarse a efectos de comprobación de la **<u style='color:red'>integridad</u>** de un archivo (o de un sistema entero). Las funciones **<u style='color:red'>hash</u>** más conocidas son MD5 y SHA-1.
 
-Una vez descargado el archivo de captura de la memoria RAM, procedemos a usar PowerShell para determinar el hash del archivo. Para ello usamos el comando  "Get-FileHash [Argumento] -Algorithm MD5". En nuestro caso hemos usado los siguientes comandos:
+Una vez descargado el archivo de captura de la memoria RAM, procedemos a usar PowerShell para determinar el **<u style='color:red'>hash</u>** del archivo. Para ello usamos el comando  "Get-FileHash [Argumento] -Algorithm MD5". En nuestro caso hemos usado los siguientes comandos:
 
-
-
-~~~Shell
-Get-FileHash .\Server_RAM.mem -Algorithm MD5
-~~~
-
-~~~Shell
-Get-FileHash .\Server_RAM.mem -Algorithm SHA1
-~~~
-
-La respuesta de PowerShell es el siguiente respectivamente
-
-~~~Shell
-Algorithm       Hash                                                                   Path
----------       ----                                                                   ----
-MD5             75A99B57032AA34BA19042ED85DB273F                                       D:\TFM\RAM\...
-~~~
-
-~~~Shell
-Algorithm       Hash                                                                   Path
----------       ----                                                                   ----
-SHA1            CC1FAD2AF321B8C2DDF0103986E3B344EB8F2CC8                               D:\TFM\RAM\...
-~~~
+#### [3.1 Comando 001.](#85003001001-comando-hash-md5) &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; [3.1 Comando 002.](#85003001002-comando-hash-sha1)
 
 Se puede observar en la siguiente imagen la respuesta de PowerShell de los hashes de MD5 y SHA1.
 
+#### [3.1. Imagen 002](#83003001002-imagen-hash-PowerShell)
 
-##### [Imagen 006](#83006)
+Como conclusión podemos verificar que la **<u style='color:red'>integridad</u>** de la copia facilitada para realizar el TFM no ha sido vulnerada.
 
-![006-captura-hash-PowerShell.png](./images/006-captura-hash-PowerShell.png)
-
-Como conclusión podemos verificar que la integridad de la copia facilitada para realizar el TFM no ha sido vulnerada.
-
-[Volver al Índice del capítulo 3. Análisis de la memoria RAM.](#índice-del-capítulo-3-análisis-de-la-memoria-ram)
-
-[Volver al Índice General.](#índice-general)
+**[Volver al Índice del capítulo 3. Análisis de la memoria RAM.](#índice-del-capítulo-3-análisis-de-la-memoria-ram) &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; [Volver al Índice General.](#índice-general)**
 
 ---
 
-
+<br><br><br><br>
 
 ## 3.2. Sistema Operativo de la memoria RAM analizada.
 
 Procedemos a preparar una máquina virtual con Ubuntu 22.04, el cual le instalamos el volatility según en el siguiente enlace. Haga click en la imagen para acceder al enlace:
 
-[![Miniatura video Volatility](./images/024-miniatura-instalacion-volatility.png)](https://youtu.be/z_SWIIa3AnY)
-
-> [https://www.youtube.com/watch?v=z_SWIIa3AnY](https://www.youtube.com/watch?v=z_SWIIa3AnY)
+#### [3.2. Video 001](#84003002001-video-de-instalación-de-volatility-en-ubuntu)
 
 A continuación procedemos a buscar el perfil con volatility con el comando `imageinfo`.
 
-##### [Imagen 007](#83007)
+#### [3.2 Imagen 001](#83003002001-imagen-de-imageinfo)
 
 Como se puede observar en la imagen anterior, no hemos llegado a encontrar un perfil concreto con `imageinfo`, eso se debe a que el perfil creado no es el que se encuentra dentro de las conocidas en la base de datos de volatility. Por ello procedemos a buscar dentro de la memoria RAM un string que tenga la cadena de texto "linux version". para ello ejecutamos el comando `strings Server_{RAM}.mem \mid grep -Ei linux version \mid uniq`.
 
-##### [Imagen 008](#83008)
+#### [3.2 Imagen 002](#83003002002-imagen-de-búsqueda-de-string-linux-version)
 
 Podemos observar en la imagen anterior que el sistema operativo que utiliza en nuestro caso es un sistema operativo Linux para Amazon Web Service, concretamente el sistema operativo es el **4.15.0-1021.21-aws 4.15.18**. Esta version de Linux, es muy usada para las instancias de Amazon Web Services.
 
@@ -1307,6 +1217,99 @@ Como no tenemos el perfil cargado dentro de volatility, nos va a tocar hacer la 
 
 Buscando en google **linux version 4.15.0-1021.21-aws volatility**, nos encontramos solo un enlace en internet, el cual es https://lists.ubuntu.com/archives/bionic-changes/2018-August/016183.html, con ello nos encontrábamos con algo que ya se intuía previamente, y es que la versión del server de AWS, es basada en un ubuntu 18.04, ya que la fecha que indica 4.15.18 es una fecha en tipo "d.mm.aa".
 
+**[Volver al Índice del capítulo 3. Análisis de la memoria RAM.](#índice-del-capítulo-3-análisis-de-la-memoria-ram) &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; [Volver al Índice General.](#índice-general)**
+
+---
+
+<br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>
+
+## 3.3. Datos de interés de la captura de la memoria RAM.
+
+En el anexo Creación perfil ubuntu AWS, hemos realizado una guía para crear el perfil de Linux AWS que detectado durante el análisis del sistema operativo.
+
+Una vez creado el perfil de linuxUbuntu_4.15.0-1021-aws procederemos a hacer un pslist para listar todas las aplicaciones que estaban ejecutándose en el momento de la captura.
+
+Para comprobar que el perfil funciona, vamos a comenzar a comprobar cual es el **<u style='color:red'>CPU</u>** que usa el sistema.
+
+Para ello ejecutaremos `sudo python2.7 vol.py --profile=LinuxlinuxUbuntu_4_15_0-1021-awsx64 -f '/home/jrodg85/Server_RAM.mem' linux_cpuinfo`.
+
+Al comprobar que el perfil funciona, obtenemos que solo hay un procesador de marca GenuineIntel modelo Intel(R) Xeon(R) **<u style='color:red'>CPU</u>** E5-2676 v3 que tiene una frecuencia de 2.4Ghz.
+
+Otro comando de interés es obtener el history del la terminal, con ello podemos observar los pasos realizados y los que ha ejecutado. Para ello ejecutaremos el comando `sudo python2.7 vol.py --profile=LinuxlinuxUbuntu_4_15_0-1021-awsx64 -f '/home/jrodg85/Server_RAM.mem' linux_bash`. Los comandos usados son los siguientes:
+
+#### [3.3 Comando 001.](#85003003001-comando-linux-bash)
+
+
+Analizando los comandos realizados se pueden destacar los siguientes:
+
+- **exit**: Sale de la sesión actual, ya sea una sesión de terminal o una conexión SSH.
+- **sudo apt update**: Actualiza la lista de paquetes disponibles y sus versiones. Es un paso previo común antes de instalar o actualizar paquetes.
+- **sudo systemctl restart postfix**: Reinicia el servicio Postfix, un agente de transferencia de correo (MTA).
+- **ls -l**: Lista los archivos en el directorio actual en un formato detallado.
+- **mysql -uroot -p**: Inicia sesión en el servidor MySQL como usuario 'root', pidiendo la contraseña.
+- **cd apache2/ y movimientos similares**: Cambia el directorio actual a uno especificado.
+- **sudo vi /etc/mysql/debian.cnf**: Edita el archivo de configuración de MySQL usando el editor vi.
+- **ps -ef| grep mysql**: Muestra los procesos actuales relacionados con MySQL.
+- **sudo kill -9 4539**: Mata de manera forzosa el proceso con el ID 4539.
+- **sudo mysqld_safe --skip-grant-tables**: Inicia MySQL en un modo especial que omite ciertas comprobaciones de seguridad.
+- **sudo apt install python-certbot-apache**: Instala Certbot para Apache, una herramienta para obtener certificados SSL/TLS de Let's Encrypt.
+- **sudo service apache2 restart**: Reinicia el servidor web Apache.
+- **sudo mysql_secure_installation**: Ejecuta un script para mejorar la seguridad de MySQL.
+- **sudo apt-get install mysql-server**: Instala el servidor MySQL.
+- **sudo chmod 777 /var/run/mysqld**: Cambia los permisos del directorio /var/run/mysqld para que todos los usuarios puedan leer, escribir y ejecutar archivos en él.
+- **sudo chown -R www-data:www-data html**: Cambia la propiedad del directorio html al usuario y grupo www-data, comúnmente usado para servidores web.
+- **find . -name functions.php -exec grep -H add_filer {} \;**: Busca en archivos functions.php y ejecuta grep en ellos.
+- **tail access.log y variantes**: Muestra las últimas líneas de los archivos de registro especificados.
+- **sudo vi /etc/apache2/sites-enabled/000-default.conf**: Edita la configuración predeterminada del sitio de Apache.
+- **sudo apt upgrade**: Actualiza todos los paquetes instalados a sus últimas versiones.
+- **sudo systemctl reload apache2**: Recarga la configuración de Apache sin reiniciar el servicio.
+- **sudo service mysql stop**: Detiene el servicio MySQL.
+- **sudo dpkg-reconfigure mysql-server-5.7**: Reconfigura la versión especificada del servidor MySQL.
+- **sudo apachectl configtest**: Verifica la sintaxis de los archivos de configuración de Apache.
+- **sudo add-apt-repository ppa:certbot/certbot**: Añade el repositorio PPA para Certbot.
+- **sudo apt install php-mysql**: Instala el módulo PHP para interactuar con MySQL.
+- **sudo insmod lime-4.15.0-42-generic.ko "path=captura.mem format=lime"**: Carga un módulo del kernel para la captura de memoria.
+
+Relativo a la seguridad del servidor, siguiente listado de documentos son notables para la seguridad, ya que pueden tener un impacto significativo en la seguridad del servidor. Aquí hay algunos ejemplos notables:
+
+**1. sudo mysqld_safe --skip-grant-tables.**
+
+  - Este comando inicia el servidor MySQL sin respetar el sistema de permisos. Cualquiera podría acceder a todas las bases de datos sin necesidad de una contraseña. Es extremadamente peligroso en un entorno de producción y debería usarse solo en situaciones de recuperación de emergencia.
+
+**2. sudo chmod 777 /var/run/mysqld.**
+
+  - Este comando establece los permisos de lectura, escritura y ejecución para todos los usuarios en el directorio /var/run/mysqld. Otorgar estos permisos tan amplios puede ser un riesgo de seguridad significativo, ya que permite a cualquier usuario en el sistema modificar o eliminar archivos críticos para el funcionamiento de MySQL.
+
+**3. sudo kill -9 (con varios números de proceso).**
+
+- Si bien no es inherentemente inseguro, el uso imprudente de kill -9 puede terminar procesos cruciales y causar inestabilidad o pérdida de datos si se aplica a procesos críticos del sistema o de la base de datos.
+
+**4. sudo rm -r /run/mysqld.**
+
+- Eliminar directorios críticos del sistema puede afectar la estabilidad y funcionamiento de los servicios asociados, en este caso, MySQL.
+
+**5. sudo service mysql stop y sudo service apache2 stop.**
+
+- Detener servicios como MySQL y Apache puede afectar la disponibilidad de aplicaciones dependientes. Si se hace sin precaución, podría provocar tiempos de inactividad no planificados.
+
+**6. vi /etc/mysql/debian.cnf y sudo vi /etc/apache2/sites-enabled/000-default.conf.**
+
+- Editar archivos de configuración es una tarea común, pero si se hacen cambios incorrectos o inseguros, pueden surgir problemas de seguridad y funcionamiento.
+
+**7.sudo insmod lime-4.15.0-42-generic.ko "path=captura.mem format=lime".**
+
+- Cargar módulos del kernel personalizados o desconocidos puede ser una accion de riesgo si no se comprenden completamente sus funciones y orígenes.
+
+**8. sudo apt install php-mysql.**
+
+- La instalación de software debe hacerse con cuidado, asegurándose de que las fuentes sean confiables y que no se introduzcan vulnerabilidades.
+
+**9. Errores tipográficos y comandos incompletos.**
+
+- Podrían resultar en acciones no intencionadas que afectan la seguridad o estabilidad del sistema.
+
+Es fundamental que cualquier administrador de sistemas ejecute estos comandos con conocimiento completo de sus implicaciones y en el contexto adecuado. Además, las buenas prácticas de seguridad, como la mínima exposición de servicios, el uso restringido de permisos y la monitorización constante, son esenciales para mantener la **<u style='color:red'>integridad</u>** y seguridad del sistema.
+
 [Volver al Índice del capítulo 3. Análisis de la memoria RAM.](#índice-del-capítulo-3-análisis-de-la-memoria-ram)
 
 [Volver al Índice General.](#índice-general)
@@ -1315,19 +1318,766 @@ Buscando en google **linux version 4.15.0-1021.21-aws volatility**, nos encontra
 
 
 
-## 3.3. Datos de interés de la captura de la memoria RAM.
+## 3.4. Búsqueda de procesos en funcionamiento de interés para el análisis.
 
-En el anexo Creación perfil ubuntu AWS, hemos realizado una guía para crear el perfil de Linux AWS que detectado durante el análisis del sistema operativo.
 
-Una vez creado el perfil de linuxUbuntu_4.15.0-1021-aws procederemos a hacer un pslist para listar todas las aplicaciones que estaban ejecutándose en el momento de la captura.
 
-Para comprobar que el perfil funciona, vamos a comenzar a comprobar cual es el CPU que usa el sistema.
 
-Para ello ejecutaremos `sudo python2.7 vol.py --profile=LinuxlinuxUbuntu_4_15_0-1021-awsx64 -f '/home/jrodg85/Server_RAM.mem' linux_cpuinfo`.
 
-Al comprobar que el perfil funciona, obtenemos que solo hay un procesador de marca GenuineIntel modelo Intel(R) Xeon(R) CPU E5-2676 v3 que tiene una frecuencia de 2.4Ghz.
 
-Otro comando de interés es obtener el history del la terminal, con ello podemos observar los pasos realizados y los que ha ejecutado. Para ello ejecutaremos el comando `sudo python2.7 vol.py --profile=LinuxlinuxUbuntu_4_15_0-1021-awsx64 -f '/home/jrodg85/Server_RAM.mem' linux_bash`. Los comandos usados son los siguientes:
+
+
+[Volver al Índice del capítulo 3. Análisis de la memoria RAM.](#índice-del-capítulo-3-análisis-de-la-memoria-ram)
+
+[Volver al Índice General.](#índice-general)
+
+---
+
+
+
+## 3.5. Listado de conexiones de red y conexiones sospechosas.
+
+
+
+
+
+
+
+
+[Volver al Índice del capítulo 3. Análisis de la memoria RAM.](#índice-del-capítulo-3-análisis-de-la-memoria-ram)
+
+[Volver al Índice General.](#índice-general)
+
+---
+
+
+
+# 4. Análisis del disco duro.
+
+
+## Índice del capítulo 4. Análisis del disco duro.
+
+
+
+
+
+
+
+
+
+
+
+
+[Volver al Índice General.](#índice-general)
+
+---
+
+
+
+## 4.0. Introducción al capítulo 4. Análisis del disco duro.
+
+
+
+
+
+
+
+
+
+
+
+[Volver al Índice del capítulo 4. Análisis del disco duro.](#índice-del-capítulo-4-análisis-del-disco-duro)
+
+[Volver al Índice General.](#índice-general)
+
+---
+
+
+
+## 4.1. Acciones previas al análisis del disco duro.
+
+
+
+
+
+
+
+
+
+
+[Volver al Índice del capítulo 4. Análisis del disco duro.](#índice-del-capítulo-4-análisis-del-disco-duro)
+
+[Volver al Índice General.](#índice-general)
+
+---
+
+
+
+## 4.2. Datos de interés del disco duro.
+
+
+
+
+
+
+
+
+
+
+[Volver al Índice del capítulo 4. Análisis del disco duro.](#índice-del-capítulo-4-análisis-del-disco-duro)
+
+[Volver al Índice General.](#índice-general)
+
+---
+
+
+
+## 4.3. Usuarios del sistema.
+
+
+
+
+
+
+
+[Volver al Índice del capítulo 4. Análisis del disco duro.](#índice-del-capítulo-4-análisis-del-disco-duro)
+
+[Volver al Índice General.](#índice-general)
+
+---
+
+
+
+## 4.4. Análisis de evidencias del disco duro.
+
+
+
+
+
+
+[Volver al Índice del capítulo 4. Análisis del disco duro.](#índice-del-capítulo-4-análisis-del-disco-duro)
+
+[Volver al Índice General.](#índice-general)
+
+---
+
+
+
+# 5. Resumen ejecutivo.
+
+## Índice del capítulo 5. Resumen ejecutivo.
+
+
+
+
+
+
+
+
+[Volver al Índice General.](#índice-general)
+
+---
+
+
+
+## 5.0. Introducción al capítulo 5. Resumen ejecutivo.
+
+
+
+
+
+
+[Volver al Índice del capítulo 5. Resumen ejecutivo.](#índice-del-capítulo-5-resumen-ejecutivo)
+
+[Volver al Índice General.](#índice-general)
+
+---
+
+
+
+## 5.1. Resumen ejecutivo.
+
+
+
+
+
+
+
+
+
+
+
+[Volver al Índice del capítulo 5. Resumen ejecutivo.](#índice-del-capítulo-5-resumen-ejecutivo)
+
+[Volver al Índice General.](#índice-general)
+
+---
+
+
+
+# 6. Informe pericial.
+
+## Índice del capítulo 6. Informe pericial.
+
+[Volver al Índice General.](#índice-general)
+
+---
+
+
+
+## 6.0. Introducción al capítulo 6. Informe pericial.
+
+[Volver al Índice del capítulo 6. Informe pericial.](#índice-del-capítulo-6-informe-pericial)
+
+[Volver al Índice General.](#índice-general)
+
+---
+
+
+
+## 6.1. Informe pericial.
+
+[Volver al Índice del capítulo 6. Informe pericial.](#índice-del-capítulo-6-informe-pericial)
+
+[Volver al Índice General.](#índice-general)
+
+---
+
+
+
+# 7. Conclusiones.
+
+## Índice del capítulo 7. Conclusiones.
+
+[Volver al Índice General.](#índice-general)
+
+---
+
+
+
+## 7.0. Introducción al capítulo 7. Conclusiones.
+
+
+
+
+
+[Volver al Índice del capítulo 7. Conclusiones.](#índice-del-capítulo-7-conclusiones)
+
+[Volver al Índice General.](#índice-general)
+
+---
+
+
+
+## 7.1. Conclusiones.
+
+
+
+
+
+
+
+
+[Volver al Índice del capítulo 7. Conclusiones.](#índice-del-capítulo-7-conclusiones)
+
+[Volver al Índice General.](#índice-general)
+
+---
+
+
+
+# 8. Anexos.
+
+## Índice del capítulo 8. Anexos.
+
+
+
+
+
+
+[Volver al Índice General.](#índice-general)
+
+---
+
+
+
+
+## 8.0. Introducción al capítulo 8. Anexos.
+
+
+
+
+[Volver al Índice del capítulo 8. Anexos.](#índice-del-capítulo-8-anexos)
+
+[Volver al Índice General.](#índice-general)
+
+---
+
+
+
+## 8.1. Creación de perfil para volatility.
+
+### 8.1.0. Introducción de creación de perfil de volatility.
+
+Crear un perfil de volatility es fundamental para poder extraer la información de los datos de la ram.
+
+En el repositorio de github de volatility podemos observar perfiles relativos a windows, pero ninguno relativo al sistema operativo linux. Si ejecutamos el comando `sudo python2.7 vol.py --info` tenemos la siguiente respuesta relativo a perfiles:
+
+~~~Shell
+Profiles
+--------
+VistaSP0x64                         - A Profile for Windows Vista SP0 x64
+VistaSP0x86                         - A Profile for Windows Vista SP0 x86
+VistaSP1x64                         - A Profile for Windows Vista SP1 x64
+VistaSP1x86                         - A Profile for Windows Vista SP1 x86
+VistaSP2x64                         - A Profile for Windows Vista SP2 x64
+VistaSP2x86                         - A Profile for Windows Vista SP2 x86
+Win10x64                            - A Profile for Windows 10 x64
+Win10x64_10240_17770                - A Profile for Windows 10 x64 (10.0.10240.17770 / 2018-02-10)
+Win10x64_10586                      - A Profile for Windows 10 x64 (10.0.10586.306 / 2016-04-23)
+Win10x64_14393                      - A Profile for Windows 10 x64 (10.0.14393.0 / 2016-07-16)
+Win10x64_15063                      - A Profile for Windows 10 x64 (10.0.15063.0 / 2017-04-04)
+Win10x64_16299                      - A Profile for Windows 10 x64 (10.0.16299.0 / 2017-09-22)
+Win10x64_17134                      - A Profile for Windows 10 x64 (10.0.17134.1 / 2018-04-11)
+Win10x64_17763                      - A Profile for Windows 10 x64 (10.0.17763.0 / 2018-10-12)
+Win10x64_18362                      - A Profile for Windows 10 x64 (10.0.18362.0 / 2019-04-23)
+Win10x64_19041                      - A Profile for Windows 10 x64 (10.0.19041.0 / 2020-04-17)
+Win10x86                            - A Profile for Windows 10 x86
+Win10x86_10240_17770                - A Profile for Windows 10 x86 (10.0.10240.17770 / 2018-02-10)
+Win10x86_10586                      - A Profile for Windows 10 x86 (10.0.10586.420 / 2016-05-28)
+Win10x86_14393                      - A Profile for Windows 10 x86 (10.0.14393.0 / 2016-07-16)
+Win10x86_15063                      - A Profile for Windows 10 x86 (10.0.15063.0 / 2017-04-04)
+Win10x86_16299                      - A Profile for Windows 10 x86 (10.0.16299.15 / 2017-09-29)
+Win10x86_17134                      - A Profile for Windows 10 x86 (10.0.17134.1 / 2018-04-11)
+Win10x86_17763                      - A Profile for Windows 10 x86 (10.0.17763.0 / 2018-10-12)
+Win10x86_18362                      - A Profile for Windows 10 x86 (10.0.18362.0 / 2019-04-23)
+Win10x86_19041                      - A Profile for Windows 10 x86 (10.0.19041.0 / 2020-04-17)
+Win2003SP0x86                       - A Profile for Windows 2003 SP0 x86
+Win2003SP1x64                       - A Profile for Windows 2003 SP1 x64
+Win2003SP1x86                       - A Profile for Windows 2003 SP1 x86
+Win2003SP2x64                       - A Profile for Windows 2003 SP2 x64
+Win2003SP2x86                       - A Profile for Windows 2003 SP2 x86
+Win2008R2SP0x64                     - A Profile for Windows 2008 R2 SP0 x64
+Win2008R2SP1x64                     - A Profile for Windows 2008 R2 SP1 x64
+Win2008R2SP1x64_23418               - A Profile for Windows 2008 R2 SP1 x64 (6.1.7601.23418 / 2016-04-09)
+Win2008R2SP1x64_24000               - A Profile for Windows 2008 R2 SP1 x64 (6.1.7601.24000 / 2016-04-09)
+Win2008SP1x64                       - A Profile for Windows 2008 SP1 x64
+Win2008SP1x86                       - A Profile for Windows 2008 SP1 x86
+Win2008SP2x64                       - A Profile for Windows 2008 SP2 x64
+Win2008SP2x86                       - A Profile for Windows 2008 SP2 x86
+Win2012R2x64                        - A Profile for Windows Server 2012 R2 x64
+Win2012R2x64_18340                  - A Profile for Windows Server 2012 R2 x64 (6.3.9600.18340 / 2016-05-13)
+Win2012x64                          - A Profile for Windows Server 2012 x64
+Win2016x64_14393                    - A Profile for Windows Server 2016 x64 (10.0.14393.0 / 2016-07-16)
+Win7SP0x64                          - A Profile for Windows 7 SP0 x64
+Win7SP0x86                          - A Profile for Windows 7 SP0 x86
+Win7SP1x64                          - A Profile for Windows 7 SP1 x64
+Win7SP1x64_23418                    - A Profile for Windows 7 SP1 x64 (6.1.7601.23418 / 2016-04-09)
+Win7SP1x64_24000                    - A Profile for Windows 7 SP1 x64 (6.1.7601.24000 / 2018-01-09)
+Win7SP1x86                          - A Profile for Windows 7 SP1 x86
+Win7SP1x86_23418                    - A Profile for Windows 7 SP1 x86 (6.1.7601.23418 / 2016-04-09)
+Win7SP1x86_24000                    - A Profile for Windows 7 SP1 x86 (6.1.7601.24000 / 2018-01-09)
+Win81U1x64                          - A Profile for Windows 8.1 Update 1 x64
+Win81U1x86                          - A Profile for Windows 8.1 Update 1 x86
+Win8SP0x64                          - A Profile for Windows 8 x64
+Win8SP0x86                          - A Profile for Windows 8 x86
+Win8SP1x64                          - A Profile for Windows 8.1 x64
+Win8SP1x64_18340                    - A Profile for Windows 8.1 x64 (6.3.9600.18340 / 2016-05-13)
+Win8SP1x86                          - A Profile for Windows 8.1 x86
+WinXPSP1x64                         - A Profile for Windows XP SP1 x64
+WinXPSP2x64                         - A Profile for Windows XP SP2 x64
+WinXPSP2x86                         - A Profile for Windows XP SP2 x86
+WinXPSP3x86                         - A Profile for Windows XP SP3 x86
+~~~
+
+[Volver al Índice del capítulo 8. Anexos.](#índice-del-capítulo-8-anexos)
+
+### 8.1.1. Creación de la máquina virtual.
+
+Vamos crear una máquina virtual para generar una máquina virtual base con el mismo kernel que el servidor auditado.
+
+![025-detalles-servidor-perfil-volatility](./images/025-detalles-servidor-perfil-volatility.png)
+
+[Volver al Índice del capítulo 8. Anexos.](#índice-del-capítulo-8-anexos)
+
+### 8.1.2. Búsqueda en cache del kernel relativo al perfil a crear.
+
+Procedemos a arrancar la máquina virtual (en adelante VM), una vez realizado el login, procedemos a ejecutar el comando `sudo apt-cache search linux-image | grep 4.15.0-1021`.
+
+Este comando realiza dos acciones, por un lado `sudo apt-cache search linux-image`, y por otro `grep 4.15.0-1021`. Gracias al  "pipe" o "|", pasaremos la respuesta del primera acción como entrada de la segunda acción.. Es una parte fundamental de la filosofía de Unix que permite a los usuarios combinar múltiples comandos sencillos para realizar tareas más complejas. En nuestro caso:
+
+**sudo apt-cache search linux-image.**
+
+  - Esta parte del comando busca en la caché de APT (Advanced Package Tool) todos los paquetes cuyos nombres o descripciones contienen la cadena "linux-image". Los paquetes "linux-image" generalmente se refieren a imágenes del kernel de Linux para diferentes versiones y configuraciones.
+
+**| grep 4.15.0-1021.**
+
+  - La salida del primer comando se canaliza (|) al comando grep, que filtra y muestra solo las líneas que contienen la cadena "4.15.0-1021". En este contexto, "4.15.0-1021" probablemente se refiere a una versión específica del kernel de Linux.
+
+Al combinar estos dos comandos, `sudo apt-cache search linux-image | grep 4.15.0-1021` efectivamente busca y lista todas las versiones de las imágenes del kernel de Linux disponibles en los repositorios que coincidan con la versión específica "4.15.0-1021". Este comando es útil para identificar si una versión específica del kernel está disponible para la instalación o actualización en el sistema.
+
+Se adjunta pantallazo de la respuesta por parte de la consola.
+
+##### [Imagen 009](#83009)
+
+[Volver al Índice del capítulo 8. Anexos.](#índice-del-capítulo-8-anexos)
+
+### 8.1.3. Instalación del kernel relativo al perfil a crear.
+
+Una vez encontrado la imagen del kernel que buscamos, procedemos a instalarla en el sistema, para ello ejecutamos el comando `sudo apt-get install linux-image-4.15.0-2021-aws`.
+
+El comando `sudo apt-get install linux-image-4.15.0-2021-aws` en Ubuntu o sistemas basados en Debian, se utiliza para instalar una versión específica del kernel de Linux, diseñada para ambientes Amazon Web Services (AWS). Al usar `sudo`, el comando se ejecuta con privilegios de superusuario, necesarios para instalar software a nivel de sistema. `apt-get install` es parte del sistema de gestión de paquetes APT, y se usa aquí para instalar el paquete `linux-image-4.15.0-2021-aws`. Este paquete contiene una imagen del kernel de Linux, la cual está optimizada para correr en servidores AWS, indicando que este kernel podría tener configuraciones o parches específicos para un rendimiento mejorado o características adicionales en esa plataforma. **Al instalar un nuevo kernel, es importante reiniciar el sistema para que empiece a usar esta nueva versión.**
+
+Se adjunta pantallazo de la instalación del kernel de AWS:
+
+##### [Imagen 010](#83010)
+
+Como hemos indicado anteriormente, es necesario reiniciar el sistema para que el kernel instalado se utilice en el Sistema operativo, procederemos a ejecutar el comando `sudo reboot now` para realizar esta acción.
+
+##### [Imagen 011](#83011)
+
+Una vez reiniciado el sistema, procedemos a ejecutar el comando `uname - r` para comprobar que el comando se ha ejecutado correctamente.
+
+##### [Imagen 012](#83012)
+
+[Volver al Índice del capítulo 8. Anexos.](#índice-del-capítulo-8-anexos)
+
+### 8.1.4. Instalación de volatility.
+
+Una vez comprobado, procederemos a la instalación de volatility en el servidor de ubuntu.
+
+Primero de todo instalaremos los paquetes relativos a `dwarfdum`, `gcc`, `linux-headers` y `git`, ya que el servidor no los tiene instalado por defecto.
+
+ Seguiremos los pasos ya indicados en el [Apartado 3.2](#32-sistema-operativo-de-la-memoria-ram-analizada):
+
+[![Miniatura video Volatility](./images/024-miniatura-instalacion-volatility.png)](https://youtu.be/z_SWIIa3AnY)
+
+> https://www.youtube.com/watch?v=z_SWIIa3AnY
+
+Una vez instalado, procedemos a realizar los pasos para la creación del perfil de volatility.
+
+[Volver al Índice del capítulo 8. Anexos.](#índice-del-capítulo-8-anexos)
+
+### 8.1.5. Creación del perfil de volatility.
+
+Una vez hemos realizado la instalación procedemos a crear el perfil de volatility.
+
+Para ello entraremos en la carpeta `home/jrodg85/volatility/tools/linux`, una vez allí dentro ejecutaremos el comando `make`. En la siguiente imagen, se puede ver un pantallazo del comando, en caso de tener error del mismo, lo mas recomendable es hacer un `make clean` y después volver a ejecutar `make`. Lo mas importante es que se tiene que crear el archivo **`modules.dwarf`**
+
+##### [Imagen 013](#83013)
+
+Ahora procederemos a nombrar el perfil de volatility para ello vamos a generar un archivo zip, este archivo, como norma general, usaremos los valores de `lsb_release -si` y `uname -r`. De esta manera nombraremos de manera correcta el perfil de volatility para después no tengamos problemas al importarlo dentro de la máquina donde estamos realizando la investigación.
+
+![017-lsb-release-y-uname-r.png](./images/017-lsb-release-y-uname-r.png)
+
+Este archivo zip, debe de contener los dos archivos necesarios de perfil:
+
+**modules.dwarf**
+
+- Este archivo se genera a partir de los módulos del kernel de Linux y contiene información sobre las estructuras de datos del kernel. Es creado usando, en nuestro caso, la herramienta dwarfdump sobre módulos del kernel compilados con símbolos de depuración (debugging symbols). El archivo module.dwarf es crucial porque contiene los offsets y las definiciones de las estructuras de datos internas del kernel, lo que permite a Volatility entender cómo están organizados los datos en el volcado de memoria.
+
+**/boot/System.map-4.15.0-1021-aws**
+
+- Este archivo es un mapa de símbolos del kernel. Proporciona una lista de todas las funciones y variables en el kernel, junto con sus direcciones de memoria. Cada versión del kernel de Linux tiene su propio archivo System.map, y el archivo específico para una versión dada del kernel (en tu caso, 4.15.0-1021-aws) es necesario para analizar un volcado de memoria tomado de un sistema que ejecuta esa versión del kernel. Este archivo es esencial para que Volatility pueda mapear las direcciones de memoria en el volcado a nombres de funciones y variables específicas en el kernel.
+
+Para la generación del perfil, procederemos a ejecutar el comando `sudo zip /home/jrodg85/volatility/volatility/plugins/overlays/linux$(lsb_release -si)_$(uname -r)_profiles.zip /home/jrodg85/volatility/tools/linux/module.dwarf /boot/System.map-4.15.0-1021-aws`
+
+![018-perfil-generado.png](./images/018-perfil-generado.png)
+
+Una vez creado el perfil, tenemos que sacar el perfil del servidor para después pegarlo dentro de la máquina una donde realizaremos el análisis. para ello procederemos a montar un usb dentro del servidor del ubuntu, posteriormente copiamos el archivo, `/home/jrodg85/volatility/volatility/plugins/overlays/linuxUbuntu_4.15.0-1021-aws_profile.zip`, y lo pegamos en el **<u style='color:red'>USB</u>**, posteriormente, procedemos a insertar en la VM de análisis en la carpeta en la carpeta `/home/jrodg85/volatility/volatility/plugins/overlays/linux` tal y como se muestra en la siguiente imagen.
+
+![021-copiado-en-entorno-volatility.png](./images/021-copiado-en-entorno-volatility.png)
+
+para comprobar que esta correctamente creado el perfil procedemos a ejecutar el comando `sudo python2.7 col.py --info`, donde se podrá observar que se ha creado correctamente el perfil.
+
+![022-perfil-creado.png](./images/022-perfil-creado.png)
+
+[Volver al Índice del capítulo 8. Anexos.](#índice-del-capítulo-8-anexos)
+
+[Volver al Índice General.](#índice-general)
+
+---
+
+## 8.2. Glosario de términos y abreviaturas.
+
+---
+
+#### 8.2.001.000.001. CISO.
+
+1. La persona responsable de velar por la ciberseguridad de una empresa, es el acrónimo de (Chief Information Security Officer). También podemos conocerlo como director de seguridad de la información. Esta persona es la que se encarga de proteger la información ante posibles ciberataques y fugas de datos. De esta manera, garantiza la seguridad dentro de las posibilidades tanto humanas, técnicas como económicas que tenga cada empresa.
+
+[Volver al texto del término en la Sección 1.0.](#10-glosario-001-ciso)
+
+---
+
+#### 8.2..
+
+
+#### **Análisis de archivo.**
+
+- Examina cada archivo digital descubierto y crea una base de datos de información relacionada al archivo (metadatos, etc.), consistente entre otras cosas en la firma del archivo o **<u style='color:red'>hash</u>** (indica la **<u style='color:red'>integridad</u>** del archivo).
+
+---
+
+#### **Cadena de custodia.**
+
+- La identidad de personas que manejan la evidencia en el tiempo del suceso y la última revisión del caso. Es la responsabilidad de la persona que maneja la evidencia asegurar que los artículos son registrados y contabilizados durante el tiempo en el cual están en su poder, y que son protegidos, así mismo llevando un registro de los nombres de las personas que manejaron la evidencia o artículos durante el lapso de tiempo y fechas de entrega y recepción.VCX
+
+----
+
+[Volver al Índice del capítulo 8. Anexos.](#índice-del-capítulo-8-anexos)
+
+[Volver al Índice General.](#índice-general)
+
+---
+
+## 8.3. Imágenes.
+
+---
+
+#### 8.3.001.003.005.001. Diagrama de metodología del análisis forense.
+
+![001-003-005-001](./images/001-003-005-001-FASES-METODOLOGIA-ANALISIS-FORENSE.png)
+
+[Volver al texto de la imagen en la Sección 1.3.5.](#135-imagen-001)
+
+---
+
+#### 8.3.001.003.005.002. Fases 1 2 y 3 de la metodología del análisis forense.
+
+![001-003-005-002](./images/001-003-005-002-FASES-1-2-3-METODOLOGIA-ANALISIS-FORENSE.png)
+
+[Volver al texto de la imagen en la Sección 1.3.5.](#135-imagen-002-135-imagen-003-135-imagen-004)
+
+---
+
+#### 8.3.001.003.005.003. Fases 4 5 y 6 de la metodología del análisis forense.
+
+![001-003-005-003](./images/001-003-005-003-FASES-4-5-6-METODOLOGIA-ANALISIS-FORENSE.png)
+
+[Volver al texto de la imagen en la Sección 1.3.5.](#135-imagen-002-135-imagen-003-135-imagen-004)
+
+---
+
+#### 8.3.001.003.005.004. Fase 7 de la metodología del análisis forense.
+
+![001-003-005-004](./images/001-003-005-004-FASE-7-METODOLOGIA-ANALISIS-FORENSE.png)
+
+[Volver al texto de la imagen en la Sección 1.3.5.](#135-imagen-002-135-imagen-003-135-imagen-004)
+
+---
+
+#### 8.3.001.003.005.005. Orden de volatilidad análisis forense.
+
+![001-003-005-005](./images/001-003-005-005-ORDEN-VOLATILIDAD-RFC-3227.png)
+
+[Volver al texto de la imagen en la Sección 1.3.5.](#135-Imagen-005)
+
+---
+
+#### 8.3.001.006.001. Diagrama de Gantt reto/PEC 1.
+
+![001-006-001](./images/001-006-001-diagrama-de-gantt-pec-01.png)
+
+[Volver al texto de la imagen en la Sección 1.6.](#16-Imagen-001)
+
+---
+
+---
+
+#### 8.3.001.006.002. Diagrama de Gantt reto/PEC 2.
+
+![001-006-002](./images/001-006-002-diagrama-de-gantt-pec-02.png)
+
+[Volver al texto de la imagen en la Sección 1.6.](#16-Imagen-001)
+
+---
+
+---
+
+#### 8.3.001.006.003. Diagrama de Gantt reto/PEC 3.
+![001-006-003](./images/001-006-003-diagrama-de-gantt-pec-03.png)
+
+[Volver al texto de la imagen en la Sección 1.6.](#16-Imagen-003)
+
+---
+
+---
+
+#### 8.3.001.006.004. Diagrama de Gantt reto/PEC 4.
+
+![001-006-004](./images/001-006-004-diagrama-de-gantt-pec-04.png)
+
+[Volver al texto de la imagen en la Sección 1.6.](#16-imagen-004)
+
+---
+
+#### 8.3.003.001.001. Imagen Hash archivos.
+
+![005-imagen-hash-archivos.png](./images/003-001-001-imagen-hash-archivos.png)
+
+[Volver al texto de la imagen en la Sección 3.1.](#31-imagen-001)
+
+---
+
+#### 8.3.003.001.002. Imagen Hash PowerShell.
+
+![003-001-002](./images/003-001-002-captura-hash-PowerShell.png)
+
+[Volver al texto de la imagen en la Sección 006.](#31-imagen-002)
+
+---
+
+#### 8.3.003.002.001. Imagen de imageinfo.
+
+![003-002-001](./images/003-002-001-captura-imageinfo.png)
+
+[Volver al texto de la imagen en la Sección 3.2.](#32-imagen-001)
+
+---
+
+#### 8.3.003.002.002. Imagen de búsqueda de string linux version.
+
+![003-002-002](./images/003-002-002-buscar-strings-linux-version.png)
+
+[Volver al texto de la imagen en la Sección 3.2.](#32-imagen-002)
+
+---
+
+#### 8.3.010. Imagen de buscando caché de AWS.
+
+![009-buscando-cache-aws.png](./images/009-buscando-cache-aws.png)
+
+[Volver al texto de la imagen en la Sección 009.](#imagen-009)
+
+---
+
+#### 8.3.011. Imagen de instalación de kernel de AWS.
+
+![010-instalación-kernel-aws.png](./images/010-instalacion-kernel-aws.png)
+
+[Volver al texto de la imagen en la Sección 010.](#imagen-010)
+
+---
+
+#### 8.3.012. Imagen de reinicio del servidor de AWS.
+
+![011-reinicio-server-aws.png](./images/011-reinicio-server-aws.png)
+
+[Volver al texto de la imagen en la Sección 011.](#imagen-011)
+
+---
+
+#### 8.3.013. Imagen de reinicio del servidor con kernel de AWS.
+
+![012-inicio-con-server-aws.png](./images/012-inicio-con-server-aws.png)
+
+[Volver al texto de la imagen en la Sección 012.](#imagen-012)
+
+---
+
+#### 8.3.013. .
+
+![013-make-clean-clear-make.png](./images/013-make-clean-clear-make.png)
+
+[Volver al texto de la imagen en la Sección 013.](#imagen-013)
+
+---
+
+
+
+
+
+
+
+
+
+
+
+
+
+[Volver al Índice del capítulo 8. Anexos.](#índice-del-capítulo-8-anexos)
+
+[Volver al Índice General.](#índice-general)
+
+---
+
+## 8.4. Videos.
+
+---
+
+#### 8.4.003.002.001. Video de instalación de Volatility en Ubuntu.
+
+[![Miniatura video Volatility](./images/024-miniatura-instalacion-volatility.png)](https://youtu.be/z_SWIIa3AnY)
+
+> [https://www.youtube.com/watch?v=z_SWIIa3AnY](https://www.youtube.com/watch?v=z_SWIIa3AnY)
+
+[Volver al texto del video en la Sección 3.2.](#32-video-001)
+
+---
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+[Volver al Índice del capítulo 8. Anexos.](#índice-del-capítulo-8-anexos)
+
+[Volver al Índice General.](#índice-general)
+
+---
+
+## 8.5. Extracto de comandos utilizados.
+
+---
+
+#### 8.5.003.001.001. Comando **<u style='color:red'>Hash</u>** MD5.
+
+~~~PowerShell
+Get-FileHash .\Server_RAM.mem -Algorithm MD5
+~~~
+
+La respuesta de PowerShell es el siguiente:
+
+~~~PowerShell
+Algorithm       Hash                                                                   Path
+---------       ----                                                                   ----
+MD5             75A99B57032AA34BA19042ED85DB273F                                       D:\TFM\RAM\...
+~~~
+
+[Volver al texto del comando en la Sección 3.1](#31-comando-001-31-comando-002)
+
+
+---
+
+#### 8.5.003.001.002. Comando **<u style='color:red'>Hash</u>** SHA1.
+
+~~~PowerShell
+Get-FileHash .\Server_RAM.mem -Algorithm SHA1
+~~~
+
+La respuesta de PowerShell es el siguiente:
+
+~~~PowerShell
+Algorithm       Hash                                                                   Path
+---------       ----                                                                   ----
+SHA1            CC1FAD2AF321B8C2DDF0103986E3B344EB8F2CC8                               D:\TFM\RAM\...
+~~~
+
+[Volver al texto del comando en la Sección 3.1](#31-comando-001-31-comando-002)
+
+---
+
+#### 8.5.003.003.001. Comando linux bash.
 
 ~~~
 exit
@@ -1819,812 +2569,14 @@ ls -l
 sudo insmod lime-4.15.0-1021-aws.ko "path=captura.mem format=lime"
 ~~~
 
-Analizando los comandos realizados se pueden destacar los siguientes:
 
-- **exit**: Sale de la sesión actual, ya sea una sesión de terminal o una conexión SSH.
-- **sudo apt update**: Actualiza la lista de paquetes disponibles y sus versiones. Es un paso previo común antes de instalar o actualizar paquetes.
-- **sudo systemctl restart postfix**: Reinicia el servicio Postfix, un agente de transferencia de correo (MTA).
-- **ls -l**: Lista los archivos en el directorio actual en un formato detallado.
-- **mysql -uroot -p**: Inicia sesión en el servidor MySQL como usuario 'root', pidiendo la contraseña.
-- **cd apache2/ y movimientos similares**: Cambia el directorio actual a uno especificado.
-- **sudo vi /etc/mysql/debian.cnf**: Edita el archivo de configuración de MySQL usando el editor vi.
-- **ps -ef| grep mysql**: Muestra los procesos actuales relacionados con MySQL.
-- **sudo kill -9 4539**: Mata de manera forzosa el proceso con el ID 4539.
-- **sudo mysqld_safe --skip-grant-tables**: Inicia MySQL en un modo especial que omite ciertas comprobaciones de seguridad.
-- **sudo apt install python-certbot-apache**: Instala Certbot para Apache, una herramienta para obtener certificados SSL/TLS de Let's Encrypt.
-- **sudo service apache2 restart**: Reinicia el servidor web Apache.
-- **sudo mysql_secure_installation**: Ejecuta un script para mejorar la seguridad de MySQL.
-- **sudo apt-get install mysql-server**: Instala el servidor MySQL.
-- **sudo chmod 777 /var/run/mysqld**: Cambia los permisos del directorio /var/run/mysqld para que todos los usuarios puedan leer, escribir y ejecutar archivos en él.
-- **sudo chown -R www-data:www-data html**: Cambia la propiedad del directorio html al usuario y grupo www-data, comúnmente usado para servidores web.
-- **find . -name functions.php -exec grep -H add_filer {} \;**: Busca en archivos functions.php y ejecuta grep en ellos.
-- **tail access.log y variantes**: Muestra las últimas líneas de los archivos de registro especificados.
-- **sudo vi /etc/apache2/sites-enabled/000-default.conf**: Edita la configuración predeterminada del sitio de Apache.
-- **sudo apt upgrade**: Actualiza todos los paquetes instalados a sus últimas versiones.
-- **sudo systemctl reload apache2**: Recarga la configuración de Apache sin reiniciar el servicio.
-- **sudo service mysql stop**: Detiene el servicio MySQL.
-- **sudo dpkg-reconfigure mysql-server-5.7**: Reconfigura la versión especificada del servidor MySQL.
-- **sudo apachectl configtest**: Verifica la sintaxis de los archivos de configuración de Apache.
-- **sudo add-apt-repository ppa:certbot/certbot**: Añade el repositorio PPA para Certbot.
-- **sudo apt install php-mysql**: Instala el módulo PHP para interactuar con MySQL.
-- **sudo insmod lime-4.15.0-42-generic.ko "path=captura.mem format=lime"**: Carga un módulo del kernel para la captura de memoria.
 
-Relativo a la seguridad del servidor, siguiente listado de documentos son notables para la seguridad, ya que pueden tener un impacto significativo en la seguridad del servidor. Aquí hay algunos ejemplos notables:
 
-**1. sudo mysqld_safe --skip-grant-tables.**
 
-  - Este comando inicia el servidor MySQL sin respetar el sistema de permisos. Cualquiera podría acceder a todas las bases de datos sin necesidad de una contraseña. Es extremadamente peligroso en un entorno de producción y debería usarse solo en situaciones de recuperación de emergencia.
+[Volver al texto del comando en la Sección 3.1](#33-comando-001)
 
-**2. sudo chmod 777 /var/run/mysqld.**
-
-  - Este comando establece los permisos de lectura, escritura y ejecución para todos los usuarios en el directorio /var/run/mysqld. Otorgar estos permisos tan amplios puede ser un riesgo de seguridad significativo, ya que permite a cualquier usuario en el sistema modificar o eliminar archivos críticos para el funcionamiento de MySQL.
-
-**3. sudo kill -9 (con varios números de proceso).**
-
-  - Si bien no es inherentemente inseguro, el uso imprudente de kill -9 puede terminar procesos cruciales y causar inestabilidad o pérdida de datos si se aplica a procesos críticos del sistema o de la base de datos.
-
-**4. sudo rm -r /run/mysqld.**
-
-  - Eliminar directorios críticos del sistema puede afectar la estabilidad y funcionamiento de los servicios asociados, en este caso, MySQL.
-
-**5. sudo service mysql stop y sudo service apache2 stop.**
-
-  - Detener servicios como MySQL y Apache puede afectar la disponibilidad de aplicaciones dependientes. Si se hace sin precaución, podría provocar tiempos de inactividad no planificados.
-
-**6. vi /etc/mysql/debian.cnf y sudo vi /etc/apache2/sites-enabled/000-default.conf.**
-
-  - Editar archivos de configuración es una tarea común, pero si se hacen cambios incorrectos o inseguros, pueden surgir problemas de seguridad y funcionamiento.
-
-**7.sudo insmod lime-4.15.0-42-generic.ko "path=captura.mem format=lime".**
-
-  - Cargar módulos del kernel personalizados o desconocidos puede ser una accion de riesgo si no se comprenden completamente sus funciones y orígenes.
-
-**8. sudo apt install php-mysql.**
-
-  - La instalación de software debe hacerse con cuidado, asegurándose de que las fuentes sean confiables y que no se introduzcan vulnerabilidades.
-
-**9. Errores tipográficos y comandos incompletos.**
-
-  - Podrían resultar en acciones no intencionadas que afectan la seguridad o estabilidad del sistema.
-
-Es fundamental que cualquier administrador de sistemas ejecute estos comandos con conocimiento completo de sus implicaciones y en el contexto adecuado. Además, las buenas prácticas de seguridad, como la mínima exposición de servicios, el uso restringido de permisos y la monitorización constante, son esenciales para mantener la integridad y seguridad del sistema.
-
-[Volver al Índice del capítulo 3. Análisis de la memoria RAM.](#índice-del-capítulo-3-análisis-de-la-memoria-ram)
-
-[Volver al Índice General.](#índice-general)
 
 ---
-
-
-
-## 3.4. Búsqueda de procesos en funcionamiento de interés para el análisis.
-
-
-
-
-
-
-
-
-[Volver al Índice del capítulo 3. Análisis de la memoria RAM.](#índice-del-capítulo-3-análisis-de-la-memoria-ram)
-
-[Volver al Índice General.](#índice-general)
-
----
-
-
-
-## 3.5. Listado de conexiones de red y conexiones sospechosas.
-
-
-
-
-
-
-
-
-[Volver al Índice del capítulo 3. Análisis de la memoria RAM.](#índice-del-capítulo-3-análisis-de-la-memoria-ram)
-
-[Volver al Índice General.](#índice-general)
-
----
-
-
-
-# 4. Análisis del disco duro.
-
-
-## Índice del capítulo 4. Análisis del disco duro.
-
-
-
-
-
-
-
-
-
-
-
-
-[Volver al Índice General.](#índice-general)
-
----
-
-
-
-## 4.0. Introducción al capítulo 4. Análisis del disco duro.
-
-
-
-
-
-
-
-
-
-
-
-[Volver al Índice del capítulo 4. Análisis del disco duro.](#índice-del-capítulo-4-análisis-del-disco-duro)
-
-[Volver al Índice General.](#índice-general)
-
----
-
-
-
-## 4.1. Acciones previas al análisis del disco duro.
-
-
-
-
-
-
-
-
-
-
-[Volver al Índice del capítulo 4. Análisis del disco duro.](#índice-del-capítulo-4-análisis-del-disco-duro)
-
-[Volver al Índice General.](#índice-general)
-
----
-
-
-
-## 4.2. Datos de interés del disco duro.
-
-
-
-
-
-
-
-
-
-
-[Volver al Índice del capítulo 4. Análisis del disco duro.](#índice-del-capítulo-4-análisis-del-disco-duro)
-
-[Volver al Índice General.](#índice-general)
-
----
-
-
-
-## 4.3. Usuarios del sistema.
-
-
-
-
-
-
-
-[Volver al Índice del capítulo 4. Análisis del disco duro.](#índice-del-capítulo-4-análisis-del-disco-duro)
-
-[Volver al Índice General.](#índice-general)
-
----
-
-
-
-## 4.4. Análisis de evidencias del disco duro.
-
-
-
-
-
-
-[Volver al Índice del capítulo 4. Análisis del disco duro.](#índice-del-capítulo-4-análisis-del-disco-duro)
-
-[Volver al Índice General.](#índice-general)
-
----
-
-
-
-# 5. Resumen ejecutivo.
-
-## Índice del capítulo 5. Resumen ejecutivo.
-
-
-
-
-
-
-
-
-[Volver al Índice General.](#índice-general)
-
----
-
-
-
-## 5.0. Introducción al capítulo 5. Resumen ejecutivo.
-
-
-
-
-
-
-[Volver al Índice del capítulo 5. Resumen ejecutivo.](#índice-del-capítulo-5-resumen-ejecutivo)
-
-[Volver al Índice General.](#índice-general)
-
----
-
-
-
-## 5.1. Resumen ejecutivo.
-
-
-
-
-
-
-
-
-
-
-
-[Volver al Índice del capítulo 5. Resumen ejecutivo.](#índice-del-capítulo-5-resumen-ejecutivo)
-
-[Volver al Índice General.](#índice-general)
-
----
-
-
-
-# 6. Informe pericial.
-
-## Índice del capítulo 6. Informe pericial.
-
-[Volver al Índice General.](#índice-general)
-
----
-
-
-
-## 6.0. Introducción al capítulo 6. Informe pericial.
-
-[Volver al Índice del capítulo 6. Informe pericial.](#índice-del-capítulo-6-informe-pericial)
-
-[Volver al Índice General.](#índice-general)
-
----
-
-
-
-## 6.1. Informe pericial.
-
-[Volver al Índice del capítulo 6. Informe pericial.](#índice-del-capítulo-6-informe-pericial)
-
-[Volver al Índice General.](#índice-general)
-
----
-
-
-
-# 7. Conclusiones.
-
-## Índice del capítulo 7. Conclusiones.
-
-[Volver al Índice General.](#índice-general)
-
----
-
-
-
-## 7.0. Introducción al capítulo 7. Conclusiones.
-
-
-
-
-
-[Volver al Índice del capítulo 7. Conclusiones.](#índice-del-capítulo-7-conclusiones)
-
-[Volver al Índice General.](#índice-general)
-
----
-
-
-
-## 7.1. Conclusiones.
-
-
-
-
-
-
-
-
-[Volver al Índice del capítulo 7. Conclusiones.](#índice-del-capítulo-7-conclusiones)
-
-[Volver al Índice General.](#índice-general)
-
----
-
-
-
-# 8. Anexos.
-
-## Índice del capítulo 8. Anexos.
-
-
-
-
-
-
-[Volver al Índice General.](#índice-general)
-
----
-
-
-
-
-## 8.0. Introducción al capítulo 8. Anexos.
-
-
-
-
-[Volver al Índice del capítulo 8. Anexos.](#índice-del-capítulo-8-anexos)
-
-[Volver al Índice General.](#índice-general)
-
----
-
-
-
-## 8.1. Creación de perfil para volatility.
-
-### 8.1.0. Introducción de creación de perfil de volatility.
-
-Crear un perfil de volatility es fundamental para poder extraer la información de los datos de la ram.
-
-En el repositorio de github de volatility podemos observar perfiles relativos a windows, pero ninguno relativo al sistema operativo linux. Si ejecutamos el comando `sudo python2.7 vol.py --info` tenemos la siguiente respuesta relativo a perfiles:
-
-~~~Shell
-Profiles
---------
-VistaSP0x64                         - A Profile for Windows Vista SP0 x64
-VistaSP0x86                         - A Profile for Windows Vista SP0 x86
-VistaSP1x64                         - A Profile for Windows Vista SP1 x64
-VistaSP1x86                         - A Profile for Windows Vista SP1 x86
-VistaSP2x64                         - A Profile for Windows Vista SP2 x64
-VistaSP2x86                         - A Profile for Windows Vista SP2 x86
-Win10x64                            - A Profile for Windows 10 x64
-Win10x64_10240_17770                - A Profile for Windows 10 x64 (10.0.10240.17770 / 2018-02-10)
-Win10x64_10586                      - A Profile for Windows 10 x64 (10.0.10586.306 / 2016-04-23)
-Win10x64_14393                      - A Profile for Windows 10 x64 (10.0.14393.0 / 2016-07-16)
-Win10x64_15063                      - A Profile for Windows 10 x64 (10.0.15063.0 / 2017-04-04)
-Win10x64_16299                      - A Profile for Windows 10 x64 (10.0.16299.0 / 2017-09-22)
-Win10x64_17134                      - A Profile for Windows 10 x64 (10.0.17134.1 / 2018-04-11)
-Win10x64_17763                      - A Profile for Windows 10 x64 (10.0.17763.0 / 2018-10-12)
-Win10x64_18362                      - A Profile for Windows 10 x64 (10.0.18362.0 / 2019-04-23)
-Win10x64_19041                      - A Profile for Windows 10 x64 (10.0.19041.0 / 2020-04-17)
-Win10x86                            - A Profile for Windows 10 x86
-Win10x86_10240_17770                - A Profile for Windows 10 x86 (10.0.10240.17770 / 2018-02-10)
-Win10x86_10586                      - A Profile for Windows 10 x86 (10.0.10586.420 / 2016-05-28)
-Win10x86_14393                      - A Profile for Windows 10 x86 (10.0.14393.0 / 2016-07-16)
-Win10x86_15063                      - A Profile for Windows 10 x86 (10.0.15063.0 / 2017-04-04)
-Win10x86_16299                      - A Profile for Windows 10 x86 (10.0.16299.15 / 2017-09-29)
-Win10x86_17134                      - A Profile for Windows 10 x86 (10.0.17134.1 / 2018-04-11)
-Win10x86_17763                      - A Profile for Windows 10 x86 (10.0.17763.0 / 2018-10-12)
-Win10x86_18362                      - A Profile for Windows 10 x86 (10.0.18362.0 / 2019-04-23)
-Win10x86_19041                      - A Profile for Windows 10 x86 (10.0.19041.0 / 2020-04-17)
-Win2003SP0x86                       - A Profile for Windows 2003 SP0 x86
-Win2003SP1x64                       - A Profile for Windows 2003 SP1 x64
-Win2003SP1x86                       - A Profile for Windows 2003 SP1 x86
-Win2003SP2x64                       - A Profile for Windows 2003 SP2 x64
-Win2003SP2x86                       - A Profile for Windows 2003 SP2 x86
-Win2008R2SP0x64                     - A Profile for Windows 2008 R2 SP0 x64
-Win2008R2SP1x64                     - A Profile for Windows 2008 R2 SP1 x64
-Win2008R2SP1x64_23418               - A Profile for Windows 2008 R2 SP1 x64 (6.1.7601.23418 / 2016-04-09)
-Win2008R2SP1x64_24000               - A Profile for Windows 2008 R2 SP1 x64 (6.1.7601.24000 / 2016-04-09)
-Win2008SP1x64                       - A Profile for Windows 2008 SP1 x64
-Win2008SP1x86                       - A Profile for Windows 2008 SP1 x86
-Win2008SP2x64                       - A Profile for Windows 2008 SP2 x64
-Win2008SP2x86                       - A Profile for Windows 2008 SP2 x86
-Win2012R2x64                        - A Profile for Windows Server 2012 R2 x64
-Win2012R2x64_18340                  - A Profile for Windows Server 2012 R2 x64 (6.3.9600.18340 / 2016-05-13)
-Win2012x64                          - A Profile for Windows Server 2012 x64
-Win2016x64_14393                    - A Profile for Windows Server 2016 x64 (10.0.14393.0 / 2016-07-16)
-Win7SP0x64                          - A Profile for Windows 7 SP0 x64
-Win7SP0x86                          - A Profile for Windows 7 SP0 x86
-Win7SP1x64                          - A Profile for Windows 7 SP1 x64
-Win7SP1x64_23418                    - A Profile for Windows 7 SP1 x64 (6.1.7601.23418 / 2016-04-09)
-Win7SP1x64_24000                    - A Profile for Windows 7 SP1 x64 (6.1.7601.24000 / 2018-01-09)
-Win7SP1x86                          - A Profile for Windows 7 SP1 x86
-Win7SP1x86_23418                    - A Profile for Windows 7 SP1 x86 (6.1.7601.23418 / 2016-04-09)
-Win7SP1x86_24000                    - A Profile for Windows 7 SP1 x86 (6.1.7601.24000 / 2018-01-09)
-Win81U1x64                          - A Profile for Windows 8.1 Update 1 x64
-Win81U1x86                          - A Profile for Windows 8.1 Update 1 x86
-Win8SP0x64                          - A Profile for Windows 8 x64
-Win8SP0x86                          - A Profile for Windows 8 x86
-Win8SP1x64                          - A Profile for Windows 8.1 x64
-Win8SP1x64_18340                    - A Profile for Windows 8.1 x64 (6.3.9600.18340 / 2016-05-13)
-Win8SP1x86                          - A Profile for Windows 8.1 x86
-WinXPSP1x64                         - A Profile for Windows XP SP1 x64
-WinXPSP2x64                         - A Profile for Windows XP SP2 x64
-WinXPSP2x86                         - A Profile for Windows XP SP2 x86
-WinXPSP3x86                         - A Profile for Windows XP SP3 x86
-~~~
-
-[Volver al Índice del capítulo 8. Anexos.](#índice-del-capítulo-8-anexos)
-
-### 8.1.1. Creación de la máquina virtual.
-
-Vamos crear una máquina virtual para generar una máquina virtual base con el mismo kernel que el servidor auditado.
-
-![025-detalles-servidor-perfil-volatility](./images/025-detalles-servidor-perfil-volatility.png)
-
-[Volver al Índice del capítulo 8. Anexos.](#índice-del-capítulo-8-anexos)
-
-
-
-### 8.1.2. Búsqueda en cache del kernel relativo al perfil a crear.
-
-Procedemos a arrancar la máquina virtual (en adelante VM), una vez realizado el login, procedemos a ejecutar el comando `sudo apt-cache search linux-image | grep 4.15.0-1021`.
-
-Este comando realiza dos acciones, por un lado `sudo apt-cache search linux-image`, y por otro `grep 4.15.0-1021`. Gracias al  "pipe" o "|", pasaremos la respuesta del primera acción como entrada de la segunda acción.. Es una parte fundamental de la filosofía de Unix que permite a los usuarios combinar múltiples comandos sencillos para realizar tareas más complejas. En nuestro caso:
-
-**sudo apt-cache search linux-image.**
-
-  - Esta parte del comando busca en la caché de APT (Advanced Package Tool) todos los paquetes cuyos nombres o descripciones contienen la cadena "linux-image". Los paquetes "linux-image" generalmente se refieren a imágenes del kernel de Linux para diferentes versiones y configuraciones.
-
-**| grep 4.15.0-1021.**
-
-  - La salida del primer comando se canaliza (|) al comando grep, que filtra y muestra solo las líneas que contienen la cadena "4.15.0-1021". En este contexto, "4.15.0-1021" probablemente se refiere a una versión específica del kernel de Linux.
-
-Al combinar estos dos comandos, `sudo apt-cache search linux-image | grep 4.15.0-1021` efectivamente busca y lista todas las versiones de las imágenes del kernel de Linux disponibles en los repositorios que coincidan con la versión específica "4.15.0-1021". Este comando es útil para identificar si una versión específica del kernel está disponible para la instalación o actualización en el sistema.
-
-Se adjunta pantallazo de la respuesta por parte de la consola.
-
-
-##### [Imagen 009](#83009)
-
-
-[Volver al Índice del capítulo 8. Anexos.](#índice-del-capítulo-8-anexos)
-
-
-
-### 8.1.3. Instalación del kernel relativo al perfil a crear.
-
-Una vez encontrado la imagen del kernel que buscamos, procedemos a instalarla en el sistema, para ello ejecutamos el comando `sudo apt-get install linux-image-4.15.0-2021-aws`.
-
-El comando `sudo apt-get install linux-image-4.15.0-2021-aws` en Ubuntu o sistemas basados en Debian, se utiliza para instalar una versión específica del kernel de Linux, diseñada para ambientes Amazon Web Services (AWS). Al usar `sudo`, el comando se ejecuta con privilegios de superusuario, necesarios para instalar software a nivel de sistema. `apt-get install` es parte del sistema de gestión de paquetes APT, y se usa aquí para instalar el paquete `linux-image-4.15.0-2021-aws`. Este paquete contiene una imagen del kernel de Linux, la cual está optimizada para correr en servidores AWS, indicando que este kernel podría tener configuraciones o parches específicos para un rendimiento mejorado o características adicionales en esa plataforma. **Al instalar un nuevo kernel, es importante reiniciar el sistema para que empiece a usar esta nueva versión.**
-
-Se adjunta pantallazo de la instalación del kernel de AWS:
-
-##### [Imagen 010](#83010)
-
-Como hemos indicado anteriormente, es necesario reiniciar el sistema para que el kernel instalado se utilice en el Sistema operativo, procederemos a ejecutar el comando `sudo reboot now` para realizar esta acción.
-
-##### [Imagen 011](#83011)
-
-Una vez reiniciado el sistema, procedemos a ejecutar el comando `uname - r` para comprobar que el comando se ha ejecutado correctamente.
-
-##### [Imagen 012](#83012)
-
-[Volver al Índice del capítulo 8. Anexos.](#índice-del-capítulo-8-anexos)
-
-### 8.1.4. Instalación de volatility.
-
-Una vez comprobado, procederemos a la instalación de volatility en el servidor de ubuntu.
-
-Primero de todo instalaremos los paquetes relativos a `dwarfdum`, `gcc`, `linux-headers` y `git`, ya que el servidor no los tiene instalado por defecto.
-
- Seguiremos los pasos ya indicados en el [Apartado 3.2](#32-sistema-operativo-de-la-memoria-ram-analizada):
-
-[![Miniatura video Volatility](./images/024-miniatura-instalacion-volatility.png)](https://youtu.be/z_SWIIa3AnY)
-
-> https://www.youtube.com/watch?v=z_SWIIa3AnY
-
-Una vez instalado, procedemos a realizar los pasos para la creación del perfil de volatility.
-
-[Volver al Índice del capítulo 8. Anexos.](#índice-del-capítulo-8-anexos)
-
-### 8.1.5. Creación del perfil de volatility.
-
-Una vez hemos realizado la instalación procedemos a crear el perfil de volatility.
-
-Para ello entraremos en la carpeta `home/jrodg85/volatility/tools/linux`, una vez allí dentro ejecutaremos el comando `make`. En la siguiente imagen, se puede ver un pantallazo del comando, en caso de tener error del mismo, lo mas recomendable es hacer un `make clean` y después volver a ejecutar `make`. Lo mas importante es que se tiene que crear el archivo **`modules.dwarf`**
-
-##### [Imagen 013](#83013)
-
-Ahora procederemos a nombrar el perfil de volatility para ello vamos a generar un archivo zip, este archivo, como norma general, usaremos los valores de `lsb_release -si` y `uname -r`. De esta manera nombraremos de manera correcta el perfil de volatility para después no tengamos problemas al importarlo dentro de la máquina donde estamos realizando la investigación.
-
-![017-lsb-release-y-uname-r.png](./images/017-lsb-release-y-uname-r.png)
-
-Este archivo zip, debe de contener los dos archivos necesarios de perfil:
-
-**modules.dwarf**
-
-- Este archivo se genera a partir de los módulos del kernel de Linux y contiene información sobre las estructuras de datos del kernel. Es creado usando, en nuestro caso, la herramienta dwarfdump sobre módulos del kernel compilados con símbolos de depuración (debugging symbols). El archivo module.dwarf es crucial porque contiene los offsets y las definiciones de las estructuras de datos internas del kernel, lo que permite a Volatility entender cómo están organizados los datos en el volcado de memoria.
-
-**/boot/System.map-4.15.0-1021-aws**
-
-- Este archivo es un mapa de símbolos del kernel. Proporciona una lista de todas las funciones y variables en el kernel, junto con sus direcciones de memoria. Cada versión del kernel de Linux tiene su propio archivo System.map, y el archivo específico para una versión dada del kernel (en tu caso, 4.15.0-1021-aws) es necesario para analizar un volcado de memoria tomado de un sistema que ejecuta esa versión del kernel. Este archivo es esencial para que Volatility pueda mapear las direcciones de memoria en el volcado a nombres de funciones y variables específicas en el kernel.
-
-Para la generación del perfil, procederemos a ejecutar el comando `sudo zip /home/jrodg85/volatility/volatility/plugins/overlays/linux$(lsb_release -si)_$(uname -r)_profiles.zip /home/jrodg85/volatility/tools/linux/module.dwarf /boot/System.map-4.15.0-1021-aws`
-
-![018-perfil-generado.png](./images/018-perfil-generado.png)
-
-Una vez creado el perfil, tenemos que sacar el perfil del servidor para después pegarlo dentro de la máquina una donde realizaremos el análisis. para ello procederemos a montar un usb dentro del servidor del ubuntu, posteriormente copiamos el archivo, `/home/jrodg85/volatility/volatility/plugins/overlays/linuxUbuntu_4.15.0-1021-aws_profile.zip`, y lo pegamos en el USB, posteriormente, procedemos a insertar en la VM de análisis en la carpeta en la carpeta `/home/jrodg85/volatility/volatility/plugins/overlays/linux` tal y como se muestra en la siguiente imagen.
-
-![021-copiado-en-entorno-volatility.png](./images/021-copiado-en-entorno-volatility.png)
-
-para comprobar que esta correctamente creado el perfil procedemos a ejecutar el comando `sudo python2.7 col.py --info`, donde se podrá observar que se ha creado correctamente el perfil.
-
-
-![022-perfil-creado.png](./images/022-perfil-creado.png)
-
-
-[Volver al Índice del capítulo 8. Anexos.](#índice-del-capítulo-8-anexos)
-
-[Volver al Índice General.](#índice-general)
-
----
-
-## 8.2. Glosario de términos y abreviaturas.
-
-#### **Análisis de archivo.**
-
-- Examina cada archivo digital descubierto y crea una base de datos de información relacionada al archivo (metadatos, etc.), consistente entre otras cosas en la firma del archivo o hash (indica la integridad del archivo).
-
-#### **Cadena de custodia.**
-
-- La identidad de personas que manejan la evidencia en el tiempo del suceso y la última revisión del caso. Es la responsabilidad de la persona que maneja la evidencia asegurar que los artículos son registrados y contabilizados durante el tiempo en el cual están en su poder, y que son protegidos, así mismo llevando un registro de los nombres de las personas que manejaron la evidencia o artículos durante el lapso de tiempo y fechas de entrega y recepción.VCX
-
-#### **Ciencia forense digital (digital forensics).**
-
-- Es una forma de aplicar los conceptos y procedimientos de la criminalística a los medios informáticos o digitales. Su objetivo es apoyar al poder judicial en el contexto de la inseguridad informática es decir, la perpetración de posibles delitos aclarando temas relacionados con incidentes o fraudes.
-
-#### **Ciencia forense en las redes (network forensics).**
-
-- Trata las operaciones de redes de computadores, estableciendo rastros e identificando movimientos y acciones. Es necesario entender los protocolos, configuraciones y la infraestructura de las comunicaciones. A diferencia de la computación forense, es necesario poder establecer relaciones entre eventos diferentes e incluso aleatorios.
-
-#### **Computación forense (computer forensics):**
-
-1. Disciplina de la ciencia forense que considera los procedimientos en relación con las evidencias para descubrir e interpretar la información en los medios informáticos con el fin de establecer hipótesis o hechos relacionados con un caso. (Centrada en las consideraciones forenses).
-
-2. Disciplina científica que ofrece un análisis de la información que contienen las tecnologías y de los equipos de computación a partir de su compresión.(Centrada en la tecnología).
-
-#### **Imagen forense.**
-
-- Técnica llamada también "espejeo" (en inglés "Mirroring"), la cual es una copia binaria de un medio electrónico de almacenamiento. En la imagen quedan grabados los espacios que ocupan los archivos y las áreas borradas incluyendo particiones escondidas.
-
-
-[Volver al Índice del capítulo 8. Anexos.](#índice-del-capítulo-8-anexos)
-
-[Volver al Índice General.](#índice-general)
-
----
-
-## 8.3. Imágenes.
-
----
-
-#### 8.3.001.003.005.001. Diagrama de metodología del análisis forense.
-
-![001-003-005-001](./images/001-003-005-001-FASES-METODOLOGIA-ANALISIS-FORENSE.png)
-
-[Volver al texto de la imagen en la Sección 1.3.5.](#135-imagen-001)
-
----
-
-#### 8.3.001.003.005.002. Fases 1 2 y 3 de la metodología del análisis forense.
-
-![001-003-005-002](./images/001-003-005-002-FASES-1-2-3-METODOLOGIA-ANALISIS-FORENSE.png)
-
-[Volver al texto de la imagen en la Sección 1.3.5.](#135-imagen-002-135-imagen-003-135-imagen-004)
-
----
-
-#### 8.3.001.003.005.003. Fases 4 5 y 6 de la metodología del análisis forense.
-
-![001-003-005-003](./images/001-003-005-003-FASES-4-5-6-METODOLOGIA-ANALISIS-FORENSE.png)
-
-[Volver al texto de la imagen en la Sección 1.3.5.](#135-imagen-002-135-imagen-003-135-imagen-004)
-
----
-
-#### 8.3.001.003.005.004. Fase 7 de la metodología del análisis forense.
-
-![001-003-005-004](./images/001-003-005-004-FASE-7-METODOLOGIA-ANALISIS-FORENSE.png)
-
-[Volver al texto de la imagen en la Sección 1.3.5.](#135-imagen-002-135-imagen-003-135-imagen-004)
-
----
-
-#### 8.3.001.003.005.005. Orden de volatilidad análisis forense.
-
-![001-003-005-005](./images/001-003-005-005-ORDEN-VOLATILIDAD-RFC-3227.png)
-
-[Volver al texto de la imagen en la Sección 1.3.5.](#135-Imagen-005)
-
----
-
-#### 8.3.001.006.001. Diagrama de Gantt reto/PEC 1.
-
-![001-006-001](./images/001-006-001-diagrama-de-gantt-pec-01.png)
-
-[Volver al texto de la imagen en la Sección 1.6.](#16-Imagen-001)
-
----
-
----
-
-#### 8.3.001.006.002. Diagrama de Gantt reto/PEC 2.
-
-![001-006-002](./images/001-006-002-diagrama-de-gantt-pec-02.png)
-
-[Volver al texto de la imagen en la Sección 1.6.](#16-Imagen-001)
-
----
-
----
-
-#### 8.3.001.006.003. Diagrama de Gantt reto/PEC 3.
-![001-006-003](./images/001-006-003-diagrama-de-gantt-pec-03.png)
-
-[Volver al texto de la imagen en la Sección 1.6.](#16-Imagen-003)
-
----
-
----
-
-#### 8.3.001.006.004. Diagrama de Gantt reto/PEC 4.
-
-![001-006-004-](./images/001-006-004-diagrama-de-gantt-pec-04.png)
-
-[Volver al texto de la imagen en la Sección 1.6.](#16-imagen-004)
-
----
-
-#### 8.3.003.001.001. Imagen Hash archivos.
-
-![005-imagen-hash-archivos.png](./images/005-imagen-hash-archivos.png)
-
-[Volver al texto de la imagen en la Sección 005.](#31-imagen-001)
-
----
-
-#### 8.3.007. Imagen Hash archivos.
-
-![006-captura-hash-PowerShell.png](./images/006-captura-hash-PowerShell.png)
-
-[Volver al texto de la imagen en la Sección 006.](#imagen-006)
-
----
-
-#### 8.3.008. Imagen de imageinfo.
-
-![007-captura-imageinfo.png](./images/007-captura-imageinfo.png)
-
-[Volver al texto de la imagen en la Seccióne en la seccion  007.](#imagen-007)
-
----
-
-#### 8.3.009. Imagen de búsqueda de string linux version.
-
-![008-buscar-strings-linux-version.png](./images/008-buscar-strings-linux-version.png)
-
-[Volver al texto de la imagen en la Sección 008.](#imagen-008)
-
----
-
-#### 8.3.010. Imagen de buscando caché de AWS.
-
-![009-buscando-cache-aws.png](./images/009-buscando-cache-aws.png)
-
-[Volver al texto de la imagen en la Sección 009.](#imagen-009)
-
----
-
-#### 8.3.011. Imagen de instalación de kernel de AWS.
-
-![010-instalación-kernel-aws.png](./images/010-instalacion-kernel-aws.png)
-
-[Volver al texto de la imagen en la Sección 010.](#imagen-010)
-
----
-
-#### 8.3.012. Imagen de reicicio del servidor de AWS.
-
-![011-reinicio-server-aws.png](./images/011-reinicio-server-aws.png)
-
-[Volver al texto de la imagen en la Sección 011.](#imagen-011)
-
----
-
-#### 8.3.013. Imagen de reinicio del servidor con kernel de AWS.
-
-![012-inicio-con-server-aws.png](./images/012-inicio-con-server-aws.png)
-
-[Volver al texto de la imagen en la Sección 012.](#imagen-012)
-
----
-
-#### 8.3.013. .
-
-![013-make-clean-clear-make.png](./images/013-make-clean-clear-make.png)
-
-[Volver al texto de la imagen en la Sección 013.](#imagen-013)
-
----
-
-
-
-
-
-
-
-
-
-
-
-
-
-[Volver al Índice del capítulo 8. Anexos.](#índice-del-capítulo-8-anexos)
-
-[Volver al Índice General.](#índice-general)
-
----
-
-## 8.4. Videos.
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-[Volver al Índice del capítulo 8. Anexos.](#índice-del-capítulo-8-anexos)
-
-[Volver al Índice General.](#índice-general)
-
----
-
-## 8.5. Extracto de comandos utilizados.
-
-
-
-
-
-
-
-
-
 
 
 [Volver al Índice del capítulo 8. Anexos.](#índice-del-capítulo-8-anexos)
@@ -2725,7 +2677,7 @@ para comprobar que esta correctamente creado el perfil procedemos a ejecutar el 
 - URL: [https://openaccess.uoc.edu/bitstream/10609/39681/6/cgervillarTFM1214memoria.pdf](https://openaccess.uoc.edu/bitstream/10609/39681/6/cgervillarTFM1214memoria.pdf)
 - URL repositorio Github: [007-METODOLOGÍA-PARA-UN-ANÁLISIS-FORENSE.pdf](https://github.com/jrodg85/TFM-ANALISIS-FORENSE/blob/main/referencias/007-METODOLOGÍA-PARA-UN-ANÁLISIS-FORENSE.pdf)
 
-[Volver at texto de la referencia en la Sección 1.3.5.](#135-referencia-008)
+[Volver at texto de la referencia en la Sección 1.3.5.](#135-referencia-008-135-referencia-009)
 
 ---
 
@@ -2735,9 +2687,20 @@ para comprobar que esta correctamente creado el perfil procedemos a ejecutar el 
 - Título del trabajo: Metodología de Análisis Forense (Ninjas de la Web).
 - URL: [https://ninjasdelaweb.com/metodologia-de-analisis-forense/](https://ninjasdelaweb.com/metodologia-de-analisis-forense/)
 
-[Volver at texto de la referencia en la Sección 1.3.5.](#135-referencia-009)
+[Volver at texto de la referencia en la Sección 1.3.5.](#135-referencia-008-135-referencia-009)
 
 ---
+
+#### 8.6.010. Cómputo Forense de Wikipedia
+
+- Autor: Avelaz
+- Ultimo editor: Sabbut
+- Título visualizado: Cómputo forense
+- Criterio de ordenación predeterminado: Cómputo forense
+- URL: [https://es.wikipedia.org/wiki/C%C3%B3mputo_forense](https://es.wikipedia.org/wiki/C%C3%B3mputo_forense)
+
+[Volver at texto de la referencia en la Sección 1.7.](#17-referencia-010)
+
 
 [Volver al Índice del capítulo 8. Anexos.](#índice-del-capítulo-8-anexos)
 
@@ -2746,3 +2709,12 @@ para comprobar que esta correctamente creado el perfil procedemos a ejecutar el 
 ---
 
 ## 8.7. Linea de tiempo de evidencias.
+
+
+
+
+[Volver al Índice del capítulo 8. Anexos.](#índice-del-capítulo-8-anexos)
+
+[Volver al Índice General.](#índice-general)
+
+---
