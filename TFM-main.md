@@ -61,7 +61,7 @@ Enero de 2024.
     - [1.7. Revisión del estado del arte de la informática forense.](#17-revisión-del-estado-del-arte-de-la-informática-forense)
 - [2. Extremos del análisis y previsión de pruebas técnicas.](#2-extremos-del-análisis-y-previsión-de-pruebas-técnicas)
     - [Índice del capítulo 2. Extremos del análisis y previsión de pruebas técnicas.](#índice-del-capítulo-2-extremos-del-análisis-y-previsión-de-pruebas-técnicas)
-    - [2.0. Introducción al capítulo 2. Extremos del análisis y previsión de pruebas técnicas.](#índice-del-capítulo-2-extremos-del-análisis-y-previsión-de-pruebas-técnicas)
+    - [2.0. Introducción al capítulo 2. Extremos del análisis y previsión de pruebas técnicas.](#20-introducción-al-capítulo-2-extremos-del-análisis-y-previsión-de-pruebas-técnicas)
     - [2.1. Propuesta de extremos.](#21-propuesta-de-extremos)
     - [2.2. Previsión de pruebas técnicas.](#22-previsión-de-pruebas-técnicas)
 - [3. Análisis de la memoria RAM.](#3-análisis-de-la-memoria-ram)
@@ -69,9 +69,10 @@ Enero de 2024.
     - [3.0. Introducción al capítulo 3. Análisis de la memoria RAM.](#30-introducción-al-capítulo-3-análisis-de-la-memoria-ram)
     - [3.1. Acciones previas al análisis de la memoria RAM.](#31-acciones-previas-al-análisis-de-la-memoria-ram)
     - [3.2. Sistema Operativo de la memoria RAM analizada.](#32-sistema-operativo-de-la-memoria-ram-analizada)
-    - [3.3. Datos de interés de la captura de la memoria RAM.](#33-datos-de-interés-de-la-captura-de-la-memoria-ram)
-    - [3.4. Búsqueda de procesos en funcionamiento de interés para el análisis.](#34-búsqueda-de-procesos-en-funcionamiento-de-interés-para-el-análisis)
-    - [3.5. Listado de conexiones de red y conexiones sospechosas.](#35-listado-de-conexiones-de-red-y-conexiones-sospechosas)
+    - [3.3. Creación de perfil para volatility.](#33-creación-de-perfil-para-volatility)
+    - [3.4. Datos de interés de la captura de la memoria RAM.](#34-datos-de-interés-de-la-captura-de-la-memoria-ram)
+    - [3.5. Búsqueda de procesos en funcionamiento de interés para el análisis.](#35-búsqueda-de-procesos-en-funcionamiento-de-interés-para-el-análisis)
+    - [3.6. Listado de conexiones de red y conexiones sospechosas.](#36-listado-de-conexiones-de-red-y-conexiones-sospechosas)
 - [4. Análisis del disco duro.](#4-análisis-del-disco-duro)
     - [Índice del capítulo 4. Análisis del disco duro.](#índice-del-capítulo-4-análisis-del-disco-duro)
     - [4.0. Introducción al capítulo 4. Análisis del disco duro.](#40-introducción-al-capítulo-4-análisis-del-disco-duro)
@@ -94,17 +95,16 @@ Enero de 2024.
 - [8. Anexos.](#8-anexos)
     - [Índice del capítulo 8. Anexos.](#índice-del-capítulo-8-anexos)
     - [8.0. Introducción al capítulo 8. Anexos.](#80-introducción-al-capítulo-8-anexos)
-    - [8.1. Creación de perfil para volatility.](#81-creación-de-perfil-para-volatility)
-    - [8.2. Glosario de términos y abreviaturas.](#82-glosario-de-términos-y-abreviaturas)
-    - [8.3. Imágenes.](#83-imágenes)
-    - [8.4. Videos.](#84-videos)
-    - [8.5. Extracto de comandos utilizados.](#85-extracto-de-comandos-utilizados)
-    - [8.5. Referencias.](#86-referencias)
-    - [8.6. Linea de tiempo de evidencias.](#87-linea-de-tiempo-de-evidencias)
+    - [8.1. Glosario de términos y abreviaturas.](#81-glosario-de-términos-y-abreviaturas)
+    - [8.2. Imágenes.](#82-imágenes)
+    - [8.3. Videos.](#83-videos)
+    - [8.4. Extracto de comandos utilizados.](#84-extracto-de-comandos-utilizados)
+    - [8.5. Referencias.](#85-referencias)
+    - [8.6. Linea de tiempo de evidencias.](#86-linea-de-tiempo-de-evidencias)
 
 ---
 
-<br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>
+<br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>
 
 # Deuda técnica.
 
@@ -116,7 +116,7 @@ PEC 1
 
 **DEUDA TÉCNICA: plantear posible reducción del estado del arte**
 
-**DEUDA TÉCNICA: Referencia a WIKPEDIA**
+**DEUDA TÉCNICA: Referencia a Wikipedia**
 
 PEC 2
 
@@ -147,11 +147,11 @@ A mi esposa e hija, acompañantes en todo momento de esta aventura académica.
 
 A mis compañeros de trabajo, Juanma, Luisma y Borja, que saben de que estos tres años que llevo realizando este master y han conocido todos los derroteros que me ha llevado este camino.
 
-**[Volver al Índice General.](#índice-general)**
+**[Volver al Índice General.](#índice-general)** 
 
 ---
 
-<br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>
+<br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>
 
 # 1. Plan de trabajo.
 
@@ -175,30 +175,28 @@ A mis compañeros de trabajo, Juanma, Luisma y Borja, que saben de que estos tre
     - [1.7.3. Objetivos de la informática forense.](#173-objetivos-de-la-informática-forense)
     - [1.7.4. Evidencia digital.](#174-evidencia-digital)
     - [1.7.5. Perspectiva de tres roles.](#175-perspectiva-de-tres-roles)
-    - [1.7.6. Retos y riesgos en el análisis forense.](#176-retos-y-riesgos-en-el-cómputo-forense)
+    - [1.7.6. Retos y riesgos en el análisis forense.](#176-retos-y-riesgos-en-el-análisis-forense)
     - [1.7.7. Herramientas del análisis forense.](#177-herramientas-de-análisis-forense)
 
-**[Volver al Índice General.](#índice-general)**
+**[Volver al Índice General.](#índice-general)** 
 
 ---
 
-<br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>
+<br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>
 
 ## 1.0. Introducción al capítulo 1. Plan de trabajo.
 
-#### [1.0. Glosario 001: CISO.](#82001000001-ciso)
+La situación en la que nos encontramos es un caso práctico laboral, en el que realizamos el papel de **<u style='color:red'>CISO</u>**.
 
-La situación en la que nos encontramos es un caso práctico laboral, en el que realizamos el papel de [CISO](#82001000001-ciso).
+En este caso, la dirección de la empresa tiene serias sospechas, no probadas, de que han accedido a los sistemas de forma ilícita. Por lo que el gerente de la empresa me solicita, como **<u style='color:red'>CISO</u>**, que se compruebe si realmente han accedido, así como el método que han utilizado. Por otro lado, solicitan las consecuencias que se derivan del dicho acceso, si ha habido extracción de información alguna.
 
-En este caso, la dirección de la empresa tiene serias sospechas, no probadas, de que han accedido a los sistemas de forma ilícita. Por lo que el gerente de la empresa me solicita, como [CISO](#82001000001-ciso), que se compruebe si realmente han accedido, así como el método que han utilizado. Por otro lado, solicitan las consecuencias que se derivan del dicho acceso, si ha habido extracción de información alguna.
-
-#### [1.0. Referencia 001.](#86001-enunciado-tfm)
+#### [1.0. Referencia 001.](#85001-enunciado-tfm)
 
 **[Volver al Índice del capítulo 1. Plan de trabajo.](#índice-del-capítulo-1-plan-de-trabajo) &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; [Volver al Índice General.](#índice-general)**
 
 ---
 
-<br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>
+<br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>
 
 ## 1.1. Problema a resolver.
 
@@ -208,13 +206,13 @@ Una definición idónea que se puede adoptar en el presente Trabajo de Final de 
 
 Solventar las necesidades del gerente de la empresa mediante el análisis forense del disco duro y la captura de memoria de un ordenador personal, en un caso real con un sistema virtualizado, vinculado a una presunta conducta delictiva real. Para ello, se utilizarán herramientas específicas para la localización de las evidencias digitales sobre los discos duros y la memoria que puedan demostrar el presunto delito (Encase, Autopsy, Volatility, o cualquier otra herramienta, o conjunto de herramientas con prestaciones equivalentes). Finalmente, las evidencias localizadas deberán recogerse en un informe ejecutivo o pericial, el cual, además de los aspectos técnicos, deberá tener en cuenta aquellos requisitos procesales necesarios para que el análisis pueda tener validez en un proceso judicial.
 
-#### [1.1. Referencia 002.](#86002-propuestas-de-tfm)
+#### [1.1. Referencia 002.](#85002-propuestas-de-tfm)
 
 **[Volver al Índice del capítulo 1. Plan de trabajo.](#índice-del-capítulo-1-plan-de-trabajo) &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; [Volver al Índice General.](#índice-general)**
 
 ---
 
-<br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>
+<br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>
 
 ## 1.2. Objetivos.
 
@@ -292,13 +290,13 @@ Se describe un el siguiente listado de objetivos que se obtienen al analizar el 
     - 4.1. Basarse en ideas fuerza que han aparecido durante todo el TFM.
     - 4.2. Tener en cuenta que este apartado es el que finalmente, el gerente de la empresa, como miembro directivo de la misma, usando el método del Presidente Reagan.
 
-#### [1.2. Referencia 001.](#86001-enunciado-tfm) &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; [1.2. Referencia 003.](#86003-el-método-reagan)
+#### [1.2. Referencia 001.](#85001-enunciado-tfm) &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; [1.2. Referencia 003.](#85003-el-método-reagan)
 
 **[Volver al Índice del capítulo 1. Plan de trabajo.](#índice-del-capítulo-1-plan-de-trabajo) &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; [Volver al Índice General.](#índice-general)**
 
 ---
 
-<br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>
+<br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>
 
 ## 1.3. Metodologías.
 
@@ -309,8 +307,6 @@ En esta sección se procederá a realizar un repaso general de algunas de las no
 Primero abordaremos un pequeño estudio relativo a las normas ISO 27037 e ISO 30131, posteriormente abordaremos la normativa RFC 3227 para finalmente comentar un resumen de las normas UNE 71505 y UNE 71506.
 
 Por ultimo, pero no menos importante, trataré unas conclusiones sobre esta sección.
-
-**[Volver al Índice del capítulo 1. Plan de trabajo.](#índice-del-capítulo-1-plan-de-trabajo)**
 
 ---
 
@@ -343,14 +339,14 @@ Resumiendo, se puede destacar que esta norma ofrece orientación sobre el manejo
 
 Se dispone de una copia de la ISO 27037 en ingles.
 
-#### [1.3.2. Referencia 004](#86004-norma-iso-27037)
+#### [1.3.2. Referencia 004](#85004-norma-iso-27037)
 
 La ISO/IEC 30121 es la norma internacional para el análisis forense digital. Define los requisitos mínimos que todas las organizaciones deben cumplir para estar preparados ante un análisis forense digital. La primera edición de la norma se publicó en 2015. Desde entonces, se han realizado varias actualizaciones importantes para reflejar las
 nuevas tecnologías y la evolución de los procedimientos de investigación criminal. Ha sido adoptada por muchas organizaciones de todo el mundo como base de las mejores prácticas para el manejo de las pruebas digitales, maximizando la disponibilidad y acceso a esta.
 
 La ISO/IEC 30121 se creó para garantizar que las pruebas digitales se traten de forma coherente en las distintas organizaciones y para ayudar a garantizar que las pruebas digitales puedan utilizarse como prueba en los procedimientos judiciales.
 
-#### [1.3.2. Referencia 005](#86005-implementación-de-herramientas-para-la-extracción-de-evidencia-digital)
+#### [1.3.2. Referencia 005](#85005-implementación-de-herramientas-para-la-extracción-de-evidencia-digital)
 
 **[Volver al Índice del capítulo 1. Plan de trabajo.](#índice-del-capítulo-1-plan-de-trabajo)**
 
@@ -376,19 +372,19 @@ Todas estas recomendaciones tienen como epicentro el principio de intercambio de
 
 Se dispone de una copia de la RFC 3227 en español.
 
-#### [1.3.3. Referencia 006.](#86006-norma-rfc-3227)
+#### [1.3.3. Referencia 006.](#85006-norma-rfc-3227)
 
 **[Volver al Índice del capítulo 1. Plan de trabajo.](#índice-del-capítulo-1-plan-de-trabajo)**
 
 ---
 
-<br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>
+<br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>
 
 ### **1.3.4. Normas UNE 71505 y UNE 71506.**
 
 Las normas UNE son normas técnicas desarrolladas por el organismo español de normalización, la Asociación Española de Normalización (UNE). "UNE" es el acrónimo de "Una Norma Española". Estas normas establecen especificaciones técnicas, criterios y directrices que deben seguirse en la fabricación, diseño, instalación, uso o mantenimiento de productos, sistemas o servicios en España.
 
-#### [1.3.4. Referencia 007.](#86007-que-son-las-normas-une)
+#### [1.3.4. Referencia 007.](#85007-que-son-las-normas-une)
 
 Estas normas que tratamos en el presente trabajo tienen como finalidad dar una metodología para la preservación, adquisición, documentación, análisis y presentación de pruebas digitales.
 
@@ -396,15 +392,15 @@ Según la asociación esta norma debe dar respuesta a las infracciones legales e
 
 Estas normativas son de aplicación a cualquier organización con independencia de su actividad o tamaño, así como a cualquier profesional competente en este ámbito. Se dirige especialmente a incidentes y seguridad, así como al personal técnico que trabaje en laboratorios o entornos de análisis forense de evidencias electrónicas.
 
-Se dispone de una copia de la norma UNE 71505.
+Se dispone de una copia de la norma UNE 71505 en el siguiente repositorio de la referencia que a continuación se detalla.
 
-#### [1.3.4. Referencia 008.](#86005-implementación-de-herramientas-para-la-extracción-de-evidencia-digital)
+#### [1.3.4. Referencia 008.](#85008-norma-une-71505)
 
 **[Volver al Índice del capítulo 1. Plan de trabajo.](#índice-del-capítulo-1-plan-de-trabajo)**
 
 ---
 
-<br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>
+<br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>
 
 ### **1.3.5. Conclusiones relativo a las metodologías.**
 
@@ -414,11 +410,11 @@ Aunque no existe una metodología que sea única y universal en el análisis for
 
 Todas estas recomendaciones, recogidas en distintas documentaciones (ver bibliografía), establecen una estructura lógica que permiten garantizar el proceso y que, en el ámbito civil, se compone básicamente de las siguientes fases:
 
-#### [1.3.5. Imagen 001.](#83001003005001-diagrama-de-metodología-del-análisis-forense)
+#### [1.3.5. Imagen 001.](#82001003005001-diagrama-de-metodología-del-análisis-forense)
 
 En cada una de las fases indicadas en la imagen anterior podemos destacar las siguientes tareas.
 
-#### [1.3.5. Imagen 002.](#83001003005002-fases-1-2-y-3-de-la-metodología-del-análisis-forense) &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; [1.3.5. Imagen 003.](#83001003005003-fases-4-5-y-6-de-la-metodología-del-análisis-forense) &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; [1.3.5. Imagen 004.](#83001003005004-fase-7-de-la-metodología-del-análisis-forense)
+#### [1.3.5. Imagen 002.](#82001003005002-fases-1-2-y-3-de-la-metodología-del-análisis-forense) &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; [1.3.5. Imagen 003.](#82001003005003-fases-4-5-y-6-de-la-metodología-del-análisis-forense) &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; [1.3.5. Imagen 004.](#82001003005004-fase-7-de-la-metodología-del-análisis-forense)
 
 **PLANTEAMIENTO DEL PROBLEMA.**
 
@@ -446,7 +442,7 @@ Llegados a esta fase, la cual ya ha sido previamente realizada a la elaboración
 
 Entendemos por volatilidad de los datos el período de tiempo en el que estarán accesibles en el equipo. Por lo tanto, se deberán recolectar previamente aquellas pruebas más volátiles. Según la RFC 3227, el que se presenta a continuación, es un posible orden de volatilidad de mayor a menor:
 
-#### [1.3.5. Imagen 005.](#83001003005005-orden-de-volatilidad-análisis-forense)
+#### [1.3.5. Imagen 005.](#82001003005005-orden-de-volatilidad-análisis-forense)
 
 Como ya se ha indicado previamente, si se quiere realizar una depuración de responsabilidades de manera penal, es necesario establecer una autoridad legal que presente la recogida de evidencias, ya sea un secretario judicial o un notario.
 
@@ -504,12 +500,12 @@ Antes de empezar el análisis propiamente, se debe preparar un entorno para dich
 
 En caso de un análisis en caliente se hará la investigación sobre los discos originales, lo que conlleva ciertos riesgos. Hay que tomar la precaución de poner el disco en modo sólo lectura, esta opción sólo está disponible en sistemas operativos Linux pero no en Windows. Si se opta por esta opción hay que operar con sumo cuidado pues cualquier error puede ser fatal y dar al traste con todo el proceso, invalidando las pruebas.
 
-Si se opta por un análisis en frío, lo más sencillo es preparar una máquina virtual con el mismo sistema operativo del equipo afectado y montar una imagen del disco. Para ello, previamente habremos creado la imagen a partir de las copias que se hicieron para el análisis. En este caso podremos trabajar con la imagen, ejecutar archivos y realizar otras tareas sin tanto cuidado, pues siempre cabe la opción de volver a montar la imagen desde cero en caso de problemas.
+Si se opta por un análisis en frío, lo más sencillo es preparar una máquina virtual (en adelante VM) con el mismo sistema operativo del equipo afectado y montar una imagen del disco. Para ello, previamente habremos creado la imagen a partir de las copias que se hicieron para el análisis. En este caso podremos trabajar con la imagen, ejecutar archivos y realizar otras tareas sin tanto cuidado, pues siempre cabe la opción de volver a montar la imagen desde cero en caso de problemas.
 
 La opción del análisis en frío, ***La cual será el caso que nos atañe el presente TFM, ya que der este modo es como se realizará el análisis***, resulta muy atractiva pues en caso de malwares se podrán ejecutar sin miedo, reproducir lo que ocurre y desmontar la imagen sin que la copia original resulte afectada. De este modo tal vez se pueda ir un poco más allá en la investigación y ser
 un poco más agresivo.
 
-Existen varios programas gratuitos para crear y gestionar máquinas virtuales, por ejemplo,
+Existen varios programas gratuitos para crear y gestionar VM's por ejemplo,
 Oracle VM VirtualBox, que ofrecen muy buenas prestaciones.
 
 Para la tarea de construir una cadena de acontecimientos y hacer una linea temporal cabe destacar lo siguiente.
@@ -607,7 +603,7 @@ etc.
 - Redactar unas conclusiones con las valoraciones que se crean oportunas a la vista de todo el análisis realizado.
 - Dar unas recomendaciones sobre cómo proteger los equipos para no repetir el incidente o sobre cómo actuar legalmente contra el autor.
 
-#### [1.3.5. Referencia 008.](#86008-metodología-para-un-análisis-forense) &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; [1.3.5. Referencia 009.](#86009-ninjas-de-la-web-metodología-para-un-análisis-forense)
+#### [1.3.5. Referencia 009.](#85009-metodología-para-un-análisis-forense) &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; [1.3.5. Referencia 010.](#85010-ninjas-de-la-web-metodología-para-un-análisis-forense)
 
 **[Volver al Índice del capítulo 1. Plan de trabajo.](#índice-del-capítulo-1-plan-de-trabajo) &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; [Volver al Índice General.](#índice-general)**
 
@@ -717,25 +713,25 @@ Para esta sección, se han elaborado los siguientes diagramas de Gantt relativos
 
 Relativo al reto/PEC 1 se establece el siguiente diagrama:
 
-#### [1.6. Imagen 001.](#83001006001-diagrama-de-gantt-retopec-1)
+#### [1.6. Imagen 001.](#82001006001-diagrama-de-gantt-retopec-1)
 
 Relativo al reto/PEC 2 se establece el siguiente diagrama.
 
-#### [1.6. Imagen 002.](#83001006002-diagrama-de-gantt-retopec-2)
+#### [1.6. Imagen 002.](#82001006002-diagrama-de-gantt-retopec-2)
 
 Relativo al reto/PEC 3 se establece el siguiente diagrama.
 
-#### [1.6. Imagen 003.](#83001006003-diagrama-de-gantt-retopec-3)
+#### [1.6. Imagen 003.](#82001006003-diagrama-de-gantt-retopec-3)
 
 Relativo al reto/PEC 4 se establece el siguiente diagrama.
 
-#### [1.6. Imagen 004.](#83001006004-diagrama-de-gantt-retopec-4)
+#### [1.6. Imagen 004.](#82001006004-diagrama-de-gantt-retopec-4)
 
 **[Volver al Índice del capítulo 1. Plan de trabajo.](#índice-del-capítulo-1-plan-de-trabajo) &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; [Volver al Índice General.](#índice-general)**
 
 ---
 
-<br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>
+<br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>
 
 ## 1.7. Revisión del estado del arte de la informática forense.
 
@@ -1016,7 +1012,7 @@ La siguiente tabla compara cuatro herramientas reconocidas internacionalmente al
 - SilentRunner - AccessData.
 - WireShark.
 
-#### [1.3.5. Referencia 010.](#86010-cómputo-forense-de-wikipedia)
+#### [1.7. Referencia 011.](#85011-cómputo-forense-de-wikipedia)
 
 **[Volver al Índice del capítulo 1. Plan de trabajo.](#índice-del-capítulo-1-plan-de-trabajo) &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; [Volver al Índice General.](#índice-general)**
 
@@ -1028,7 +1024,7 @@ La siguiente tabla compara cuatro herramientas reconocidas internacionalmente al
 
 ## Índice del capítulo 2. Extremos del análisis y previsión de pruebas técnicas.
 
-  - [2.0. Introducción al capítulo 2. Extremos del análisis y previsión de pruebas técnicas.](#índice-del-capítulo-2-extremos-del-análisis-y-previsión-de-pruebas-técnicas)
+  - [2.0. Introducción al capítulo 2. Extremos del análisis y previsión de pruebas técnicas.](#20-introducción-al-capítulo-2-extremos-del-análisis-y-previsión-de-pruebas-técnicas)
   - [2.1. Propuesta de extremos.](#21-propuesta-de-extremos)
   - [2.2. Previsión de pruebas técnicas.](#22-previsión-de-pruebas-técnicas)
 
@@ -1054,7 +1050,7 @@ Esta introducción proporciona una vista general y establece las expectativas pa
 
 ---
 
-<br><br><br><br><br><br><br><br><br>
+<br><br><br><br><br><br><br><br><br><br>
 
 ## 2.1. Propuesta de extremos.
 
@@ -1083,7 +1079,7 @@ La presente investigación tiene como propósito fundamental el establecimiento 
 
 ---
 
-<br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>
+<br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>
 
 ## 2.2. Previsión de pruebas técnicas.
 
@@ -1123,7 +1119,7 @@ La presente investigación tiene como propósito fundamental el establecimiento 
 ## Índice del capítulo 3. Análisis de la memoria RAM.
 
 
-[Volver al Índice General.](#índice-general)
+**[Volver al Índice General.](#índice-general)**
 
 ---
 
@@ -1166,7 +1162,7 @@ El resultado de este análisis exhaustivo proporcionará una comprensión detall
 
 En el presente TFM, se nos ha proporcionado a los alumnos un archivo de captura de memoria RAM .mem. Por otro lado, se nos ha proporcionado los resúmenes o **<u style='color:red'>hash</u>** en MD5 y en SHA1 de los archivos tal y como se muestra en la siguiente imagen.
 
-#### [3.1 Imagen 001](#83003001001-imagen-hash-archivos)
+#### [3.1 Imagen 001.](#82003001001-imagen-hash-archivos)
 
 Como Podemos ver, los **<u style='color:red'>hash</u>** resúmenes del archivo de la ram, tememos los siguientes hashes en MD5 y en SHA1:
 
@@ -1183,11 +1179,11 @@ Es una función matemática unidireccional que resume un mensaje de tamaño vari
 
 Una vez descargado el archivo de captura de la memoria RAM, procedemos a usar PowerShell para determinar el **<u style='color:red'>hash</u>** del archivo. Para ello usamos el comando  "Get-FileHash [Argumento] -Algorithm MD5". En nuestro caso hemos usado los siguientes comandos:
 
-#### [3.1 Comando 001.](#85003001001-comando-hash-md5) &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; [3.1 Comando 002.](#85003001002-comando-hash-sha1)
+#### [3.1 Comando 001.](#84003001001-comando-hash-md5) &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; [3.1 Comando 002.](#84003001002-comando-hash-sha1)
 
 Se puede observar en la siguiente imagen la respuesta de PowerShell de los hashes de MD5 y SHA1.
 
-#### [3.1. Imagen 002](#83003001002-imagen-hash-PowerShell)
+#### [3.1. Imagen 002.](#82003001002-imagen-hash-powershell)
 
 Como conclusión podemos verificar que la **<u style='color:red'>integridad</u>** de la copia facilitada para realizar el TFM no ha sido vulnerada.
 
@@ -1199,17 +1195,17 @@ Como conclusión podemos verificar que la **<u style='color:red'>integridad</u>*
 
 ## 3.2. Sistema Operativo de la memoria RAM analizada.
 
-Procedemos a preparar una máquina virtual con Ubuntu 22.04, el cual le instalamos el volatility según en el siguiente enlace. Haga click en la imagen para acceder al enlace:
+Procedemos a preparar una VM con Ubuntu 22.04, el cual le instalamos el volatility según en el siguiente enlace. Haga click en la imagen para acceder al enlace:
 
-#### [3.2. Video 001](#84003002001-video-de-instalación-de-volatility-en-ubuntu)
+#### [3.2. Video 001](#83003002001-video-de-instalación-de-volatility-en-ubuntu)
 
 A continuación procedemos a buscar el perfil con volatility con el comando `imageinfo`.
 
-#### [3.2 Imagen 001](#83003002001-imagen-de-imageinfo)
+#### [3.2 Imagen 001](#82003002001-imagen-de-imageinfo)
 
 Como se puede observar en la imagen anterior, no hemos llegado a encontrar un perfil concreto con `imageinfo`, eso se debe a que el perfil creado no es el que se encuentra dentro de las conocidas en la base de datos de volatility. Por ello procedemos a buscar dentro de la memoria RAM un string que tenga la cadena de texto "linux version". para ello ejecutamos el comando `strings Server_{RAM}.mem \mid grep -Ei linux version \mid uniq`.
 
-#### [3.2 Imagen 002](#83003002002-imagen-de-búsqueda-de-string-linux-version)
+#### [3.2 Imagen 002.](#82003002002-imagen-de-búsqueda-de-string-linux-version)
 
 Podemos observar en la imagen anterior que el sistema operativo que utiliza en nuestro caso es un sistema operativo Linux para Amazon Web Service, concretamente el sistema operativo es el **4.15.0-1021.21-aws 4.15.18**. Esta version de Linux, es muy usada para las instancias de Amazon Web Services.
 
@@ -1223,22 +1219,251 @@ Buscando en google **linux version 4.15.0-1021.21-aws volatility**, nos encontra
 
 <br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>
 
-## 3.3. Datos de interés de la captura de la memoria RAM.
+
+## 3.3. Creación de perfil para volatility.
+
+### **3.3.0. Introducción de creación de perfil de volatility.**
+
+Crear un perfil de volatility es fundamental para poder extraer la información de los datos de la ram.
+
+En el repositorio de github de volatility podemos observar perfiles relativos a windows, pero ninguno relativo al sistema operativo linux. Si ejecutamos el comando `sudo python2.7 vol.py --info` tenemos la siguiente respuesta relativo a perfiles:
+
+#### [3.3.0. Comando 001.](#84003003000001-comando-sudo-python27-volpy---info)
+
+Como ya hemos observado en la sección anterior, el kernel del la memoria RAM a analizar es del tipo `linux version 4.15.0-1021.21-aws`, además, se puede en el comando citado que este perfil no aparece en volatility por defecto , basándome en las páginas web de referencias 12 y 13, procederé a crear un perfil adaptado para esta memoria RAM. Estas acciones, deben de ser una práctica común para capturas de memoria de sistemas operativos del tipo Linux, por lo que se ha considerado recomendable introducirlo en el cuerpo del TFM, además que ya forma parte del trabajo de investigación.
+
+#### [3.3.0. Referencia 012.](#85012-creación-de-perfil-en-volatility-hotfixed42) &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; [3.3.0. Referencia 013.](#85013-creación-de-perfil-en-volatility-bytelearning) &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; [3.3.0. Referencia 014.](#85013-creación-de-perfil-en-volatility-bytelearning)
+
+**[Volver al Índice del capítulo 3. Análisis de la memoria RAM.](#índice-del-capítulo-3-análisis-de-la-memoria-ram)**
+
+---
+
+<br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>
+
+### **3.3.1. Creación de la máquina virtual, búsqueda en cache e instalación del kernel relativo al perfil a crear.**
+
+Vamos crear una VM para generar una base con el mismo kernel que el servidor auditado. Lo configuraremos según la siguiente imagen, finalmente procederemos a su arranque para su instalación.
+
+#### [3.3.1. Imagen 001.](#82003003001001-caracter%C3%ADsticas-vm-perfil-volatility)
+
+
+Procedemos a ejecutar el comando `hostnamectl` para ver las características que ahora mismo tenemos instalada en la VM.
+
+#### [3.3.1. Imagen 002.](#8200300300100a-características-vm-kernel)
+
+Como se observa en la imagen anterior, este servidor utiliza el kernel ***Linux 4.15.0-213-generic***, por lo que para obtener el perfil de la RAM, tendremos que instalar un kernel distinto.
+
+**[Volver al Índice del capítulo 3. Análisis de la memoria RAM.](#índice-del-capítulo-3-análisis-de-la-memoria-ram)**
+
+Procedemos a arrancar la VM, una vez realizado el login, procedemos a ejecutar el comando `sudo apt-cache search linux-image | grep 4.15.0-1021`.
+
+Este comando realiza dos acciones, por un lado `sudo apt-cache search linux-image`, y por otro `grep 4.15.0-1021`. Gracias al  "pipe" o "|", pasaremos la respuesta del primera acción como entrada de la segunda acción.. Es una parte fundamental de la filosofía de Unix que permite a los usuarios combinar múltiples comandos sencillos para realizar tareas más complejas. En nuestro caso:
+
+**sudo apt-cache search linux-image.**
+
+  - Esta parte del comando busca en la caché de APT (Advanced Package Tool) todos los paquetes cuyos nombres o descripciones contienen la cadena "linux-image". Los paquetes "linux-image" generalmente se refieren a imágenes del kernel de Linux para diferentes versiones y configuraciones.
+
+**| grep 4.15.0-1021.**
+
+  - La salida del primer comando se canaliza (|) al comando grep, que filtra y muestra solo las líneas que contienen la cadena "4.15.0-1021". En este contexto, "4.15.0-1021" probablemente se refiere a una versión específica del kernel de Linux.
+
+Al combinar estos dos comandos, `sudo apt-cache search linux-image | grep 4.15.0-1021-aws` efectivamente busca y lista todas las versiones de las imágenes del kernel de Linux disponibles en los repositorios que coincidan con la versión específica "4.15.0-1021". Este comando es útil para identificar si una versión específica del kernel está disponible para la instalación o actualización en el sistema.
+
+Se adjunta pantallazo de la respuesta por parte de la consola.
+
+#### [3.3.1. Imagen 003.](#82003003001003-búsqueda-kernel-4150-1021-aws)
+
+Como podemos observar en la imagen observada, el primer kernel que buscamos exactamente aparece como `linux-image-4.15.0-1021-aws`, esto significa que es un kernel disponible para ser instalado en el sistema operativo, por lo que procederemos a su instalación.
+
+A continuación, procedemos a instalarla en el sistema, para ello ejecutamos el comando `sudo apt-get install linux-image-4.15.0-1021-aws`.
+
+#### [3.3.1. Imagen 004.](#82003003001004-instalación-kernel-4150-1021-aws)
+
+
+El comando `sudo apt-get install linux-image-4.15.0-2021-aws` en Ubuntu o sistemas basados en Debian, se utiliza para instalar una versión específica del kernel de Linux, diseñada para ambientes Amazon Web Services (AWS). Al usar `sudo`, el comando se ejecuta con privilegios de superusuario, necesarios para instalar software a nivel de sistema. `apt-get install` es parte del sistema de gestión de paquetes APT, y se usa aquí para instalar el paquete `linux-image-4.15.0-2021-aws`. Este paquete contiene una imagen del kernel de Linux, la cual está optimizada para correr en servidores AWS, indicando que este kernel podría tener configuraciones o parches específicos para un rendimiento mejorado o características adicionales en esa plataforma. **Al instalar un nuevo kernel, es importante reiniciar el sistema para que empiece a usar esta nueva versión.** Para comprobar lo mencionado anteriormente, procederemos a realizar de nuevo el comando `hostnamectl`.
+
+#### [3.3.1. Imagen 005.](#82003003001005-probando-de-nuevo-hostnamectl)
+
+Como hemos indicado anteriormente, es necesario reiniciar el sistema para que el kernel instalado se utilice en el Sistema operativo, procederemos a ejecutar el comando `sudo reboot now` para realizar esta acción.
+
+#### [3.3.1. Imagen 006.](#82003003001006-reiniciando-server)
+
+Una vez reiniciado el sistema, procedemos a ejecutar el comando `hostnamectl` o `uname - r` para comprobar que el comando se ha ejecutado correctamente.
+
+#### [3.3.1. Imagen 007.](#82003003001007-comprobando-kernel)
+
+
+
+**[Volver al Índice del capítulo 3. Análisis de la memoria RAM.](#índice-del-capítulo-3-análisis-de-la-memoria-ram)**
+
+---
+
+<br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>
+
+### **3.3.2. Instalación y creación del perfil de volatility.**
+
+Una vez comprobado, procederemos a la instalación de volatility en el servidor de ubuntu.
+
+Primero de todo instalaremos los paquetes relativos a `dwarfdump` ya que el servidor no los tiene instalado por defecto.
+
+#### [3.3.2. Imagen 001.](#82003003002001-instalación-de-dwarfdump)
+
+Seguiremos los pasos ya indicados en el [Apartado 3.2](#32-sistema-operativo-de-la-memoria-ram-analizada):
+
+#### [3.3.2. Video 001.](#83003002001-video-de-instalación-de-volatility-en-ubuntu)
+
+#### [3.3.2. Imagen 002.](#82003003002002-volatility-instalado)
+
+Ahora, se procede a instalar dwarfdum, para poder hacer el modules.dwarf que mas adelante se explica. Una vez hemos realizado la instalación procedemos a crear el perfil de volatility.
+
+Para ello entraremos en la carpeta `/home/jrodg85/volatility/tools/linux`, una vez allí dentro ejecutaremos el comando `make`. Con ello, generaremos el archivo **`modules.dwarf`**. Se puede ver en las siguientes images como se ha generado tras ejecutar el comando make.
+
+#### [3.3.2. Imagen 003.](#82003003002003-ls-homejrodg85volatilitytoolslinux)
+
+#### [3.3.2. Imagen 004.](#82003003002004-make-homejrodg85volatilitytoolslinux)
+
+Ahora procederemos a nombrar el perfil de volatility para ello vamos a generar un archivo zip, este archivo, como norma general, usaremos los valores de `lsb_release -si` y `uname -r`. De esta manera nombraremos de manera correcta el perfil de volatility para después no tengamos problemas al importarlo dentro de la máquina donde estamos realizando la investigación.
+
+#### [3.3.2. Imagen 005.](#82003003002005-comandos-comprobación-kernel)
+
+Este archivo zip, debe de contener los dos archivos necesarios de perfil:
+
+**modules.dwarf**
+
+- Este archivo se genera a partir de los módulos del kernel de Linux y contiene información sobre las estructuras de datos del kernel. Es creado usando, en nuestro caso, la herramienta dwarfdump sobre módulos del kernel compilados con símbolos de depuración (debugging symbols). El archivo module.dwarf es crucial porque contiene los offsets y las definiciones de las estructuras de datos internas del kernel, lo que permite a Volatility entender cómo están organizados los datos en el volcado de memoria.
+
+**/boot/System.map-4.15.0-1021-aws**
+
+- Este archivo es un mapa de símbolos del kernel. Proporciona una lista de todas las funciones y variables en el kernel, junto con sus direcciones de memoria. Cada versión del kernel de Linux tiene su propio archivo System.map, y el archivo específico para una versión dada del kernel (en tu caso, 4.15.0-1021-aws) es necesario para analizar un volcado de memoria tomado de un sistema que ejecuta esa versión del kernel. Este archivo es esencial para que Volatility pueda mapear las direcciones de memoria en el volcado a nombres de funciones y variables específicas en el kernel.
+
+Para la generación del perfil, procederemos, desde `/home/jrodg85` a ejecutar el comando para crear un archivo .zip `sudo zip linux$(lsb_release -si)_$(uname -r)_profile.zip /home/jrodg85/volatility/tools/linux/module.dwarf /boot/System.map-4.15.0-1021-aws`
+
+#### [3.3.2. Imagen 006.](#82003003002006-perfil-creado)
+
+#### [3.3.2. Imagen 007.](#82003003002007-ls-a-la-carpeta-del-perfil)
+
+Para una aclaración de cualquier duda relativo a la elaboración de la elaboración de este servidor y las acciones realizadas en ella, se ha extraído el history al completo para que cualquier persona pueda realizar los mismos pasos que he realizado para la creación del perfil.
+
+#### [3.3.2. comando 001](#84003003002001-comando-sudo-history--usbhistorialtxt)
+
+Una vez creado el perfil, tenemos que sacar el perfil del servidor para después pegarlo dentro de la máquina una donde realizaremos el análisis. para ello procederemos a montar un usb dentro del servidor del ubuntu, posteriormente copiamos el archivo, `/home/jrodg85/volatility/volatility/plugins/overlays/linuxUbuntu_4.15.0-1021-aws_profile.zip`, y lo pegamos en el **<u style='color:red'>USB</u>**. En nuestro caso, hemos el **<u style='color:red'>USB</u>** lo hemos montado en `/home/jrodg85/usb/`
+
+#### [3.3.2. Imagen 008.](#82003003002008-perfil-copiado-a-usb)
+
+Posteriormente, procedemos a insertar en la VM de Ubuntu con Volatility en la carpeta en la carpeta `/home/jrodg85/volatility/volatility/plugins/overlays/linux` tal y como se muestra en la siguiente imagen.
+
+#### [3.3.2. Imagen 009.](#82003003002009-perfil-copiado-entorno-volatility)
+
+
+para comprobar que esta correctamente creado el perfil procedemos a ejecutar el comando `sudo python2.7 vol.py --info`, donde se podrá observar que se ha creado correctamente el perfil.
+
+#### [3.3.2. Imagen 010.](#82003003002010-perfil-creado-en-entorno-volatility)
+
+Para probar el correcto funcionamiento del perfil, procederemos a hacer la captura de la cpu con el siguiente comando `sudo python2.7 vol.py --profile=LinuxlinuxUbuntu_4_15_0-1021-aws_profilex64 -f '/home/jrodg85/Server_RAM.mem' linux_cpuinfo`. Esta información la usaremos mas adelante, en este caso es solo para prueba.
+
+#### [3.3.2. Imagen 011.](#82003003002011-prueba-funcionamiento-perfil)
+
+
+[Volver al Índice del capítulo 8. Anexos.](#índice-del-capítulo-8-anexos)
+
+[Volver al Índice General.](#índice-general)
+
+---
+
+## 3.4. Datos de interés de la captura de la memoria RAM.
 
 En el anexo Creación perfil ubuntu AWS, hemos realizado una guía para crear el perfil de Linux AWS que detectado durante el análisis del sistema operativo.
 
 Una vez creado el perfil de linuxUbuntu_4.15.0-1021-aws procederemos a hacer un pslist para listar todas las aplicaciones que estaban ejecutándose en el momento de la captura.
 
+### 3.4.1. Linux_cpuinfo.
+
 Para comprobar que el perfil funciona, vamos a comenzar a comprobar cual es el **<u style='color:red'>CPU</u>** que usa el sistema.
 
-Para ello ejecutaremos `sudo python2.7 vol.py --profile=LinuxlinuxUbuntu_4_15_0-1021-awsx64 -f '/home/jrodg85/Server_RAM.mem' linux_cpuinfo`.
+Para ello, situados en `/home/jrodg85/volatility$` ejecutaremos `sudo python2.7 vol.py --profile=LinuxlinuxUbuntu_4_15_0-1021-aws_profilex64 -f '/home/jrodg85/Server_RAM.mem' linux_cpuinfo`.
+
+#### [3.4.1. Imagen 001.](#82003004001001-linux_cpuinfo)
 
 Al comprobar que el perfil funciona, obtenemos que solo hay un procesador de marca GenuineIntel modelo Intel(R) Xeon(R) **<u style='color:red'>CPU</u>** E5-2676 v3 que tiene una frecuencia de 2.4Ghz.
 
-Otro comando de interés es obtener el history del la terminal, con ello podemos observar los pasos realizados y los que ha ejecutado. Para ello ejecutaremos el comando `sudo python2.7 vol.py --profile=LinuxlinuxUbuntu_4_15_0-1021-awsx64 -f '/home/jrodg85/Server_RAM.mem' linux_bash`. Los comandos usados son los siguientes:
+### 3.4.2. Linux_banner.
 
-#### [3.3 Comando 001.](#85003003001-comando-linux-bash)
+Otro dato de interés es la versión del kernel y la información de distribución de Linux. Esto es útil para identificar la versión específica del sistema operativo que se estaba ejecutando. Para ello se ejecuta el comando `sudo python2.7 vol.py --profile=LinuxlinuxUbuntu_4_15_0-1021-aws_profilex64 -f '/home/jrodg85/Server_RAM.mem' linux_banner`, dando la siguiente imagen como respuesta
 
+#### [3.4.2. Imagen 001.](#82003004002001-linux_banner)
+
+Un análisis de Información del Kernel de Linux es la siguiente:
+
+- Versión del Kernel.
+    - La captura de memoria analizada corresponde a un sistema que ejecuta la versión 4.15.0-1021-aws del kernel de Linux. Este dato era ya conocido en el TFM.
+- Ambiente AWS.
+    - El sufijo aws sugiere que esta versión del kernel está optimizada o diseñada para ejecutarse en Amazon Web Services, una plataforma de cloud computing.
+- Construcción y Compilador.
+    - La captura incluye detalles de la compilación del kernel, como el compilador utilizado (gcc version 7.3.0) y la configuración específica de Ubuntu (Ubuntu 7.3.0-16ubuntu3).
+- Número de Compilación y Fecha.
+    - Se muestra el número de compilación (#21-Ubuntu SMP) y la fecha (Tue Aug 28 10:23:07 UTC 2018), que proporcionan un contexto sobre cuándo y cómo se construyó esta versión del kernel.
+
+Esta respuesta básicamente te indica la versión exacta del sistema operativo Linux que estaba corriendo en la máquina de la cual se tomó la captura de memoria. Es un paso esencial en el análisis forense, ya que te permite seleccionar o validar el perfil correcto en Volatility para un análisis más detallado y preciso de la captura de memoria.
+
+Aunque este dato ya lo sabíamos anteriormente, la salida muestra que la versión del kernel es 4.15.0-1021-aws. Esta es una versión específica para las instancias de Ubuntu en AWS. **La fecha de compilación (Tue Aug 28 10:23:07 UTC 2018)**.
+
+### 3.4.3. Linux_mount.
+
+A continuación, se va a proceder a enumerar los sistemas de archivos montados en el momento del volcado de memoria. Esto puede proporcionar información sobre las particiones y los sistemas de archivos utilizados. Para ello, ejecutaremos el comando `sudo python2.7 vol.py --profile=LinuxlinuxUbuntu_4_15_0-1021-aws_profilex64 -f '/home/jrodg85/Server_RAM.mem' linux_mount`. Se procede a adjuntar una captura de pantalla del comando y del comando utilizado en este caso. Además se ha elaborado una tabla detallada en el comando para su comprensión.
+
+#### [3.4.3. Imagen 001.](#82003004003001-linux_mount)
+
+#### [3.4.3. Comando 001.](#84003004003001-comando-sudo-python27-volpy---profilelinuxlinuxubuntu_4_15_0-1021-aws_profilex64--f-homejrodg85server_rammem-linux_mount)
+
+Teniendo en cuenta que es un servidor con un kernel de Amazon Web Services. Se puede realizar el siguiente análisis.
+
+- cgroup (/sys/fs/cgroup/rdma):
+    - Usado para control de recursos y aislamiento de grupos de procesos. Las opciones indican un enfoque en seguridad y rendimiento.
+- tmpfs (/sys/fs/cgroup):
+    - Sistema de archivos temporal en memoria, utilizado para almacenamiento de corta duración y rápido acceso.
+- /dev/xvda1 (/):
+    - Sistema de archivos principal, ext4 proporciona robustez y mejor manejo de grandes archivos.
+- proc (/bus):
+    - Usado para acceder a información del sistema y procesos en ejecución.
+- pstore (/sys/fs/pstore):
+    - Almacenamiento persistente para registros del núcleo y datos de diagnóstico.
+- fusectl (/sys/fs/fuse/connections):
+    - Interfaz para sistemas de archivos FUSE, permite a usuarios no privilegiados crear sus propios sistemas de archivos.
+- lxcfs (/var/lib/lxcfs):
+    - Proporciona un sistema de archivos virtual para contenedores LXC.
+- /dev/loop0 (/snap/core/5328):
+    - Usado para montar imágenes de Snap, squashfs es eficiente en espacio y de solo lectura.
+- udev (/dev):
+    - Sistema de archivos para dispositivos, gestionado dinámicamente.
+- cgroup (/sys/fs/cgroup/unified):
+    - Nueva versión de cgroup para mejor gestión de recursos.
+
+Los restantes puntos de montaje siguen patrones similares en cuanto a tipos y opciones, enfocándose en la seguridad (nosuid, nodev, noexec), rendimiento (relatime), y tipo de acceso (ro, rw). Los sistemas de archivos como tmpfs, squashfs, y cgroup son comunes en entornos Linux y son utilizados para propósitos específicos como almacenamiento temporal, montaje de paquetes de software, y gestión de recursos del sistema.
+
+### 3.4.4. Linux_memmap.
+
+Se procede ahora a realizar un mapa de memoria del sistema, para asi, entender cómo está organizada la memoria en el servidor. Para ello ejecutaremos el comando `sudo python2.7 vol.py --profile=LinuxlinuxUbuntu_4_15_0-1021-aws_profilex64 -f '/home/jrodg85/Server_RAM.mem' linux_memmap > /home/jrodg85/informe-memmap.txt`. Lo hemos pasado la salida a un archivo .txt debido a la gran cantidad de datos que maneja este comando (375 Mb).
+
+#### [3.4.4. Imagen 001.](#82003004004001-linux_memmap)
+
+Tras un trabajo de limpieza de datos, de un archivo de 4519734 lineas a solo 200 lineas, y posteriormente a 109 lineas, ya que las direcciones de memoria ultima de cada aplicación era la misma, por lo que también ha sido desechado, podemos asi obtener de esta manera todos los procesos que estaban ocurriendo dentro del servidor.
+
+#### [3.4.4. Comando 001.](#84003004004001-comando-sudo-python27-volpy---profilelinuxlinuxubuntu_4_15_0-1021-aws_profilex64--f-homejrodg85server_rammem-linux_memmap--homejrodg85informe-memmaptxt)
+
+
+
+
+
+
+
+
+
+#### [3.4. Comando 001]
+
+
+
+
+#### [Comando ]
 
 Analizando los comandos realizados se pueden destacar los siguientes:
 
@@ -1318,7 +1543,7 @@ Es fundamental que cualquier administrador de sistemas ejecute estos comandos co
 
 
 
-## 3.4. Búsqueda de procesos en funcionamiento de interés para el análisis.
+## 3.5. Búsqueda de procesos en funcionamiento de interés para el análisis.
 
 
 
@@ -1335,7 +1560,7 @@ Es fundamental que cualquier administrador de sistemas ejecute estos comandos co
 
 
 
-## 3.5. Listado de conexiones de red y conexiones sospechosas.
+## 3.6. Listado de conexiones de red y conexiones sospechosas.
 
 
 
@@ -1613,17 +1838,399 @@ Es fundamental que cualquier administrador de sistemas ejecute estos comandos co
 
 ---
 
+## 8.1. Glosario de términos y abreviaturas.
+
+---
+
+#### 8.1.001.000.001. CISO.
+
+1. La persona responsable de velar por la ciberseguridad de una empresa, es el acrónimo de (Chief Information Security Officer). También podemos conocerlo como director de seguridad de la información. Esta persona es la que se encarga de proteger la información ante posibles ciberataques y fugas de datos. De esta manera, garantiza la seguridad dentro de las posibilidades tanto humanas, técnicas como económicas que tenga cada empresa.
+
+[Volver al texto del término en la Sección 1.0.](#10-glosario-001-ciso)
+
+---
+
+[Volver al Índice del capítulo 8. Anexos.](#índice-del-capítulo-8-anexos)
+
+[Volver al Índice General.](#índice-general)
+
+---
+
+## 8.2. Imágenes.
+
+---
+
+#### 8.2.001.003.005.001. Diagrama de metodología del análisis forense.
+
+![001-003-005-001](./images/001-003-005-001-FASES-METODOLOGIA-ANALISIS-FORENSE.png)
+
+[Volver al texto de la imagen en la Sección 1.3.5.](#135-imagen-001)
+
+---
+
+#### 8.2.001.003.005.002. Fases 1 2 y 3 de la metodología del análisis forense.
+
+![001-003-005-002](./images/001-003-005-002-FASES-1-2-3-METODOLOGIA-ANALISIS-FORENSE.png)
+
+[Volver al texto de la imagen en la Sección 1.3.5.](#135-imagen-002-135-imagen-003-135-imagen-004)
+
+---
+
+#### 8.2.001.003.005.003. Fases 4 5 y 6 de la metodología del análisis forense.
+
+![001-003-005-003](./images/001-003-005-003-FASES-4-5-6-METODOLOGIA-ANALISIS-FORENSE.png)
+
+[Volver al texto de la imagen en la Sección 1.3.5.](#135-imagen-002-135-imagen-003-135-imagen-004)
+
+---
+
+#### 8.2.001.003.005.004. Fase 7 de la metodología del análisis forense.
+
+![001-003-005-004](./images/001-003-005-004-FASE-7-METODOLOGIA-ANALISIS-FORENSE.png)
+
+[Volver al texto de la imagen en la Sección 1.3.5.](#135-imagen-002-135-imagen-003-135-imagen-004)
+
+---
+
+#### 8.2.001.003.005.005. Orden de volatilidad análisis forense.
+
+![001-003-005-005](./images/001-003-005-005-ORDEN-VOLATILIDAD-RFC-3227.png)
+
+[Volver al texto de la imagen en la Sección 1.3.5.](#135-imagen-005)
+
+---
+
+#### 8.2.001.006.001. Diagrama de Gantt reto/PEC 1.
+
+![001-006-001](./images/001-006-001-diagrama-de-gantt-pec-01.png)
+
+[Volver al texto de la imagen en la Sección 1.6.](#16-imagen-001)
+
+---
+
+#### 8.2.001.006.002. Diagrama de Gantt reto/PEC 2.
+
+![001-006-002](./images/001-006-002-diagrama-de-gantt-pec-02.png)
+
+[Volver al texto de la imagen en la Sección 1.6.](#16-imagen-001)
+
+---
+
+#### 8.2.001.006.003. Diagrama de Gantt reto/PEC 3.
+![001-006-003](./images/001-006-003-diagrama-de-gantt-pec-03.png)
+
+[Volver al texto de la imagen en la Sección 1.6.](#16-imagen-003)
+
+---
+
+#### 8.2.001.006.004. Diagrama de Gantt reto/PEC 4.
+
+![001-006-004](./images/001-006-004-diagrama-de-gantt-pec-04.png)
+
+[Volver al texto de la imagen en la Sección 1.6.](#16-imagen-004)
+
+---
+
+#### 8.2.003.001.001. Imagen Hash archivos.
+
+![005-imagen-hash-archivos.png](./images/003-001-001-imagen-hash-archivos.png)
+
+[Volver al texto de la imagen en la Sección 3.1.](#31-imagen-001)
+
+---
+
+#### 8.2.003.001.002. Imagen Hash PowerShell.
+
+![003-001-002](./images/003-001-002-captura-hash-PowerShell.png)
+
+[Volver al texto de la imagen en la Sección 006.](#31-imagen-002)
+
+---
+
+#### 8.2.003.002.001. Imagen de imageinfo.
+
+![003-002-001](./images/003-002-001-captura-imageinfo.png)
+
+[Volver al texto de la imagen en la Sección 3.2.](#32-imagen-001)
+
+---
+
+#### 8.2.003.002.002. Imagen de búsqueda de string linux version.
+
+![003-002-002](./images/003-002-002-buscar-strings-linux-version.png)
+
+[Volver al texto de la imagen en la Sección 3.2.](#32-imagen-002)
+
+---
+
+#### 8.2.003.003.001.001. Características VM perfil Volatility.
+
+![003-003-001-001](./images/003-003-001-001-CARACTERISTICAS-VM.png)
+
+[Volver al texto de la imagen en la Sección 3.3.1.](#331-imagen-001)
+
+---
+
+#### 8.2.003.003.001.002. Características VM kernel.
+
+![003-003-001-002](./images/003-003-001-002-KERNEL-VM-INSTALADA.png)
+
+[Volver al texto de la imagen en la Sección 3.3.1.](#331-imagen-002)
+
+---
+
+#### 8.2.003.003.001.003. Búsqueda Kernel 4.15.0-1021-aws.
+
+![003-003-001-003](./images/003-003-001-003-buscando-kernel-ubuntu.png)
+
+[Volver al texto de la imagen en la Sección 3.3.1.](#331-imagen-003)
+
+---
+
+#### 8.2.003.003.001.004. Instalación Kernel 4.15.0-1021-aws.
+
+![003-003-001-004](./images/003-003-001-004-instalacion-kernel-aws.png)
+
+[Volver al texto de la imagen en la Sección 3.3.1.](#331-imagen-004)
+
+---
+
+#### 8.2.003.003.001.005. Probando de nuevo hostnamectl.
+
+![003-003-001-005](./images/003-003-001-005-hosnamectl-2.png)
+
+[Volver al texto de la imagen en la Sección 3.3.1.](#331-imagen-005)
+
+---
+
+#### 8.2.003.003.001.006. Reiniciando server.
+
+![003-003-001-006](./images/003-003-001-006-sudo-reboot-now.png)
+
+[Volver al texto de la imagen en la Sección 3.3.1.](#331-imagen-006)
+
+---
+
+#### 8.2.003.003.001.007. Comprobando kernel.
+
+![003-003-001-007](./images/003-003-001-007-comprobando-kernel-aws.png)
+
+[Volver al texto de la imagen en la Sección 3.3.1.](#331-imagen-007)
+
+---
+
+#### 8.2.003.003.002.001. Instalación de dwarfdump.
+
+![003-003-002-001](./images/003-003-002-001-instalacion-dwarfdump.png)
+
+[Volver al texto de la imagen en la Sección 3.3.2.](#332-imagen-001)
+
+---
+
+#### 8.2.003.003.002.002. Volatility instalado.
+
+![003-003-002-002](./images/003-003-002-002-volatility-instalado.png)
+
+[Volver al texto de la imagen en la Sección 3.3.2.](#332-imagen-002)
+
+---
+
+#### 8.2.003.003.002.003. ls /home/jrodg85/volatility/tools/linux.
+
+![003-003-002-003](./images/003-003-002-003-volatility-tools-linux-ls.png)
+
+[Volver al texto de la imagen en la Sección 3.3.2.](#332-imagen-003)
+
+---
+
+#### 8.2.003.003.002.004. make /home/jrodg85/volatility/tools/linux.
+
+![003-003-002-004](./images/003-003-002-004-volatility-tools-linux-make-ls.png)
+
+[Volver al texto de la imagen en la Sección 3.3.2.](#332-imagen-004)
+
+---
+
+#### 8.2.003.003.002.005. Comandos comprobación kernel.
+
+![003-003-002-005](./images/003-003-002-005-lsb-release-uname.png)
+
+[Volver al texto de la imagen en la Sección 3.3.2.](#332-imagen-005)
+
+---
+
+#### 8.2.003.003.002.006. Perfil creado.
+
+![003-003-002-006](./images/003-003-002-006-perfil-creado.png)
+
+[Volver al texto de la imagen en la Sección 3.3.2.](#332-imagen-006)
+
+---
+
+#### 8.2.003.003.002.007. ls a la carpeta del perfil.
+
+![003-003-002-007](./images/003-003-002-007-ls-a-la-carpeta-de-perfil.png)
+
+[Volver al texto de la imagen en la Sección 3.3.2.](#332-imagen-007)
+
+---
+
+#### 8.2.003.003.002.008. Perfil copiado a usb.
+
+![003-003-002-008](./images/003-003-002-008-copiando-perfil-a-usb.png)
+
+[Volver al texto de la imagen en la Sección 3.3.2.](#332-imagen-008)
+
+---
+
+#### 8.2.003.003.002.009. Perfil copiado entorno volatility.
+
+![003-003-002-009](./images/003-003-002-009-perfil-copiado-en-entorno-volatility.png)
+
+[Volver al texto de la imagen en la Sección 3.3.2.](#332-imagen-009)
+
+---
+
+#### 8.2.003.003.002.010. Perfil creado en entorno volatility.
+
+![003-003-002-010](./images/003-003-002-010-perfil-creado.png)
+
+[Volver al texto de la imagen en la Sección 3.3.2.](#332-imagen-010)
+
+---
+
+#### 8.2.003.003.002.011. Prueba funcionamiento perfil.
+
+![003-003-002-011](./images/003-003-002-011-prueba-cpuinfo.png)
+
+[Volver al texto de la imagen en la Sección 3.3.2.](#332-imagen-011)
+
+---
+
+#### 8.2.003.004.001.001. linux_cpuinfo.
+
+![003-004-001-001](./images/003-004-001-001-linux_cpuinfo.png)
+
+[Volver al texto de la imagen en la Sección 3.4.1.](#341-imagen-001)
+
+---
+
+#### 8.2.003.004.002.001. linux_banner.
+
+![003-004-002-001](./images/003-004-002-001-linux_banner.png)
+
+[Volver al texto de la imagen en la Sección 3.4.2.](#342-imagen-001)
+
+---
+
+#### 8.2.003.004.003.001. linux_mount.
+
+![003-004-003-001](./images/003-004-003-001-linux_mount.png)
+
+[Volver al texto de la imagen en la Sección 3.4.3.](#343-imagen-001)
+
+---
+
+#### 8.2.003.004.004.001. linux_memmap.
+
+![003-004-004-001](./images/003-004-004-001-linux_memap.png)
+
+[Volver al texto de la imagen en la Sección 3.4.4.](#344-imagen-001)
+
+---
+
+[Volver al Índice del capítulo 8. Anexos.](#índice-del-capítulo-8-anexos)
+
+[Volver al Índice General.](#índice-general)
+
+---
+
+## 8.3. Videos.
+
+---
+
+#### 8.3.003.002.001. Video de instalación de Volatility en Ubuntu.
+
+[![Miniatura video Volatility](./images/9999-miniatura-instalacion-volatility.png)](https://www.youtube.com/watch?v=dCU6kIh0qSI&ab_channel=TFM-ANALISIS-FORENSE)
+
+> [https://www.youtube.com/watch?v=dCU6kIh0qSI&ab_channel=TFM-ANALISIS-FORENSE](https://www.youtube.com/watch?v=dCU6kIh0qSI&ab_channel=TFM-ANALISIS-FORENSE)
+
+[Volver al texto del video en la Sección 3.2.](#32-video-001)
+
+[Volver al texto del video en la Sección 3.3.2.](#332-video-001)
+
+---
 
 
-## 8.1. Creación de perfil para volatility.
 
-### 8.1.0. Introducción de creación de perfil de volatility.
 
-Crear un perfil de volatility es fundamental para poder extraer la información de los datos de la ram.
 
-En el repositorio de github de volatility podemos observar perfiles relativos a windows, pero ninguno relativo al sistema operativo linux. Si ejecutamos el comando `sudo python2.7 vol.py --info` tenemos la siguiente respuesta relativo a perfiles:
 
-~~~Shell
+
+
+
+
+
+
+
+
+
+[Volver al Índice del capítulo 8. Anexos.](#índice-del-capítulo-8-anexos)
+
+[Volver al Índice General.](#índice-general)
+
+---
+
+## 8.4. Extracto de comandos utilizados.
+
+---
+
+#### 8.4.003.001.001. Comando Hash MD5.
+
+~~~PowerShell
+Get-FileHash .\Server_RAM.mem -Algorithm MD5
+~~~
+
+La respuesta de PowerShell es el siguiente:
+
+~~~PowerShell
+Algorithm       Hash                                                                   Path
+---------       ----                                                                   ----
+MD5             75A99B57032AA34BA19042ED85DB273F                                       D:\TFM\RAM\...
+~~~
+
+[Volver al texto del comando en la Sección 3.1](#31-comando-001-31-comando-002)
+
+
+---
+
+#### 8.4.003.001.002. Comando Hash SHA1.
+
+~~~PowerShell
+Get-FileHash .\Server_RAM.mem -Algorithm SHA1
+~~~
+
+La respuesta de PowerShell es el siguiente:
+
+~~~PowerShell
+Algorithm       Hash                                                                   Path
+---------       ----                                                                   ----
+SHA1            CC1FAD2AF321B8C2DDF0103986E3B344EB8F2CC8                               D:\TFM\RAM\...
+~~~
+
+[Volver al texto del comando en la Sección 3.1.](#31-comando-001-31-comando-002)
+
+---
+
+#### 8.4.003.003.000.001. Comando sudo python2.7 vol.py --info.
+
+~~~bash
+sudo python2.7 vol.py --info
+~~~
+
+La respuesta de la shell es la siguiente:
+
+~~~bash
 Profiles
 --------
 VistaSP0x64                         - A Profile for Windows Vista SP0 x64
@@ -1690,890 +2297,341 @@ WinXPSP2x86                         - A Profile for Windows XP SP2 x86
 WinXPSP3x86                         - A Profile for Windows XP SP3 x86
 ~~~
 
-[Volver al Índice del capítulo 8. Anexos.](#índice-del-capítulo-8-anexos)
-
-### 8.1.1. Creación de la máquina virtual.
-
-Vamos crear una máquina virtual para generar una máquina virtual base con el mismo kernel que el servidor auditado.
-
-![025-detalles-servidor-perfil-volatility](./images/025-detalles-servidor-perfil-volatility.png)
-
-[Volver al Índice del capítulo 8. Anexos.](#índice-del-capítulo-8-anexos)
-
-### 8.1.2. Búsqueda en cache del kernel relativo al perfil a crear.
-
-Procedemos a arrancar la máquina virtual (en adelante VM), una vez realizado el login, procedemos a ejecutar el comando `sudo apt-cache search linux-image | grep 4.15.0-1021`.
-
-Este comando realiza dos acciones, por un lado `sudo apt-cache search linux-image`, y por otro `grep 4.15.0-1021`. Gracias al  "pipe" o "|", pasaremos la respuesta del primera acción como entrada de la segunda acción.. Es una parte fundamental de la filosofía de Unix que permite a los usuarios combinar múltiples comandos sencillos para realizar tareas más complejas. En nuestro caso:
-
-**sudo apt-cache search linux-image.**
-
-  - Esta parte del comando busca en la caché de APT (Advanced Package Tool) todos los paquetes cuyos nombres o descripciones contienen la cadena "linux-image". Los paquetes "linux-image" generalmente se refieren a imágenes del kernel de Linux para diferentes versiones y configuraciones.
-
-**| grep 4.15.0-1021.**
-
-  - La salida del primer comando se canaliza (|) al comando grep, que filtra y muestra solo las líneas que contienen la cadena "4.15.0-1021". En este contexto, "4.15.0-1021" probablemente se refiere a una versión específica del kernel de Linux.
-
-Al combinar estos dos comandos, `sudo apt-cache search linux-image | grep 4.15.0-1021` efectivamente busca y lista todas las versiones de las imágenes del kernel de Linux disponibles en los repositorios que coincidan con la versión específica "4.15.0-1021". Este comando es útil para identificar si una versión específica del kernel está disponible para la instalación o actualización en el sistema.
-
-Se adjunta pantallazo de la respuesta por parte de la consola.
-
-##### [Imagen 009](#83009)
-
-[Volver al Índice del capítulo 8. Anexos.](#índice-del-capítulo-8-anexos)
-
-### 8.1.3. Instalación del kernel relativo al perfil a crear.
-
-Una vez encontrado la imagen del kernel que buscamos, procedemos a instalarla en el sistema, para ello ejecutamos el comando `sudo apt-get install linux-image-4.15.0-2021-aws`.
-
-El comando `sudo apt-get install linux-image-4.15.0-2021-aws` en Ubuntu o sistemas basados en Debian, se utiliza para instalar una versión específica del kernel de Linux, diseñada para ambientes Amazon Web Services (AWS). Al usar `sudo`, el comando se ejecuta con privilegios de superusuario, necesarios para instalar software a nivel de sistema. `apt-get install` es parte del sistema de gestión de paquetes APT, y se usa aquí para instalar el paquete `linux-image-4.15.0-2021-aws`. Este paquete contiene una imagen del kernel de Linux, la cual está optimizada para correr en servidores AWS, indicando que este kernel podría tener configuraciones o parches específicos para un rendimiento mejorado o características adicionales en esa plataforma. **Al instalar un nuevo kernel, es importante reiniciar el sistema para que empiece a usar esta nueva versión.**
-
-Se adjunta pantallazo de la instalación del kernel de AWS:
-
-##### [Imagen 010](#83010)
-
-Como hemos indicado anteriormente, es necesario reiniciar el sistema para que el kernel instalado se utilice en el Sistema operativo, procederemos a ejecutar el comando `sudo reboot now` para realizar esta acción.
-
-##### [Imagen 011](#83011)
-
-Una vez reiniciado el sistema, procedemos a ejecutar el comando `uname - r` para comprobar que el comando se ha ejecutado correctamente.
-
-##### [Imagen 012](#83012)
-
-[Volver al Índice del capítulo 8. Anexos.](#índice-del-capítulo-8-anexos)
-
-### 8.1.4. Instalación de volatility.
-
-Una vez comprobado, procederemos a la instalación de volatility en el servidor de ubuntu.
-
-Primero de todo instalaremos los paquetes relativos a `dwarfdum`, `gcc`, `linux-headers` y `git`, ya que el servidor no los tiene instalado por defecto.
-
- Seguiremos los pasos ya indicados en el [Apartado 3.2](#32-sistema-operativo-de-la-memoria-ram-analizada):
-
-[![Miniatura video Volatility](./images/024-miniatura-instalacion-volatility.png)](https://youtu.be/z_SWIIa3AnY)
-
-> https://www.youtube.com/watch?v=z_SWIIa3AnY
-
-Una vez instalado, procedemos a realizar los pasos para la creación del perfil de volatility.
-
-[Volver al Índice del capítulo 8. Anexos.](#índice-del-capítulo-8-anexos)
-
-### 8.1.5. Creación del perfil de volatility.
-
-Una vez hemos realizado la instalación procedemos a crear el perfil de volatility.
-
-Para ello entraremos en la carpeta `home/jrodg85/volatility/tools/linux`, una vez allí dentro ejecutaremos el comando `make`. En la siguiente imagen, se puede ver un pantallazo del comando, en caso de tener error del mismo, lo mas recomendable es hacer un `make clean` y después volver a ejecutar `make`. Lo mas importante es que se tiene que crear el archivo **`modules.dwarf`**
-
-##### [Imagen 013](#83013)
-
-Ahora procederemos a nombrar el perfil de volatility para ello vamos a generar un archivo zip, este archivo, como norma general, usaremos los valores de `lsb_release -si` y `uname -r`. De esta manera nombraremos de manera correcta el perfil de volatility para después no tengamos problemas al importarlo dentro de la máquina donde estamos realizando la investigación.
-
-![017-lsb-release-y-uname-r.png](./images/017-lsb-release-y-uname-r.png)
-
-Este archivo zip, debe de contener los dos archivos necesarios de perfil:
-
-**modules.dwarf**
-
-- Este archivo se genera a partir de los módulos del kernel de Linux y contiene información sobre las estructuras de datos del kernel. Es creado usando, en nuestro caso, la herramienta dwarfdump sobre módulos del kernel compilados con símbolos de depuración (debugging symbols). El archivo module.dwarf es crucial porque contiene los offsets y las definiciones de las estructuras de datos internas del kernel, lo que permite a Volatility entender cómo están organizados los datos en el volcado de memoria.
-
-**/boot/System.map-4.15.0-1021-aws**
-
-- Este archivo es un mapa de símbolos del kernel. Proporciona una lista de todas las funciones y variables en el kernel, junto con sus direcciones de memoria. Cada versión del kernel de Linux tiene su propio archivo System.map, y el archivo específico para una versión dada del kernel (en tu caso, 4.15.0-1021-aws) es necesario para analizar un volcado de memoria tomado de un sistema que ejecuta esa versión del kernel. Este archivo es esencial para que Volatility pueda mapear las direcciones de memoria en el volcado a nombres de funciones y variables específicas en el kernel.
-
-Para la generación del perfil, procederemos a ejecutar el comando `sudo zip /home/jrodg85/volatility/volatility/plugins/overlays/linux$(lsb_release -si)_$(uname -r)_profiles.zip /home/jrodg85/volatility/tools/linux/module.dwarf /boot/System.map-4.15.0-1021-aws`
-
-![018-perfil-generado.png](./images/018-perfil-generado.png)
-
-Una vez creado el perfil, tenemos que sacar el perfil del servidor para después pegarlo dentro de la máquina una donde realizaremos el análisis. para ello procederemos a montar un usb dentro del servidor del ubuntu, posteriormente copiamos el archivo, `/home/jrodg85/volatility/volatility/plugins/overlays/linuxUbuntu_4.15.0-1021-aws_profile.zip`, y lo pegamos en el **<u style='color:red'>USB</u>**, posteriormente, procedemos a insertar en la VM de análisis en la carpeta en la carpeta `/home/jrodg85/volatility/volatility/plugins/overlays/linux` tal y como se muestra en la siguiente imagen.
-
-![021-copiado-en-entorno-volatility.png](./images/021-copiado-en-entorno-volatility.png)
-
-para comprobar que esta correctamente creado el perfil procedemos a ejecutar el comando `sudo python2.7 col.py --info`, donde se podrá observar que se ha creado correctamente el perfil.
-
-![022-perfil-creado.png](./images/022-perfil-creado.png)
-
-[Volver al Índice del capítulo 8. Anexos.](#índice-del-capítulo-8-anexos)
-
-[Volver al Índice General.](#índice-general)
+[Volver al texto del comando en la Sección 3.3.0.](#330-comando-001)
 
 ---
 
-## 8.2. Glosario de términos y abreviaturas.
+#### 8.4.003.003.002.001. Comando sudo history > usb/historial.txt.
 
----
-
-#### 8.2.001.000.001. CISO.
-
-1. La persona responsable de velar por la ciberseguridad de una empresa, es el acrónimo de (Chief Information Security Officer). También podemos conocerlo como director de seguridad de la información. Esta persona es la que se encarga de proteger la información ante posibles ciberataques y fugas de datos. De esta manera, garantiza la seguridad dentro de las posibilidades tanto humanas, técnicas como económicas que tenga cada empresa.
-
-[Volver al texto del término en la Sección 1.0.](#10-glosario-001-ciso)
-
----
-
-#### 8.2..
-
-
-#### **Análisis de archivo.**
-
-- Examina cada archivo digital descubierto y crea una base de datos de información relacionada al archivo (metadatos, etc.), consistente entre otras cosas en la firma del archivo o **<u style='color:red'>hash</u>** (indica la **<u style='color:red'>integridad</u>** del archivo).
-
----
-
-#### **Cadena de custodia.**
-
-- La identidad de personas que manejan la evidencia en el tiempo del suceso y la última revisión del caso. Es la responsabilidad de la persona que maneja la evidencia asegurar que los artículos son registrados y contabilizados durante el tiempo en el cual están en su poder, y que son protegidos, así mismo llevando un registro de los nombres de las personas que manejaron la evidencia o artículos durante el lapso de tiempo y fechas de entrega y recepción.VCX
-
-----
-
-[Volver al Índice del capítulo 8. Anexos.](#índice-del-capítulo-8-anexos)
-
-[Volver al Índice General.](#índice-general)
-
----
-
-## 8.3. Imágenes.
-
----
-
-#### 8.3.001.003.005.001. Diagrama de metodología del análisis forense.
-
-![001-003-005-001](./images/001-003-005-001-FASES-METODOLOGIA-ANALISIS-FORENSE.png)
-
-[Volver al texto de la imagen en la Sección 1.3.5.](#135-imagen-001)
-
----
-
-#### 8.3.001.003.005.002. Fases 1 2 y 3 de la metodología del análisis forense.
-
-![001-003-005-002](./images/001-003-005-002-FASES-1-2-3-METODOLOGIA-ANALISIS-FORENSE.png)
-
-[Volver al texto de la imagen en la Sección 1.3.5.](#135-imagen-002-135-imagen-003-135-imagen-004)
-
----
-
-#### 8.3.001.003.005.003. Fases 4 5 y 6 de la metodología del análisis forense.
-
-![001-003-005-003](./images/001-003-005-003-FASES-4-5-6-METODOLOGIA-ANALISIS-FORENSE.png)
-
-[Volver al texto de la imagen en la Sección 1.3.5.](#135-imagen-002-135-imagen-003-135-imagen-004)
-
----
-
-#### 8.3.001.003.005.004. Fase 7 de la metodología del análisis forense.
-
-![001-003-005-004](./images/001-003-005-004-FASE-7-METODOLOGIA-ANALISIS-FORENSE.png)
-
-[Volver al texto de la imagen en la Sección 1.3.5.](#135-imagen-002-135-imagen-003-135-imagen-004)
-
----
-
-#### 8.3.001.003.005.005. Orden de volatilidad análisis forense.
-
-![001-003-005-005](./images/001-003-005-005-ORDEN-VOLATILIDAD-RFC-3227.png)
-
-[Volver al texto de la imagen en la Sección 1.3.5.](#135-Imagen-005)
-
----
-
-#### 8.3.001.006.001. Diagrama de Gantt reto/PEC 1.
-
-![001-006-001](./images/001-006-001-diagrama-de-gantt-pec-01.png)
-
-[Volver al texto de la imagen en la Sección 1.6.](#16-Imagen-001)
-
----
-
----
-
-#### 8.3.001.006.002. Diagrama de Gantt reto/PEC 2.
-
-![001-006-002](./images/001-006-002-diagrama-de-gantt-pec-02.png)
-
-[Volver al texto de la imagen en la Sección 1.6.](#16-Imagen-001)
-
----
-
----
-
-#### 8.3.001.006.003. Diagrama de Gantt reto/PEC 3.
-![001-006-003](./images/001-006-003-diagrama-de-gantt-pec-03.png)
-
-[Volver al texto de la imagen en la Sección 1.6.](#16-Imagen-003)
-
----
-
----
-
-#### 8.3.001.006.004. Diagrama de Gantt reto/PEC 4.
-
-![001-006-004](./images/001-006-004-diagrama-de-gantt-pec-04.png)
-
-[Volver al texto de la imagen en la Sección 1.6.](#16-imagen-004)
-
----
-
-#### 8.3.003.001.001. Imagen Hash archivos.
-
-![005-imagen-hash-archivos.png](./images/003-001-001-imagen-hash-archivos.png)
-
-[Volver al texto de la imagen en la Sección 3.1.](#31-imagen-001)
-
----
-
-#### 8.3.003.001.002. Imagen Hash PowerShell.
-
-![003-001-002](./images/003-001-002-captura-hash-PowerShell.png)
-
-[Volver al texto de la imagen en la Sección 006.](#31-imagen-002)
-
----
-
-#### 8.3.003.002.001. Imagen de imageinfo.
-
-![003-002-001](./images/003-002-001-captura-imageinfo.png)
-
-[Volver al texto de la imagen en la Sección 3.2.](#32-imagen-001)
-
----
-
-#### 8.3.003.002.002. Imagen de búsqueda de string linux version.
-
-![003-002-002](./images/003-002-002-buscar-strings-linux-version.png)
-
-[Volver al texto de la imagen en la Sección 3.2.](#32-imagen-002)
-
----
-
-#### 8.3.010. Imagen de buscando caché de AWS.
-
-![009-buscando-cache-aws.png](./images/009-buscando-cache-aws.png)
-
-[Volver al texto de la imagen en la Sección 009.](#imagen-009)
-
----
-
-#### 8.3.011. Imagen de instalación de kernel de AWS.
-
-![010-instalación-kernel-aws.png](./images/010-instalacion-kernel-aws.png)
-
-[Volver al texto de la imagen en la Sección 010.](#imagen-010)
-
----
-
-#### 8.3.012. Imagen de reinicio del servidor de AWS.
-
-![011-reinicio-server-aws.png](./images/011-reinicio-server-aws.png)
-
-[Volver al texto de la imagen en la Sección 011.](#imagen-011)
-
----
-
-#### 8.3.013. Imagen de reinicio del servidor con kernel de AWS.
-
-![012-inicio-con-server-aws.png](./images/012-inicio-con-server-aws.png)
-
-[Volver al texto de la imagen en la Sección 012.](#imagen-012)
-
----
-
-#### 8.3.013. .
-
-![013-make-clean-clear-make.png](./images/013-make-clean-clear-make.png)
-
-[Volver al texto de la imagen en la Sección 013.](#imagen-013)
-
----
-
-
-
-
-
-
-
-
-
-
-
-
-
-[Volver al Índice del capítulo 8. Anexos.](#índice-del-capítulo-8-anexos)
-
-[Volver al Índice General.](#índice-general)
-
----
-
-## 8.4. Videos.
-
----
-
-#### 8.4.003.002.001. Video de instalación de Volatility en Ubuntu.
-
-[![Miniatura video Volatility](./images/024-miniatura-instalacion-volatility.png)](https://youtu.be/z_SWIIa3AnY)
-
-> [https://www.youtube.com/watch?v=z_SWIIa3AnY](https://www.youtube.com/watch?v=z_SWIIa3AnY)
-
-[Volver al texto del video en la Sección 3.2.](#32-video-001)
-
----
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-[Volver al Índice del capítulo 8. Anexos.](#índice-del-capítulo-8-anexos)
-
-[Volver al Índice General.](#índice-general)
-
----
-
-## 8.5. Extracto de comandos utilizados.
-
----
-
-#### 8.5.003.001.001. Comando **<u style='color:red'>Hash</u>** MD5.
-
-~~~PowerShell
-Get-FileHash .\Server_RAM.mem -Algorithm MD5
+~~~bash
+history > usb/historial.txt
 ~~~
 
-La respuesta de PowerShell es el siguiente:
+Se ha guardado en el archivo `/home/jrodg85/usb/historial.txt` el siguiente historial de acciones de la consola:
 
-~~~PowerShell
-Algorithm       Hash                                                                   Path
----------       ----                                                                   ----
-MD5             75A99B57032AA34BA19042ED85DB273F                                       D:\TFM\RAM\...
+~~~bash
+ 1  sudo apt update
+ 2  sudo apt upgrade
+ 3  sudo apt install zip
+ 4  sudo apt install git
+ 5  sudo apt install make
+ 6  sudo apt install dwarfdump
+ 7  sudo apt-cache search linux-image | grep 4.15.0-1021-aws
+ 8  sudo apt install linux-image-4.15.0-1021-aws
+ 9  sudo reboot now
+10  uname -r
+11  hostnamectl
+12  sudo apt install build-essential
+13  sudo apt update
+14  sudo apt install linux-headers-$(uname -r)
+15  sudo apt install python2.7 python2.7-dev
+16  sudo snap install curl
+17  dpkg -l python2.7
+18  curl https://bootstrap.pypa.io/pip/2.7/get-pip.py --output get-pip.py
+19  sudo python2.7 get-pip.py
+20  sudo pip2.7 --version
+21  git clone https://github.com/volatilityfoundation/volatility.git
+22  sudo pip2.7 install distorm3
+23  sudo pip2.7 list
+24  sudo pip2.7 install yara-python==3.8.1
+25  sudo pip2.7 list
+26  sudo pip2.7 install pycrypto
+27  sudo pip2.7 list
+28  sudo pip2.7 install Pillow
+29  sudo pip2.7 list
+30  sudo pip2.7 install openpyxl==2.6.4
+31  sudo pip2.7 list
+32  sudo pip2.7 install ujson
+33  sudo pip2.7 list
+34  cd volatility/
+35  sudo python2.7 setup.py install
+36  sudo python2.7 vol.py --info
+37  cd tools/linux/
+38  make
+39  cd ..
+40  cd ../..
+41  lsb_release -si
+42  uname -r
+43  clear
+44  sudo zip linux$(lsb_release -si)_$(uname -r)_profile.zip /home/jrodg85/volatility/tools/linux/module.dwarf /boot/System.map-4.15.0-1021-aws
+45  mkdir usb
+46  ls
+47  sudo mount /dev/sdb usb/
+48  cp linuxUbuntu_4.15.0-1021-aws_profile.zip usb/
+49  touch usb/historial.txt
+50  history > usb/historial.txt
 ~~~
 
-[Volver al texto del comando en la Sección 3.1](#31-comando-001-31-comando-002)
-
+[Volver al texto del comando en la Sección 3.3.2](#332-comando-001)
 
 ---
 
-#### 8.5.003.001.002. Comando **<u style='color:red'>Hash</u>** SHA1.
+#### 8.4.003.004.003.001. Comando sudo python2.7 vol.py --profile=LinuxlinuxUbuntu_4_15_0-1021-aws_profilex64 -f '/home/jrodg85/Server_RAM.mem' linux_mount.
 
-~~~PowerShell
-Get-FileHash .\Server_RAM.mem -Algorithm SHA1
+~~~bash
+sudo python2.7 vol.py --profile=LinuxlinuxUbuntu_4_15_0-1021-aws_profilex64 -f '/home/jrodg85/Server_RAM.mem' linux_mount
 ~~~
 
-La respuesta de PowerShell es el siguiente:
+La respuesta de volatility ha sido la siguiente
 
-~~~PowerShell
-Algorithm       Hash                                                                   Path
----------       ----                                                                   ----
-SHA1            CC1FAD2AF321B8C2DDF0103986E3B344EB8F2CC8                               D:\TFM\RAM\...
+~~~bash
+Volatility Foundation Volatility Framework 2.6.1
+
+cgroup                    /sys/fs/cgroup/rdma                 cgroup       rw,relatime,nosuid,nodev,noexec
+
+tmpfs                     /sys/fs/cgroup                      tmpfs        ro,nosuid,nodev,noexec
+
+/dev/xvda1                /                                   ext4         ro,relatime
+
+proc                      /bus                                proc         ro,relatime,nosuid,nodev,noexec
+
+pstore                    /sys/fs/pstore                      pstore       rw,relatime,nosuid,nodev,noexec
+
+fusectl                   /sys/fs/fuse/connections            fusectl      rw,relatime
+
+lxcfs                     /var/lib/lxcfs                      fuse         ro,relatime,nosuid,nodev
+
+/dev/loop0                /snap/core/5328                     squashfs     ro,relatime,nodev
+
+udev                      /dev                                devtmpfs     rw,relatime,nosuid
+
+cgroup                    /sys/fs/cgroup/unified              cgroup2      rw,relatime,nosuid,nodev,noexec
+
+sysfs                     /sys                                sysfs        rw,relatime,nosuid,nodev,noexec
+
+tmpfs                     /run/user/1000                      tmpfs        rw,relatime,nosuid,nodev
+
+/dev/loop1                /snap/amazon-ssm-agent/495          squashfs     ro,relatime,nodev
+
+tmpfs                     /run                                tmpfs        rw,relatime,nosuid,noexec
+
+devpts                    /dev/pts                            devpts       rw,relatime,nosuid,noexec
+
+systemd-1                 /proc/sys/fs/binfmt_misc            autofs       rw,relatime
+
+tmpfs                     /dev/shm                            tmpfs        rw,nosuid,nodev
+
+cgroup                    /sys/fs/cgroup/net_cls,net_prio     cgroup       rw,relatime,nosuid,nodev,noexec
+
+cgroup                    /sys/fs/cgroup/hugetlb              cgroup       ro,relatime,nosuid,nodev,noexec
+
+hugetlbfs                 /dev/hugepages                      hugetlbfs    rw,relatime
+
+tmpfs                     /dev                                tmpfs        ro,nosuid,noexec
+
+/dev/loop2                /snap/core/6130                     squashfs     ro,relatime,nodev
+
+tmpfs                     /run/lock                           tmpfs        rw,relatime,nosuid,nodev,noexec
+
+/dev/loop3                /snap/amazon-ssm-agent/930          squashfs     ro,relatime,nodev
+
+cgroup                    /sys/fs/cgroup/cpuset               cgroup       rw,relatime,nosuid,nodev,noexec
+
+tmpfs                     /dev                                tmpfs        ro,nosuid,noexec
+
+mqueue                    /dev/mqueue                         mqueue       rw,relatime
+
+cgroup                    /sys/fs/cgroup/devices              cgroup       rw,relatime,nosuid,nodev,noexec
+
+cgroup                    /sys/fs/cgroup/freezer              cgroup       rw,relatime,nosuid,nodev,noexec
+
+securityfs                /sys/kernel/security                securityfs   rw,relatime,nosuid,nodev,noexec
+
+cgroup                    /sys/fs/cgroup/blkio                cgroup       rw,relatime,nosuid,nodev,noexec
+
+cgroup                    /sys/fs/cgroup/cpu,cpuacct          cgroup       ro,relatime,nosuid,nodev,noexec
+
+cgroup                    /sys/fs/cgroup/systemd              cgroup       ro,relatime,nosuid,nodev,noexec
+
+cgroup                    /sys/fs/cgroup/perf_event           cgroup       rw,relatime,nosuid,nodev,noexec
+
+debugfs                   /sys/kernel/debug                   debugfs      rw,relatime
+
+configfs                  /sys/kernel/config                  configfs     rw,relatime
+
+cgroup                    /sys/fs/cgroup/memory               cgroup       rw,relatime,nosuid,nodev,noexec
+
+cgroup                    /sys/fs/cgroup/pids                 cgroup       ro,relatime,nosuid,nodev,noexec
+
+tmpfs                     /var/lib/private                    tmpfs        ro,nosuid,nodev,noexec
 ~~~
 
-[Volver al texto del comando en la Sección 3.1](#31-comando-001-31-comando-002)
+Procesado el comando, se puede obtener esta tabla resumen:
+
+| Punto de Montaje | Dispositivo o Sistema de Archivos | Tipo      | Opciones de Montaje             |
+|------------------|------------------------------------|----------|--------------------------------|
+| cgroup           | /sys/fs/cgroup/rdma               | cgroup      | rw,relatime,nosuid,nodev,noexec |
+| tmpfs            | /sys/fs/cgroup                    | tmpfs       | ro,nosuid,nodev,noexec |
+| /dev/xvda1       | /                                 | ext4        | ro,relatime |
+| proc             | /bus                              | proc        | ro,relatime,nosuid,nodev,noexec |
+| pstore           | /sys/fs/pstore                    | pstore      | rw,relatime,nosuid,nodev,noexec |
+| fusectl          | /sys/fs/fuse/connections          | fusectl     | rw,relatime |
+| lxcfs            | /var/lib/lxcfs                    | fuse        | ro,relatime,nosuid,nodev |
+| /dev/loop0       | /snap/core/5328                   | squashfs    | ro,relatime,nodev |
+| udev             | /dev                              | devtmpfs    | rw,relatime,nosuid |
+| cgroup           | /sys/fs/cgroup/unified            | cgroup2     | rw,relatime,nosuid,nodev,noexec |
+| sysfs            | /sys                              | sysfs       | rw,relatime,nosuid,nodev,noexec |
+| tmpfs            | /run/user/1000                    | tmpfs       | rw,relatime,nosuid,nodev |
+| /dev/loop1       | /snap/amazon-ssm-agent/495        | squashfs    | ro,relatime,nodev |
+| tmpfs            | /run                              | tmpfs       | rw,relatime,nosuid,noexec |
+| devpts           | /dev/pts                          | devpts      | rw,relatime,nosuid,noexec |
+| systemd-1        | /proc/sys/fs/binfmt_misc          | autofs      | rw,relatime |
+| tmpfs            | /dev/shm                          | tmpfs       | rw,nosuid,nodev |
+| cgroup           | /sys/fs/cgroup/net_cls,net_prio   | cgroup      | rw,relatime,nosuid,nodev,noexec |
+| cgroup           | /sys/fs/cgroup/hugetlb            | cgroup      | ro,relatime,nosuid,nodev,noexec |
+| hugetlbfs        | /dev/hugepages                    | hugetlbfs   | rw,relatime |
+| tmpfs            | /dev                              | tmpfs       | ro,nosuid,noexec |
+| /dev/loop2       | /snap/core/6130                   | squashfs    | ro,relatime,nodev |
+| tmpfs            | /run/lock                         | tmpfs       | rw,relatime,nosuid,nodev,noexec |
+| /dev/loop3       | /snap/amazon-ssm-agent/930        | squashfs    | ro,relatime,nodev |
+| cgroup           | /sys/fs/cgroup/cpuset             | cgroup      | rw,relatime,nosuid,nodev,noexec |
+| tmpfs            | /dev                              | tmpfs       | ro,nosuid,noexec |
+| mqueue           | /dev/mqueue                       | mqueue      | rw,relatime |
+| cgroup           | /sys/fs/cgroup/devices            | cgroup      | rw,relatime,nosuid,nodev,noexec |
+| cgroup           | /sys/fs/cgroup/freezer            | cgroup      | rw,relatime,nosuid,nodev,noexec |
+| securityfs       | /sys/kernel/security              | securityfs  | rw,relatime,nosuid,nodev,noexec |
+| cgroup           | /sys/fs/cgroup/blkio              | cgroup      | rw,relatime,nosuid,nodev,noexec |
+| cgroup           | /sys/fs/cgroup/cpu,cpuacct        | cgroup      | ro,relatime,nosuid,nodev,noexec |
+| cgroup           | /sys/fs/cgroup/systemd            | cgroup      | ro,relatime,nosuid,nodev,noexec |
+| cgroup           | /sys/fs/cgroup/perf_event         | cgroup      | rw,relatime,nosuid,nodev,noexec |
+| debugfs          | /sys/kernel/debug                 | debugfs     | rw,relatime |
+| configfs         | /sys/kernel/config                | configfs    | rw,relatime |
+| cgroup           | /sys/fs/cgroup/memory             | cgroup      | rw,relatime,nosuid,nodev,noexec |
+| cgroup           | /sys/fs/cgroup/pids               | cgroup      | ro,relatime,nosuid,nodev,noexec |
+| tmpfs            | /var/lib/private                  | tmpfs       | ro,nosuid,nodev,noexec |
+| | | | |
+
+
+
+[Volver al texto del comando en la Sección 3.4.3.](#343-comando-001)
 
 ---
 
-#### 8.5.003.003.001. Comando linux bash.
+#### 8.4.003.004.004.001. Comando sudo python2.7 vol.py --profile=LinuxlinuxUbuntu_4_15_0-1021-aws_profilex64 -f '/home/jrodg85/Server_RAM.mem' linux_memmap > /home/jrodg85/informe-memmap.txt.
 
-~~~
-exit
-
-sudo apt update
-
-sudo systemctl restart postfix
-
-ls -l
-
-mysql -uroot -p
-
-cd apache2/
-
-ls -l
-
-sudo vi /etc/mysql/debian.cnf
-
-ps -ef| grep mysql
-
-tail access.log.1
-
-cd /var/www/html
-
-sudo kill -9 4539
-
-ls -als
-
-cd /
-
-ps -ef| grep mysql
-
-sudo mysqld_safe --skip-grant-tables
-
-H?=? &
-
-qls -l tmp
-
-qls -l tmp
-
-cd
-
-exit
-
-vi functions.php
-
-ps -ef| grep mysql
-
-ls -l /var/run/mysqld
-
-ls -l /run
-
-ls -lt
-
-ls -lt| more
-
-vi access.log.1
-
-sudo mysql_secure_installation
-
-ls -l
-
-p?JU
-
-su mysql
-
-tail access.log
-
-cat /var/log/mysql/error.log
-
-cd /var/log
-
-find . -name functions.php
-
-sudo apt install python-certbot-apache
-
-sudo service apache2 restart
-
-ps -ef| grep mysql
-
-mysql -uroot -p
-
-sudo apt-get install apache2
-
-apt-cache search mysql-server
-
-apt-cache search php
-
-mysql -u root -p
-
-ls -l
-
-#1546501785
-
-tail error.log
-
-sudo vi functions.php
-
-sudo mysql
-
-ls -l /var/run
-
-exit
-
-ls -l
-
-apt-cache search php| grep apache
-
-sudo vi /etc/mysql/debian
-
-tail syslog
-
-sudo apt-get install mysql-server
-
-_service
-
-apt-cache search mysql | grep php
-
-sudo cp /home/ubuntu/wordpress-4.9.8.tar.gz  .
-
-cd /var/log
-
-cd
-
-U
-
-H???Nt??nu??6
-
-sudo mysqld_safe --skip-grant-tables &
-
-apt-cache search mysql
-
-pwd
-
-ls -l
-
-ls -l
-
-`uSU
-
-sudo mv * ..
-
-?,YU
-
-sudo mysqld_safe --skip-grant-tables
-
-r="$c_clear$r"
-
-ls -l /run
-
-ls -l
-
-COMPREPLY=($(compgen -W "--help --local" -- $cur_word))
-
-ls -l
-
-sudo tar xzf wordpress-4.9.8.tar.gz
-
-sudo apt-get install aapche2
-
-tail -100 kern.log
-
-mysql -u root -p
-
-cd ..
-
-cd /var/www/html/
-
-ps -ef| grep mysql
-
-apt-cache search php
-
-cd wordpress/
-
-cd hhtml
-
-sudo rm -r wordpress/
-
-ls -l
-
-ls -l
-
-sudo chmod 777 /var/run/mysqld
-
-sudo apt upgrade
-
-ls -l
-
-sudo vi /etc/apache2/sites-enabled/000-default.conf
-
-cd htmlls -l
-
-mysql -uroot -p
-
-ls -l
-
-ls -l
-
-ls -l
-
-sudo chown -R www-data:www-data html
-
-sudo mysqld_safe --skip-grant-tables
-
-cd /var/www/html
-
-find . -name functions.php -exec grep -H add_filer {} \;
-
-sudo apt install libapache2-mod-php
-
-exit
-
-cd /var/lg
-
-suudo mysqld_safe --skip-grant-tables &
-
-ls -l
-
-cd /var/log/apache2/sites-e
-
-mysql -u root -p
-
-cd
-
-sudo service mysql restart
-
-find . -name functions.php -exec grep -H add_filter {} \;
-
-apt-cache search apache2
-
-sudo apt-get update
-
-cat debian
-
-?2JU
-
-echo "Test 1" | mail -s "Test 1" test12312321@mailinator.com
-
-sudo chmod 777 /run/mysqld/
-
-dpkg -l | grep mysql-server
-
-sudo certbot --apache -d ganga.site -d www.ganga.site
-
-ps -ef| grep mysql
-
-cd /var/log/apache2/
-
-sudo mkdir /run/mysqld
-
-cd /etc/mysql/
-
-sudo grep root *
-
-mysql -u root -p
-
-ps -ef| grep mysql
-
-sudo mysqld_safe --skip-grant-tables
-
-mysql -u root
-
-ls -l /run
-
-cd /var/log
-
-cd
-
-sudo dpkg-reconfigure mysql-server-5.7
-
-sudo service mysql stop
-
-cd apache2/
-
-sudo service mysql stop
-
-cat /var/log/mysql/error.log
-
-sudo kill -9 3181
-
-ls -l
-
-mysql -u root
-
-more access.log.1
-
-dpkg -l | grep mysql
-
-chmod 777 /run/mysqld/
-
-g|MP?(E)G|wm[av]|WM[AV]|avi|AVI|asf|vob|VOB|bin|dat|divx|DIVX|vcd|ps|pes|fli|flv|FLV|fxm|FXM|viv|)4[av]|M?(P)4[AV]|mkv|MKV|og[agmvx]|OG[AGMVX]|t[ps]|T[PS]|m2t?(s)|M2T?(S)|mts|MTS|wav|WAV|flac||XM)|+([0-9]).@(vdr|VDR))?(.part)'
-
-sudo kill -9 3182 3542
-
-sudo kill -9 4179
-
-ls
-
-ls -l
-
-sudo service mysql stop
-
-?
-
-ls -l
-
-sudo service apache2 rewtart
-
-ls
-
-sudo apt install mailutils
-
-ls -lt| more
-
-sudo cat debian.cnf
-
-exit
-
-pwd
-
-mysql -u root -p
-
-cat /etc/issue
-
-cd wordpress/
-
-tail error.log
-
-tail error.log
-
-vi access.log
-
-cd ..
-
-cd wp-content/themes/twentyseventeen/
-
-sudo systemctl restart psotfix
-
-ls -l
-
-exit
-
-mysql_secure_installation
-
-mysql -uroot -p
-
-sudo cat /etc/mysql/debian
-
-ls -l tmp
-
-mysql -u root -p
-
-tail syslog
-
-cd /tmp
-
-exit
-
-cd html
-
-find . -name functions.php -exec grep -H add_filter {} \;
-
-cat debian.cnf
-
-mysql -u root
-
-suudo mysql_secure_installation
-
-sudo cat /etc/mysql/debian.cnf
-
-sudo service apache2 retart
-
-sudo rm index.html
-
-sudo rm -r /run/mysqld
-
-sudo vi wp-config.php
-
-sudo systemctl reload apache2
-
-sudo service mysql start
-
-sudo vi /etc/postfix/main.cf
-
-tail access.log
-
-tail -100 syslog
-
-ps -ef| grep mysql
-
-cd /var/log/apache2/
-
-ls- l
-
-pwd
-
-vi index.html
-
-sudo apachectl configtest
-
-ps -ef| grep mysql
-
-sudo mkdir /var/run/mysqld
-
-tail access.log
-
-exit
-
-sudo add-apt-repository ppa:certbot/certbot
-
-tail access.log
-
-ls -l
-
-tail -100 access.log
-
-tail -100 access.log
-
-execute-command
-
-sudo mysqld_safe --skip-grant-tables &
-
-sudo kill 3181
-
-exit
-
-!
-
-sudo service apache2 restart
-
-sudo apt install php-mysql
-
-date
-
-cd ap
-
-ls -l
-
-grep POST access.log
-
-ls -l
-
-vi access.log
-
-ls -l
-
-cd home
-
-cd /var/log
-
-sudo apchectl configtest
-
-sudo service mysql start
-
-sudo vi /etc/php/7.2/apache2/php.ini
-
-sudo kill -9 4178
-
-tail -100 syslog
-
-ps -ef| grep mysql
-
-tail -100 syslog
-
-sudo rm wordpress-4.9.8.tar.gz
-
-ls -l /run
-
-??OU
-
-ls -l /etc/cron.d
-
-ls -l
-
-cd /tmp
-
-sudo insmod lime-4.15.0-42-generic.ko "path=captura.mem format=lime"
-
-cat /etc/issue
-
-uname -a
-
-ls -l
-
-rm lime-4.15.0-42-generic.ko
-
-ls -l
-
-sudo insmod lime-4.15.0-1021-aws.ko "path=captura.mem format=lime"
+~~~Bash
+sudo python2.7 vol.py --profile=LinuxlinuxUbuntu_4_15_0-1021-aws_profilex64 -f '/home/jrodg85/Server_RAM.mem' linux_memmap > /home/jrodg85/informe-memmap.txt
 ~~~
 
+Tras una limpieza de datos se obtiene la siguiente información.
+
+~~~Bash
+Task             Pid      Virtual
+---------------- -------- ------------------
+systemd                 1 0x000056198f210000
+Unable to read pages for kthreadd pid 2.
+Unable to read pages for kworker/0:0H pid 4.
+Unable to read pages for mm_percpu_wq pid 6.
+Unable to read pages for ksoftirqd/0 pid 7.
+Unable to read pages for rcu_sched pid 8.
+Unable to read pages for rcu_bh pid 9.
+Unable to read pages for migration/0 pid 10.
+Unable to read pages for watchdog/0 pid 11.
+Unable to read pages for cpuhp/0 pid 12.
+Unable to read pages for kdevtmpfs pid 13.
+Unable to read pages for netns pid 14.
+Unable to read pages for rcu_tasks_kthre pid 15.
+Unable to read pages for kauditd pid 16.
+Unable to read pages for xenbus pid 17.
+Unable to read pages for xenwatch pid 18.
+Unable to read pages for khungtaskd pid 20.
+Unable to read pages for oom_reaper pid 21.
+Unable to read pages for writeback pid 22.
+Unable to read pages for kcompactd0 pid 23.
+Unable to read pages for ksmd pid 24.
+Unable to read pages for khugepaged pid 25.
+Unable to read pages for crypto pid 26.
+Unable to read pages for kintegrityd pid 27.
+Unable to read pages for kblockd pid 28.
+Unable to read pages for ata_sff pid 29.
+Unable to read pages for md pid 30.
+Unable to read pages for edac-poller pid 31.
+Unable to read pages for devfreq_wq pid 32.
+Unable to read pages for watchdogd pid 33.
+Unable to read pages for kswapd0 pid 36.
+Unable to read pages for ecryptfs-kthrea pid 37.
+Unable to read pages for kthrotld pid 79.
+Unable to read pages for nvme-wq pid 80.
+Unable to read pages for scsi_eh_0 pid 81.
+Unable to read pages for scsi_tmf_0 pid 82.
+Unable to read pages for scsi_eh_1 pid 83.
+Unable to read pages for scsi_tmf_1 pid 84.
+Unable to read pages for ipv6_addrconf pid 89.
+Unable to read pages for kstrp pid 99.
+Unable to read pages for kworker/0:1H pid 100.
+Unable to read pages for raid5wq pid 280.
+Unable to read pages for jbd2/xvda1-8 pid 330.
+Unable to read pages for ext4-rsv-conver pid 331.
+Unable to read pages for iscsi_eh pid 395.
+Unable to read pages for ib-comp-wq pid 408.
+Unable to read pages for ib_mcast pid 409.
+Unable to read pages for ib_nl_sa_wq pid 410.
+lvmetad               414 0x000055c919805000
+Unable to read pages for rdma_cm pid 415.
+systemd-logind        712 0x0000555feb5b1000
+dbus-daemon           720 0x000055e82c96e000
+cron                  733 0x000055da6b87f000
+accounts-daemon       734 0x00005622d937a000
+lxcfs                 737 0x0000559f4b3c0000
+atd                   749 0x00005617c519f000
+polkitd               771 0x000055e2bdf70000
+agetty                785 0x0000561ce77d2000
+Unable to read pages for loop0 pid 951.
+Unable to read pages for loop1 pid 1103.
+systemd-network      2788 0x000056528aefc000
+systemd-resolve      2804 0x0000556117890000
+systemd-timesyn      2818 0x000055ec03062000
+systemd-journal      2825 0x000055788deea000
+uuidd                5077 0x00005626dc1f7000
+systemd-udevd        5160 0x000055db9d680000
+Unable to read pages for xfsalloc pid 10374.
+Unable to read pages for xfs_mru_cache pid 10375.
+iscsid              10988 0x0000556f3766c000
+networkd-dispat     11199 0x000000000040b000
+sshd                12159 0x000055ced2c2b000
+mysqld               5127 0x0000000000758000
+apache2              5469 0x0000555836828000
+Unable to read pages for loop2 pid 6189.
+snapd                6219 0x000000c000000000
+Unable to read pages for loop3 pid 6349.
+amazon-ssm-agen      6445 0x0000000000401000
+rsyslogd            26254 0x000055a525c04000
+master              26489 0x0000560cfc179000
+qmgr                26500 0x00005561e4c3e000
+Unable to read pages for kworker/0:0 pid 19056.
+Unable to read pages for kworker/u30:2 pid 19454.
+apache2             19704 0x0000555836828000
+apache2             19705 0x0000555836828000
+apache2             19706 0x0000555836828000
+apache2             19707 0x0000555836828000
+apache2             19708 0x0000555836828000
+Unable to read pages for kworker/0:1 pid 19709.
+apache2             19952 0x0000555836828000
+apache2             19953 0x0000555836828000
+apache2             20230 0x0000555836828000
+apache2             20231 0x0000555836828000
+apache2             20232 0x0000555836828000
+apache2             20233 0x0000555836828000
+Unable to read pages for sh pid 20381.
+sshd                20483 0x0000556d21d8b000
+systemd             20485 0x000055cc54c92000
+(sd-pam)            20486 0x000056198f210000
+sshd                20576 0x0000556d21d90000
+bash                20577 0x000055931a312000
+pickup              20703 0x00005566d1a50000
+Unable to read pages for kworker/u30:1 pid 20781.
+Unable to read pages for kworker/u30:0 pid 20886.
+sudo                20893 0x000055c043a14000
+insmod              20894 0x00005620e496f000
+Unable to read pages for kworker/0:2 pid 20898.
+~~~
+
+[Volver al texto del comando en la Sección 3.4.4.](#344-comando-001)
+
+---
 
 
 
-
-[Volver al texto del comando en la Sección 3.1](#33-comando-001)
 
 
 ---
@@ -2585,11 +2643,11 @@ sudo insmod lime-4.15.0-1021-aws.ko "path=captura.mem format=lime"
 
 ---
 
-## 8.6. Referencias.
+## 8.5. Referencias.
 
 ---
 
-#### 8.6.001. Enunciado TFM:
+#### 8.5.001. Enunciado TFM:
 
 - Autor: Universitat Oberta de Catalunya.
 - Título del trabajo: Enunciado TFM - Análisis forense.
@@ -2603,7 +2661,7 @@ sudo insmod lime-4.15.0-1021-aws.ko "path=captura.mem format=lime"
 
 ---
 
-#### 8.6.002. Propuestas de TFM:
+#### 8.5.002. Propuestas de TFM:
 
 - Autor: Universitat Oberta de Catalunya.
 - Título del trabajo: M1.881 - AnálisiS forense.
@@ -2614,7 +2672,7 @@ sudo insmod lime-4.15.0-1021-aws.ko "path=captura.mem format=lime"
 [Volver at texto de la referencia en la Sección 1.1.](#11-referencia-002)
 
 ---
-#### 8.6.003. El método Reagan:
+#### 8.5.003. El método Reagan:
 
 - Autor: GEFIRA.
 - Título del trabajo: El método Reagan.
@@ -2624,7 +2682,7 @@ sudo insmod lime-4.15.0-1021-aws.ko "path=captura.mem format=lime"
 
 ---
 
-#### 8.6.004. Norma ISO 27037:
+#### 8.5.004. Norma ISO 27037:
 
 - Autor: International Organization for Standardization.
 - Título del trabajo: Information technology — Security techniques — Guidelines for identification, collection, acquisition, and preservation of digital evidence.
@@ -2635,7 +2693,7 @@ sudo insmod lime-4.15.0-1021-aws.ko "path=captura.mem format=lime"
 
 ---
 
-#### 8.6.005. IMPLEMENTACIÓN DE HERRAMIENTAS PARA LA EXTRACCIÓN DE EVIDENCIA DIGITAL:
+#### 8.5.005. IMPLEMENTACIÓN DE HERRAMIENTAS PARA LA EXTRACCIÓN DE EVIDENCIA DIGITAL:
 
 - Autor: ANTHONY ALEXANDER GUZMÁN MOLINA.
 - Título del trabajo: IMPLEMENTACIÓN DE HERRAMIENTAS PARA LA EXTRACCIÓN DE EVIDENCIA DIGITAL .
@@ -2647,7 +2705,7 @@ sudo insmod lime-4.15.0-1021-aws.ko "path=captura.mem format=lime"
 
 ---
 
-#### 8.6.006. Norma RFC 3227:
+#### 8.5.006. Norma RFC 3227:
 
 - Autores:  Dominique Brezinski & Tom Killalea.
 - Título del trabajo: RFC 3227.
@@ -2659,7 +2717,7 @@ sudo insmod lime-4.15.0-1021-aws.ko "path=captura.mem format=lime"
 
 ---
 
-#### 8.6.007. Que son las normas UNE:
+#### 8.5.007. Que son las normas UNE:
 
 - Autor:  Grupo ACMS Consultores.
 - Título del trabajo: Norma UNE: Significado y Estructura.
@@ -2669,7 +2727,17 @@ sudo insmod lime-4.15.0-1021-aws.ko "path=captura.mem format=lime"
 
 ---
 
-#### 8.6.008. Metodología para un análisis forense:
+#### 8.5.008. Norma UNE 71505:
+
+- Autor:  AENOR, Asociación Española de Normalización y Certificación.
+- Título del trabajo: Norma UNE 71505.
+- URL repositorio Github: [006-UNE-71505-2013.pdf](https://github.com/jrodg85/TFM-ANALISIS-FORENSE/blob/main/referencias/006-UNE-71505-2013.pdf)
+
+[Volver at texto de la referencia en la Sección 1.3.4.](#134-referencia-008)
+
+---
+
+#### 8.5.009. Metodología para un análisis forense:
 
 - Autores: Carles Gervilla Rivas.
 - Título del trabajo: Metodología para un Análisis Forense.
@@ -2677,21 +2745,21 @@ sudo insmod lime-4.15.0-1021-aws.ko "path=captura.mem format=lime"
 - URL: [https://openaccess.uoc.edu/bitstream/10609/39681/6/cgervillarTFM1214memoria.pdf](https://openaccess.uoc.edu/bitstream/10609/39681/6/cgervillarTFM1214memoria.pdf)
 - URL repositorio Github: [007-METODOLOGÍA-PARA-UN-ANÁLISIS-FORENSE.pdf](https://github.com/jrodg85/TFM-ANALISIS-FORENSE/blob/main/referencias/007-METODOLOGÍA-PARA-UN-ANÁLISIS-FORENSE.pdf)
 
-[Volver at texto de la referencia en la Sección 1.3.5.](#135-referencia-008-135-referencia-009)
+[Volver at texto de la referencia en la Sección 1.3.5.](#135-referencia-009-135-referencia-010)
 
 ---
 
-#### 8.6.009. Ninjas de la web. Metodología para un análisis forense:
+#### 8.5.010. Ninjas de la web. Metodología para un análisis forense:
 
 - Autor: Miguel Angel Olivares.
 - Título del trabajo: Metodología de Análisis Forense (Ninjas de la Web).
 - URL: [https://ninjasdelaweb.com/metodologia-de-analisis-forense/](https://ninjasdelaweb.com/metodologia-de-analisis-forense/)
 
-[Volver at texto de la referencia en la Sección 1.3.5.](#135-referencia-008-135-referencia-009)
+[Volver at texto de la referencia en la Sección 1.3.5.](#135-referencia-009-135-referencia-010)
 
 ---
 
-#### 8.6.010. Cómputo Forense de Wikipedia
+#### 8.5.011. Cómputo Forense de Wikipedia:
 
 - Autor: Avelaz
 - Ultimo editor: Sabbut
@@ -2699,8 +2767,39 @@ sudo insmod lime-4.15.0-1021-aws.ko "path=captura.mem format=lime"
 - Criterio de ordenación predeterminado: Cómputo forense
 - URL: [https://es.wikipedia.org/wiki/C%C3%B3mputo_forense](https://es.wikipedia.org/wiki/C%C3%B3mputo_forense)
 
-[Volver at texto de la referencia en la Sección 1.7.](#17-referencia-010)
+[Volver at texto de la referencia en la Sección 1.7.](#17-referencia-011)
 
+---
+
+#### 8.5.012. Creación de perfil en Volatility (hotfixed42):
+
+- Autor: hotfixed42.
+- Título del trabajo: Creación de perfiles linux para Volatility.
+- URL: [https://hotfixed42.rssing.com/chan-32986353/article3.html](https://hotfixed42.rssing.com/chan-32986353/article3.html)
+
+[Volver at texto de la referencia en la Sección 3.3.0.](#330-referencia-012-330-referencia-013-330-referencia-014)
+
+---
+
+#### 8.5.013. Creación de perfil en Volatility (bytelearning):
+
+- Autor: bytelearning.
+- Título del trabajo: Memoria RAM en Linux; una valiosa fuente de información.
+- URL: [https://bytelearning.blogspot.com/2017/02/memoria-ram-linux-fuente-informacion.html](https://bytelearning.blogspot.com/2017/02/memoria-ram-linux-fuente-informacion.html)
+
+[Volver at texto de la referencia en la Sección 3.3.0.](#330-referencia-012-330-referencia-013-330-referencia-014)
+
+---
+
+#### 8.5.014. Creación de perfil en Volatility (andreafortuna):
+
+- Autor: andreafortuna.
+- Título del trabajo: How to generate a Volatility profile for a Linux system.
+- URL: [https://andreafortuna.org/2019/08/22/how-to-generate-a-volatility-profile-for-a-linux-system/](https://andreafortuna.org/2019/08/22/how-to-generate-a-volatility-profile-for-a-linux-system/)
+
+[Volver at texto de la referencia en la Sección 3.3.0.](#330-referencia-012-330-referencia-013-330-referencia-014)
+
+---
 
 [Volver al Índice del capítulo 8. Anexos.](#índice-del-capítulo-8-anexos)
 
@@ -2708,7 +2807,7 @@ sudo insmod lime-4.15.0-1021-aws.ko "path=captura.mem format=lime"
 
 ---
 
-## 8.7. Linea de tiempo de evidencias.
+## 8.6. Linea de tiempo de evidencias.
 
 
 
