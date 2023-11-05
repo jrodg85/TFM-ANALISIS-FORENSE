@@ -1292,8 +1292,6 @@ Una vez reiniciado el sistema, procedemos a ejecutar el comando `hostnamectl` o 
 
 #### [3.3.1. Imagen 007.](#82003003001007-comprobando-kernel)
 
-
-
 **[Volver al Índice del capítulo 3. Análisis de la memoria RAM.](#índice-del-capítulo-3-análisis-de-la-memoria-ram)**
 
 ---
@@ -1364,7 +1362,7 @@ Para probar el correcto funcionamiento del perfil, procederemos a hacer la captu
 #### [3.3.2. Imagen 011.](#82003003002011-prueba-funcionamiento-perfil)
 
 
-[Volver al Índice del capítulo 8. Anexos.](#índice-del-capítulo-8-anexos)
+**[Volver al Índice del capítulo 3. Análisis de la memoria RAM.](#índice-del-capítulo-3-análisis-de-la-memoria-ram)**
 
 [Volver al Índice General.](#índice-general)
 
@@ -1386,6 +1384,10 @@ Para ello, situados en `/home/jrodg85/volatility$` ejecutaremos `sudo python2.7 
 
 Al comprobar que el perfil funciona, obtenemos que solo hay un procesador de marca GenuineIntel modelo Intel(R) Xeon(R) **<u style='color:red'>CPU</u>** E5-2676 v3 que tiene una frecuencia de 2.4Ghz.
 
+**[Volver al Índice del capítulo 3. Análisis de la memoria RAM.](#índice-del-capítulo-3-análisis-de-la-memoria-ram)**
+
+---
+
 ### 3.4.2. Linux_banner.
 
 Otro dato de interés es la versión del kernel y la información de distribución de Linux. Esto es útil para identificar la versión específica del sistema operativo que se estaba ejecutando. Para ello se ejecuta el comando `sudo python2.7 vol.py --profile=LinuxlinuxUbuntu_4_15_0-1021-aws_profilex64 -f '/home/jrodg85/Server_RAM.mem' linux_banner`, dando la siguiente imagen como respuesta
@@ -1406,6 +1408,10 @@ Un análisis de Información del Kernel de Linux es la siguiente:
 Esta respuesta básicamente te indica la versión exacta del sistema operativo Linux que estaba corriendo en la máquina de la cual se tomó la captura de memoria. Es un paso esencial en el análisis forense, ya que te permite seleccionar o validar el perfil correcto en Volatility para un análisis más detallado y preciso de la captura de memoria.
 
 Aunque este dato ya lo sabíamos anteriormente, la salida muestra que la versión del kernel es 4.15.0-1021-aws. Esta es una versión específica para las instancias de Ubuntu en AWS. **La fecha de compilación (Tue Aug 28 10:23:07 UTC 2018)**.
+
+**[Volver al Índice del capítulo 3. Análisis de la memoria RAM.](#índice-del-capítulo-3-análisis-de-la-memoria-ram)**
+
+---
 
 ### 3.4.3. Linux_mount.
 
@@ -1440,6 +1446,10 @@ Teniendo en cuenta que es un servidor con un kernel de Amazon Web Services. Se p
 
 Los restantes puntos de montaje siguen patrones similares en cuanto a tipos y opciones, enfocándose en la seguridad (nosuid, nodev, noexec), rendimiento (relatime), y tipo de acceso (ro, rw). Los sistemas de archivos como tmpfs, squashfs, y cgroup son comunes en entornos Linux y son utilizados para propósitos específicos como almacenamiento temporal, montaje de paquetes de software, y gestión de recursos del sistema.
 
+**[Volver al Índice del capítulo 3. Análisis de la memoria RAM.](#índice-del-capítulo-3-análisis-de-la-memoria-ram)**
+
+---
+
 ### 3.4.4. Linux_memmap.
 
 Se procede ahora a realizar un mapa de memoria del sistema, para asi, entender cómo está organizada la memoria en el servidor. Para ello ejecutaremos el comando `sudo python2.7 vol.py --profile=LinuxlinuxUbuntu_4_15_0-1021-aws_profilex64 -f '/home/jrodg85/Server_RAM.mem' linux_memmap > /home/jrodg85/informe-memmap.txt`. Lo hemos pasado la salida a un archivo .txt debido a la gran cantidad de datos que maneja este comando (375 Mb).
@@ -1450,90 +1460,216 @@ Tras un trabajo de limpieza de datos, de un archivo de 4519734 lineas a solo 200
 
 #### [3.4.4. Comando 001.](#84003004004001-comando-sudo-python27-volpy---profilelinuxlinuxubuntu_4_15_0-1021-aws_profilex64--f-homejrodg85server_rammem-linux_memmap--homejrodg85informe-memmaptxt)
 
+**[Volver al Índice del capítulo 3. Análisis de la memoria RAM.](#índice-del-capítulo-3-análisis-de-la-memoria-ram)**
+
+---
+
+### 3.4.5. Linux_iomem.
+
+A continuación, se procede a obtener información relativa a la memoria de entrada/salida (I/O) en un sistema Linux. para ello usaremos el comando `linux_iomem` Este comando es similar a la herramienta iomem en Linux, la cual proporciona información sobre el mapeo de la memoria de entrada/salida del kernel. El comando linux_iomem en Volatility analiza un volcado de memoria de un sistema Linux y extrae información sobre cómo el kernel ha mapeado la memoria física para dispositivos de entrada/salida. Por lo anteriormente expuesto y ya realizado en las anteriores secciones, se colige que el comando a utilizar es `sudo python2.7 vol.py --profile=LinuxlinuxUbuntu_4_15_0-1021-aws_profilex64 -f '/home/jrodg85/Server_RAM.mem' linux_iomem`. Se adjunta en el TFM pantallazo del mismo y captura del comando, localizados en los siguientes enlaces.
+
+#### [3.4.5. Imagen 001.](#82003004005001-linux_iomem)
+
+#### [3.4.5. Comando 001.](#84003004005001-comando-sudo-python27-volpy---profilelinuxlinuxubuntu_4_15_0-1021-aws_profilex64--f-homejrodg85server_rammem-linux_iomem)
+
+Un pequeño análisis explicativo de la respuesta del comando iomem es la siguiente:
+
+**System RAM (0x1000 - 0x9DFFF y 0x100000 - 0x3FFFFFFF).**
+
+Estas áreas representan la memoria RAM del sistema. La primera sección es una pequeña porción al inicio de la memoria, y la segunda es la parte principal de la memoria RAM.
+
+**Reserved (0x9E000 - 0x9FFFF y 0xE0000 - 0xFFFFF).**
+
+Estas son áreas de memoria reservadas, posiblemente por el BIOS o por el sistema operativo para funciones específicas.
+
+**PCI Bus 0000:00 (0xA0000 - 0xBFFFF y 0xF0000000 - 0xFBFFFFFF).**
+
+Estas áreas están asignadas a los buses PCI del sistema, utilizadas para la comunicación con dispositivos de hardware conectados a través de estos buses.
+
+**Video ROM (0xC0000 - 0xC8BFF).**
+
+Esta es la memoria reservada para el ROM de la tarjeta de video, que contiene el firmware básico para la tarjeta gráfica.
+
+**System ROM (0xF0000 - 0xFFFFF).**
+
+Esta sección es para el ROM del sistema, donde reside el BIOS o firmware básico de la máquina.
+
+**Kernel code, data, and bss (0x31C00000 - 0x33516FFF).**
+
+Estas áreas son específicas para el núcleo del sistema operativo, incluyendo el código del kernel, los datos y el segmento 'bss' (bloque de inicio sin asignar), que se utiliza para las variables globales no inicializadas.
+
+**IOAPIC, HPET, Local APIC (0xFEC00000 - 0xFEE00FFF).**
+
+Estos son componentes de hardware relacionados con la gestión de interrupciones y temporizadores de alta precisión.
+
+**[Volver al Índice del capítulo 3. Análisis de la memoria RAM.](#índice-del-capítulo-3-análisis-de-la-memoria-ram)**
+
+---
+
+### 3.4.6. Linux_dmesg.
+
+Se procede a recabar una información mas completa de la memoria RAM, hablamos del comando `linux_dmesg`, este comando puede sernos de gran utilidad por las siguientes razones:
+
+1. **Extracción de Mensajes del Kernel.**
+
+Linux_dmesg se utiliza para extraer los mensajes del buffer de registro del kernel, conocido como dmesg, de un volcado de memoria de Linux. Este buffer contiene mensajes de diagnóstico y de depuración que son emitidos por el kernel de Linux.
+
+Los mensajes extraídos pueden proporcionar información valiosa durante un análisis forense. Pueden incluir detalles sobre el hardware del sistema, errores del kernel, información de carga de módulos del kernel y otros mensajes de diagnóstico que son útiles para entender el estado y las acciones del sistema en el momento del volcado de la memoria.
+
+2. Investigación de Incidentes de Seguridad.
+
+`linux_dmesg` puede ayudar a identificar actividades sospechosas o maliciosas, como la carga de módulos del kernel no autorizados o errores relacionados con intentos de explotación.
+
+3. Uso en Conjunto con Otros Comandos.
+
+A menudo, linux_dmesg se utiliza en combinación con otros comandos de Volatility diseñados para el análisis de sistemas Linux, como `linux_pslist` para listar procesos, `linux_netstat` para ver conexiones de red, entre otros, proporcionando una vista más completa del estado del sistema. En los próximos apartados del TFM, realizaremos estos comandos para obtener una vision global del lo ocurrido.
+
+Por tanto en este caso, como muy presumiblemente va a resultar un comando bastante extenso, ejecutaremos el comando el cual la salida se extraerá a un documento de texto para ser integrado en el anexo de [Extracto de comandos utilizados.](#84-extracto-de-comandos-utilizados). El comando a utilizar es `sudo python2.7 vol.py --profile=LinuxlinuxUbuntu_4_15_0-1021-aws_profilex64 -f '/home/jrodg85/Server_RAM.mem' linux_dmesg > /home/jrodg85/informe-linux_dmesg.txt`
+
+#### [3.4.6. Imagen 001.](#82003004006001-linux_dmesg)
+
+#### [3.4.6. Comando 001.](#84003004006001-comando-sudo-python27-volpy---profilelinuxlinuxubuntu_4_15_0-1021-aws_profilex64--f-homejrodg85server_rammem-linux_dmesg--homejrodg85informe-linux_dmesgtxt)
 
 
+Un resumen de interés para el analisis forense de estos datos es la siguiente:
 
+#### [3.4.6. Comando 002.](#84003004006002-resumen-del-comando-sudo-python27-volpy---profilelinuxlinuxubuntu_4_15_0-1021-aws_profilex64--f-homejrodg85server_rammem-linux_dmesg--homejrodg85informe-linux_dmesgtxt)
 
+Los puntos destacables son los siguientes, algunos de estos datos se pueden encontrar con mayor detalle en el comando citado anteriormente.
 
+1. Establecimiento del tiempo origen de tiempos donde el 28 de Agosto de 2018 a las 10:23:07 UTC el cual arranca el servidor. Se considera que el tiempo [0.0] es el origen de tiempos del sistema marcado en microsegundos.
+    - Linux version 4.15.0-1021-aws (buildd@lcy01-amd64-001) (gcc version 7.3.0 (Ubuntu 7.3.0-16ubuntu3)) #21-Ubuntu SMP Tue Aug 28 10:23:07 UTC 2018 (Ubuntu 4.15.0-1021.21-aws 4.15.18)
+2. Se descarta información relativo al arranque del servidor. Se mantiene la relevante la cual se explica a continuación.
+    - El Servidor es una Máquina virtual.
+        - Hypervisor detected: Xen HVM.
+    - Memoria disponible y su distribución.
+        - Memory: 983488K/1048180K available (12300K kernel code, 2391K rwdata, 3908K rodata, 2372K init, 2376K bss, 64692K reserved, 0K cma-reserved).
+    - Seguridad, ver referencia 12
+        - selinux.
+        - SMACK64.
+        - SMACK64EXEC.
+        - SMACK64TRANSMUTE.
+        - SMACK64MMAP.
+        - apparmor.
+        - ima.
+        - capability.
+3. EL RCT no coindice con el timestamp!!!, puede ser una coordinacion de tiempos. el 28 de agosto de 2018 a las 10:27:31 UTC.
+    - RTC time: 12:04:38, date: 12/21/18
+4. Reinicio del Servidor.  1 de septiembre de 2018 a las 09:53:22 UTC.
+5. Reinicio del servicio Journal 1 de septiembre de 2018 a las 09:59:10 UTC.
+6. Inicio de denegación de servicio SQL 3 de mayo de 2019 a las 20:10:29 UTC.
+7. Denegación de servicio SQL, 7 de mayo de 2019 a las 05:53:01 UTC.
+8. Denegación de servicio SQL, 10 de mayo de 2019 a las 06:39:15.104327 UTC.
+9. Denegación de servicio SQL, 12 de mayo de 2019 a las 12:02:32.671468 UTC.
+10. 13 de mayo de 2019 a las 05:27:58 UTC, posible brecha y entrada no deseada en el sistema a traves de un ataque SQL. Se reemplaza un perfil en el sistema.
+11. Posible ataque al servidor el 13 de mayo de 2019 a las 07:20:17 UTC por SQL.
+12. Posible ataque al servidor el 14 de mayo de 2019 a las 21:55:10 UTC por SQL.
+20. 19 de junio de 2019 a las 20:51:55.627714 UTC. Posible parcheo de la vulnerabilidad.
 
+### 3.4.6. Linux_bash.
 
+Por ultimo y no menos importante, ya que considero que es un comando fundamenta para saber que acciones se han realizado a través de la terminal, es el comando `linux_bash`, ya que permite ver que se ha realizado exactamente dentro del sistema, no obtendremos sus respuestas, pero se sabe que comandos se han ejecutado, y por tanto sus consecuencias. El comando a utilizar en este caso es `sudo python2.7 vol.py --profile=LinuxlinuxUbuntu_4_15_0-1021-aws_profilex64 -f '/home/jrodg85/Server_RAM.mem' linux_bash`. En este caso se adjunta una captura completa de los comandos ejetucados.
 
-#### [3.4. Comando 001]
+#### [3.4.7. Comando 001.](#84003004007001-comando-sudo-python27-volpy---profilelinuxlinuxubuntu_4_15_0-1021-aws_profilex64--f-homejrodg85server_rammem-linux_bash)
 
+Relativo al codigo mostrado, cabe destacar que las fechas que marca la maquina como las calculadas en el apartado anterior, son totalmente erroneas entre sí, ya que por `linux_dsmeg` calculamos fechas de mayo de 2019, sin embarco este comando data de 3 de enero de 2019, por otro lado, no creo que una persona humana, bot o proceso automatizado, escriba tan de seguido con esas fechas que marca el comando. Por lo que en principio parece descartable las fechas que indica este comando. Cabe destacar que posiblemente haya comandos del administrador relativos a la configuración y del atacante. A continuación se detallan comando importantes de las acciones realizadas que pueden afectar a la seguridad.
 
+- Intenta una conexión con el usuario root al servidor MySQL.
+- Se situa dentro del directorio de Apache.
+- Edita el fichero debian.cnf del servidor MySQL.
+- Muestra todos los procesos referentes a MySQL.
+- Muestra las últimas líneas del archivo Access.log.1.
+- se mueve de directorio situandose en /var/html/www, este directorio suele ser por defecto donde se alojan las páginas web.
+- Intenta matar el proceso 4539, digo intenta porque enlazando con el anterior estudio detectamos un denied en la linea `[22074531220184.22074] audit: type=1400 audit(1545415953.092:83): apparmor="DENIED" operation="open" profile="/usr/sbin/mysqld" name="/sys/devices/system/node/" pid=4539 comm="mysqld" requested_mask="r" denied_mask="r" fsuid=0 ouid=0`, la cual se encuentra dentro del estudio del comando del apartado 3.4.5, donde indico lo siguiente `# Denegación de servicio SQL 10 de mayo de 2019 a las 06:39:15.104327 UTC`.
+- se posiciona en `/`.
+- Muestra de nuevo todos los procesos relativos a MySQL.
+- Hace un `ls` (en adelante lista) los ficheros de /var/run/mysqld.
+- lista una primera vez /run y depues con paginacion por fecha de modificacion, claramente busca algo.
+- Edita de nuevo Accesss.log.1
+- Arranca mysql_secure_intallation.
+- Lista el contenido de la carpeta actual, recordemos que su ultimo posicionamiento es `/`.
+- Muestra el contenido del archivo /var/log/mysql/error.log, esta buscando si hay pistas de lo que esta realizando.
+- busca ficheros php en la carpeta y subcarpetas donde está situado.
+- Instala el paquete python cerbot apache.
+    - Destacar lo siguiente:
+        - Es un complemento de Apache para Certbot.
+        - El objetivo de Certbot, Let's Encrypt y ACME (Automated El protocolo Entorno de gestión de certificados) es para hacer posible para configurar un servidor HTTPS y hacer que obtenga automáticamente un Certificado de confianza del navegador, sin ninguna intervención humana. Esto es logrado ejecutando un agente de gestión de certificados en la web servidor.
+        - Este agente se utiliza para:
+            - Demostrar automáticamente a Let's Encrypt CA que usted controla el sitio web
+            - Obtenga un certificado de confianza del navegador y configúrelo en su servidor web
+            - Lleve un registro de cuándo caducará su certificado y renuévelo
+            - Ayudarle a revocar el certificado si alguna vez fuera necesario.
+- Reinicia el servicio de apache.
+- Lista los procesos de MySQL.
+- Reinstala el servidor apache.
+- Busca paqueter del servidor MySQL y con php.
+- Intenta conectarse como root a MySQL. Cabe destacar que esto no es una práctica normal de un administrador entrar como root directamente.
+- Introduce los caracteres #1546501785.
+    - Relativo a esto, cabe destacar que las lineas de registro de apparmor, marcan números muy parecidos a este código.
+- Realiza varias consultas, edita functions.php.
+- Vuelve a ejecutar mySQL.
+- Edita con `sudo` /etc/mysql/debian.
+- Instala MySQL.
+- Busca paquetes de MySQL que contengan la palabra php.
+- se trae un archivo de wordpress 4.9.8.
+    - **CVE-2018-1000773**.
+- Busca paquetes relacionados con MySQL.
+- Muestra el directorio actual donde está posicionado.
+    - Si ejecuto este comando, es que estoy fuera de la consola, dicese un path transversal o entrar en la consola de metasploitable.
+- Copia los ficheros del la ubicacion actual al nivel superior.
+- realiza una serie de acciones y extrae wordpress, lo instala.
+- Instala de nuevo apache.
+- Vuelve a ejecutar MySQL com root.
+- Se mueve a la ubicación donde se publican webs y es accesible por el puerto 80 /vat/html/www.
+- Cambia permisos a /var/rin/mysqld a drxwrxwrxw (777).
+    - Poner que todos los usuario puedan hacer lo que quieran con el servicio de mysql es dar "barra libre".
+- Busca ficheros multimedia.
+- Conecta mySQL con root.
+- Inicia MySQL en modo seguro sin tener que autenticar.
+- Reinicia apache y arranca MySQL.
+- Revisa Access.log y las 100 ultimas de syslog.
+- Se coloca en /var/log/apache2/
+- Lista el contenido de la carpeta.
+- Vuelve a mirar en que carpeta esta situado.
+- Crea la carpeta `/var/run/mysqld`
+- Inicia el servidor MySQL en modo seguro sin autenticación ejecutándose en segundo plano.
+- Mata el procese 3181, sale de MySQL y reinica apache.
+- Instala php-mysql.
+    - Este paquete proporciona un módulo MySQL para PHP.
+    - PHP (acrónimo recursivo de PHP: preprocesador de hipertexto) es un lenguaje de programación de código abierto de propósito general que es especialmente adecuado para desarrollo web y puede integrarse en HTML.
+- Muestra la hora del sistema.
+- muestra archivos y carpetas de ap.
+- Edita access.log.
+- Verifica los ficheros de configuracion de apache.
+- Arranca el servicio de MySQL.
+- Edita php.ini de /etc/php/7.2/apache2/.
+- Mata el proceso 4178.
+- Consulta los últimos 100 registros de access.log.
+- Vuelve a mostrar ficheros relativos a MySQL y lista las 100 ultimas lineas de sys.log
+- Repite este paso 3 veces.
+- Borrar el wordpress 4.9.8.
+- Los siguientes procesos son claramente para realizar la captura de la memoria RAM, empezando a buscar evidencias.
 
+**Conclusiones.**
 
-#### [Comando ]
+1. Ha realizado acciones que vulneran el serivico MySQL y Apache.
+    - Abre la puerta a poder acceder a las tablas sin necesidad de autenticacion.
+    - Concede todos los permisos a todos los usuarios a /run/nysqld
+    - Elimina achivos de configuracion de MySQL.
+    - Numerosos reinicio de servicios web.
+    - Modificacion de Access.log
+    - Modifica el fichero de configuración de WordPress.
 
-Analizando los comandos realizados se pueden destacar los siguientes:
+2. Realiza búsquedas de archivos multimedia, como buscando información.
 
-- **exit**: Sale de la sesión actual, ya sea una sesión de terminal o una conexión SSH.
-- **sudo apt update**: Actualiza la lista de paquetes disponibles y sus versiones. Es un paso previo común antes de instalar o actualizar paquetes.
-- **sudo systemctl restart postfix**: Reinicia el servicio Postfix, un agente de transferencia de correo (MTA).
-- **ls -l**: Lista los archivos en el directorio actual en un formato detallado.
-- **mysql -uroot -p**: Inicia sesión en el servidor MySQL como usuario 'root', pidiendo la contraseña.
-- **cd apache2/ y movimientos similares**: Cambia el directorio actual a uno especificado.
-- **sudo vi /etc/mysql/debian.cnf**: Edita el archivo de configuración de MySQL usando el editor vi.
-- **ps -ef| grep mysql**: Muestra los procesos actuales relacionados con MySQL.
-- **sudo kill -9 4539**: Mata de manera forzosa el proceso con el ID 4539.
-- **sudo mysqld_safe --skip-grant-tables**: Inicia MySQL en un modo especial que omite ciertas comprobaciones de seguridad.
-- **sudo apt install python-certbot-apache**: Instala Certbot para Apache, una herramienta para obtener certificados SSL/TLS de Let's Encrypt.
-- **sudo service apache2 restart**: Reinicia el servidor web Apache.
-- **sudo mysql_secure_installation**: Ejecuta un script para mejorar la seguridad de MySQL.
-- **sudo apt-get install mysql-server**: Instala el servidor MySQL.
-- **sudo chmod 777 /var/run/mysqld**: Cambia los permisos del directorio /var/run/mysqld para que todos los usuarios puedan leer, escribir y ejecutar archivos en él.
-- **sudo chown -R www-data:www-data html**: Cambia la propiedad del directorio html al usuario y grupo www-data, comúnmente usado para servidores web.
-- **find . -name functions.php -exec grep -H add_filer {} \;**: Busca en archivos functions.php y ejecuta grep en ellos.
-- **tail access.log y variantes**: Muestra las últimas líneas de los archivos de registro especificados.
-- **sudo vi /etc/apache2/sites-enabled/000-default.conf**: Edita la configuración predeterminada del sitio de Apache.
-- **sudo apt upgrade**: Actualiza todos los paquetes instalados a sus últimas versiones.
-- **sudo systemctl reload apache2**: Recarga la configuración de Apache sin reiniciar el servicio.
-- **sudo service mysql stop**: Detiene el servicio MySQL.
-- **sudo dpkg-reconfigure mysql-server-5.7**: Reconfigura la versión especificada del servidor MySQL.
-- **sudo apachectl configtest**: Verifica la sintaxis de los archivos de configuración de Apache.
-- **sudo add-apt-repository ppa:certbot/certbot**: Añade el repositorio PPA para Certbot.
-- **sudo apt install php-mysql**: Instala el módulo PHP para interactuar con MySQL.
-- **sudo insmod lime-4.15.0-42-generic.ko "path=captura.mem format=lime"**: Carga un módulo del kernel para la captura de memoria.
+3. Añade un correo electrónico, test12312321@mailinator.com. un correo de un portal de Pruebas de flujo de trabajo de correo electrónico y SMS.
 
-Relativo a la seguridad del servidor, siguiente listado de documentos son notables para la seguridad, ya que pueden tener un impacto significativo en la seguridad del servidor. Aquí hay algunos ejemplos notables:
+4. Acciones relativas a configuraciones.
+    - Modificaciones de ficheros de configuracion de php Apache y MySQL.
+    - Buscar palabra POST en ficheros .php.
+    - Utiliza una version de WordPress que se descubrió su vulnerabilidad el 6 de septiembre de 2018.
 
-**1. sudo mysqld_safe --skip-grant-tables.**
-
-  - Este comando inicia el servidor MySQL sin respetar el sistema de permisos. Cualquiera podría acceder a todas las bases de datos sin necesidad de una contraseña. Es extremadamente peligroso en un entorno de producción y debería usarse solo en situaciones de recuperación de emergencia.
-
-**2. sudo chmod 777 /var/run/mysqld.**
-
-  - Este comando establece los permisos de lectura, escritura y ejecución para todos los usuarios en el directorio /var/run/mysqld. Otorgar estos permisos tan amplios puede ser un riesgo de seguridad significativo, ya que permite a cualquier usuario en el sistema modificar o eliminar archivos críticos para el funcionamiento de MySQL.
-
-**3. sudo kill -9 (con varios números de proceso).**
-
-- Si bien no es inherentemente inseguro, el uso imprudente de kill -9 puede terminar procesos cruciales y causar inestabilidad o pérdida de datos si se aplica a procesos críticos del sistema o de la base de datos.
-
-**4. sudo rm -r /run/mysqld.**
-
-- Eliminar directorios críticos del sistema puede afectar la estabilidad y funcionamiento de los servicios asociados, en este caso, MySQL.
-
-**5. sudo service mysql stop y sudo service apache2 stop.**
-
-- Detener servicios como MySQL y Apache puede afectar la disponibilidad de aplicaciones dependientes. Si se hace sin precaución, podría provocar tiempos de inactividad no planificados.
-
-**6. vi /etc/mysql/debian.cnf y sudo vi /etc/apache2/sites-enabled/000-default.conf.**
-
-- Editar archivos de configuración es una tarea común, pero si se hacen cambios incorrectos o inseguros, pueden surgir problemas de seguridad y funcionamiento.
-
-**7.sudo insmod lime-4.15.0-42-generic.ko "path=captura.mem format=lime".**
-
-- Cargar módulos del kernel personalizados o desconocidos puede ser una accion de riesgo si no se comprenden completamente sus funciones y orígenes.
-
-**8. sudo apt install php-mysql.**
-
-- La instalación de software debe hacerse con cuidado, asegurándose de que las fuentes sean confiables y que no se introduzcan vulnerabilidades.
-
-**9. Errores tipográficos y comandos incompletos.**
-
-- Podrían resultar en acciones no intencionadas que afectan la seguridad o estabilidad del sistema.
-
-Es fundamental que cualquier administrador de sistemas ejecute estos comandos con conocimiento completo de sus implicaciones y en el contexto adecuado. Además, las buenas prácticas de seguridad, como la mínima exposición de servicios, el uso restringido de permisos y la monitorización constante, son esenciales para mantener la **<u style='color:red'>integridad</u>** y seguridad del sistema.
+Da la casualidad de que una semana después de la instalación del servidor, sin realizarse una actualización posterior. Quizás debe de estar atento a este tipo de posibles vulnerabilidades. Hoy dia para el desarrollo web, Snyk revisa si las librerias que utilizas tienen vulnerabilidades. Tener alertas de este tipo siempre vienen bien para andar protegidos.
 
 [Volver al Índice del capítulo 3. Análisis de la memoria RAM.](#índice-del-capítulo-3-análisis-de-la-memoria-ram)
 
@@ -1541,11 +1677,19 @@ Es fundamental que cualquier administrador de sistemas ejecute estos comandos co
 
 ---
 
-
-
 ## 3.5. Búsqueda de procesos en funcionamiento de interés para el análisis.
 
+### 3.5.1 Linux_ifconfig.
 
+
+
+
+
+### 3.5.2 Linux_arp.
+
+
+
+### 3.5.3 Linux_netstat.
 
 
 
@@ -2133,11 +2277,50 @@ Es fundamental que cualquier administrador de sistemas ejecute estos comandos co
 
 #### 8.2.003.004.004.001. linux_memmap.
 
-![003-004-004-001](./images/003-004-004-001-linux_memap.png)
+![003-004-004-001](./images/003-004-004-001-linux_memmap.png)
 
 [Volver al texto de la imagen en la Sección 3.4.4.](#344-imagen-001)
 
 ---
+
+#### 8.2.003.004.005.001. linux_iomem.
+
+![003-004-005-001](./images/003-004-005-001-linux_iomem.png)
+
+[Volver al texto de la imagen en la Sección 3.4.5.](#345-imagen-001)
+
+---
+
+#### 8.2.003.004.006.001. linux_dmesg.
+
+![003-004-006-001](./images/003-004-006-001-linux_dmesg.png)
+
+[Volver al texto de la imagen en la Sección 3.4.5.](#346-imagen-001)
+
+---
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 [Volver al Índice del capítulo 8. Anexos.](#índice-del-capítulo-8-anexos)
 
@@ -2507,7 +2690,7 @@ Procesado el comando, se puede obtener esta tabla resumen:
 
 ---
 
-#### 8.4.003.004.004.001. Comando sudo python2.7 vol.py --profile=LinuxlinuxUbuntu_4_15_0-1021-aws_profilex64 -f '/home/jrodg85/Server_RAM.mem' linux_memmap > /home/jrodg85/informe-memmap.txt.
+#### 8.4.003.004.004.001. Comando `sudo python2.7 vol.py --profile=LinuxlinuxUbuntu_4_15_0-1021-aws_profilex64 -f '/home/jrodg85/Server_RAM.mem' linux_memmap > /home/jrodg85/informe-memmap.txt`.
 
 ~~~Bash
 sudo python2.7 vol.py --profile=LinuxlinuxUbuntu_4_15_0-1021-aws_profilex64 -f '/home/jrodg85/Server_RAM.mem' linux_memmap > /home/jrodg85/informe-memmap.txt
@@ -2629,6 +2812,1026 @@ Unable to read pages for kworker/0:2 pid 20898.
 [Volver al texto del comando en la Sección 3.4.4.](#344-comando-001)
 
 ---
+
+#### 8.4.003.004.005.001. Comando `sudo python2.7 vol.py --profile=LinuxlinuxUbuntu_4_15_0-1021-aws_profilex64 -f '/home/jrodg85/Server_RAM.mem' linux_iomem`.
+
+
+~~~Bash
+sudo python2.7 vol.py --profile=LinuxlinuxUbuntu_4_15_0-1021-aws_profilex64 -f '/home/jrodg85/Server_RAM.mem' linux_iomem
+~~~
+
+La respuesta de la consola ha sido la siguiente:
+
+
+~~~Bash
+Volatility Foundation Volatility Framework 2.6.1
+Reserved                0x0           0xFFF
+System RAM              0x1000        0x9DFFF
+Reserved                0x9E000       0x9FFFF
+PCI Bus 0000:00         0xA0000       0xBFFFF
+Video ROM               0xC0000       0xC8BFF
+Reserved                0xE0000       0xFFFFF
+  System ROM            0xF0000       0xFFFFF
+System RAM              0x100000      0x3FFFFFFF
+  Kernel code           0x31C00000    0x328031D0
+  Kernel data           0x328031D1    0x33055EBF
+  Kernel bss            0x332C5000    0x33516FFF
+PCI Bus 0000:00         0xF0000000    0xFBFFFFFF
+  0000:00:02.0          0xF0000000    0xF1FFFFFF
+  0000:00:03.0          0xF2000000    0xF2FFFFFF
+    xen-platform-pci    0xF2000000    0xF2FFFFFF
+  0000:00:02.0          0xF3000000    0xF3000FFF
+Reserved                0xFC000000    0xFFFFFFFF
+  IOAPIC 0              0xFEC00000    0xFEC003FF
+  HPET 0                0xFED00000    0xFED003FF
+    PNP0103:00          0xFED00000    0xFED003FF
+  Local APIC            0xFEE00000    0xFEE00FFF
+~~~
+
+[Volver al texto del comando en la Sección 3.4.5.](#345-comando-001)
+
+---
+
+
+#### 8.4.003.004.006.001. Comando `sudo python2.7 vol.py --profile=LinuxlinuxUbuntu_4_15_0-1021-aws_profilex64 -f '/home/jrodg85/Server_RAM.mem' linux_dmesg > /home/jrodg85/informe-linux_dmesg.txt`.
+
+~~~Bash
+sudo python2.7 vol.py --profile=LinuxlinuxUbuntu_4_15_0-1021-aws_profilex64 -f '/home/jrodg85/Server_RAM.mem' linux_dmesg > /home/jrodg85/informe-linux_dmesg.txt
+~~~
+
+La respuesta del comando en el archivo de texto fue el siguiente:
+
+~~~
+[0.0] Linux version 4.15.0-1021-aws (buildd@lcy01-amd64-001) (gcc version 7.3.0 (Ubuntu 7.3.0-16ubuntu3)) #21-Ubuntu SMP Tue Aug 28 10:23:07 UTC 2018 (Ubuntu 4.15.0-1021.21-aws 4.15.18)
+[0.0] Command line: BOOT_IMAGE=/boot/vmlinuz-4.15.0-1021-aws root=LABEL=cloudimg-rootfs ro console=tty1 console=ttyS0 nvme.io_timeout=4294967295
+[0.0] KERNEL supported cpus:
+[0.0]   Intel GenuineIntel
+[0.0]   AMD AuthenticAMD
+[0.0]   Centaur CentaurHauls
+[0.0] x86/fpu: Supporting XSAVE feature 0x001: 'x87 floating point registers'
+[0.0] x86/fpu: Supporting XSAVE feature 0x002: 'SSE registers'
+[0.0] x86/fpu: Supporting XSAVE feature 0x004: 'AVX registers'
+[0.0] x86/fpu: xstate_offset[2]:  576, xstate_sizes[2]:  256
+[0.0] x86/fpu: Enabled xstate features 0x7, context size is 832 bytes, using 'standard' format.
+[0.0] e820: BIOS-provided physical RAM map:
+[0.0] BIOS-e820: [mem 0x0000000000000000-0x000000000009dfff] usable
+[0.0] BIOS-e820: [mem 0x000000000009e000-0x000000000009ffff] reserved
+[0.0] BIOS-e820: [mem 0x00000000000e0000-0x00000000000fffff] reserved
+[0.0] BIOS-e820: [mem 0x0000000000100000-0x000000003fffffff] usable
+[0.0] BIOS-e820: [mem 0x00000000fc000000-0x00000000ffffffff] reserved
+[0.0] NX (Execute Disable) protection: active
+[0.0] SMBIOS 2.7 present.
+[0.0] DMI: Xen HVM domU, BIOS 4.2.amazon 08/24/2006
+[0.0] Hypervisor detected: Xen HVM
+[0.0] Xen version 4.2.
+[0.0] Xen Platform PCI: I/O protocol version 1
+[0.0] Netfront and the Xen platform PCI driver have been compiled for this kernel: unplug emulated NICs.
+[0.0] Blkfront and the Xen platform PCI driver have been compiled for this kernel: unplug emulated disks.
+You might have to change the root device
+from /dev/hd[a-d] to /dev/xvd[a-d]
+in your root= kernel command line option
+[0.0] HVMOP_pagetable_dying not supported
+[0.0] e820: update [mem 0x00000000-0x00000fff] usable ==> reserved
+[0.0] e820: remove [mem 0x000a0000-0x000fffff] usable
+[0.0] e820: last_pfn = 0x40000 max_arch_pfn = 0x400000000
+[0.0] MTRR default type: write-back
+[0.0] MTRR fixed ranges enabled:
+[0.0]   00000-9FFFF write-back
+[0.0]   A0000-BFFFF write-combining
+[0.0]   C0000-FFFFF write-back
+[0.0] MTRR variable ranges enabled:
+[0.0]   0 base 0000F0000000 mask 3FFFF8000000 uncachable
+[0.0]   1 base 0000F8000000 mask 3FFFFC000000 uncachable
+[0.0]   2 disabled
+[0.0]   3 disabled
+[0.0]   4 disabled
+[0.0]   5 disabled
+[0.0]   6 disabled
+[0.0]   7 disabled
+[0.0] x86/PAT: Configuration [0-7]: WB  WC  UC- UC  WB  WP  UC- WT
+[0.0] found SMP MP-table at [mem 0x000fbc50-0x000fbc5f] mapped at [        (ptrval)]
+[0.0] Scanning 1 areas for low memory corruption
+[0.0] Base memory trampoline at [        (ptrval)] 98000 size 24576
+[0.0] BRK [0x33518000, 0x33518fff] PGTABLE
+[0.0] BRK [0x33519000, 0x33519fff] PGTABLE
+[0.0] BRK [0x3351a000, 0x3351afff] PGTABLE
+[0.0] BRK [0x3351b000, 0x3351bfff] PGTABLE
+[0.0] RAMDISK: [mem 0x359e1000-0x36ce7fff]
+[0.0] ACPI: Early table checksum verification disabled
+[0.0] ACPI: RSDP 0x00000000000EA020 000024 (v02 Xen   )
+[0.0] ACPI: XSDT 0x00000000FC00E2A0 000054 (v01 Xen    HVM      00000000 HVML 00000000)
+[0.0] ACPI: FACP 0x00000000FC00DF60 0000F4 (v04 Xen    HVM      00000000 HVML 00000000)
+[0.0] ACPI: DSDT 0x00000000FC0021C0 00BD19 (v02 Xen    HVM      00000000 INTL 20090123)
+[0.0] ACPI: FACS 0x00000000FC002180 000040
+[0.0] ACPI: FACS 0x00000000FC002180 000040
+[0.0] ACPI: APIC 0x00000000FC00E060 0000D8 (v02 Xen    HVM      00000000 HVML 00000000)
+[0.0] ACPI: HPET 0x00000000FC00E1B0 000038 (v01 Xen    HVM      00000000 HVML 00000000)
+[0.0] ACPI: WAET 0x00000000FC00E1F0 000028 (v01 Xen    HVM      00000000 HVML 00000000)
+[0.0] ACPI: SSDT 0x00000000FC00E220 000031 (v02 Xen    HVM      00000000 INTL 20090123)
+[0.0] ACPI: SSDT 0x00000000FC00E260 000031 (v02 Xen    HVM      00000000 INTL 20090123)
+[0.0] ACPI: Local APIC address 0xfee00000
+[0.0] No NUMA configuration found
+[0.0] Faking a node at [mem 0x0000000000000000-0x000000003fffffff]
+[0.0] NODE_DATA(0) allocated [mem 0x3ffd5000-0x3fffffff]
+[0.0] tsc: Fast TSC calibration using PIT
+[0.0] Zone ranges:
+[0.0]   DMA      [mem 0x0000000000001000-0x0000000000ffffff]
+[0.0]   DMA32    [mem 0x0000000001000000-0x000000003fffffff]
+[0.0]   Normal   empty
+[0.0]   Device   empty
+[0.0] Movable zone start for each node
+[0.0] Early memory node ranges
+[0.0]   node   0: [mem 0x0000000000001000-0x000000000009dfff]
+[0.0]   node   0: [mem 0x0000000000100000-0x000000003fffffff]
+[0.0] Initmem setup node 0 [mem 0x0000000000001000-0x000000003fffffff]
+[0.0] On node 0 totalpages: 262045
+[0.0]   DMA zone: 64 pages used for memmap
+[0.0]   DMA zone: 21 pages reserved
+[0.0]   DMA zone: 3997 pages, LIFO batch:0
+[0.0]   DMA32 zone: 4032 pages used for memmap
+[0.0]   DMA32 zone: 258048 pages, LIFO batch:31
+[0.0] Reserved but unavailable: 99 pages
+[0.0] ACPI: PM-Timer IO Port: 0xb008
+[0.0] ACPI: Local APIC address 0xfee00000
+[0.0] IOAPIC[0]: apic_id 1, version 17, address 0xfec00000, GSI 0-47
+[0.0] ACPI: INT_SRC_OVR (bus 0 bus_irq 0 global_irq 2 dfl dfl)
+[0.0] ACPI: INT_SRC_OVR (bus 0 bus_irq 5 global_irq 5 low level)
+[0.0] ACPI: INT_SRC_OVR (bus 0 bus_irq 10 global_irq 10 low level)
+[0.0] ACPI: INT_SRC_OVR (bus 0 bus_irq 11 global_irq 11 low level)
+[0.0] ACPI: IRQ0 used by override.
+[0.0] ACPI: IRQ5 used by override.
+[0.0] ACPI: IRQ9 used by override.
+[0.0] ACPI: IRQ10 used by override.
+[0.0] ACPI: IRQ11 used by override.
+[0.0] Using ACPI (MADT) for SMP configuration information
+[0.0] ACPI: HPET id: 0x8086a201 base: 0xfed00000
+[0.0] smpboot: Allowing 15 CPUs, 14 hotplug CPUs
+[0.0] PM: Registered nosave memory: [mem 0x00000000-0x00000fff]
+[0.0] PM: Registered nosave memory: [mem 0x0009e000-0x0009ffff]
+[0.0] PM: Registered nosave memory: [mem 0x000a0000-0x000dffff]
+[0.0] PM: Registered nosave memory: [mem 0x000e0000-0x000fffff]
+[0.0] e820: [mem 0x40000000-0xfbffffff] available for PCI devices
+[0.0] Booting paravirtualized kernel on Xen HVM
+[0.0] clocksource: refined-jiffies: mask: 0xffffffff max_cycles: 0xffffffff, max_idle_ns: 7645519600211568 ns
+[0.0] random: get_random_bytes called from start_kernel+0x99/0x4fd with crng_init=0
+[0.0] setup_percpu: NR_CPUS:8192 nr_cpumask_bits:15 nr_cpu_ids:15 nr_node_ids:1
+[0.0] percpu: Embedded 46 pages/cpu @        (ptrval) s151552 r8192 d28672 u262144
+[0.0] pcpu-alloc: s151552 r8192 d28672 u262144 alloc=1*2097152
+[0.0] pcpu-alloc: [0] 00 01 02 03 04 05 06 07 [0] 08 09 10 11 12 13 14 --
+[0.0] xen: PV spinlocks enabled
+[0.0] PV qspinlock hash table entries: 256 (order: 0, 4096 bytes)
+[0.0] Built 1 zonelists, mobility grouping on.  Total pages: 257928
+[0.0] Policy zone: DMA32
+[0.0] Kernel command line: BOOT_IMAGE=/boot/vmlinuz-4.15.0-1021-aws root=LABEL=cloudimg-rootfs ro console=tty1 console=ttyS0 nvme.io_timeout=4294967295
+[0.0] Calgary: detecting Calgary via BIOS EBDA area
+[0.0] Calgary: Unable to locate Rio Grande table in EBDA - bailing!
+[0.0] Memory: 983488K/1048180K available (12300K kernel code, 2391K rwdata, 3908K rodata, 2372K init, 2376K bss, 64692K reserved, 0K cma-reserved)
+[0.0] SLUB: HWalign=64, Order=0-3, MinObjects=0, CPUs=15, Nodes=1
+[0.0] Kernel/User page tables isolation: enabled
+[0.0] ftrace: allocating 37478 entries in 147 pages
+[4000000.0] Hierarchical RCU implementation.
+[4000000.0] 	RCU restricting CPUs from NR_CPUS=8192 to nr_cpu_ids=15.
+[4000000.0] 	Tasks RCU enabled.
+[4000000.0] RCU: Adjusting geometry for rcu_fanout_leaf=16, nr_cpu_ids=15
+[4000000.0] NR_IRQS: 524544, nr_irqs: 952, preallocated irqs: 16
+[4000000.0] xen:events: Using 2-level ABI
+[4000000.0] xen:events: Xen HVM callback vector for event delivery is enabled
+[4000000.0] Console: colour VGA+ 80x25
+[4000000.0] console [tty1] enabled
+[4000000.0] Cannot get hvm parameter CONSOLE_EVTCHN (18): -22!
+[4000000.0] console [ttyS0] enabled
+[4000000.0] ACPI: Core revision 20170831
+[4000000.0] ACPI: 3 ACPI AML tables successfully acquired and loaded
+[4000000.0] clocksource: hpet: mask: 0xffffffff max_cycles: 0xffffffff, max_idle_ns: 30580167144 ns
+[4000000.0] hpet clockevent registered
+[4012590.0] APIC: Switch to symmetric I/O mode setup
+[8797214.0] x2apic: IRQ remapping doesn't support X2APIC mode
+[12004299.0] Switched APIC routing to physical flat.
+[22666924.0] ..TIMER: vector=0x30 apic1=0 pin1=2 apic2=0 pin2=0
+[32000000.0] tsc: Fast TSC calibration using PIT
+[48004887.0] tsc: Detected 2399.970 MHz processor
+[52004528.0] tsc: Detected 2400.054 MHz TSC
+[52016727.0] Calibrating delay loop (skipped), value calculated using timer frequency.. 4800.10 BogoMIPS (lpj=9600216)
+[68005949.0] pid_max: default: 32768 minimum: 301
+[72070014.0] Security Framework initialized
+[80004040.0] Yama: becoming mindful.
+[84055921.0] AppArmor: AppArmor initialized
+[88241470.0] Dentry cache hash table entries: 131072 (order: 8, 1048576 bytes)
+[96117080.0] Inode-cache hash table entries: 65536 (order: 7, 524288 bytes)
+[104030958.0] Mount-cache hash table entries: 2048 (order: 2, 16384 bytes)
+[112014881.0] Mountpoint-cache hash table entries: 2048 (order: 2, 16384 bytes)
+[120351090.0] mce: CPU supports 2 MCE banks
+[124036266.0] Last level iTLB entries: 4KB 1024, 2MB 1024, 4MB 1024
+[128003783.0] Last level dTLB entries: 4KB 1024, 2MB 1024, 4MB 1024, 1GB 4
+[136003494.0] Spectre V2 : Mitigation: Full generic retpoline
+[140001652.0] Speculative Store Bypass: Vulnerable
+[165828900.0] clocksource: xen: mask: 0xffffffffffffffff max_cycles: 0x1cd42e4dffb, max_idle_ns: 881590591483 ns
+[176023475.0] Xen: using vcpuop timer interface
+[176032015.0] installing Xen timer for CPU 0
+[180111677.0] smpboot: CPU0: Intel(R) Xeon(R) CPU E5-2676 v3 @ 2.40GHz (family: 0x6, model: 0x3f, stepping: 0x2)
+[184057450.0] cpu 0 spinlock event irq 53
+[188120120.0] Performance Events: unsupported p6 CPU model 63 no PMU driver, software events only.
+[192062597.0] Hierarchical SRCU implementation.
+[196661290.0] NMI watchdog: Perf event create on CPU 0 failed with -2
+[200009797.0] NMI watchdog: Perf NMI watchdog permanently disabled
+[204213544.0] smp: Bringing up secondary CPUs ...
+[208008649.0] smp: Brought up 1 node, 1 CPU
+[212007617.0] smpboot: Max logical packages: 15
+[216008120.0] smpboot: Total of 1 processors activated (4800.10 BogoMIPS)
+[220324515.0] devtmpfs: initialized
+[224092426.0] x86/mm: Memory block size: 128MB
+[228243285.0] evm: security.selinux
+[232011134.0] evm: security.SMACK64
+[236008501.0] evm: security.SMACK64EXEC
+[240007990.0] evm: security.SMACK64TRANSMUTE
+[244004736.0] evm: security.SMACK64MMAP
+[248007490.0] evm: security.apparmor
+[252007875.0] evm: security.ima
+[255626852.0] evm: security.capability
+[256213945.0] clocksource: jiffies: mask: 0xffffffff max_cycles: 0xffffffff, max_idle_ns: 7645041785100000 ns
+[260030763.0] futex hash table entries: 4096 (order: 6, 262144 bytes)
+[264281367.0] RTC time: 12:04:38, date: 12/21/18
+[268155981.0] NET: Registered protocol family 16
+[272130796.0] audit: initializing netlink subsys (disabled)
+[276162251.0] audit: type=2000 audit(1545393878.626:1): state=initialized audit_enabled=0 res=1
+[280121685.0] cpuidle: using governor ladder
+[284009008.0] cpuidle: using governor menu
+[288078749.0] ACPI: bus type PCI registered
+[292010193.0] acpiphp: ACPI Hot Plug PCI Controller Driver version: 0.5
+[296639948.0] PCI: Using configuration type 1 for base access
+[301191889.0] HugeTLB registered 2.00 MiB page size, pre-allocated 0 pages
+[304312441.0] ACPI: Added _OSI(Module Device)
+[308012050.0] ACPI: Added _OSI(Processor Device)
+[312006482.0] ACPI: Added _OSI(3.0 _SCP Extensions)
+[316008134.0] ACPI: Added _OSI(Processor Aggregator Device)
+[320029821.0] ACPI: Added _OSI(Linux-Dell-Video)
+[324034589.0] ACPI: Added _OSI(Linux-Lenovo-NV-HDMI-Audio)
+[328323227.0] xen: --> pirq=16 -> irq=9 (gsi=9)
+[331823202.0] ACPI: Interpreter enabled
+[332019685.0] ACPI: (supports S0 S4 S5)
+[336005805.0] ACPI: Using IOAPIC for interrupt routing
+[340043356.0] PCI: Using host bridge windows from ACPI; if necessary, use "pci=nocrs" and report a bug
+[344569571.0] ACPI: Enabled 2 GPEs in block 00 to 0F
+[420316390.0] ACPI: PCI Root Bridge [PCI0] (domain 0000 [bus 00-ff])
+[424019107.0] acpi PNP0A03:00: _OSC: OS supports [ASPM ClockPM Segments MSI]
+[428017458.0] acpi PNP0A03:00: _OSC failed (AE_NOT_FOUND); disabling ASPM
+[432040471.0] acpi PNP0A03:00: fail to add MMCONFIG information, can't access extended PCI configuration space under this bridge.
+[437327815.0] acpiphp: Slot [0] registered
+[441458080.0] acpiphp: Slot [3] registered
+[444572762.0] acpiphp: Slot [4] registered
+[448589162.0] acpiphp: Slot [5] registered
+[452589562.0] acpiphp: Slot [6] registered
+[456907838.0] acpiphp: Slot [7] registered
+[460588788.0] acpiphp: Slot [8] registered
+[464529668.0] acpiphp: Slot [9] registered
+[468526877.0] acpiphp: Slot [10] registered
+[472538820.0] acpiphp: Slot [11] registered
+[476582467.0] acpiphp: Slot [12] registered
+[480513845.0] acpiphp: Slot [13] registered
+[484492750.0] acpiphp: Slot [14] registered
+[488534618.0] acpiphp: Slot [15] registered
+[492522623.0] acpiphp: Slot [16] registered
+[496554151.0] acpiphp: Slot [17] registered
+[500536805.0] acpiphp: Slot [18] registered
+[504599294.0] acpiphp: Slot [19] registered
+[508613655.0] acpiphp: Slot [20] registered
+[512605089.0] acpiphp: Slot [21] registered
+[516671137.0] acpiphp: Slot [22] registered
+[520667249.0] acpiphp: Slot [23] registered
+[524611994.0] acpiphp: Slot [24] registered
+[528642191.0] acpiphp: Slot [25] registered
+[532521958.0] acpiphp: Slot [26] registered
+[536623890.0] acpiphp: Slot [27] registered
+[540617055.0] acpiphp: Slot [28] registered
+[544765646.0] acpiphp: Slot [29] registered
+[548612800.0] acpiphp: Slot [30] registered
+[552714668.0] acpiphp: Slot [31] registered
+[556552139.0] PCI host bridge to bus 0000:00
+[560012424.0] pci_bus 0000:00: root bus resource [io  0x0000-0x0cf7 window]
+[564007160.0] pci_bus 0000:00: root bus resource [io  0x0d00-0xffff window]
+[568011420.0] pci_bus 0000:00: root bus resource [mem 0x000a0000-0x000bffff window]
+[572013069.0] pci_bus 0000:00: root bus resource [mem 0xf0000000-0xfbffffff window]
+[576012283.0] pci_bus 0000:00: root bus resource [bus 00-ff]
+[580286295.0] pci 0000:00:00.0: [8086:1237] type 00 class 0x060000
+[583621159.0] pci 0000:00:01.0: [8086:7000] type 00 class 0x060100
+[587551883.0] pci 0000:00:01.1: [8086:7010] type 00 class 0x010180
+[589618211.0] pci 0000:00:01.1: reg 0x20: [io  0xc100-0xc10f]
+[590522231.0] pci 0000:00:01.1: legacy IDE quirk: reg 0x10: [io  0x01f0-0x01f7]
+[592014892.0] pci 0000:00:01.1: legacy IDE quirk: reg 0x14: [io  0x03f6]
+[596014153.0] pci 0000:00:01.1: legacy IDE quirk: reg 0x18: [io  0x0170-0x0177]
+[600017938.0] pci 0000:00:01.1: legacy IDE quirk: reg 0x1c: [io  0x0376]
+[605093715.0] pci 0000:00:01.3: [8086:7113] type 00 class 0x068000
+[605155743.0] * Found PM-Timer Bug on the chipset. Due to workarounds for a bug,
+* this clock source is slow. Consider trying other clock sources
+[611143923.0] pci 0000:00:01.3: quirk: [io  0xb000-0xb03f] claimed by PIIX4 ACPI
+[613820403.0] pci 0000:00:02.0: [1013:00b8] type 00 class 0x030000
+[614700428.0] pci 0000:00:02.0: reg 0x10: [mem 0xf0000000-0xf1ffffff pref]
+[615180233.0] pci 0000:00:02.0: reg 0x14: [mem 0xf3000000-0xf3000fff]
+[618557606.0] pci 0000:00:03.0: [5853:0001] type 00 class 0xff8000
+[619685245.0] pci 0000:00:03.0: reg 0x10: [io  0xc000-0xc0ff]
+[620182481.0] pci 0000:00:03.0: reg 0x14: [mem 0xf2000000-0xf2ffffff pref]
+[626047486.0] ACPI: PCI Interrupt Link [LNKA] (IRQs *5 10 11)
+[628420777.0] ACPI: PCI Interrupt Link [LNKB] (IRQs 5 *10 11)
+[632391633.0] ACPI: PCI Interrupt Link [LNKC] (IRQs 5 10 *11)
+[636428660.0] ACPI: PCI Interrupt Link [LNKD] (IRQs *5 10 11)
+[669110123.0] xen:balloon: Initialising balloon driver
+[676188633.0] SCSI subsystem initialized
+[680076192.0] libata version 3.00 loaded.
+[680190616.0] pci 0000:00:02.0: vgaarb: setting as boot VGA device
+[684000000.0] pci 0000:00:02.0: vgaarb: VGA device added: decodes=io+mem,owns=io+mem,locks=none
+[684010921.0] pci 0000:00:02.0: vgaarb: bridge control possible
+[688009773.0] vgaarb: loaded
+[691574079.0] ACPI: bus type USB registered
+[692042107.0] usbcore: registered new interface driver usbfs
+[696026458.0] usbcore: registered new interface driver hub
+[700037279.0] usbcore: registered new device driver usb
+[704117108.0] EDAC MC: Ver: 3.0.0
+[709010892.0] PCI: Using ACPI for IRQ routing
+[712012630.0] PCI: pci_cache_line_size set to 64 bytes
+[712730583.0] e820: reserve RAM buffer [mem 0x0009e000-0x0009ffff]
+[712885309.0] NetLabel: Initializing
+[716006891.0] NetLabel:  domain hash size = 128
+[720007284.0] NetLabel:  protocols = UNLABELED CIPSOv4 CALIPSO
+[724034694.0] NetLabel:  unlabeled traffic allowed by default
+[728217434.0] HPET: 3 timers in total, 0 timers will be used for per-cpu timer
+[732028320.0] hpet0: at MMIO 0xfed00000, IRQs 2, 8, 0
+[736009287.0] hpet0: 3 comparators, 64-bit 62.500000 MHz counter
+[744040291.0] clocksource: Switched to clocksource xen
+[762129275.0] VFS: Disk quotas dquot_6.6.0
+[767211362.0] VFS: Dquot-cache hash table entries: 512 (order 0, 4096 bytes)
+[774865282.0] random: fast init done
+[779219045.0] AppArmor: AppArmor Filesystem Enabled
+[784713979.0] pnp: PnP ACPI init
+[789365523.0] system 00:00: [mem 0x00000000-0x0009ffff] could not be reserved
+[796449347.0] system 00:00: Plug and Play ACPI device, IDs PNP0c02 (active)
+[796557833.0] system 00:01: [io  0x08a0-0x08a3] has been reserved
+[803273905.0] system 00:01: [io  0x0cc0-0x0ccf] has been reserved
+[809828198.0] system 00:01: [io  0x04d0-0x04d1] has been reserved
+[816484507.0] system 00:01: Plug and Play ACPI device, IDs PNP0c02 (active)
+[816527928.0] xen: --> pirq=17 -> irq=8 (gsi=8)
+[816566112.0] pnp 00:02: Plug and Play ACPI device, IDs PNP0b00 (active)
+[816600184.0] xen: --> pirq=18 -> irq=12 (gsi=12)
+[816617483.0] pnp 00:03: Plug and Play ACPI device, IDs PNP0f13 (active)
+[816637273.0] xen: --> pirq=19 -> irq=1 (gsi=1)
+[816654278.0] pnp 00:04: Plug and Play ACPI device, IDs PNP0303 PNP030b (active)
+[816673114.0] xen: --> pirq=20 -> irq=6 (gsi=6)
+[816675024.0] pnp 00:05: [dma 2]
+[816690852.0] pnp 00:05: Plug and Play ACPI device, IDs PNP0700 (active)
+[816726798.0] xen: --> pirq=21 -> irq=4 (gsi=4)
+[816738678.0] pnp 00:06: Plug and Play ACPI device, IDs PNP0501 (active)
+[816792399.0] system 00:07: [io  0x10c0-0x1141] has been reserved
+[823694822.0] system 00:07: [io  0xb044-0xb047] has been reserved
+[830123664.0] system 00:07: Plug and Play ACPI device, IDs PNP0c02 (active)
+[859627027.0] pnp: PnP ACPI: found 8 devices
+[870896669.0] clocksource: acpi_pm: mask: 0xffffff max_cycles: 0xffffff, max_idle_ns: 2085701024 ns
+[881068904.0] pci_bus 0000:00: resource 4 [io  0x0000-0x0cf7 window]
+[881070659.0] pci_bus 0000:00: resource 5 [io  0x0d00-0xffff window]
+[881072084.0] pci_bus 0000:00: resource 6 [mem 0x000a0000-0x000bffff window]
+[881073629.0] pci_bus 0000:00: resource 7 [mem 0xf0000000-0xfbffffff window]
+[881304275.0] NET: Registered protocol family 2
+[887469737.0] TCP established hash table entries: 8192 (order: 4, 65536 bytes)
+[894636662.0] TCP bind hash table entries: 8192 (order: 5, 131072 bytes)
+[901469128.0] TCP: Hash tables configured (established 8192 bind 8192)
+[910384231.0] UDP hash table entries: 512 (order: 2, 16384 bytes)
+[918017947.0] UDP-Lite hash table entries: 512 (order: 2, 16384 bytes)
+[926287637.0] NET: Registered protocol family 1
+[932154252.0] pci 0000:00:00.0: Limiting direct PCI/PCI transfers
+[939972751.0] pci 0000:00:01.0: PIIX3: Enabling Passive Release
+[947484564.0] pci 0000:00:01.0: Activating ISA DMA hang workarounds
+[955698287.0] pci 0000:00:02.0: Video device with shadowed ROM at [mem 0x000c0000-0x000dffff]
+[965760966.0] PCI: CLS 0 bytes, default 64
+[965826364.0] Unpacking initramfs...
+[1251931051.1] Freeing initrd memory: 19484K
+[1256370252.1] Scanning for low memory corruption every 60 seconds
+[1261529945.1] Initialise system trusted keyrings
+[1265242812.1] Key type blacklist registered
+[1270703630.1] workingset: timestamp_bits=36 max_order=18 bucket_order=0
+[1278759071.1] zbud: loaded
+[1282878516.1] squashfs: version 4.0 (2009/01/31) Phillip Lougher
+[1289539736.1] fuse init (API version 7.26)
+[1295108453.1] Key type asymmetric registered
+[1298571769.1] Asymmetric key parser 'x509' registered
+[1302435161.1] Block layer SCSI generic (bsg) driver version 0.4 loaded (major 247)
+[1308347952.1] io scheduler noop registered
+[1311560798.1] io scheduler deadline registered
+[1314961112.1] io scheduler cfq registered (default)
+[1318964495.1] intel_idle: Please enable MWAIT in BIOS SETUP
+[1319064795.1] input: Power Button as /devices/LNXSYSTM:00/LNXPWRBN:00/input/input0
+[1324979857.1] ACPI: Power Button [PWRF]
+[1328381431.1] input: Sleep Button as /devices/LNXSYSTM:00/LNXSLPBN:00/input/input1
+[1334783883.1] ACPI: Sleep Button [SLPF]
+[1338657919.1] xen: --> pirq=22 -> irq=28 (gsi=28)
+[1338772212.1] xen:grant_table: Grant tables using version 1 layout
+[1343758938.1] Grant table initialized
+[1347166831.1] Cannot get hvm parameter CONSOLE_EVTCHN (18): -22!
+[1351528333.1] Serial: 8250/16550 driver, 4 ports, IRQ sharing enabled
+[1388458801.1] 00:06: ttyS0 at I/O 0x3f8 (irq = 4, base_baud = 115200) is a 16550A
+[1396306426.1] Linux agpgart interface v0.103
+[1402652628.1] loop: module loaded
+[1406942041.1] Invalid max_queues (4), will use default max: 1.
+[1413146002.1] ata_piix 0000:00:01.1: version 2.13
+[1414367912.1] scsi host0: ata_piix
+[1417942126.1] scsi host1: ata_piix
+[1421407329.1] ata1: PATA max MWDMA2 cmd 0x1f0 ctl 0x3f6 bmdma 0xc100 irq 14
+[1427375516.1] ata2: PATA max MWDMA2 cmd 0x170 ctl 0x376 bmdma 0xc108 irq 15
+[1435175394.1] libphy: Fixed MDIO Bus: probed
+[1439163785.1] tun: Universal TUN/TAP device driver, 1.6
+[1443671722.1] PPP generic driver version 2.4.2
+[1449954098.1] xen_netfront: Initialising Xen virtual ethernet driver
+[1457572685.1] ehci_hcd: USB 2.0 'Enhanced' Host Controller (EHCI) Driver
+[1473237021.1] ehci-pci: EHCI PCI platform driver
+[1477331938.1] ehci-platform: EHCI generic platform driver
+[1481865344.1] ohci_hcd: USB 1.1 'Open' Host Controller (OHCI) Driver
+[1487124516.1] ohci-pci: OHCI PCI platform driver
+[1491288855.1] ohci-platform: OHCI generic platform driver
+[1496019580.1] uhci_hcd: USB Universal Host Controller Interface driver
+[1501787328.1] i8042: PNP: PS/2 Controller [PNP0303:PS2K,PNP0f13:PS2M] at 0x60,0x64 irq 1,12
+[1512138293.1] serio: i8042 KBD port at 0x60,0x64 irq 1
+[1517061669.1] serio: i8042 AUX port at 0x60,0x64 irq 12
+[1521867400.1] mousedev: PS/2 mouse device common for all mice
+[1528305597.1] input: AT Translated Set 2 keyboard as /devices/platform/i8042/serio0/input/input2
+[1536216041.1] rtc_cmos 00:02: rtc core: registered rtc_cmos as rtc0
+[1541608368.1] rtc_cmos 00:02: alarms up to one day, 114 bytes nvram, hpet irqs
+[1549307710.1] device-mapper: uevent: version 1.0.3
+[1558880159.1] device-mapper: ioctl: 4.37.0-ioctl (2017-09-20) initialised: dm-devel@redhat.com
+[1565660037.1] NET: Registered protocol family 10
+[1573786413.1] blkfront: xvda: barrier or flush: disabled; persistent grants: disabled; indirect descriptors: enabled;
+[1582735856.1] Segment Routing with IPv6
+[1586085339.1] NET: Registered protocol family 17
+[1589697824.1] Key type dns_resolver registered
+[1595366946.1] intel_rdt: Intel RDT L3 allocation detected
+[1601257953.1] RAS: Correctable Errors collector initialized.
+[1606481120.1] sched_clock: Marking stable (1606281847, 0)->(10112567157, -8506285310)
+[1612342540.1] registered taskstats version 1
+[1615606009.1]  xvda: xvda1
+[1618389864.1] Loading compiled-in X.509 certificates
+[1624882494.1] Loaded X.509 cert 'Build time autogenerated kernel key: 1472665054521b238871beb9554d15504325c156'
+[1632653831.1] zswap: loaded using pool lzo/zbud
+[1639087595.1] Key type big_key registered
+[1642294522.1] Key type trusted registered
+[1647154794.1] Key type encrypted registered
+[1650919509.1] AppArmor: AppArmor sha1 policy hashing enabled
+[1655497188.1] ima: No TPM chip found, activating TPM-bypass! (rc=-19)
+[1660714633.1] ima: Allocated hash algorithm: sha1
+[1664278207.1] evm: HMAC attrs: 0x1
+[1667608602.1]   Magic number: 14:400:77
+[1671075735.1] rtc_cmos 00:02: setting system clock to 2018-12-21 12:04:40 UTC (1545393880)
+[1677355139.1] BIOS EDD facility v0.16 2004-Jun-25, 0 devices found
+[1681780336.1] EDD information not available.
+[1687733151.1] Freeing unused kernel memory: 2372K
+[1696070973.1] Write protecting the kernel read-only data: 18432k
+[1701254154.1] Freeing unused kernel memory: 2008K
+[1705743711.1] Freeing unused kernel memory: 188K
+[1715477224.1] x86/mm: Checked W+X mappings: passed, no W+X pages found.
+[1721193335.1] x86/mm: Checking user space page tables
+[1731102653.1] x86/mm: Checked W+X mappings: passed, no W+X pages found.
+[1751868658.1] random: udevadm: uninitialized urandom read (16 bytes read)
+[1757302492.1] random: systemd-udevd: uninitialized urandom read (16 bytes read)
+[1762931607.1] random: systemd-udevd: uninitialized urandom read (16 bytes read)
+[1945727269.1] AVX2 version of gcm_enc/dec engaged.
+[1949613014.1] AES CTR mode by8 optimization enabled
+[2272165675.2] tsc: Refined TSC clocksource calibration: 2400.001 MHz
+[2277150119.2] clocksource: tsc: mask: 0xffffffffffffffff max_cycles: 0x22983858435, max_idle_ns: 440795258295 ns
+[3660065068.3] raid6: sse2x1   gen()  9113 MB/s
+[3708065561.3] raid6: sse2x1   xor()  6397 MB/s
+[3756067802.3] raid6: sse2x2   gen() 10919 MB/s
+[3808061488.3] raid6: sse2x2   xor()  7010 MB/s
+[3860065926.3] raid6: sse2x4   gen() 12602 MB/s
+[3912063347.3] raid6: sse2x4   xor()  8000 MB/s
+[3964064174.3] raid6: avx2x1   gen() 15380 MB/s
+[4016062541.4] raid6: avx2x1   xor() 12087 MB/s
+[4068062848.4] raid6: avx2x2   gen() 20769 MB/s
+[4120063141.4] raid6: avx2x2   xor() 12674 MB/s
+[4172062033.4] raid6: avx2x4   gen() 23766 MB/s
+[4220061121.4] raid6: avx2x4   xor() 14645 MB/s
+[4224268335.4] raid6: using algorithm avx2x4 gen() 23766 MB/s
+[4229047220.4] raid6: .... xor() 14645 MB/s, rmw enabled
+[4233500421.4] raid6: using avx2x2 recovery algorithm
+[4239865431.4] xor: automatically using best checksumming function   avx
+[4247550014.4] async_tx: api initialized (async)
+[4318120055.4] Btrfs loaded, crc32c=crc32c-intel
+[4353096368.4] EXT4-fs (xvda1): mounted filesystem with ordered data mode. Opts: (null)
+[4517023086.4] ip_tables: (C) 2000-2006 Netfilter Core Team
+[4528241306.4] systemd[1]: systemd 237 running in system mode. (+PAM +AUDIT +SELINUX +IMA +APPARMOR +SMACK +SYSVINIT +UTMP +LIBCRYPTSETUP +GCRYPT +GNUTLS +ACL +XZ +LZ4 +SECCOMP +BLKID +ELFUTILS +KMOD -IDN2 +IDN -PCRE2 default-hierarchy=hybrid)
+[4552411301.4] systemd[1]: Detected virtualization xen.
+[4559563819.4] systemd[1]: Detected architecture x86-64.
+[4574473157.4] systemd[1]: Set hostname to <ubuntu>.
+[4583794096.4] systemd[1]: Initializing machine ID from random generator.
+[4590444341.4] systemd[1]: Installed transient /etc/machine-id file.
+[4750864284.4] systemd[1]: Created slice User and Session Slice.
+[4760750738.4] systemd[1]: Created slice System Slice.
+[4769034200.4] systemd[1]: Listening on Journal Audit Socket.
+[4778512441.4] systemd[1]: Created slice system-serial\x2dgetty.slice.
+[4874400462.4] Loading iSCSI transport class v2.0-870.
+[4904053086.4] iscsi: registered transport (tcp)
+[4940496394.4] EXT4-fs (xvda1): re-mounted. Opts: discard
+[5106934367.5] systemd-journald[393]: Received request to flush runtime journal from PID 1
+[5121476059.5] iscsi: registered transport (iser)
+[6501940919.6] audit: type=1400 audit(1545393885.328:2): apparmor="STATUS" operation="profile_load" profile="unconfined" name="lxc-container-default" pid=464 comm="apparmor_parser"
+[6502505558.6] audit: type=1400 audit(1545393885.328:3): apparmor="STATUS" operation="profile_load" profile="unconfined" name="lxc-container-default-cgns" pid=464 comm="apparmor_parser"
+[6504509960.6] audit: type=1400 audit(1545393885.332:4): apparmor="STATUS" operation="profile_load" profile="unconfined" name="lxc-container-default-with-mounting" pid=464 comm="apparmor_parser"
+[6505058227.6] audit: type=1400 audit(1545393885.332:5): apparmor="STATUS" operation="profile_load" profile="unconfined" name="lxc-container-default-with-nesting" pid=464 comm="apparmor_parser"
+[7032124407.7] audit: type=1400 audit(1545393885.860:6): apparmor="STATUS" operation="profile_load" profile="unconfined" name="/sbin/dhclient" pid=482 comm="apparmor_parser"
+[7032718031.7] audit: type=1400 audit(1545393885.860:7): apparmor="STATUS" operation="profile_load" profile="unconfined" name="/usr/lib/NetworkManager/nm-dhcp-client.action" pid=482 comm="apparmor_parser"
+[7033191452.7] audit: type=1400 audit(1545393885.860:8): apparmor="STATUS" operation="profile_load" profile="unconfined" name="/usr/lib/NetworkManager/nm-dhcp-helper" pid=482 comm="apparmor_parser"
+[7034851907.7] audit: type=1400 audit(1545393885.860:9): apparmor="STATUS" operation="profile_load" profile="unconfined" name="/usr/lib/connman/scripts/dhclient-script" pid=482 comm="apparmor_parser"
+[7051552932.7] audit: type=1400 audit(1545393885.876:10): apparmor="STATUS" operation="profile_load" profile="unconfined" name="/usr/bin/lxc-start" pid=517 comm="apparmor_parser"
+[7199498724.7] audit: type=1400 audit(1545393886.024:11): apparmor="STATUS" operation="profile_load" profile="unconfined" name="/usr/bin/man" pid=519 comm="apparmor_parser"
+[11161377278.11] new mount options do not match the existing superblock, will be ignored
+[12363474839.12] random: crng init done
+[12363476830.12] random: 7 urandom warning(s) missed due to ratelimiting
+[16900680066.16] kauditd_printk_skb: 5 callbacks suppressed
+[16900681473.16] audit: type=1400 audit(1545393895.728:17): apparmor="STATUS" operation="profile_load" profile="unconfined" name="snap-update-ns.core" pid=961 comm="apparmor_parser"
+[16971224711.16] audit: type=1400 audit(1545393895.796:18): apparmor="STATUS" operation="profile_load" profile="unconfined" name="snap.core.hook.configure" pid=963 comm="apparmor_parser"
+[19172179813.19] audit: type=1400 audit(1545393898.000:19): apparmor="STATUS" operation="profile_load" profile="unconfined" name="/snap/core/5328/usr/lib/snapd/snap-confine" pid=1033 comm="apparmor_parser"
+[19172634993.19] audit: type=1400 audit(1545393898.000:20): apparmor="STATUS" operation="profile_load" profile="unconfined" name="/snap/core/5328/usr/lib/snapd/snap-confine//mount-namespace-capture-helper" pid=1033 comm="apparmor_parser"
+[19190877440.19] audit: type=1400 audit(1545393898.016:21): apparmor="STATUS" operation="profile_replace" profile="unconfined" name="snap-update-ns.core" pid=1038 comm="apparmor_parser"
+[19255303345.19] audit: type=1400 audit(1545393898.080:22): apparmor="STATUS" operation="profile_replace" profile="unconfined" name="snap.core.hook.configure" pid=1040 comm="apparmor_parser"
+[20044096523.20] audit: type=1400 audit(1545393898.868:23): apparmor="STATUS" operation="profile_load" profile="unconfined" name="snap-update-ns.amazon-ssm-agent" pid=1115 comm="apparmor_parser"
+[20048992141.20] audit: type=1400 audit(1545393898.876:24): apparmor="STATUS" operation="profile_load" profile="unconfined" name="snap.amazon-ssm-agent.amazon-ssm-agent" pid=1117 comm="apparmor_parser"
+[20053640745.20] audit: type=1400 audit(1545393898.880:25): apparmor="STATUS" operation="profile_load" profile="unconfined" name="snap.amazon-ssm-agent.ssm-cli" pid=1119 comm="apparmor_parser"
+[343815640354.343] systemd: 36 output lines suppressed due to ratelimiting
+[343819811212.343] systemd[1]: systemd 237 running in system mode. (+PAM +AUDIT +SELINUX +IMA +APPARMOR +SMACK +SYSVINIT +UTMP +LIBCRYPTSETUP +GCRYPT +GNUTLS +ACL +XZ +LZ4 +SECCOMP +BLKID +ELFUTILS +KMOD -IDN2 +IDN -PCRE2 default-hierarchy=hybrid)
+[343819860527.343] systemd[1]: Detected virtualization xen.
+[343819868348.343] systemd[1]: Detected architecture x86-64.
+[344163440924.344] systemd[1]: Stopping Journal Service...
+[344166748005.344] systemd-journald[393]: Received SIGTERM from PID 1 (systemd).
+[344191632037.344] systemd[1]: Stopped Journal Service.
+[344193359863.344] systemd[1]: Starting Journal Service...
+[344209913346.344] systemd[1]: Started Journal Service.
+[388149683405.388] audit: type=1400 audit(1545394267.287:26): apparmor="STATUS" operation="profile_replace" info="same as current profile, skipping" profile="unconfined" name="/usr/bin/man" pid=9951 comm="apparmor_parser"
+[388150220347.388] audit: type=1400 audit(1545394267.287:27): apparmor="STATUS" operation="profile_replace" info="same as current profile, skipping" profile="unconfined" name="man_filter" pid=9951 comm="apparmor_parser"
+[388150640322.388] audit: type=1400 audit(1545394267.287:28): apparmor="STATUS" operation="profile_replace" info="same as current profile, skipping" profile="unconfined" name="man_groff" pid=9951 comm="apparmor_parser"
+[388935289550.388] SGI XFS with ACLs, security attributes, realtime, no debug enabled
+[394016817570.394] audit: type=1400 audit(1545394273.155:29): apparmor="STATUS" operation="profile_replace" info="same as current profile, skipping" profile="unconfined" name="lxc-container-default" pid=10795 comm="apparmor_parser"
+[394017449828.394] audit: type=1400 audit(1545394273.155:30): apparmor="STATUS" operation="profile_replace" info="same as current profile, skipping" profile="unconfined" name="lxc-container-default-cgns" pid=10795 comm="apparmor_parser"
+[394017954690.394] audit: type=1400 audit(1545394273.155:31): apparmor="STATUS" operation="profile_replace" info="same as current profile, skipping" profile="unconfined" name="lxc-container-default-with-mounting" pid=10795 comm="apparmor_parser"
+[394018487638.394] audit: type=1400 audit(1545394273.155:32): apparmor="STATUS" operation="profile_replace" info="same as current profile, skipping" profile="unconfined" name="lxc-container-default-with-nesting" pid=10795 comm="apparmor_parser"
+[394184258557.394] audit: type=1400 audit(1545394273.323:33): apparmor="STATUS" operation="profile_replace" info="same as current profile, skipping" profile="unconfined" name="/sbin/dhclient" pid=10797 comm="apparmor_parser"
+[394184852626.394] audit: type=1400 audit(1545394273.323:34): apparmor="STATUS" operation="profile_replace" info="same as current profile, skipping" profile="unconfined" name="/usr/lib/NetworkManager/nm-dhcp-client.action" pid=10797 comm="apparmor_parser"
+[394185330873.394] audit: type=1400 audit(1545394273.323:35): apparmor="STATUS" operation="profile_replace" info="same as current profile, skipping" profile="unconfined" name="/usr/lib/NetworkManager/nm-dhcp-helper" pid=10797 comm="apparmor_parser"
+[394185765851.394] audit: type=1400 audit(1545394273.323:36): apparmor="STATUS" operation="profile_replace" info="same as current profile, skipping" profile="unconfined" name="/usr/lib/connman/scripts/dhclient-script" pid=10797 comm="apparmor_parser"
+[394196588105.394] audit: type=1400 audit(1545394273.335:37): apparmor="STATUS" operation="profile_replace" info="same as current profile, skipping" profile="unconfined" name="/usr/bin/lxc-start" pid=10799 comm="apparmor_parser"
+[394269978275.394] audit: type=1400 audit(1545394273.407:38): apparmor="STATUS" operation="profile_replace" info="same as current profile, skipping" profile="unconfined" name="/usr/bin/man" pid=10801 comm="apparmor_parser"
+[432983200194.432] kauditd_printk_skb: 12 callbacks suppressed
+[432983201820.432] audit: type=1400 audit(1545394312.118:51): apparmor="STATUS" operation="profile_replace" info="same as current profile, skipping" profile="unconfined" name="lxc-container-default" pid=12672 comm="apparmor_parser"
+[432985982514.432] audit: type=1400 audit(1545394312.122:52): apparmor="STATUS" operation="profile_replace" profile="unconfined" name="lxc-container-default-cgns" pid=12672 comm="apparmor_parser"
+[432986465264.432] audit: type=1400 audit(1545394312.122:53): apparmor="STATUS" operation="profile_replace" info="same as current profile, skipping" profile="unconfined" name="lxc-container-default-with-mounting" pid=12672 comm="apparmor_parser"
+[432986978760.432] audit: type=1400 audit(1545394312.122:54): apparmor="STATUS" operation="profile_replace" profile="unconfined" name="lxc-container-default-with-nesting" pid=12672 comm="apparmor_parser"
+[433153679997.433] audit: type=1400 audit(1545394312.286:55): apparmor="STATUS" operation="profile_replace" info="same as current profile, skipping" profile="unconfined" name="/sbin/dhclient" pid=12675 comm="apparmor_parser"
+[433154323395.433] audit: type=1400 audit(1545394312.290:56): apparmor="STATUS" operation="profile_replace" info="same as current profile, skipping" profile="unconfined" name="/usr/lib/NetworkManager/nm-dhcp-client.action" pid=12675 comm="apparmor_parser"
+[433154810248.433] audit: type=1400 audit(1545394312.290:57): apparmor="STATUS" operation="profile_replace" info="same as current profile, skipping" profile="unconfined" name="/usr/lib/NetworkManager/nm-dhcp-helper" pid=12675 comm="apparmor_parser"
+[433155243731.433] audit: type=1400 audit(1545394312.290:58): apparmor="STATUS" operation="profile_replace" info="same as current profile, skipping" profile="unconfined" name="/usr/lib/connman/scripts/dhclient-script" pid=12675 comm="apparmor_parser"
+[433167590815.433] audit: type=1400 audit(1545394312.302:59): apparmor="STATUS" operation="profile_replace" profile="unconfined" name="/usr/bin/lxc-start" pid=12677 comm="apparmor_parser"
+[433240662059.433] audit: type=1400 audit(1545394312.374:60): apparmor="STATUS" operation="profile_replace" info="same as current profile, skipping" profile="unconfined" name="/usr/bin/man" pid=12679 comm="apparmor_parser"
+[21462442803498.21462] kauditd_printk_skb: 13 callbacks suppressed
+[21462442805151.21462] audit: type=1400 audit(1545415341.020:74): apparmor="STATUS" operation="profile_load" profile="unconfined" name="/usr/sbin/mysqld" pid=773 comm="apparmor_parser"
+[21463206148453.21463] audit: type=1400 audit(1545415341.784:75): apparmor="DENIED" operation="open" profile="/usr/sbin/mysqld" name="/sys/devices/system/node/" pid=867 comm="mysqld" requested_mask="r" denied_mask="r" fsuid=0 ouid=0
+[21463221380545.21463] audit: type=1400 audit(1545415341.800:76): apparmor="DENIED" operation="capable" profile="/usr/sbin/mysqld" pid=867 comm="mysqld" capability=2  capname="dac_read_search"
+[21463255863431.21463] audit: type=1400 audit(1545415341.836:77): apparmor="DENIED" operation="open" profile="/usr/sbin/mysqld" name="/sys/devices/system/node/" pid=879 comm="mysqld" requested_mask="r" denied_mask="r" fsuid=111 ouid=0
+[21756594961731.21756] audit: type=1400 audit(1545415635.164:78): apparmor="DENIED" operation="open" profile="/usr/sbin/mysqld" name="/sys/devices/system/node/" pid=2652 comm="mysqld" requested_mask="r" denied_mask="r" fsuid=0 ouid=0
+[21833553902942.21833] audit: type=1400 audit(1545415712.122:79): apparmor="DENIED" operation="open" profile="/usr/sbin/mysqld" name="/sys/devices/system/node/" pid=3061 comm="mysqld" requested_mask="r" denied_mask="r" fsuid=0 ouid=0
+[21875757992232.21875] audit: type=1400 audit(1545415754.321:80): apparmor="DENIED" operation="open" profile="/usr/sbin/mysqld" name="/sys/devices/system/node/" pid=3542 comm="mysqld" requested_mask="r" denied_mask="r" fsuid=0 ouid=0
+[22018568104327.22018] audit: type=1400 audit(1545415897.129:81): apparmor="DENIED" operation="open" profile="/usr/sbin/mysqld" name="/sys/devices/system/node/" pid=3758 comm="mysqld" requested_mask="r" denied_mask="r" fsuid=0 ouid=0
+[22018607698200.22018] audit: type=1400 audit(1545415897.169:82): apparmor="DENIED" operation="open" profile="/usr/sbin/mysqld" name="/sys/devices/system/node/" pid=3763 comm="mysqld" requested_mask="r" denied_mask="r" fsuid=111 ouid=0
+[22074531220184.22074] audit: type=1400 audit(1545415953.092:83): apparmor="DENIED" operation="open" profile="/usr/sbin/mysqld" name="/sys/devices/system/node/" pid=4539 comm="mysqld" requested_mask="r" denied_mask="r" fsuid=0 ouid=0
+[22210765671468.22210] audit: type=1400 audit(1545416089.324:84): apparmor="DENIED" operation="open" profile="/usr/sbin/mysqld" name="/sys/devices/system/node/" pid=4632 comm="mysqld" requested_mask="r" denied_mask="r" fsuid=0 ouid=0
+[22210807976537.22210] audit: type=1400 audit(1545416089.368:85): apparmor="DENIED" operation="open" profile="/usr/sbin/mysqld" name="/sys/devices/system/node/" pid=4640 comm="mysqld" requested_mask="r" denied_mask="r" fsuid=111 ouid=0
+[22273491157183.22273] audit: type=1400 audit(1545416152.047:86): apparmor="STATUS" operation="profile_replace" info="same as current profile, skipping" profile="unconfined" name="/usr/sbin/mysqld" pid=4768 comm="apparmor_parser"
+[22273549967523.22273] audit: type=1400 audit(1545416152.107:87): apparmor="DENIED" operation="open" profile="/usr/sbin/mysqld" name="/sys/devices/system/node/" pid=4786 comm="mysqld" requested_mask="r" denied_mask="r" fsuid=0 ouid=0
+[22273604163691.22273] audit: type=1400 audit(1545416152.159:88): apparmor="DENIED" operation="open" profile="/usr/sbin/mysqld" name="/sys/devices/system/node/" pid=4801 comm="mysqld" requested_mask="r" denied_mask="r" fsuid=0 ouid=0
+[22277537601294.22277] audit: type=1400 audit(1545416156.095:89): apparmor="DENIED" operation="open" profile="/usr/sbin/mysqld" name="/sys/devices/system/node/" pid=4860 comm="mysqld" requested_mask="r" denied_mask="r" fsuid=0 ouid=0
+[22280230105408.22280] audit: type=1400 audit(1545416158.786:90): apparmor="DENIED" operation="open" profile="/usr/sbin/mysqld" name="/sys/devices/system/node/" pid=4912 comm="mysqld" requested_mask="r" denied_mask="r" fsuid=0 ouid=0
+[22282295921818.22282] audit: type=1400 audit(1545416160.850:91): apparmor="STATUS" operation="profile_replace" info="same as current profile, skipping" profile="unconfined" name="/usr/sbin/mysqld" pid=4947 comm="apparmor_parser"
+[22282854213630.22282] audit: type=1400 audit(1545416161.410:92): apparmor="DENIED" operation="open" profile="/usr/sbin/mysqld" name="/sys/devices/system/node/" pid=5019 comm="mysqld" requested_mask="r" denied_mask="r" fsuid=0 ouid=0
+[22282898519612.22282] audit: type=1400 audit(1545416161.454:93): apparmor="DENIED" operation="open" profile="/usr/sbin/mysqld" name="/sys/devices/system/node/" pid=5027 comm="mysqld" requested_mask="r" denied_mask="r" fsuid=111 ouid=0
+[22419123420018.22419] audit: type=1400 audit(1545416297.675:94): apparmor="DENIED" operation="open" profile="/usr/sbin/mysqld" name="/sys/devices/system/node/" pid=5121 comm="mysqld" requested_mask="r" denied_mask="r" fsuid=0 ouid=0
+[22419167903891.22419] audit: type=1400 audit(1545416297.719:95): apparmor="DENIED" operation="open" profile="/usr/sbin/mysqld" name="/sys/devices/system/node/" pid=5125 comm="mysqld" requested_mask="r" denied_mask="r" fsuid=111 ouid=0
+[25524580731645.25524] audit: type=1400 audit(1545419403.049:96): apparmor="STATUS" operation="profile_load" profile="unconfined" name="/snap/core/6130/usr/lib/snapd/snap-confine" pid=6200 comm="apparmor_parser"
+[25524581172130.25524] audit: type=1400 audit(1545419403.049:97): apparmor="STATUS" operation="profile_load" profile="unconfined" name="/snap/core/6130/usr/lib/snapd/snap-confine//mount-namespace-capture-helper" pid=6200 comm="apparmor_parser"
+[25524661228460.25524] audit: type=1400 audit(1545419403.129:98): apparmor="STATUS" operation="profile_replace" profile="unconfined" name="snap.core.hook.configure" pid=6203 comm="apparmor_parser"
+[25524667927860.25524] audit: type=1400 audit(1545419403.137:99): apparmor="STATUS" operation="profile_replace" info="same as current profile, skipping" profile="unconfined" name="snap-update-ns.core" pid=6205 comm="apparmor_parser"
+[25525728627714.25525] audit: type=1400 audit(1545419404.197:100): apparmor="STATUS" operation="profile_replace" profile="unconfined" name="snap-update-ns.amazon-ssm-agent" pid=6264 comm="apparmor_parser"
+[25525731681561.25525] audit: type=1400 audit(1545419404.201:101): apparmor="STATUS" operation="profile_replace" profile="unconfined" name="snap.amazon-ssm-agent.amazon-ssm-agent" pid=6265 comm="apparmor_parser"
+[25525734393872.25525] audit: type=1400 audit(1545419404.201:102): apparmor="STATUS" operation="profile_replace" profile="unconfined" name="snap.amazon-ssm-agent.ssm-cli" pid=6266 comm="apparmor_parser"
+[25525776327926.25525] audit: type=1400 audit(1545419404.245:103): apparmor="STATUS" operation="profile_replace" profile="unconfined" name="/snap/core/6130/usr/lib/snapd/snap-confine" pid=6271 comm="apparmor_parser"
+[25525776541774.25525] audit: type=1400 audit(1545419404.245:104): apparmor="STATUS" operation="profile_replace" profile="unconfined" name="/snap/core/6130/usr/lib/snapd/snap-confine//mount-namespace-capture-helper" pid=6271 comm="apparmor_parser"
+[25525795866859.25525] audit: type=1400 audit(1545419404.265:105): apparmor="STATUS" operation="profile_replace" profile="unconfined" name="snap-update-ns.core" pid=6273 comm="apparmor_parser"
+[66030429896299.66030] new mount options do not match the existing superblock, will be ignored
+[1108227154620838.1108227] lime: version magic '4.15.0-42-generic SMP mod_unload ' should be '4.15.0-1021-aws SMP mod_unload '
+[1109556640120032.1109556] lime: loading out-of-tree module taints kernel.
+[1109556640155159.1109556] lime: module verification failed: signature and/or required key missing - tainting kernel
+~~~
+
+[Volver al texto del comando en la Sección 3.4.6.](#346-comando-001)
+
+---
+
+#### 8.4.003.004.006.002. Resumen del comando `sudo python2.7 vol.py --profile=LinuxlinuxUbuntu_4_15_0-1021-aws_profilex64 -f '/home/jrodg85/Server_RAM.mem' linux_dmesg > /home/jrodg85/informe-linux_dmesg.txt`.
+
+
+Para los cálculos de tiempos se ha usado el siguiente script de Python.
+
+~~~Python
+from datetime import datetime, timedelta
+
+# Initial timestamp in UTC
+initial_timestamp = datetime(2018, 8, 28, 10, 23, 7)
+
+# Additional microseconds
+additional_microseconds = 0.0 #insertar aqui el timestamp
+
+# Convert microseconds to seconds for timedelta
+additional_seconds = additional_microseconds / 1_000_000
+
+# Calculate new datetime
+new_datetime = initial_timestamp + timedelta(seconds=additional_seconds)
+print("new_datetime: ",new_datetime.isoformat())
+~~~
+
+Explicado el script anterior, un resumen de los datos de interés para este análisis forense de este servidor es el siguiente:
+
+~~~Shell
+# Establecimiento del tiempo origen de tiempos donde el 28 de Agosto de 2018 a las 10:23:07 UTC el cual arranca el servidor. Se considera que el tiempo [0.0] es el origen de tiempos del sistema marcado en microsegundos.
+
+[0.0] Linux version 4.15.0-1021-aws (buildd@lcy01-amd64-001) (gcc version 7.3.0 (Ubuntu 7.3.0-16ubuntu3)) #21-Ubuntu SMP Tue Aug 28 10:23:07 UTC 2018 (Ubuntu 4.15.0-1021.21-aws 4.15.18)
+
+# Se descarta información relativo al arranque del servidor, la cual tiene marcada el tiempo [0.0], ya que sería el 1 de enero de 1979. Se mantiene la relevante la cual se explica a continuación.
+
+# El Servidor es una Máquina virtual
+
+[0.0] Hypervisor detected: Xen HVM
+
+# Memoria disponible y su distribución.
+
+[0.0] Memory: 983488K/1048180K available (12300K kernel code, 2391K rwdata, 3908K rodata, 2372K init, 2376K bss, 64692K reserved, 0K cma-reserved)
+
+# Seguridad, ver referencia 12
+
+[228243285.0] evm: security.selinux
+[232011134.0] evm: security.SMACK64
+[236008501.0] evm: security.SMACK64EXEC
+[240007990.0] evm: security.SMACK64TRANSMUTE
+[244004736.0] evm: security.SMACK64MMAP
+[248007490.0] evm: security.apparmor
+[252007875.0] evm: security.ima
+[255626852.0] evm: security.capability
+
+
+## EL RCT no coindice con el timestamp!!!, puede ser una coordinacion de tiempos. el 28 de agosto de 2018 a las 10:27:31 UTC..
+
+[264281367.0] RTC time: 12:04:38, date: 12/21/18
+
+# Reinicio del Servidor.  1 de septiembre de 2018 a las 09:53:22 UTC
+
+[343815640354.343] systemd: 36 output lines suppressed due to ratelimiting
+[343819811212.343] systemd[1]: systemd 237 running in system mode. (+PAM +AUDIT +SELINUX +IMA +APPARMOR +SMACK +SYSVINIT +UTMP +LIBCRYPTSETUP +GCRYPT +GNUTLS +ACL +XZ +LZ4 +SECCOMP +BLKID +ELFUTILS +KMOD -IDN2 +IDN -PCRE2 default-hierarchy=hybrid)
+[343819860527.343] systemd[1]: Detected virtualization xen.
+[343819868348.343] systemd[1]: Detected architecture x86-64.
+
+# Reinicio del servicio Journal 1 de septiembre de 2018 a las 09:59:10 UTC
+
+[344163440924.344] systemd[1]: Stopping Journal Service...
+[344166748005.344] systemd-journald[393]: Received SIGTERM from PID 1 (systemd).
+[344191632037.344] systemd[1]: Stopped Journal Service.
+[344193359863.344] systemd[1]: Starting Journal Service...
+[344209913346.344] systemd[1]: Started Journal Service.
+
+# Inicio de denegación de servicio SQL 3 de mayo de 2019 a las 20:10:29 UTC.
+
+[21462442803498.21462] kauditd_printk_skb: 13 callbacks suppressed
+[21462442805151.21462] audit: type=1400 audit(1545415341.020:74): apparmor="STATUS" operation="profile_load" profile="unconfined" name="/usr/sbin/mysqld" pid=773 comm="apparmor_parser"
+[21463206148453.21463] audit: type=1400 audit(1545415341.784:75): apparmor="DENIED" operation="open" profile="/usr/sbin/mysqld" name="/sys/devices/system/node/" pid=867 comm="mysqld" requested_mask="r" denied_mask="r" fsuid=0 ouid=0
+[21463221380545.21463] audit: type=1400 audit(1545415341.800:76): apparmor="DENIED" operation="capable" profile="/usr/sbin/mysqld" pid=867 comm="mysqld" capability=2  capname="dac_read_search"
+[21463255863431.21463] audit: type=1400 audit(1545415341.836:77): apparmor="DENIED" operation="open" profile="/usr/sbin/mysqld" name="/sys/devices/system/node/" pid=879 comm="mysqld" requested_mask="r" denied_mask="r" fsuid=111 ouid=0
+
+# Denegación de servicio SQL 7 de mayo de 2019 a las 05:53:01 UTC
+
+[21756594961731.21756] audit: type=1400 audit(1545415635.164:78): apparmor="DENIED" operation="open" profile="/usr/sbin/mysqld" name="/sys/devices/system/node/" pid=2652 comm="mysqld" requested_mask="r" denied_mask="r" fsuid=0 ouid=0
+[21833553902942.21833] audit: type=1400 audit(1545415712.122:79): apparmor="DENIED" operation="open" profile="/usr/sbin/mysqld" name="/sys/devices/system/node/" pid=3061 comm="mysqld" requested_mask="r" denied_mask="r" fsuid=0 ouid=0
+[21875757992232.21875] audit: type=1400 audit(1545415754.321:80): apparmor="DENIED" operation="open" profile="/usr/sbin/mysqld" name="/sys/devices/system/node/" pid=3542 comm="mysqld" requested_mask="r" denied_mask="r" fsuid=0 ouid=0
+
+# Denegación de servicio SQL 10 de mayo de 2019 a las 06:39:15.104327 UTC
+
+[22018568104327.22018] audit: type=1400 audit(1545415897.129:81): apparmor="DENIED" operation="open" profile="/usr/sbin/mysqld" name="/sys/devices/system/node/" pid=3758 comm="mysqld" requested_mask="r" denied_mask="r" fsuid=0 ouid=0
+[22018607698200.22018] audit: type=1400 audit(1545415897.169:82): apparmor="DENIED" operation="open" profile="/usr/sbin/mysqld" name="/sys/devices/system/node/" pid=3763 comm="mysqld" requested_mask="r" denied_mask="r" fsuid=111 ouid=0
+[22074531220184.22074] audit: type=1400 audit(1545415953.092:83): apparmor="DENIED" operation="open" profile="/usr/sbin/mysqld" name="/sys/devices/system/node/" pid=4539 comm="mysqld" requested_mask="r" denied_mask="r" fsuid=0 ouid=0
+
+# 12 de mayo de 2019 a las 12:02:32.671468 UTC
+
+[22210765671468.22210] audit: type=1400 audit(1545416089.324:84): apparmor="DENIED" operation="open" profile="/usr/sbin/mysqld" name="/sys/devices/system/node/" pid=4632 comm="mysqld" requested_mask="r" denied_mask="r" fsuid=0 ouid=0
+[22210807976537.22210] audit: type=1400 audit(1545416089.368:85): apparmor="DENIED" operation="open" profile="/usr/sbin/mysqld" name="/sys/devices/system/node/" pid=4640 comm="mysqld" requested_mask="r" denied_mask="r" fsuid=111 ouid=0
+
+# 13 de mayo de 2019 a las 05:27:58 UTC, posible brecha y entrada no deseada en el sistema a traves de un ataque SQL. Se reemplaza un perfil en el sistema.
+
+[22273491157183.22273] audit: type=1400 audit(1545416152.047:86): apparmor="STATUS" operation="profile_replace" info="same as current profile, skipping" profile="unconfined" name="/usr/sbin/mysqld" pid=4768 comm="apparmor_parser"
+[22273549967523.22273] audit: type=1400 audit(1545416152.107:87): apparmor="DENIED" operation="open" profile="/usr/sbin/mysqld" name="/sys/devices/system/node/" pid=4786 comm="mysqld" requested_mask="r" denied_mask="r" fsuid=0 ouid=0
+[22273604163691.22273] audit: type=1400 audit(1545416152.159:88): apparmor="DENIED" operation="open" profile="/usr/sbin/mysqld" name="/sys/devices/system/node/" pid=4801 comm="mysqld" requested_mask="r" denied_mask="r" fsuid=0 ouid=0
+[22277537601294.22277] audit: type=1400 audit(1545416156.095:89): apparmor="DENIED" operation="open" profile="/usr/sbin/mysqld" name="/sys/devices/system/node/" pid=4860 comm="mysqld" requested_mask="r" denied_mask="r" fsuid=0 ouid=0
+
+# 13 de mayo de 2019 a las 07:20:17 UTC
+
+[22280230105408.22280] audit: type=1400 audit(1545416158.786:90): apparmor="DENIED" operation="open" profile="/usr/sbin/mysqld" name="/sys/devices/system/node/" pid=4912 comm="mysqld" requested_mask="r" denied_mask="r" fsuid=0 ouid=0
+[22282295921818.22282] audit: type=1400 audit(1545416160.850:91): apparmor="STATUS" operation="profile_replace" info="same as current profile, skipping" profile="unconfined" name="/usr/sbin/mysqld" pid=4947 comm="apparmor_parser"
+[22282854213630.22282] audit: type=1400 audit(1545416161.410:92): apparmor="DENIED" operation="open" profile="/usr/sbin/mysqld" name="/sys/devices/system/node/" pid=5019 comm="mysqld" requested_mask="r" denied_mask="r" fsuid=0 ouid=0
+[22282898519612.22282] audit: type=1400 audit(1545416161.454:93): apparmor="DENIED" operation="open" profile="/usr/sbin/mysqld" name="/sys/devices/system/node/" pid=5027 comm="mysqld" requested_mask="r" denied_mask="r" fsuid=111 ouid=0
+
+# 14 de mayo de 2019 a las 21:55:10 UTC
+
+[22419123420018.22419] audit: type=1400 audit(1545416297.675:94): apparmor="DENIED" operation="open" profile="/usr/sbin/mysqld" name="/sys/devices/system/node/" pid=5121 comm="mysqld" requested_mask="r" denied_mask="r" fsuid=0 ouid=0
+[22419167903891.22419] audit: type=1400 audit(1545416297.719:95): apparmor="DENIED" operation="open" profile="/usr/sbin/mysqld" name="/sys/devices/system/node/" pid=5125 comm="mysqld" requested_mask="r" denied_mask="r" fsuid=111 ouid=0
+[25524580731645.25524] audit: type=1400 audit(1545419403.049:96): apparmor="STATUS" operation="profile_load" profile="unconfined" name="/snap/core/6130/usr/lib/snapd/snap-confine" pid=6200 comm="apparmor_parser"
+[25524581172130.25524] audit: type=1400 audit(1545419403.049:97): apparmor="STATUS" operation="profile_load" profile="unconfined" name="/snap/core/6130/usr/lib/snapd/snap-confine//mount-namespace-capture-helper" pid=6200 comm="apparmor_parser"
+[25524661228460.25524] audit: type=1400 audit(1545419403.129:98): apparmor="STATUS" operation="profile_replace" profile="unconfined" name="snap.core.hook.configure" pid=6203 comm="apparmor_parser"
+[25524667927860.25524] audit: type=1400 audit(1545419403.137:99): apparmor="STATUS" operation="profile_replace" info="same as current profile, skipping" profile="unconfined" name="snap-update-ns.core" pid=6205 comm="apparmor_parser"
+
+# 19 de junio de 2019 a las 20:51:55.627714 UTC. Posible parcheo de la vulnerabilidad.
+
+[25525728627714.25525] audit: type=1400 audit(1545419404.197:100): apparmor="STATUS" operation="profile_replace" profile="unconfined" name="snap-update-ns.amazon-ssm-agent" pid=6264 comm="apparmor_parser"
+[25525731681561.25525] audit: type=1400 audit(1545419404.201:101): apparmor="STATUS" operation="profile_replace" profile="unconfined" name="snap.amazon-ssm-agent.amazon-ssm-agent" pid=6265 comm="apparmor_parser"
+[25525734393872.25525] audit: type=1400 audit(1545419404.201:102): apparmor="STATUS" operation="profile_replace" profile="unconfined" name="snap.amazon-ssm-agent.ssm-cli" pid=6266 comm="apparmor_parser"
+[25525776327926.25525] audit: type=1400 audit(1545419404.245:103): apparmor="STATUS" operation="profile_replace" profile="unconfined" name="/snap/core/6130/usr/lib/snapd/snap-confine" pid=6271 comm="apparmor_parser"
+[25525776541774.25525] audit: type=1400 audit(1545419404.245:104): apparmor="STATUS" operation="profile_replace" profile="unconfined" name="/snap/core/6130/usr/lib/snapd/snap-confine//mount-namespace-capture-helper" pid=6271 comm="apparmor_parser"
+[25525795866859.25525] audit: type=1400 audit(1545419404.265:105): apparmor="STATUS" operation="profile_replace" profile="unconfined" name="snap-update-ns.core" pid=6273 comm="apparmor_parser"
+[66030429896299.66030] new mount options do not match the existing superblock, will be ignored
+[1108227154620838.1108227] lime: version magic '4.15.0-42-generic SMP mod_unload ' should be '4.15.0-1021-aws SMP mod_unload '
+[1109556640120032.1109556] lime: loading out-of-tree module taints kernel.
+[1109556640155159.1109556] lime: module verification failed: signature and/or required key missing - tainting kernel
+~~~
+
+[Volver al texto del comando en la Sección 3.4.6.](#346-comando-002)
+
+---
+
+#### 8.4.003.004.007.001. Comando `sudo python2.7 vol.py --profile=LinuxlinuxUbuntu_4_15_0-1021-aws_profilex64 -f '/home/jrodg85/Server_RAM.mem' linux_bash`.
+
+~~~Shell
+sudo python2.7 vol.py --profile=LinuxlinuxUbuntu_4_15_0-1021-aws_profilex64 -f '/home/jrodg85/Server_RAM.mem' linux_bash
+~~~
+
+
+La respuesta de la consola es la siguiente:
+
+
+~~~
+Volatility Foundation Volatility Framework 2.6.1
+
+Pid      Name                 Command Time                   Command
+
+------- -------------------- ------------------------------ -------
+
+20577    bash                 2019-01-03 07:49:45 UTC+0000   exit
+20577    bash                 2019-01-03 07:49:45 UTC+0000   sudo apt update
+20577    bash                 2019-01-03 07:49:45 UTC+0000   sudo systemctl restart postfix
+20577    bash                 2019-01-03 07:49:45 UTC+0000   ls -l
+20577    bash                 2019-01-03 07:49:45 UTC+0000   mysql -uroot -p
+20577    bash                 2019-01-03 07:49:45 UTC+0000   cd apache2/
+20577    bash                 2019-01-03 07:49:45 UTC+0000   ls -l
+20577    bash                 2019-01-03 07:49:45 UTC+0000   sudo vi /etc/mysql/debian.cnf 
+20577    bash                 2019-01-03 07:49:45 UTC+0000   ps -ef| grep mysql
+20577    bash                 2019-01-03 07:49:45 UTC+0000   tail access.log.1
+20577    bash                 2019-01-03 07:49:45 UTC+0000   cd /var/www/html
+20577    bash                 2019-01-03 07:49:45 UTC+0000   sudo kill -9 4539
+20577    bash                 2019-01-03 07:49:45 UTC+0000   ls -als
+20577    bash                 2019-01-03 07:49:45 UTC+0000   cd /
+20577    bash                 2019-01-03 07:49:45 UTC+0000   ps -ef| grep mysql
+20577    bash                 2019-01-03 07:49:45 UTC+0000   sudo mysqld_safe --skip-grant-tables 
+20577    bash                 2019-01-03 07:49:45 UTC+0000   H?=? &
+20577    bash                 2019-01-03 07:49:45 UTC+0000   qls -l tmp
+20577    bash                 2019-01-03 07:49:45 UTC+0000   qls -l tmp
+20577    bash                 2019-01-03 07:49:45 UTC+0000   cd 
+20577    bash                 2019-01-03 07:49:45 UTC+0000   exit
+20577    bash                 2019-01-03 07:49:45 UTC+0000   vi functions.php 
+20577    bash                 2019-01-03 07:49:45 UTC+0000   ps -ef| grep mysql
+20577    bash                 2019-01-03 07:49:45 UTC+0000   ls -l /var/run/mysqld
+20577    bash                 2019-01-03 07:49:45 UTC+0000   ls -l /run
+20577    bash                 2019-01-03 07:49:45 UTC+0000   ls -lt
+20577    bash                 2019-01-03 07:49:45 UTC+0000   ls -lt| more
+20577    bash                 2019-01-03 07:49:45 UTC+0000   vi access.log.1
+20577    bash                 2019-01-03 07:49:45 UTC+0000   sudo mysql_secure_installation
+20577    bash                 2019-01-03 07:49:45 UTC+0000   ls -l
+20577    bash                 2019-01-03 07:49:45 UTC+0000   p?JU
+20577    bash                 2019-01-03 07:49:45 UTC+0000   su mysql
+20577    bash                 2019-01-03 07:49:45 UTC+0000   tail access.log 
+20577    bash                 2019-01-03 07:49:45 UTC+0000   cat /var/log/mysql/error.log 
+20577    bash                 2019-01-03 07:49:45 UTC+0000   cd /var/log
+20577    bash                 2019-01-03 07:49:45 UTC+0000   find . -name functions.php
+20577    bash                 2019-01-03 07:49:45 UTC+0000   sudo apt install python-certbot-apache
+20577    bash                 2019-01-03 07:49:45 UTC+0000   sudo service apache2 restart
+20577    bash                 2019-01-03 07:49:45 UTC+0000   ps -ef| grep mysql
+20577    bash                 2019-01-03 07:49:45 UTC+0000   mysql -uroot -p
+20577    bash                 2019-01-03 07:49:45 UTC+0000   sudo apt-get install apache2
+20577    bash                 2019-01-03 07:49:45 UTC+0000   apt-cache search mysql-server
+20577    bash                 2019-01-03 07:49:45 UTC+0000   apt-cache search php
+20577    bash                 2019-01-03 07:49:45 UTC+0000   mysql -u root -p
+20577    bash                 2019-01-03 07:49:45 UTC+0000   ls -l
+20577    bash                 2019-01-03 07:49:45 UTC+0000   #1546501785
+20577    bash                 2019-01-03 07:49:45 UTC+0000   tail error.log 
+20577    bash                 2019-01-03 07:49:45 UTC+0000   sudo vi functions.php 
+20577    bash                 2019-01-03 07:49:45 UTC+0000   sudo mysql
+20577    bash                 2019-01-03 07:49:45 UTC+0000   ls -l /var/run
+20577    bash                 2019-01-03 07:49:45 UTC+0000   exit
+20577    bash                 2019-01-03 07:49:45 UTC+0000   ls -l
+20577    bash                 2019-01-03 07:49:45 UTC+0000   apt-cache search php| grep apache
+20577    bash                 2019-01-03 07:49:45 UTC+0000   sudo vi /etc/mysql/debian
+20577    bash                 2019-01-03 07:49:45 UTC+0000   tail syslog
+20577    bash                 2019-01-03 07:49:45 UTC+0000   sudo apt-get install mysql-server
+20577    bash                 2019-01-03 07:49:45 UTC+0000   _service
+20577    bash                 2019-01-03 07:49:45 UTC+0000   apt-cache search mysql | grep php
+20577    bash                 2019-01-03 07:49:45 UTC+0000   sudo cp /home/ubuntu/wordpress-4.9.8.tar.gz  .
+20577    bash                 2019-01-03 07:49:45 UTC+0000   cd /var/log
+20577    bash                 2019-01-03 07:49:45 UTC+0000   cd 
+20577    bash                 2019-01-03 07:49:45 UTC+0000   U
+20577    bash                 2019-01-03 07:49:45 UTC+0000   H???Nt??nu??6
+20577    bash                 2019-01-03 07:49:45 UTC+0000   sudo mysqld_safe --skip-grant-tables &
+20577    bash                 2019-01-03 07:49:45 UTC+0000   apt-cache search mysql
+20577    bash                 2019-01-03 07:49:45 UTC+0000   pwd
+20577    bash                 2019-01-03 07:49:45 UTC+0000   ls -l
+20577    bash                 2019-01-03 07:49:45 UTC+0000   ls -l
+20577    bash                 2019-01-03 07:49:45 UTC+0000   `uSU
+20577    bash                 2019-01-03 07:49:45 UTC+0000   sudo mv * ..
+20577    bash                 2019-01-03 07:49:45 UTC+0000   ?,YU
+20577    bash                 2019-01-03 07:49:45 UTC+0000   sudo mysqld_safe --skip-grant-tables 
+20577    bash                 2019-01-03 07:49:45 UTC+0000   r="$c_clear$r"
+20577    bash                 2019-01-03 07:49:45 UTC+0000   ls -l /run
+20577    bash                 2019-01-03 07:49:45 UTC+0000   ls -l
+20577    bash                 2019-01-03 07:49:45 UTC+0000   COMPREPLY=($(compgen -W "--help --local" -- $cur_word))
+20577    bash                 2019-01-03 07:49:45 UTC+0000   ls -l
+20577    bash                 2019-01-03 07:49:45 UTC+0000   sudo tar xzf wordpress-4.9.8.tar.gz 
+20577    bash                 2019-01-03 07:49:45 UTC+0000   sudo apt-get install aapche2
+20577    bash                 2019-01-03 07:49:45 UTC+0000   tail -100 kern.log
+20577    bash                 2019-01-03 07:49:45 UTC+0000   mysql -u root -p
+20577    bash                 2019-01-03 07:49:45 UTC+0000   cd ..
+20577    bash                 2019-01-03 07:49:45 UTC+0000   cd /var/www/html/
+20577    bash                 2019-01-03 07:49:45 UTC+0000   ps -ef| grep mysql
+20577    bash                 2019-01-03 07:49:45 UTC+0000   apt-cache search php
+20577    bash                 2019-01-03 07:49:45 UTC+0000   cd wordpress/
+20577    bash                 2019-01-03 07:49:45 UTC+0000   cd hhtml
+20577    bash                 2019-01-03 07:49:45 UTC+0000   sudo rm -r wordpress/
+20577    bash                 2019-01-03 07:49:45 UTC+0000   ls -l
+20577    bash                 2019-01-03 07:49:45 UTC+0000   ls -l
+20577    bash                 2019-01-03 07:49:45 UTC+0000   sudo chmod 777 /var/run/mysqld
+20577    bash                 2019-01-03 07:49:45 UTC+0000   sudo apt upgrade
+20577    bash                 2019-01-03 07:49:45 UTC+0000   ls -l
+20577    bash                 2019-01-03 07:49:45 UTC+0000   sudo vi /etc/apache2/sites-enabled/000-default.conf 
+20577    bash                 2019-01-03 07:49:45 UTC+0000   cd htmlls -l
+20577    bash                 2019-01-03 07:49:45 UTC+0000   mysql -uroot -p
+20577    bash                 2019-01-03 07:49:45 UTC+0000   ls -l
+20577    bash                 2019-01-03 07:49:45 UTC+0000   ls -l
+20577    bash                 2019-01-03 07:49:45 UTC+0000   ls -l
+20577    bash                 2019-01-03 07:49:45 UTC+0000   sudo chown -R www-data:www-data html
+20577    bash                 2019-01-03 07:49:45 UTC+0000   sudo mysqld_safe --skip-grant-tables 
+20577    bash                 2019-01-03 07:49:45 UTC+0000   cd /var/www/html
+20577    bash                 2019-01-03 07:49:45 UTC+0000   find . -name functions.php -exec grep -H add_filer {} \;
+20577    bash                 2019-01-03 07:49:45 UTC+0000   sudo apt install libapache2-mod-php
+20577    bash                 2019-01-03 07:49:45 UTC+0000   exit
+20577    bash                 2019-01-03 07:49:45 UTC+0000   cd /var/lg
+20577    bash                 2019-01-03 07:49:45 UTC+0000   suudo mysqld_safe --skip-grant-tables &
+20577    bash                 2019-01-03 07:49:45 UTC+0000   ls -l
+20577    bash                 2019-01-03 07:49:45 UTC+0000   cd /var/log/apache2/sites-e
+20577    bash                 2019-01-03 07:49:45 UTC+0000   mysql -u root -p
+20577    bash                 2019-01-03 07:49:45 UTC+0000   cd
+20577    bash                 2019-01-03 07:49:45 UTC+0000   sudo service mysql restart
+20577    bash                 2019-01-03 07:49:45 UTC+0000   find . -name functions.php -exec grep -H add_filter {} \;
+20577    bash                 2019-01-03 07:49:45 UTC+0000   apt-cache search apache2
+20577    bash                 2019-01-03 07:49:45 UTC+0000   sudo apt-get update
+20577    bash                 2019-01-03 07:49:45 UTC+0000   cat debian
+20577    bash                 2019-01-03 07:49:45 UTC+0000   ?2JU
+20577    bash                 2019-01-03 07:49:45 UTC+0000   echo "Test 1" | mail -s "Test 1" test12312321@mailinator.com
+20577    bash                 2019-01-03 07:49:45 UTC+0000   sudo chmod 777 /run/mysqld/
+20577    bash                 2019-01-03 07:49:45 UTC+0000   dpkg -l | grep mysql-server
+20577    bash                 2019-01-03 07:49:45 UTC+0000   sudo certbot --apache -d ganga.site -d www.ganga.site
+20577    bash                 2019-01-03 07:49:45 UTC+0000   ps -ef| grep mysql
+20577    bash                 2019-01-03 07:49:45 UTC+0000   cd /var/log/apache2/
+20577    bash                 2019-01-03 07:49:45 UTC+0000   sudo mkdir /run/mysqld
+20577    bash                 2019-01-03 07:49:45 UTC+0000   cd /etc/mysql/
+20577    bash                 2019-01-03 07:49:45 UTC+0000   sudo grep root *
+20577    bash                 2019-01-03 07:49:45 UTC+0000   mysql -u root -p
+20577    bash                 2019-01-03 07:49:45 UTC+0000   ps -ef| grep mysql
+20577    bash                 2019-01-03 07:49:45 UTC+0000   sudo mysqld_safe --skip-grant-tables 
+20577    bash                 2019-01-03 07:49:45 UTC+0000   mysql -u root 
+20577    bash                 2019-01-03 07:49:45 UTC+0000   ls -l /run
+20577    bash                 2019-01-03 07:49:45 UTC+0000   cd /var/log
+20577    bash                 2019-01-03 07:49:45 UTC+0000   cd
+20577    bash                 2019-01-03 07:49:45 UTC+0000   sudo dpkg-reconfigure mysql-server-5.7
+20577    bash                 2019-01-03 07:49:45 UTC+0000   sudo service mysql stop
+20577    bash                 2019-01-03 07:49:45 UTC+0000   cd apache2/
+20577    bash                 2019-01-03 07:49:45 UTC+0000   sudo service mysql stop
+20577    bash                 2019-01-03 07:49:45 UTC+0000   cat /var/log/mysql/error.log 
+20577    bash                 2019-01-03 07:49:45 UTC+0000   sudo kill -9 3181
+20577    bash                 2019-01-03 07:49:45 UTC+0000   ls -l
+20577    bash                 2019-01-03 07:49:45 UTC+0000   mysql -u root
+20577    bash                 2019-01-03 07:49:45 UTC+0000   more access.log.1
+20577    bash                 2019-01-03 07:49:45 UTC+0000   dpkg -l | grep mysql
+20577    bash                 2019-01-03 07:49:45 UTC+0000   chmod 777 /run/mysqld/
+20577    bash                 2019-01-03 07:49:45 UTC+0000   g|MP?(E)G|wm[av]|WM[AV]|avi|AVI|asf|vob|VOB|bin|dat|divx|DIVX|vcd|ps|pes|fli|flv|FLV|fxm|FXM|viv|rm|ram|yuv|mov|MOV|qt|QT|web[am]|WEB[AM]|mp[234]|MP[234]|m?(p)4[av]|M?(P)4[AV]|mkv|MKV|og[agmvx]|OG[AGMVX]|t[ps]|T[PS]|m2t?(s)|M2T?(S)|mts|MTS|wav|WAV|flac|FLAC|asx|ASX|mng|MNG|srt|m[eo]d|M[EO]D|s[3t]m|S[3T]M|it|IT|xm|XM)|+([0-9]).@(vdr|VDR))?(.part)'
+20577    bash                 2019-01-03 07:49:45 UTC+0000   sudo kill -9 3182 3542
+20577    bash                 2019-01-03 07:49:45 UTC+0000   sudo kill -9 4179
+20577    bash                 2019-01-03 07:49:45 UTC+0000   ls
+20577    bash                 2019-01-03 07:49:45 UTC+0000   ls -l
+20577    bash                 2019-01-03 07:49:45 UTC+0000   sudo service mysql stop
+20577    bash                 2019-01-03 07:49:45 UTC+0000   ?
+20577    bash                 2019-01-03 07:49:45 UTC+0000   ls -l
+20577    bash                 2019-01-03 07:49:45 UTC+0000   sudo service apache2 rewtart
+20577    bash                 2019-01-03 07:49:45 UTC+0000   ls
+20577    bash                 2019-01-03 07:49:45 UTC+0000   sudo apt install mailutils
+20577    bash                 2019-01-03 07:49:45 UTC+0000   ls -lt| more
+20577    bash                 2019-01-03 07:49:45 UTC+0000   sudo cat debian.cnf 
+20577    bash                 2019-01-03 07:49:45 UTC+0000   exit
+20577    bash                 2019-01-03 07:49:45 UTC+0000   pwd
+20577    bash                 2019-01-03 07:49:45 UTC+0000   mysql -u root -p
+20577    bash                 2019-01-03 07:49:45 UTC+0000   cat /etc/issue
+20577    bash                 2019-01-03 07:49:45 UTC+0000   cd wordpress/
+20577    bash                 2019-01-03 07:49:45 UTC+0000   tail error.log 
+20577    bash                 2019-01-03 07:49:45 UTC+0000   tail error.log
+20577    bash                 2019-01-03 07:49:45 UTC+0000   vi access.log
+20577    bash                 2019-01-03 07:49:45 UTC+0000   cd ..
+20577    bash                 2019-01-03 07:49:45 UTC+0000   cd wp-content/themes/twentyseventeen/
+20577    bash                 2019-01-03 07:49:45 UTC+0000   sudo systemctl restart psotfix
+20577    bash                 2019-01-03 07:49:45 UTC+0000   ls -l
+20577    bash                 2019-01-03 07:49:45 UTC+0000   exit
+20577    bash                 2019-01-03 07:49:45 UTC+0000   mysql_secure_installation
+20577    bash                 2019-01-03 07:49:45 UTC+0000   mysql -uroot -p
+20577    bash                 2019-01-03 07:49:45 UTC+0000   sudo cat /etc/mysql/debian
+20577    bash                 2019-01-03 07:49:45 UTC+0000   ls -l tmp
+20577    bash                 2019-01-03 07:49:45 UTC+0000   mysql -u root -p
+20577    bash                 2019-01-03 07:49:45 UTC+0000   tail syslog
+20577    bash                 2019-01-03 07:49:45 UTC+0000   cd /tmp
+20577    bash                 2019-01-03 07:49:45 UTC+0000   exit
+20577    bash                 2019-01-03 07:49:45 UTC+0000   cd html
+20577    bash                 2019-01-03 07:49:45 UTC+0000   find . -name functions.php -exec grep -H add_filter {} \;
+20577    bash                 2019-01-03 07:49:45 UTC+0000   cat debian.cnf 
+20577    bash                 2019-01-03 07:49:45 UTC+0000   mysql -u root
+20577    bash                 2019-01-03 07:49:45 UTC+0000   suudo mysql_secure_installation
+20577    bash                 2019-01-03 07:49:45 UTC+0000   sudo cat /etc/mysql/debian.cnf 
+20577    bash                 2019-01-03 07:49:45 UTC+0000   sudo service apache2 retart
+20577    bash                 2019-01-03 07:49:45 UTC+0000   sudo rm index.html 
+20577    bash                 2019-01-03 07:49:45 UTC+0000   sudo rm -r /run/mysqld
+20577    bash                 2019-01-03 07:49:45 UTC+0000   sudo vi wp-config.php 
+20577    bash                 2019-01-03 07:49:45 UTC+0000   sudo systemctl reload apache2
+20577    bash                 2019-01-03 07:49:45 UTC+0000   sudo service mysql start
+20577    bash                 2019-01-03 07:49:45 UTC+0000   sudo vi /etc/postfix/main.cf
+20577    bash                 2019-01-03 07:49:45 UTC+0000   tail access.log
+20577    bash                 2019-01-03 07:49:45 UTC+0000   tail -100 syslog
+20577    bash                 2019-01-03 07:49:45 UTC+0000   ps -ef| grep mysql
+20577    bash                 2019-01-03 07:49:45 UTC+0000   cd /var/log/apache2/
+20577    bash                 2019-01-03 07:49:45 UTC+0000   ls- l
+20577    bash                 2019-01-03 07:49:45 UTC+0000   pwd
+20577    bash                 2019-01-03 07:49:45 UTC+0000   vi index.html 
+20577    bash                 2019-01-03 07:49:45 UTC+0000   sudo apachectl configtest
+20577    bash                 2019-01-03 07:49:45 UTC+0000   ps -ef| grep mysql
+20577    bash                 2019-01-03 07:49:45 UTC+0000   sudo mkdir /var/run/mysqld
+20577    bash                 2019-01-03 07:49:45 UTC+0000   tail access.log 
+20577    bash                 2019-01-03 07:49:45 UTC+0000   exit
+20577    bash                 2019-01-03 07:49:45 UTC+0000   sudo add-apt-repository ppa:certbot/certbot
+20577    bash                 2019-01-03 07:49:45 UTC+0000   tail access.log 
+20577    bash                 2019-01-03 07:49:45 UTC+0000   ls -l
+20577    bash                 2019-01-03 07:49:45 UTC+0000   tail -100 access.log 
+20577    bash                 2019-01-03 07:49:45 UTC+0000   tail -100 access.log 
+20577    bash                 2019-01-03 07:49:45 UTC+0000   execute-command
+20577    bash                 2019-01-03 07:49:45 UTC+0000   sudo mysqld_safe --skip-grant-tables &
+20577    bash                 2019-01-03 07:49:45 UTC+0000   sudo kill 3181
+20577    bash                 2019-01-03 07:49:45 UTC+0000   exit
+20577    bash                 2019-01-03 07:49:45 UTC+0000   !
+20577    bash                 2019-01-03 07:49:45 UTC+0000   sudo service apache2 restart
+20577    bash                 2019-01-03 07:49:45 UTC+0000   sudo apt install php-mysql
+20577    bash                 2019-01-03 07:49:45 UTC+0000   date
+20577    bash                 2019-01-03 07:49:45 UTC+0000   cd ap
+20577    bash                 2019-01-03 07:49:45 UTC+0000   ls -l
+20577    bash                 2019-01-03 07:49:45 UTC+0000   grep POST access.log 
+20577    bash                 2019-01-03 07:49:45 UTC+0000   ls -l
+20577    bash                 2019-01-03 07:49:45 UTC+0000   vi access.log 
+20577    bash                 2019-01-03 07:49:45 UTC+0000   ls -l
+20577    bash                 2019-01-03 07:49:45 UTC+0000   cd home
+20577    bash                 2019-01-03 07:49:45 UTC+0000   cd /var/log
+20577    bash                 2019-01-03 07:49:45 UTC+0000   sudo apchectl configtest
+20577    bash                 2019-01-03 07:49:45 UTC+0000   sudo service mysql start
+20577    bash                 2019-01-03 07:49:45 UTC+0000   sudo vi /etc/php/7.2/apache2/php.ini 
+20577    bash                 2019-01-03 07:49:45 UTC+0000   sudo kill -9 4178
+20577    bash                 2019-01-03 07:49:45 UTC+0000   tail -100 syslog
+20577    bash                 2019-01-03 07:49:45 UTC+0000   ps -ef| grep mysql
+20577    bash                 2019-01-03 07:49:45 UTC+0000   tail -100 syslog
+20577    bash                 2019-01-03 07:49:45 UTC+0000   sudo rm wordpress-4.9.8.tar.gz 
+20577    bash                 2019-01-03 07:49:45 UTC+0000   ls -l /run
+20577    bash                 2019-01-03 07:49:45 UTC+0000   ??OU
+20577    bash                 2019-01-03 07:49:45 UTC+0000   ls -l /etc/cron.d
+20577    bash                 2019-01-03 07:54:14 UTC+0000   ls -l
+20577    bash                 2019-01-03 07:54:14 UTC+0000   cd /tmp
+20577    bash                 2019-01-03 07:54:36 UTC+0000   sudo insmod lime-4.15.0-42-generic.ko "path=captura.mem format=lime"
+20577    bash                 2019-01-03 07:54:50 UTC+0000   cat /etc/issue
+20577    bash                 2019-01-03 07:55:13 UTC+0000   uname -a
+20577    bash                 2019-01-03 08:16:13 UTC+0000   ls -l
+20577    bash                 2019-01-03 08:16:23 UTC+0000   rm lime-4.15.0-42-generic.ko
+20577    bash                 2019-01-03 08:16:24 UTC+0000   ls -l
+20577    bash                 2019-01-03 08:16:46 UTC+0000   sudo insmod lime-4.15.0-1021-aws.ko "path=captura.mem format=lime"
+~~~
+
+[Volver al texto del comando en la Sección 3.4.7.](#347-comando-001)
+
+---
+
+
+
 
 
 
