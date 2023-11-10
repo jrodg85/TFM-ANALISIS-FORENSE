@@ -147,7 +147,7 @@ A mi esposa e hija, acompañantes en todo momento de esta aventura académica.
 
 A mis compañeros de trabajo, Juanma, Luisma y Borja, que saben de que estos tres años que llevo realizando este master y han conocido todos los derroteros que me ha llevado este camino.
 
-**[Volver al Índice General.](#índice-general)** 
+**[Volver al Índice General.](#índice-general)**
 
 ---
 
@@ -178,7 +178,7 @@ A mis compañeros de trabajo, Juanma, Luisma y Borja, que saben de que estos tre
     - [1.7.6. Retos y riesgos en el análisis forense.](#176-retos-y-riesgos-en-el-análisis-forense)
     - [1.7.7. Herramientas del análisis forense.](#177-herramientas-de-análisis-forense)
 
-**[Volver al Índice General.](#índice-general)** 
+**[Volver al Índice General.](#índice-general)**
 
 ---
 
@@ -304,13 +304,13 @@ Se describe un el siguiente listado de objetivos que se obtienen al analizar el 
 
 En esta sección se procederá a realizar un repaso general de algunas de las normativas y estándares.
 
-Primero abordaremos un pequeño estudio relativo a las normas ISO 27037 e ISO 30131, posteriormente abordaremos la normativa RFC 3227 para finalmente comentar un resumen de las normas UNE 71505 y UNE 71506.
+Primero abordaremos un pequeño estudio relativo a las normas ISO 27037 e ISO 30131, posteriormente abordaremos la normativa **<u style='color:red'>RFC</u>** 3227 para finalmente comentar un resumen de las normas UNE 71505 y UNE 71506.
 
 Por ultimo, pero no menos importante, trataré unas conclusiones sobre esta sección.
 
 ---
 
-<br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>
+<br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>
 
 ### **1.3.2. Normas ISO 27037 e ISO 30121.**
 
@@ -341,10 +341,10 @@ Se dispone de una copia de la ISO 27037 en ingles.
 
 #### [1.3.2. Referencia 004](#85004-norma-iso-27037)
 
-La ISO/IEC 30121 es la norma internacional para el análisis forense digital. Define los requisitos mínimos que todas las organizaciones deben cumplir para estar preparados ante un análisis forense digital. La primera edición de la norma se publicó en 2015. Desde entonces, se han realizado varias actualizaciones importantes para reflejar las
+La **<u style='color:red'>ISO/IEC</u>** 30121 es la norma internacional para el análisis forense digital. Define los requisitos mínimos que todas las organizaciones deben cumplir para estar preparados ante un análisis forense digital. La primera edición de la norma se publicó en 2015. Desde entonces, se han realizado varias actualizaciones importantes para reflejar las
 nuevas tecnologías y la evolución de los procedimientos de investigación criminal. Ha sido adoptada por muchas organizaciones de todo el mundo como base de las mejores prácticas para el manejo de las pruebas digitales, maximizando la disponibilidad y acceso a esta.
 
-La ISO/IEC 30121 se creó para garantizar que las pruebas digitales se traten de forma coherente en las distintas organizaciones y para ayudar a garantizar que las pruebas digitales puedan utilizarse como prueba en los procedimientos judiciales.
+La **<u style='color:red'>ISO/IEC</u>** 30121 se creó para garantizar que las pruebas digitales se traten de forma coherente en las distintas organizaciones y para ayudar a garantizar que las pruebas digitales puedan utilizarse como prueba en los procedimientos judiciales.
 
 #### [1.3.2. Referencia 005](#85005-implementación-de-herramientas-para-la-extracción-de-evidencia-digital)
 
@@ -356,7 +356,7 @@ La ISO/IEC 30121 se creó para garantizar que las pruebas digitales se traten de
 
 ### **1.3.3. Norma RFC 3227.**
 
-Otra norma destacable para mencionar es la RFC 3227. Este documento publicado por la **<u style='color:red'>Internet Engineering Task Force (IETF)</u>** recoge directrices para recopilar y almacenar evidencias sin ponerlas en riesgo.
+Otra norma destacable para mencionar es la **<u style='color:red'>RFC</u>** 3227. Este documento publicado por la **<u style='color:red'>Internet Engineering Task Force (IETF)</u>** recoge directrices para recopilar y almacenar evidencias sin ponerlas en riesgo.
 
 En cuanto a los principios para la recolección de evidencias destacan básicamente tres, el orden de volatilidad de los datos, las acciones que deben evitarse y las consideraciones sobre la privacidad.
 
@@ -370,7 +370,7 @@ Para acabar detalla qué tipo de herramientas son las más útiles y qué caract
 
 Todas estas recomendaciones tienen como epicentro el principio de intercambio de Locard, que señala que: "siempre que dos objetos entran en contacto transfieren parte del material que incorporan al otro objeto".
 
-Se dispone de una copia de la RFC 3227 en español.
+Se dispone de una copia de la **<u style='color:red'>RFC</u>** 3227 en español.
 
 #### [1.3.3. Referencia 006.](#85006-norma-rfc-3227)
 
@@ -440,7 +440,7 @@ Cabe destacar en uno de las tareas dedicadas a la identificación, nos encontram
 
 Llegados a esta fase, la cual ya ha sido previamente realizada a la elaboración del TFM, cabe destacar la tarea de establecer el orden de prioridad de la recolección de las evidencias. Para ello, hay que tener en cuenta una serie de principios acerca de la identificación de las evidencias y más específicamente sobre la volatilidad de las mismas. Es vital conocer qué datos son más o menos volátiles, identificarlos correctamente y posteriormente proceder a su recolección.
 
-Entendemos por volatilidad de los datos el período de tiempo en el que estarán accesibles en el equipo. Por lo tanto, se deberán recolectar previamente aquellas pruebas más volátiles. Según la RFC 3227, el que se presenta a continuación, es un posible orden de volatilidad de mayor a menor:
+Entendemos por volatilidad de los datos el período de tiempo en el que estarán accesibles en el equipo. Por lo tanto, se deberán recolectar previamente aquellas pruebas más volátiles. Según la **<u style='color:red'>RFC</u>** 3227, el que se presenta a continuación, es un posible orden de volatilidad de mayor a menor:
 
 #### [1.3.5. Imagen 005.](#82001003005005-orden-de-volatilidad-análisis-forense)
 
@@ -1093,7 +1093,7 @@ La presente investigación tiene como propósito fundamental el establecimiento 
 
 **Marco metodológico de las pruebas:**
 
-- Las pruebas que se realizarán serán una investigación y un estudio temporal de los hechos ocurridos dentro del pc.
+- Las pruebas que se realizarán serán una investigación y un estudio temporal de los hechos ocurridos dentro del servidor.
 - Se emplearán herramientas de análisis forense en sus distintos sistemas operativos (Linux/Windows) para su detección.
 - se tratará de arrancar el sistema virtualizado para posible **<u style='color:red'>carving</u>** de la información del disco duro por posible eliminación de pruebas por parte del posible infractor.
 - La planificación de las pruebas ha quedado detallado en la sección "planificación temporal de las tareas".
@@ -1179,7 +1179,7 @@ Es una función matemática unidireccional que resume un mensaje de tamaño vari
 
 Una vez descargado el archivo de captura de la memoria RAM, procedemos a usar PowerShell para determinar el **<u style='color:red'>hash</u>** del archivo. Para ello usamos el comando  "Get-FileHash [Argumento] -Algorithm MD5". En nuestro caso hemos usado los siguientes comandos:
 
-#### [3.1 Comando 001.](#84003001001-comando-hash-md5) &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; [3.1 Comando 002.](#84003001002-comando-hash-sha1)
+#### [4.1 Comando 001.](#84004001001-comando-hash-md5) &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; [4.1 Comando 002.](#84004001002-comando-hash-sha1)
 
 Se puede observar en la siguiente imagen la respuesta de PowerShell de los hashes de MD5 y SHA1.
 
@@ -1211,7 +1211,7 @@ Podemos observar en la imagen anterior que el sistema operativo que utiliza en n
 
 Como no tenemos el perfil cargado dentro de volatility, nos va a tocar hacer la tarea de cargar un perfil de este Sistema operativo para poder seguir ejecutando la aplicación volatility.
 
-Buscando en google **linux version 4.15.0-1021.21-aws volatility**, nos encontramos solo un enlace en internet, el cual es https://lists.ubuntu.com/archives/bionic-changes/2018-August/016183.html, con ello nos encontrábamos con algo que ya se intuía previamente, y es que la versión del server de AWS, es basada en un ubuntu 18.04, ya que la fecha que indica 4.15.18 es una fecha en tipo "d.mm.aa".
+Buscando en google **linux version 4.15.0-1021.21-aws volatility**, nos encontramos solo un enlace en internet, el cual es https://lists.ubuntu.com/archives/bionic-changes/2018-August/016183.html, con ello nos encontrábamos con algo que ya se intuía previamente, y es que la versión del server de **<u style='color:red'>AWS</u>**, es basada en un ubuntu 18.04, ya que la fecha que indica 4.15.18 es una fecha en tipo "d.mm.aa".
 
 **[Volver al Índice del capítulo 3. Análisis de la memoria RAM.](#índice-del-capítulo-3-análisis-de-la-memoria-ram) &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; [Volver al Índice General.](#índice-general)**
 
@@ -1249,11 +1249,9 @@ Vamos crear una VM para generar una base con el mismo kernel que el servidor aud
 
 Procedemos a ejecutar el comando `hostnamectl` para ver las características que ahora mismo tenemos instalada en la VM.
 
-#### [3.3.1. Imagen 002.](#8200300300100a-características-vm-kernel)
+#### [3.3.1. Imagen 002.](#82003003001002-características-vm-kernel)
 
 Como se observa en la imagen anterior, este servidor utiliza el kernel ***Linux 4.15.0-213-generic***, por lo que para obtener el perfil de la RAM, tendremos que instalar un kernel distinto.
-
-**[Volver al Índice del capítulo 3. Análisis de la memoria RAM.](#índice-del-capítulo-3-análisis-de-la-memoria-ram)**
 
 Procedemos a arrancar la VM, una vez realizado el login, procedemos a ejecutar el comando `sudo apt-cache search linux-image | grep 4.15.0-1021`.
 
@@ -1280,7 +1278,7 @@ A continuación, procedemos a instalarla en el sistema, para ello ejecutamos el 
 #### [3.3.1. Imagen 004.](#82003003001004-instalación-kernel-4150-1021-aws)
 
 
-El comando `sudo apt-get install linux-image-4.15.0-2021-aws` en Ubuntu o sistemas basados en Debian, se utiliza para instalar una versión específica del kernel de Linux, diseñada para ambientes Amazon Web Services (AWS). Al usar `sudo`, el comando se ejecuta con privilegios de superusuario, necesarios para instalar software a nivel de sistema. `apt-get install` es parte del sistema de gestión de paquetes APT, y se usa aquí para instalar el paquete `linux-image-4.15.0-2021-aws`. Este paquete contiene una imagen del kernel de Linux, la cual está optimizada para correr en servidores AWS, indicando que este kernel podría tener configuraciones o parches específicos para un rendimiento mejorado o características adicionales en esa plataforma. **Al instalar un nuevo kernel, es importante reiniciar el sistema para que empiece a usar esta nueva versión.** Para comprobar lo mencionado anteriormente, procederemos a realizar de nuevo el comando `hostnamectl`.
+El comando `sudo apt-get install linux-image-4.15.0-2021-aws` en Ubuntu o sistemas basados en Debian, se utiliza para instalar una versión específica del kernel de Linux, diseñada para ambientes Amazon Web Services (**<u style='color:red'>AWS</u>**). Al usar `sudo`, el comando se ejecuta con privilegios de superusuario, necesarios para instalar software a nivel de sistema. `apt-get install` es parte del sistema de gestión de paquetes APT, y se usa aquí para instalar el paquete `linux-image-4.15.0-2021-aws`. Este paquete contiene una imagen del kernel de Linux, la cual está optimizada para correr en servidores **<u style='color:red'>AWS</u>**, indicando que este kernel podría tener configuraciones o parches específicos para un rendimiento mejorado o características adicionales en esa plataforma. **Al instalar un nuevo kernel, es importante reiniciar el sistema para que empiece a usar esta nueva versión.** Para comprobar lo mencionado anteriormente, procederemos a realizar de nuevo el comando `hostnamectl`.
 
 #### [3.3.1. Imagen 005.](#82003003001005-probando-de-nuevo-hostnamectl)
 
@@ -1296,7 +1294,7 @@ Una vez reiniciado el sistema, procedemos a ejecutar el comando `hostnamectl` o 
 
 ---
 
-<br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>
+<br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>
 
 ### **3.3.2. Instalación y creación del perfil de volatility.**
 
@@ -1316,9 +1314,7 @@ Ahora, se procede a instalar dwarfdum, para poder hacer el modules.dwarf que mas
 
 Para ello entraremos en la carpeta `/home/jrodg85/volatility/tools/linux`, una vez allí dentro ejecutaremos el comando `make`. Con ello, generaremos el archivo **`modules.dwarf`**. Se puede ver en las siguientes images como se ha generado tras ejecutar el comando make.
 
-#### [3.3.2. Imagen 003.](#82003003002003-ls-homejrodg85volatilitytoolslinux)
-
-#### [3.3.2. Imagen 004.](#82003003002004-make-homejrodg85volatilitytoolslinux)
+#### [3.3.2. Imagen 003.](#82003003002003-ls-homejrodg85volatilitytoolslinux) &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; [3.3.2. Imagen 004.](#82003003002004-make-homejrodg85volatilitytoolslinux)
 
 Ahora procederemos a nombrar el perfil de volatility para ello vamos a generar un archivo zip, este archivo, como norma general, usaremos los valores de `lsb_release -si` y `uname -r`. De esta manera nombraremos de manera correcta el perfil de volatility para después no tengamos problemas al importarlo dentro de la máquina donde estamos realizando la investigación.
 
@@ -1336,9 +1332,7 @@ Este archivo zip, debe de contener los dos archivos necesarios de perfil:
 
 Para la generación del perfil, procederemos, desde `/home/jrodg85` a ejecutar el comando para crear un archivo .zip `sudo zip linux$(lsb_release -si)_$(uname -r)_profile.zip /home/jrodg85/volatility/tools/linux/module.dwarf /boot/System.map-4.15.0-1021-aws`
 
-#### [3.3.2. Imagen 006.](#82003003002006-perfil-creado)
-
-#### [3.3.2. Imagen 007.](#82003003002007-ls-a-la-carpeta-del-perfil)
+#### [3.3.2. Imagen 006.](#82003003002006-perfil-creado) &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; [3.3.2. Imagen 007.](#82003003002007-ls-a-la-carpeta-del-perfil)
 
 Para una aclaración de cualquier duda relativo a la elaboración de la elaboración de este servidor y las acciones realizadas en ella, se ha extraído el history al completo para que cualquier persona pueda realizar los mismos pasos que he realizado para la creación del perfil.
 
@@ -1362,25 +1356,33 @@ Para probar el correcto funcionamiento del perfil, procederemos a hacer la captu
 #### [3.3.2. Imagen 011.](#82003003002011-prueba-funcionamiento-perfil)
 
 
-**[Volver al Índice del capítulo 3. Análisis de la memoria RAM.](#índice-del-capítulo-3-análisis-de-la-memoria-ram)**
-
-[Volver al Índice General.](#índice-general)
+**[Volver al Índice del capítulo 3. Análisis de la memoria RAM.](#índice-del-capítulo-3-análisis-de-la-memoria-ram) &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; [Volver al Índice General.](#índice-general)**
 
 ---
 
+<br><br><br><br><br><br>
+
 ## 3.4. Datos de interés de la captura de la memoria RAM.
 
-En el anexo Creación perfil ubuntu AWS, hemos realizado una guía para crear el perfil de Linux AWS que detectado durante el análisis del sistema operativo.
+### **3.4.0. Introducción de datos de interés de la captura de la memoria RAM.**
+
+En el anexo Creación perfil ubuntu **<u style='color:red'>AWS</u>**, hemos realizado una guía para crear el perfil de Linux **<u style='color:red'>AWS</u>** que detectado durante el análisis del sistema operativo.
 
 Una vez creado el perfil de linuxUbuntu_4.15.0-1021-aws procederemos a hacer un pslist para listar todas las aplicaciones que estaban ejecutándose en el momento de la captura.
 
-### 3.4.1. Linux_cpuinfo.
+**[Volver al Índice del capítulo 3. Análisis de la memoria RAM.](#índice-del-capítulo-3-análisis-de-la-memoria-ram)**
+
+---
+
+<br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>
+
+### **3.4.1. Linux_cpuinfo.**
 
 Para comprobar que el perfil funciona, vamos a comenzar a comprobar cual es el **<u style='color:red'>CPU</u>** que usa el sistema.
 
 Para ello, situados en `/home/jrodg85/volatility$` ejecutaremos `sudo python2.7 vol.py --profile=LinuxlinuxUbuntu_4_15_0-1021-aws_profilex64 -f '/home/jrodg85/Server_RAM.mem' linux_cpuinfo`.
 
-#### [3.4.1. Imagen 001.](#82003004001001-linux_cpuinfo)
+#### [3.4.1. Imagen 001.](#82003004001001-linux-cpuinfo)
 
 Al comprobar que el perfil funciona, obtenemos que solo hay un procesador de marca GenuineIntel modelo Intel(R) Xeon(R) **<u style='color:red'>CPU</u>** E5-2676 v3 que tiene una frecuencia de 2.4Ghz.
 
@@ -1388,18 +1390,20 @@ Al comprobar que el perfil funciona, obtenemos que solo hay un procesador de mar
 
 ---
 
-### 3.4.2. Linux_banner.
+<br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>
+
+### **3.4.2. Linux_banner.**
 
 Otro dato de interés es la versión del kernel y la información de distribución de Linux. Esto es útil para identificar la versión específica del sistema operativo que se estaba ejecutando. Para ello se ejecuta el comando `sudo python2.7 vol.py --profile=LinuxlinuxUbuntu_4_15_0-1021-aws_profilex64 -f '/home/jrodg85/Server_RAM.mem' linux_banner`, dando la siguiente imagen como respuesta
 
-#### [3.4.2. Imagen 001.](#82003004002001-linux_banner)
+#### [3.4.2. Imagen 001.](#82003004002001-linux-banner)
 
 Un análisis de Información del Kernel de Linux es la siguiente:
 
 - Versión del Kernel.
     - La captura de memoria analizada corresponde a un sistema que ejecuta la versión 4.15.0-1021-aws del kernel de Linux. Este dato era ya conocido en el TFM.
-- Ambiente AWS.
-    - El sufijo aws sugiere que esta versión del kernel está optimizada o diseñada para ejecutarse en Amazon Web Services, una plataforma de cloud computing.
+- Ambiente **<u style='color:red'>AWS</u>**.
+    - El sufijo **<u style='color:red'>aws</u>** sugiere que esta versión del kernel está optimizada o diseñada para ejecutarse en Amazon Web Services, una plataforma de cloud computing.
 - Construcción y Compilador.
     - La captura incluye detalles de la compilación del kernel, como el compilador utilizado (gcc version 7.3.0) y la configuración específica de Ubuntu (Ubuntu 7.3.0-16ubuntu3).
 - Número de Compilación y Fecha.
@@ -1407,13 +1411,15 @@ Un análisis de Información del Kernel de Linux es la siguiente:
 
 Esta respuesta básicamente te indica la versión exacta del sistema operativo Linux que estaba corriendo en la máquina de la cual se tomó la captura de memoria. Es un paso esencial en el análisis forense, ya que te permite seleccionar o validar el perfil correcto en Volatility para un análisis más detallado y preciso de la captura de memoria.
 
-Aunque este dato ya lo sabíamos anteriormente, la salida muestra que la versión del kernel es 4.15.0-1021-aws. Esta es una versión específica para las instancias de Ubuntu en AWS. **La fecha de compilación (Tue Aug 28 10:23:07 UTC 2018)**.
+Aunque este dato ya lo sabíamos anteriormente, la salida muestra que la versión del kernel es 4.15.0-1021-aws. Esta es una versión específica para las instancias de Ubuntu en **<u style='color:red'>AWS</u>**. **La fecha de compilación (Tue Aug 28 10:23:07 UTC 2018)**.
 
 **[Volver al Índice del capítulo 3. Análisis de la memoria RAM.](#índice-del-capítulo-3-análisis-de-la-memoria-ram)**
 
 ---
 
-### 3.4.3. Linux_mount.
+<br><br><br><br><br><br><br><br><br><br><br><br>
+
+### **3.4.3. Linux_mount.**
 
 A continuación, se va a proceder a enumerar los sistemas de archivos montados en el momento del volcado de memoria. Esto puede proporcionar información sobre las particiones y los sistemas de archivos utilizados. Para ello, ejecutaremos el comando `sudo python2.7 vol.py --profile=LinuxlinuxUbuntu_4_15_0-1021-aws_profilex64 -f '/home/jrodg85/Server_RAM.mem' linux_mount`. Se procede a adjuntar una captura de pantalla del comando y del comando utilizado en este caso. Además se ha elaborado una tabla detallada en el comando para su comprensión.
 
@@ -1450,7 +1456,9 @@ Los restantes puntos de montaje siguen patrones similares en cuanto a tipos y op
 
 ---
 
-### 3.4.4. Linux_memmap.
+<br>
+
+### **3.4.4. Linux_memmap.**
 
 Se procede ahora a realizar un mapa de memoria del sistema, para asi, entender cómo está organizada la memoria en el servidor. Para ello ejecutaremos el comando `sudo python2.7 vol.py --profile=LinuxlinuxUbuntu_4_15_0-1021-aws_profilex64 -f '/home/jrodg85/Server_RAM.mem' linux_memmap > /home/jrodg85/informe-memmap.txt`. Lo hemos pasado la salida a un archivo .txt debido a la gran cantidad de datos que maneja este comando (375 Mb).
 
@@ -1460,15 +1468,19 @@ Tras un trabajo de limpieza de datos, de un archivo de 4519734 lineas a solo 200
 
 #### [3.4.4. Comando 001.](#84003004004001-comando-sudo-python27-volpy---profilelinuxlinuxubuntu_4_15_0-1021-aws_profilex64--f-homejrodg85server_rammem-linux_memmap--homejrodg85informe-memmaptxt)
 
+#### [3.3.4. Referencia 015.](#85015-informe-memmap)
+
 **[Volver al Índice del capítulo 3. Análisis de la memoria RAM.](#índice-del-capítulo-3-análisis-de-la-memoria-ram)**
 
 ---
 
-### 3.4.5. Linux_iomem.
+<br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>
+
+### **3.4.5. Linux_iomem.**
 
 A continuación, se procede a obtener información relativa a la memoria de entrada/salida (I/O) en un sistema Linux. para ello usaremos el comando `linux_iomem` Este comando es similar a la herramienta iomem en Linux, la cual proporciona información sobre el mapeo de la memoria de entrada/salida del kernel. El comando linux_iomem en Volatility analiza un volcado de memoria de un sistema Linux y extrae información sobre cómo el kernel ha mapeado la memoria física para dispositivos de entrada/salida. Por lo anteriormente expuesto y ya realizado en las anteriores secciones, se colige que el comando a utilizar es `sudo python2.7 vol.py --profile=LinuxlinuxUbuntu_4_15_0-1021-aws_profilex64 -f '/home/jrodg85/Server_RAM.mem' linux_iomem`. Se adjunta en el TFM pantallazo del mismo y captura del comando, localizados en los siguientes enlaces.
 
-#### [3.4.5. Imagen 001.](#82003004005001-linux_iomem)
+#### [3.4.5. Imagen 001.](#82003004005001-linux-iomem)
 
 #### [3.4.5. Comando 001.](#84003004005001-comando-sudo-python27-volpy---profilelinuxlinuxubuntu_4_15_0-1021-aws_profilex64--f-homejrodg85server_rammem-linux_iomem)
 
@@ -1506,7 +1518,7 @@ Estos son componentes de hardware relacionados con la gestión de interrupciones
 
 ---
 
-### 3.4.6. Linux_dmesg.
+### **3.4.6. Linux_dmesg.**
 
 Se procede a recabar una información mas completa de la memoria RAM, hablamos del comando `linux_dmesg`, este comando puede sernos de gran utilidad por las siguientes razones:
 
@@ -1524,16 +1536,20 @@ Los mensajes extraídos pueden proporcionar información valiosa durante un aná
 
 A menudo, linux_dmesg se utiliza en combinación con otros comandos de Volatility diseñados para el análisis de sistemas Linux, como `linux_pslist` para listar procesos, `linux_netstat` para ver conexiones de red, entre otros, proporcionando una vista más completa del estado del sistema. En los próximos apartados del TFM, realizaremos estos comandos para obtener una vision global del lo ocurrido.
 
-Por tanto en este caso, como muy presumiblemente va a resultar un comando bastante extenso, ejecutaremos el comando el cual la salida se extraerá a un documento de texto para ser integrado en el anexo de [Extracto de comandos utilizados.](#84-extracto-de-comandos-utilizados). El comando a utilizar es `sudo python2.7 vol.py --profile=LinuxlinuxUbuntu_4_15_0-1021-aws_profilex64 -f '/home/jrodg85/Server_RAM.mem' linux_dmesg > /home/jrodg85/informe-linux_dmesg.txt`
+Por tanto en este caso, como muy presumiblemente va a resultar un comando bastante extenso, ejecutaremos el comando el cual la salida se extraerá a un documento de texto para ser integrado en el anexo de [Extracto de comandos utilizados.](#84-extracto-de-comandos-utilizados). El comando a utilizar es `sudo python2.7 vol.py --profile=LinuxlinuxUbuntu_4_15_0-1021-aws_profilex64 -f '/home/jrodg85/Server_RAM.mem' linux_dmesg > /home/jrodg85/informe-linux_dmesg.txt`. Se adjunta imagen y comando del mismo
 
 #### [3.4.6. Imagen 001.](#82003004006001-linux_dmesg)
 
 #### [3.4.6. Comando 001.](#84003004006001-comando-sudo-python27-volpy---profilelinuxlinuxubuntu_4_15_0-1021-aws_profilex64--f-homejrodg85server_rammem-linux_dmesg--homejrodg85informe-linux_dmesgtxt)
 
+#### [3.4.6. Referencia 016.](#85016-informe-dmesg)
 
-Un resumen de interés para el analisis forense de estos datos es la siguiente:
+
+Un resumen de interés para el análisis forense de estos datos es la siguiente:
 
 #### [3.4.6. Comando 002.](#84003004006002-resumen-del-comando-sudo-python27-volpy---profilelinuxlinuxubuntu_4_15_0-1021-aws_profilex64--f-homejrodg85server_rammem-linux_dmesg--homejrodg85informe-linux_dmesgtxt)
+
+#### [3.4.6. Referencia 017.](#85017-security-elinuxorg)
 
 Los puntos destacables son los siguientes, algunos de estos datos se pueden encontrar con mayor detalle en el comando citado anteriormente.
 
@@ -1544,7 +1560,7 @@ Los puntos destacables son los siguientes, algunos de estos datos se pueden enco
         - Hypervisor detected: Xen HVM.
     - Memoria disponible y su distribución.
         - Memory: 983488K/1048180K available (12300K kernel code, 2391K rwdata, 3908K rodata, 2372K init, 2376K bss, 64692K reserved, 0K cma-reserved).
-    - Seguridad, ver referencia 12
+    - Seguridad, ver referencia 17.
         - selinux.
         - SMACK64.
         - SMACK64EXEC.
@@ -1553,7 +1569,7 @@ Los puntos destacables son los siguientes, algunos de estos datos se pueden enco
         - apparmor.
         - ima.
         - capability.
-3. EL RCT no coindice con el timestamp!!!, puede ser una coordinacion de tiempos. el 28 de agosto de 2018 a las 10:27:31 UTC.
+3. EL RCT no coincide con el timestamp!!!, puede ser una coordinación de tiempos. el 28 de agosto de 2018 a las 10:27:31 UTC.
     - RTC time: 12:04:38, date: 12/21/18
 4. Reinicio del Servidor.  1 de septiembre de 2018 a las 09:53:22 UTC.
 5. Reinicio del servicio Journal 1 de septiembre de 2018 a las 09:59:10 UTC.
@@ -1568,96 +1584,98 @@ Los puntos destacables son los siguientes, algunos de estos datos se pueden enco
 
 ### 3.4.6. Linux_bash.
 
-Por ultimo y no menos importante, ya que considero que es un comando fundamenta para saber que acciones se han realizado a través de la terminal, es el comando `linux_bash`, ya que permite ver que se ha realizado exactamente dentro del sistema, no obtendremos sus respuestas, pero se sabe que comandos se han ejecutado, y por tanto sus consecuencias. El comando a utilizar en este caso es `sudo python2.7 vol.py --profile=LinuxlinuxUbuntu_4_15_0-1021-aws_profilex64 -f '/home/jrodg85/Server_RAM.mem' linux_bash`. En este caso se adjunta una captura completa de los comandos ejetucados.
+Por ultimo y no menos importante, ya que considero que es un comando fundamenta para saber que acciones se han realizado a través de la terminal, es el comando `linux_bash`, ya que permite ver que se ha realizado exactamente dentro del sistema, no obtendremos sus respuestas, pero se sabe que comandos se han ejecutado, y por tanto sus consecuencias. El comando a utilizar en este caso es `sudo python2.7 vol.py --profile=LinuxlinuxUbuntu_4_15_0-1021-aws_profilex64 -f '/home/jrodg85/Server_RAM.mem' linux_bash`. En este caso se adjunta una captura completa de los comandos ejecutados.
 
 #### [3.4.7. Comando 001.](#84003004007001-comando-sudo-python27-volpy---profilelinuxlinuxubuntu_4_15_0-1021-aws_profilex64--f-homejrodg85server_rammem-linux_bash)
 
-Relativo al codigo mostrado, cabe destacar que las fechas que marca la maquina como las calculadas en el apartado anterior, son totalmente erroneas entre sí, ya que por `linux_dsmeg` calculamos fechas de mayo de 2019, sin embarco este comando data de 3 de enero de 2019, por otro lado, no creo que una persona humana, bot o proceso automatizado, escriba tan de seguido con esas fechas que marca el comando. Por lo que en principio parece descartable las fechas que indica este comando. Cabe destacar que posiblemente haya comandos del administrador relativos a la configuración y del atacante. A continuación se detallan comando importantes de las acciones realizadas que pueden afectar a la seguridad.
+Relativo al código mostrado, cabe destacar que las fechas que marca la maquina como las calculadas en el apartado anterior, son totalmente erróneas entre sí, ya que por `linux_dsmeg` calculamos fechas de mayo de 2019, sin embarco este comando data de 3 de enero de 2019, por otro lado, no creo que una persona humana, bot o proceso automatizado, escriba tan de seguido con esas fechas que marca el comando. Por lo que en principio parece descartable las fechas que indica este comando. Cabe destacar que posiblemente haya comandos del administrador relativos a la configuración y del atacante. A continuación se detallan comando importantes de las acciones realizadas que pueden afectar a la seguridad.
 
-- Intenta una conexión con el usuario root al servidor MySQL.
-- Se situa dentro del directorio de Apache.
-- Edita el fichero debian.cnf del servidor MySQL.
-- Muestra todos los procesos referentes a MySQL.
+#### [3.4.7. Referencia 018.](#85018-package-python3-certbot-apache-210-2)
+
+- Intenta una conexión con el usuario root al servidor **<u style='color:red'>MySQL</u>**.
+- Se sitúa dentro del directorio de **<u style='color:red'>Apache</u>**.
+- Edita el fichero debian.cnf del servidor **<u style='color:red'>MySQL</u>**.
+- Muestra todos los procesos referentes a **<u style='color:red'>MySQL</u>**.
 - Muestra las últimas líneas del archivo Access.log.1.
-- se mueve de directorio situandose en /var/html/www, este directorio suele ser por defecto donde se alojan las páginas web.
+- se mueve de directorio situándose en /var/html/www, este directorio suele ser por defecto donde se alojan las páginas web.
 - Intenta matar el proceso 4539, digo intenta porque enlazando con el anterior estudio detectamos un denied en la linea `[22074531220184.22074] audit: type=1400 audit(1545415953.092:83): apparmor="DENIED" operation="open" profile="/usr/sbin/mysqld" name="/sys/devices/system/node/" pid=4539 comm="mysqld" requested_mask="r" denied_mask="r" fsuid=0 ouid=0`, la cual se encuentra dentro del estudio del comando del apartado 3.4.5, donde indico lo siguiente `# Denegación de servicio SQL 10 de mayo de 2019 a las 06:39:15.104327 UTC`.
 - se posiciona en `/`.
-- Muestra de nuevo todos los procesos relativos a MySQL.
+- Muestra de nuevo todos los procesos relativos a **<u style='color:red'>MySQL</u>**.
 - Hace un `ls` (en adelante lista) los ficheros de /var/run/mysqld.
-- lista una primera vez /run y depues con paginacion por fecha de modificacion, claramente busca algo.
+- lista una primera vez /run y después con paginación por fecha de modificación, claramente busca algo.
 - Edita de nuevo Accesss.log.1
 - Arranca mysql_secure_intallation.
 - Lista el contenido de la carpeta actual, recordemos que su ultimo posicionamiento es `/`.
 - Muestra el contenido del archivo /var/log/mysql/error.log, esta buscando si hay pistas de lo que esta realizando.
 - busca ficheros php en la carpeta y subcarpetas donde está situado.
-- Instala el paquete python cerbot apache.
+- Instala el paquete python cerbot **<u style='color:red'>Apache</u>**.
     - Destacar lo siguiente:
-        - Es un complemento de Apache para Certbot.
+        - Es un complemento de **<u style='color:red'>Apache</u>** para Certbot.
         - El objetivo de Certbot, Let's Encrypt y ACME (Automated El protocolo Entorno de gestión de certificados) es para hacer posible para configurar un servidor HTTPS y hacer que obtenga automáticamente un Certificado de confianza del navegador, sin ninguna intervención humana. Esto es logrado ejecutando un agente de gestión de certificados en la web servidor.
         - Este agente se utiliza para:
             - Demostrar automáticamente a Let's Encrypt CA que usted controla el sitio web
             - Obtenga un certificado de confianza del navegador y configúrelo en su servidor web
             - Lleve un registro de cuándo caducará su certificado y renuévelo
             - Ayudarle a revocar el certificado si alguna vez fuera necesario.
-- Reinicia el servicio de apache.
-- Lista los procesos de MySQL.
-- Reinstala el servidor apache.
-- Busca paqueter del servidor MySQL y con php.
-- Intenta conectarse como root a MySQL. Cabe destacar que esto no es una práctica normal de un administrador entrar como root directamente.
+- Reinicia el servicio de **<u style='color:red'>Apache</u>**.
+- Lista los procesos de **<u style='color:red'>MySQL</u>**.
+- Reinstala el servidor **<u style='color:red'>Apache</u>**.
+- Busca paquete del servidor **<u style='color:red'>MySQL</u>** y con php.
+- Intenta conectarse como root a **<u style='color:red'>MySQL</u>**. Cabe destacar que esto no es una práctica normal de un administrador entrar como root directamente.
 - Introduce los caracteres #1546501785.
     - Relativo a esto, cabe destacar que las lineas de registro de apparmor, marcan números muy parecidos a este código.
 - Realiza varias consultas, edita functions.php.
 - Vuelve a ejecutar mySQL.
 - Edita con `sudo` /etc/mysql/debian.
-- Instala MySQL.
-- Busca paquetes de MySQL que contengan la palabra php.
+- Instala **<u style='color:red'>MySQL</u>**.
+- Busca paquetes de **<u style='color:red'>MySQL</u>** que contengan la palabra php.
 - se trae un archivo de wordpress 4.9.8.
     - **CVE-2018-1000773**.
-- Busca paquetes relacionados con MySQL.
+- Busca paquetes relacionados con **<u style='color:red'>MySQL</u>**.
 - Muestra el directorio actual donde está posicionado.
-    - Si ejecuto este comando, es que estoy fuera de la consola, dicese un path transversal o entrar en la consola de metasploitable.
-- Copia los ficheros del la ubicacion actual al nivel superior.
+    - Si ejecuto este comando, es que estoy fuera de la consola, pudiendo ser un path transversal o entrar en la consola de metasploitable.
+- Copia los ficheros del la ubicación actual al nivel superior.
 - realiza una serie de acciones y extrae wordpress, lo instala.
-- Instala de nuevo apache.
-- Vuelve a ejecutar MySQL com root.
+- Instala de nuevo **<u style='color:red'>Apache</u>**.
+- Vuelve a ejecutar **<u style='color:red'>MySQL</u>** com root.
 - Se mueve a la ubicación donde se publican webs y es accesible por el puerto 80 /vat/html/www.
 - Cambia permisos a /var/rin/mysqld a drxwrxwrxw (777).
     - Poner que todos los usuario puedan hacer lo que quieran con el servicio de mysql es dar "barra libre".
 - Busca ficheros multimedia.
 - Conecta mySQL con root.
-- Inicia MySQL en modo seguro sin tener que autenticar.
-- Reinicia apache y arranca MySQL.
+- Inicia **<u style='color:red'>MySQL</u>** en modo seguro sin tener que autenticar.
+- Reinicia **<u style='color:red'>Apache</u>** y arranca **<u style='color:red'>MySQL</u>**.
 - Revisa Access.log y las 100 ultimas de syslog.
 - Se coloca en /var/log/apache2/
 - Lista el contenido de la carpeta.
 - Vuelve a mirar en que carpeta esta situado.
 - Crea la carpeta `/var/run/mysqld`
-- Inicia el servidor MySQL en modo seguro sin autenticación ejecutándose en segundo plano.
-- Mata el procese 3181, sale de MySQL y reinica apache.
+- Inicia el servidor **<u style='color:red'>MySQL</u>** en modo seguro sin autenticación ejecutándose en segundo plano.
+- Mata el procese 3181, sale de **<u style='color:red'>MySQL</u>** y reinicia **<u style='color:red'>Apache</u>**.
 - Instala php-mysql.
-    - Este paquete proporciona un módulo MySQL para PHP.
+    - Este paquete proporciona un módulo **<u style='color:red'>MySQL</u>** para PHP.
     - PHP (acrónimo recursivo de PHP: preprocesador de hipertexto) es un lenguaje de programación de código abierto de propósito general que es especialmente adecuado para desarrollo web y puede integrarse en HTML.
 - Muestra la hora del sistema.
 - muestra archivos y carpetas de ap.
 - Edita access.log.
-- Verifica los ficheros de configuracion de apache.
-- Arranca el servicio de MySQL.
+- Verifica los ficheros de configuración de **<u style='color:red'>Apache</u>**.
+- Arranca el servicio de **<u style='color:red'>MySQL</u>**.
 - Edita php.ini de /etc/php/7.2/apache2/.
 - Mata el proceso 4178.
 - Consulta los últimos 100 registros de access.log.
-- Vuelve a mostrar ficheros relativos a MySQL y lista las 100 ultimas lineas de sys.log
+- Vuelve a mostrar ficheros relativos a **<u style='color:red'>MySQL</u>** y lista las 100 ultimas lineas de sys.log
 - Repite este paso 3 veces.
 - Borrar el wordpress 4.9.8.
 - Los siguientes procesos son claramente para realizar la captura de la memoria RAM, empezando a buscar evidencias.
 
 **Conclusiones.**
 
-1. Ha realizado acciones que vulneran el serivico MySQL y Apache.
-    - Abre la puerta a poder acceder a las tablas sin necesidad de autenticacion.
+1. Ha realizado acciones que vulneran el servicio **<u style='color:red'>MySQL</u>** y Apache.
+    - Abre la puerta a poder acceder a las tablas sin necesidad de autenticación.
     - Concede todos los permisos a todos los usuarios a /run/nysqld
-    - Elimina achivos de configuracion de MySQL.
+    - Elimina archivos de configuración de **<u style='color:red'>MySQL</u>**.
     - Numerosos reinicio de servicios web.
-    - Modificacion de Access.log
+    - Modificación de Access.log
     - Modifica el fichero de configuración de WordPress.
 
 2. Realiza búsquedas de archivos multimedia, como buscando información.
@@ -1665,44 +1683,185 @@ Relativo al codigo mostrado, cabe destacar que las fechas que marca la maquina c
 3. Añade un correo electrónico, test12312321@mailinator.com. un correo de un portal de Pruebas de flujo de trabajo de correo electrónico y SMS.
 
 4. Acciones relativas a configuraciones.
-    - Modificaciones de ficheros de configuracion de php Apache y MySQL.
+    - Modificaciones de ficheros de configuración de php **<u style='color:red'>Apache</u>** y **<u style='color:red'>**<u style='color:red'>MySQL</u>**</u>**.
     - Buscar palabra POST en ficheros .php.
     - Utiliza una version de WordPress que se descubrió su vulnerabilidad el 6 de septiembre de 2018.
 
-Da la casualidad de que una semana después de la instalación del servidor, sin realizarse una actualización posterior. Quizás debe de estar atento a este tipo de posibles vulnerabilidades. Hoy dia para el desarrollo web, Snyk revisa si las librerias que utilizas tienen vulnerabilidades. Tener alertas de este tipo siempre vienen bien para andar protegidos.
+Considero que, por el momento, es casualidad de que una semana después de la instalación del servidor, sin realizarse una actualización posterior. Quizás debe de estar atento a este tipo de posibles vulnerabilidades. Hoy dia para el desarrollo web, Snyk revisa si las librerías que utilizas tienen vulnerabilidades. Tener alertas de este tipo siempre vienen bien para andar protegidos.
+
+5. La hora que marca `linux_bash` no parece en cierta manera ser falsa, ya que marca la misma hora.
 
 [Volver al Índice del capítulo 3. Análisis de la memoria RAM.](#índice-del-capítulo-3-análisis-de-la-memoria-ram)
 
 [Volver al Índice General.](#índice-general)
 
 ---
+
+<br><br><br><br>
 
 ## 3.5. Búsqueda de procesos en funcionamiento de interés para el análisis.
 
-### 3.5.1 Linux_ifconfig.
+### **3.5.1. Linux_pslist.**
+
+A continuación vamos a proceder a enumerar los procesos en ejecución de la memoria capturada. para ello ejecutaremos el comando `sudo python2.7 vol.py --profile=LinuxlinuxUbuntu_4_15_0-1021-aws_profilex64 -f '/home/jrodg85/Server_RAM.mem' linux_pslist`. Al ejecutar linux_pslist, se obtiene una lista detallada de todos los procesos activos en el momento en que se tomó la imagen de la memoria. Esta lista incluye información valiosa como el PID (identificador de proceso), el nombre del proceso, el usuario que lo ejecuta, y los tiempos de inicio y finalización del proceso. Esta información es fundamental para entender el estado del sistema en un momento específico y es especialmente útil para identificar actividades sospechosas o maliciosas, como procesos desconocidos o inusuales en ejecución, que podrían indicar la presencia de malware o la intervención de un atacante. A continuación se adjunta el comando la salida de la terminal.
+
+#### [3.5.1. Comando 001.](#84003005001001-comando-sudo-python27-volpy---profilelinuxlinuxubuntu_4_15_0-1021-aws_profilex64--f-homejrodg85server_rammem-linux_pslist)
+
+Una conclusión muy clara es que estos datos corroboran dos cosas, las fechas de linux_bash y los datos proporcionados por memmap con lo mismos.
+
+1. Ya en memmap teníamos conocimiento de 11 procesos **<u style='color:red'>Apache</u>**. Se puede declarar que el primer síntoma de anomalía en el sistema es en la ejecución de kworker/0:0 con Pid 19056  siento la hora el **3 de enero de 2019 a las 4:24:46 UTC**.
+
+2. Se procede a empezar a pintar la linea del tiempo. uniendo cronológicamente tanto `linux_bash` como `linux_pslist`.
+
+3. Se llega a la conclusión de que el ataque verdaderamente ha venido por el servidor **<u style='color:red'>Apache</u>** y  no por un servidor SQL ya que las aplicación de **<u style='color:red'>MySQL</u>** estuvo sin ser modificada. Eso no descarta que al tener el acceso a las tablas sin necesidad de privilegios, provoque un error en el sistema y una vulnerabilidad en la entrada no deseada.
+
+[Volver al Índice del capítulo 3. Análisis de la memoria RAM.](#índice-del-capítulo-3-análisis-de-la-memoria-ram)
+
+---
+
+### **3.5.2. Linux_pstree.**
+
+En la sección anterior, hemos procedido a buscar todos los procesos activos, ahora procederemos a ver si hay relación entre ellos. Para ello ejecutaremos `linux_pstree`. Con este comando, se obtiene una estructura jerárquica que ilustra cómo los procesos están interconectados, incluyendo detalles como el identificador del proceso (PID), el nombre del proceso y los procesos hijos asociados. Esta visión jerárquica es esencial para entender la organización y la dinámica de los procesos en el sistema en el momento de la captura de la memoria. Es especialmente útil para identificar patrones anómalos o sospechosos, como procesos maliciosos que pueden estar ocultos o disfrazados bajo procesos legítimos. El comando a utilizar es `sudo python2.7 vol.py --profile=LinuxlinuxUbuntu_4_15_0-1021-aws_profilex64 -f '/home/jrodg85/Server_RAM.mem' linux_pstree`.
+Una vez obtenido el comando se procederá a adjuntarse a modo de captura del comando ejecutado.
+
+#### [3.5.2. Comando 001.](#84003005002001-comando-sudo-python27-volpy---profilelinuxlinuxubuntu_4_15_0-1021-aws_profilex64--f-homejrodg85server_rammem-linux_pstree)
+
+Analizando los datos obtenidos, encontramos un UserID 33, sabemos por defecto, las acciones por usuarios registrados en el sistema es a partir de l UserID 1000, en este caso nos encontramos con 33. Posteriormente, en la captura de la memoria cache o en la captura de la memoria, investigaremos quien es el usuario 33. Buscando por internet, he realizado un  `sudo nano /etc/passwd` para ver cual es el UserID predefinido para el ID 33 siendo este `www-data:x:33:33:www-data:/var/www:/usr/sbin/nologin`, por lo que se puede reafirmar que el ataque ha sido a través del servidor **<u style='color:red'>Apache</u>**. De todas maneras, se recomienda probar a hacer un `linux_recover_filesystem` para ver que tenemos en el archivo original.
+
+#### [3.5.2. Imagen 001.](#82003005002001-sudo-nano-etc-passwd)
+
+[Volver al Índice del capítulo 3. Análisis de la memoria RAM.](#índice-del-capítulo-3-análisis-de-la-memoria-ram)
+
+---
+
+### **3.5.3. Linux_recover_filesystem.**
+
+Aunque no sea un proceso de interés procesos en funcionamiento de interés para el análisis propiamente dicho, ya que considero a procesos como archivos en ejecución por parte del sistema operativo, la sección anterior, recomienda hacer esta accion en este momento, asi que procederé a ello.
+
+El comando `linux_recover_filesystem` permite a los analistas forenses recuperar archivos de una imagen de memoria del sistema. Al ejecutar `linux_recover_filesystem`, puedo extraer archivos y directorios que estaban presentes en el sistema de archivos en el momento en que se tomó la imagen de memoria. Esto incluye archivos que pueden haber sido eliminados o no estar inmediatamente visibles en un análisis superficial. La capacidad de recuperar archivos de este modo es crucial en investigaciones forenses, ya que permite a los analistas acceder a evidencia potencial que podría haber sido ocultada, eliminada o manipulada por un usuario o por un software malicioso. Esta herramienta es particularmente útil en casos de análisis de malware, investigaciones de intrusiones y recuperación de datos. En este caso el comando a usar en la consola es `sudo python2.7 vol.py --profile=LinuxlinuxUbuntu_4_15_0-1021-aws_profilex64 -f '/home/jrodg85/Server_RAM.mem' linux_recover_filesystem --dump-dir /home/jrodg85/volcado-datos/`, donde con `--dump-dir /home/jrodg85/volcado-datos/` vamos a dirigir el volcado de datos a la carpeta que hemos creado en `/home/jrodg85/`.
+
+#### [3.5.3. Imagen 001.](#82003005003001-volcado-de-datos) &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; [3.5.3. Imagen 002.](#82003005003002-cantidad-de-archivos-recuperados)
+
+Como podemos ver, esta es la distribución de las carpetas que se han descargado cuando se ha ejecutado el comando, en vez de verlo de esta manera, considero realizar a `/home/jrodg85/volcado-datos/` un tree, de modo que podremos ver de manera ordenada. El comando a ejecutar desde `/home/jrodg85/volcado-datos/`, será `sudo tree ./ > /home/jrodg85/informe-tree.txt` ya que de este modo obtendremos un informe del comando para poder analizarlo paralelamente. Debido a que la salida del comando es de 16390 lineas, se procederá a realizar una referencia dentro al archivo para que pueda ser analizado.
+
+#### [3.5.3. Imagen 003.](#82003005003003-passwd-de-volcado) &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; [3.5.3. Imagen 004.](#82003005003004-comprimiendo-datos)
+
+#### [3.5.3. Referencia 019.](#85019-informe-tree)
+
+Se pueden llegar a las siguientes conclusiones:
+
+1. Los servicios que por defecto arrancan el ser servidor, los alojados en `/etc/init.d/` son los siguientes:
+    - acpid
+    - apache2
+    - apache-htcacheclean
+    - apparmor
+    - apport
+    - atd
+    - console-setup.sh
+    - cron
+    - cryptdisks
+    - cryptdisks-early
+    - dbus
+    - ebtables
+    - grub-common
+    - hibagent
+    - hwclock.sh
+    - irqbalance
+    - iscsid
+    - keyboard-setup.sh
+    - kmod
+    - lvm2
+    - lvm2-lvmetad
+    - lvm2-lvmpolld
+    - lxcfs
+    - lxd
+    - mdadm
+    - mdadm-waitidle
+    - mysql
+    - open-iscsi
+    - open-vm-tools
+    - plymouth
+    - plymouth-log
+    - postfix
+    - procps
+    - rsync
+    - rsyslog
+    - screen-cleanup
+    - ssh
+    - udev
+    - ufw
+    - unattended-upgrades
+    - uuidd
+
+2. Se confirma en `/etc/passwd` que:
+    - El usuario UserID 33 es www-data `www-data:x:33:33:www-data:/var/www:/usr/sbin/nologin`.
+    - No hay mas usuarios después de creados en el servidor que aparte de Ubuntu `ubuntu:x:1000:1000:Ubuntu:/home/ubuntu:/bin/bash`.
+
+3. En `/home/jrodg85/volcado-datos/etc/sudoers.d/` encontramos el archivo `90-cloud-init-users` el cual indica `ubuntu ALL=(ALL) NOPASSWD:ALL`.
+    - Esta accion viene por defecto en las instancias EC2, pero no viene normalmente dentro de los servidores independientes de Ubuntu. Esto lo que hace es no requerir contraseña cuando usas sudo con ese usuario, personalmente, no permitiría un NOPASSWD en un cloud server.
+
+4. En `/home/` solo encontramos una carpeta llamada Ubuntu, la cual solo tiene 2 archivos:
+    - accelerated-mobile-pages.0.9.97.19.zip
+    - wordpress-4.9.8.tar.gz
+
+Por ultimo voy a proceder a pasar por VirusTotal los archivos extraídos, para ello los comprimo en un .zip y ese archivo zip, lo pasaré por [virustotal.com](https://www.virustotal.com).
+
+Primero de todo vamos a hacer un sha256sum para corroborar posteriormente que el archivo subido en cuestión tiene el mismo hash. Para ello ejecutaremos en ubuntu el comando `sha256sum /home/jrodg85/volcado-datos.zip`, de este modo obtenemos que el hash en sha256 del archivo es `5d842006ca8551f683e78c2b5474eb79145f64eb2167683151b6fadb0bce0062`
+
+#### [3.5.3. Imagen 005.](#82003005003005-hash-archivo-zip)
+
+Procedemos a subir el archivo a [virustotal.com](https://www.virustotal.com) obteniendo el siguiente resultado:
+
+#### [3.5.3. Imagen 006.](#82003005003006-pantallazo-virustotal-1)
+
+Encontramos al menos que dentro de el hay un virus detectado, por ello, para detectar exactamente procedemos a dividir cada una de las carpetas en ZIP para asi ir buscando nivel por nivel donde esta el archivo infectado. Los zip que estén limpios procederé a descartarlos y eliminarlos, los positivos, les haré un pantallazo.
 
 
+Haciendo el proceso en primer nivel, se detecta que la carpeta `var` contiene, al menos un virus, se adjunta pantallazo de corroboración.
 
+#### [3.5.3. Imagen 007.](#82003005003007-pantallazo-virustotal-2)
 
+Esta ha sido la única notificación de primer nivel encontrada, por lo que a continuación, se procederá a hacer la misma accion de segundo nivel, pero esta vez dentro de `/var`, de modo que las siguientes detecciones serán dentro de `/var`. Los análisis que resulten negativo se ignorarán y solo se marcarán lo que resulten con posible virus dentro del archivo.
 
-### 3.5.2 Linux_arp.
+Se detecta virus dentro de `/var/lib/`.
 
+#### [3.5.3. Imagen 008.](#82003005003008-pantallazo-virustotal-3)
 
+Se detecta virus dentro de `/var/www/`.
 
-### 3.5.3 Linux_netstat.
+#### [3.5.3. Imagen 009.](#82003005003009-pantallazo-virustotal-4)
 
+Se procede a realizar análisis dentro de `/var/lib/`.
 
+Se detecta virus en `/var/lib/snapd/`.
 
+#### [3.5.3. Imagen 010.](#82003005003010-pantallazo-virustotal-5)
 
+Se procede a realizar análisis dentro de `/var/lib/snapd/`.
 
+Se detecta virus en `/var/lib/snapd/snaps/`.
+
+#### [3.5.3. Imagen 011.](#82003005003011-pantallazo-virustotal-6)
+
+Se procede a realizar análisis dentro de `/var/lib/snapd/snaps/`.
+
+Virus total no detecta virus alguno, se puede entender como falsa alarma. Se ha procesado tanto comprimidos como sin comprimir todos los archivos independientes para corroborar con doble confirmación.
+
+Se procede a realizar análisis dentro de `/var/www/`, como solo tenemos la carpeta html, procedemos entonces a realizar el análisis directamente en `/var/www/html/`. Para los archivos ocultos procedemos a quitar el pun
+
+Se detecta virus en `/var/www/html/.htaccess`. Este archivo fue modificado por ultima vez el 21 de diciembre de 2018 a las 18:24:40 UTC.
+
+#### [3.5.3. Imagen 012.](#82003005003012-pantallazo-virustotal-7)
+
+#### [3.5.3. Imagen 013.](#82003005003013-archivo-htaccess)
+
+En este caso hemos encontrado con un archivo dentro del sistema que puede resultar dañino para el cloud server.
 
 [Volver al Índice del capítulo 3. Análisis de la memoria RAM.](#índice-del-capítulo-3-análisis-de-la-memoria-ram)
 
 [Volver al Índice General.](#índice-general)
 
 ---
-
-
 
 ## 3.6. Listado de conexiones de red y conexiones sospechosas.
 
@@ -1712,14 +1871,80 @@ Da la casualidad de que una semana después de la instalación del servidor, sin
 
 
 
+### 3.6.0. Introducción al listado de conexiones de red y conexiones sospechosas.
+
+La investigación relativo a las conexiones del servidor analizado, nos permitirá tratar de descubrir cuales son las conexiones que tenia el servidor en el momento de realizar la captura de la RAM, de lo que se puede aportar información valiosa a la hora de la realización de los informes.
+
+[Volver al Índice del capítulo 3. Análisis de la memoria RAM.](#índice-del-capítulo-3-análisis-de-la-memoria-ram)
+
+---
+
+### 3.6.1 Linux_arp.
+
+En este apartado, nos vamos a enfocar en descubrir la tabla ARP del servidor, para ello ejecutaremos `linux_arp`, gracias a este comando obtendremos una lista detallada de las entradas de ARP, que incluye información vital como las direcciones IP y las direcciones MAC asociadas. Esta tabla es esencial para entender cómo el sistema infectado o comprometido estaba comunicándose con otros dispositivos en la red. La información de la tabla ARP puede revelar conexiones de red previas, identificar dispositivos dentro de la red local con los que el sistema interactuó, y puede ser particularmente útil para rastrear la actividad de red sospechosa o maliciosa. El comando usado en este caso es `sudo python2.7 vol.py --profile=LinuxlinuxUbuntu_4_15_0-1021-aws_profilex64 -f '/home/jrodg85/Server_RAM.mem' linux_arp`. Se adjunta imagen de pantallazo del mismo.
+
+#### [3.6.1. Imagen 001.](#82003006001001-linux-arp)
+
+Se observa que la VM ha enviado paquetes a las direcciones 172.31.32.1 y 172.31.33.128. Tenemos 0.0.0.0 por lo que hay conexión a una red externa.
+
+[Volver al Índice del capítulo 3. Análisis de la memoria RAM.](#índice-del-capítulo-3-análisis-de-la-memoria-ram)
+
+---
+
+### 3.6.2 Linux_ifconfig.
+
+En este apartado lo que se va a realizar es ver cual es la dirección IP del cloud server dentro de su red. Para ello usare el comando `linux_ifconfig`. Con este comando se va a obtener cuatro datos. El primero de ello es la interfaz de conexión. El segundo es la dirección IP. El tercero es la dirección MAC. El cuarto consulta si ese interfaz está en modo promiscuo, es decir, comprobará si dentro de la red, puede ver todos los paquetes del dominio de difusión. El comando que utilizaremos en este caso es `sudo python2.7 vol.py --profile=LinuxlinuxUbuntu_4_15_0-1021-aws_profilex64 -f '/home/jrodg85/Server_RAM.mem' linux_ifconfig`, viene a recordar el comando `ifconfig` el cual revela toda la información de red. Se adjunta imagen de pantallazo del mismo.
+
+#### [3.6.2. Imagen 001.](#82003006002001-linux-ifconfig)
+
+Un breve análisis de este comando es el siguiente:
+1. Solo tiene una interfaz de conexión de red conectada, `eth0`.
+    - `lo` es una dirección IP lógica y es la de localhost, como en el apartado anterior hemos encontrado también la etiqueta `lo`, podemos intuir que es de loopback o similar. Se puede considerar un dato desechable en ese sentido.
+2. La dirección IP de la VM es 172.31.38.110.
+3. La dirección MAC de la VM es 06:4c:cd:f6:51:2c. Se podría estudiar la interfaz de red de esta máquina y hacer un MAC lookup, pero directamente voy a considerar que, al tener constancia de que es una VM, puedo acreditar directamente que es una MAC virtual. Ya que las máquinas virtuales suelen comunicarse a través de una red interna virtual a la red exterior, usando todos ellos la misma MAC física, y siendo esta red interna virtual como un Switch que distribuye a necesidad dentro de la red.
+4. La interfaz de red `eth0` no esta en modo promiscuo o monitor.
+
+[Volver al Índice del capítulo 3. Análisis de la memoria RAM.](#índice-del-capítulo-3-análisis-de-la-memoria-ram)
+
+---
+
+### 3.6.3 Linux_netstat.
+
+En este apartado procederemos a tratar de tener una vision detallada de las conexiones de red, para ello ejecutaremos el comando `linux_netstat`. Con este comando, obtendremos información de  todas las conexiones TCP y UDP activas, incluyendo direcciones IP y puertos locales y remotos, así como el estado de estas conexiones. Esta información es crucial para comprender con qué otros sistemas y servicios estaba interactuando el sistema en cuestión. Es especialmente valioso para identificar comunicaciones sospechosas o no autorizadas, como conexiones a direcciones IP desconocidas o el uso de puertos inusuales, que podrían indicar actividad maliciosa, como exfiltración de datos, comando y control de malware, o accesos no autorizados. El comando a utilizar es `sudo python2.7 vol.py --profile=LinuxlinuxUbuntu_4_15_0-1021-aws_profilex64 -f '/home/jrodg85/Server_RAM.mem' linux_netstat`. Se hace captura del comando.
+
+#### [3.6.3. Comando 001.](#84003006003001-comando-sudo-python27-volpy---profilelinuxlinuxubuntu_4_15_0-1021-aws_profilex64--f-homejrodg85server_rammem-linux_netstat)
+
+Se procede a realiza una limpieza de datos del comando anterior, quedando de la siguiente manera.
+
+#### [3.6.3. Comando 002.](#84003006003002-resumen-del-comando-sudo-python27-volpy---profilelinuxlinuxubuntu_4_15_0-1021-aws_profilex64--f-homejrodg85server_rammem-linux_netstat)
+
+Analizando las conexiones se detecta lo siguiente:
+
+A parte de la gran cantidad de conexiones a traves de los puertos principales de HTTP (80) y HTTPS (443). Se observan dos conexiones realizadas a través del servicio de apache2 con id del proceso 19952.
+
+~~~
+TCP      ::ffff172.31.38.110:   80 ::ffff18.195.165.56:41529 CLOSE_WAIT                apache2/19952
+TCP      172.31.38.110   :46384 172.31.33.128   : 8080 ESTABLISHED               apache2/19952
+~~~
+
+1. Podemos una primera conexión que la dirección IP de de destino es 18.195.165.56, cerrada y esperando. El cloud server usa en este caso el puerto 80. el puerto por defecto para HTTP y remite al puerto 45219 de destino. La aplicación que esta conectada es apache2 con id 19952.
+2. Podemos ver una segunda conexión que en el cloud server cuyo destino es 172.31.33.128. Esta conexión está establecida, por lo que hay comunicación. Esta asociado al puerto 46384, el cual es un puerto que no tiene una asignación determinada, sin embargo, en destino tiene establecido el puerto 8080, el cual es el puerto de reserva de HTTP. La aplicación que esta conectada es la misma que la anterior, apache2 con id 19952.
+    - Personalmente me resulta extraño esta conexión a un puerto de origen excesivamente alto.
+
+~~~
+TCP      172.31.38.110   :   22 83.247.136.74   :16666 ESTABLISHED                  sshd/20483
+TCP      172.31.38.110   :   22 83.247.136.74   :16666 ESTABLISHED                  sshd/20576
+~~~
+
+3. Me parece bastante extraño que hayan 2 conexiones establecidas al mismo puerto pero y a distintas aplicaciones, aunque reciban el mismo nombre.
+    - Son dos conexiones al puerto 22 (SSH) a la ip 83.247.136.74 y puerto 16666. Sin embargo la aplicación de conexión es la misma (sshd) pero con dos Id distintas (20483 y 20576).
+
 
 [Volver al Índice del capítulo 3. Análisis de la memoria RAM.](#índice-del-capítulo-3-análisis-de-la-memoria-ram)
 
 [Volver al Índice General.](#índice-general)
 
 ---
-
-
 
 # 4. Análisis del disco duro.
 
@@ -1765,33 +1990,55 @@ Da la casualidad de que una semana después de la instalación del servidor, sin
 
 ## 4.1. Acciones previas al análisis del disco duro.
 
+En el presente TFM, se nos ha proporcionado a los alumnos un archivo de captura de disco duro en formato `.E01`. Por otro lado, se nos ha proporcionado los resúmenes o **<u style='color:red'>hash</u>** en MD5 y en SHA1 de los archivos tal y como se muestra en la siguiente imagen.
 
+#### [4.1 Imagen 001.](#82004001001-imagen-hash-archivos)
 
+Como Podemos ver, los **<u style='color:red'>hash</u>** resúmenes del archivo del HDD, tememos los siguientes hashes en MD5 y en SHA1:
 
+- **MD5:** 324ed7db769620e3fb55c027480d0ef3
+- **SHA1:** 3398f90d2438230aaaf7b5e8ce0a01e456d9ca10
 
+El **<u style='color:red'>hash</u>** tal y como se indica en los apuntes de la asignatura, en el módulo de Fases y metodología del análisis forense, durante la adquisición de evidencias digitales dice  lo siguiente:
 
+Una vez generada la copia o clon del soporte original, el programa o el dispositivo hardware empleado en este proceso realiza el cálculo del **<u style='color:red'>CRC</u>** o del valor **<u style='color:red'>hash</u>** del soporte original y del destino, con la finalidad de garantizar que los dos son idénticos y que la copia se ha producido sin ningún error. Este cálculo puede realizarse sobre todo el conjunto de información contenida en el soporte original, o bien emplear solamente un conjunto de ficheros del total.
 
+A su vez, en el glosario de términos la definición de **<u style='color:red'>hash</u>** es la siguiente:
 
+Es una función matemática unidireccional que resume un mensaje de tamaño variable (por ejemplo, un archivo), en una representación de tamaño fijo. Es poco probable que dos ficheros distintos tengan la misma representación **<u style='color:red'>hash</u>**, lo cual significa que este valor puede utilizarse a efectos de comprobación de la **<u style='color:red'>integridad</u>** de un archivo (o de un sistema entero). Las funciones **<u style='color:red'>hash</u>** más conocidas son MD5 y SHA-1.
 
+Una vez descargado el archivo de captura de la memoria RAM, procedemos a usar PowerShell para determinar el **<u style='color:red'>hash</u>** del archivo. Para ello usamos el comando  "Get-FileHash [Argumento] -Algorithm MD5". En nuestro caso hemos usado los siguientes comandos:
+
+#### [4.1 Comando 001.](#84004001001-comando-hash-md5) &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; [4.1 Comando 002.](#84004001002-comando-hash-sha1)
+
+Se puede observar en la siguiente imagen la respuesta de PowerShell de los hashes de MD5 y SHA1.
+
+#### [4.1. Imagen 002.](#82004001002-imagen-hash-powershell)
+
+Como conclusión podemos verificar que la **<u style='color:red'>integridad</u>** de la copia facilitada para realizar el TFM no ha sido vulnerada.
 
 [Volver al Índice del capítulo 4. Análisis del disco duro.](#índice-del-capítulo-4-análisis-del-disco-duro)
 
 [Volver al Índice General.](#índice-general)
 
 ---
-
 
 
 ## 4.2. Datos de interés del disco duro.
 
+La herramienta para utilizar en este caso será Autopsy 4.21.0 para Windows. Arrancaremos la aplicación y generaremos un nuevo caso.
 
+#### [4.2. Imagen 001.](#82004002001-nuevo-caso-autopsy)
 
+Procedemos a la carga de datos y de la imagen de disco duro.
 
+#### [4.2. Imagen 002.](#82004002002-caso-autopsy-generado-correctamente)
 
+Procedemos a hacer una visualización general. En el TFM, la autoridad, nos da fé de que esta es la imagen extraída del servidor y en la sección anterior hemos corroborado el hash del archivo. Se puede dar fé de que ambos datos provienen del mismo servidor. Por otro lado se ha comprobado los datos de la extracción de la RAM asi como de la extracción del HDD que el archivo `/home/jrodg85/volcado-datos/home/ubuntu/.bash_history`, son exactamente el mismo. Se adjunta imagen donde se puede comprobar al acción.
 
+#### [4.2. Imagen 003.](#82004002003-comprobación-bash-history)
 
-
-
+A continuación, procederemos a extraer los archivos en adelante en `C:\TFM-estudio\` y, mediante WSL, procederemos a hacer las acciones necesarias para su análisis.
 
 [Volver al Índice del capítulo 4. Análisis del disco duro.](#índice-del-capítulo-4-análisis-del-disco-duro)
 
@@ -1799,13 +2046,18 @@ Da la casualidad de que una semana después de la instalación del servidor, sin
 
 ---
 
-
-
 ## 4.3. Usuarios del sistema.
 
+A continuación vamos a proceder a investigar los usuarios que hay en el cloud server, para ello vamos a proceder a investigar el cd el archivo `/etc/passwd`,en el comprobaremos los usuarios del sistema.
 
 
+#### [4.3. Imagen 001.](#82004003001-usuarios-del-sistema)
 
+
+Analizando los usuarios del sistema, el único usuario que realmente es el ya encontrado en la ram es el usuario Ubuntu.
+~~~
+ubuntu:x:1000:1000:Ubuntu:/home/ubuntu:/bin/bash
+~~~
 
 
 
@@ -1820,6 +2072,145 @@ Da la casualidad de que una semana después de la instalación del servidor, sin
 ## 4.4. Análisis de evidencias del disco duro.
 
 
+**AUTH LOG**
+
+No contentos con este análisis puesto que no sacamos nada nuevo, vamos a observar en los registros del sistema que autenticaciones han ocurrido en el cloud server, para ello procederemos a extraer `/var/log/auth.log`, con ello veremos un registro completo de las acciones llevadas a cabo dentro del cloud server. Procedemos con WSL a realizar un primer análisis haciendo un `grep "user" auth.log`, el cual nos da muchísima información. Se adjunta pantallazo del mismo.
+
+#### [4.4. Imagen 001.](#82004003002-análisis-auth-log-1)
+
+Al ver tal cantidad ingente de información procedemos a ver un patron de usuarios inválidos en auth.log. Por lo que buscamos los invalid user con el comando `grep "Invalid user" auth.log`
+
+#### [4.4. Referencia 020.](#85020-informe-invalid-user)
+
+Se puede considerar que desde el 31 de diciembre hasta el 03 de enero se ha realizado intentos masivos de acceso con usuario no inválidos. Parece que ha tenido que hacerse con un ataque de intento de acceso a través de un diccionario de usuario posiblemente predefinidos en el sistema.
+
+Relativo a la información obtenida y los datos que podemos sacar de ellos. Cabe destacar que este archivo de registro es de autenticaciones fallidas, cabe destacar también que este cloud server tiene una ip dedicada, y en los fueros es conocido la gran cantidad de bots de otros países que tratan de manera continua acceder a este tipo de servidores. De hecho compañeros míos, durante su etapa la universidad, no es de extrañar que se hayan avisado desde los SOC de que han tenido que cortar la conexión a internet por intentos de acceso desde direcciones IP registradas en Shanghai.
+
+**APACHE ACCESS LOG**
+
+Ya que tenemos detectado del análisis de la memoria RAM que el error viene del servicio de apache2, vamos a proceder a buscar en sus logs. Personalmente creo que es considerable estar enfocados en ese sentido.
+
+Por tanto, para buscar los accesos a apache, debemos ir a `/var/log/apache2/access.log` y ver las acciones realizadas sobre el servidor.
+
+#### [4.4. Imagen 002.](#82004003003-análisis-apache-access-log-1)
+
+
+Cabe destacar de este archivo las siguientes lineas:
+
+~~~
+18.195.165.56 - - [03/Jan/2019:07:07:28 +0000] "GET /wp-content/plugins/reflex-gallery/readme.txt HTTP/1.1" 200 8887 "-" "Mozilla/4.0 (compatible; MSIE 6.0; Windows NT 5.1)"
+18.195.165.56 - - [03/Jan/2019:07:07:43 +0000] "POST /wp-content/plugins/reflex-gallery/admin/scripts/FileUploader/php.php?Year=2019&Month=01 HTTP/1.1" 200 209 "-" "Mozilla/4.0 (compatible; MSIE 6.0; Windows NT 5.1)"
+~~~
+
+hace un get a un readme.txt puede una accion de amenaza puesto que se puede obtener información expuesta involuntariamente en dicho archivo, no será la primera vez que se ve en un comentario de una web una contraseña o similar. En el caso que nos ocupa se ha observado que, no hay información sensible al respecto, quizás, lo haya realizado esta accion para comprobar alguna vulnerabilidad.
+
+Por otr lado, posteriormente que inyecte un archivo .php dentro de un sistema de carga de imágenes, pues puede ser una vulnerabilidad, ya que se puede estar inyectando código malicioso dentro del sistema. Procedo a la extracción del archivo y análisis con VirusTotal. El resultado muestra que no tiene virus. Aun así se hace un resumen del código en busca de posibles vulnerabilidades llegando a las siguientes conclusiones.
+
+1. Control de Extensiones de Archivos:
+    - Aunque hay una comprobación de las extensiones de archivo permitidas, esta lista está vacía por defecto ($allowedExtensions = array();). Esto podría permitir la carga de tipos de archivos potencialmente peligrosos si no se configura adecuadamente.
+2. Manejo de Directorios:
+    - El script parece crear y escribir en directorios basados en entradas de usuario (../../../../../uploads/'.$_GET['Year'].'/'.$_GET['Month'].'/'). Esto podría llevar a vulnerabilidades de recorrido de directorio si no se valida y restringe adecuadamente.
+3. Falta de Autenticación y Autorización:
+    - No hay evidencia de controles de autenticación o autorización para limitar quién puede cargar archivos. Esto puede exponer el sistema a cargas no autorizadas.
+
+**APACHE ERROR LOG**
+
+
+Procedemos a abrir el archivo `/var/log/apache2/error.log`.
+
+#### [4.4. Imagen 003.](#82004003004-análisis-apache-error-log-1)
+
+
+Destacamos las lineas:
+~~~
+[Thu Jan 03 07:07:43.230918 2019] [php7:notice] [pid 19951] [client 18.195.165.56:44145] PHP Notice:  A non well formed numeric value encountered in /var/www/html/wp-content/plugins/reflex-gallery/admin/scripts/FileUploader/php.php on line 169
+[Thu Jan 03 07:07:43.230979 2019] [php7:notice] [pid 19951] [client 18.195.165.56:44145] PHP Notice:  A non well formed numeric value encountered in /var/www/html/wp-content/plugins/reflex-gallery/admin/scripts/FileUploader/php.php on line 99
+[Thu Jan 03 07:07:43.230987 2019] [php7:notice] [pid 19951] [client 18.195.165.56:44145] PHP Notice:  A non well formed numeric value encountered in /var/www/html/wp-content/plugins/reflex-gallery/admin/scripts/FileUploader/php.php on line 99
+~~~
+
+Ya que la carga del archivo viene a tener errores en el código en las lineas 99 y 169. Personalmente, las lineas 99 (`case 'm': $val *= 1024;`) y 169 (`$sizeLimit = ini_get('upload_max_filesize') * 1024 * 1024;`) no están provocando error alguno.
+
+
+**ARCHIVOS DE LOG DE MYSQL**
+
+Otro de los servicios, pero de los que no tenemos un acceso confirmado, distinto de apache que si que estaba confirmado, es el servicio de MySQL. para ello procederemos a analizar la carpeta `/var/log/mysql/`. En ella solo encontramos el archivo `error.log`, el cual, está vacío.
+
+#### [4.4. Imagen 004.](#82004004004-análisis-mysql-log-1)
+
+Procedemos a buscar a ver si en la RAM podemos encontrar el mismo error, el cual es asi, el archivo error de my sql, también aparece vacío.
+
+#### [4.4. Imagen 005.](#82004004005-análisis-mysql-log-2)
+
+**PAGINA WEB**
+
+Voy a proceder a buscar en la pagina web cualquier anomalía que pueda tener. Cual es mi sorpresa que nada mas ser descargada, Windows me da un aviso de una vulnerabilidad grave. detectando un troyano del tipo `Trojan:JS/CoinHive.B`. Este tipo de virus es un código en JavaScript que lo que hace es proceder a minar con la CPU bitcoins. Pudiendo realizar la ruptura del equipo. En este caso en los servidores de amazon, provocarían un exceso de ejecución de tareas provocando ademas posible incumplimiento de uso de las infancias EC2.
+
+#### [4.4. Imagen 007.](#82004004007-análisis-index)
+
+De hecho el código del index.php tiene el siguiente script dentro del código
+
+~~~
+var miner = new CoinHive.Anonymous('pvvxSQ6RzN3K5IY9F5fFHvahAFNreg3u', {throttle: 0.2});
+miner.start();
+~~~
+
+**CORREOS ELECTRÓNICOS**
+
+Los correos electrónicos son evidencias en las que se comparten acciones relativas entre dos sujetos, es decir, comunicaciones. Puede resultar vital para entender todos los hechos ocurridos dentro del sistema.
+
+Para realizar un análisis de los correos electrónicos ubicados en el sistema, Autopsy lo hace de manera muy simple. Al ser unos mensajes preformateados, el mismo los encuentra en el apartado `Data Artifacts > E-mail Messages > Default ([Default]) > Default`. En nuestro caso, encuentra 22 elementos. Los cuales, los vamos a organizar de manera cronológica y procederemos, a "pico y pala" a indagar en ellos.
+
+#### [4.4. Imagen 008.](#82004004008-análisis-mails)
+
+Buscando dentro de los correos encontramos el siguiente indicio.
+
+#### [4.4. Imagen 009.](#82004004009-análisis-mails-2)
+
+Este correo, viene a notificar el registro del usuario `anatoly5676` con correo `anatoly5676@grr.la`.
+
+Si accedemos a grr.la, nos redirecciona a [https://www.guerrillamail.com/](https://www.guerrillamail.com/). Un servidor de emails temporales.
+
+#### [4.4. Imagen 010.](#82004004010-análisis-mails-3)
+
+Un minuto después del registro de `anatoly5676`, el servidor manda un correo indicando que se ha cambiado la contraseña de ese usuario.
+
+#### [4.4. Imagen 011.](#82004004011-análisis-mails-4)
+
+Instantes mas tarde, `anatoly5676` remite un correo indicando que apruebe un comentario.
+
+#### [4.4. Imagen 012.](#82004004012-análisis-mails-5)
+
+Se puede ver que el comentario es un comentario `null`, sin contenido, por lo que algo extraño está sucediendo.
+
+Por otro lado, se observa que la ip por la que accede anatoly ahora es desde la 193.238.152.59, esta IP pertenece a Ucrania tal y como se puede ver en la siguiente imagen
+
+#### [4.4. Imagen 013.](#82004004013-análisis-mails-6)
+
+Posteriormente, `anatoly5676` desde la misma dirección IP de Ucrania, procede a remitirle un enlace **HTTP**, para que acceda a esa dirección IP. Casualmente es la dirección IP hallada anteriormente (18.195.165.56), al ser una comunicación entre maquinas con protocolo http, esta comunicación no va securizada, por lo que puede estar siendo intervenida por un tercero.
+
+#### [4.4. Imagen 014.](#82004004014-análisis-mails-7)
+
+Podemos observar que esa dirección ip corresponde a una dirección IP de AWS y, ademas, se localiza en Alemania.
+
+#### [4.4. Imagen 015.](#82004004015-análisis-mails-8)
+
+EL 30 de Diciembre de 2018 a las 11:46:38 UTC, se recibe otro correo dentro del buzón de admin@ganga.site donde se puede observar un Hello World y debajo un script que ataca a un archivo llamado `stat.js` accesible a traves de http en la dirección IP `18.195.165.56`.
+
+#### [4.4. Imagen 016.](#82004004016-análisis-mails-9)
+
+**BASES DE DATOS**
+
+Aunque ya ha quedado un todo un poco más fluido y entendido de lo que ha ocurrido, lo cual se expondrá en las conclusiones, se procede a realizar un pequeño análisis de la base de datos. en la index.db encontramos las siguiente sentencias:
+- `Permit user logins after boot, prohibit user logins at shutdown`.
+- `Ukrainian character set encoded in octal, decimal, and hexadecimalmcookie`.
+- `The Swiss Army Knife of Embedded Linuxrsh-`
+- `Initialize a terminal or query terminfo databasenologin`.
+
+
+**CONCLUSIONES**
+
+- Hemos hemos hallado la manera en el que se ha infectado el cloud server. Esta conexión a `18.195.165.56`, posiblemente tenga un js. el cual remite toda la información que se inserta en la web, por tanto, posiblemente, `anatoly5676` ha estado entrando por donde ha querido dentro del servidor.
+- La alteración de la Base de datos, después de la infección (31 de diciembre a las 06:25:02 UTC) con las sentencias encontradas, muestra una desecurización de la base de datos.
 
 
 
@@ -2087,7 +2478,7 @@ Da la casualidad de que una semana después de la instalación del servidor, sin
 
 ![003-001-002](./images/003-001-002-captura-hash-PowerShell.png)
 
-[Volver al texto de la imagen en la Sección 006.](#31-imagen-002)
+[Volver al texto de la imagen en la Sección 3.1.](#31-imagen-002)
 
 ---
 
@@ -2183,7 +2574,7 @@ Da la casualidad de que una semana después de la instalación del servidor, sin
 
 ![003-003-002-003](./images/003-003-002-003-volatility-tools-linux-ls.png)
 
-[Volver al texto de la imagen en la Sección 3.3.2.](#332-imagen-003)
+[Volver al texto de la imagen en la Sección 3.3.2.](#332-imagen-003-332-imagen-004)
 
 ---
 
@@ -2191,7 +2582,7 @@ Da la casualidad de que una semana después de la instalación del servidor, sin
 
 ![003-003-002-004](./images/003-003-002-004-volatility-tools-linux-make-ls.png)
 
-[Volver al texto de la imagen en la Sección 3.3.2.](#332-imagen-004)
+[Volver al texto de la imagen en la Sección 3.3.2.](#332-imagen-003-332-imagen-004)
 
 ---
 
@@ -2207,7 +2598,7 @@ Da la casualidad de que una semana después de la instalación del servidor, sin
 
 ![003-003-002-006](./images/003-003-002-006-perfil-creado.png)
 
-[Volver al texto de la imagen en la Sección 3.3.2.](#332-imagen-006)
+[Volver al texto de la imagen en la Sección 3.3.2.](#332-imagen-006-332-imagen-007)
 
 ---
 
@@ -2215,7 +2606,7 @@ Da la casualidad de que una semana después de la instalación del servidor, sin
 
 ![003-003-002-007](./images/003-003-002-007-ls-a-la-carpeta-de-perfil.png)
 
-[Volver al texto de la imagen en la Sección 3.3.2.](#332-imagen-007)
+[Volver al texto de la imagen en la Sección 3.3.2.](#332-imagen-006-332-imagen-007)
 
 ---
 
@@ -2251,7 +2642,7 @@ Da la casualidad de que una semana después de la instalación del servidor, sin
 
 ---
 
-#### 8.2.003.004.001.001. linux_cpuinfo.
+#### 8.2.003.004.001.001. Linux cpuinfo.
 
 ![003-004-001-001](./images/003-004-001-001-linux_cpuinfo.png)
 
@@ -2259,7 +2650,7 @@ Da la casualidad de que una semana después de la instalación del servidor, sin
 
 ---
 
-#### 8.2.003.004.002.001. linux_banner.
+#### 8.2.003.004.002.001. linux banner.
 
 ![003-004-002-001](./images/003-004-002-001-linux_banner.png)
 
@@ -2267,7 +2658,7 @@ Da la casualidad de que una semana después de la instalación del servidor, sin
 
 ---
 
-#### 8.2.003.004.003.001. linux_mount.
+#### 8.2.003.004.003.001. linux mount.
 
 ![003-004-003-001](./images/003-004-003-001-linux_mount.png)
 
@@ -2275,7 +2666,7 @@ Da la casualidad de que una semana después de la instalación del servidor, sin
 
 ---
 
-#### 8.2.003.004.004.001. linux_memmap.
+#### 8.2.003.004.004.001. linux memmap.
 
 ![003-004-004-001](./images/003-004-004-001-linux_memmap.png)
 
@@ -2283,7 +2674,7 @@ Da la casualidad de que una semana después de la instalación del servidor, sin
 
 ---
 
-#### 8.2.003.004.005.001. linux_iomem.
+#### 8.2.003.004.005.001. linux iomem.
 
 ![003-004-005-001](./images/003-004-005-001-linux_iomem.png)
 
@@ -2291,7 +2682,7 @@ Da la casualidad de que una semana después de la instalación del servidor, sin
 
 ---
 
-#### 8.2.003.004.006.001. linux_dmesg.
+#### 8.2.003.004.006.001. linux dmesg.
 
 ![003-004-006-001](./images/003-004-006-001-linux_dmesg.png)
 
@@ -2299,12 +2690,308 @@ Da la casualidad de que una semana después de la instalación del servidor, sin
 
 ---
 
+#### 8.2.003.005.002.001. sudo nano etc passwd.
+
+![003-005-002-001](./images/003-005-002-001-sudo-nano-etc-passwd.png)
+
+[Volver al texto de la imagen en la Sección 3.5.2.](#352-imagen-001)
+
+---
+
+#### 8.2.003.005.003.001. Volcado de datos.
+
+![003-005-003-001](./images/003-005-003-001-volcado-datos.png)
+
+[Volver al texto de la imagen en la Sección 3.5.3.](#353-imagen-001)
+
+---
+
+#### 8.2.003.005.003.002. cantidad de archivos recuperados.
+
+![003-005-003-002](./images/003-005-003-002-archivos-recuperados.png)
+
+[Volver al texto de la imagen en la Sección 3.5.3.](#353-imagen-002)
+
+---
+
+#### 8.2.003.005.003.003. passwd de volcado.
+
+![003-005-003-003](./images/003-005-003-003-passwd-volcado.png)
+
+[Volver al texto de la imagen en la Sección 3.5.3.](#353-imagen-003-353-imagen-004)
+
+---
+
+#### 8.2.003.005.003.004. Comprimiendo datos.
+
+![003-005-003-004](./images/003-005-003-004-comprimiendo-datos.png)
+
+[Volver al texto de la imagen en la Sección 3.5.3.](#353-imagen-003-353-imagen-004)
+
+---
+
+#### 8.2.003.005.003.005. hash archivo zip.
+
+![003-005-003-005](./images/003-005-003-005-hash-archivo-zip.png)
+
+[Volver al texto de la imagen en la Sección 3.5.3.](#353-imagen-005)
+
+---
+
+#### 8.2.003.005.003.006. Pantallazo Virustotal 1.
+
+![003-005-003-006](./images/003-005-003-006-pantallazo-visrustotal-1.png)
+
+[Volver al texto de la imagen en la Sección 3.5.3.](#353-imagen-006)
+
+---
+
+#### 8.2.003.005.003.007. Pantallazo Virustotal 2.
+
+![003-005-003-007](./images/003-005-003-007-pantallazo-visrustotal-2.png)
+
+[Volver al texto de la imagen en la Sección 3.5.3.](#353-imagen-007)
+
+---
+
+#### 8.2.003.005.003.008. Pantallazo Virustotal 3.
+
+![003-005-003-008](./images/003-005-003-008-pantallazo-visrustotal-3.png)
+
+[Volver al texto de la imagen en la Sección 3.5.3.](#353-imagen-008)
+
+---
+
+#### 8.2.003.005.003.009. Pantallazo Virustotal 4.
+
+![003-005-003-009](./images/003-005-003-009-pantallazo-visrustotal-4.png)
+
+[Volver al texto de la imagen en la Sección 3.5.3.](#353-imagen-009)
+
+---
+
+#### 8.2.003.005.003.010. Pantallazo Virustotal 5.
+
+![003-005-003-010](./images/003-005-003-010-pantallazo-visrustotal-5.png)
+
+[Volver al texto de la imagen en la Sección 3.5.3.](#353-imagen-010)
+
+---
+
+#### 8.2.003.005.003.011. Pantallazo Virustotal 6.
+
+![003-005-003-011](./images/003-005-003-011-pantallazo-visrustotal-6.png)
+
+[Volver al texto de la imagen en la Sección 3.5.3.](#353-imagen-011)
+
+---
+
+#### 8.2.003.005.003.012. Pantallazo Virustotal 7.
+
+![003-005-003-012](./images/003-005-003-012-pantallazo-visrustotal-7.png)
+
+[Volver al texto de la imagen en la Sección 3.5.3.](#353-imagen-012)
+
+---
+
+#### 8.2.003.005.003.013. Archivo htaccess.
+
+![003-005-003-013](./images/003-005-003-013-archivo-htaccess.png)
+
+[Volver al texto de la imagen en la Sección 3.5.3.](#353-imagen-013)
+
+---
+
+#### 8.2.003.006.001.001. linux arp.
+
+![003-006-001-001](./images/003-006-001-001-linux-arp.png)
+
+[Volver al texto de la imagen en la Sección 3.6.1.](#361-imagen-001)
+
+---
+
+#### 8.2.003.006.002.001. linux ifconfig.
+
+![003-006-002-001](./images/003-006-002-001-linux-ifconfig.png)
+
+[Volver al texto de la imagen en la Sección 3.6.2.](#362-imagen-001)
+
+---
+
+#### 8.2.004.001.001. Imagen Hash archivos.
+
+![004-001-001](./images/004-001-001-imagen-hash-archivos.png)
+
+[Volver al texto de la imagen en la Sección 4.1.](#41-imagen-001)
 
 
+---
 
+#### 8.2.004.001.002. Imagen Hash PowerShell.
 
+![004-001-002](./images/004-001-002-captura-hash-PowerShell.png)
 
+[Volver al texto de la imagen en la Sección 4.1.](#41-imagen-002)
 
+---
+
+#### 8.2.004.002.001. Nuevo caso Autopsy.
+
+![004-002-001](./images/004-002-001-nuevo-caso-autopsy.png)
+
+[Volver al texto de la imagen en la Sección 4.2.](#42-imagen-001)
+
+---
+
+#### 8.2.004.002.002. Caso Autopsy generado correctamente.
+
+![004-002-002](./images/004-002-002-hdd-cargado.png)
+
+[Volver al texto de la imagen en la Sección 4.2.](#42-imagen-002)
+
+---
+
+#### 8.2.004.002.003. Comprobación bash history.
+
+![004-002-003](./images/004-002-003-comprobacion-bash-history.png)
+
+[Volver al texto de la imagen en la Sección 4.2.](#42-imagen-003)
+
+---
+
+#### 8.2.004.003.001. Usuarios del sistema.
+
+![004-003-001](./images/004-003-001-investigacion-etc-passwd.png)
+
+[Volver al texto de la imagen en la Sección 4.3.](#43-imagen-001)
+
+---
+
+#### 8.2.004.004.001. Análisis auth log 1.
+
+![004-004-001](./images/004-004-001-analisis-auth-log-1.png)
+
+[Volver al texto de la imagen en la Sección 4.4.](#44-imagen-001)
+
+---
+
+#### 8.2.004.004.002. Análisis apache access log 1.
+
+![004-004-002](./images/004-004-002-analisis-apache-access-log-1.png)
+
+[Volver al texto de la imagen en la Sección 4.4.](#44-imagen-002)
+
+---
+
+#### 8.2.004.004.003. Análisis apache error log 1.
+
+![004-004-003](./images/004-004-003-analisis-apache-error-log-1.png)
+
+[Volver al texto de la imagen en la Sección 4.4.](#44-imagen-003)
+
+---
+
+#### 8.2.004.004.004. Análisis MySQL log 1.
+
+![004-004-004](./images/004-004-004-analisis-mysql-1.png)
+
+[Volver al texto de la imagen en la Sección 4.4.](#44-imagen-004)
+
+---
+
+#### 8.2.004.004.005. Análisis MySQL log 2.
+
+![004-004-005](./images/004-004-005-analisis-mysql-2.png)
+
+[Volver al texto de la imagen en la Sección 4.4.](#44-imagen-005)
+
+---
+
+#### 8.2.004.004.006. Análisis web.
+
+![004-004-006](./images/004-004-006-analisis-web-1.png)
+
+[Volver al texto de la imagen en la Sección 4.4.](#44-imagen-006)
+
+---
+
+#### 8.2.004.004.007. Análisis index.
+
+![004-004-007](./images/004-004-007-analisis-web-2.png)
+
+[Volver al texto de la imagen en la Sección 4.4.](#44-imagen-007)
+
+---
+
+#### 8.2.004.004.008. Análisis mails.
+
+![004-004-008](./images/004-004-008-analisis-mail-1.png)
+
+[Volver al texto de la imagen en la Sección 4.4.](#44-imagen-008)
+
+---
+
+#### 8.2.004.004.009. Análisis mails 2.
+
+![004-004-009](./images/004-004-009-analisis-mail-2.png)
+
+[Volver al texto de la imagen en la Sección 4.4.](#44-imagen-009)
+
+---
+
+#### 8.2.004.004.010. Análisis mails 3.
+
+![004-004-010](./images/004-004-010-analisis-mail-3.png)
+
+[Volver al texto de la imagen en la Sección 4.4.](#44-imagen-010)
+
+---
+
+#### 8.2.004.004.011. Análisis mails 4.
+
+![004-004-011](./images/004-004-011-analisis-mail-4.png)
+
+[Volver al texto de la imagen en la Sección 4.4.](#44-imagen-011)
+
+---
+
+#### 8.2.004.004.012. Análisis mails 5.
+
+![004-004-012](./images/004-004-012-analisis-mail-5.png)
+
+[Volver al texto de la imagen en la Sección 4.4.](#44-imagen-012)
+
+---
+
+#### 8.2.004.004.013. Análisis mails 6.
+
+![004-004-013](./images/004-004-013-analisis-mail-6.png)
+
+[Volver al texto de la imagen en la Sección 4.4.](#44-imagen-013)
+
+---
+
+#### 8.2.004.004.014. Análisis mails 7.
+
+![004-004-014](./images/004-004-014-analisis-mail-7.png)
+
+[Volver al texto de la imagen en la Sección 4.4.](#44-imagen-014)
+
+---
+
+#### 8.2.004.004.015. Análisis mails 8.
+
+![004-004-015](./images/004-004-015-analisis-mail-8.png)
+
+[Volver al texto de la imagen en la Sección 4.4.](#44-imagen-015)
+
+---
+
+#### 8.2.004.004.016. Análisis mails 9.
+
+![004-004-016](./images/004-004-016-analisis-mail-9.png)
+
+[Volver al texto de la imagen en la Sección 4.4.](#44-imagen-016)
 
 
 
@@ -3439,7 +4126,7 @@ from datetime import datetime, timedelta
 initial_timestamp = datetime(2018, 8, 28, 10, 23, 7)
 
 # Additional microseconds
-additional_microseconds = 0.0 #insertar aqui el timestamp
+additional_microseconds = 0.0 #insertar aquí el timestamp
 
 # Convert microseconds to seconds for timedelta
 additional_seconds = additional_microseconds / 1_000_000
@@ -3466,7 +4153,7 @@ Explicado el script anterior, un resumen de los datos de interés para este aná
 
 [0.0] Memory: 983488K/1048180K available (12300K kernel code, 2391K rwdata, 3908K rodata, 2372K init, 2376K bss, 64692K reserved, 0K cma-reserved)
 
-# Seguridad, ver referencia 12
+# Seguridad, ver referencia 17.
 
 [228243285.0] evm: security.selinux
 [232011134.0] evm: security.SMACK64
@@ -3478,7 +4165,7 @@ Explicado el script anterior, un resumen de los datos de interés para este aná
 [255626852.0] evm: security.capability
 
 
-## EL RCT no coindice con el timestamp!!!, puede ser una coordinacion de tiempos. el 28 de agosto de 2018 a las 10:27:31 UTC..
+## EL RCT no coincide con el timestamp!!!, puede ser una coordinación de tiempos. el 28 de agosto de 2018 a las 10:27:31 UTC..
 
 [264281367.0] RTC time: 12:04:38, date: 12/21/18
 
@@ -3830,6 +4517,688 @@ Pid      Name                 Command Time                   Command
 
 ---
 
+#### 8.4.003.005.001.001. Comando `sudo python2.7 vol.py --profile=LinuxlinuxUbuntu_4_15_0-1021-aws_profilex64 -f '/home/jrodg85/Server_RAM.mem' linux_pslist`.
+
+
+~~~Shell
+sudo python2.7 vol.py --profile=LinuxlinuxUbuntu_4_15_0-1021-aws_profilex64 -f '/home/jrodg85/Server_RAM.mem' linux_pslist
+~~~
+
+La respuesta de la consola ha sido la siguiente:
+
+~~~
+Volatility Foundation Volatility Framework 2.6.1
+Offset             Name              Pid     PPid    Uid    Gid    DTB                Start Time
+------------------ ----------------- ------- ------- ------ ------ ------------------ ----------
+0xffff90057df50000 systemd           1       0       0      0      0x000000003b7ba000 2018-12-21 12:04:59 UTC+0000
+0xffff90057df55b00 kthreadd          2       0       0      0      ------------------ 2018-12-21 12:04:59 UTC+0000
+0xffff90057df52d80 kworker/0:0H      4       2       0      0      ------------------ 2018-12-21 12:04:59 UTC+0000
+0xffff90057df916c0 mm_percpu_wq      6       2       0      0      ------------------ 2018-12-21 12:04:59 UTC+0000
+0xffff90057df90000 ksoftirqd/0       7       2       0      0      ------------------ 2018-12-21 12:04:59 UTC+0000
+0xffff90057df95b00 rcu_sched         8       2       0      0      ------------------ 2018-12-21 12:04:59 UTC+0000
+0xffff90057df94440 rcu_bh            9       2       0      0      ------------------ 2018-12-21 12:04:59 UTC+0000
+0xffff90057df92d80 migration/0       10      2       0      0      ------------------ 2018-12-21 12:04:59 UTC+0000
+0xffff90057df9db00 watchdog/0        11      2       0      0      ------------------ 2018-12-21 12:04:59 UTC+0000
+0xffff90057dff8000 cpuhp/0           12      2       0      0      ------------------ 2018-12-21 12:04:59 UTC+0000
+0xffff90057dffdb00 kdevtmpfs         13      2       0      0      ------------------ 2018-12-21 12:04:59 UTC+0000
+0xffff90057dffc440 netns             14      2       0      0      ------------------ 2018-12-21 12:04:59 UTC+0000
+0xffff90057dffad80 rcu_tasks_kthre   15      2       0      0      ------------------ 2018-12-21 12:04:59 UTC+0000
+0xffff90057dff96c0 kauditd           16      2       0      0      ------------------ 2018-12-21 12:04:59 UTC+0000
+0xffff90057d49db00 xenbus            17      2       0      0      ------------------ 2018-12-21 12:04:59 UTC+0000
+0xffff90057d49c440 xenwatch          18      2       0      0      ------------------ 2018-12-21 12:04:59 UTC+0000
+0xffff90057d4996c0 khungtaskd        20      2       0      0      ------------------ 2018-12-21 12:04:59 UTC+0000
+0xffff90057d498000 oom_reaper        21      2       0      0      ------------------ 2018-12-21 12:04:59 UTC+0000
+0xffff90057d510000 writeback         22      2       0      0      ------------------ 2018-12-21 12:04:59 UTC+0000
+0xffff90057d515b00 kcompactd0        23      2       0      0      ------------------ 2018-12-21 12:04:59 UTC+0000
+0xffff90057d514440 ksmd              24      2       0      0      ------------------ 2018-12-21 12:04:59 UTC+0000
+0xffff90057d512d80 khugepaged        25      2       0      0      ------------------ 2018-12-21 12:04:59 UTC+0000
+0xffff90057d5116c0 crypto            26      2       0      0      ------------------ 2018-12-21 12:04:59 UTC+0000
+0xffff90057d53db00 kintegrityd       27      2       0      0      ------------------ 2018-12-21 12:04:59 UTC+0000
+0xffff90057d53c440 kblockd           28      2       0      0      ------------------ 2018-12-21 12:04:59 UTC+0000
+0xffff90057d53ad80 ata_sff           29      2       0      0      ------------------ 2018-12-21 12:04:59 UTC+0000
+0xffff90057d5396c0 md                30      2       0      0      ------------------ 2018-12-21 12:04:59 UTC+0000
+0xffff90057d538000 edac-poller       31      2       0      0      ------------------ 2018-12-21 12:04:59 UTC+0000
+0xffff90057d7216c0 devfreq_wq        32      2       0      0      ------------------ 2018-12-21 12:04:59 UTC+0000
+0xffff90057d720000 watchdogd         33      2       0      0      ------------------ 2018-12-21 12:04:59 UTC+0000
+0xffff90057d722d80 kswapd0           36      2       0      0      ------------------ 2018-12-21 12:05:00 UTC+0000
+0xffff90057d724440 ecryptfs-kthrea   37      2       0      0      ------------------ 2018-12-21 12:05:00 UTC+0000
+0xffff900579725b00 kthrotld          79      2       0      0      ------------------ 2018-12-21 12:05:00 UTC+0000
+0xffff900579724440 nvme-wq           80      2       0      0      ------------------ 2018-12-21 12:05:00 UTC+0000
+0xffff900579722d80 scsi_eh_0         81      2       0      0      ------------------ 2018-12-21 12:05:00 UTC+0000
+0xffff9005797216c0 scsi_tmf_0        82      2       0      0      ------------------ 2018-12-21 12:05:00 UTC+0000
+0xffff900579720000 scsi_eh_1         83      2       0      0      ------------------ 2018-12-21 12:05:00 UTC+0000
+0xffff900579718000 scsi_tmf_1        84      2       0      0      ------------------ 2018-12-21 12:05:00 UTC+0000
+0xffff900579710000 ipv6_addrconf     89      2       0      0      ------------------ 2018-12-21 12:05:00 UTC+0000
+0xffff9005796e8000 kstrp             99      2       0      0      ------------------ 2018-12-21 12:05:00 UTC+0000
+0xffff9005796ead80 kworker/0:1H      100     2       0      0      ------------------ 2018-12-21 12:05:00 UTC+0000
+0xffff900576f896c0 raid5wq           280     2       0      0      ------------------ 2018-12-21 12:05:03 UTC+0000
+0xffff900576f7db00 jbd2/xvda1-8      330     2       0      0      ------------------ 2018-12-21 12:05:03 UTC+0000
+0xffff900576f7c440 ext4-rsv-conver   331     2       0      0      ------------------ 2018-12-21 12:05:03 UTC+0000
+0xffff900576f796c0 iscsi_eh          395     2       0      0      ------------------ 2018-12-21 12:05:03 UTC+0000
+0xffff9005797016c0 ib-comp-wq        408     2       0      0      ------------------ 2018-12-21 12:05:04 UTC+0000
+0xffff9005796c16c0 ib_mcast          409     2       0      0      ------------------ 2018-12-21 12:05:04 UTC+0000
+0xffff9005796c5b00 ib_nl_sa_wq       410     2       0      0      ------------------ 2018-12-21 12:05:04 UTC+0000
+0xffff900576f7ad80 lvmetad           414     1       0      0      0x0000000039cf6000 2018-12-21 12:05:04 UTC+0000
+0xffff9005796e96c0 rdma_cm           415     2       0      0      ------------------ 2018-12-21 12:05:04 UTC+0000
+0xffff90057971ad80 systemd-logind    712     1       0      0      0x000000003b2b6000 2018-12-21 12:05:09 UTC+0000
+0xffff900576f88000 dbus-daemon       720     1       103    107    0x000000003bcca000 2018-12-21 12:05:09 UTC+0000
+0xffff900576f8ad80 cron              733     1       0      0      0x000000003baac000 2018-12-21 12:05:10 UTC+0000
+0xffff9005796c0000 accounts-daemon   734     1       0      0      0x000000003bb3c000 2018-12-21 12:05:10 UTC+0000
+0xffff9005796ec440 lxcfs             737     1       0      0      0x000000003b00e000 2018-12-21 12:05:10 UTC+0000
+0xffff90057b014440 atd               749     1       0      0      0x000000003b1a4000 2018-12-21 12:05:10 UTC+0000
+0xffff90057ae28000 polkitd           771     1       0      0      0x000000003af6e000 2018-12-21 12:05:10 UTC+0000
+0xffff90057ae2ad80 agetty            785     1       0      0      0x000000003bcc2000 2018-12-21 12:05:10 UTC+0000
+0xffff90057ae2db00 agetty            791     1       0      0      0x0000000039ff8000 2018-12-21 12:05:10 UTC+0000
+0xffff90057bd196c0 loop0             951     2       0      0      ------------------ 2018-12-21 12:05:15 UTC+0000
+0xffff90057bd18000 loop1             1103    2       0      0      ------------------ 2018-12-21 12:05:18 UTC+0000
+0xffff90057a73c440 systemd-network   2788    1       100    102    0x000000003a536000 2018-12-21 12:10:43 UTC+0000
+0xffff90057a73db00 systemd-resolve   2804    1       101    103    0x0000000039ea6000 2018-12-21 12:10:43 UTC+0000
+0xffff900579712d80 systemd-timesyn   2818    1       -      62583  0x000000003a75a000 2018-12-21 12:10:43 UTC+0000
+0xffff90057a7396c0 systemd-journal   2825    1       0      0      0x0000000004406000 2018-12-21 12:10:43 UTC+0000
+0xffff9005445a0000 uuidd             5077    1       106    110    0x0000000039ec8000 2018-12-21 12:11:11 UTC+0000
+0xffff90057bd1ad80 systemd-udevd     5160    1       0      0      0x000000003a790000 2018-12-21 12:11:12 UTC+0000
+0xffff90057bd1db00 xfsalloc          10374   2       0      0      ------------------ 2018-12-21 12:11:28 UTC+0000
+0xffff90057bd1c440 xfs_mru_cache     10375   2       0      0      ------------------ 2018-12-21 12:11:28 UTC+0000
+0xffff90054466ad80 iscsid            10988   1       0      0      0x0000000036d48000 2018-12-21 12:11:35 UTC+0000
+0xffff90054466db00 iscsid            10989   1       0      0      0x0000000039d76000 2018-12-21 12:11:35 UTC+0000
+0xffff90057d49ad80 networkd-dispat   11199   1       0      0      0x0000000039e26000 2018-12-21 12:11:37 UTC+0000
+0xffff90057940c440 sshd              12159   1       0      0      0x000000000472c000 2018-12-21 12:12:06 UTC+0000
+0xffff90054f4cdb00 mysqld            5127    1       111    116    0x000000003af40000 2018-12-21 18:18:37 UTC+0000
+0xffff90057b4cdb00 apache2           5469    1       0      0      0x00000000044da000 2018-12-21 18:29:25 UTC+0000
+0xffff9005445a2d80 loop2             6189    2       0      0      ------------------ 2018-12-21 19:10:22 UTC+0000
+0xffff9005445a16c0 snapd             6219    1       0      0      0x0000000039eb2000 2018-12-21 19:10:23 UTC+0000
+0xffff90054da68000 loop3             6349    2       0      0      ------------------ 2018-12-21 19:10:26 UTC+0000
+0xffff9005797196c0 amazon-ssm-agen   6445    1       0      0      0x0000000039e12000 2018-12-21 19:10:27 UTC+0000
+0xffff9005796edb00 rsyslogd          26254   1       102    106    0x0000000017b26000 2018-12-30 10:44:51 UTC+0000
+0xffff900557adad80 master            26489   1       0      0      0x0000000036a42000 2018-12-30 10:46:13 UTC+0000
+0xffff900557ad8000 qmgr              26500   26489   112    117    0x0000000017baa000 2018-12-30 10:46:13 UTC+0000
+0xffff90057940ad80 kworker/0:0       19056   2       0      0      ------------------ 2019-01-03 04:24:46 UTC+0000
+0xffff90057b010000 kworker/u30:2     19454   2       0      0      ------------------ 2019-01-03 05:50:42 UTC+0000
+0xffff9005448adb00 apache2           19704   5469    33     33     0x000000003a7ec000 2019-01-03 06:25:21 UTC+0000
+0xffff9005448ac440 apache2           19705   5469    33     33     0x000000003ce4a000 2019-01-03 06:25:21 UTC+0000
+0xffff9005448aad80 apache2           19706   5469    33     33     0x000000003cf7e000 2019-01-03 06:25:21 UTC+0000
+0xffff900557b6ad80 apache2           19707   5469    33     33     0x000000002c6d8000 2019-01-03 06:25:21 UTC+0000
+0xffff900579f34440 apache2           19708   5469    33     33     0x000000003ae1a000 2019-01-03 06:25:21 UTC+0000
+0xffff900579715b00 kworker/0:1       19709   2       0      0      ------------------ 2019-01-03 06:25:21 UTC+0000
+0xffff900579f32d80 apache2           19952   5469    33     33     0x000000002c644000 2019-01-03 06:33:15 UTC+0000
+0xffff900579f316c0 apache2           19953   5469    33     33     0x0000000036cfc000 2019-01-03 06:33:16 UTC+0000
+0xffff900579f30000 apache2           20230   5469    33     33     0x000000000453c000 2019-01-03 07:26:31 UTC+0000
+0xffff900557b6db00 apache2           20231   5469    33     33     0x000000003ad62000 2019-01-03 07:26:32 UTC+0000
+0xffff900557b6c440 apache2           20232   5469    33     33     0x0000000036ccc000 2019-01-03 07:26:33 UTC+0000
+0xffff900557b696c0 apache2           20233   5469    33     33     0x000000003b35e000 2019-01-03 07:26:34 UTC+0000
+0xffff900557b68000 sh                20381   19952   33     33     ------------------ 2019-01-03 07:32:10 UTC+0000
+0xffff90054f620000 sshd              20483   12159   0      0      0x0000000016244000 2019-01-03 07:50:04 UTC+0000
+0xffff9005797116c0 systemd           20485   1       1000   1000   0x000000003b608000 2019-01-03 07:50:05 UTC+0000
+0xffff9005445c0000 (sd-pam)          20486   20485   1000   1000   0x0000000036902000 2019-01-03 07:50:05 UTC+0000
+0xffff90057b6bdb00 sshd              20576   20483   1000   1000   0x0000000019760000 2019-01-03 07:50:05 UTC+0000
+0xffff90057b6bc440 bash              20577   20576   1000   1000   0x000000001624c000 2019-01-03 07:50:05 UTC+0000
+0xffff900542fadb00 pickup            20703   26489   112    117    0x000000002c792000 2019-01-03 08:01:34 UTC+0000
+0xffff90057df516c0 kworker/u30:1     20781   2       0      0      ------------------ 2019-01-03 08:09:21 UTC+0000
+0xffff90057df54440 kworker/u30:0     20886   2       0      0      ------------------ 2019-01-03 08:16:28 UTC+0000
+0xffff90057b4396c0 sudo              20893   20577   0      0      0x000000003b602000 2019-01-03 08:17:06 UTC+0000
+0xffff90057b43c440 insmod            20894   20893   0      0      0x0000000002f26000 2019-01-03 08:17:06 UTC+0000
+0xffff90057b015b00 kworker/0:2       20898   2       0      0      ------------------ 2019-01-03 08:17:06 UTC+0000
+~~~
+
+
+[Volver al texto del comando en la Sección 3.5.1.](#351-comando-001)
+
+---
+
+#### 8.4.003.005.002.001. Comando `sudo python2.7 vol.py --profile=LinuxlinuxUbuntu_4_15_0-1021-aws_profilex64 -f '/home/jrodg85/Server_RAM.mem' linux_pstree`.
+
+
+~~~Shell
+sudo python2.7 vol.py --profile=LinuxlinuxUbuntu_4_15_0-1021-aws_profilex64 -f '/home/jrodg85/Server_RAM.mem' linux_pstree
+~~~
+
+La respuesta de la consola ha sido la siguiente:
+
+~~~
+Volatility Foundation Volatility Framework 2.6.1
+
+Name                Pid     Uid
+------------------- ------- -------
+systemd             1
+.lvmetad            414
+.systemd-logind     712
+.dbus-daemon        720     103
+.cron               733
+.accounts-daemon    734
+.lxcfs              737
+.atd                749
+.polkitd            771
+.agetty             785
+.agetty             791
+.systemd-network    2788    100
+.systemd-resolve    2804    101
+.systemd-timesyn    2818    62583
+.systemd-journal    2825
+.uuidd              5077    106
+.systemd-udevd      5160
+.iscsid             10988
+.iscsid             10989
+.networkd-dispat    11199
+.sshd               12159
+..sshd              20483
+...sshd             20576   1000
+....bash            20577   1000
+.....sudo           20893
+......insmod        20894
+.mysqld             5127    111
+.apache2            5469
+..apache2           19704   33
+..apache2           19705   33
+..apache2           19706   33
+..apache2           19707   33
+..apache2           19708   33
+..apache2           19952   33
+...[sh]             20381   33
+..apache2           19953   33
+..apache2           20230   33
+..apache2           20231   33
+..apache2           20232   33
+..apache2           20233   33
+.snapd              6219
+.amazon-ssm-agen    6445
+.rsyslogd           26254   102
+.master             26489
+..qmgr              26500   112
+..pickup            20703   112
+.systemd            20485   1000
+..(sd-pam)          20486   1000
+[kthreadd]          2
+.[kworker/0:0H]     4
+.[mm_percpu_wq]     6
+.[ksoftirqd/0]      7
+.[rcu_sched]        8
+.[rcu_bh]           9
+.[migration/0]      10
+.[watchdog/0]       11
+.[cpuhp/0]          12
+.[kdevtmpfs]        13
+.[netns]            14
+.[rcu_tasks_kthre]  15
+.[kauditd]          16
+.[xenbus]           17
+.[xenwatch]         18
+.[khungtaskd]       20
+.[oom_reaper]       21
+.[writeback]        22
+.[kcompactd0]       23
+.[ksmd]             24
+.[khugepaged]       25
+.[crypto]           26
+.[kintegrityd]      27
+.[kblockd]          28
+.[ata_sff]          29
+.[md]               30
+.[edac-poller]      31
+.[devfreq_wq]       32
+.[watchdogd]        33
+.[kswapd0]          36
+.[ecryptfs-kthrea]  37
+.[kthrotld]         79
+.[nvme-wq]          80
+.[scsi_eh_0]        81
+.[scsi_tmf_0]       82
+.[scsi_eh_1]        83
+.[scsi_tmf_1]       84
+.[ipv6_addrconf]    89
+.[kstrp]            99
+.[kworker/0:1H]     100
+.[raid5wq]          280
+.[jbd2/xvda1-8]     330
+.[ext4-rsv-conver]  331
+.[iscsi_eh]         395
+.[ib-comp-wq]       408
+.[ib_mcast]         409
+.[ib_nl_sa_wq]      410
+.[rdma_cm]          415
+.[loop0]            951
+.[loop1]            1103
+.[xfsalloc]         10374
+.[xfs_mru_cache]    10375
+.[loop2]            6189
+.[loop3]            6349
+.[kworker/0:0]      19056
+.[kworker/u30:2]    19454
+.[kworker/0:1]      19709
+.[kworker/u30:1]    20781
+.[kworker/u30:0]    20886
+.[kworker/0:2]      20898
+~~~
+
+[Volver al texto del comando en la Sección 3.5.2.](#352-comando-001)
+
+---
+
+---
+
+#### 8.4.003.006.003.001. Comando `sudo python2.7 vol.py --profile=LinuxlinuxUbuntu_4_15_0-1021-aws_profilex64 -f '/home/jrodg85/Server_RAM.mem' linux_netstat`.
+
+~~~Shell
+sudo python2.7 vol.py --profile=LinuxlinuxUbuntu_4_15_0-1021-aws_profilex64 -f '/home/jrodg85/Server_RAM.mem' linux_netstat
+~~~
+
+La respuesta de la consola ha sido la siguiente:
+
+~~~
+Volatility Foundation Volatility Framework 2.6.1
+UNIX 26653              systemd/1     
+UNIX 26655              systemd/1     /run/systemd/private
+UNIX 439014             systemd/1     
+UNIX 12401              systemd/1     /run/systemd/notify
+UNIX 12402              systemd/1     
+UNIX 12403              systemd/1     
+UNIX 674406             systemd/1     /run/systemd/journal/stdout
+UNIX 27271              systemd/1     
+UNIX 27272              systemd/1     
+UNIX 12487              systemd/1     /run/lvm/lvmpolld.socket
+UNIX 16183              systemd/1     /run/uuidd/request
+UNIX 16173              systemd/1     /run/acpid.socket
+UNIX 12489              systemd/1     /run/systemd/journal/dev-log
+UNIX 96496              systemd/1     /run/systemd/journal/stdout
+UNIX 45081              systemd/1     /run/systemd/journal/stdout
+UNIX 43741              systemd/1     /run/systemd/journal/stdout
+UNIX 32383              systemd/1     /run/systemd/journal/stdout
+UNIX 32104              systemd/1     /run/systemd/journal/stdout
+UNIX 27373              systemd/1     /run/systemd/journal/stdout
+UNIX 27010              systemd/1     /run/systemd/journal/stdout
+UNIX 26769              systemd/1     /run/systemd/journal/stdout
+UNIX 13606              systemd/1     /run/systemd/journal/stdout
+UNIX 18718              systemd/1     /run/systemd/journal/stdout
+UNIX 18729              systemd/1     /run/systemd/journal/stdout
+UNIX 18730              systemd/1     /run/systemd/journal/stdout
+UNIX 18731              systemd/1     /run/systemd/journal/stdout
+UNIX 18756              systemd/1     /run/systemd/journal/stdout
+UNIX 97213              systemd/1     /run/systemd/journal/stdout
+UNIX 16178              systemd/1     /run/snapd.socket
+UNIX 16180              systemd/1     /run/snapd-snap.socket
+UNIX 12732              systemd/1     /run/udev/control
+UNIX 12878              systemd/1     /run/lvm/lvmetad.socket
+UNIX 16171              systemd/1     /var/run/dbus/system_bus_socket
+UNIX 12417              systemd/1     /run/systemd/journal/stdout
+UNIX 12419              systemd/1     /run/systemd/journal/socket
+UNIX 12532              systemd/1     /run/systemd/journal/syslog
+UNIX 16191              systemd/1     /var/lib/lxd/unix.socket
+UNIX 13181              lvmetad/414   
+UNIX 13181              lvmetad/414   
+UNIX 12878              lvmetad/414   /run/lvm/lvmetad.socket
+UNIX 16470       systemd-logind/712   
+UNIX 16470       systemd-logind/712   
+UNIX 16548       systemd-logind/712   
+UNIX 16630       systemd-logind/712   
+UNIX 16785          dbus-daemon/720   
+UNIX 16785          dbus-daemon/720   
+UNIX 16171          dbus-daemon/720   /var/run/dbus/system_bus_socket
+UNIX 16822          dbus-daemon/720   
+UNIX 16823          dbus-daemon/720   
+UNIX 16824          dbus-daemon/720   
+UNIX 26801          dbus-daemon/720   /var/run/dbus/system_bus_socket
+UNIX 43825          dbus-daemon/720   /var/run/dbus/system_bus_socket
+UNIX 16827          dbus-daemon/720   /var/run/dbus/system_bus_socket
+UNIX 27245          dbus-daemon/720   /var/run/dbus/system_bus_socket
+UNIX 17410          dbus-daemon/720   /var/run/dbus/system_bus_socket
+UNIX 18201          dbus-daemon/720   /var/run/dbus/system_bus_socket
+UNIX 26654          dbus-daemon/720   /var/run/dbus/system_bus_socket
+UNIX 16917                 cron/733   
+UNIX 16917                 cron/733   
+UNIX 16999      accounts-daemon/734   
+UNIX 16999      accounts-daemon/734   
+UNIX 17409      accounts-daemon/734   
+UNIX 17231                lxcfs/737   
+UNIX 17231                lxcfs/737   
+UNIX 18200              polkitd/771   
+UNIX 26767      systemd-network/2788  
+UNIX 26767      systemd-network/2788  
+UNIX 26789      systemd-network/2788  
+UNIX 26796      systemd-network/2788  
+UNIX 26797      systemd-network/2788  
+UNIX 26798      systemd-network/2788  
+UNIX 26799      systemd-network/2788  
+UNIX 26800      systemd-network/2788  
+UDP      172.31.38.110   :   68 0.0.0.0         :    0                   systemd-network/2788 
+UNIX 27007      systemd-resolve/2804  
+UNIX 27007      systemd-resolve/2804  
+UNIX 27228      systemd-resolve/2804  
+UNIX 27244      systemd-resolve/2804  
+UDP      127.0.0.53      :   53 0.0.0.0         :    0                   systemd-resolve/2804 
+TCP      127.0.0.53      :   53 0.0.0.0         :    0 LISTEN            systemd-resolve/2804 
+UNIX 27371      systemd-timesyn/2818  
+UNIX 27371      systemd-timesyn/2818  
+UNIX 27393      systemd-timesyn/2818  
+UNIX 27396      systemd-timesyn/2818  
+UNIX 27397      systemd-timesyn/2818  
+UNIX 27398      systemd-timesyn/2818  
+UNIX 27399      systemd-timesyn/2818  
+UNIX 12417      systemd-journal/2825  /run/systemd/journal/stdout
+UNIX 12419      systemd-journal/2825  /run/systemd/journal/socket
+UNIX 12489      systemd-journal/2825  /run/systemd/journal/dev-log
+UNIX 27373      systemd-journal/2825  /run/systemd/journal/stdout
+UNIX 43741      systemd-journal/2825  /run/systemd/journal/stdout
+UNIX 27010      systemd-journal/2825  /run/systemd/journal/stdout
+UNIX 26769      systemd-journal/2825  /run/systemd/journal/stdout
+UNIX 96496      systemd-journal/2825  /run/systemd/journal/stdout
+UNIX 97213      systemd-journal/2825  /run/systemd/journal/stdout
+UNIX 674406     systemd-journal/2825  /run/systemd/journal/stdout
+UNIX 13606      systemd-journal/2825  /run/systemd/journal/stdout
+UNIX 32383      systemd-journal/2825  /run/systemd/journal/stdout
+UNIX 18718      systemd-journal/2825  /run/systemd/journal/stdout
+UNIX 18729      systemd-journal/2825  /run/systemd/journal/stdout
+UNIX 18730      systemd-journal/2825  /run/systemd/journal/stdout
+UNIX 18731      systemd-journal/2825  /run/systemd/journal/stdout
+UNIX 45081      systemd-journal/2825  /run/systemd/journal/stdout
+UNIX 18756      systemd-journal/2825  /run/systemd/journal/stdout
+UNIX 27521      systemd-journal/2825  
+UNIX 32104      systemd-journal/2825  /run/systemd/journal/stdout
+UNIX 32103                uuidd/5077  
+UNIX 32103                uuidd/5077  
+UNIX 16183                uuidd/5077  /run/uuidd/request
+UNIX 32381        systemd-udevd/5160  
+UNIX 32381        systemd-udevd/5160  
+UNIX 12732        systemd-udevd/5160  /run/udev/control
+UNIX 32384        systemd-udevd/5160  
+UNIX 32388        systemd-udevd/5160  
+UNIX 32389        systemd-udevd/5160  
+UNIX 43155               iscsid/10988 
+UNIX 43143               iscsid/10989 
+UNIX 43153               iscsid/10989 
+UNIX 43740      networkd-dispat/11199 
+UNIX 43740      networkd-dispat/11199 
+UNIX 43824      networkd-dispat/11199 
+UNIX 45080                 sshd/12159 
+UNIX 45080                 sshd/12159 
+TCP      0.0.0.0         :   22 0.0.0.0         :    0 LISTEN                       sshd/12159
+TCP      ::              :   22 ::              :    0 LISTEN                       sshd/12159
+TCP      127.0.0.1       : 3306 0.0.0.0         :    0 LISTEN                     mysqld/5127 
+UNIX 90469               mysqld/5127  /var/run/mysqld/mysqld.sock
+TCP      0.0.0.0         :    0 0.0.0.0         :    0 CLOSE                     apache2/5469 
+TCP      ::              :   80 ::              :    0 LISTEN                    apache2/5469 
+TCP      0.0.0.0         :    0 0.0.0.0         :    0 CLOSE                     apache2/5469 
+TCP      ::              :  443 ::              :    0 LISTEN                    apache2/5469 
+UNIX 96495                snapd/6219  
+UNIX 96495                snapd/6219  
+UNIX 16178                snapd/6219  /run/snapd.socket
+UNIX 16180                snapd/6219  /run/snapd-snap.socket
+UNIX 97212      amazon-ssm-agen/6445  
+UNIX 97212      amazon-ssm-agen/6445  
+UNIX 12532             rsyslogd/26254 /run/systemd/journal/syslog
+UNIX 439139            rsyslogd/26254 /var/spool/postfix/dev/log
+UNIX 439143            rsyslogd/26254 
+UNIX 440157              master/26489 
+TCP      127.0.0.1       :   25 0.0.0.0         :    0 LISTEN                     master/26489
+TCP      ::1             :   25 ::              :    0 LISTEN                     master/26489
+UNIX 440176              master/26489 
+UNIX 440177              master/26489 
+UNIX 440178              master/26489 public/pickup
+UNIX 440179              master/26489 
+UNIX 440180              master/26489 
+UNIX 440182              master/26489 public/cleanup
+UNIX 440183              master/26489 
+UNIX 440184              master/26489 
+UNIX 440185              master/26489 public/qmgr
+UNIX 440186              master/26489 
+UNIX 440187              master/26489 
+UNIX 440189              master/26489 private/tlsmgr
+UNIX 440190              master/26489 
+UNIX 440191              master/26489 
+UNIX 440192              master/26489 private/rewrite
+UNIX 440193              master/26489 
+UNIX 440194              master/26489 
+UNIX 440195              master/26489 private/bounce
+UNIX 440196              master/26489 
+UNIX 440197              master/26489 
+UNIX 440198              master/26489 private/defer
+UNIX 440199              master/26489 
+UNIX 440200              master/26489 
+UNIX 440201              master/26489 private/trace
+UNIX 440202              master/26489 
+UNIX 440203              master/26489 
+UNIX 440204              master/26489 private/verify
+UNIX 440205              master/26489 
+UNIX 440206              master/26489 
+UNIX 440207              master/26489 public/flush
+UNIX 440208              master/26489 
+UNIX 440209              master/26489 
+UNIX 440210              master/26489 private/proxymap
+UNIX 440211              master/26489 
+UNIX 440212              master/26489 
+UNIX 440213              master/26489 private/proxywrite
+UNIX 440214              master/26489 
+UNIX 440215              master/26489 
+UNIX 440216              master/26489 private/smtp
+UNIX 440217              master/26489 
+UNIX 440218              master/26489 
+UNIX 440219              master/26489 private/relay
+UNIX 440220              master/26489 
+UNIX 440221              master/26489 
+UNIX 440222              master/26489 public/showq
+UNIX 440223              master/26489 
+UNIX 440224              master/26489 
+UNIX 440225              master/26489 private/error
+UNIX 440226              master/26489 
+UNIX 440227              master/26489 
+UNIX 440228              master/26489 private/retry
+UNIX 440229              master/26489 
+UNIX 440230              master/26489 
+UNIX 440231              master/26489 private/discard
+UNIX 440232              master/26489 
+UNIX 440233              master/26489 
+UNIX 440234              master/26489 private/local
+UNIX 440235              master/26489 
+UNIX 440236              master/26489 
+UNIX 440237              master/26489 private/virtual
+UNIX 440238              master/26489 
+UNIX 440239              master/26489 
+UNIX 440240              master/26489 private/lmtp
+UNIX 440241              master/26489 
+UNIX 440242              master/26489 
+UNIX 440243              master/26489 private/anvil
+UNIX 440244              master/26489 
+UNIX 440245              master/26489 
+UNIX 440246              master/26489 private/scache
+UNIX 440247              master/26489 
+UNIX 440248              master/26489 
+UNIX 440249              master/26489 private/maildrop
+UNIX 440250              master/26489 
+UNIX 440251              master/26489 
+UNIX 440252              master/26489 private/uucp
+UNIX 440253              master/26489 
+UNIX 440254              master/26489 
+UNIX 440255              master/26489 private/ifmail
+UNIX 440256              master/26489 
+UNIX 440257              master/26489 
+UNIX 440258              master/26489 private/bsmtp
+UNIX 440259              master/26489 
+UNIX 440260              master/26489 
+UNIX 440261              master/26489 private/scalemail-backend
+UNIX 440262              master/26489 
+UNIX 440263              master/26489 
+UNIX 440264              master/26489 private/mailman
+UNIX 440265              master/26489 
+UNIX 440266              master/26489 
+UNIX 440187                qmgr/26500 
+UNIX 440185                qmgr/26500 public/qmgr
+UNIX 440388                qmgr/26500 
+TCP      0.0.0.0         :    0 0.0.0.0         :    0 CLOSE                     apache2/19704
+TCP      ::              :   80 ::              :    0 LISTEN                    apache2/19704
+TCP      0.0.0.0         :    0 0.0.0.0         :    0 CLOSE                     apache2/19704
+TCP      ::              :  443 ::              :    0 LISTEN                    apache2/19704
+TCP      0.0.0.0         :    0 0.0.0.0         :    0 CLOSE                     apache2/19705
+TCP      ::              :   80 ::              :    0 LISTEN                    apache2/19705
+TCP      0.0.0.0         :    0 0.0.0.0         :    0 CLOSE                     apache2/19705
+TCP      ::              :  443 ::              :    0 LISTEN                    apache2/19705
+TCP      0.0.0.0         :    0 0.0.0.0         :    0 CLOSE                     apache2/19706
+TCP      ::              :   80 ::              :    0 LISTEN                    apache2/19706
+TCP      0.0.0.0         :    0 0.0.0.0         :    0 CLOSE                     apache2/19706
+TCP      ::              :  443 ::              :    0 LISTEN                    apache2/19706
+TCP      0.0.0.0         :    0 0.0.0.0         :    0 CLOSE                     apache2/19707
+TCP      ::              :   80 ::              :    0 LISTEN                    apache2/19707
+TCP      0.0.0.0         :    0 0.0.0.0         :    0 CLOSE                     apache2/19707
+TCP      ::              :  443 ::              :    0 LISTEN                    apache2/19707
+TCP      0.0.0.0         :    0 0.0.0.0         :    0 CLOSE                     apache2/19708
+TCP      ::              :   80 ::              :    0 LISTEN                    apache2/19708
+TCP      0.0.0.0         :    0 0.0.0.0         :    0 CLOSE                     apache2/19708
+TCP      ::              :  443 ::              :    0 LISTEN                    apache2/19708
+TCP      0.0.0.0         :    0 0.0.0.0         :    0 CLOSE                     apache2/19952
+TCP      ::              :   80 ::              :    0 LISTEN                    apache2/19952
+TCP      0.0.0.0         :    0 0.0.0.0         :    0 CLOSE                     apache2/19952
+TCP      ::              :  443 ::              :    0 LISTEN                    apache2/19952
+TCP      ::ffff172.31.38.110:   80 ::ffff18.195.165.56:41529 CLOSE_WAIT                apache2/19952
+TCP      172.31.38.110   :46384 172.31.33.128   : 8080 ESTABLISHED               apache2/19952
+TCP      0.0.0.0         :    0 0.0.0.0         :    0 CLOSE                     apache2/19953
+TCP      ::              :   80 ::              :    0 LISTEN                    apache2/19953
+TCP      0.0.0.0         :    0 0.0.0.0         :    0 CLOSE                     apache2/19953
+TCP      ::              :  443 ::              :    0 LISTEN                    apache2/19953
+TCP      0.0.0.0         :    0 0.0.0.0         :    0 CLOSE                     apache2/20230
+TCP      ::              :   80 ::              :    0 LISTEN                    apache2/20230
+TCP      0.0.0.0         :    0 0.0.0.0         :    0 CLOSE                     apache2/20230
+TCP      ::              :  443 ::              :    0 LISTEN                    apache2/20230
+TCP      0.0.0.0         :    0 0.0.0.0         :    0 CLOSE                     apache2/20231
+TCP      ::              :   80 ::              :    0 LISTEN                    apache2/20231
+TCP      0.0.0.0         :    0 0.0.0.0         :    0 CLOSE                     apache2/20231
+TCP      ::              :  443 ::              :    0 LISTEN                    apache2/20231
+TCP      0.0.0.0         :    0 0.0.0.0         :    0 CLOSE                     apache2/20232
+TCP      ::              :   80 ::              :    0 LISTEN                    apache2/20232
+TCP      0.0.0.0         :    0 0.0.0.0         :    0 CLOSE                     apache2/20232
+TCP      ::              :  443 ::              :    0 LISTEN                    apache2/20232
+TCP      0.0.0.0         :    0 0.0.0.0         :    0 CLOSE                     apache2/20233
+TCP      ::              :   80 ::              :    0 LISTEN                    apache2/20233
+TCP      0.0.0.0         :    0 0.0.0.0         :    0 CLOSE                     apache2/20233
+TCP      ::              :  443 ::              :    0 LISTEN                    apache2/20233
+TCP      172.31.38.110   :   22 83.247.136.74   :16666 ESTABLISHED                  sshd/20483
+UNIX 674291                sshd/20483 
+UNIX 674626                sshd/20483 
+UNIX 674389             systemd/20485 
+UNIX 674389             systemd/20485 
+UNIX 674408             systemd/20485 
+UNIX 674432             systemd/20485 /run/user/1000/systemd/notify
+UNIX 674433             systemd/20485 
+UNIX 674434             systemd/20485 
+UNIX 674435             systemd/20485 /run/user/1000/systemd/private
+UNIX 674439             systemd/20485 /run/user/1000/gnupg/S.dirmngr
+UNIX 674440             systemd/20485 /run/user/1000/gnupg/S.gpg-agent.ssh
+UNIX 674441             systemd/20485 /run/user/1000/gnupg/S.gpg-agent.extra
+UNIX 674442             systemd/20485 /run/user/1000/gnupg/S.gpg-agent
+UNIX 674443             systemd/20485 /run/user/1000/gnupg/S.gpg-agent.browser
+UNIX 674389            (sd-pam)/20486 
+UNIX 674389            (sd-pam)/20486 
+UNIX 674395            (sd-pam)/20486 
+TCP      172.31.38.110   :   22 83.247.136.74   :16666 ESTABLISHED                  sshd/20576
+UNIX 674291                sshd/20576 
+UNIX 674625                sshd/20576 
+UNIX 440180              pickup/20703 
+UNIX 440178              pickup/20703 public/pickup
+UNIX 675208              pickup/20703 
+UNIX 676234                sudo/20893 
+~~~
+
+[Volver al texto del comando en la Sección 3.6.3.](#363-comando-001)
+
+---
+
+#### 8.4.003.006.003.002. Resumen del comando `sudo python2.7 vol.py --profile=LinuxlinuxUbuntu_4_15_0-1021-aws_profilex64 -f '/home/jrodg85/Server_RAM.mem' linux_netstat`.
+
+~~~
+Volatility Foundation Volatility Framework 2.6.1
+UDP      172.31.38.110   :   68 0.0.0.0         :    0                   systemd-network/2788 
+UDP      127.0.0.53      :   53 0.0.0.0         :    0                   systemd-resolve/2804 
+TCP      127.0.0.53      :   53 0.0.0.0         :    0 LISTEN            systemd-resolve/2804 
+TCP      0.0.0.0         :   22 0.0.0.0         :    0 LISTEN                       sshd/12159
+TCP      ::              :   22 ::              :    0 LISTEN                       sshd/12159
+TCP      127.0.0.1       : 3306 0.0.0.0         :    0 LISTEN                     mysqld/5127 
+TCP      0.0.0.0         :    0 0.0.0.0         :    0 CLOSE                     apache2/5469 
+TCP      ::              :   80 ::              :    0 LISTEN                    apache2/5469 
+TCP      0.0.0.0         :    0 0.0.0.0         :    0 CLOSE                     apache2/5469 
+TCP      ::              :  443 ::              :    0 LISTEN                    apache2/5469 
+TCP      127.0.0.1       :   25 0.0.0.0         :    0 LISTEN                     master/26489
+TCP      ::1             :   25 ::              :    0 LISTEN                     master/26489
+TCP      0.0.0.0         :    0 0.0.0.0         :    0 CLOSE                     apache2/19704
+TCP      ::              :   80 ::              :    0 LISTEN                    apache2/19704
+TCP      0.0.0.0         :    0 0.0.0.0         :    0 CLOSE                     apache2/19704
+TCP      ::              :  443 ::              :    0 LISTEN                    apache2/19704
+TCP      0.0.0.0         :    0 0.0.0.0         :    0 CLOSE                     apache2/19705
+TCP      ::              :   80 ::              :    0 LISTEN                    apache2/19705
+TCP      0.0.0.0         :    0 0.0.0.0         :    0 CLOSE                     apache2/19705
+TCP      ::              :  443 ::              :    0 LISTEN                    apache2/19705
+TCP      0.0.0.0         :    0 0.0.0.0         :    0 CLOSE                     apache2/19706
+TCP      ::              :   80 ::              :    0 LISTEN                    apache2/19706
+TCP      0.0.0.0         :    0 0.0.0.0         :    0 CLOSE                     apache2/19706
+TCP      ::              :  443 ::              :    0 LISTEN                    apache2/19706
+TCP      0.0.0.0         :    0 0.0.0.0         :    0 CLOSE                     apache2/19707
+TCP      ::              :   80 ::              :    0 LISTEN                    apache2/19707
+TCP      0.0.0.0         :    0 0.0.0.0         :    0 CLOSE                     apache2/19707
+TCP      ::              :  443 ::              :    0 LISTEN                    apache2/19707
+TCP      0.0.0.0         :    0 0.0.0.0         :    0 CLOSE                     apache2/19708
+TCP      ::              :   80 ::              :    0 LISTEN                    apache2/19708
+TCP      0.0.0.0         :    0 0.0.0.0         :    0 CLOSE                     apache2/19708
+TCP      ::              :  443 ::              :    0 LISTEN                    apache2/19708
+TCP      0.0.0.0         :    0 0.0.0.0         :    0 CLOSE                     apache2/19952
+TCP      ::              :   80 ::              :    0 LISTEN                    apache2/19952
+TCP      0.0.0.0         :    0 0.0.0.0         :    0 CLOSE                     apache2/19952
+TCP      ::              :  443 ::              :    0 LISTEN                    apache2/19952
+TCP      ::ffff172.31.38.110:   80 ::ffff18.195.165.56:41529 CLOSE_WAIT                apache2/19952
+TCP      172.31.38.110   :46384 172.31.33.128   : 8080 ESTABLISHED               apache2/19952
+TCP      0.0.0.0         :    0 0.0.0.0         :    0 CLOSE                     apache2/19953
+TCP      ::              :   80 ::              :    0 LISTEN                    apache2/19953
+TCP      0.0.0.0         :    0 0.0.0.0         :    0 CLOSE                     apache2/19953
+TCP      ::              :  443 ::              :    0 LISTEN                    apache2/19953
+TCP      0.0.0.0         :    0 0.0.0.0         :    0 CLOSE                     apache2/20230
+TCP      ::              :   80 ::              :    0 LISTEN                    apache2/20230
+TCP      0.0.0.0         :    0 0.0.0.0         :    0 CLOSE                     apache2/20230
+TCP      ::              :  443 ::              :    0 LISTEN                    apache2/20230
+TCP      0.0.0.0         :    0 0.0.0.0         :    0 CLOSE                     apache2/20231
+TCP      ::              :   80 ::              :    0 LISTEN                    apache2/20231
+TCP      0.0.0.0         :    0 0.0.0.0         :    0 CLOSE                     apache2/20231
+TCP      ::              :  443 ::              :    0 LISTEN                    apache2/20231
+TCP      0.0.0.0         :    0 0.0.0.0         :    0 CLOSE                     apache2/20232
+TCP      ::              :   80 ::              :    0 LISTEN                    apache2/20232
+TCP      0.0.0.0         :    0 0.0.0.0         :    0 CLOSE                     apache2/20232
+TCP      ::              :  443 ::              :    0 LISTEN                    apache2/20232
+TCP      0.0.0.0         :    0 0.0.0.0         :    0 CLOSE                     apache2/20233
+TCP      ::              :   80 ::              :    0 LISTEN                    apache2/20233
+TCP      0.0.0.0         :    0 0.0.0.0         :    0 CLOSE                     apache2/20233
+TCP      ::              :  443 ::              :    0 LISTEN                    apache2/20233
+TCP      172.31.38.110   :   22 83.247.136.74   :16666 ESTABLISHED                  sshd/20483
+TCP      172.31.38.110   :   22 83.247.136.74   :16666 ESTABLISHED                  sshd/20576
+~~~
+
+[Volver al texto del comando en la Sección 3.5.2.](#363-comando-002)
+
+---
+
+#### 8.4.004.001.001. Comando Hash MD5.
+
+~~~PowerShell
+Get-FileHash .\Server_HDD.E01 -Algorithm MD5
+~~
+
+La respuesta de PowerShell es el siguiente:
+
+~~~PowerShell
+Algorithm       Hash                                                                   Path
+---------       ----                                                                   ----
+MD5             324ED7DB769620E3FB55C027480D0EF3                                       C:\Users\jrodg85\Desktop\Nuev...
+~~~
+
+[Volver al texto del comando en la Sección 3.1](#41-comando-001-41-comando-002)
+
+
+---
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
@@ -4004,6 +5373,84 @@ Pid      Name                 Command Time                   Command
 
 ---
 
+#### 8.5.015. Informe memmap:
+
+- Autor: José Enrique Rodríguez González.
+- Título del trabajo: 008-informe-memmap.
+- - URL repositorio Github: [008-informe-memmap.txt](https://github.com/jrodg85/TFM-ANALISIS-FORENSE/blob/main/referencias/008-informe-memmap.txt)
+
+[Volver at texto de la referencia en la Sección 3.3.4.](#334-referencia-015)
+
+---
+
+#### 8.5.016. Informe dmesg:
+
+- Autor: José Enrique Rodríguez González.
+- Título del trabajo: 009-informe-dmesg.
+- URL repositorio Github: [009-informe-dmesg.txt](https://github.com/jrodg85/TFM-ANALISIS-FORENSE/blob/main/referencias/009-informe-dmesg.txt)
+
+[Volver at texto de la referencia en la Sección 3.4.6.](#346-referencia-016)
+
+---
+
+#### 8.5.017. Security elinux.org:
+
+- Autor: Wmat
+- Ultimo editor: Tim Bird
+- Título visualizado: Security
+- Criterio de ordenación predeterminado: Security
+- URL: [https://elinux.org/Security](https://elinux.org/Security)
+
+[Volver at texto de la referencia en la Sección 3.4.6.](#346-referencia-017)
+
+---
+
+#### 8.5.018. Package: python3-certbot-apache (2.1.0-2):
+
+- Autor: Debian.org
+- Título visualizado: Package: python3-certbot-apache (2.1.0-2)
+- URL: [https://packages.debian.org/sid/python3-certbot-apache](https://packages.debian.org/sid/python3-certbot-apache)
+
+[Volver at texto de la referencia en la Sección 3.4.7.](#347-referencia-018)
+
+---
+
+#### 8.5.019. Informe tree:
+
+- Autor: José Enrique Rodríguez González.
+- Título del trabajo: 011-informe-tree.
+- URL repositorio Github: [010-informe-dmesg.txt](https://github.com/jrodg85/TFM-ANALISIS-FORENSE/blob/main/referencias/010-informe-tree.txt)
+
+[Volver at texto de la referencia en la Sección 3.5.3.](#353-referencia-019)
+
+---
+
+#### 8.5.020. Informe invalid user:
+
+- Autor: José Enrique Rodríguez González.
+- Título del trabajo: 011-informe-tree.
+- URL repositorio Github: [011-informe-invalid-user-login.txt](https://github.com/jrodg85/TFM-ANALISIS-FORENSE/blob/main/referencias/011-informe-invalid-user-login.txt)
+
+[Volver at texto de la referencia en la Sección 4.4.](#44-referencia-020)
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 [Volver al Índice del capítulo 8. Anexos.](#índice-del-capítulo-8-anexos)
 
 [Volver al Índice General.](#índice-general)
@@ -4011,6 +5458,119 @@ Pid      Name                 Command Time                   Command
 ---
 
 ## 8.6. Linea de tiempo de evidencias.
+
+- 2019-01-03 04:24:46 UTC+0000
+    - Arranque del proceso kworker/0:0
+        - Pid: 19056
+
+- 2019-01-03 05:50:42 UTC+0000
+    - Arranque del proceso kworker/u30:2
+        - Pid: 19454
+
+- 2019-01-03 06:25:21 UTC+0000
+    - Arranque del proceso apache2
+        - Pid: 19704
+
+- 2019-01-03 06:25:21 UTC+0000
+    - Arranque del proceso apache2
+        - Pid: 19705
+
+- 2019-01-03 06:25:21 UTC+0000
+    - Arranque del proceso apache2
+        - Pid: 19706
+
+- 2019-01-03 06:25:21 UTC+0000
+    - Arranque del proceso apache2
+        - Pid: 19707
+
+- 2019-01-03 06:25:21 UTC+0000
+    - Arranque del proceso apache2
+        - Pid: 19708
+
+- 2019-01-03 06:25:21 UTC+0000
+    - Arranque del proceso kworker/0:1
+        - Pid: 19709
+
+- 2019-01-03 06:33:15 UTC+0000
+    - Arranque del proceso apache2
+        - Pid: 19952
+
+- 2019-01-03 06:33:16 UTC+0000
+    - Arranque del proceso apache2
+        - Pid: 19953
+
+- 2019-01-03 07:26:31 UTC+0000
+    - Arranque del proceso apache2
+        - Pid: 20230
+
+- 2019-01-03 07:26:32 UTC+0000
+    - Arranque del proceso apache2
+        - Pid: 20231
+
+- 2019-01-03 07:26:33 UTC+0000
+    - Arranque del proceso apache2
+        - Pid: 20232
+
+- 2019-01-03 07:26:34 UTC+0000
+    - Arranque del proceso apache2
+        - Pid: 20233
+
+- 2019-01-03 07:32:10 UTC+0000
+    - Arranque del proceso sh
+        - Pid: 20381
+
+- 2019-01-03 07:49:45 UTC+0000
+    - Ver Comandos [Linux bash](#84003004007001-comando-sudo-python27-volpy---profilelinuxlinuxubuntu_4_15_0-1021-aws_profilex64--f-homejrodg85server_rammem-linux_bash).
+
+- 2019-01-03 07:50:04 UTC+0000
+    - Arranque del proceso sshd
+        - Pid: 20483
+
+- 2019-01-03 07:50:05 UTC+0000
+    - Arranque del proceso systemd
+        - Pid: 20485
+
+- 2019-01-03 07:50:05 UTC+0000
+    - Arranque del proceso (sd-pam)
+        - Pid: 20486
+
+- 2019-01-03 07:50:05 UTC+0000
+    - Arranque del proceso sshd
+        - Pid: 20576
+
+- 2019-01-03 07:50:05 UTC+0000
+    - Arranque del proceso bash
+        - Pid: 20577
+
+- 2019-01-03 08:01:34 UTC+0000
+    - Arranque del proceso pickup
+        - Pid: 20703
+
+- 2019-01-03 08:09:21 UTC+0000
+    - Arranque del proceso kworker/u30:1
+        - Pid: 20781
+
+- 2019-01-03 08:16:28 UTC+0000
+    - Arranque del proceso kworker/u30:0
+        - Pid: 20886
+
+- 2019-01-03 08:17:06 UTC+0000
+    - Arranque del proceso sudo
+        - Pid: 20893
+
+- 2019-01-03 08:17:06 UTC+0000
+    - Arranque del proceso insmod
+        - Pid: 20894
+
+- 2019-01-03 08:17:06 UTC+0000
+    - Arranque del proceso kworker/0:2
+        - Pid: 20898
+
+
+
+
+
+
 
 
 
