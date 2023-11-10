@@ -43,7 +43,7 @@ Enero de 2024.
 |El objetivo del presente Trabajo de Fin de Máster es realizar un análisis forense de un ordenador del que se sospecha de que han accedido a los sistemas de forma ilícita. Se comprobará si realmente han accedido, así como el método que han utilizado. Por otro lado, se elaborará un informe con las consecuencias que se derivan del dicho acceso ademas se comprobará si ha habido extracción de información alguna. <br>Por último, y no menos importante, para el presente trabajo se tendrán en cuenta los estándares que existen en la actualidad, como pueden ser la norma ISO 27037, la RFC 3227  o las normas de la Asociación Española de Normalización UNE 71505 y UNE 71506.|
 ||
 
-<br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>
+<br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>
 
 ## Índice General.
 
@@ -296,7 +296,7 @@ Se describe un el siguiente listado de objetivos que se obtienen al analizar el 
 
 ---
 
-<br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>
+<br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>
 
 ## 1.3. Metodologías.
 
@@ -609,7 +609,7 @@ etc.
 
 ---
 
-<br>
+<br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>
 
 ## 1.4. Descripción del entorno de trabajo.
 
@@ -621,8 +621,7 @@ Relativo al ordenador personal destacar las siguientes aplicaciones que se van a
 
 - VirtualBox
 - Volatility
-
-**DEUDA TÉCNICA: Listado de aplicaciones a utilizar en la descripción del entorno de trabajo**
+- Autopsy
 
 Por otro lado, la documentación y redacción del TFM se consolida mediante el uso del repositorio en GitHub TFM-ANÁLISIS-FORENSE (https://github.com/jrodg85/TFM-ANALISIS-FORENSE). Este repositorio no solo sirve como medio para documentar y presentar los hallazgos y metodologías empleadas, sino que también se erige como una herramienta para gestionar versiones y cambios a lo largo del desarrollo del trabajo, facilitando la trazabilidad y coherencia del mismo. Se deben establecer estrategias robustas para garantizar la **<u style='color:red'>integridad</u>** y confidencialidad de la información almacenada, considerando la naturaleza sensible de los datos manejados en la investigación forense.
 
@@ -847,8 +846,6 @@ Cualquier infraestructura informática que tenga una memoria (almacenamiento) es
 
 ---
 
-<br><br>
-
 ### **1.7.5. Perspectiva de tres roles.**
 
 En el análisis de un caso en el que sea necesario el cómputo forense, hay tres roles principales que son importantes y se deben tener en cuenta: el intruso, el administrador y la infraestructura de la seguridad informática, al igual que el investigador.
@@ -935,6 +932,8 @@ Es por esto que el **<u style='color:red'>NIST</u>** (National Institute of Stan
 **[Volver al Índice del capítulo 1. Plan de trabajo.](#índice-del-capítulo-1-plan-de-trabajo)**
 
 ---
+
+<br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>
 
 ### **1.7.7. Herramientas de Análisis Forense.**
 
@@ -1112,7 +1111,7 @@ La presente investigación tiene como propósito fundamental el establecimiento 
 
 ---
 
-<br><br><br><br><br><br><br><br><br><br><br>
+<br><br><br><br><br><br><br><br><br><br>
 
 # 3. Análisis de la memoria RAM.
 
@@ -1158,6 +1157,8 @@ El resultado de este análisis exhaustivo proporcionará una comprensión detall
 
 ---
 
+<br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>
+
 ## 3.1. Acciones previas al análisis de la memoria RAM.
 
 En el presente TFM, se nos ha proporcionado a los alumnos un archivo de captura de memoria RAM .mem. Por otro lado, se nos ha proporcionado los resúmenes o **<u style='color:red'>hash</u>** en MD5 y en SHA1 de los archivos tal y como se muestra en la siguiente imagen.
@@ -1179,7 +1180,7 @@ Es una función matemática unidireccional que resume un mensaje de tamaño vari
 
 Una vez descargado el archivo de captura de la memoria RAM, procedemos a usar PowerShell para determinar el **<u style='color:red'>hash</u>** del archivo. Para ello usamos el comando  "Get-FileHash [Argumento] -Algorithm MD5". En nuestro caso hemos usado los siguientes comandos:
 
-#### [4.1 Comando 001.](#84004001001-comando-hash-md5) &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; [4.1 Comando 002.](#84004001002-comando-hash-sha1)
+#### [3.1 Comando 001.](#84004001001-comando-hash-md5) &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; [3.1 Comando 002.](#84004001002-comando-hash-sha1)
 
 Se puede observar en la siguiente imagen la respuesta de PowerShell de los hashes de MD5 y SHA1.
 
@@ -1294,7 +1295,7 @@ Una vez reiniciado el sistema, procedemos a ejecutar el comando `hostnamectl` o 
 
 ---
 
-<br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>
+<br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>
 
 ### **3.3.2. Instalación y creación del perfil de volatility.**
 
@@ -1417,7 +1418,7 @@ Aunque este dato ya lo sabíamos anteriormente, la salida muestra que la versió
 
 ---
 
-<br><br><br><br><br><br><br><br><br><br><br><br>
+<br><br><br><br><br><br><br><br><br><br><br>
 
 ### **3.4.3. Linux_mount.**
 
@@ -1456,7 +1457,7 @@ Los restantes puntos de montaje siguen patrones similares en cuanto a tipos y op
 
 ---
 
-<br>
+<br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>
 
 ### **3.4.4. Linux_memmap.**
 
@@ -1517,6 +1518,8 @@ Estos son componentes de hardware relacionados con la gestión de interrupciones
 **[Volver al Índice del capítulo 3. Análisis de la memoria RAM.](#índice-del-capítulo-3-análisis-de-la-memoria-ram)**
 
 ---
+
+<br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>
 
 ### **3.4.6. Linux_dmesg.**
 
@@ -1582,7 +1585,13 @@ Los puntos destacables son los siguientes, algunos de estos datos se pueden enco
 12. Posible ataque al servidor el 14 de mayo de 2019 a las 21:55:10 UTC por SQL.
 20. 19 de junio de 2019 a las 20:51:55.627714 UTC. Posible parcheo de la vulnerabilidad.
 
-### 3.4.6. Linux_bash.
+**[Volver al Índice del capítulo 3. Análisis de la memoria RAM.](#índice-del-capítulo-3-análisis-de-la-memoria-ram)**
+
+---
+
+<br><br><br><br><br><br>
+
+### **3.4.7. Linux_bash.**
 
 Por ultimo y no menos importante, ya que considero que es un comando fundamenta para saber que acciones se han realizado a través de la terminal, es el comando `linux_bash`, ya que permite ver que se ha realizado exactamente dentro del sistema, no obtendremos sus respuestas, pero se sabe que comandos se han ejecutado, y por tanto sus consecuencias. El comando a utilizar en este caso es `sudo python2.7 vol.py --profile=LinuxlinuxUbuntu_4_15_0-1021-aws_profilex64 -f '/home/jrodg85/Server_RAM.mem' linux_bash`. En este caso se adjunta una captura completa de los comandos ejecutados.
 
@@ -1691,13 +1700,11 @@ Considero que, por el momento, es casualidad de que una semana después de la in
 
 5. La hora que marca `linux_bash` no parece en cierta manera ser falsa, ya que marca la misma hora.
 
-[Volver al Índice del capítulo 3. Análisis de la memoria RAM.](#índice-del-capítulo-3-análisis-de-la-memoria-ram)
-
-[Volver al Índice General.](#índice-general)
+**[Volver al Índice del capítulo 3. Análisis de la memoria RAM.](#índice-del-capítulo-3-análisis-de-la-memoria-ram) &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; [Volver al Índice General.](#índice-general)**
 
 ---
 
-<br><br><br><br>
+<br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>
 
 ## 3.5. Búsqueda de procesos en funcionamiento de interés para el análisis.
 
@@ -1715,9 +1722,11 @@ Una conclusión muy clara es que estos datos corroboran dos cosas, las fechas de
 
 3. Se llega a la conclusión de que el ataque verdaderamente ha venido por el servidor **<u style='color:red'>Apache</u>** y  no por un servidor SQL ya que las aplicación de **<u style='color:red'>MySQL</u>** estuvo sin ser modificada. Eso no descarta que al tener el acceso a las tablas sin necesidad de privilegios, provoque un error en el sistema y una vulnerabilidad en la entrada no deseada.
 
-[Volver al Índice del capítulo 3. Análisis de la memoria RAM.](#índice-del-capítulo-3-análisis-de-la-memoria-ram)
+**[Volver al Índice del capítulo 3. Análisis de la memoria RAM.](#índice-del-capítulo-3-análisis-de-la-memoria-ram)**
 
 ---
+
+<br><br><br><br><br><br><br><br><br><br><br><br>
 
 ### **3.5.2. Linux_pstree.**
 
@@ -1730,9 +1739,11 @@ Analizando los datos obtenidos, encontramos un UserID 33, sabemos por defecto, l
 
 #### [3.5.2. Imagen 001.](#82003005002001-sudo-nano-etc-passwd)
 
-[Volver al Índice del capítulo 3. Análisis de la memoria RAM.](#índice-del-capítulo-3-análisis-de-la-memoria-ram)
+**[Volver al Índice del capítulo 3. Análisis de la memoria RAM.](#índice-del-capítulo-3-análisis-de-la-memoria-ram)**
 
 ---
+
+<br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>
 
 ### **3.5.3. Linux_recover_filesystem.**
 
@@ -1857,29 +1868,25 @@ Se detecta virus en `/var/www/html/.htaccess`. Este archivo fue modificado por u
 
 En este caso hemos encontrado con un archivo dentro del sistema que puede resultar dañino para el cloud server.
 
-[Volver al Índice del capítulo 3. Análisis de la memoria RAM.](#índice-del-capítulo-3-análisis-de-la-memoria-ram)
-
-[Volver al Índice General.](#índice-general)
+**[Volver al Índice del capítulo 3. Análisis de la memoria RAM.](#índice-del-capítulo-3-análisis-de-la-memoria-ram) &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; [Volver al Índice General.](#índice-general)**
 
 ---
+
+<br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>
 
 ## 3.6. Listado de conexiones de red y conexiones sospechosas.
 
-
-
-
-
-
-
-### 3.6.0. Introducción al listado de conexiones de red y conexiones sospechosas.
+### **3.6.0. Introducción al listado de conexiones de red y conexiones sospechosas.**
 
 La investigación relativo a las conexiones del servidor analizado, nos permitirá tratar de descubrir cuales son las conexiones que tenia el servidor en el momento de realizar la captura de la RAM, de lo que se puede aportar información valiosa a la hora de la realización de los informes.
 
-[Volver al Índice del capítulo 3. Análisis de la memoria RAM.](#índice-del-capítulo-3-análisis-de-la-memoria-ram)
+**[Volver al Índice del capítulo 3. Análisis de la memoria RAM.](#índice-del-capítulo-3-análisis-de-la-memoria-ram)**
 
 ---
 
-### 3.6.1 Linux_arp.
+<br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>
+
+### **3.6.1 Linux_arp.**
 
 En este apartado, nos vamos a enfocar en descubrir la tabla ARP del servidor, para ello ejecutaremos `linux_arp`, gracias a este comando obtendremos una lista detallada de las entradas de ARP, que incluye información vital como las direcciones IP y las direcciones MAC asociadas. Esta tabla es esencial para entender cómo el sistema infectado o comprometido estaba comunicándose con otros dispositivos en la red. La información de la tabla ARP puede revelar conexiones de red previas, identificar dispositivos dentro de la red local con los que el sistema interactuó, y puede ser particularmente útil para rastrear la actividad de red sospechosa o maliciosa. El comando usado en este caso es `sudo python2.7 vol.py --profile=LinuxlinuxUbuntu_4_15_0-1021-aws_profilex64 -f '/home/jrodg85/Server_RAM.mem' linux_arp`. Se adjunta imagen de pantallazo del mismo.
 
@@ -1887,11 +1894,13 @@ En este apartado, nos vamos a enfocar en descubrir la tabla ARP del servidor, pa
 
 Se observa que la VM ha enviado paquetes a las direcciones 172.31.32.1 y 172.31.33.128. Tenemos 0.0.0.0 por lo que hay conexión a una red externa.
 
-[Volver al Índice del capítulo 3. Análisis de la memoria RAM.](#índice-del-capítulo-3-análisis-de-la-memoria-ram)
+**[Volver al Índice del capítulo 3. Análisis de la memoria RAM.](#índice-del-capítulo-3-análisis-de-la-memoria-ram)**
 
 ---
 
-### 3.6.2 Linux_ifconfig.
+<br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>
+
+### **3.6.2 Linux_ifconfig.**
 
 En este apartado lo que se va a realizar es ver cual es la dirección IP del cloud server dentro de su red. Para ello usare el comando `linux_ifconfig`. Con este comando se va a obtener cuatro datos. El primero de ello es la interfaz de conexión. El segundo es la dirección IP. El tercero es la dirección MAC. El cuarto consulta si ese interfaz está en modo promiscuo, es decir, comprobará si dentro de la red, puede ver todos los paquetes del dominio de difusión. El comando que utilizaremos en este caso es `sudo python2.7 vol.py --profile=LinuxlinuxUbuntu_4_15_0-1021-aws_profilex64 -f '/home/jrodg85/Server_RAM.mem' linux_ifconfig`, viene a recordar el comando `ifconfig` el cual revela toda la información de red. Se adjunta imagen de pantallazo del mismo.
 
@@ -1904,11 +1913,13 @@ Un breve análisis de este comando es el siguiente:
 3. La dirección MAC de la VM es 06:4c:cd:f6:51:2c. Se podría estudiar la interfaz de red de esta máquina y hacer un MAC lookup, pero directamente voy a considerar que, al tener constancia de que es una VM, puedo acreditar directamente que es una MAC virtual. Ya que las máquinas virtuales suelen comunicarse a través de una red interna virtual a la red exterior, usando todos ellos la misma MAC física, y siendo esta red interna virtual como un Switch que distribuye a necesidad dentro de la red.
 4. La interfaz de red `eth0` no esta en modo promiscuo o monitor.
 
-[Volver al Índice del capítulo 3. Análisis de la memoria RAM.](#índice-del-capítulo-3-análisis-de-la-memoria-ram)
+**[Volver al Índice del capítulo 3. Análisis de la memoria RAM.](#índice-del-capítulo-3-análisis-de-la-memoria-ram)**
 
 ---
 
-### 3.6.3 Linux_netstat.
+<br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>
+
+### **3.6.3 Linux_netstat.**
 
 En este apartado procederemos a tratar de tener una vision detallada de las conexiones de red, para ello ejecutaremos el comando `linux_netstat`. Con este comando, obtendremos información de  todas las conexiones TCP y UDP activas, incluyendo direcciones IP y puertos locales y remotos, así como el estado de estas conexiones. Esta información es crucial para comprender con qué otros sistemas y servicios estaba interactuando el sistema en cuestión. Es especialmente valioso para identificar comunicaciones sospechosas o no autorizadas, como conexiones a direcciones IP desconocidas o el uso de puertos inusuales, que podrían indicar actividad maliciosa, como exfiltración de datos, comando y control de malware, o accesos no autorizados. El comando a utilizar es `sudo python2.7 vol.py --profile=LinuxlinuxUbuntu_4_15_0-1021-aws_profilex64 -f '/home/jrodg85/Server_RAM.mem' linux_netstat`. Se hace captura del comando.
 
@@ -1940,45 +1951,23 @@ TCP      172.31.38.110   :   22 83.247.136.74   :16666 ESTABLISHED              
     - Son dos conexiones al puerto 22 (SSH) a la ip 83.247.136.74 y puerto 16666. Sin embargo la aplicación de conexión es la misma (sshd) pero con dos Id distintas (20483 y 20576).
 
 
-[Volver al Índice del capítulo 3. Análisis de la memoria RAM.](#índice-del-capítulo-3-análisis-de-la-memoria-ram)
-
-[Volver al Índice General.](#índice-general)
+**[Volver al Índice del capítulo 3. Análisis de la memoria RAM.](#índice-del-capítulo-3-análisis-de-la-memoria-ram) &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; [Volver al Índice General.](#índice-general)**
 
 ---
+
+<br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>
 
 # 4. Análisis del disco duro.
 
-
 ## Índice del capítulo 4. Análisis del disco duro.
 
-
-
-
-
-
-
-
-
-
-
-
-[Volver al Índice General.](#índice-general)
+**[Volver al Índice General.](#índice-general)**
 
 ---
 
-
+<br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>
 
 ## 4.0. Introducción al capítulo 4. Análisis del disco duro.
-
-
-
-
-
-
-
-
-
-
 
 [Volver al Índice del capítulo 4. Análisis del disco duro.](#índice-del-capítulo-4-análisis-del-disco-duro)
 
@@ -1986,7 +1975,7 @@ TCP      172.31.38.110   :   22 83.247.136.74   :16666 ESTABLISHED              
 
 ---
 
-
+<br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>
 
 ## 4.1. Acciones previas al análisis del disco duro.
 
@@ -2023,6 +2012,7 @@ Como conclusión podemos verificar que la **<u style='color:red'>integridad</u>*
 
 ---
 
+<br><br>
 
 ## 4.2. Datos de interés del disco duro.
 
@@ -2046,6 +2036,8 @@ A continuación, procederemos a extraer los archivos en adelante en `C:\TFM-estu
 
 ---
 
+<br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>
+
 ## 4.3. Usuarios del sistema.
 
 A continuación vamos a proceder a investigar los usuarios que hay en el cloud server, para ello vamos a proceder a investigar el cd el archivo `/etc/passwd`,en el comprobaremos los usuarios del sistema.
@@ -2067,10 +2059,9 @@ ubuntu:x:1000:1000:Ubuntu:/home/ubuntu:/bin/bash
 
 ---
 
-
+<br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>
 
 ## 4.4. Análisis de evidencias del disco duro.
-
 
 **AUTH LOG**
 
@@ -2107,9 +2098,9 @@ hace un get a un readme.txt puede una accion de amenaza puesto que se puede obte
 Por otr lado, posteriormente que inyecte un archivo .php dentro de un sistema de carga de imágenes, pues puede ser una vulnerabilidad, ya que se puede estar inyectando código malicioso dentro del sistema. Procedo a la extracción del archivo y análisis con VirusTotal. El resultado muestra que no tiene virus. Aun así se hace un resumen del código en busca de posibles vulnerabilidades llegando a las siguientes conclusiones.
 
 1. Control de Extensiones de Archivos:
-    - Aunque hay una comprobación de las extensiones de archivo permitidas, esta lista está vacía por defecto ($allowedExtensions = array();). Esto podría permitir la carga de tipos de archivos potencialmente peligrosos si no se configura adecuadamente.
+    - Aunque hay una comprobación de las extensiones de archivo permitidas, esta lista está vacía por defecto (`$allowedExtensions = array();`). Esto podría permitir la carga de tipos de archivos potencialmente peligrosos si no se configura adecuadamente.
 2. Manejo de Directorios:
-    - El script parece crear y escribir en directorios basados en entradas de usuario (../../../../../uploads/'.$_GET['Year'].'/'.$_GET['Month'].'/'). Esto podría llevar a vulnerabilidades de recorrido de directorio si no se valida y restringe adecuadamente.
+    - El script parece crear y escribir en directorios basados en entradas de usuario `(../../../../../uploads/'.$_GET['Year'].'/'.$_GET['Month'].'/')`. Esto podría llevar a vulnerabilidades de recorrido de directorio si no se valida y restringe adecuadamente.
 3. Falta de Autenticación y Autorización:
     - No hay evidencia de controles de autenticación o autorización para limitar quién puede cargar archivos. Esto puede exponer el sistema a cargas no autorizadas.
 
@@ -2221,59 +2212,37 @@ Aunque ya ha quedado un todo un poco más fluido y entendido de lo que ha ocurri
 
 ---
 
-
+<br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>
 
 # 5. Resumen ejecutivo.
 
 ## Índice del capítulo 5. Resumen ejecutivo.
 
-
-
-
-
-
-
-
 [Volver al Índice General.](#índice-general)
 
 ---
 
-
+<br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>
 
 ## 5.0. Introducción al capítulo 5. Resumen ejecutivo.
 
-
-
-
-
-
 [Volver al Índice del capítulo 5. Resumen ejecutivo.](#índice-del-capítulo-5-resumen-ejecutivo)
 
 [Volver al Índice General.](#índice-general)
 
 ---
 
-
+<br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>
 
 ## 5.1. Resumen ejecutivo.
 
-
-
-
-
-
-
-
-
-
-
 [Volver al Índice del capítulo 5. Resumen ejecutivo.](#índice-del-capítulo-5-resumen-ejecutivo)
 
 [Volver al Índice General.](#índice-general)
 
 ---
 
-
+<br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>
 
 # 6. Informe pericial.
 
@@ -2283,7 +2252,7 @@ Aunque ya ha quedado un todo un poco más fluido y entendido de lo que ha ocurri
 
 ---
 
-
+<br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>
 
 ## 6.0. Introducción al capítulo 6. Informe pericial.
 
@@ -2293,7 +2262,7 @@ Aunque ya ha quedado un todo un poco más fluido y entendido de lo que ha ocurri
 
 ---
 
-
+<br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>
 
 ## 6.1. Informe pericial.
 
@@ -2303,7 +2272,7 @@ Aunque ya ha quedado un todo un poco más fluido y entendido de lo que ha ocurri
 
 ---
 
-
+<br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>
 
 # 7. Conclusiones.
 
@@ -2313,65 +2282,47 @@ Aunque ya ha quedado un todo un poco más fluido y entendido de lo que ha ocurri
 
 ---
 
-
+<br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>
 
 ## 7.0. Introducción al capítulo 7. Conclusiones.
 
-
-
-
-
 [Volver al Índice del capítulo 7. Conclusiones.](#índice-del-capítulo-7-conclusiones)
 
 [Volver al Índice General.](#índice-general)
 
 ---
 
-
+<br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>
 
 ## 7.1. Conclusiones.
 
-
-
-
-
-
-
-
 [Volver al Índice del capítulo 7. Conclusiones.](#índice-del-capítulo-7-conclusiones)
 
 [Volver al Índice General.](#índice-general)
 
 ---
 
-
+<br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>
 
 # 8. Anexos.
 
 ## Índice del capítulo 8. Anexos.
 
-
-
-
-
-
 [Volver al Índice General.](#índice-general)
 
 ---
 
-
-
+<br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>
 
 ## 8.0. Introducción al capítulo 8. Anexos.
-
-
-
 
 [Volver al Índice del capítulo 8. Anexos.](#índice-del-capítulo-8-anexos)
 
 [Volver al Índice General.](#índice-general)
 
 ---
+
+<br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>
 
 ## 8.1. Glosario de términos y abreviaturas.
 
@@ -2391,6 +2342,8 @@ Aunque ya ha quedado un todo un poco más fluido y entendido de lo que ha ocurri
 
 ---
 
+<br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>
+
 ## 8.2. Imágenes.
 
 ---
@@ -2403,6 +2356,8 @@ Aunque ya ha quedado un todo un poco más fluido y entendido de lo que ha ocurri
 
 ---
 
+<br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>
+
 #### 8.2.001.003.005.002. Fases 1 2 y 3 de la metodología del análisis forense.
 
 ![001-003-005-002](./images/001-003-005-002-FASES-1-2-3-METODOLOGIA-ANALISIS-FORENSE.png)
@@ -2411,6 +2366,8 @@ Aunque ya ha quedado un todo un poco más fluido y entendido de lo que ha ocurri
 
 ---
 
+<br><br><br><br><br><br><br>
+
 #### 8.2.001.003.005.003. Fases 4 5 y 6 de la metodología del análisis forense.
 
 ![001-003-005-003](./images/001-003-005-003-FASES-4-5-6-METODOLOGIA-ANALISIS-FORENSE.png)
@@ -2418,6 +2375,8 @@ Aunque ya ha quedado un todo un poco más fluido y entendido de lo que ha ocurri
 [Volver al texto de la imagen en la Sección 1.3.5.](#135-imagen-002-135-imagen-003-135-imagen-004)
 
 ---
+
+<br><br>
 
 #### 8.2.001.003.005.004. Fase 7 de la metodología del análisis forense.
 
@@ -2435,6 +2394,8 @@ Aunque ya ha quedado un todo un poco más fluido y entendido de lo que ha ocurri
 
 ---
 
+<br><br><br>
+
 #### 8.2.001.006.001. Diagrama de Gantt reto/PEC 1.
 
 ![001-006-001](./images/001-006-001-diagrama-de-gantt-pec-01.png)
@@ -2451,6 +2412,8 @@ Aunque ya ha quedado un todo un poco más fluido y entendido de lo que ha ocurri
 
 ---
 
+<br>
+
 #### 8.2.001.006.003. Diagrama de Gantt reto/PEC 3.
 ![001-006-003](./images/001-006-003-diagrama-de-gantt-pec-03.png)
 
@@ -2465,6 +2428,8 @@ Aunque ya ha quedado un todo un poco más fluido y entendido de lo que ha ocurri
 [Volver al texto de la imagen en la Sección 1.6.](#16-imagen-004)
 
 ---
+
+<br><br><br><br><br><br>
 
 #### 8.2.003.001.001. Imagen Hash archivos.
 
@@ -2482,6 +2447,8 @@ Aunque ya ha quedado un todo un poco más fluido y entendido de lo que ha ocurri
 
 ---
 
+<br><br><br><br><br><br><br>
+
 #### 8.2.003.002.001. Imagen de imageinfo.
 
 ![003-002-001](./images/003-002-001-captura-imageinfo.png)
@@ -2498,6 +2465,8 @@ Aunque ya ha quedado un todo un poco más fluido y entendido de lo que ha ocurri
 
 ---
 
+<br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>
+
 #### 8.2.003.003.001.001. Características VM perfil Volatility.
 
 ![003-003-001-001](./images/003-003-001-001-CARACTERISTICAS-VM.png)
@@ -2505,6 +2474,8 @@ Aunque ya ha quedado un todo un poco más fluido y entendido de lo que ha ocurri
 [Volver al texto de la imagen en la Sección 3.3.1.](#331-imagen-001)
 
 ---
+
+<br><br><br><br><br><br><br><br><br><br><br><br>
 
 #### 8.2.003.003.001.002. Características VM kernel.
 
@@ -2530,6 +2501,8 @@ Aunque ya ha quedado un todo un poco más fluido y entendido de lo que ha ocurri
 
 ---
 
+<br><br><br><br><br><br><br>
+
 #### 8.2.003.003.001.005. Probando de nuevo hostnamectl.
 
 ![003-003-001-005](./images/003-003-001-005-hosnamectl-2.png)
@@ -2545,6 +2518,8 @@ Aunque ya ha quedado un todo un poco más fluido y entendido de lo que ha ocurri
 [Volver al texto de la imagen en la Sección 3.3.1.](#331-imagen-006)
 
 ---
+
+<br><br><br><br><br><br><br>
 
 #### 8.2.003.003.001.007. Comprobando kernel.
 
@@ -2562,6 +2537,8 @@ Aunque ya ha quedado un todo un poco más fluido y entendido de lo que ha ocurri
 
 ---
 
+<br><br><br><br><br><br><br><br><br><br><br>
+
 #### 8.2.003.003.002.002. Volatility instalado.
 
 ![003-003-002-002](./images/003-003-002-002-volatility-instalado.png)
@@ -2578,6 +2555,8 @@ Aunque ya ha quedado un todo un poco más fluido y entendido de lo que ha ocurri
 
 ---
 
+<br><br><br><br><br><br><br><br><br>
+
 #### 8.2.003.003.002.004. make /home/jrodg85/volatility/tools/linux.
 
 ![003-003-002-004](./images/003-003-002-004-volatility-tools-linux-make-ls.png)
@@ -2593,6 +2572,8 @@ Aunque ya ha quedado un todo un poco más fluido y entendido de lo que ha ocurri
 [Volver al texto de la imagen en la Sección 3.3.2.](#332-imagen-005)
 
 ---
+
+<br><br><br><br><br><br><br><br><br>
 
 #### 8.2.003.003.002.006. Perfil creado.
 
@@ -2617,6 +2598,8 @@ Aunque ya ha quedado un todo un poco más fluido y entendido de lo que ha ocurri
 [Volver al texto de la imagen en la Sección 3.3.2.](#332-imagen-008)
 
 ---
+
+<br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>
 
 #### 8.2.003.003.002.009. Perfil copiado entorno volatility.
 
@@ -2658,6 +2641,8 @@ Aunque ya ha quedado un todo un poco más fluido y entendido de lo que ha ocurri
 
 ---
 
+<br><br><br><br><br><br><br>
+
 #### 8.2.003.004.003.001. linux mount.
 
 ![003-004-003-001](./images/003-004-003-001-linux_mount.png)
@@ -2674,6 +2659,8 @@ Aunque ya ha quedado un todo un poco más fluido y entendido de lo que ha ocurri
 
 ---
 
+<br><br>
+
 #### 8.2.003.004.005.001. linux iomem.
 
 ![003-004-005-001](./images/003-004-005-001-linux_iomem.png)
@@ -2681,6 +2668,8 @@ Aunque ya ha quedado un todo un poco más fluido y entendido de lo que ha ocurri
 [Volver al texto de la imagen en la Sección 3.4.5.](#345-imagen-001)
 
 ---
+
+<br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>
 
 #### 8.2.003.004.006.001. linux dmesg.
 
@@ -2714,6 +2703,8 @@ Aunque ya ha quedado un todo un poco más fluido y entendido de lo que ha ocurri
 
 ---
 
+<br><br><br><br><br><br><br><br><br><br><br><br><br>
+
 #### 8.2.003.005.003.003. passwd de volcado.
 
 ![003-005-003-003](./images/003-005-003-003-passwd-volcado.png)
@@ -2729,6 +2720,8 @@ Aunque ya ha quedado un todo un poco más fluido y entendido de lo que ha ocurri
 [Volver al texto de la imagen en la Sección 3.5.3.](#353-imagen-003-353-imagen-004)
 
 ---
+
+<br><br>
 
 #### 8.2.003.005.003.005. hash archivo zip.
 
@@ -2746,6 +2739,8 @@ Aunque ya ha quedado un todo un poco más fluido y entendido de lo que ha ocurri
 
 ---
 
+<br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>
+
 #### 8.2.003.005.003.007. Pantallazo Virustotal 2.
 
 ![003-005-003-007](./images/003-005-003-007-pantallazo-visrustotal-2.png)
@@ -2753,6 +2748,8 @@ Aunque ya ha quedado un todo un poco más fluido y entendido de lo que ha ocurri
 [Volver al texto de la imagen en la Sección 3.5.3.](#353-imagen-007)
 
 ---
+
+<br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>
 
 #### 8.2.003.005.003.008. Pantallazo Virustotal 3.
 
@@ -2762,6 +2759,8 @@ Aunque ya ha quedado un todo un poco más fluido y entendido de lo que ha ocurri
 
 ---
 
+<br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>
+
 #### 8.2.003.005.003.009. Pantallazo Virustotal 4.
 
 ![003-005-003-009](./images/003-005-003-009-pantallazo-visrustotal-4.png)
@@ -2769,6 +2768,8 @@ Aunque ya ha quedado un todo un poco más fluido y entendido de lo que ha ocurri
 [Volver al texto de la imagen en la Sección 3.5.3.](#353-imagen-009)
 
 ---
+
+<br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>
 
 #### 8.2.003.005.003.010. Pantallazo Virustotal 5.
 
@@ -2778,6 +2779,8 @@ Aunque ya ha quedado un todo un poco más fluido y entendido de lo que ha ocurri
 
 ---
 
+<br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>
+
 #### 8.2.003.005.003.011. Pantallazo Virustotal 6.
 
 ![003-005-003-011](./images/003-005-003-011-pantallazo-visrustotal-6.png)
@@ -2785,6 +2788,8 @@ Aunque ya ha quedado un todo un poco más fluido y entendido de lo que ha ocurri
 [Volver al texto de la imagen en la Sección 3.5.3.](#353-imagen-011)
 
 ---
+
+<br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>
 
 #### 8.2.003.005.003.012. Pantallazo Virustotal 7.
 
@@ -2802,6 +2807,8 @@ Aunque ya ha quedado un todo un poco más fluido y entendido de lo que ha ocurri
 
 ---
 
+<br><br><br><br><br><br><br>
+
 #### 8.2.003.006.001.001. linux arp.
 
 ![003-006-001-001](./images/003-006-001-001-linux-arp.png)
@@ -2818,6 +2825,8 @@ Aunque ya ha quedado un todo un poco más fluido y entendido de lo que ha ocurri
 
 ---
 
+<br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>
+
 #### 8.2.004.001.001. Imagen Hash archivos.
 
 ![004-001-001](./images/004-001-001-imagen-hash-archivos.png)
@@ -2829,11 +2838,13 @@ Aunque ya ha quedado un todo un poco más fluido y entendido de lo que ha ocurri
 
 #### 8.2.004.001.002. Imagen Hash PowerShell.
 
-![004-001-002](./images/004-001-002-captura-hash-PowerShell.png)
+![004-001-002](./images/004-001-002-captura-hash-powershell.png)
 
 [Volver al texto de la imagen en la Sección 4.1.](#41-imagen-002)
 
 ---
+
+<br><br><br><br><br><br><br>
 
 #### 8.2.004.002.001. Nuevo caso Autopsy.
 
@@ -2851,6 +2862,8 @@ Aunque ya ha quedado un todo un poco más fluido y entendido de lo que ha ocurri
 
 ---
 
+<br><br><br><br><br><br><br><br><br>
+
 #### 8.2.004.002.003. Comprobación bash history.
 
 ![004-002-003](./images/004-002-003-comprobacion-bash-history.png)
@@ -2858,6 +2871,8 @@ Aunque ya ha quedado un todo un poco más fluido y entendido de lo que ha ocurri
 [Volver al texto de la imagen en la Sección 4.2.](#42-imagen-003)
 
 ---
+
+<br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>
 
 #### 8.2.004.003.001. Usuarios del sistema.
 
@@ -2883,6 +2898,8 @@ Aunque ya ha quedado un todo un poco más fluido y entendido de lo que ha ocurri
 
 ---
 
+<br><br><br><br>
+
 #### 8.2.004.004.003. Análisis apache error log 1.
 
 ![004-004-003](./images/004-004-003-analisis-apache-error-log-1.png)
@@ -2907,6 +2924,8 @@ Aunque ya ha quedado un todo un poco más fluido y entendido de lo que ha ocurri
 
 ---
 
+<br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>
+
 #### 8.2.004.004.006. Análisis web.
 
 ![004-004-006](./images/004-004-006-analisis-web-1.png)
@@ -2914,6 +2933,8 @@ Aunque ya ha quedado un todo un poco más fluido y entendido de lo que ha ocurri
 [Volver al texto de la imagen en la Sección 4.4.](#44-imagen-006)
 
 ---
+
+<br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>
 
 #### 8.2.004.004.007. Análisis index.
 
@@ -2923,6 +2944,8 @@ Aunque ya ha quedado un todo un poco más fluido y entendido de lo que ha ocurri
 
 ---
 
+<br><br><br><br><br><br><br><br><br><br><br><br><br>
+
 #### 8.2.004.004.008. Análisis mails.
 
 ![004-004-008](./images/004-004-008-analisis-mail-1.png)
@@ -2930,6 +2953,8 @@ Aunque ya ha quedado un todo un poco más fluido y entendido de lo que ha ocurri
 [Volver al texto de la imagen en la Sección 4.4.](#44-imagen-008)
 
 ---
+
+<br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>
 
 #### 8.2.004.004.009. Análisis mails 2.
 
@@ -2939,6 +2964,8 @@ Aunque ya ha quedado un todo un poco más fluido y entendido de lo que ha ocurri
 
 ---
 
+<br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>
+
 #### 8.2.004.004.010. Análisis mails 3.
 
 ![004-004-010](./images/004-004-010-analisis-mail-3.png)
@@ -2946,6 +2973,8 @@ Aunque ya ha quedado un todo un poco más fluido y entendido de lo que ha ocurri
 [Volver al texto de la imagen en la Sección 4.4.](#44-imagen-010)
 
 ---
+
+<br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>
 
 #### 8.2.004.004.011. Análisis mails 4.
 
@@ -2955,6 +2984,8 @@ Aunque ya ha quedado un todo un poco más fluido y entendido de lo que ha ocurri
 
 ---
 
+<br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>
+
 #### 8.2.004.004.012. Análisis mails 5.
 
 ![004-004-012](./images/004-004-012-analisis-mail-5.png)
@@ -2962,6 +2993,8 @@ Aunque ya ha quedado un todo un poco más fluido y entendido de lo que ha ocurri
 [Volver al texto de la imagen en la Sección 4.4.](#44-imagen-012)
 
 ---
+
+<br><br><br><br><br><br><br>
 
 #### 8.2.004.004.013. Análisis mails 6.
 
@@ -2971,6 +3004,8 @@ Aunque ya ha quedado un todo un poco más fluido y entendido de lo que ha ocurri
 
 ---
 
+<br><br><br>
+
 #### 8.2.004.004.014. Análisis mails 7.
 
 ![004-004-014](./images/004-004-014-analisis-mail-7.png)
@@ -2978,6 +3013,8 @@ Aunque ya ha quedado un todo un poco más fluido y entendido de lo que ha ocurri
 [Volver al texto de la imagen en la Sección 4.4.](#44-imagen-014)
 
 ---
+
+<br><br><br><br><br><br><br><br>
 
 #### 8.2.004.004.015. Análisis mails 8.
 
@@ -2987,33 +3024,23 @@ Aunque ya ha quedado un todo un poco más fluido y entendido de lo que ha ocurri
 
 ---
 
+<br><br><br>
+
 #### 8.2.004.004.016. Análisis mails 9.
 
 ![004-004-016](./images/004-004-016-analisis-mail-9.png)
 
 [Volver al texto de la imagen en la Sección 4.4.](#44-imagen-016)
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+---
 
 [Volver al Índice del capítulo 8. Anexos.](#índice-del-capítulo-8-anexos)
 
 [Volver al Índice General.](#índice-general)
 
 ---
+
+<br><br><br>
 
 ## 8.3. Videos.
 
@@ -3031,25 +3058,13 @@ Aunque ya ha quedado un todo un poco más fluido y entendido de lo que ha ocurri
 
 ---
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 [Volver al Índice del capítulo 8. Anexos.](#índice-del-capítulo-8-anexos)
 
 [Volver al Índice General.](#índice-general)
 
 ---
+
+<br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>
 
 ## 8.4. Extracto de comandos utilizados.
 
@@ -3091,6 +3106,8 @@ SHA1            CC1FAD2AF321B8C2DDF0103986E3B344EB8F2CC8                        
 [Volver al texto del comando en la Sección 3.1.](#31-comando-001-31-comando-002)
 
 ---
+
+<br><br><br><br><br><br><br>
 
 #### 8.4.003.003.000.001. Comando sudo python2.7 vol.py --info.
 
@@ -3236,6 +3253,8 @@ Se ha guardado en el archivo `/home/jrodg85/usb/historial.txt` el siguiente hist
 
 ---
 
+<br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>
+
 #### 8.4.003.004.003.001. Comando sudo python2.7 vol.py --profile=LinuxlinuxUbuntu_4_15_0-1021-aws_profilex64 -f '/home/jrodg85/Server_RAM.mem' linux_mount.
 
 ~~~bash
@@ -3377,6 +3396,8 @@ Procesado el comando, se puede obtener esta tabla resumen:
 
 ---
 
+<br><br><br>
+
 #### 8.4.003.004.004.001. Comando `sudo python2.7 vol.py --profile=LinuxlinuxUbuntu_4_15_0-1021-aws_profilex64 -f '/home/jrodg85/Server_RAM.mem' linux_memmap > /home/jrodg85/informe-memmap.txt`.
 
 ~~~Bash
@@ -3500,15 +3521,15 @@ Unable to read pages for kworker/0:2 pid 20898.
 
 ---
 
-#### 8.4.003.004.005.001. Comando `sudo python2.7 vol.py --profile=LinuxlinuxUbuntu_4_15_0-1021-aws_profilex64 -f '/home/jrodg85/Server_RAM.mem' linux_iomem`.
+<br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>
 
+#### 8.4.003.004.005.001. Comando `sudo python2.7 vol.py --profile=LinuxlinuxUbuntu_4_15_0-1021-aws_profilex64 -f '/home/jrodg85/Server_RAM.mem' linux_iomem`.
 
 ~~~Bash
 sudo python2.7 vol.py --profile=LinuxlinuxUbuntu_4_15_0-1021-aws_profilex64 -f '/home/jrodg85/Server_RAM.mem' linux_iomem
 ~~~
 
 La respuesta de la consola ha sido la siguiente:
-
 
 ~~~Bash
 Volatility Foundation Volatility Framework 2.6.1
@@ -3539,6 +3560,7 @@ Reserved                0xFC000000    0xFFFFFFFF
 
 ---
 
+<br><br><br><br><br><br><br><br><br><br><br>
 
 #### 8.4.003.004.006.001. Comando `sudo python2.7 vol.py --profile=LinuxlinuxUbuntu_4_15_0-1021-aws_profilex64 -f '/home/jrodg85/Server_RAM.mem' linux_dmesg > /home/jrodg85/informe-linux_dmesg.txt`.
 
@@ -4250,6 +4272,8 @@ Explicado el script anterior, un resumen de los datos de interés para este aná
 
 ---
 
+<br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>
+
 #### 8.4.003.004.007.001. Comando `sudo python2.7 vol.py --profile=LinuxlinuxUbuntu_4_15_0-1021-aws_profilex64 -f '/home/jrodg85/Server_RAM.mem' linux_bash`.
 
 ~~~Shell
@@ -4517,6 +4541,8 @@ Pid      Name                 Command Time                   Command
 
 ---
 
+<br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>
+
 #### 8.4.003.005.001.001. Comando `sudo python2.7 vol.py --profile=LinuxlinuxUbuntu_4_15_0-1021-aws_profilex64 -f '/home/jrodg85/Server_RAM.mem' linux_pslist`.
 
 
@@ -4640,13 +4666,13 @@ Offset             Name              Pid     PPid    Uid    Gid    DTB          
 0xffff90057b015b00 kworker/0:2       20898   2       0      0      ------------------ 2019-01-03 08:17:06 UTC+0000
 ~~~
 
-
 [Volver al texto del comando en la Sección 3.5.1.](#351-comando-001)
 
 ---
 
-#### 8.4.003.005.002.001. Comando `sudo python2.7 vol.py --profile=LinuxlinuxUbuntu_4_15_0-1021-aws_profilex64 -f '/home/jrodg85/Server_RAM.mem' linux_pstree`.
+<br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>
 
+#### 8.4.003.005.002.001. Comando `sudo python2.7 vol.py --profile=LinuxlinuxUbuntu_4_15_0-1021-aws_profilex64 -f '/home/jrodg85/Server_RAM.mem' linux_pstree`.
 
 ~~~Shell
 sudo python2.7 vol.py --profile=LinuxlinuxUbuntu_4_15_0-1021-aws_profilex64 -f '/home/jrodg85/Server_RAM.mem' linux_pstree
@@ -4656,7 +4682,6 @@ La respuesta de la consola ha sido la siguiente:
 
 ~~~
 Volatility Foundation Volatility Framework 2.6.1
-
 Name                Pid     Uid
 ------------------- ------- -------
 systemd             1
@@ -4773,7 +4798,8 @@ systemd             1
 
 ---
 
----
+<br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>
+
 
 #### 8.4.003.006.003.001. Comando `sudo python2.7 vol.py --profile=LinuxlinuxUbuntu_4_15_0-1021-aws_profilex64 -f '/home/jrodg85/Server_RAM.mem' linux_netstat`.
 
@@ -5098,6 +5124,8 @@ UNIX 676234                sudo/20893
 
 ---
 
+<br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>
+
 #### 8.4.003.006.003.002. Resumen del comando `sudo python2.7 vol.py --profile=LinuxlinuxUbuntu_4_15_0-1021-aws_profilex64 -f '/home/jrodg85/Server_RAM.mem' linux_netstat`.
 
 ~~~
@@ -5164,9 +5192,11 @@ TCP      172.31.38.110   :   22 83.247.136.74   :16666 ESTABLISHED              
 TCP      172.31.38.110   :   22 83.247.136.74   :16666 ESTABLISHED                  sshd/20576
 ~~~
 
-[Volver al texto del comando en la Sección 3.5.2.](#363-comando-002)
+[Volver al texto del comando en la Sección 3.6.3.](#363-comando-002)
 
 ---
+
+<br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>
 
 #### 8.4.004.001.001. Comando Hash MD5.
 
@@ -5182,29 +5212,25 @@ Algorithm       Hash                                                            
 MD5             324ED7DB769620E3FB55C027480D0EF3                                       C:\Users\jrodg85\Desktop\Nuev...
 ~~~
 
-[Volver al texto del comando en la Sección 3.1](#41-comando-001-41-comando-002)
-
+[Volver al texto del comando en la Sección 4.1](#41-comando-001-41-comando-002)
 
 ---
 
+#### 8.4.004.001.002. Comando Hash SHA1.
 
+~~~PowerShell
+Get-FileHash .\Server_HDD.E01 -Algorithm SHA1
+~~
 
+La respuesta de PowerShell es el siguiente:
 
+~~~PowerShell
+Algorithm       Hash                                                                   Path
+---------       ----                                                                   ----
+SHA1            3398F90D2438230AAAF7B5E8CE0A01E456D9CA10                               C:\Users\jrodg85\Desktop\Nuev...
+~~~
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+[Volver al texto del comando en la Sección 4.1](#41-comando-001-41-comando-002)
 
 ---
 
@@ -5214,6 +5240,8 @@ MD5             324ED7DB769620E3FB55C027480D0EF3                                
 [Volver al Índice General.](#índice-general)
 
 ---
+
+<br><br><br><br><br><br>
 
 ## 8.5. Referencias.
 
@@ -5309,6 +5337,8 @@ MD5             324ED7DB769620E3FB55C027480D0EF3                                
 
 ---
 
+<br><br><br><br><br><br><br><br>
+
 #### 8.5.009. Metodología para un análisis forense:
 
 - Autores: Carles Gervilla Rivas.
@@ -5363,6 +5393,8 @@ MD5             324ED7DB769620E3FB55C027480D0EF3                                
 
 ---
 
+<br>
+
 #### 8.5.014. Creación de perfil en Volatility (andreafortuna):
 
 - Autor: andreafortuna.
@@ -5415,6 +5447,8 @@ MD5             324ED7DB769620E3FB55C027480D0EF3                                
 
 ---
 
+<br><br><br><br>
+
 #### 8.5.019. Informe tree:
 
 - Autor: José Enrique Rodríguez González.
@@ -5433,23 +5467,7 @@ MD5             324ED7DB769620E3FB55C027480D0EF3                                
 
 [Volver at texto de la referencia en la Sección 4.4.](#44-referencia-020)
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+---
 
 [Volver al Índice del capítulo 8. Anexos.](#índice-del-capítulo-8-anexos)
 
@@ -5457,123 +5475,90 @@ MD5             324ED7DB769620E3FB55C027480D0EF3                                
 
 ---
 
+<br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>
+
 ## 8.6. Linea de tiempo de evidencias.
 
 - 2019-01-03 04:24:46 UTC+0000
     - Arranque del proceso kworker/0:0
         - Pid: 19056
-
 - 2019-01-03 05:50:42 UTC+0000
     - Arranque del proceso kworker/u30:2
         - Pid: 19454
-
 - 2019-01-03 06:25:21 UTC+0000
     - Arranque del proceso apache2
         - Pid: 19704
-
 - 2019-01-03 06:25:21 UTC+0000
     - Arranque del proceso apache2
         - Pid: 19705
-
 - 2019-01-03 06:25:21 UTC+0000
     - Arranque del proceso apache2
         - Pid: 19706
-
 - 2019-01-03 06:25:21 UTC+0000
     - Arranque del proceso apache2
         - Pid: 19707
-
 - 2019-01-03 06:25:21 UTC+0000
     - Arranque del proceso apache2
         - Pid: 19708
-
 - 2019-01-03 06:25:21 UTC+0000
     - Arranque del proceso kworker/0:1
         - Pid: 19709
-
 - 2019-01-03 06:33:15 UTC+0000
     - Arranque del proceso apache2
         - Pid: 19952
-
 - 2019-01-03 06:33:16 UTC+0000
     - Arranque del proceso apache2
         - Pid: 19953
-
 - 2019-01-03 07:26:31 UTC+0000
     - Arranque del proceso apache2
         - Pid: 20230
-
 - 2019-01-03 07:26:32 UTC+0000
     - Arranque del proceso apache2
         - Pid: 20231
-
 - 2019-01-03 07:26:33 UTC+0000
     - Arranque del proceso apache2
         - Pid: 20232
-
 - 2019-01-03 07:26:34 UTC+0000
     - Arranque del proceso apache2
         - Pid: 20233
-
 - 2019-01-03 07:32:10 UTC+0000
     - Arranque del proceso sh
         - Pid: 20381
-
 - 2019-01-03 07:49:45 UTC+0000
     - Ver Comandos [Linux bash](#84003004007001-comando-sudo-python27-volpy---profilelinuxlinuxubuntu_4_15_0-1021-aws_profilex64--f-homejrodg85server_rammem-linux_bash).
-
 - 2019-01-03 07:50:04 UTC+0000
     - Arranque del proceso sshd
         - Pid: 20483
-
 - 2019-01-03 07:50:05 UTC+0000
     - Arranque del proceso systemd
         - Pid: 20485
-
 - 2019-01-03 07:50:05 UTC+0000
     - Arranque del proceso (sd-pam)
         - Pid: 20486
-
 - 2019-01-03 07:50:05 UTC+0000
     - Arranque del proceso sshd
         - Pid: 20576
-
 - 2019-01-03 07:50:05 UTC+0000
     - Arranque del proceso bash
         - Pid: 20577
-
 - 2019-01-03 08:01:34 UTC+0000
     - Arranque del proceso pickup
         - Pid: 20703
-
 - 2019-01-03 08:09:21 UTC+0000
     - Arranque del proceso kworker/u30:1
         - Pid: 20781
-
 - 2019-01-03 08:16:28 UTC+0000
     - Arranque del proceso kworker/u30:0
         - Pid: 20886
-
 - 2019-01-03 08:17:06 UTC+0000
     - Arranque del proceso sudo
         - Pid: 20893
-
 - 2019-01-03 08:17:06 UTC+0000
     - Arranque del proceso insmod
         - Pid: 20894
-
 - 2019-01-03 08:17:06 UTC+0000
     - Arranque del proceso kworker/0:2
         - Pid: 20898
-
-
-
-
-
-
-
-
-
 
 [Volver al Índice del capítulo 8. Anexos.](#índice-del-capítulo-8-anexos)
 
