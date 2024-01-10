@@ -3407,7 +3407,7 @@ Tras una limpieza de datos se obtiene la siguiente información.
 ~~~Bash
 Task             Pid      Virtual
 ---------------- -------- ------------------
-systemd                 1 0x000056198f210000
+systemd          1        0x000056198f210000
 Unable to read pages for kthreadd pid 2.
 Unable to read pages for kworker/0:0H pid 4.
 Unable to read pages for mm_percpu_wq pid 6.
@@ -3455,63 +3455,63 @@ Unable to read pages for iscsi_eh pid 395.
 Unable to read pages for ib-comp-wq pid 408.
 Unable to read pages for ib_mcast pid 409.
 Unable to read pages for ib_nl_sa_wq pid 410.
-lvmetad               414 0x000055c919805000
+lvmetad          414      0x000055c919805000
 Unable to read pages for rdma_cm pid 415.
-systemd-logind        712 0x0000555feb5b1000
-dbus-daemon           720 0x000055e82c96e000
-cron                  733 0x000055da6b87f000
-accounts-daemon       734 0x00005622d937a000
-lxcfs                 737 0x0000559f4b3c0000
-atd                   749 0x00005617c519f000
-polkitd               771 0x000055e2bdf70000
-agetty                785 0x0000561ce77d2000
+systemd-logind   712      0x0000555feb5b1000
+dbus-daemon      720      0x000055e82c96e000
+cron             733      0x000055da6b87f000
+accounts-daemon  734      0x00005622d937a000
+lxcfs            737      0x0000559f4b3c0000
+atd              749      0x00005617c519f000
+polkitd          771      0x000055e2bdf70000
+agetty           785      0x0000561ce77d2000
 Unable to read pages for loop0 pid 951.
 Unable to read pages for loop1 pid 1103.
-systemd-network      2788 0x000056528aefc000
-systemd-resolve      2804 0x0000556117890000
-systemd-timesyn      2818 0x000055ec03062000
-systemd-journal      2825 0x000055788deea000
-uuidd                5077 0x00005626dc1f7000
-systemd-udevd        5160 0x000055db9d680000
+systemd-network  2788     0x000056528aefc000
+systemd-resolve  2804     0x0000556117890000
+systemd-timesyn  2818     0x000055ec03062000
+systemd-journal  2825     0x000055788deea000
+uuidd            5077     0x00005626dc1f7000
+systemd-udevd    5160     0x000055db9d680000
 Unable to read pages for xfsalloc pid 10374.
 Unable to read pages for xfs_mru_cache pid 10375.
-iscsid              10988 0x0000556f3766c000
-networkd-dispat     11199 0x000000000040b000
-sshd                12159 0x000055ced2c2b000
-mysqld               5127 0x0000000000758000
-apache2              5469 0x0000555836828000
+iscsid           10988    0x0000556f3766c000
+networkd-dispat  11199    0x000000000040b000
+sshd             12159    0x000055ced2c2b000
+mysqld           5127     0x0000000000758000
+apache2          5469     0x0000555836828000
 Unable to read pages for loop2 pid 6189.
-snapd                6219 0x000000c000000000
+snapd            6219     0x000000c000000000
 Unable to read pages for loop3 pid 6349.
-amazon-ssm-agen      6445 0x0000000000401000
-rsyslogd            26254 0x000055a525c04000
-master              26489 0x0000560cfc179000
-qmgr                26500 0x00005561e4c3e000
+amazon-ssm-agen  6445     0x0000000000401000
+rsyslogd        26254     0x000055a525c04000
+master          26489     0x0000560cfc179000
+qmgr            26500     0x00005561e4c3e000
 Unable to read pages for kworker/0:0 pid 19056.
 Unable to read pages for kworker/u30:2 pid 19454.
-apache2             19704 0x0000555836828000
-apache2             19705 0x0000555836828000
-apache2             19706 0x0000555836828000
-apache2             19707 0x0000555836828000
-apache2             19708 0x0000555836828000
+apache2         19704     0x0000555836828000
+apache2         19705     0x0000555836828000
+apache2         19706     0x0000555836828000
+apache2         19707     0x0000555836828000
+apache2         19708     0x0000555836828000
 Unable to read pages for kworker/0:1 pid 19709.
-apache2             19952 0x0000555836828000
-apache2             19953 0x0000555836828000
-apache2             20230 0x0000555836828000
-apache2             20231 0x0000555836828000
-apache2             20232 0x0000555836828000
-apache2             20233 0x0000555836828000
+apache2         19952     0x0000555836828000
+apache2         19953     0x0000555836828000
+apache2         20230     0x0000555836828000
+apache2         20231     0x0000555836828000
+apache2         20232     0x0000555836828000
+apache2         20233     0x0000555836828000
 Unable to read pages for sh pid 20381.
-sshd                20483 0x0000556d21d8b000
-systemd             20485 0x000055cc54c92000
-(sd-pam)            20486 0x000056198f210000
-sshd                20576 0x0000556d21d90000
-bash                20577 0x000055931a312000
-pickup              20703 0x00005566d1a50000
+sshd            20483     0x0000556d21d8b000
+systemd         20485     0x000055cc54c92000
+(sd-pam)        20486     0x000056198f210000
+sshd            20576     0x0000556d21d90000
+bash            20577     0x000055931a312000
+pickup          20703     0x00005566d1a50000
 Unable to read pages for kworker/u30:1 pid 20781.
 Unable to read pages for kworker/u30:0 pid 20886.
-sudo                20893 0x000055c043a14000
-insmod              20894 0x00005620e496f000
+sudo            20893     0x000055c043a14000
+insmod          20894     0x00005620e496f000
 Unable to read pages for kworker/0:2 pid 20898.
 ~~~
 
@@ -4173,7 +4173,7 @@ Explicado el script anterior, un resumen de los datos de interés para este aná
 
 [0.0] Memory: 983488K/1048180K available (12300K kernel code, 2391K rwdata, 3908K rodata, 2372K init, 2376K bss, 64692K reserved, 0K cma-reserved)
 
-# Seguridad, ver referencia 17.
+# Seguridad.
 
 [228243285.0] evm: security.selinux
 [232011134.0] evm: security.SMACK64
@@ -5563,3 +5563,18 @@ SHA1            3398F90D2438230AAAF7B5E8CE0A01E456D9CA10                        
 [Volver al Índice General.](#índice-general)
 
 ---
+
+
+
+
+XVII linux_arp 
+
+XVIII linux_ifconfig
+
+
+
+
+XIX. Comando linux_netstat.	129
+XX. Resumen del comando linux_netstat.	137
+XXI. Comando hash MD5 y SHA1 del disco duro.	139
+
